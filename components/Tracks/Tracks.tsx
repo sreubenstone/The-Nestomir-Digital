@@ -1,15 +1,20 @@
-import React, { FC } from "react";
-import { View, Text, Image } from "react-native";
+import React, { Component } from "react";
+import { View, Text } from "react-native";
 import Stylesheet from "../../Stylesheet";
 import MyTracks from "./MyTracks";
+import Logo from "../Logo";
 
-const Track: FC = () => {
-  return (
-    <View style={Stylesheet.container1}>
-      <Text style={Stylesheet.textHeader}>My Tracks</Text>
-      <MyTracks />
-    </View>
-  );
-};
+export default class Track extends Component<{}> {
+  static navigationOptions = {
+    headerTitle: () => <Logo />
+  };
 
-export default Track;
+  render() {
+    return (
+      <View style={Stylesheet.container1}>
+        <Text style={Stylesheet.textHeader}>My Tracks</Text>
+        <MyTracks />
+      </View>
+    );
+  }
+}

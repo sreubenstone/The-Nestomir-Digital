@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 import * as Icon from "@expo/vector-icons";
-import Colors from "../constants/Colors";
+import Colors from "../Globals";
 
-export default class TabBarIcon extends React.Component {
+type MyProps = {
+  name: string;
+  focused: boolean;
+};
+
+export default class TabBarIcon extends Component<MyProps, {}> {
   render() {
     return (
       <Icon.Ionicons

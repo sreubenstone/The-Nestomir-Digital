@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import * as Font from "expo-font";
-import Tracks from "./components/Tracks/Tracks";
+import Navigator from "./navigation/MainTabNavigator";
 
 export default class App extends Component<{}> {
   state = {
@@ -18,6 +18,6 @@ export default class App extends Component<{}> {
 
   render() {
     const { fontLoaded } = this.state;
-    return fontLoaded ? <Tracks /> : null;
+    return fontLoaded ? <Navigator /> : null;
   }
 }

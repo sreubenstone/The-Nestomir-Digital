@@ -1,29 +1,38 @@
 import React from "react";
-import { Platform } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
-import test from "../components/Tracks/Tracks";
-import TabBarIcon from "./TabBarIcon";
+import Tracks from "../components/Tracks/Tracks";
 
-const TrackStack = createStackNavigator(
-  {
-    Experiments: test
-  },
-  {
-    initialRouteName: "test"
-  }
-);
+const TrackStack = createStackNavigator({
+  Tracks: Tracks
+});
 
 TrackStack.navigationOptions = {
-  tabBarLabel: "Tracks",
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === "ios" ? "ios-flask" : "md-globe"}
-    />
-  )
+  tabBarLabel: "My Tracks"
 };
 
-export default createBottomTabNavigator({
-  TrackStack
-});
+export default createAppContainer(
+  createBottomTabNavigator(
+    {
+      Tracks: TrackStack
+    },
+    {
+      defaultNavigationOptions: ({ navigation }) => ({
+        tabBarIcon: ({ focused, tintColor }) => {
+          const { routeName } = navigation.state;
+          let iconName;
+          if (routeName === "Tracks") {
+            iconName = `ios-git-pull-request`;
+          }
+          return <Ionicons name={iconName} size={25} color={tintColor} />;
+        }
+      }),
+      tabBarOptions: {
+        activeTintColor: "gray",
+        inactiveTintColor: "gray"
+      }
+    }
+  )
+);

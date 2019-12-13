@@ -1,10 +1,14 @@
 import { StyleSheet } from "react-native";
 
+// may break down into different objects
+
 const styles = StyleSheet.create({
   // ----------- Global Container Styles ----------- //
   container1: {
-    paddingTop: 60,
-    paddingLeft: 15
+    paddingTop: 14,
+    paddingLeft: 15,
+    backgroundColor: "#F5F3F3",
+    height: "100%"
   },
 
   // ----------- Flex Container Styles ----------- //
