@@ -4,9 +4,11 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import Tracks from "../components/Tracks/Tracks";
+import Track from "../components/Tracks/Track";
 
 const TrackStack = createStackNavigator({
-  Tracks: Tracks
+  Tracks: Tracks,
+  Track: Track
 });
 
 TrackStack.navigationOptions = {

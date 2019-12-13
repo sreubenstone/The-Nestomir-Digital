@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
   container1: {
     paddingTop: 14,
     paddingLeft: 15,
+    paddingRight: 15,
     backgroundColor: "#F5F3F3",
     height: "100%"
   },
@@ -16,11 +17,23 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
 
+  flexCenter: {
+    flexDirection: "row",
+    justifyContent: "center"
+  },
+
   // ----------- Image Styles ----------- //
   imageCard: {
     width: 50,
     height: 50,
     borderRadius: 10
+  },
+
+  chapterImage: {
+    width: 140,
+    height: 140,
+    borderRadius: 14,
+    marginBottom: 15
   },
 
   // ----------- Text Styles ----------- //
@@ -37,6 +50,26 @@ const styles = StyleSheet.create({
 
   textCardSubtitle: {
     fontSize: 12
+  },
+
+  bookTitle: {
+    fontSize: 20,
+    fontFamily: "gelasio-bold",
+    textAlign: "center",
+    marginBottom: 10
+  },
+
+  chapterTitle: {
+    fontSize: 17,
+    fontFamily: "gelasio-bold",
+    textAlign: "center",
+    marginBottom: 10
+  },
+
+  bookFont: {
+    fontSize: 14,
+    lineHeight: 22,
+    fontFamily: "gelasio"
   }
 });
 
