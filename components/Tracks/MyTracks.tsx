@@ -15,7 +15,7 @@ interface IProps {
 const MyTracks: FC<IProps> = props => {
   const { navigation } = props;
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("Track")}>
+    <TouchableOpacity onPress={() => navigation.navigate("ChapterProgress")}>
       <View style={Stylesheet.flexRow}>
         <Image
           style={Stylesheet.imageCard}

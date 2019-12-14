@@ -5,10 +5,12 @@ import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import Tracks from "../components/Tracks/Tracks";
 import Track from "../components/Tracks/Track";
+import ChapterProgress from "../components/Tracks/ChapterProgress";
 
 const TrackStack = createStackNavigator({
   Tracks: Tracks,
-  Track: Track
+  Track: Track,
+  ChapterProgress: ChapterProgress
 });
 
 TrackStack.navigationOptions = {
