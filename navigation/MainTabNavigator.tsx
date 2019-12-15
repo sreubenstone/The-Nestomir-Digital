@@ -8,13 +8,13 @@ import Track from "../components/Tracks/Track";
 import ChapterProgress from "../components/Tracks/ChapterProgress";
 
 const TrackStack = createStackNavigator({
-  Tracks: Tracks,
-  Track: Track,
-  ChapterProgress: ChapterProgress
+  ChapterProgress: ChapterProgress,
+  // Tracks: Tracks,
+  Track: Track
 });
 
 TrackStack.navigationOptions = {
-  tabBarLabel: "My Tracks"
+  tabBarLabel: "Story"
 };
 
 export default createAppContainer(
@@ -28,7 +28,7 @@ export default createAppContainer(
           const { routeName } = navigation.state;
           let iconName;
           if (routeName === "Tracks") {
-            iconName = `ios-git-pull-request`;
+            iconName = `ios-journal`;
           }
           return <Ionicons name={iconName} size={25} color={tintColor} />;
         }

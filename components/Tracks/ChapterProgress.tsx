@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import Logo from "../Logo";
-import Stylesheet from "../../Stylesheet";
+import MapChapters from "./MapChapters";
+import { ChapterStyles } from "../../Stylesheet";
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -30,18 +31,16 @@ export default class ChapterProgress extends Component<IProps> {
             }}
           />
         </View>
-        <View
-          style={{
-            height: "84%",
-            width: "100%",
-            borderTopLeftRadius: 40,
-            borderTopRightRadius: 40,
-            backgroundColor: "#fff",
-            zIndex: 10,
-            position: "absolute",
-            top: "16%"
-          }}
-        ></View>
+        <View style={ChapterStyles.container}>
+          <Text style={ChapterStyles.title}>
+            The Adventures of Jake & Dendro
+          </Text>
+          <Text style={ChapterStyles.subTitle}>
+            Learn Computer Science
+            <Text style={{ fontStyle: "italic" }}> the right</Text> way.
+          </Text>
+          <MapChapters navigation={navigation} />
+        </View>
       </View>
     );
   }
