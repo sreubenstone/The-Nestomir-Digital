@@ -15,7 +15,8 @@ interface IProps {
 
 export default class ChapterProgress extends Component<IProps> {
   static navigationOptions = {
-    headerTitle: () => <Logo />
+    header: null
+    // headerTitle: () => <Logo />
   };
 
   render() {

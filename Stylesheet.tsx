@@ -13,6 +13,30 @@ const ChapterCardStyles = StyleSheet.create({
     marginBottom: 12
   },
 
+  tagContainer1: {
+    alignSelf: "flex-start",
+    backgroundColor: "#D3EBFC",
+    shadowColor: "#000",
+    margin: 0,
+    borderRadius: 17,
+    padding: 2,
+    paddingLeft: 6,
+    paddingRight: 6,
+    marginTop: 5
+  },
+
+  tagContainer2: {
+    alignSelf: "flex-start",
+    backgroundColor: "#FCD7CB",
+    shadowColor: "#000",
+    margin: 0,
+    borderRadius: 17,
+    padding: 2,
+    paddingLeft: 6,
+    paddingRight: 6,
+    marginTop: 5
+  },
+
   im: {
     width: 100,
     height: 100,
@@ -116,6 +140,7 @@ const GlobalStyles = StyleSheet.create({
     fontSize: 17,
     fontFamily: "gelasio-bold",
     textAlign: "center",
+    marginTop: 45,
     marginBottom: 10
   },
 
