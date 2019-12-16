@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
-import { ChapterCardStyles, GlobalStyles } from "../../Stylesheet";
+import { ProgressCardStyles, GlobalStyles } from "../../Stylesheet";
 import { chapterProgress } from "../../mockData";
 import {
   NavigationParams,
@@ -12,7 +12,7 @@ interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
-const MapChapters: FC<IProps> = props => {
+const ProgressMap: FC<IProps> = props => {
   const { navigation } = props;
   return (
     <View>
@@ -22,10 +22,10 @@ const MapChapters: FC<IProps> = props => {
             onPress={() => navigation.navigate(item.id)}
             key={i}
           >
-            <View style={ChapterCardStyles.container}>
+            <View style={ProgressCardStyles.container}>
               <View style={GlobalStyles.flexRow}>
                 <Image
-                  style={ChapterCardStyles.im}
+                  style={ProgressCardStyles.im}
                   source={{ uri: item.image }}
                 />
                 <View style={{ marginLeft: "3.5%" }}>
@@ -37,8 +37,8 @@ const MapChapters: FC<IProps> = props => {
                   <View
                     style={
                       item.progress
-                        ? ChapterCardStyles.tagContainer1
-                        : ChapterCardStyles.tagContainer2
+                        ? ProgressCardStyles.tagContainer1
+                        : ProgressCardStyles.tagContainer2
                     }
                   >
                     <Text
@@ -57,4 +57,4 @@ const MapChapters: FC<IProps> = props => {
   );
 };
 
-export default MapChapters;
+export default ProgressMap;

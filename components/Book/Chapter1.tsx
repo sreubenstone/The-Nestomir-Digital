@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Text, View, ScrollView, Image } from "react-native";
-import { GlobalStyles } from "../../../Stylesheet";
+import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -161,7 +161,7 @@ export default class Chapter1 extends Component<IProps> {
             }}
           />
         </View>
-        <Text style={GlobalStyles.bookFont}>{body1}</Text>
+        <Text style={BookStyles.bookFont}>{body1}</Text>
         <Text style={GlobalStyles.chapterTitle}>✧</Text>
         <Text>Finished reading?</Text>
       </ScrollView>

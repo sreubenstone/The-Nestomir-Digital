@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import Logo from "../Logo";
-import MapChapters from "./MapChapters";
-import { ChapterStyles } from "../../Stylesheet";
+import ProgressMap from "./ProgressMap";
+import { ProgressStyles } from "../../Stylesheet";
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -13,7 +13,7 @@ interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
-export default class ChapterProgress extends Component<IProps> {
+export default class StoryProgress extends Component<IProps> {
   static navigationOptions = {
     header: null
     // headerTitle: () => <Logo />
@@ -32,15 +32,15 @@ export default class ChapterProgress extends Component<IProps> {
             }}
           />
         </View>
-        <View style={ChapterStyles.container}>
-          <Text style={ChapterStyles.title}>
+        <View style={ProgressStyles.container}>
+          <Text style={ProgressStyles.title}>
             The Adventures of Jake & Dendro
           </Text>
-          <Text style={ChapterStyles.subTitle}>
+          <Text style={ProgressStyles.subTitle}>
             Learn Computer Science
             <Text style={{ fontStyle: "italic" }}> the right</Text> way.
           </Text>
-          <MapChapters navigation={navigation} />
+          <ProgressMap navigation={navigation} />
         </View>
       </View>
     );

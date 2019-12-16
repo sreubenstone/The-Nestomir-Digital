@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Text, View, ScrollView, Image } from "react-native";
-import { GlobalStyles } from "../../../Stylesheet";
+import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -166,7 +166,7 @@ export default class Chapter2 extends Component<IProps> {
             }}
           />
         </View>
-        <Text style={GlobalStyles.bookFont}>{body1}</Text>
+        <Text style={BookStyles.bookFont}>{body1}</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
             style={{
@@ -175,7 +175,7 @@ export default class Chapter2 extends Component<IProps> {
               borderRadius: 0,
               marginBottom: 3
             }}
-            source={require("../../../assets/images/test1.png")}
+            source={require("../../assets/images/test1.png")}
           />
         </View>
 
@@ -183,7 +183,7 @@ export default class Chapter2 extends Component<IProps> {
           (DraconianVision)
         </Text>
 
-        <Text style={GlobalStyles.bookFont}>{body2}</Text>
+        <Text style={BookStyles.bookFont}>{body2}</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
             style={{
@@ -192,10 +192,10 @@ export default class Chapter2 extends Component<IProps> {
               borderRadius: 0,
               marginBottom: 3
             }}
-            source={require("../../../assets/images/test2.png")}
+            source={require("../../assets/images/test2.png")}
           />
         </View>
-        <Text style={GlobalStyles.bookFont}>{body3}</Text>
+        <Text style={BookStyles.bookFont}>{body3}</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
             style={{
@@ -204,10 +204,10 @@ export default class Chapter2 extends Component<IProps> {
               borderRadius: 0,
               marginBottom: 3
             }}
-            source={require("../../../assets/images/test3.png")}
+            source={require("../../assets/images/test3.png")}
           />
         </View>
-        <Text style={GlobalStyles.bookFont}>{body4}</Text>
+        <Text style={BookStyles.bookFont}>{body4}</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
             style={{
@@ -216,10 +216,10 @@ export default class Chapter2 extends Component<IProps> {
               borderRadius: 0,
               marginBottom: 3
             }}
-            source={require("../../../assets/images/test4.png")}
+            source={require("../../assets/images/test4.png")}
           />
         </View>
-        <Text style={GlobalStyles.bookFont}>{body5}</Text>
+        <Text style={BookStyles.bookFont}>{body5}</Text>
         <Text style={GlobalStyles.chapterTitle}>✧</Text>
         <Text>Finished reading?</Text>
       </ScrollView>

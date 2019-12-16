@@ -1,7 +1,14 @@
 import { StyleSheet } from "react-native";
 
-// may break down into different objects
-const ChapterCardStyles = StyleSheet.create({
+const BookStyles = StyleSheet.create({
+  bookFont: {
+    fontSize: 17,
+    lineHeight: 26,
+    fontFamily: "gelasio"
+  }
+});
+
+const ProgressCardStyles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
     height: 120,
@@ -45,7 +52,7 @@ const ChapterCardStyles = StyleSheet.create({
   }
 });
 
-const ChapterStyles = StyleSheet.create({
+const ProgressStyles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontFamily: "gelasio-bold",
@@ -75,7 +82,6 @@ const ChapterStyles = StyleSheet.create({
 });
 
 const GlobalStyles = StyleSheet.create({
-  // ----------- Global Container Styles ----------- //
   container1: {
     paddingTop: 14,
     paddingLeft: 15,
@@ -84,7 +90,6 @@ const GlobalStyles = StyleSheet.create({
     height: "100%"
   },
 
-  // ----------- Flex Container Styles ----------- //
   flexRow: {
     flexDirection: "row"
   },
@@ -94,7 +99,6 @@ const GlobalStyles = StyleSheet.create({
     justifyContent: "center"
   },
 
-  // ----------- Image Styles ----------- //
   imageCard: {
     width: 50,
     height: 50,
@@ -108,7 +112,6 @@ const GlobalStyles = StyleSheet.create({
     marginBottom: 15
   },
 
-  // ----------- Text Styles ----------- //
   textHeader: {
     fontSize: 26,
     fontFamily: "gelasio-med",
@@ -142,13 +145,7 @@ const GlobalStyles = StyleSheet.create({
     textAlign: "center",
     marginTop: 45,
     marginBottom: 10
-  },
-
-  bookFont: {
-    fontSize: 14,
-    lineHeight: 22,
-    fontFamily: "gelasio"
   }
 });
 
-export { GlobalStyles, ChapterStyles, ChapterCardStyles };
+export { GlobalStyles, ProgressStyles, ProgressCardStyles, BookStyles };
