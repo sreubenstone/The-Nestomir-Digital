@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { Text, View, ScrollView, Image } from "react-native";
+import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
+import SyntaxHighlighter from "react-native-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/styles/hljs";
+
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -10,6 +13,32 @@ import {
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
+
+const markup = `
+<html>
+  <head>
+    <title>Trip to Seattle</title>
+  </head>
+</html>
+  <body>
+   <h1> Trip to Seattle with Jake </h1>
+   <p> We are travelling North by North West to Seattle, Washington.<b> Our coordinate destination: 47.6062° N, 122.3321° W </b> </p>
+  </body>
+`;
+
+const markup2 = `
+<html>
+<head>
+  <title>Trip to Seattle</title>
+</head>
+</html>
+<body>
+ <h1> Trip to Seattle with Jake </h1>
+ <p> We are travelling North by North West to Seattle, Washington. <b> Our coordinate destination: 47.6062° N, 122.3321° W </b> 
+ </p>
+</body>
+</html>
+`;
 
 const body1 = `The Dragon-like creature stared at him. Its red eyes blinking every few moments. Its body was almost entirely covered by the rubble. All that was visible were the creature’s tail, neck, and head. It looks like a “f#ckin dragon” Jake thought, as Jake’s body started to vibrate in fear. Jake was now entirely operating on adrenaline. His body told him to run, and that’s what he did. He turned and sprinted, but he immediately tripped on the rising tail of the creature, which was far longer than he realized. 
 
@@ -87,8 +116,6 @@ There are a few requirements that this script requires to make a basic flight. T
 
 You can think of a section inside of HTML code as the content of the script encapsulated by a set of html tags. For example, any content encapsulated by a pair of HTML tags (<html> content goes here </html> as the “HTML section”. The same nomenclature would follow. Any content wrapped (wrapped is synonymous with encapsulated) by <head> content </head> would be known as the Head section of the html script. It’s important to note that in an HTML script there are two kinds of sections. One’s that actually show up visually in the Jira (browse) screen, and sections that don’t visually appear. We should get this point down now, as I know you might be wondering -- why would we ever want a section that does not visually appear on the browser screen? Well the answer is that these non-visually appearing sections, known as meta-deta sections, contain information that The Network uses for other purposes, like increasing search results from a search engine. Let me check...yes...one you might be familiar with would be called Google in your tongue.
 
-
-
 The meta-data section in our html document (the Head section) is the section enclosed by <head> tags. Please note I will sometimes use the word “enclosed” or “wrapped” to communicate that something in the document must be encapsulated by a set of opening and closing tags. This section requires a section, within it, called a Title. Not too hard to understand. To properly set our title inside our meta-data section, we simply add these title tags inside of our wrapped head tags. Don’t worry, I will show you shortly what I mean with my DraconianVision. In between the title tags the pilot will simply write “Trip to Seattle”.
 
 “..Wwwait, Seattle? Like the city on the West side of America? We’re going there?”
@@ -155,6 +182,8 @@ export default class Chapter2 extends Component<IProps> {
   };
 
   render() {
+    const { navigation } = this.props;
+
     return (
       <ScrollView style={GlobalStyles.container1}>
         <Text style={GlobalStyles.chapterTitle}>Chapter 2</Text>
@@ -167,46 +196,45 @@ export default class Chapter2 extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body1}</Text>
-        <View style={GlobalStyles.flexCenter}>
-          <Image
-            style={{
-              width: "107.6%",
-              height: 200,
-              borderRadius: 0,
-              marginBottom: 3
-            }}
-            source={require("../../assets/images/test1.png")}
-          />
-        </View>
 
-        <Text style={{ textAlign: "center", marginBottom: 10 }}>
-          (DraconianVision)
-        </Text>
-
+        <SyntaxHighlighter
+          language="html"
+          style={dracula}
+          highlighter={"hljs"}
+          customStyle={{
+            borderWidth: 0.5,
+            borderRadius: 3,
+            marginBottom: 28
+          }}
+        >
+          {`// DraconianVision: trips.html \n<html> \n <head> \n <title>Trip to Seattle</title>\n </head>\n</html>`}
+        </SyntaxHighlighter>
         <Text style={BookStyles.bookFont}>{body2}</Text>
-        <View style={GlobalStyles.flexCenter}>
-          <Image
-            style={{
-              width: "107.6%",
-              height: 200,
-              borderRadius: 0,
-              marginBottom: 3
-            }}
-            source={require("../../assets/images/test2.png")}
-          />
-        </View>
+        <SyntaxHighlighter
+          language="html"
+          style={dracula}
+          highlighter={"hljs"}
+          customStyle={{
+            borderWidth: 0.5,
+            borderRadius: 3,
+            marginBottom: 28
+          }}
+        >
+          {markup}
+        </SyntaxHighlighter>
         <Text style={BookStyles.bookFont}>{body3}</Text>
-        <View style={GlobalStyles.flexCenter}>
-          <Image
-            style={{
-              width: "107.6%",
-              height: 200,
-              borderRadius: 0,
-              marginBottom: 3
-            }}
-            source={require("../../assets/images/test3.png")}
-          />
-        </View>
+        <SyntaxHighlighter
+          language="html"
+          style={dracula}
+          highlighter={"hljs"}
+          customStyle={{
+            borderWidth: 0.5,
+            borderRadius: 3,
+            marginBottom: 28
+          }}
+        >
+          {markup2}
+        </SyntaxHighlighter>
         <Text style={BookStyles.bookFont}>{body4}</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
@@ -220,8 +248,10 @@ export default class Chapter2 extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body5}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("StoryProgress")}>
+          <Text>Finished reading?</Text>
+        </TouchableOpacity>
         <Text style={GlobalStyles.chapterTitle}>✧</Text>
-        <Text>Finished reading?</Text>
       </ScrollView>
     );
   }

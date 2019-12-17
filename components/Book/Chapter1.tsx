@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, ScrollView, Image } from "react-native";
+import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import {
   NavigationParams,
@@ -150,6 +150,8 @@ export default class Chapter1 extends Component<IProps> {
   };
 
   render() {
+    const { navigation } = this.props;
+
     return (
       <ScrollView style={GlobalStyles.container1}>
         <Text style={GlobalStyles.chapterTitle}>Chapter 1</Text>
@@ -162,8 +164,10 @@ export default class Chapter1 extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body1}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("StoryProgress")}>
+          <Text>Finished reading?</Text>
+        </TouchableOpacity>
         <Text style={GlobalStyles.chapterTitle}>✧</Text>
-        <Text>Finished reading?</Text>
       </ScrollView>
     );
   }
