@@ -13,23 +13,23 @@ Expo front end for the kids application.
 
 Bookmark
 
-some form of discussion <on the core learning and career points between parent and child>
+### What I've Got So Far
 
-### by segment..
+- Child(s) and parent(s) are bound somehow in the data model
+- When each completes a segment && -- an sms is sent to both child and parent like "Let's discuss....."
+- Parent can mark the conversation as complete -- stats update....can time notification logic based on completion intervals across parties.
+- Community forum (chat, moderators, experts)
 
-(1) end of book (2) end of chapter (3) end of company defined "learning segment"
+# pricing
 
-### and by solution..
-
-...worksheet, time to meet in person or in virtual chatroom...mark progress/completion, acrrue success/progress.
-
-> content is king. Have to mock up the real worksheet for this protype and see how this fits in.
-
----
+10.99 for ebook 12.99 for app experience
 
 # constraints
 
-concept bad ass parent career
+- concept
+- bad ass
+- parent
+- career
 
 # flavor/vision
 

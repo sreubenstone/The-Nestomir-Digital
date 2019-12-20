@@ -94,6 +94,11 @@ const GlobalStyles = StyleSheet.create({
     flexDirection: "row"
   },
 
+  flexRowSpace: {
+    flexDirection: "row",
+    justifyContent: "space-evenly"
+  },
+
   flexCenter: {
     flexDirection: "row",
     justifyContent: "center"

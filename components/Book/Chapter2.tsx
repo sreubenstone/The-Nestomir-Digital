@@ -175,6 +175,7 @@ A blueish beam emitted from the bottom of the Draconods’s underbelly. An orang
 
 Jake’s head jerked back as they were now on a 60 degree angle powering upward into the air. The wings of the creature were now beating in a powerful harmony, with no change in motion or rhythm. The screen on the Dragon had not changed, though the lighting seemed to have dimmed a bit. A slight misty rain began to hit them. They continued to zoom into the air, their altitude increasing, and Jake looked back to see the fading glimmer of the lights of Grapefield passing below them.
 `;
+
 export default class Chapter2 extends Component<IProps> {
   static navigationOptions = {
     // headerTitle: "Chapter 2"
@@ -196,7 +197,6 @@ export default class Chapter2 extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body1}</Text>
-
         <SyntaxHighlighter
           language="html"
           style={dracula}
@@ -248,10 +248,66 @@ export default class Chapter2 extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body5}</Text>
+        <Text
+          style={{
+            marginTop: 0,
+            textAlign: "center",
+            fontSize: 15,
+            marginBottom: 30
+          }}
+        >
+          ✧
+        </Text>
+        <View
+          style={{
+            backgroundColor: "#fff",
+            padding: 10,
+            borderRadius: 6
+          }}
+        >
+          <Text
+            style={{ fontFamily: "gelasio-med", fontSize: 18, marginBottom: 5 }}
+          >
+            Chapter Summary
+          </Text>
+          <Text>
+            HTML is the building block of building (visually displayed) things
+            for the web. Getting in touch with HTML provides an incredible
+            interface with the world of technology. By getting your, and your
+            child’s toes wet with some of these basic HTML concepts you’re
+            already putting both of you way ahead of the career curve.
+          </Text>
+          <Text
+            style={{ fontFamily: "gelasio-med", fontSize: 15, marginTop: 15 }}
+          >
+            Technical Lessons
+          </Text>
+          <Text style={{ marginTop: 6 }}>
+            • Exploring the HTML Tag structure
+          </Text>
+
+          <Text
+            style={{ fontFamily: "gelasio-med", fontSize: 15, marginTop: 15 }}
+          >
+            Career Lessons
+          </Text>
+          <Text style={{ marginTop: 6 }}>
+            • HTML can improve your career long term
+          </Text>
+        </View>
+
         <TouchableOpacity onPress={() => navigation.navigate("StoryProgress")}>
-          <Text>Finished reading?</Text>
+          <Text
+            style={{
+              color: "#DF8585",
+              fontWeight: "600",
+              marginBottom: 80,
+              marginTop: 40
+            }}
+          >
+            Finished reading.
+          </Text>
         </TouchableOpacity>
-        <Text style={GlobalStyles.chapterTitle}>✧</Text>
       </ScrollView>
     );
   }

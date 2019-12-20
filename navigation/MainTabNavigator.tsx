@@ -4,6 +4,7 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import StoryProgress from "../components/Story/StoryProgress__";
+import Excercises from "../components/Excercises__";
 import Prologue from "../components/Book/Prologue";
 import Chapter1 from "../components/Book/Chapter1";
 import Chapter2 from "../components/Book/Chapter2";
@@ -27,10 +28,20 @@ StoryStack.navigationOptions = ({ navigation }) => {
   };
 };
 
+const ExcerciseStack = createStackNavigator({
+  Excercises: Excercises
+});
+
+const ForumStack = createStackNavigator({
+  Forum: Excercises
+});
+
 export default createAppContainer(
   createBottomTabNavigator(
     {
-      Story: StoryStack
+      Story: StoryStack,
+      Profile: ExcerciseStack,
+      Forum: ForumStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({
@@ -39,6 +50,12 @@ export default createAppContainer(
           let iconName;
           if (routeName === "Story") {
             iconName = `ios-journal`;
+          }
+          if (routeName === "Profile") {
+            iconName = `ios-person`;
+          }
+          if (routeName === "Forum") {
+            iconName = "ios-chatboxes";
           }
           return <Ionicons name={iconName} size={25} color={tintColor} />;
         }

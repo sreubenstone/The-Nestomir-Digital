@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground } from "react-native";
+import { View, Text, ImageBackground, Image } from "react-native";
 import Logo from "../Logo";
 import ProgressMap from "./ProgressMap";
-import { ProgressStyles } from "../../Stylesheet";
+import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -40,6 +40,7 @@ export default class StoryProgress extends Component<IProps> {
             Learn Computer Science
             <Text style={{ fontStyle: "italic" }}> the right</Text> way.
           </Text>
+
           <ProgressMap navigation={navigation} />
         </View>
       </View>
