@@ -18,8 +18,8 @@ The cornfield next to Lemmingfield, the less up-kept part of Grapefield, was bri
 
 export default class Prologue extends Component<IProps> {
   static navigationOptions = {
-    headerTitle: "Prologue"
-    // header: null
+    // headerTitle: "Prologue"
+    header: null
   };
 
   render() {
@@ -31,7 +31,7 @@ export default class Prologue extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `http://byprithviraj.com/wp-content/uploads/2018/03/night_scene_illustration.jpg`
+              uri: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`
             }}
           />
         </View>

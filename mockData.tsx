@@ -2,7 +2,7 @@ const chapterProgress = [
   {
     chapter: "Prologue",
     caption: "Prologue to the legendary adventure.",
-    image: `http://byprithviraj.com/wp-content/uploads/2018/03/night_scene_illustration.jpg`,
+    image: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`,
     progress: 0,
     id: "Prologue"
   },
@@ -10,7 +10,7 @@ const chapterProgress = [
   {
     chapter: "Chapter 1",
     caption: "Meet Jake and his life in Grapefield.",
-    image: `https://i.pinimg.com/originals/cd/65/21/cd6521ef5e472b1798552fa114a95bd7.jpg`,
+    image: `https://library.kissclipart.com/20180831/bww/kissclipart-cartoon-high-school-hallway-clipart-cartoon-middle-9d475ddfa4b8008e.png`,
     progress: 0,
     id: "Chapter1"
   },
@@ -18,7 +18,7 @@ const chapterProgress = [
   {
     chapter: "Chapter 2",
     caption: "Jake meets someone special.",
-    image: `https://c4.wallpaperflare.com/wallpaper/169/48/973/dark-street-painting-wallpaper-preview.jpg`,
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
     progress: 1,
     id: "Chapter2"
   }

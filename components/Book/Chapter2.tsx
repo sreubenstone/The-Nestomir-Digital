@@ -192,7 +192,7 @@ export default class Chapter2 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://c4.wallpaperflare.com/wallpaper/169/48/973/dark-street-painting-wallpaper-preview.jpg`
+              uri: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`
             }}
           />
         </View>

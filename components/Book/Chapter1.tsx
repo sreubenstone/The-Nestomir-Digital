@@ -145,8 +145,8 @@ A low, but powerful grumble made the ground tremble. A thick scaled tail was sti
 
 export default class Chapter1 extends Component<IProps> {
   static navigationOptions = {
-    headerTitle: "Chapter 1"
-    // header: null
+    // headerTitle: "Chapter 1"
+    header: null
   };
 
   render() {
@@ -159,7 +159,7 @@ export default class Chapter1 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://i.pinimg.com/originals/cd/65/21/cd6521ef5e472b1798552fa114a95bd7.jpg`
+              uri: `https://library.kissclipart.com/20180831/bww/kissclipart-cartoon-high-school-hallway-clipart-cartoon-middle-9d475ddfa4b8008e.png`
             }}
           />
         </View>

@@ -9,20 +9,25 @@ Expo front end for the kids application.
 - **Jira Readout**
 - **Character Dialogue...Done through quotations per code segment**
 
-## Social Sphere
+# Onboarding Flow
 
-Bookmark
+## App Experience
 
-### What I've Got So Far
+_Have to see how it works for existing apps_
 
-- Child(s) and parent(s) are bound somehow in the data model
-- When each completes a segment && -- an sms is sent to both child and parent like "Let's discuss....."
-- Parent can mark the conversation as complete -- stats update....can time notification logic based on completion intervals across parties.
-- Community forum (chat, moderators, experts)
+### E Book
 
-# pricing
+Purchase book for parent and child however a regular book is purchased.
 
-10.99 for ebook 12.99 for app experience
+### Paper Book
+
+Purchase book for parent and child however a regular book is purchased.
+
+# Pricing
+
+- 9.99 for ebook
+- 15.99 for paper book
+- 19.99 for app experience
 
 # constraints
 

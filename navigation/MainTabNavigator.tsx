@@ -4,10 +4,11 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import StoryProgress from "../components/Story/StoryProgress__";
-import Excercises from "../components/Excercises__";
+import Profile from "../components/Profile__";
 import Prologue from "../components/Book/Prologue";
 import Chapter1 from "../components/Book/Chapter1";
 import Chapter2 from "../components/Book/Chapter2";
+import Chat from "../components/Chat__";
 
 const StoryStack = createStackNavigator({
   StoryProgress: StoryProgress,
@@ -19,7 +20,11 @@ const StoryStack = createStackNavigator({
 StoryStack.navigationOptions = ({ navigation }) => {
   let tabBarVisible;
   let routeName = navigation.state.routes[navigation.state.index].routeName;
-  if (routeName == "Prologue" || routeName == "Chapter2") {
+  if (
+    routeName == "Prologue" ||
+    routeName == "Chapter1" ||
+    routeName === "Chapter2"
+  ) {
     tabBarVisible = false;
   }
   return {
@@ -28,20 +33,20 @@ StoryStack.navigationOptions = ({ navigation }) => {
   };
 };
 
-const ExcerciseStack = createStackNavigator({
-  Excercises: Excercises
+const ProfileStack = createStackNavigator({
+  Profile: Profile
 });
 
-const ForumStack = createStackNavigator({
-  Forum: Excercises
+const ChatStack = createStackNavigator({
+  Forum: Chat
 });
 
 export default createAppContainer(
   createBottomTabNavigator(
     {
       Story: StoryStack,
-      Profile: ExcerciseStack,
-      Forum: ForumStack
+      Profile: ProfileStack,
+      Forum: ChatStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({
