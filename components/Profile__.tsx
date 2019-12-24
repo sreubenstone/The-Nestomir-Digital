@@ -109,7 +109,7 @@ export default class Profile extends Component<IProps> {
               <Text
                 style={{ textAlign: "center", fontSize: 11, fontWeight: "100" }}
               >
-                Career Discussions ✓
+                Forum Posts
               </Text>
             </View>
           </View>
@@ -126,7 +126,7 @@ export default class Profile extends Component<IProps> {
           <View
             style={{ flexDirection: "row", justifyContent: "space-between" }}
           >
-            <Text>A</Text>
+            <Text>Q</Text>
             <View style={{ backgroundColor: "#5EBA7D", borderRadius: 5 }}>
               <Text
                 style={{
@@ -142,6 +142,30 @@ export default class Profile extends Component<IProps> {
             </View>
             <Text style={{ color: "#0195FF" }}>Where is Draconia located?</Text>
             <Text style={{ color: "#6B737C" }}>Sep 22 '19</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              marginTop: 15
+            }}
+          >
+            <Text>A</Text>
+            <View style={{ backgroundColor: "#5EBA7D", borderRadius: 5 }}>
+              <Text
+                style={{
+                  fontSize: 12,
+                  color: "white",
+                  padding: 2,
+                  paddingLeft: 6,
+                  paddingRight: 6
+                }}
+              >
+                122
+              </Text>
+            </View>
+            <Text style={{ color: "#0195FF" }}>Dont think of HTML as pure</Text>
+            <Text style={{ color: "#6B737C" }}>Oct 29 '19</Text>
           </View>
         </View>
       </View>

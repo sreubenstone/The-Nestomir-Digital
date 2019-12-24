@@ -42,6 +42,21 @@ export default class StoryProgress extends Component<IProps> {
           </Text>
 
           <ProgressMap navigation={navigation} />
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "flex-end",
+              marginTop: 10
+            }}
+          >
+            <Image
+              source={require("../../assets/images/co.png")}
+              style={{
+                width: 25,
+                height: 25
+              }}
+            />
+          </View>
         </View>
       </View>
     );

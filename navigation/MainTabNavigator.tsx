@@ -8,7 +8,7 @@ import Profile from "../components/Profile__";
 import Prologue from "../components/Book/Prologue";
 import Chapter1 from "../components/Book/Chapter1";
 import Chapter2 from "../components/Book/Chapter2";
-import Chat from "../components/Chat__";
+import Forum from "../components/Forum__";
 
 const StoryStack = createStackNavigator({
   StoryProgress: StoryProgress,
@@ -37,8 +37,8 @@ const ProfileStack = createStackNavigator({
   Profile: Profile
 });
 
-const ChatStack = createStackNavigator({
-  Forum: Chat
+const ForumStack = createStackNavigator({
+  Forum: Forum
 });
 
 export default createAppContainer(
@@ -46,7 +46,7 @@ export default createAppContainer(
     {
       Story: StoryStack,
       Profile: ProfileStack,
-      Forum: ChatStack
+      Forum: ForumStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({

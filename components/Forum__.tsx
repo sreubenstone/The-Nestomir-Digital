@@ -16,7 +16,7 @@ interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
-export default class Chat extends Component<IProps> {
+export default class Forum extends Component<IProps> {
   static navigationOptions = {
     header: null
     // headerTitle: () => <Logo />
@@ -46,6 +46,30 @@ export default class Chat extends Component<IProps> {
           >
             Forum
           </Text>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              marginTop: 30
+            }}
+          >
+            <Text>by sbart</Text>
+            <View style={{ backgroundColor: "#5EBA7D", borderRadius: 5 }}>
+              <Text
+                style={{
+                  fontSize: 12,
+                  color: "white",
+                  padding: 2,
+                  paddingLeft: 6,
+                  paddingRight: 6
+                }}
+              >
+                179
+              </Text>
+            </View>
+            <Text style={{ color: "#0195FF" }}>Where is Draconia located?</Text>
+            <Text style={{ color: "#6B737C" }}>3 min ago</Text>
+          </View>
         </View>
       </View>
     );
