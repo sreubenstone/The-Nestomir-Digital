@@ -1,5 +1,12 @@
-State stores scroll position. 
+scroll defaults to book marked position
 
-On Press stores this value (persists)
 
-Another action brings the user down to that position. (like onload of the chapter)
+im forgetting other apps store multiple bookmarks. need to think about the spec again.
+
+--- you HAVE to return to book mark position to unbookmark!! that's it.
+
+
+--- performance and refactor next ---
+
+...rerendering
+...scroll event (or set state???????????) really only needs to fire every few inches.
