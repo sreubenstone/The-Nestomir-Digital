@@ -1,22 +1,6 @@
 import React, { Component } from "react";
-import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
+import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
-import {
-  NavigationParams,
-  NavigationScreenProp,
-  NavigationState
-} from "react-navigation";
-
-interface IState {
-  bookmark: number;
-  screenPos: number;
-  overLay: boolean;
-  scrolling: boolean;
-}
-
-interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-}
 
 const body1 = `It was a star filled night in Grapefield, Wisconsin. The sky looked a bit like a purple dome to an observer staring at the heavens above. The mixture of the night’s moist air and the light from the town-center gave a periwinkle appearance to everything on the ground. 
 
@@ -27,116 +11,29 @@ const testBody = `Contrary to popular belief, Lorem Ipsum is not simply random t
 
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`;
 
-export default class Prologue extends Component<IProps, IState> {
+export default class Prologue extends Component {
   static navigationOptions = {
     header: null
   };
 
-  state = {
-    bookmark: null,
-    screenPos: null,
-    overLay: false,
-    scrolling: false
-  };
-
-  setBookMark = diff => {
-    /*
-    Case 1 -- You have no bookmark set, so function should set scroll position to book mark
-    Case 2 -- You have a bookmark set, and you are scrolled within differential, so this should set bookmark to falsey value
-    Case 3 -- You have a bookmark set, and you are **not** scrolled within differential so this should set bookmark to current scroll position
-    */
-    const { bookmark, screenPos } = this.state;
-    if (bookmark && diff < 50) {
-      this.setState({ bookmark: 0 });
-      return;
-    }
-    if (bookmark) {
-      this.setState({ bookmark: screenPos });
-      return;
-    }
-    this.setState({ bookmark: screenPos });
-  };
-
-  setPos = e => {
-    this.setState({ screenPos: e.nativeEvent.contentOffset.y });
-  };
-
-  toggleOverLay = () => {
-    if (this.state.scrolling) {
-      return;
-    }
-    this.setState({ overLay: !this.state.overLay });
-  };
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
   render() {
-    const { bookmark, screenPos, overLay } = this.state;
-    const { navigation } = this.props;
-    const diff = Math.abs(screenPos - bookmark);
     return (
-      <View
-        // onTouchEnd={() => this.toggleOverLay()}
-        style={{ position: "relative" }}
-      >
-        <ScrollView
-          style={[GlobalStyles.container1]}
-          scrollEventThrottle={16}
-          onScroll={this.setPos}
-          onTouchEnd={() => this.toggleOverLay()}
-          onScrollBeginDrag={() => this.setState({ scrolling: true })}
-          onScrollEndDrag={() => this.setState({ scrolling: false })}
-        >
-          <Text style={GlobalStyles.chapterTitle}>Prologue</Text>
-          <View style={GlobalStyles.flexCenter}>
-            <Image
-              style={GlobalStyles.chapterImage}
-              source={{
-                uri: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`
-              }}
-            />
-          </View>
-          <Text style={BookStyles.bookFont}>{body1}</Text>
-          <Text style={BookStyles.bookFont}>{testBody}</Text>
-          <TouchableOpacity
-            onPress={() => navigation.navigate("StoryProgress")}
-          >
-            <Text>Finished reading?</Text>
-          </TouchableOpacity>
-          <Text style={GlobalStyles.chapterTitle}>✧</Text>
-        </ScrollView>
-        <View
-          style={{
-            position: "absolute",
-            width: "100%",
-            flexDirection: "row",
-            justifyContent: "flex-end",
-            display: overLay ? "flex" : "none",
-            backgroundColor: "#F5F3F3",
-            shadowOffset: { width: 0, height: 2 },
-            shadowColor: "black",
-            shadowOpacity: 0.5
-          }}
-        >
-          <TouchableOpacity onPress={() => this.setBookMark(diff)}>
-            <Image
-              source={
-                !bookmark
-                  ? // if no bookmark is set, show open icon.
-                    require("../../assets/images/bookmark.png")
-                  : diff < 50
-                  ? // Case A) -- You have a bookmark set, and  you are scrolled within the differential range (show bookmarkEDicon)
-                    require("../../assets/images/bookmarked.png")
-                  : // Case B) -- You have a bookmark set, and you are **not** ithin the differential range (show bookmark icon)
-                    require("../../assets/images/bookmark.png")
-              }
-              style={{
-                height: 50,
-                width: 25,
-                marginRight: 20,
-                marginTop: 40
-              }}
-            />
-          </TouchableOpacity>
+      <View>
+        <Text style={GlobalStyles.chapterTitle}>Prologue</Text>
+        <View style={GlobalStyles.flexCenter}>
+          <Image
+            style={GlobalStyles.chapterImage}
+            source={{
+              uri: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`
+            }}
+          />
         </View>
+        <Text style={BookStyles.bookFont}>{body1}</Text>
+        <Text style={BookStyles.bookFont}>{testBody}</Text>
       </View>
     );
   }

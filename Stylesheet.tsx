@@ -1,5 +1,24 @@
 import { StyleSheet } from "react-native";
 
+const ChapterLoaderStyles = StyleSheet.create({
+  overlaybox: {
+    position: "absolute",
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    backgroundColor: "#F5F3F3",
+    shadowOffset: { width: 0, height: 2 },
+    shadowColor: "black",
+    shadowOpacity: 0.5
+  },
+  image: {
+    height: 50,
+    width: 25,
+    marginRight: 20,
+    marginTop: 40
+  }
+});
+
 const BookStyles = StyleSheet.create({
   bookFont: {
     fontSize: 17,
@@ -153,4 +172,10 @@ const GlobalStyles = StyleSheet.create({
   }
 });
 
-export { GlobalStyles, ProgressStyles, ProgressCardStyles, BookStyles };
+export {
+  GlobalStyles,
+  ProgressStyles,
+  ProgressCardStyles,
+  BookStyles,
+  ChapterLoaderStyles
+};

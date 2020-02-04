@@ -9,10 +9,11 @@ import Prologue from "../components/Book/Prologue";
 import Chapter1 from "../components/Book/Chapter1";
 import Chapter2 from "../components/Book/Chapter2";
 import Forum from "../components/Forum__";
+import ChapterLoader from "../components/Book/ChapterLoader__";
 
 const StoryStack = createStackNavigator({
   StoryProgress: StoryProgress,
-  Prologue: Prologue,
+  Prologue: ChapterLoader,
   Chapter1: Chapter1,
   Chapter2: Chapter2
 });
