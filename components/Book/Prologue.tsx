@@ -10,6 +10,8 @@ import {
 interface IState {
   bookmark: number;
   screenPos: number;
+  overLay: boolean;
+  scrolling: boolean;
 }
 
 interface IProps {
@@ -32,14 +34,24 @@ export default class Prologue extends Component<IProps, IState> {
 
   state = {
     bookmark: null,
-    screenPos: null
+    screenPos: null,
+    overLay: false,
+    scrolling: false
   };
 
-  setBookMark = () => {
-    const { bookmark } = this.state;
-    const { screenPos } = this.state;
-    if (bookmark) {
+  setBookMark = diff => {
+    /*
+    Case 1 -- You have no bookmark set, so function should set scroll position to book mark
+    Case 2 -- You have a bookmark set, and you are scrolled within differential, so this should set bookmark to falsey value
+    Case 3 -- You have a bookmark set, and you are **not** scrolled within differential so this should set bookmark to current scroll position
+    */
+    const { bookmark, screenPos } = this.state;
+    if (bookmark && diff < 50) {
       this.setState({ bookmark: 0 });
+      return;
+    }
+    if (bookmark) {
+      this.setState({ bookmark: screenPos });
       return;
     }
     this.setState({ bookmark: screenPos });
@@ -49,18 +61,29 @@ export default class Prologue extends Component<IProps, IState> {
     this.setState({ screenPos: e.nativeEvent.contentOffset.y });
   };
 
+  toggleOverLay = () => {
+    if (this.state.scrolling) {
+      return;
+    }
+    this.setState({ overLay: !this.state.overLay });
+  };
+
   render() {
-    const { bookmark, screenPos } = this.state;
+    const { bookmark, screenPos, overLay } = this.state;
     const { navigation } = this.props;
     const diff = Math.abs(screenPos - bookmark);
-    console.log("bookmark:", bookmark);
-    console.log("screenPos:", screenPos);
     return (
-      <View style={{ position: "relative" }}>
+      <View
+        // onTouchEnd={() => this.toggleOverLay()}
+        style={{ position: "relative" }}
+      >
         <ScrollView
           style={[GlobalStyles.container1]}
           scrollEventThrottle={16}
           onScroll={this.setPos}
+          onTouchEnd={() => this.toggleOverLay()}
+          onScrollBeginDrag={() => this.setState({ scrolling: true })}
+          onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
           <Text style={GlobalStyles.chapterTitle}>Prologue</Text>
           <View style={GlobalStyles.flexCenter}>
@@ -73,7 +96,6 @@ export default class Prologue extends Component<IProps, IState> {
           </View>
           <Text style={BookStyles.bookFont}>{body1}</Text>
           <Text style={BookStyles.bookFont}>{testBody}</Text>
-
           <TouchableOpacity
             onPress={() => navigation.navigate("StoryProgress")}
           >
@@ -86,24 +108,29 @@ export default class Prologue extends Component<IProps, IState> {
             position: "absolute",
             width: "100%",
             flexDirection: "row",
-            justifyContent: "flex-end"
+            justifyContent: "flex-end",
+            display: overLay ? "flex" : "none",
+            backgroundColor: "#F5F3F3",
+            shadowOffset: { width: 0, height: 2 },
+            shadowColor: "black",
+            shadowOpacity: 0.5
           }}
         >
-          <TouchableOpacity onPress={() => this.setBookMark()}>
+          <TouchableOpacity onPress={() => this.setBookMark(diff)}>
             <Image
               source={
                 !bookmark
                   ? // if no bookmark is set, show open icon.
                     require("../../assets/images/bookmark.png")
                   : diff < 50
-                  ? require("../../assets/images/bookmarked.png")
-                  : null // bookmark === true
-                // Case A) -- you are not at the scroll diff (show)
-                // Case B) -- you are not scrolled (hide image entirely)
+                  ? // Case A) -- You have a bookmark set, and  you are scrolled within the differential range (show bookmarkEDicon)
+                    require("../../assets/images/bookmarked.png")
+                  : // Case B) -- You have a bookmark set, and you are **not** ithin the differential range (show bookmark icon)
+                    require("../../assets/images/bookmark.png")
               }
               style={{
-                height: 70,
-                width: 35,
+                height: 50,
+                width: 25,
                 marginRight: 20,
                 marginTop: 40
               }}
