@@ -31,19 +31,6 @@ export default class ChapterLoader extends Component<IProps, IState> {
     scrolling: false
   };
 
-  setBookMark = diff => {
-    const { bookmark, screenPos } = this.state;
-    if (bookmark && diff < 50) {
-      this.setState({ bookmark: 0 });
-      return;
-    }
-    if (bookmark) {
-      this.setState({ bookmark: screenPos });
-      return;
-    }
-    this.setState({ bookmark: screenPos });
-  };
-
   setPos = e => {
     this.setState({ screenPos: e.nativeEvent.contentOffset.y });
   };
@@ -55,6 +42,20 @@ export default class ChapterLoader extends Component<IProps, IState> {
     this.setState({ overLay: !this.state.overLay });
   };
 
+  setBookMark = () => {
+    const { bookmark, screenPos } = this.state;
+    const diff = Math.abs(screenPos - bookmark);
+    if (bookmark) {
+      if (diff < 50) {
+        this.setState({ bookmark: 0 });
+      } else {
+        this.setState({ bookmark: screenPos });
+      }
+    } else {
+      this.setState({ bookmark: screenPos });
+    }
+  };
+
   render() {
     const { bookmark, screenPos, overLay } = this.state;
     const { navigation } = this.props;
@@ -63,7 +64,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
       <View style={{ position: "relative" }}>
         <ScrollView
           style={[GlobalStyles.container1]}
-          scrollEventThrottle={16}
+          scrollEventThrottle={800}
           onScroll={this.setPos}
           onTouchEnd={() => this.toggleOverLay()}
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
@@ -77,7 +78,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
             { display: overLay ? "flex" : "none" }
           ]}
         >
-          <TouchableOpacity onPress={() => this.setBookMark(diff)}>
+          <TouchableOpacity onPress={() => this.setBookMark()}>
             <Image
               source={
                 !bookmark
