@@ -7,10 +7,6 @@ import {
   NavigationState
 } from "react-navigation";
 
-interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-}
-
 const body1 = `Rex dove into him quite hard. His cold nose pressing against Jake’s right eye socket. It caught Jake off guard -- as Jake was currently in a state of deep slumber -- in the middle of a dream concerning an argument he had in school the previous day. It was milliseconds before Jake realized what was happening. Rex, the family beast, as they called him, often came into Jake’s room on weekdays to wake him up. Jake’s mother often made bacon and eggs for him to get him satiated for a day of schooling. It was possible Rex was inspired by the bacon. This probably caused Rex to wake Jake up so the food got served faster.
 
 Jake spent a minute petting Rex. He specifically enjoyed getting right underneath Rex’s chin, digging his fingers in, not too forcefully, but just enough to put Rex in a temporary state of Euphoria. Jake then put on his clothing. He could smell the scent of bacon and eggs streaming into his room and it added a jolt of encouragement to Jake’s step as he got dressed. He put on a pair of shorts and his favorite Aquaman t-shirt. 
@@ -143,17 +139,19 @@ It became obvious that something odd was going on about thirty degrees to the ri
 A low, but powerful grumble made the ground tremble. A thick scaled tail was sticking out of the ground about two feet in front of where Jake entered this round pit. The tale was wiggling slowly. Then, a massive sandstorm erupted from the ground, at least that’s what it felt like. And then its head came up out of the sand. It’s dark red eyes turned towards Jake.
 `;
 
-export default class Chapter1 extends Component<IProps> {
+export default class Chapter1 extends Component {
   static navigationOptions = {
     // headerTitle: "Chapter 1"
     header: null
   };
 
-  render() {
-    const { navigation } = this.props;
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
+  render() {
     return (
-      <ScrollView style={GlobalStyles.container1}>
+      <View>
         <Text style={GlobalStyles.chapterTitle}>Chapter 1</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
@@ -164,11 +162,8 @@ export default class Chapter1 extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body1}</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("StoryProgress")}>
-          <Text>Finished reading?</Text>
-        </TouchableOpacity>
         <Text style={GlobalStyles.chapterTitle}>✧</Text>
-      </ScrollView>
+      </View>
     );
   }
 }

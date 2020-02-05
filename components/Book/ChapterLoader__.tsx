@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
+import { View, ScrollView, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, ChapterLoaderStyles } from "../../Stylesheet";
+import Prologue from "./Prologue";
+import Chapter1 from "./Chapter1";
+import Chapter2 from "./Chapter2";
 import {
   NavigationParams,
   NavigationScreenProp,
   NavigationState
 } from "react-navigation";
-import Prologue from "./Prologue";
 
 interface IState {
   bookmark: number;
@@ -57,20 +59,27 @@ export default class ChapterLoader extends Component<IProps, IState> {
   };
 
   render() {
-    const { bookmark, screenPos, overLay } = this.state;
     const { navigation } = this.props;
+    const chapter = navigation.getParam("chapter");
+    const { bookmark, screenPos, overLay } = this.state;
     const diff = Math.abs(screenPos - bookmark);
     return (
       <View style={{ position: "relative" }}>
         <ScrollView
           style={[GlobalStyles.container1]}
-          scrollEventThrottle={800}
+          scrollEventThrottle={100}
           onScroll={this.setPos}
           onTouchEnd={() => this.toggleOverLay()}
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
-          <Prologue />
+          {chapter === "Prologue" ? (
+            <Prologue />
+          ) : chapter === "Chapter1" ? (
+            <Chapter1 />
+          ) : (
+            <Chapter2 />
+          )}
         </ScrollView>
         <View
           style={[

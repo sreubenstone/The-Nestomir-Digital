@@ -21,6 +21,7 @@ export default class Prologue extends Component {
   }
 
   render() {
+    console.log("rendered prologue");
     return (
       <View>
         <Text style={GlobalStyles.chapterTitle}>Prologue</Text>

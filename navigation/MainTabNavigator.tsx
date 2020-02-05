@@ -13,19 +13,13 @@ import ChapterLoader from "../components/Book/ChapterLoader__";
 
 const StoryStack = createStackNavigator({
   StoryProgress: StoryProgress,
-  Prologue: ChapterLoader,
-  Chapter1: Chapter1,
-  Chapter2: Chapter2
+  ChapterLoader: ChapterLoader
 });
 
 StoryStack.navigationOptions = ({ navigation }) => {
   let tabBarVisible;
   let routeName = navigation.state.routes[navigation.state.index].routeName;
-  if (
-    routeName == "Prologue" ||
-    routeName == "Chapter1" ||
-    routeName === "Chapter2"
-  ) {
+  if (routeName == "ChapterLoader") {
     tabBarVisible = false;
   }
   return {

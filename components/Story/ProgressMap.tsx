@@ -19,7 +19,9 @@ const ProgressMap: FC<IProps> = props => {
       {chapterProgress.map((item, i) => {
         return (
           <TouchableOpacity
-            onPress={() => navigation.navigate(item.id)}
+            onPress={() =>
+              navigation.navigate("ChapterLoader", { chapter: item.id })
+            }
             key={i}
           >
             <View style={ProgressCardStyles.container}>

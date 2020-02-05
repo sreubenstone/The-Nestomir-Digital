@@ -10,10 +10,6 @@ import {
   NavigationState
 } from "react-navigation";
 
-interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-}
-
 const markup = `
 <html>
   <head>
@@ -176,15 +172,18 @@ A blueish beam emitted from the bottom of the Draconods’s underbelly. An orang
 Jake’s head jerked back as they were now on a 60 degree angle powering upward into the air. The wings of the creature were now beating in a powerful harmony, with no change in motion or rhythm. The screen on the Dragon had not changed, though the lighting seemed to have dimmed a bit. A slight misty rain began to hit them. They continued to zoom into the air, their altitude increasing, and Jake looked back to see the fading glimmer of the lights of Grapefield passing below them.
 `;
 
-export default class Chapter2 extends Component<IProps> {
+export default class Chapter2 extends Component {
   static navigationOptions = {
     // headerTitle: "Chapter 2"
     header: null
   };
 
-  render() {
-    const { navigation } = this.props;
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
+  render() {
+    console.log("rendered chapter2");
     return (
       <ScrollView style={GlobalStyles.container1}>
         <Text style={GlobalStyles.chapterTitle}>Chapter 2</Text>
@@ -295,19 +294,6 @@ export default class Chapter2 extends Component<IProps> {
             • HTML can improve your career long term
           </Text>
         </View>
-
-        <TouchableOpacity onPress={() => navigation.navigate("StoryProgress")}>
-          <Text
-            style={{
-              color: "#DF8585",
-              fontWeight: "600",
-              marginBottom: 80,
-              marginTop: 40
-            }}
-          >
-            Finished reading.
-          </Text>
-        </TouchableOpacity>
       </ScrollView>
     );
   }
