@@ -33,6 +33,12 @@ export default class ChapterLoader extends Component<IProps, IState> {
     scrolling: false
   };
 
+  chapters = {
+    Prologue: Prologue,
+    Chapter1: Chapter1,
+    Chapter2: Chapter2
+  };
+
   setPos = e => {
     this.setState({ screenPos: e.nativeEvent.contentOffset.y });
   };
@@ -63,6 +69,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
     const chapter = navigation.getParam("chapter");
     const { bookmark, screenPos, overLay } = this.state;
     const diff = Math.abs(screenPos - bookmark);
+    const CurrentChapter = this.chapters[chapter];
     return (
       <View style={{ position: "relative" }}>
         <ScrollView
@@ -73,13 +80,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
-          {chapter === "Prologue" ? (
-            <Prologue />
-          ) : chapter === "Chapter1" ? (
-            <Chapter1 />
-          ) : (
-            <Chapter2 />
-          )}
+          <CurrentChapter />
         </ScrollView>
         <View
           style={[
