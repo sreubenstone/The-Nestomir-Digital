@@ -103,8 +103,8 @@ const ProgressStyles = StyleSheet.create({
 const GlobalStyles = StyleSheet.create({
   container1: {
     paddingTop: 14,
-    paddingLeft: 15,
-    paddingRight: 15,
+    paddingLeft: 25,
+    paddingRight: 25,
     backgroundColor: "#F5F3F3",
     height: "100%"
   },

@@ -82,21 +82,36 @@ export default class ChapterLoader extends Component<IProps, IState> {
         >
           <CurrentChapter />
         </ScrollView>
-        <View
-          style={[
-            ChapterLoaderStyles.overlaybox,
-            { display: overLay ? "flex" : "none" }
-          ]}
-        >
+
+
+        <View style={[{
+          position: "absolute",
+          width: "100%",
+          flexDirection: "row",
+          justifyContent: 'flex-end',
+          marginTop: 200
+        }, { display: overLay ? "flex" : "flex" }]}>
+
+
+
+          <Image source={require("../../assets/images/forum.png")} style={{
+            height: 60,
+            width: 60,
+            marginRight: 20,
+            marginTop: 40
+          }} />
+
+
+
+        </View>
+
+
+
+        <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
           <TouchableOpacity onPress={() => this.setBookMark()}>
-            <Image
-              source={
-                !bookmark
-                  ? require("../../assets/images/bookmark.png")
-                  : diff < 50
-                  ? require("../../assets/images/bookmarked.png")
-                  : require("../../assets/images/bookmark.png")
-              }
+            <Image source={!bookmark ? require("../../assets/images/bookmark.png") : diff < 50
+              ? require("../../assets/images/bookmarked.png")
+              : require("../../assets/images/bookmark.png")}
               style={ChapterLoaderStyles.image}
             />
           </TouchableOpacity>

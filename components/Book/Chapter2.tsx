@@ -185,7 +185,7 @@ export default class Chapter2 extends Component {
   render() {
     console.log("rendered chapter2");
     return (
-      <ScrollView style={GlobalStyles.container1}>
+      <View>
         <Text style={GlobalStyles.chapterTitle}>Chapter 2</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
@@ -294,7 +294,7 @@ export default class Chapter2 extends Component {
             • HTML can improve your career long term
           </Text>
         </View>
-      </ScrollView>
+      </View>
     );
   }
 }
