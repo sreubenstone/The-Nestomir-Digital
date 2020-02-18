@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@types/react-modal": "^3.10.5",
     "@types/react-syntax-highlighter": "^11.0.3",
     "expo": "~36.0.0",
     "react": "~16.9.0",

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TouchableOpacity, Modal } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 
 const body1 = `It was a star filled night in Grapefield, Wisconsin. The sky looked a bit like a purple dome to an observer staring at the heavens above. The mixture of the night’s moist air and the light from the town-center gave a periwinkle appearance to everything on the ground. 
@@ -16,9 +16,17 @@ export default class Prologue extends Component {
     header: null
   };
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return false;
+  state = {
+    modal: false
   }
+
+  modal = () => {
+    this.setState({ modal: !this.state.modal })
+  }
+
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   return false;
+  // }
 
   render() {
     console.log("rendered prologue");
@@ -34,7 +42,50 @@ export default class Prologue extends Component {
           />
         </View>
         <Text style={BookStyles.bookFont}>{body1}</Text>
+        <TouchableOpacity onPress={() => this.modal()}>
+          <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+            <Image source={require("../../assets/images/forum.png")} style={{
+              height: 60,
+              width: 60,
+              marginRight: 0,
+              marginTop: 0,
+              marginBottom: 30
+            }} />
+          </View>
+        </TouchableOpacity>
         <Text style={BookStyles.bookFont}>{testBody}</Text>
+        <Modal
+          animationType="slide"
+          transparent
+          visible={this.state.modal}
+
+        >
+          <View style={{
+            flex: 1,
+            //backgroundColor: 'transparent',
+            backgroundColor: 'rgba(0,0,0,0.7)',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <View style={{
+              width: '90%',
+              height: '90%',
+              //height: 50,
+              borderColor: '#ccc',
+              borderWidth: 1,
+              borderStyle: 'solid',
+              backgroundColor: 'white',
+              elevation: 20,
+              padding: 10,
+              borderRadius: 4,
+            }}>
+              <Text>Checkpoint</Text>
+              <TouchableOpacity onPress={() => this.modal()}>
+                <Text>Close</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </Modal>
       </View>
     );
   }
