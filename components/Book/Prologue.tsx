@@ -70,7 +70,7 @@ export default class Prologue extends Component {
             <View style={{
               width: '90%',
               height: '90%',
-              //height: 50,
+              // height: 50,
               borderColor: '#ccc',
               borderWidth: 1,
               borderStyle: 'solid',
