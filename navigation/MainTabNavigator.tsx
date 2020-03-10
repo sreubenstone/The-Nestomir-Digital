@@ -3,7 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
-import StoryProgress from "../components/Story/StoryProgress__";
+import ProgressContainer from "../components/Progress/ProgressContainer";
 import Profile from "../components/Profile__";
 import Prologue from "../components/Book/Prologue";
 import Chapter1 from "../components/Book/Chapter1";
@@ -12,7 +12,7 @@ import Forum from "../components/Forum__";
 import ChapterLoader from "../components/Book/ChapterLoader__";
 
 const StoryStack = createStackNavigator({
-  StoryProgress: StoryProgress,
+  ProgressContainer: ProgressContainer,
   ChapterLoader: ChapterLoader
 });
 

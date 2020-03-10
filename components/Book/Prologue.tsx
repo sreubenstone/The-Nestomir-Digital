@@ -1,28 +1,26 @@
 import React, { Component } from "react";
-import { Text, View, Image, TouchableOpacity, Modal } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
+import { Prologue1, Prologue2, Prologue3, Prologue4 } from './storyassets';
+import styled from 'styled-components';
 
-const body1 = `It was a star filled night in Grapefield, Wisconsin. The sky looked a bit like a purple dome to an observer staring at the heavens above. The mixture of the night’s moist air and the light from the town-center gave a periwinkle appearance to everything on the ground. 
 
-The cornfield next to Lemmingfield, the less up-kept part of Grapefield, was bristling  as a cool breeze came in from the north-west. It would be considered chilly tonight to anyone who grew up in these parts. But there were no souls in this cornfield on this night in Grapefield, Wisconsin. If there were, they would have seen something like a reddish-white firework exploding a few miles above them. They would have seen a great big fiery white streak coming down at them fast, very fast...and then they would have heard a big BOOOM.
+interface IProps {
+  modal: (id: number) => void;
+}
+
+const Checkpoint = styled.Image`
+height: 50px; 
+width: 50px;
+align-self: center;
+margin-bottom: 20px;
 `;
 
-const testBody = `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`;
-
-export default class Prologue extends Component {
+export default class Prologue extends Component<IProps> {
   static navigationOptions = {
     header: null
   };
-
-  state = {
-    modal: false
-  }
-
-  modal = () => {
-    this.setState({ modal: !this.state.modal })
-  }
 
   // shouldComponentUpdate(nextProps, nextState) {
   //   return false;
@@ -30,6 +28,17 @@ export default class Prologue extends Component {
 
   render() {
     console.log("rendered prologue");
+    const NO_WIDTH_SPACE = '​';
+    const highlight = string => (
+      <Text onPress={(e) => this.props.modal(1)}>
+        {string.split(' ').map((word, i) => (
+          <Text key={i}>
+            <Text style={[BookStyles.bookFont, { backgroundColor: '#97FFFC' }]}>{word} </Text>
+            {NO_WIDTH_SPACE}
+          </Text>
+        ))}
+      </Text>);
+
     return (
       <View>
         <Text style={GlobalStyles.chapterTitle}>Prologue</Text>
@@ -41,51 +50,13 @@ export default class Prologue extends Component {
             }}
           />
         </View>
-        <Text style={BookStyles.bookFont}>{body1}</Text>
-        <TouchableOpacity onPress={() => this.modal()}>
-          <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-            <Image source={require("../../assets/images/forum.png")} style={{
-              height: 60,
-              width: 60,
-              marginRight: 0,
-              marginTop: 0,
-              marginBottom: 30
-            }} />
-          </View>
+        <Text style={BookStyles.bookFont}></Text>
+        <Text style={BookStyles.bookFont}>{Prologue1} {Prologue2}{Prologue3}</Text>
+        {/* <Text style={BookStyles.bookFont}>{Prologue1} {highlight(Prologue2)}{Prologue3}</Text> */}
+        <TouchableOpacity onPress={(e) => this.props.modal(1)}>
+          <Checkpoint source={require("../../assets/images/checkpoint.png")} />
         </TouchableOpacity>
-        <Text style={BookStyles.bookFont}>{testBody}</Text>
-        <Modal
-          animationType="slide"
-          transparent
-          visible={this.state.modal}
-
-        >
-          <View style={{
-            flex: 1,
-            //backgroundColor: 'transparent',
-            backgroundColor: 'rgba(0,0,0,0.7)',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-            <View style={{
-              width: '90%',
-              height: '90%',
-              // height: 50,
-              borderColor: '#ccc',
-              borderWidth: 1,
-              borderStyle: 'solid',
-              backgroundColor: 'white',
-              elevation: 20,
-              padding: 10,
-              borderRadius: 4,
-            }}>
-              <Text>Checkpoint</Text>
-              <TouchableOpacity onPress={() => this.modal()}>
-                <Text>Close</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </Modal>
+        <Text style={BookStyles.bookFont}>{Prologue4}</Text>
       </View>
     );
   }

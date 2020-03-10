@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { View, ScrollView, Image, TouchableOpacity } from "react-native";
+import { View, ScrollView, Image, TouchableOpacity, Modal } from "react-native";
 import { GlobalStyles, ChapterLoaderStyles } from "../../Stylesheet";
+import ForumModal from './ForumModal';
 import Prologue from "./Prologue";
 import Chapter1 from "./Chapter1";
 import Chapter2 from "./Chapter2";
@@ -11,6 +12,8 @@ import {
 } from "react-navigation";
 
 interface IState {
+  id: number;
+  modal: boolean;
   bookmark: number;
   screenPos: number;
   overLay: boolean;
@@ -27,6 +30,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
   };
 
   state = {
+    modal: false,
+    id: null,
     bookmark: null,
     screenPos: null,
     overLay: false,
@@ -38,6 +43,10 @@ export default class ChapterLoader extends Component<IProps, IState> {
     Chapter1: Chapter1,
     Chapter2: Chapter2
   };
+
+  modal = (id: number): void => {
+    this.setState({ modal: !this.state.modal, id: id })
+  }
 
   setPos = e => {
     this.setState({ screenPos: e.nativeEvent.contentOffset.y });
@@ -66,8 +75,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
 
   render() {
     const { navigation } = this.props;
+    const { bookmark, screenPos, overLay, id, modal } = this.state;
     const chapter = navigation.getParam("chapter");
-    const { bookmark, screenPos, overLay } = this.state;
     const diff = Math.abs(screenPos - bookmark);
     const CurrentChapter = this.chapters[chapter];
     return (
@@ -76,11 +85,11 @@ export default class ChapterLoader extends Component<IProps, IState> {
           style={[GlobalStyles.container1]}
           scrollEventThrottle={100}
           onScroll={this.setPos}
-          onTouchEnd={() => this.toggleOverLay()}
+          onTouchEnd={(e) => this.toggleOverLay()}
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
-          <CurrentChapter />
+          <CurrentChapter modal={this.modal} />
         </ScrollView>
         <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
           <TouchableOpacity onPress={() => this.setBookMark()}>
@@ -91,6 +100,9 @@ export default class ChapterLoader extends Component<IProps, IState> {
             />
           </TouchableOpacity>
         </View>
+        <Modal animationType="slide" transparent visible={modal}>
+          <ForumModal modal={this.modal} id={id} />
+        </Modal>
       </View>
     );
   }
