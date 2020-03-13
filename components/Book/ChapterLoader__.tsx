@@ -85,7 +85,9 @@ export default class ChapterLoader extends Component<IProps, IState> {
           style={[GlobalStyles.container1]}
           scrollEventThrottle={100}
           onScroll={this.setPos}
-          onTouchEnd={(e) => this.toggleOverLay()}
+          onTouchEnd={(e) => {
+            this.toggleOverLay()
+          }}
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >

@@ -1,21 +1,12 @@
 import React, { Component } from "react";
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import { Prologue1, Prologue2, Prologue3, Prologue4 } from './storyassets';
-import styled from 'styled-components';
-
+import Checkpoint from './Checkpoint';
 
 interface IProps {
   modal: (id: number) => void;
 }
-
-const Checkpoint = styled.Image`
-height: 50px; 
-width: 50px;
-align-self: center;
-margin-bottom: 20px;
-`;
-
 
 export default class Prologue extends Component<IProps> {
   static navigationOptions = {
@@ -28,16 +19,6 @@ export default class Prologue extends Component<IProps> {
 
   render() {
     console.log("rendered prologue");
-    const NO_WIDTH_SPACE = '​';
-    const highlight = string => (
-      <Text onPress={(e) => this.props.modal(1)}>
-        {string.split(' ').map((word, i) => (
-          <Text key={i}>
-            <Text style={[BookStyles.bookFont, { backgroundColor: '#97FFFC' }]}>{word} </Text>
-            {NO_WIDTH_SPACE}
-          </Text>
-        ))}
-      </Text>);
 
     return (
       <View>
@@ -52,10 +33,7 @@ export default class Prologue extends Component<IProps> {
         </View>
         <Text style={BookStyles.bookFont}></Text>
         <Text style={BookStyles.bookFont}>{Prologue1} {Prologue2}{Prologue3}</Text>
-        {/* <Text style={BookStyles.bookFont}>{Prologue1} {highlight(Prologue2)}{Prologue3}</Text> */}
-        <TouchableOpacity onPress={(e) => this.props.modal(1)}>
-          <Checkpoint source={require("../../assets/images/checkpoint.png")} />
-        </TouchableOpacity>
+        <Checkpoint checkpoint_id={1} modal={this.props.modal} />
         <Text style={BookStyles.bookFont}>{Prologue4}</Text>
       </View>
     );
