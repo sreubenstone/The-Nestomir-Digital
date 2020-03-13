@@ -18,14 +18,17 @@ const Icon = styled.Image`
 const Checkpoint: FC<IProps> = (props) => {
     const [on, switchToggle] = useState(false);
     return (
-        <View onTouchEndCapture={(e) => {
-            e.stopPropagation();
-            props.modal(props.checkpoint_id)
-            switchToggle(!on)
-        }}
-            onTouchStart={() => switchToggle(!on)}
-        >
-            <Icon source={require("../../assets/images/checkpoint.png")} on={on} />
+        <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+            <View onTouchEndCapture={(e) => {
+                e.stopPropagation();
+                props.modal(props.checkpoint_id)
+                switchToggle(!on)
+            }}
+                onTouchStart={() => switchToggle(!on)}
+                style={{ width: '25%' }}
+            >
+                <Icon source={require("../../assets/images/checkpoint.png")} on={on} />
+            </View>
         </View>
     )
 }

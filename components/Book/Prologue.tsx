@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import { Prologue1, Prologue2, Prologue3, Prologue4 } from './storyassets';
-import Checkpoint from './Checkpoint';
+import Checkpoint from '../Forum/Checkpoint';
 
 interface IProps {
   modal: (id: number) => void;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, ScrollView, Image, TouchableOpacity, Modal } from "react-native";
 import { GlobalStyles, ChapterLoaderStyles } from "../../Stylesheet";
-import ForumModal from './ForumModal';
+import ForumModal from '../Forum/ForumModal';
 import Prologue from "./Prologue";
 import Chapter1 from "./Chapter1";
 import Chapter2 from "./Chapter2";
