@@ -1,4 +1,6 @@
 import React, { FC, useState } from "react";
+import { View } from "react-native";
+
 import ForumCard from './ForumCard';
 import styled from 'styled-components';
 
@@ -10,6 +12,7 @@ interface IProps {
 const Center = styled.View`
 	flex-direction: row;
     justify-content: center;
+    margin-top: 20px;
 `;
 
 
@@ -17,9 +20,11 @@ const Center = styled.View`
 const ForumMap: FC<IProps> = (props) => {
     return (
         <Center>
-            {props.data.map((item, i) => {
-                return <ForumCard data={item} key={i} />
-            })}
+            <View style={{ width: '97%' }}>
+                {props.data.map((item, i) => {
+                    return <ForumCard data={item} key={i} />
+                })}
+            </View>
         </Center>
     )
 }

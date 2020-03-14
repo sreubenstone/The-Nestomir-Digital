@@ -20,7 +20,7 @@ StoryStack.navigationOptions = ({ navigation }) => {
   let tabBarVisible;
   let routeName = navigation.state.routes[navigation.state.index].routeName;
   if (routeName == "ChapterLoader") {
-    tabBarVisible = false;
+    tabBarVisible = true;
   }
   return {
     tabBarLabel: "Story",
@@ -41,7 +41,7 @@ export default createAppContainer(
     {
       Story: StoryStack,
       Profile: ProfileStack,
-      Forum: ForumStack
+      // Forum: ForumStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({

@@ -9,12 +9,13 @@ interface IProps {
 const Card = styled.View`
     background-color: #fff;
     height: 120px;
-    width: 97%;
+    /* width: 97%; */
     border-radius: 13px;
     border-width: .5px;
     border-color: #E9FCFB;
     padding: 10px;
     box-shadow: 5px 5px #0066ff;
+    margin-bottom: 30px;
 `;
 
 const Container = styled.View`

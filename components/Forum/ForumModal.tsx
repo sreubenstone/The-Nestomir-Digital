@@ -40,6 +40,7 @@ const ForumTitle = styled.Text`
 
 const fakeData = [
     { title: 'The Truth About The Dom', first_name: 'Ali', last_name: 'Reubenstone', replies: '44', avatar: 'https://miro.medium.com/max/3150/1*Umap0mwgh8y0eVQnZ9xTXg.jpeg' },
+    { title: 'Where is Grapefield?', first_name: 'Steven', last_name: 'Cantor', replies: '2', avatar: 'https://image.freepik.com/free-photo/creative-french-no-man-guy_1194-8063.jpg' },
 
 ]
 
@@ -59,8 +60,24 @@ export default class ForumModal extends Component<IProps> {
                             </View>
                         </View>
                     </View>
-                    <Text style={{ fontWeight: '300', marginTop: 3, textAlign: 'center' }}>POST THREAD</Text>
-                    <Text style={{ marginBottom: 5, textAlign: 'center' }}>Story | Tech | Career </Text>
+
+                    <View style={{ backgroundColor: '#fff', flexDirection: 'row', justifyContent: 'center', paddingTop: 10, paddingBottom: 10 }}>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View style={{ width: 80, marginRight: 12, backgroundColor: '#4057FD', alignSelf: 'auto', borderRadius: 18, padding: 8, paddingLeft: 12, paddingRight: 12 }}>
+                                <Text style={{ color: 'white', fontFamily: "gelasio", textAlign: 'center' }}>Story</Text>
+                            </View>
+                            <View style={{ width: 80, marginRight: 12, borderColor: '#DED3D3', borderWidth: .5, backgroundColor: '#fff', alignSelf: 'auto', borderRadius: 18, padding: 8, paddingLeft: 12, paddingRight: 12 }}>
+                                <Text style={{ color: 'grey', fontFamily: "gelasio", textAlign: 'center' }}>Tech</Text>
+                            </View>
+                            <View style={{ width: 80, marginRight: 12, borderColor: '#DED3D3', borderWidth: .5, backgroundColor: '#fff', alignSelf: 'auto', borderRadius: 18, padding: 8, paddingLeft: 12, paddingRight: 12 }}>
+                                <Text style={{ color: 'grey', fontFamily: "gelasio", textAlign: 'center' }}>Career</Text>
+                            </View>
+                        </View>
+                    </View>
+
+                    <Text style={{ marginTop: 20, fontFamily: "gelasio", textAlign: 'center' }}> Conversations</Text>
+
+
                     <ForumMap data={fakeData} />
                     <TouchableOpacity onPress={() => modal()}>
                         <Text style={{ marginTop: 900 }}>[x]</Text>
