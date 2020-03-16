@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import * as Font from "expo-font";
 import Navigator from "./navigation/MainTabNavigator";
-
+import Login from "./components/Login/Login";
 export default class App extends Component<{}> {
   state = {
-    fontLoaded: false
+    fontLoaded: false,
+    auth: false
   };
 
   async componentDidMount() {
@@ -17,7 +18,7 @@ export default class App extends Component<{}> {
   }
 
   render() {
-    const { fontLoaded } = this.state;
-    return fontLoaded ? <Navigator /> : null;
+    const { fontLoaded, auth } = this.state;
+    return fontLoaded ? auth ? <Navigator /> : <Login /> : null;
   }
 }
