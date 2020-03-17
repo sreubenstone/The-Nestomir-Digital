@@ -6,6 +6,7 @@ import { ProgressStyles } from "../../Stylesheet";
 interface IProps {
   toggle: any;
 }
+
 const Title = styled.Text`
   color: grey;
   font-weight: 700;
@@ -25,7 +26,7 @@ const Insert = styled.TextInput`
   margin-bottom: 20px;
 `;
 
-const Login: FC<IProps> = props => {
+const Signup: FC<IProps> = props => {
   return (
     <View style={{ height: "100%" }}>
       <View style={{ height: "21%" }}>
@@ -35,8 +36,12 @@ const Login: FC<IProps> = props => {
         />
       </View>
       <View style={ProgressStyles.container}>
-        <Text style={ProgressStyles.title}>Log in</Text>
+        <Text style={ProgressStyles.title}>Sign up</Text>
         <Text style={ProgressStyles.subTitle}>Welcome to the Adventure</Text>
+        <Title>FIRST NAME</Title>
+        <Insert />
+        <Title>LAST NAME</Title>
+        <Insert />
         <Title>EMAIL</Title>
         <Insert />
         <Title>PASSWORD</Title>
@@ -51,13 +56,16 @@ const Login: FC<IProps> = props => {
               paddingBottom: 8
             }}
           >
-            LOG IN
+            SIGN UP
           </Text>
         </Button>
         <Text style={{ textAlign: "center", marginTop: 9 }}>
-          Don't have an account?{" "}
-          <Text style={{ color: "#8367AF" }} onPress={() => props.toggle(true)}>
-            Sign up{" "}
+          Already have an account?{" "}
+          <Text
+            style={{ color: "#8367AF" }}
+            onPress={() => props.toggle(false)}
+          >
+            Log in.
           </Text>
         </Text>
       </View>
@@ -65,4 +73,4 @@ const Login: FC<IProps> = props => {
   );
 };
 
-export default Login;
+export default Signup;

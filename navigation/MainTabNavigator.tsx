@@ -5,9 +5,6 @@ import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import ProgressContainer from "../components/Progress/ProgressContainer";
 import Profile from "../components/Profile__";
-import Prologue from "../components/Book/Prologue";
-import Chapter1 from "../components/Book/Chapter1";
-import Chapter2 from "../components/Book/Chapter2";
 import Forum from "../components/Forum__";
 import ChapterLoader from "../components/Book/ChapterLoader__";
 
@@ -40,8 +37,9 @@ export default createAppContainer(
   createBottomTabNavigator(
     {
       Story: StoryStack,
-      Profile: ProfileStack,
-      // Forum: ForumStack
+      Forum: ForumStack,
+      Notifs: ForumStack,
+      Profile: ProfileStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({
@@ -53,6 +51,9 @@ export default createAppContainer(
           }
           if (routeName === "Profile") {
             iconName = `ios-person`;
+          }
+          if (routeName === "Notifs") {
+            iconName = `ios-notifications`;
           }
           if (routeName === "Forum") {
             iconName = "ios-chatboxes";
