@@ -56,8 +56,8 @@ export default class Signup extends Component<IProps> {
 
       const server = await response.json();
       if (server.status === "success") {
-        const token = server.token;
-        // const result = await SecureStore.setItemAsync("fbToken", token);
+        const jwt_from_server = server.token;
+        const result = await SecureStore.setItemAsync("jwt", jwt_from_server);
         // refetch();
       } else {
         this.setState({ error: server.error });
