@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React, { FC, useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SecureStore from "expo-secure-store";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
-import Navigator from "./navigation/MainTabNavigator";
-import SignUpContainer from "./components/Login/Container";
-import { GET_AUTH } from "./queries";
-import { useQuery } from "@apollo/react-hooks";
+import Entry from "./Entry";
+import Env from "./config";
 
 const client = new ApolloClient({
-  uri: "https://1abf00bc.ngrok.io",
+  uri: `${Env.server}/graphql`,
   request: async operation => {
     const token = await SecureStore.getItemAsync("jwt");
     operation.setContext({
@@ -20,31 +18,25 @@ const client = new ApolloClient({
   }
 });
 
-export default class App extends Component<{}> {
-  state = {
-    fontLoaded: false,
-    auth: true
-  };
+const App: FC = () => {
+  const [fontLoaded, font] = useState(false);
+  useEffect(() => {
+    const fontLoad = async () => {
+      await Font.loadAsync({
+        "gelasio-bold": require("./assets/fonts/Gelasio-Bold.ttf"),
+        "gelasio-med": require("./assets/fonts/Gelasio-Medium.ttf"),
+        gelasio: require("./assets/fonts/Gelasio-Regular.ttf")
+      });
+      font(true);
+    };
+    fontLoad();
+  });
 
-  async componentDidMount() {
-    await Font.loadAsync({
-      "gelasio-bold": require("./assets/fonts/Gelasio-Bold.ttf"),
-      "gelasio-med": require("./assets/fonts/Gelasio-Medium.ttf"),
-      gelasio: require("./assets/fonts/Gelasio-Regular.ttf")
-    });
-    this.setState({ fontLoaded: true });
-  }
+  return fontLoaded ? (
+    <ApolloProvider client={client}>
+      <Entry />
+    </ApolloProvider>
+  ) : null;
+};
 
-  render() {
-    const { fontLoaded, auth } = this.state;
-    return fontLoaded ? (
-      auth ? (
-        <ApolloProvider client={client}>
-          <Navigator />
-        </ApolloProvider>
-      ) : (
-        <SignUpContainer />
-      )
-    ) : null;
-  }
-}
+export default App;

@@ -3,7 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
-import ProgressContainer from "../components/Progress/ProgressContainer";
+import ProgressContainer from "../components/Progress/ProgressContainer__";
 import Profile from "../components/Profile__";
 import Forum from "../components/Forum__";
 import ChapterLoader from "../components/Book/ChapterLoader__";
