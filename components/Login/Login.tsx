@@ -1,7 +1,9 @@
-import React, { FC, useState } from "react";
+import React, { Component } from "react";
 import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
+import * as SecureStore from "expo-secure-store";
 import styled from "styled-components";
 import { ProgressStyles } from "../../Stylesheet";
+import Env from "./../../config";
 
 interface IProps {
   toggle: any;
@@ -10,6 +12,13 @@ const Title = styled.Text`
   color: grey;
   font-weight: 700;
   font-size: 10px;
+`;
+
+const ErrorText = styled.Text`
+  color: red;
+  font-weight: 300;
+  font-size: 10px;
+  text-align: center;
 `;
 
 const Button = styled.View`
@@ -25,44 +34,113 @@ const Insert = styled.TextInput`
   margin-bottom: 20px;
 `;
 
-const Login: FC<IProps> = props => {
-  return (
-    <View style={{ height: "100%" }}>
-      <View style={{ height: "21%" }}>
-        <ImageBackground
-          source={require("../../assets/images/dragon.png")}
-          style={{ width: "100%", height: "100%" }}
-        />
-      </View>
-      <View style={ProgressStyles.container}>
-        <Text style={ProgressStyles.title}>Log in</Text>
-        <Text style={ProgressStyles.subTitle}>Welcome to the Adventure</Text>
-        <Title>EMAIL</Title>
-        <Insert />
-        <Title>PASSWORD</Title>
-        <Insert />
-        <Button>
-          <Text
-            style={{
-              color: "white",
-              textAlign: "center",
-              fontWeight: "bold",
-              paddingTop: 8,
-              paddingBottom: 8
+export default class Login extends Component<IProps> {
+  state = {
+    email: "",
+    pw: "",
+    error: null
+  };
+
+  logIn = async () => {
+    const url = `${Env.server}/login`;
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify(this.state),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      const server = await response.json();
+      if (server.status === "success") {
+        const jwt_from_server = server.token;
+        console.log(jwt_from_server);
+        const result = await SecureStore.setItemAsync("jwt", jwt_from_server);
+        // refetch();
+      } else {
+        this.setState({ error: server.error });
+      }
+    } catch (error) {
+      console.error("Error here:", error);
+    }
+  };
+
+  validateEmail = email => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  render() {
+    const { email, pw, error } = this.state;
+
+    return (
+      <View style={{ height: "100%" }}>
+        <View style={{ height: "21%" }}>
+          <ImageBackground
+            source={require("../../assets/images/dragon.png")}
+            style={{ width: "100%", height: "100%" }}
+          />
+        </View>
+        <View style={ProgressStyles.container}>
+          <Text style={ProgressStyles.title}>Log in</Text>
+          <Text style={ProgressStyles.subTitle}>
+            Dive back into the adventure.
+          </Text>
+          <Title>EMAIL</Title>
+          <Insert
+            onChangeText={text => this.setState({ email: text })}
+            value={email}
+            autoCapitalize="none"
+          />
+          <Title>PASSWORD</Title>
+          <Insert
+            onChangeText={text => this.setState({ pw: text })}
+            value={pw}
+            autoCapitalize="none"
+          />
+          <TouchableOpacity
+            onPress={() => {
+              if (!email || !pw) {
+                this.setState({
+                  error: "Username, Email, or Password can not be blank!"
+                });
+                return;
+              }
+              if (!this.validateEmail(email)) {
+                this.setState({ error: "Invalid email format." });
+                return;
+              }
+              this.logIn();
             }}
           >
-            LOG IN
-          </Text>
-        </Button>
-        <Text style={{ textAlign: "center", marginTop: 9 }}>
-          Don't have an account?{" "}
-          <Text style={{ color: "#8367AF" }} onPress={() => props.toggle(true)}>
-            Sign up{" "}
-          </Text>
-        </Text>
-      </View>
-    </View>
-  );
-};
+            {error ? <ErrorText>{error}</ErrorText> : null}
 
-export default Login;
+            <Button>
+              <Text
+                style={{
+                  color: "white",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  paddingTop: 8,
+                  paddingBottom: 8
+                }}
+              >
+                LOG IN
+              </Text>
+            </Button>
+          </TouchableOpacity>
+          <Text style={{ textAlign: "center", marginTop: 9, fontSize: 10 }}>
+            Don't have an account?{" "}
+            <Text
+              style={{ color: "#8367AF" }}
+              onPress={() => this.props.toggle(true)}
+            >
+              Sign up{" "}
+            </Text>
+          </Text>
+        </View>
+      </View>
+    );
+  }
+}
