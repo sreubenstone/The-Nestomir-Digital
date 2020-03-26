@@ -7,6 +7,7 @@ import Env from "./../../config";
 
 interface IProps {
   toggle: any;
+  refetch: any;
 }
 
 const Title = styled.Text`
@@ -58,7 +59,7 @@ export default class Signup extends Component<IProps> {
       if (server.status === "success") {
         const jwt_from_server = server.token;
         const result = await SecureStore.setItemAsync("jwt", jwt_from_server);
-        // refetch();
+        this.props.refetch();
       } else {
         this.setState({ error: server.error });
       }

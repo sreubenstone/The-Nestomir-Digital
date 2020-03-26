@@ -2,12 +2,17 @@ import React, { FC, useState } from "react";
 import Signup from "./Signup";
 import Login from "./Login";
 
-const Container: FC = props => {
+interface IProps {
+  refetch: any;
+}
+
+const Container: FC<IProps> = props => {
+  const { refetch } = props;
   const [signup, signUpToggle] = useState(true);
   return signup ? (
-    <Signup toggle={signUpToggle} />
+    <Signup toggle={signUpToggle} refetch={refetch} />
   ) : (
-    <Login toggle={signUpToggle} />
+    <Login toggle={signUpToggle} refetch={refetch} />
   );
 };
 
