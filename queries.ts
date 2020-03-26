@@ -4,6 +4,7 @@ export const GET_AUTH = gql`
   query {
     getAuth {
       id
+      username
     }
   }
 `;

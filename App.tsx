@@ -10,9 +10,10 @@ const client = new ApolloClient({
   uri: `${Env.server}/graphql`,
   request: async operation => {
     const token = await SecureStore.getItemAsync("jwt");
+    console.log("jwt token here:", token);
     operation.setContext({
       headers: {
-        authorization: token ? `Bearer ${token}` : ""
+        authorization: token ? token : ""
       }
     });
   }
