@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import ProgressMap from "./ProgressMap";
 import { ProgressStyles } from "../../Stylesheet";
+import * as SecureStore from "expo-secure-store";
 import {
   NavigationParams,
   NavigationScreenProp,
   NavigationState
 } from "react-navigation";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
@@ -36,6 +38,9 @@ export default class ProgressContainer extends Component<IProps> {
             <Text style={{ fontStyle: "italic" }}> the right</Text> way.
           </Text>
           <ProgressMap navigation={navigation} />
+          <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>
+            <Text>clear store</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
