@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
-import { Prologue1, Prologue2, Prologue3, Prologue4 } from './storyassets';
-import Checkpoint from '../Forum/Checkpoint';
+import { Prologue1 } from "./Story_Assets/Prologue";
+import Checkpoint from "../Forum/Checkpoint";
 
 interface IProps {
   modal: (id: number) => void;
@@ -32,9 +32,9 @@ export default class Prologue extends Component<IProps> {
           />
         </View>
         <Text style={BookStyles.bookFont}></Text>
-        <Text style={BookStyles.bookFont}>{Prologue1} {Prologue2}{Prologue3}</Text>
-        <Checkpoint checkpoint_id={1} modal={this.props.modal} />
-        <Text style={BookStyles.bookFont}>{Prologue4}</Text>
+        <Text style={BookStyles.bookFont}>{Prologue1}</Text>
+        <Text style={GlobalStyles.chapterTitle}>✧</Text>
+        {/* <Checkpoint checkpoint_id={1} modal={this.props.modal} /> */}
       </View>
     );
   }
