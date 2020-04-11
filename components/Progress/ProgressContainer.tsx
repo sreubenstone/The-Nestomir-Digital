@@ -2,16 +2,15 @@ import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import ProgressMap from "./ProgressMap";
 import { ProgressStyles } from "../../Stylesheet";
-import * as SecureStore from "expo-secure-store";
 import {
   NavigationParams,
   NavigationScreenProp,
   NavigationState,
 } from "react-navigation";
-import { TouchableOpacity } from "react-native-gesture-handler";
 
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  data: any
 }
 
 export default class ProgressContainer extends Component<IProps> {
@@ -20,7 +19,8 @@ export default class ProgressContainer extends Component<IProps> {
   };
 
   render() {
-    const { navigation } = this.props;
+    const { navigation, data } = this.props;
+    console.log('data here:', data)
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
@@ -40,3 +40,6 @@ export default class ProgressContainer extends Component<IProps> {
     );
   }
 }
+
+
+

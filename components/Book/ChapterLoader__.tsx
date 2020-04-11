@@ -149,7 +149,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
 
         </ScrollView>
         <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
-          <TouchableOpacity onPress={() => navigation.navigate('ProgressContainer')}>
+          <TouchableOpacity onPress={() => navigation.navigate('ProgressEntry')}>
             <BackIcon source={require("../../assets/images/back.png")} />
           </TouchableOpacity>
           <Text style={{ marginTop: 62, fontFamily: 'gelasio-bold', marginLeft: 10 }}>The Nestomir, {chapter}</Text>

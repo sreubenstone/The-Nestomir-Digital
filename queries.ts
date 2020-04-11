@@ -8,3 +8,16 @@ export const GET_AUTH = gql`
     }
   }
 `;
+
+
+export const GET_STORY_PROGRESS = gql`
+  query {
+    getStoryProgress {
+      id
+      user_id
+      read_to
+      bookmark
+    }
+  }
+`;
+
