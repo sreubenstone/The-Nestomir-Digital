@@ -20,7 +20,6 @@ export default class ProgressContainer extends Component<IProps> {
 
   render() {
     const { navigation, data } = this.props;
-    console.log('data here:', data)
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
@@ -31,7 +30,7 @@ export default class ProgressContainer extends Component<IProps> {
           <Text style={ProgressStyles.subTitle}>Start The Epic Journey.
           <Text style={{ fontStyle: "italic" }}> Find Your Learning Force.</Text>
           </Text>
-          <ProgressMap navigation={navigation} />
+          <ProgressMap navigation={navigation} bookmark={data} />
           {/* <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>
             <Text style={{ fontSize: 9 }}>clear store</Text>
           </TouchableOpacity> */}

@@ -10,14 +10,13 @@ export const GET_AUTH = gql`
 `;
 
 
-export const GET_STORY_PROGRESS = gql`
+export const GET_BOOKMARK = gql`
   query {
-    getStoryProgress {
+    getBookmark {
       id
       user_id
-      read_to
-      bookmark
+      chapter
+      position
     }
   }
 `;
-
