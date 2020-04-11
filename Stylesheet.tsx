@@ -4,18 +4,19 @@ const ChapterLoaderStyles = StyleSheet.create({
   overlaybox: {
     position: "absolute",
     width: "100%",
+    height: 100,
     flexDirection: "row",
-    justifyContent: "flex-end",
+    justifyContent: "space-between",
     backgroundColor: "#F5F3F3",
     shadowOffset: { width: 0, height: 2 },
     shadowColor: "black",
     shadowOpacity: 0.5
   },
   image: {
-    height: 50,
+    height: 40,
     width: 25,
     marginRight: 20,
-    marginTop: 40
+    marginTop: 50
   }
 });
 

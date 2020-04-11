@@ -37,9 +37,9 @@ export default createAppContainer(
   createBottomTabNavigator(
     {
       Story: StoryStack,
-      Forum: ForumStack,
+      // Forum: ForumStack,
       Notifs: ForumStack,
-      Profile: ProfileStack
+      // Profile: ProfileStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({

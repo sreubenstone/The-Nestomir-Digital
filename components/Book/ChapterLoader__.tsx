@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {
   View,
+  Text,
   ScrollView,
   Image,
   TouchableOpacity,
@@ -119,21 +120,14 @@ export default class ChapterLoader extends Component<IProps, IState> {
         >
           {animationComplete ? <CurrentChapter modal={this.modal} /> : null}
         </ScrollView>
-        <View
-          style={[
-            ChapterLoaderStyles.overlaybox,
-            { display: overLay ? "flex" : "none" },
-          ]}
-        >
+        <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
+          <TouchableOpacity onPress={() => navigation.navigate('ProgressContainer')}>
+            <Image source={require("../../assets/images/back.png")} style={{ height: 25, width: 25, marginTop: 55, marginLeft: 10 }} />
+          </TouchableOpacity>
+          <Text style={{ marginTop: 62, fontFamily: 'gelasio-bold', marginLeft: 10 }}>The Ld'Shab Chronicles</Text>
           <TouchableOpacity onPress={() => this.setBookMark()}>
             <Image
-              source={
-                !bookmark
-                  ? require("../../assets/images/bookmark.png")
-                  : diff < 50
-                  ? require("../../assets/images/bookmarked.png")
-                  : require("../../assets/images/bookmark.png")
-              }
+              source={!bookmark ? require("../../assets/images/bookmark.png") : diff < 50 ? require("../../assets/images/bookmarked.png") : require("../../assets/images/bookmark.png")}
               style={ChapterLoaderStyles.image}
             />
           </TouchableOpacity>
