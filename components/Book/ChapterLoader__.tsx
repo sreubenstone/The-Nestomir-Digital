@@ -96,6 +96,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
   };
 
   setBookMark = () => {
+    // Permitting 0 screen position book mark so creates convolusion in this function should be rewritten
     const { bookmark, screenPos } = this.state;
     const diff = Math.abs(screenPos - bookmark);
     if (bookmark) {
@@ -105,8 +106,10 @@ export default class ChapterLoader extends Component<IProps, IState> {
         this.setState({ bookmark: screenPos });
       }
     } else {
-      console.log('here')
-      console.log(screenPos)
+      if (bookmark === 0) {
+        this.setState({ bookmark: null });
+        return
+      }
       this.setState({ bookmark: screenPos });
     }
   };
