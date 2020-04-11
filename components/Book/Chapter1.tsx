@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ChapterOne1 } from "./Story_Assets/Chapter1";
-
 import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import {
@@ -32,7 +31,6 @@ export default class Chapter1 extends Component {
           />
         </View>
         <Text style={BookStyles.bookFont}>{ChapterOne1}</Text>
-        <Text style={GlobalStyles.chapterTitle}>✧</Text>
       </View>
     );
   }

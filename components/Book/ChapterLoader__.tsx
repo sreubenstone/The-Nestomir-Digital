@@ -10,6 +10,8 @@ import {
 } from "react-native";
 import { GlobalStyles, ChapterLoaderStyles } from "../../Stylesheet";
 import ForumModal from "../Forum/ForumModal";
+import Checkpoint from "../Forum/Checkpoint";
+import styled from "styled-components";
 import Prologue from "./Prologue";
 import Chapter1 from "./Chapter1";
 import Chapter2 from "./Chapter2";
@@ -19,6 +21,20 @@ import {
   NavigationScreenProp,
   NavigationState,
 } from "react-navigation";
+
+const BackIcon = styled.Image`
+ height: 25px; 
+ width: 25px; 
+ margin-top: 55px; 
+ margin-left: 10px;
+`;
+
+const BreakIcon = styled.Text`
+text-align: center;
+ font-size: 18px;
+ margin-bottom: 30px;
+`
+
 
 interface IState {
   id: number;
@@ -43,7 +59,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
     modal: false,
     id: null,
     bookmark: null,
-    screenPos: null,
+    screenPos: 0,
     overLay: false,
     scrolling: false,
     animationComplete: false,
@@ -84,11 +100,13 @@ export default class ChapterLoader extends Component<IProps, IState> {
     const diff = Math.abs(screenPos - bookmark);
     if (bookmark) {
       if (diff < 50) {
-        this.setState({ bookmark: 0 });
+        this.setState({ bookmark: null });
       } else {
         this.setState({ bookmark: screenPos });
       }
     } else {
+      console.log('here')
+      console.log(screenPos)
       this.setState({ bookmark: screenPos });
     }
   };
@@ -118,16 +136,23 @@ export default class ChapterLoader extends Component<IProps, IState> {
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
-          {animationComplete ? <CurrentChapter modal={this.modal} /> : null}
+          {animationComplete ?
+            <View>
+              <CurrentChapter modal={this.modal} />
+              <BreakIcon>✧</BreakIcon>
+              <Checkpoint checkpoint_id={1} modal={this.modal} />
+            </View>
+            : null}
+
         </ScrollView>
         <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
           <TouchableOpacity onPress={() => navigation.navigate('ProgressContainer')}>
-            <Image source={require("../../assets/images/back.png")} style={{ height: 25, width: 25, marginTop: 55, marginLeft: 10 }} />
+            <BackIcon source={require("../../assets/images/back.png")} />
           </TouchableOpacity>
-          <Text style={{ marginTop: 62, fontFamily: 'gelasio-bold', marginLeft: 10 }}>The Ld'Shab Chronicles</Text>
+          <Text style={{ marginTop: 62, fontFamily: 'gelasio-bold', marginLeft: 10 }}>The Nestomir, {chapter}</Text>
           <TouchableOpacity onPress={() => this.setBookMark()}>
             <Image
-              source={!bookmark ? require("../../assets/images/bookmark.png") : diff < 50 ? require("../../assets/images/bookmarked.png") : require("../../assets/images/bookmark.png")}
+              source={bookmark === null ? require("../../assets/images/bookmark.png") : diff < 50 ? require("../../assets/images/bookmarked.png") : require("../../assets/images/bookmark.png")}
               style={ChapterLoaderStyles.image}
             />
           </TouchableOpacity>

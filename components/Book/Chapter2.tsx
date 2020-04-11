@@ -3,7 +3,6 @@ import { ChapterTwo1, ChapterTwo2 } from "./Story_Assets/Chapter2";
 import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import styled from "styled-components";
-import Checkpoint from "../Forum/Checkpoint";
 
 interface IProps {
   modal: (id: number) => void;
@@ -57,9 +56,7 @@ export default class Chapter2 extends Component<IProps> {
           <StoryGraphic source={require("./../../assets/images/faucet.png")} />
         </View>
         <Caption>(Sketch by Zenshi Hedoku)</Caption>
-        <Checkpoint checkpoint_id={1} modal={this.props.modal} />
         <Text style={BookStyles.bookFont}>{ChapterTwo2}</Text>
-        <Text style={GlobalStyles.chapterTitle}>✧</Text>
       </View>
     );
   }

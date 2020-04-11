@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import { Prologue1 } from "./Story_Assets/Prologue";
-import Checkpoint from "../Forum/Checkpoint";
 
 interface IProps {
   modal: (id: number) => void;
@@ -13,9 +12,9 @@ export default class Prologue extends Component<IProps> {
     header: null,
   };
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   return false;
-  // }
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
   render() {
     console.log("rendered prologue");
@@ -33,7 +32,6 @@ export default class Prologue extends Component<IProps> {
         </View>
         <Text style={BookStyles.bookFont}></Text>
         <Text style={BookStyles.bookFont}>{Prologue1}</Text>
-        <Text style={GlobalStyles.chapterTitle}>✧</Text>
       </View>
     );
   }

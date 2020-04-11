@@ -27,9 +27,9 @@ export default class ProgressContainer extends Component<IProps> {
           <ImageBackground source={require("../../assets/images/dragon.png")} style={{ width: "100%", height: "100%" }} />
         </View>
         <View style={ProgressStyles.container}>
-          <Text style={ProgressStyles.title}>The Ld'Shab Chronicles</Text>
-          <Text style={ProgressStyles.subTitle}>Begin The Epic Journey.
-          {/* <Text style={{ fontStyle: "italic" }}> the right</Text> way. */}
+          <Text style={ProgressStyles.title}>The Nestomir</Text>
+          <Text style={ProgressStyles.subTitle}>Start The Epic Journey.
+          <Text style={{ fontStyle: "italic" }}> Find Your Learning Force.</Text>
           </Text>
           <ProgressMap navigation={navigation} />
           {/* <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>

@@ -7,7 +7,6 @@ import {
 import { Text, View, ScrollView, Image, TouchableOpacity } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import styled from "styled-components";
-import Checkpoint from "../Forum/Checkpoint";
 
 interface IProps {
   modal: (id: number) => void;
@@ -68,7 +67,6 @@ export default class Chapter2 extends Component<IProps> {
           **should include NPN subtly)
         </Caption>
         <Text style={BookStyles.bookFont}>{ChapterThree3}</Text>
-        <Text style={GlobalStyles.chapterTitle}>✧</Text>
       </View>
     );
   }
