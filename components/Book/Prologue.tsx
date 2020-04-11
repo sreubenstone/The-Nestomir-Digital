@@ -10,7 +10,7 @@ interface IProps {
 
 export default class Prologue extends Component<IProps> {
   static navigationOptions = {
-    header: null
+    header: null,
   };
 
   // shouldComponentUpdate(nextProps, nextState) {
@@ -27,14 +27,13 @@ export default class Prologue extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`
+              uri: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`,
             }}
           />
         </View>
         <Text style={BookStyles.bookFont}></Text>
         <Text style={BookStyles.bookFont}>{Prologue1}</Text>
         <Text style={GlobalStyles.chapterTitle}>✧</Text>
-        {/* <Checkpoint checkpoint_id={1} modal={this.props.modal} /> */}
       </View>
     );
   }

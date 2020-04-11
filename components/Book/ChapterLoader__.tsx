@@ -1,14 +1,22 @@
 import React, { Component } from "react";
-import { View, ScrollView, Image, TouchableOpacity, Modal, InteractionManager } from "react-native";
+import {
+  View,
+  ScrollView,
+  Image,
+  TouchableOpacity,
+  Modal,
+  InteractionManager,
+} from "react-native";
 import { GlobalStyles, ChapterLoaderStyles } from "../../Stylesheet";
-import ForumModal from '../Forum/ForumModal';
+import ForumModal from "../Forum/ForumModal";
 import Prologue from "./Prologue";
 import Chapter1 from "./Chapter1";
 import Chapter2 from "./Chapter2";
+import Chapter3 from "./Chapter3";
 import {
   NavigationParams,
   NavigationScreenProp,
-  NavigationState
+  NavigationState,
 } from "react-navigation";
 
 interface IState {
@@ -27,7 +35,7 @@ interface IProps {
 
 export default class ChapterLoader extends Component<IProps, IState> {
   static navigationOptions = {
-    header: null
+    header: null,
   };
 
   state = {
@@ -43,7 +51,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
   chapters = {
     Prologue: Prologue,
     Chapter1: Chapter1,
-    Chapter2: Chapter2
+    Chapter2: Chapter2,
+    Chapter3: Chapter3,
   };
 
   componentDidMount() {
@@ -55,10 +64,10 @@ export default class ChapterLoader extends Component<IProps, IState> {
   }
 
   modal = (id: number): void => {
-    this.setState({ modal: !this.state.modal, id: id })
-  }
+    this.setState({ modal: !this.state.modal, id: id });
+  };
 
-  setPos = e => {
+  setPos = (e) => {
     this.setState({ screenPos: e.nativeEvent.contentOffset.y });
   };
 
@@ -85,7 +94,14 @@ export default class ChapterLoader extends Component<IProps, IState> {
 
   render() {
     const { navigation } = this.props;
-    const { bookmark, screenPos, overLay, id, modal, animationComplete } = this.state;
+    const {
+      bookmark,
+      screenPos,
+      overLay,
+      id,
+      modal,
+      animationComplete,
+    } = this.state;
     const chapter = navigation.getParam("chapter");
     const diff = Math.abs(screenPos - bookmark);
     const CurrentChapter = this.chapters[chapter];
@@ -96,18 +112,28 @@ export default class ChapterLoader extends Component<IProps, IState> {
           scrollEventThrottle={100}
           onScroll={this.setPos}
           onTouchEnd={(e) => {
-            this.toggleOverLay()
+            this.toggleOverLay();
           }}
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
           {animationComplete ? <CurrentChapter modal={this.modal} /> : null}
         </ScrollView>
-        <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
+        <View
+          style={[
+            ChapterLoaderStyles.overlaybox,
+            { display: overLay ? "flex" : "none" },
+          ]}
+        >
           <TouchableOpacity onPress={() => this.setBookMark()}>
-            <Image source={!bookmark ? require("../../assets/images/bookmark.png") : diff < 50
-              ? require("../../assets/images/bookmarked.png")
-              : require("../../assets/images/bookmark.png")}
+            <Image
+              source={
+                !bookmark
+                  ? require("../../assets/images/bookmark.png")
+                  : diff < 50
+                  ? require("../../assets/images/bookmarked.png")
+                  : require("../../assets/images/bookmark.png")
+              }
               style={ChapterLoaderStyles.image}
             />
           </TouchableOpacity>
