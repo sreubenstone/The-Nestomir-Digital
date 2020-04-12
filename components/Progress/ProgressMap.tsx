@@ -16,16 +16,28 @@ interface IProps {
 const ProgressMap: FC<IProps> = props => {
   const { navigation, bookmark } = props;
 
-  const upTo = bookmark.position
-  // 2 in list (chapter 3), thus chapter 4 is in progress -- do we worry about
-  // we need a new array, good time to
-  console.log(TOC)
+  function mod(num, pos) {
+    const newArray = TOC.map((item, index) => {
+      if (index === num) {
+        let new_entry = Object.assign({}, item);
+        new_entry.progress = "in_progress"
+        new_entry.bookmark = pos
+        return new_entry
+      }
+      return item
+    })
+    return newArray
+  }
+
+  const Prog = mod(bookmark.chapter, bookmark.position)
+
+
 
   return (
     <View>
-      {TOC.map((item, i) => {
+      {Prog.map((item, i) => {
         return (
-          <TouchableOpacity onPress={() => navigation.navigate("ChapterLoader", { chapter: item.id })} key={i}>
+          <TouchableOpacity onPress={() => navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark })} key={i}>
             <View style={ProgressCardStyles.container}>
               <View style={GlobalStyles.flexRow}>
                 <Image style={ProgressCardStyles.im} source={{ uri: item.image }} />

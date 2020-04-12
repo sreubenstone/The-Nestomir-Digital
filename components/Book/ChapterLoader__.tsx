@@ -58,7 +58,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
   state = {
     modal: false,
     id: null,
-    bookmark: null,
+    bookmark: this.props.navigation.getParam("bookmark"),
     screenPos: 0,
     overLay: false,
     scrolling: false,
@@ -79,6 +79,9 @@ export default class ChapterLoader extends Component<IProps, IState> {
       });
     });
   }
+
+
+
 
   modal = (id: number): void => {
     this.setState({ modal: !this.state.modal, id: id });
@@ -127,9 +130,15 @@ export default class ChapterLoader extends Component<IProps, IState> {
     const chapter = navigation.getParam("chapter");
     const diff = Math.abs(screenPos - bookmark);
     const CurrentChapter = this.chapters[chapter];
+
     return (
       <View style={{ position: "relative" }}>
         <ScrollView
+          // contentOffset={{ x: 0, y: bookmark }}
+          ref={ref => this.scrollView = ref}
+          onContentSizeChange={(contentWidth, contentHeight) => {
+            this.scrollView.scrollTo({ x: 0, y: bookmark })
+          }}
           style={[GlobalStyles.container1]}
           scrollEventThrottle={100}
           onScroll={this.setPos}

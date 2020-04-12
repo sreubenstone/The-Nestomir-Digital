@@ -2,11 +2,16 @@ import React, { FC, useState, useEffect } from "react";
 import * as Font from "expo-font";
 import * as SecureStore from "expo-secure-store";
 import ApolloClient from "apollo-boost";
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from "@apollo/react-hooks";
 import Entry from "./Entry";
 import Env from "./config";
 
+const cache = new InMemoryCache();
+
+
 const client = new ApolloClient({
+  cache,
   uri: `${Env.server}/graphql`,
   request: async operation => {
     const token = await SecureStore.getItemAsync("jwt");
@@ -16,6 +21,12 @@ const client = new ApolloClient({
       }
     });
   }
+});
+
+cache.writeData({
+  data: {
+    bookmarker: 909
+  },
 });
 
 const App: FC = () => {
