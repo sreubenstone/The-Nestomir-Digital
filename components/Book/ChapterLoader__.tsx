@@ -8,7 +8,8 @@ import {
   Modal,
   InteractionManager,
 } from "react-native";
-import { GlobalStyles, ChapterLoaderStyles } from "../../Stylesheet";
+import { GlobalStyles } from "../../Stylesheet";
+import BookPane from './BookPane';
 import ForumModal from "../Forum/ForumModal";
 import Checkpoint from "../Forum/Checkpoint";
 import styled from "styled-components";
@@ -22,12 +23,7 @@ import {
   NavigationState,
 } from "react-navigation";
 
-const BackIcon = styled.Image`
- height: 25px; 
- width: 25px; 
- margin-top: 55px; 
- margin-left: 10px;
-`;
+
 
 const BreakIcon = styled.Text`
 text-align: center;
@@ -81,8 +77,6 @@ export default class ChapterLoader extends Component<IProps, IState> {
   }
 
 
-
-
   modal = (id: number): void => {
     this.setState({ modal: !this.state.modal, id: id });
   };
@@ -128,6 +122,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
       animationComplete,
     } = this.state;
     const chapter = navigation.getParam("chapter");
+    const chapter_index = navigation.getParam("chapter_index");
     const diff = Math.abs(screenPos - bookmark);
     const CurrentChapter = this.chapters[chapter];
 
@@ -157,18 +152,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
             : null}
 
         </ScrollView>
-        <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
-          <TouchableOpacity onPress={() => navigation.navigate('ProgressEntry')}>
-            <BackIcon source={require("../../assets/images/back.png")} />
-          </TouchableOpacity>
-          <Text style={{ marginTop: 62, fontFamily: 'gelasio-bold', marginLeft: 10 }}>The Nestomir, {chapter}</Text>
-          <TouchableOpacity onPress={() => this.setBookMark()}>
-            <Image
-              source={bookmark === null ? require("../../assets/images/bookmark.png") : diff < 50 ? require("../../assets/images/bookmarked.png") : require("../../assets/images/bookmark.png")}
-              style={ChapterLoaderStyles.image}
-            />
-          </TouchableOpacity>
-        </View>
+        <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} />
         <Modal animationType="slide" transparent visible={modal}>
           <ForumModal modal={this.modal} id={id} />
         </Modal>

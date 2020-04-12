@@ -21,3 +21,13 @@ export const GET_BOOKMARK = gql`
   }
 `;
 
+
+export const UPDATE_BOOKMARK = gql`
+  mutation updateBookmark($chapter: Int, $position: Int) {
+    updateBookmark(chapter: $chapter, position: $position) {
+      id
+      chapter
+      position
+    }
+  }
+`;

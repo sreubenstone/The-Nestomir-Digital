@@ -32,9 +32,9 @@ export default class ProgressContainer extends Component<IProps> {
           <Text style={{ fontStyle: "italic" }}> Find Your Learning Force.</Text>
           </Text>
           <ProgressMap navigation={navigation} bookmark={data} />
-          <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>
+          {/* <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>
             <Text style={{ fontSize: 9 }}>clear store</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
     );

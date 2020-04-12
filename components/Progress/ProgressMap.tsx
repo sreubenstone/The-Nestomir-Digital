@@ -37,7 +37,7 @@ const ProgressMap: FC<IProps> = props => {
     <View>
       {Prog.map((item, i) => {
         return (
-          <TouchableOpacity onPress={() => navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark })} key={i}>
+          <TouchableOpacity onPress={() => navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark, chapter_index: i })} key={i}>
             <View style={ProgressCardStyles.container}>
               <View style={GlobalStyles.flexRow}>
                 <Image style={ProgressCardStyles.im} source={{ uri: item.image }} />
