@@ -1,10 +1,17 @@
 import React, { FC, useState } from "react";
 import { View, Text, Image } from "react-native";
 import styled from 'styled-components';
+import {
+    NavigationParams,
+    NavigationScreenProp,
+    NavigationState,
+} from "react-navigation";
+
 
 interface IProps {
     checkpoint_id: number;
     modal: (id: number) => void;
+    navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
 const Icon = styled.Image`
@@ -21,7 +28,9 @@ const Checkpoint: FC<IProps> = (props) => {
         <View style={{ flexDirection: 'row', justifyContent: 'center', marginBottom: 50 }}>
             <View onTouchEndCapture={(e) => {
                 e.stopPropagation();
-                props.modal(props.checkpoint_id)
+                // props.modal(props.checkpoint_id)
+                props.navigation.navigate('Thread')
+
                 switchToggle(!on)
             }}
                 onTouchStart={() => switchToggle(!on)}

@@ -147,7 +147,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
             <View>
               <CurrentChapter modal={this.modal} />
               <BreakIcon>✧</BreakIcon>
-              <Checkpoint checkpoint_id={1} modal={this.modal} />
+              <Checkpoint checkpoint_id={1} modal={this.modal} navigation={navigation} />
             </View>
             : null}
 
