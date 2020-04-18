@@ -67,7 +67,7 @@ const Checkpoint: FC<IProps> = (props) => {
                             179
               </Text>
                     </View> */}
-                    <Text style={{ color: "#0195FF", marginTop: 4 }}>How are transistors used?</Text>
+                    <Text style={{ color: "#0195FF", marginTop: 4 }}>When Computers Clicked</Text>
                     <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10 }}>3 min ago</Text>
                 </View>
 

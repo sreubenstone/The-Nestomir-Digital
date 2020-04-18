@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
-import Logo from "./Logo";
 import {
   ProgressStyles,
   GlobalStyles,
