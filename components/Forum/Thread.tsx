@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, Text, Image, TextInput, ImageBackground } from "react-native";
+import { View, Text, Image, ImageBackground, TouchableOpacity } from "react-native";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import styled from 'styled-components';
-
 
 const Container = styled.ScrollView`
     height: 100%;
@@ -17,11 +17,26 @@ const Container = styled.ScrollView`
     background-color: #FAFBFC; 
 `
 
+const ContainerStyle = {
+    height: '100%',
+    width: '100%',
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
+    zIndex: 10,
+    position: 'absolute',
+    top: '0%',
+    paddingTop: 6,
+    paddingLeft: 15,
+    paddingRight: 15,
+    backgroundColor: '#FAFBFC'
+}
+
+
 const Form = styled.TextInput`
     border-width: .5px;
     border-color: #D1D5DA;
     background-color: #FAFBFC;
-    height: 60px;
+    height: 70px;
     text-align: auto;
     border-radius: 5px;
     padding: 5px;
@@ -87,12 +102,17 @@ export default class Thread extends Component {
     render() {
         return (
             <View style={{ height: "100%" }}>
-                <View style={{ height: "21%", flexDirection: 'column', alignItems: 'center' }}>
+                <View style={{ height: "21%", flexDirection: 'column', alignItems: 'center', }}>
                     <ImageBackground source={require("../../assets/images/dragon.png")} style={{ width: "100%", height: "100%", flexDirection: 'row' }} >
                         <Text style={{ textAlign: 'center', fontFamily: 'gelasio', color: '#fff', }}>Forum</Text>
                     </ImageBackground>
                 </View>
-                <Container>
+
+                <KeyboardAwareScrollView
+                    style={ContainerStyle}
+                    resetScrollToCoords={null}
+                    scrollEnabled
+                >
                     <Test>
                         <View style={{ flexDirection: 'row' }}>
                             <Image source={require("../../assets/images/kid.png")} style={{ width: 50, height: 50, borderRadius: 20 }} />
@@ -122,7 +142,15 @@ export default class Thread extends Component {
                     <Line />
                     <Divider />
                     <Form placeholder="Leave a comment.." multiline />
-                </Container>
+                    <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
+                        <TouchableOpacity>
+                            <View style={{ backgroundColor: '#6382E9', padding: 5, borderRadius: 10, marginTop: 3 }}>
+                                <Text style={{ color: '#fff', fontSize: 11 }}>Submit</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{ marginTop: 20 }} />
+                </KeyboardAwareScrollView>
             </View>
         )
     }

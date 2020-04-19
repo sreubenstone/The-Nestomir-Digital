@@ -34,7 +34,7 @@ const Checkpoint: FC<IProps> = (props) => {
                 switchToggle(!on)
             }}
                 onTouchStart={() => switchToggle(!on)}
-                style={{ width: '100%', backgroundColor: '#fff', borderRadius: 10, marginBottom: 20, padding: 10 }}
+                style={{ width: '100%', backgroundColor: '#fff', borderRadius: 10, marginBottom: 20, padding: 10, borderWidth: 0.5, borderColor: '#D1D5DA' }}
             >
                 <Text style={{ fontWeight: '500', color: 'orange', marginBottom: 20, textAlign: 'center' }}>Buzzing Threads</Text>
                 <View
