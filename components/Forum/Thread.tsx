@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { View, Text, Image, ImageBackground, TouchableOpacity } from "react-native";
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import styled from 'styled-components';
+import Sound from './Sound';
 
 const Container = styled.ScrollView`
     height: 100%;
@@ -99,6 +100,10 @@ export default class Thread extends Component {
         }
     }
 
+
+
+
+
     render() {
         return (
             <View style={{ height: "100%" }}>
@@ -124,6 +129,7 @@ export default class Thread extends Component {
                     <CommentCard>
                         <Text style={{ fontSize: 20, fontFamily: 'gelasio', marginTop: 10 }}>When Computers Clicked</Text>
                         <Text style={{ fontFamily: 'gelasio', marginTop: 10, color: '#787D9C' }}>I was coding on my computer one day and I realized that I didn't really understand what was happening under the hood. A computer is an electronic machine that processes information—in other words, an information processor: it takes in raw information (or data) at one end, stores it until it's ready to work on it, chews and crunches it for a bit, then spits out the results at the other end. All these processes have a name. Taking in information is called input, storing information is better known as memory (or storage), chewing information is also known as processing, and spitting out results is called output.</Text>
+                        <Sound />
                         <Text style={{ fontFamily: 'gelasio', marginTop: 10, color: '#787D9C' }}>👍🏻</Text>
                     </CommentCard>
                     <Line />

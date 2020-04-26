@@ -13,6 +13,7 @@
     "@types/react-syntax-highlighter": "^11.0.3",
     "apollo-boost": "^0.4.7",
     "expo": "~36.0.0",
+    "expo-av": "~8.0.0",
     "expo-secure-store": "~8.0.0",
     "graphql": "^14.6.0",
     "react": "~16.9.0",

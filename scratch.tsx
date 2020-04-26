@@ -1,9 +1,3 @@
-import { TOC } from './TOC'
+// When track is complete, it should reset back to stopped state
 
-
-function mod(num) {
-    console.log(TOC)
-
-}
-
-mod(2)
+// Scrubber should update...when scrubbed it continues to play
