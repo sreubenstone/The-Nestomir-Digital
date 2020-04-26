@@ -26,15 +26,12 @@ import {
 
 
 const BreakIcon = styled.Text`
-text-align: center;
- font-size: 18px;
- margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
 `
 
-
 interface IState {
-  id: number;
-  modal: boolean;
   bookmark: number;
   screenPos: number;
   overLay: boolean;
@@ -52,8 +49,6 @@ export default class ChapterLoader extends Component<IProps, IState> {
   };
 
   state = {
-    modal: false,
-    id: null,
     bookmark: this.props.navigation.getParam("bookmark"),
     screenPos: 0,
     overLay: false,
@@ -75,11 +70,6 @@ export default class ChapterLoader extends Component<IProps, IState> {
       });
     });
   }
-
-
-  modal = (id: number): void => {
-    this.setState({ modal: !this.state.modal, id: id });
-  };
 
   setPos = (e) => {
     this.setState({ screenPos: e.nativeEvent.contentOffset.y });
@@ -117,8 +107,6 @@ export default class ChapterLoader extends Component<IProps, IState> {
       bookmark,
       screenPos,
       overLay,
-      id,
-      modal,
       animationComplete,
     } = this.state;
     const chapter = navigation.getParam("chapter");
@@ -145,17 +133,13 @@ export default class ChapterLoader extends Component<IProps, IState> {
         >
           {animationComplete ?
             <View>
-              <CurrentChapter modal={this.modal} />
+              <CurrentChapter />
               <BreakIcon>✧</BreakIcon>
-              <Checkpoint checkpoint_id={1} modal={this.modal} navigation={navigation} />
+              <Checkpoint chapter_index={chapter_index} navigation={navigation} />
             </View>
             : null}
-
         </ScrollView>
         <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} />
-        <Modal animationType="slide" transparent visible={modal}>
-          <ForumModal modal={this.modal} id={id} />
-        </Modal>
       </View>
     );
   }

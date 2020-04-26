@@ -10,6 +10,16 @@ export const GET_AUTH = gql`
 `;
 
 
+export const GET_CHAPTER_THREADS = gql`
+  query getChapterThreads($chapter_id: Int) {
+    getChapterThreads(chapter_id: $chapter_id) {
+      id
+      title
+    }
+  }
+`;
+
+
 export const GET_BOOKMARK = gql`
   query {
     getBookmark {
