@@ -9,12 +9,23 @@ export const GET_AUTH = gql`
   }
 `;
 
+export const GET_FORUM_THREADS = gql`
+  query {
+    getForumThreads {
+      id
+      title
+      audio
+    }
+  }
+`;
+
 
 export const GET_CHAPTER_THREADS = gql`
   query getChapterThreads($chapter_id: Int) {
     getChapterThreads(chapter_id: $chapter_id) {
       id
       title
+      audio
     }
   }
 `;

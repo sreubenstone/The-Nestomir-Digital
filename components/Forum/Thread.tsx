@@ -100,10 +100,6 @@ export default class Thread extends Component {
         }
     }
 
-
-
-
-
     render() {
         return (
             <View style={{ height: "100%" }}>
