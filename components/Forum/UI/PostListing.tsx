@@ -28,7 +28,7 @@ const PostListing: FC<IProps> = (props) => {
             onTouchStart={() => switchToggle(!on)}
             onTouchEndCapture={(e) => {
                 e.stopPropagation();
-                props.navigation.navigate('Thread')
+                props.navigation.navigate('Thread', { thread_id: props.data.id })
                 switchToggle(!on)
             }}>
             <View style={{ flexDirection: 'row' }}>

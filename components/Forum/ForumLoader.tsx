@@ -15,22 +15,7 @@ interface IProps {
     navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
-const Container = styled.View`
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-bottom: 75px;
-    padding: 10px;
-    border-width: 0.5px;
-    border-color: #D1D5DA;
-`;
 
-const Header = styled.Text`
-    font-weight: 500;
-    color: orange;
-    margin-bottom: 20px;
-    text-align: center;
-`;
 
 const ForumLoader: FC<IProps> = (props) => {
     const { loading, error, data } = useQuery(GET_FORUM_THREADS);

@@ -9,6 +9,36 @@ export const GET_AUTH = gql`
   }
 `;
 
+export const GET_THREAD = gql`
+query getThread ($thread_id: Int){
+  getThread (thread_id: $thread_id) {
+    id
+    title
+    body
+    replies {
+      edges {
+          id
+          body
+          user_id
+      }
+      pageInfo {
+        oldestReplyCursor
+      }
+    }
+  }
+}
+`;
+
+
+export const GET_COMMENTS = gql`
+query getComments ($thread_id: Int, $before: Int) {
+  getComments (thread_id: $thread_id, before: $before ) {
+    id
+    body
+  }
+}
+`;
+
 export const GET_FORUM_THREADS = gql`
   query {
     getForumThreads {
