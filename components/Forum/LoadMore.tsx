@@ -1,12 +1,15 @@
 import React, { FC } from "react";
+import { gql } from "apollo-boost";
 import { View, Text, TouchableOpacity } from "react-native";
 import { useLazyQuery, useApolloClient } from "@apollo/react-hooks";
-import { GET_COMMENTS, GET_THREAD } from "../../queries";
+import { GET_COMMENTS } from "../../queries";
 import styled from 'styled-components';
+
 
 interface IProps {
     thread_id: number;
     last: number;
+
 }
 
 const Line = styled.View`
@@ -22,43 +25,47 @@ const LoadMore: FC<IProps> = (props) => {
     const client = useApolloClient()
     if (loading) return <Text>"Loading..."</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
-    const query = client.readQuery({ query: GET_THREAD, variables: { thread_id: 8 } })
-    // can we reconstruct the entire object?
-
-    if (data.newComments) {
-        client.writeQuery({
-            GET_THREAD,
-            data: {
-                getThread.replies.edges
+    if (data) {
+        const replies_fragment = client.readFragment({
+            id: `Comment:${props.thread_id}`,
+            fragment: gql`
+            fragment fraggi on Comment {
+                id
+                replies {
+                    edges {
+                         id
+                         body
+                         user_id
+                    }
+                }
             }
-
+          `
         })
+
+        const new_replies_list = [...data.getComments, ...replies_fragment.replies.edges]
+        replies_fragment.replies.edges = new_replies_list
+
+        client.writeFragment({
+            id: `Comment:${props.thread_id}`,
+            fragment: gql`
+            fragment fraggi on Comment {
+                id
+                replies {
+                    edges {
+                         id
+                         body
+                         user_id
+                    }
+                }
+            }`,
+            data: replies_fragment
+        }
+        )
     }
-
-
-
-    // Get the current to-do list
-    /*
-        const data = client.readQuery({ query });
-
-const myNewTodo = {
-  id: '6',
-  text: 'Start using Apollo Client.',
-  completed: false,
-  __typename: 'Todo',
-};
-
-// Write back to the to-do list and include the new item
-client.writeQuery({
-  query,
-  data: {
-    todos: [...data.todos, myNewTodo],
-  },
-  */
 
     return (
         <View>
-            <TouchableOpacity onPress={() => getComments({ variables: { thread_id: props.thread_id, before: props.last } })}>
+            <TouchableOpacity onPress={() => { getComments({ variables: { thread_id: props.thread_id, before: props.last } }) }}>
                 <Text>Load previous comments</Text>
             </TouchableOpacity>
             <Line />

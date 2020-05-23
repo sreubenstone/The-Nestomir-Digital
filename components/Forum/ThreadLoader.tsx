@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_THREAD } from "../../queries";
+import { GET_THREAD, GET_COMMENTS } from "../../queries";
 import Post from './UI/Post';
 import { View, Text } from "react-native";
 import Comment from './UI/Comment';
@@ -21,11 +21,11 @@ const Line = styled.View`
 `
 
 const ThreadLoader: FC<IProps> = (props) => {
-    const { loading, error, data } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
+    const { loading, error, data, fetchMore } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
     if (loading) return <Text>"Loading..."</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
     const oldestReplyCursor = data.getThread.replies.pageInfo.oldestReplyCursor
-
+    console.log('rerender thread loader')
     return (
         <View>
             <Post data={data.getThread} />

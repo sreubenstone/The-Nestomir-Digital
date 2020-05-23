@@ -34,6 +34,7 @@ export const GET_COMMENTS = gql`
 query getComments ($thread_id: Int, $before: Int) {
   getComments (thread_id: $thread_id, before: $before ) {
     id
+    user_id
     body
   }
 }

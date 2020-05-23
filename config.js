@@ -1,7 +1,7 @@
 const prod = false;
 
 const prod_server = "tbd...";
-const dev_server = "https://62116e87.ngrok.io";
+const dev_server = "https://881649a0.ngrok.io";
 
 const export_env_urls = () => {
   if (prod) {
