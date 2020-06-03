@@ -9,7 +9,6 @@ import styled from 'styled-components';
 interface IProps {
     thread_id: number;
     last: number;
-
 }
 
 const Line = styled.View`
@@ -29,7 +28,7 @@ const LoadMore: FC<IProps> = (props) => {
         const replies_fragment = client.readFragment({
             id: `Comment:${props.thread_id}`,
             fragment: gql`
-            fragment fraggi on Comment {
+            fragment replies on Comment {
                 id
                 replies {
                     edges {
@@ -48,7 +47,7 @@ const LoadMore: FC<IProps> = (props) => {
         client.writeFragment({
             id: `Comment:${props.thread_id}`,
             fragment: gql`
-            fragment fraggi on Comment {
+            fragment replies on Comment {
                 id
                 replies {
                     edges {

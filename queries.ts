@@ -73,6 +73,17 @@ export const GET_BOOKMARK = gql`
   }
 `;
 
+export const SUBMIT_COMMENT = gql`
+  mutation submitComment($thread_id: Int, $body: String) {
+    submitComment(thread_id: $thread_id, body: $body) {
+      id
+      user_id
+      body
+    }
+  }
+`;
+
+
 
 export const UPDATE_BOOKMARK = gql`
   mutation updateBookmark($chapter: Int, $position: Int) {

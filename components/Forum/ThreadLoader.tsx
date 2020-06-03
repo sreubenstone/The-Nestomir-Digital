@@ -21,11 +21,11 @@ const Line = styled.View`
 `
 
 const ThreadLoader: FC<IProps> = (props) => {
-    const { loading, error, data, fetchMore } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
+    const { loading, error, data } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
     if (loading) return <Text>"Loading..."</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
     const oldestReplyCursor = data.getThread.replies.pageInfo.oldestReplyCursor
-    console.log('rerender thread loader')
+    console.log(oldestReplyCursor, data.getThread.replies.edges[0].id)
     return (
         <View>
             <Post data={data.getThread} />
@@ -37,7 +37,7 @@ const ThreadLoader: FC<IProps> = (props) => {
                     <Line />
                 </View>
             })}
-            <AddComment />
+            <AddComment thread_id={props.thread_id} />
         </View>
     )
 }
