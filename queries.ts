@@ -1,5 +1,19 @@
 import { gql } from "apollo-boost";
 
+export const REPLIES_FRAGMENT = gql`
+  fragment replies on Comment {
+      id
+      replies {
+          edges {
+              id
+              body
+              user_id
+          }
+      }
+  }
+`
+
+
 export const GET_AUTH = gql`
   query {
     getAuth {
@@ -10,34 +24,34 @@ export const GET_AUTH = gql`
 `;
 
 export const GET_THREAD = gql`
-query getThread ($thread_id: Int){
-  getThread (thread_id: $thread_id) {
-    id
-    title
-    body
-    replies {
-      edges {
-          id
-          body
-          user_id
-      }
-      pageInfo {
-        oldestReplyCursor
+  query getThread ($thread_id: Int) {
+    getThread (thread_id: $thread_id) {
+      id
+      title
+      body
+      replies {
+        edges {
+            id
+            body
+            user_id
+        }
+        pageInfo {
+          oldestReplyCursor
+        }
       }
     }
   }
-}
 `;
 
 
 export const GET_COMMENTS = gql`
-query getComments ($thread_id: Int, $before: Int) {
-  getComments (thread_id: $thread_id, before: $before ) {
-    id
-    user_id
-    body
+  query getComments ($thread_id: Int, $before: Int) {
+    getComments (thread_id: $thread_id, before: $before ) {
+      id
+      user_id
+      body
+    }
   }
-}
 `;
 
 export const GET_FORUM_THREADS = gql`

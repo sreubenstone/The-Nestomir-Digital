@@ -1,12 +1,12 @@
 import React, { FC } from "react";
+import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_THREAD, GET_COMMENTS } from "../../queries";
+import { GET_THREAD, GET_COMMENTS, REPLIES_FRAGMENT } from "../../queries";
 import Post from './UI/Post';
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import Comment from './UI/Comment';
 import styled from 'styled-components';
 import AddComment from './AddComment';
-import LoadMore from './LoadMore';
 
 
 interface IProps {
@@ -21,16 +21,42 @@ const Line = styled.View`
 `
 
 const ThreadLoader: FC<IProps> = (props) => {
-    const { loading, error, data } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
+    const { loading, error, data, client, fetchMore } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
     if (loading) return <Text>"Loading..."</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
     const oldestReplyCursor = data.getThread.replies.pageInfo.oldestReplyCursor
-    console.log(oldestReplyCursor, data.getThread.replies.edges[0].id)
     return (
         <View>
             <Post data={data.getThread} />
             <Line />
-            {(oldestReplyCursor !== data.getThread.replies.edges[0].id) ? <LoadMore thread_id={props.thread_id} last={data.getThread.replies.edges[0].id} /> : null}
+            {(oldestReplyCursor !== data.getThread.replies.edges[0].id) ?
+                <View>
+                    <TouchableOpacity onPress={() => {
+                        fetchMore({
+                            query: GET_COMMENTS,
+                            variables: { thread_id: props.thread_id, before: data.getThread.replies.edges[0].id },
+                            updateQuery: (previousResult, { fetchMoreResult }) => {
+                                const replies_fragment = client.readFragment({
+                                    id: `Comment:${props.thread_id}`,
+                                    fragment: REPLIES_FRAGMENT
+                                })
+                                const new_replies_list = [...fetchMoreResult.getComments, ...replies_fragment.replies.edges]
+                                replies_fragment.replies.edges = new_replies_list
+                                client.writeFragment({
+                                    id: `Comment:${props.thread_id}`,
+                                    fragment: REPLIES_FRAGMENT,
+                                    data: replies_fragment
+                                }
+                                )
+                            }
+                        })
+                    }}>
+                        <Text>Load previous comments</Text>
+                    </TouchableOpacity>
+                    <Line />
+                </View>
+                : null}
+
             {data.getThread.replies.edges.map((item, index) => {
                 return <View key={index}>
                     <Comment data={item} />
