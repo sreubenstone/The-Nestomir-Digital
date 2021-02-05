@@ -26,12 +26,13 @@ export default class Prologue extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`,
+              uri: `https://cdn.mos.cms.futurecdn.net/2UYJxzeDtUxMYAFkdwo28Z.jpg`,
             }}
           />
         </View>
         <Text style={BookStyles.bookFont}></Text>
-        <Text style={BookStyles.bookFont}>{Prologue1}</Text>
+        <Text style={BookStyles.bookFont}><Text></Text>I<Text style={{ fontStyle: 'italic', fontFamily: 'gelasio-med' }}>love</Text>dogs</Text>
+        {/* <Text style={BookStyles.bookFont}>{Prologue1}</Text> */}
       </View>
     );
   }

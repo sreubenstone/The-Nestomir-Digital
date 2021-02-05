@@ -60,9 +60,7 @@ export default class Profile extends Component<IProps> {
           <Text style={{ textAlign: "center", fontSize: 10, marginTop: 3 }}>
             Middle school student in Scottsdale, AZ.
           </Text>
-          <Text style={{ textAlign: "center", fontSize: 10, marginTop: 3 }}>
-            <Text style={{ fontStyle: "italic" }}>My Parent:</Text> Ronna Bart
-          </Text>
+
           <View
             style={[
               GlobalStyles.flexRowSpace,
@@ -109,7 +107,7 @@ export default class Profile extends Component<IProps> {
               <Text
                 style={{ textAlign: "center", fontSize: 11, fontWeight: "100" }}
               >
-                Forum Posts
+                Forum Activity
               </Text>
             </View>
           </View>

@@ -26,13 +26,14 @@ StoryStack.navigationOptions = ({ navigation }) => {
   };
 };
 
-const ProfileStack = createStackNavigator({
-  Profile: Profile
-});
+// const ProfileStack = createStackNavigator({
+//   Profile: Profile
+// });
 
 const ForumStack = createStackNavigator({
   Forum: Forum,
-  Thread: Thread
+  Thread: Thread,
+  Profile: Profile
 });
 
 export default createAppContainer(

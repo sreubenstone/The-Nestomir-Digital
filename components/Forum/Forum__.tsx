@@ -24,6 +24,11 @@ export default class Forum extends Component<IProps> {
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
+          <View style={{ position: 'absolute', zIndex: 5, left: '85%', top: '25%' }}>
+            <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+              <Image source={require("../../assets/images/smartkid.png")} style={{ width: 34, height: 34, borderRadius: 17, }} />
+            </TouchableOpacity>
+          </View>
           <ImageBackground source={require("../../assets/images/code.png")} style={{ width: "100%", height: "100%" }} />
         </View>
         <View style={ProgressStyles.container}>

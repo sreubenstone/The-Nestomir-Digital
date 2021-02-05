@@ -1,8 +1,10 @@
-const Prologue1 = `The night was dark except for a subtle luminescence. Stars from Andromeda and other galaxies billions of miles away emitted a faint light that grazed everything on the ground.
- 
-The lush cornfield was swaying in the wind, making a slight bristling noise as the northwesterly winds passed. It was a chilly night. A local would probably be wearing multiple layers at this temperature. 
- 
-But there were no souls in this cornfield on this night in Grapefield, Wisconsin. If there were, they would have seen something that looked like a reddish-white firework exploding a few miles above them. Observers on the ground would have witnessed a great big, fiery white streak and burning, smoking molten metal showering down on the Earth. And if they lived through that, they would have heard a big BOOOM.
+const Prologue1 = `The pilot of the FS Gravis checked his quantum starmap. He was closing in on his interstellar destination—and now it was time to phase back into real-space. He initiated the interstellar drive's five second phase-down sequence by hitting the glowing blue button in front of him, and by then waving his hand over the ship's violet engine-control screen. He waited. A few seconds later, the familiar sounds of warped space opening itself up, and then stitching itself back together, echoed through the freighter’s hull, fuselage, and cargo bay. After a loud sonic clang and a blinding flash of light, the ship sat in the target system as if it had been there all along. 
+
+Radar confirmed that he was positioned inside of a uni-starred solar system with nine planets. We’ve arrived, he thought. A feeling of satisfaction and relief surged through him as he scanned the vast expanse of this new galaxy; this had been a risky journey. He tapped his leather seat handle. Thank you for getting me, us, here. I can’t believe I purchased you for one hundred thousand Naronian Kroners! What a steal. 
+
+The yellow star in the center of this system caught his attention; it looked similar to Stella, the larger of the two stars that illuminated his home planet. I guess we all come from similar beginnings, he considered. But the greenish blue planet, his target, sitting twenty thousand kilometers in front of him was unlike any planet he’d ever seen. Seven continents immersed in entirely clear blue oceans. A white atmosphere as crisp as his grandmother’s iced vanilla wafer pudding. I wonder what it’s like down there, he pondered. He hit two silver switches on his dashboard to prepare for planetary descent.
+
+The radar system began to clatter. The pilot peered at his vessel-detection readout. INCOMING THREAT: SHIP REAR. As he shifted to the back view of his ship, he prayed the alert was triggered by a small asteroid or comet coming too close for comfort. But to his dismay, it was not. It was a silver Vagabond II Stealth Fighter, with its vacuum torpedoes armed and ready to fire. It was one kilometer behind him, and was fast approaching.
 `;
 
 export { Prologue1 };

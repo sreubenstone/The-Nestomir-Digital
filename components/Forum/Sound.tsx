@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Audio } from 'expo-av';
-import { View, Text, Image, ImageBackground, TouchableOpacity } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
 import styled from 'styled-components';
 
 

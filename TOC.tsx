@@ -2,7 +2,7 @@ const TOC = [
   {
     chapter: "Prologue",
     caption: "Prologue to the legendary adventure.",
-    image: `https://media.istockphoto.com/vectors/moon-rising-over-the-farm-vector-id165531993?k=6&m=165531993&s=612x612&w=0&h=HI3wQbvlWq-b-s8fgr8PwUAirdQuMB6IHyZ6UqGJFQU=`,
+    image: `https://cdn.mos.cms.futurecdn.net/2UYJxzeDtUxMYAFkdwo28Z.jpg`,
     progress: '',
     bookmark: null,
     id: "Prologue",
