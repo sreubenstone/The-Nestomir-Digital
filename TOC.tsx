@@ -1,8 +1,8 @@
 const TOC = [
   {
     chapter: "Prologue",
-    caption: "Prologue to the legendary adventure.",
-    image: `https://cdn.mos.cms.futurecdn.net/2UYJxzeDtUxMYAFkdwo28Z.jpg`,
+    caption: "The journey begins.",
+    image: `https://artignition.com/wp-content/uploads/2017/06/eric-geusz-sci-fi-freighter.jpg`,
     progress: '',
     bookmark: null,
     id: "Prologue",
@@ -10,8 +10,8 @@ const TOC = [
 
   {
     chapter: "Chapter 1",
-    caption: "Meet Jake and his life in Grapefield.",
-    image: `https://library.kissclipart.com/20180831/bww/kissclipart-cartoon-high-school-hallway-clipart-cartoon-middle-9d475ddfa4b8008e.png`,
+    caption: "Life in Grapefield is less than pleasant.",
+    image: `https://image.freepik.com/free-vector/trophy-sketch-set_1284-4035.jpg`,
     progress: '',
     bookmark: null,
     id: "Chapter1",
@@ -19,8 +19,8 @@ const TOC = [
 
   {
     chapter: "Chapter 2",
-    caption: "Jake meets someone special.",
-    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    caption: "150th Anniversary celebrations.",
+    image: `https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/park-time-sketch-scott-putman.jpg`,
     progress: '',
     bookmark: null,
     id: "Chapter2",
@@ -28,11 +28,128 @@ const TOC = [
 
   {
     chapter: "Chapter 3",
-    caption: "Flight to Seattle.",
-    image: `https://us.123rf.com/450wm/weter78/weter781801/weter78180100006/92789859-starry-sky-background-flat-vector-illustration-white-stars-.jpg?ver=6`,
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
     progress: '',
     bookmark: null,
     id: "Chapter3",
+  },
+
+  {
+    chapter: "Chapter 4",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter4",
+  },
+
+  {
+    chapter: "Chapter 5",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter5",
+  },
+
+  {
+    chapter: "Chapter 6",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter6",
+  },
+
+  {
+    chapter: "Chapter 7",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter7",
+  },
+
+  {
+    chapter: "Chapter 8",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter8",
+  },
+
+  {
+    chapter: "Chapter 9",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter9",
+  },
+
+  {
+    chapter: "Chapter 10",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter10",
+  },
+
+  {
+    chapter: "Chapter 11",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter11",
+  },
+
+  {
+    chapter: "Chapter 12",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter12",
+  },
+
+  {
+    chapter: "Chapter 13",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter13",
+  },
+
+  {
+    chapter: "Chapter 14",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter14",
+  },
+
+  {
+    chapter: "Chapter 15",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter15",
+  },
+
+  {
+    chapter: "Chapter 16",
+    caption: "Wrong turn into corn.",
+    image: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+    progress: '',
+    bookmark: null,
+    id: "Chapter16",
   },
 ];
 

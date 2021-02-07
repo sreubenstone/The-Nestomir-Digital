@@ -17,6 +17,19 @@ import Prologue from "./Prologue";
 import Chapter1 from "./Chapter1";
 import Chapter2 from "./Chapter2";
 import Chapter3 from "./Chapter3";
+import Chapter4 from "./Chapter4";
+import Chapter5 from "./Chapter5";
+import Chapter6 from "./Chapter6";
+import Chapter7 from "./Chapter7";
+import Chapter8 from "./Chapter8";
+import Chapter9 from "./Chapter9";
+import Chapter10 from "./Chapter10";
+import Chapter11 from "./Chapter11";
+import Chapter12 from "./Chapter12";
+import Chapter13 from "./Chapter13";
+import Chapter14 from "./Chapter14";
+import Chapter15 from "./Chapter15";
+import Chapter16 from "./Chapter16";
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -28,6 +41,7 @@ import {
 const BreakIcon = styled.Text`
   text-align: center;
   font-size: 18px;
+  margin-top: 30px;
   margin-bottom: 30px;
 `
 
@@ -61,6 +75,19 @@ export default class ChapterLoader extends Component<IProps, IState> {
     Chapter1: Chapter1,
     Chapter2: Chapter2,
     Chapter3: Chapter3,
+    Chapter4: Chapter4,
+    Chapter5: Chapter5,
+    Chapter6: Chapter6,
+    Chapter7: Chapter7,
+    Chapter8: Chapter8,
+    Chapter9: Chapter9,
+    Chapter10: Chapter10,
+    Chapter11: Chapter11,
+    Chapter12: Chapter12,
+    Chapter13: Chapter13,
+    Chapter14: Chapter14,
+    Chapter15: Chapter15,
+    Chapter16: Chapter16,
   };
 
   componentDidMount() {

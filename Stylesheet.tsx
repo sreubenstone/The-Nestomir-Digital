@@ -131,8 +131,8 @@ const GlobalStyles = StyleSheet.create({
   },
 
   chapterImage: {
-    width: 140,
-    height: 140,
+    width: 75,
+    height: 75,
     borderRadius: 14,
     marginBottom: 15
   },

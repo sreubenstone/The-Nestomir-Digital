@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, ScrollView, Text, Image, TouchableOpacity } from "react-native";
 import { ProgressCardStyles, GlobalStyles } from "../../Stylesheet";
 import { TOC } from "../../TOC";
 import {
@@ -31,10 +31,8 @@ const ProgressMap: FC<IProps> = props => {
 
   const Prog = mod(bookmark.chapter, bookmark.position)
 
-
-
   return (
-    <View>
+    <ScrollView>
       {Prog.map((item, i) => {
         return (
           <TouchableOpacity onPress={() => navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark, chapter_index: i })} key={i}>
@@ -55,7 +53,7 @@ const ProgressMap: FC<IProps> = props => {
           </TouchableOpacity>
         );
       })}
-    </View>
+    </ScrollView>
   );
 };
 

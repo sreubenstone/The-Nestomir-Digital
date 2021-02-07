@@ -34,9 +34,13 @@ const App: FC = () => {
   useEffect(() => {
     const fontLoad = async () => {
       await Font.loadAsync({
+
         "gelasio-bold": require("./assets/fonts/Gelasio-Bold.ttf"),
         "gelasio-med": require("./assets/fonts/Gelasio-Medium.ttf"),
-        gelasio: require("./assets/fonts/Gelasio-Regular.ttf")
+        gelasio: require("./assets/fonts/Gelasio-Regular.ttf"),
+        "gelasibro-italic": require("./assets/fonts/Gelasio-Italic.ttf"),
+        "code": require("./assets/fonts/FiraCode-VariableFont_wght.ttf")
+
       });
       font(true);
     };
