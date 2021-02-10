@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import {
   View,
-  Text,
   ScrollView,
-  Image,
-  TouchableOpacity,
-  Modal,
   InteractionManager,
 } from "react-native";
 import { GlobalStyles } from "../../Stylesheet";

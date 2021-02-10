@@ -47,6 +47,13 @@ const AddComment: FC<IProps> = (props) => {
                              id
                              body
                              user_id
+                             user {
+                                id
+                                username
+                             }
+                             time {
+                                time_stamp
+                             }
                         }
                     }
                 }
@@ -65,6 +72,13 @@ const AddComment: FC<IProps> = (props) => {
                              id
                              body
                              user_id
+                             user {
+                                id
+                                username
+                             }
+                             time {
+                                time_stamp
+                             }
                         }
                     }
                 }`,

@@ -41,7 +41,7 @@ export default class Chapter9 extends Component<IProps> {
                     <Image
                         style={GlobalStyles.chapterImage}
                         source={{
-                            uri: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+                            uri: `https://thumbs.dreamstime.com/b/hand-drawn-sketch-illustration-architecture-landmark-koutoubia-mosque-morocco-casablanca-hand-drawn-sketch-illustration-168519516.jpg`,
                         }}
                     />
                 </View>

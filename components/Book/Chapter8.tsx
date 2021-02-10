@@ -23,7 +23,7 @@ export default class Chapter8 extends Component<IProps> {
                     <Image
                         style={GlobalStyles.chapterImage}
                         source={{
-                            uri: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+                            uri: `https://img2.pngio.com/battleaxe-png-3-png-image-battle-axe-drawing-png-1000_709.png`,
                         }}
                     />
                 </View>

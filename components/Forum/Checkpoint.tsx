@@ -35,7 +35,7 @@ const Header = styled.Text`
 
 const Checkpoint: FC<IProps> = (props) => {
     const { loading, error, data } = useQuery(GET_CHAPTER_THREADS, { variables: { chapter_id: props.chapter_index } });
-    if (loading) return <Text>"Loading..."</Text>;
+    if (loading) return <Text>Loading...</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
 
     return (

@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/react-hooks";
 import { GET_FORUM_THREADS } from "../../queries";
 import { View, Text, Image } from "react-native";
 import PostListing from "./UI/PostListing"
-import styled from 'styled-components';
+
 import {
     NavigationParams,
     NavigationScreenProp,
@@ -19,7 +19,7 @@ interface IProps {
 
 const ForumLoader: FC<IProps> = (props) => {
     const { loading, error, data } = useQuery(GET_FORUM_THREADS);
-    if (loading) return <Text>"Loading..."</Text>;
+    if (loading) return <Text>Loading...</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
 
     return (

@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import Sound from './../Sound';
+import moment from 'moment';
 import { View, Text, Image } from "react-native";
 import styled from 'styled-components';
 
@@ -30,13 +31,19 @@ const TopCard = styled.View`
 `
 
 const Post: FC<IProps> = (props) => {
+    // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
+    const converted = JSON.parse(props.data.time.time_stamp)
+    const js_date_object = new Date(converted)
+    const moment_object = moment(js_date_object)
+
+
     return (
         <View>
             <TopCard>
                 <View style={{ flexDirection: 'row' }}>
                     <Image source={require("../../../assets/images/kid.png")} style={{ width: 50, height: 50, borderRadius: 20 }} />
                     <View style={{ marginLeft: 10, alignSelf: 'center' }}>
-                        <Text style={{ fontFamily: 'gelasio-med', fontSize: 12, color: '#787D9C' }}>Robert lancer Posted</Text>
+                        <Text style={{ fontFamily: 'gelasio-med', fontSize: 12, color: '#787D9C' }}>{props.data.user.username} posted {moment_object.fromNow()}</Text>
                     </View>
                 </View>
             </TopCard>

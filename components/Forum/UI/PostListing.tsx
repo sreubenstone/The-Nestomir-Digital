@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import { View, Text, Image } from "react-native";
 import styled from 'styled-components';
+import moment from 'moment';
 import {
     NavigationParams,
     NavigationScreenProp,
@@ -22,6 +23,13 @@ const Container = styled.View`
 
 const PostListing: FC<IProps> = (props) => {
     const [on, switchToggle] = useState(false);
+    console.log(props.data)
+
+    // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
+    const converted = JSON.parse(props.data.time.time_stamp)
+    const js_date_object = new Date(converted)
+    const moment_object = moment(js_date_object)
+
     return (
         <Container
             on={on}
@@ -38,7 +46,7 @@ const PostListing: FC<IProps> = (props) => {
                 </View>
                 <Text style={{ color: "#0195FF", marginTop: 4, marginLeft: 14 }}>{props.data.title}</Text>
             </View>
-            <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10 }}>3m ago</Text>
+            <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10 }}>{moment_object.fromNow()}</Text>
         </Container>
     )
 

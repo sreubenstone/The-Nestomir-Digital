@@ -26,7 +26,7 @@ export default class Prologue extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://artignition.com/wp-content/uploads/2017/06/eric-geusz-sci-fi-freighter.jpg`,
+              uri: `https://i.ytimg.com/vi/kGpcl23DyDw/maxresdefault.jpg`,
             }}
           />
         </View>

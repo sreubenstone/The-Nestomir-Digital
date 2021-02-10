@@ -24,12 +24,20 @@ const ProgressMap: FC<IProps> = props => {
         new_entry.bookmark = pos
         return new_entry
       }
+      if (index < num) {
+        let new_entry = Object.assign({}, item);
+        new_entry.progress = "completed"
+        return new_entry
+      }
+
       return item
+
     })
     return newArray
   }
 
   const Prog = mod(bookmark.chapter, bookmark.position)
+
 
   return (
     <ScrollView>
@@ -42,9 +50,9 @@ const ProgressMap: FC<IProps> = props => {
                 <View style={{ marginLeft: "3.5%" }}>
                   <Text style={GlobalStyles.textCardTitle}>{item.chapter}</Text>
                   <Text style={GlobalStyles.textCardSubtitle}>{item.caption}</Text>
-                  {item.progress === "in_progress" ?
-                    <View style={item.progress ? ProgressCardStyles.tagContainer1 : ProgressCardStyles.tagContainer2} >
-                      <Text style={{ fontSize: 9, color: "#fff", fontWeight: "600" }}>{item.progress ? "In Progress" : "Completed"} </Text>
+                  {item.progress ?
+                    <View style={item.progress == 'in_progress' ? ProgressCardStyles.tagContainer1 : ProgressCardStyles.tagContainer2} >
+                      <Text style={{ fontSize: 9, color: "#fff", fontWeight: "600" }}>{item.progress == 'in_progress' ? "In Progress" : "Completed"} </Text>
                     </View>
                     : null}
                 </View>

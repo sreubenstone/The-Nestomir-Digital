@@ -41,7 +41,7 @@ export default class Chapter12 extends Component<IProps> {
                     <Image
                         style={GlobalStyles.chapterImage}
                         source={{
-                            uri: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+                            uri: `https://cdnb.artstation.com/p/assets/images/images/022/325/655/large/laura-guedes-dojo-sketch.jpg?1574987125`,
                         }}
                     />
                 </View>

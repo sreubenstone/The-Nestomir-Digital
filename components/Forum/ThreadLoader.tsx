@@ -22,9 +22,10 @@ const Line = styled.View`
 
 const ThreadLoader: FC<IProps> = (props) => {
     const { loading, error, data, client, fetchMore } = useQuery(GET_THREAD, { variables: { thread_id: props.thread_id } });
-    if (loading) return <Text>"Loading..."</Text>;
+    if (loading) return <Text>Loading...</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
     const oldestReplyCursor = data.getThread.replies.pageInfo.oldestReplyCursor
+
     return (
         <View>
             <Post data={data.getThread} />

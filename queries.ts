@@ -8,6 +8,13 @@ export const REPLIES_FRAGMENT = gql`
               id
               body
               user_id
+              user {
+                id
+                username
+              }
+              time {
+              time_stamp
+            }
           }
       }
   }
@@ -29,11 +36,25 @@ export const GET_THREAD = gql`
       id
       title
       body
+      time {
+        time_stamp
+      }
+      user {
+        id
+        username
+      }
       replies {
         edges {
             id
             body
             user_id
+            user {
+              id
+              username
+            }
+            time {
+              time_stamp
+            }
         }
         pageInfo {
           oldestReplyCursor
@@ -50,6 +71,13 @@ export const GET_COMMENTS = gql`
       id
       user_id
       body
+      user {
+        id
+        username
+      }
+      time {
+        time_stamp
+        }
     }
   }
 `;
@@ -60,6 +88,9 @@ export const GET_FORUM_THREADS = gql`
       id
       title
       audio
+      time {
+        time_stamp
+      }
     }
   }
 `;
@@ -71,6 +102,7 @@ export const GET_CHAPTER_THREADS = gql`
       id
       title
       audio
+
     }
   }
 `;
@@ -93,6 +125,13 @@ export const SUBMIT_COMMENT = gql`
       id
       user_id
       body
+      user {
+        id
+        username
+      }
+      time {
+        time_stamp
+      }
     }
   }
 `;

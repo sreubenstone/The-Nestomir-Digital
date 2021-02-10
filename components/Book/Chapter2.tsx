@@ -47,7 +47,7 @@ export default class Chapter2 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/park-time-sketch-scott-putman.jpg`,
+              uri: `https://i.pinimg.com/originals/09/5c/2c/095c2ccf70ef910ffadc778779dc8507.jpg`,
             }}
           />
         </View>

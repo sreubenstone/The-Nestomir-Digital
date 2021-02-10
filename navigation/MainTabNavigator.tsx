@@ -59,7 +59,7 @@ export default createAppContainer(
             iconName = `ios-notifications`;
           }
           if (routeName === "Forum") {
-            iconName = "ios-chatboxes";
+            iconName = "ios-chatbubble-ellipses";
           }
           return <Ionicons name={iconName} size={25} color={tintColor} />;
         }

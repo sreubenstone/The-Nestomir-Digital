@@ -41,7 +41,7 @@ export default class Chapter14 extends Component<IProps> {
                     <Image
                         style={GlobalStyles.chapterImage}
                         source={{
-                            uri: `https://friendlystock.com/wp-content/uploads/2019/10/11-dangerous-shady-alley-at-night-background-cartoon.jpg`,
+                            uri: `http://nehlibrary.org/wp-content/uploads/2013/05/stanley-coast-ink-drive-rock7-11.jpeg`,
                         }}
                     />
                 </View>
