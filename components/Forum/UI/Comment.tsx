@@ -38,7 +38,7 @@ const Comment: FC<IProps> = (props) => {
         <View>
             <TopCard>
                 <View style={{ flexDirection: 'row' }}>
-                    <Image source={require("../../../assets/images/smartkid.png")} style={{ width: 30, height: 30, borderRadius: 10 }} />
+                    <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 30, height: 30, borderRadius: 10 }} />
                     <View style={{ marginLeft: 10, alignSelf: 'center' }}>
                         <Text style={{ fontFamily: 'gelasio-med', fontSize: 12, color: '#787D9C' }}>{props.data.user.username} commented {moment_object.fromNow()}</Text>
                     </View>

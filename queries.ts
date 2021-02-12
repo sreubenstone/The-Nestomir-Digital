@@ -11,6 +11,7 @@ export const REPLIES_FRAGMENT = gql`
               user {
                 id
                 username
+                user_avatar
               }
               time {
               time_stamp
@@ -20,12 +21,27 @@ export const REPLIES_FRAGMENT = gql`
   }
 `
 
+export const GET_PROFILE = gql`
+  query getProfile ($id: Int) {
+    getProfile (id: $id) {
+      id
+      username
+      user_avatar
+      bookmark {
+        id
+        user_id
+        chapter
+      }
+    }
+  }
+`;
 
 export const GET_AUTH = gql`
   query {
     getAuth {
       id
       username
+      user_avatar
     }
   }
 `;
@@ -42,6 +58,7 @@ export const GET_THREAD = gql`
       user {
         id
         username
+        user_avatar
       }
       replies {
         edges {
@@ -51,6 +68,7 @@ export const GET_THREAD = gql`
             user {
               id
               username
+              user_avatar
             }
             time {
               time_stamp
@@ -74,6 +92,7 @@ export const GET_COMMENTS = gql`
       user {
         id
         username
+        user_avatar
       }
       time {
         time_stamp
@@ -88,6 +107,11 @@ export const GET_FORUM_THREADS = gql`
       id
       title
       audio
+      user {
+        id
+        username
+        user_avatar
+      }
       time {
         time_stamp
       }
@@ -102,7 +126,14 @@ export const GET_CHAPTER_THREADS = gql`
       id
       title
       audio
-
+      user {
+        id
+        username
+        user_avatar
+      }
+      time {
+        time_stamp
+      }
     }
   }
 `;
@@ -128,6 +159,7 @@ export const SUBMIT_COMMENT = gql`
       user {
         id
         username
+        user_avatar
       }
       time {
         time_stamp

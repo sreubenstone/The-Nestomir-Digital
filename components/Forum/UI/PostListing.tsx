@@ -41,7 +41,7 @@ const PostListing: FC<IProps> = (props) => {
             }}>
             <View style={{ flexDirection: 'row' }}>
                 <View>
-                    <Image source={require("../../../assets/images/kid.png")} style={{ width: 30, height: 30, borderRadius: 12 }} />
+                    <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 30, height: 30, borderRadius: 12 }} />
                     {props.data.audio ? <Image source={require("../../../assets/images/microphone.png")} style={{ width: 15, height: 15, top: 20, right: -3, position: 'absolute' }} /> : null}
                 </View>
                 <Text style={{ color: "#0195FF", marginTop: 4, marginLeft: 14 }}>{props.data.title}</Text>

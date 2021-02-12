@@ -50,6 +50,7 @@ const AddComment: FC<IProps> = (props) => {
                              user {
                                 id
                                 username
+                                user_avatar
                              }
                              time {
                                 time_stamp
@@ -75,6 +76,7 @@ const AddComment: FC<IProps> = (props) => {
                              user {
                                 id
                                 username
+                                user_avatar
                              }
                              time {
                                 time_stamp

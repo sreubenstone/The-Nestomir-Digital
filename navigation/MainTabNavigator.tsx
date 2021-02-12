@@ -4,7 +4,7 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import ProgressEntry from "../components/Progress/ProgressEntry__";
-import Profile from "../components/Profile__";
+import Profile from "../components/Profile/Profile__";
 import Forum from "../components/Forum/Forum__";
 import Thread from "../components/Forum/Thread";
 import ChapterLoader from "../components/Book/ChapterLoader__";
