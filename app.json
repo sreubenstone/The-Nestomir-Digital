@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "protoKids",
-    "slug": "protoKids",
-    "privacy": "public",
+    "name": "The Nestomir",
+    "slug": "theNestomir",
+    "privacy": "unlisted",
     "platforms": [
       "ios",
       "android",
@@ -10,9 +10,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -23,7 +23,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thenestomir.thenestomir",
+      "buildNumber": "1.0.0"
     }
   }
 }

@@ -3,6 +3,10 @@ import { Audio } from 'expo-av';
 import { View, Image, TouchableOpacity } from "react-native";
 import styled from 'styled-components';
 
+interface IProps {
+    sound_file: string
+}
+
 
 const SoundBox = styled.View`
     border-radius: 6px;
@@ -14,7 +18,7 @@ const SoundBox = styled.View`
     justify-content: center;
 `
 
-export default class Sound extends Component {
+export default class Sound extends Component<IProps> {
 
     state = {
         playingStatus: "stopped",
@@ -27,7 +31,13 @@ export default class Sound extends Component {
         soundObject.setOnPlaybackStatusUpdate(this._onPlaybackStatusUpdate);
         this.playbackInstance = soundObject
         try {
-            await this.playbackInstance.loadAsync(require('../../assets/sound/testsound.mp3'));
+            if (this.props.sound_file === 'whatiscode') {
+                await this.playbackInstance.loadAsync(require("../../assets/sound/whatiscode.mp3"));
+            }
+
+            if (this.props.sound_file === 'truthyfalsey') {
+                await this.playbackInstance.loadAsync(require("../../assets/sound/truthyfalsey.mp3"));
+            }
 
         } catch (error) {
             console.log('sound load error')
@@ -70,7 +80,7 @@ export default class Sound extends Component {
     componentWillUnmount() {
         this.playbackInstance.unloadAsync();
         //  Check Your Console To verify that the above line is working
-        console.log('unmount');
+        // console.log('unmount');
     }
 
 

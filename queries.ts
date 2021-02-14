@@ -27,6 +27,19 @@ export const GET_PROFILE = gql`
       id
       username
       user_avatar
+      threads {
+        id
+        title
+        audio
+        user {
+          id
+          username
+          user_avatar
+        }
+        time {
+          time_stamp
+        }
+      }
       bookmark {
         id
         user_id
@@ -52,6 +65,7 @@ export const GET_THREAD = gql`
       id
       title
       body
+      audio
       time {
         time_stamp
       }

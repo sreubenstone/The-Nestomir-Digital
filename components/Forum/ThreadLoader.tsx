@@ -30,7 +30,7 @@ const ThreadLoader: FC<IProps> = (props) => {
         <View>
             <Post data={data.getThread} />
             <Line />
-            {(oldestReplyCursor !== data.getThread.replies.edges[0].id) ?
+            {!oldestReplyCursor ? null : (oldestReplyCursor !== data.getThread.replies.edges[0].id) ?
                 <View>
                     <TouchableOpacity onPress={() => {
                         fetchMore({

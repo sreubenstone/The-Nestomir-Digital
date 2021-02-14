@@ -17,7 +17,7 @@ export default class Prologue extends Component<IProps> {
   }
 
   render() {
-    console.log("rendered prologue");
+
 
     return (
       <View>

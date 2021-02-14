@@ -36,7 +36,6 @@ const Post: FC<IProps> = (props) => {
     const js_date_object = new Date(converted)
     const moment_object = moment(js_date_object)
 
-
     return (
         <View>
             <TopCard>
@@ -50,7 +49,7 @@ const Post: FC<IProps> = (props) => {
             <CommentCard>
                 <Text style={{ fontSize: 20, fontFamily: 'gelasio', marginTop: 10 }}>{props.data.title}</Text>
                 <Text style={{ fontFamily: 'gelasio', marginTop: 10, color: '#787D9C' }}>{props.data.body}</Text>
-                <Sound />
+                {props.data.audio ? <Sound sound_file={props.data.audio} /> : null}
                 <Text style={{ fontFamily: 'gelasio', marginTop: 10, color: '#787D9C' }}>👍🏻</Text>
             </CommentCard>
         </View>

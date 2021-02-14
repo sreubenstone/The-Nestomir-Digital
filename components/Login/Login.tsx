@@ -56,7 +56,6 @@ export default class Login extends Component<IProps> {
       const server = await response.json();
       if (server.status === "success") {
         const jwt_from_server = server.token;
-        console.log(jwt_from_server);
         const result = await SecureStore.setItemAsync("jwt", jwt_from_server);
         this.props.refetch();
       } else {

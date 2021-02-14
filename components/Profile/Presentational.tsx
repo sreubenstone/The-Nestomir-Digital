@@ -11,10 +11,10 @@ import {
 
 interface IProps {
     data: any
+    navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
 const Presentational: FC<IProps> = (props) => {
-
     return (
         <View style={{ height: "100%" }}>
             <View style={{ height: "21%" }}>
@@ -49,7 +49,10 @@ const Presentational: FC<IProps> = (props) => {
                     </View>
                 </View>
                 <Text style={{ marginTop: 20, fontWeight: "800", fontSize: 17, marginBottom: 15 }}>Forum Activity</Text>
-                <PostListing />
+                {props.data.threads.map(item => {
+                    return <PostListing data={item} navigation={props.navigation} />
+                })}
+
             </View>
         </View>
     )

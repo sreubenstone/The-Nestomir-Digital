@@ -23,7 +23,7 @@ const Container = styled.View`
 
 const PostListing: FC<IProps> = (props) => {
     const [on, switchToggle] = useState(false);
-    console.log(props.data)
+
 
     // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
     const converted = JSON.parse(props.data.time.time_stamp)

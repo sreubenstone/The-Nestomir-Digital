@@ -25,7 +25,7 @@ const ProfileLoader: FC<IProps> = (props) => {
     if (error) return <Text>Error! ${error.message}</Text>;
 
     return (
-        <Presentational data={data.getProfile} />
+        <Presentational data={data.getProfile} navigation={props.navigation} />
     )
 }
 

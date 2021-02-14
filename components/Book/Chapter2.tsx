@@ -39,7 +39,7 @@ export default class Chapter2 extends Component<IProps> {
   }
 
   render() {
-    console.log("rendered chapter2");
+
     return (
       <View>
         <Text style={GlobalStyles.chapterTitle}>Chapter 2</Text>
