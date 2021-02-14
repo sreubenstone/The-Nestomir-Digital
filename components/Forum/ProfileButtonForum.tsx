@@ -19,7 +19,7 @@ const ProfileButtonForum: FC<IProps> = (props) => {
     const { loading, error, data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
     if (loading) return <Text>Loading...</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
-
+    console.log('getAuthProfile:', data)
 
     return (
         <TouchableOpacity onPress={() => props.navigation.navigate('Profile', { user_id: data.getAuth.id })}>

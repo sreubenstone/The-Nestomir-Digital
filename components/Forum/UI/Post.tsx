@@ -1,11 +1,19 @@
 import React, { FC, useState } from "react";
 import Sound from './../Sound';
 import moment from 'moment';
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import styled from 'styled-components';
+import {
+    NavigationParams,
+    NavigationScreenProp,
+    NavigationState,
+} from "react-navigation";
+
 
 interface IProps {
-    data: any
+    data: any;
+    navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+
 }
 
 const CommentCard = styled.View`
@@ -40,7 +48,9 @@ const Post: FC<IProps> = (props) => {
         <View>
             <TopCard>
                 <View style={{ flexDirection: 'row' }}>
-                    <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 50, height: 50, borderRadius: 20 }} />
+                    <TouchableOpacity onPress={() => props.navigation.navigate('Profile', { user_id: props.data.user.id })}>
+                        <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 50, height: 50, borderRadius: 20 }} />
+                    </TouchableOpacity>
                     <View style={{ marginLeft: 10, alignSelf: 'center' }}>
                         <Text style={{ fontFamily: 'gelasio-med', fontSize: 12, color: '#787D9C' }}>{props.data.user.username} posted {moment_object.fromNow()}</Text>
                     </View>

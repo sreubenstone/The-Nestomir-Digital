@@ -40,7 +40,7 @@ const Checkpoint: FC<IProps> = (props) => {
 
     return (
         <Container>
-            <Header>Buzzing Threads</Header>
+            <Header>Chapter Relevant Threads</Header>
             {data.getChapterThreads.map((item, i) => {
                 return <PostListing data={item} key={i} navigation={props.navigation} />
             })}

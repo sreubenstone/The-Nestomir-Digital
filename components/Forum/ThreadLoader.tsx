@@ -7,9 +7,15 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Comment from './UI/Comment';
 import styled from 'styled-components';
 import AddComment from './AddComment';
+import {
+    NavigationParams,
+    NavigationScreenProp,
+    NavigationState,
+} from "react-navigation";
 
 
 interface IProps {
+    navigation: NavigationScreenProp<NavigationState, NavigationParams>;
     thread_id: number;
 }
 
@@ -28,7 +34,7 @@ const ThreadLoader: FC<IProps> = (props) => {
 
     return (
         <View>
-            <Post data={data.getThread} />
+            <Post data={data.getThread} navigation={props.navigation} />
             <Line />
             {!oldestReplyCursor ? null : (oldestReplyCursor !== data.getThread.replies.edges[0].id) ?
                 <View>
@@ -60,7 +66,7 @@ const ThreadLoader: FC<IProps> = (props) => {
 
             {data.getThread.replies.edges.map((item, index) => {
                 return <View key={index}>
-                    <Comment data={item} />
+                    <Comment data={item} navigation={props.navigation} />
                     <Line />
                 </View>
             })}

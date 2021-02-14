@@ -40,19 +40,18 @@ const Presentational: FC<IProps> = (props) => {
                     ]}
                 >
                     <View>
-                        <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 16, marginBottom: 3 }}>{props.data.bookmark.chapter}</Text>
+                        <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 16, marginBottom: 3 }}>{!props.data.bookmark.chapter ? 'Prologue' : props.data.bookmark.chapter}</Text>
                         <Text style={{ textAlign: "center", fontSize: 11, fontWeight: "100" }}>Current Chapter</Text>
                     </View>
                     <View>
-                        <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 16, marginBottom: 3 }}>2</Text>
+                        <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 16, marginBottom: 3 }}>{props.data.threads.length}</Text>
                         <Text style={{ textAlign: "center", fontSize: 11, fontWeight: "100" }}>Forum Activity</Text>
                     </View>
                 </View>
                 <Text style={{ marginTop: 20, fontWeight: "800", fontSize: 17, marginBottom: 15 }}>Forum Activity</Text>
-                {props.data.threads.map(item => {
-                    return <PostListing data={item} navigation={props.navigation} />
+                {!props.data.threads ? null : props.data.threads.map((item, i) => {
+                    return <PostListing data={item} navigation={props.navigation} key={i} />
                 })}
-
             </View>
         </View>
     )

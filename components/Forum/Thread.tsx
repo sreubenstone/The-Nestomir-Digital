@@ -28,8 +28,9 @@ const ContainerStyle = {
 
 export default class Thread extends Component<IProps> {
     static navigationOptions = ({ navigation }) => {
+
         return {
-            title: 'When Computers Clicked',
+            title: navigation.getParam('title'),
             headerLeft: null,
         }
     }
@@ -44,7 +45,7 @@ export default class Thread extends Component<IProps> {
                     </ImageBackground>
                 </View>
                 <ScrollView style={ContainerStyle} resetScrollToCoords={null} scrollEnabled>
-                    <ThreadLoader thread_id={thread_id} />
+                    <ThreadLoader thread_id={thread_id} navigation={this.props.navigation} />
                     <View style={{ marginTop: 20 }} />
                 </ScrollView>
             </View>
