@@ -14,7 +14,7 @@ export const REPLIES_FRAGMENT = gql`
                 user_avatar
               }
               time {
-              time_stamp
+                time_stamp
             }
           }
       }

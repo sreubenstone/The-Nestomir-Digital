@@ -12,6 +12,7 @@ const export_env_urls = () => {
   } else {
     const env = {
       server: dev_server,
+      env: prod
     };
     return env;
   }

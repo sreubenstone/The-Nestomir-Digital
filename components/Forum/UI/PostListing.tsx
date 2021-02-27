@@ -46,7 +46,7 @@ const PostListing: FC<IProps> = (props) => {
                 </View>
                 <Text style={{ color: "#0195FF", marginTop: 4, marginLeft: 14 }}>{props.data.title}</Text>
             </View>
-            <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10 }}>{moment_object.fromNow()}</Text>
+            <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10 }}>{props.data.title.length > 29 ? moment_object.fromNow().slice(0, 9) : moment_object.fromNow()}</Text>
         </Container>
     )
 

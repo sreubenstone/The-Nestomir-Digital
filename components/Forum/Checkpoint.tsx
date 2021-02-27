@@ -1,7 +1,7 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_CHAPTER_THREADS } from "../../queries";
-import { View, Text, Image } from "react-native";
+import { Text } from "react-native";
 import PostListing from "./UI/PostListing"
 import styled from 'styled-components';
 import {
@@ -37,10 +37,12 @@ const Checkpoint: FC<IProps> = (props) => {
     const { loading, error, data } = useQuery(GET_CHAPTER_THREADS, { variables: { chapter_id: props.chapter_index } });
     if (loading) return <Text>Loading...</Text>;
     if (error) return <Text>Error! ${error.message}</Text>;
+    console.log(data.getChapterThreads)
 
     return (
         <Container>
             <Header>Chapter Relevant Threads</Header>
+            {!data.getChapterThreads.length ? <Text style={{ textAlign: "center", fontSize: 10, }}>This chapter has no threads associated to it yet.</Text> : null}
             {data.getChapterThreads.map((item, i) => {
                 return <PostListing data={item} key={i} navigation={props.navigation} />
             })}

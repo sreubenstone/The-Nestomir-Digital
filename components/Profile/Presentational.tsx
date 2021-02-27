@@ -1,5 +1,7 @@
 import React, { FC } from "react";
-import { Text, View, ImageBackground, Image } from "react-native";
+import Config from '../../config.js'
+import * as SecureStore from "expo-secure-store";
+import { Text, View, ImageBackground, Image, TouchableOpacity } from "react-native";
 import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from '../Forum/UI/PostListing';
 import {
@@ -23,7 +25,7 @@ const Presentational: FC<IProps> = (props) => {
             <View style={ProgressStyles.container}>
                 <Image source={{ uri: `${props.data.user_avatar}` }} style={{ width: 125, height: 125, borderRadius: 9, position: "absolute", top: -74, left: "37.5%" }} />
                 <Text style={{ textAlign: "center", marginTop: 50, fontWeight: "800", fontSize: 19 }}>{props.data.username}</Text>
-                <Text style={{ textAlign: "center", fontSize: 10, marginTop: 3 }}>Middle school student in Scottsdale, AZ.</Text>
+                <Text style={{ textAlign: "center", fontSize: 10, marginTop: 3 }}>Profile tagline will go here.</Text>
                 <View
                     style={[
                         GlobalStyles.flexRowSpace,
@@ -52,6 +54,12 @@ const Presentational: FC<IProps> = (props) => {
                 {!props.data.threads ? null : props.data.threads.map((item, i) => {
                     return <PostListing data={item} navigation={props.navigation} key={i} />
                 })}
+
+                {!Config.env ?
+                    <TouchableOpacity onPress={() => SecureStore.deleteItemAsync('jwt')}>
+                        <Text>Log out (dev)</Text>
+                    </TouchableOpacity> : null}
+
             </View>
         </View>
     )
