@@ -193,3 +193,13 @@ export const UPDATE_BOOKMARK = gql`
     }
   }
 `;
+
+export const PUSH_TOKEN = gql`
+  mutation savePushToken ($push_token: String!) {
+    savePushToken(push_token: $push_token) {
+      id
+    }
+  }
+`;
+
+

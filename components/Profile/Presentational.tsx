@@ -55,10 +55,10 @@ const Presentational: FC<IProps> = (props) => {
                     return <PostListing data={item} navigation={props.navigation} key={i} />
                 })}
 
-                {!Config.env ?
+                {!Config.env &&
                     <TouchableOpacity onPress={() => SecureStore.deleteItemAsync('jwt')}>
                         <Text>Log out (dev)</Text>
-                    </TouchableOpacity> : null}
+                    </TouchableOpacity>}
 
             </View>
         </View>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
-import * as SecureStore from "expo-secure-store";
+import { View, Text, ImageBackground } from "react-native";
+import Push from './Push';
 import ProgressMap from "./ProgressMap";
 import { ProgressStyles } from "../../Stylesheet";
 import {
@@ -32,10 +32,8 @@ export default class ProgressContainer extends Component<IProps> {
           <Text style={{ fontStyle: "italic" }}> awaits.</Text>
           </Text>
           <ProgressMap navigation={navigation} bookmark={data} />
-          {/* <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>
-            <Text style={{ fontSize: 9 }}>clear store</Text>
-          </TouchableOpacity> */}
         </View>
+        <Push />
       </View>
     );
   }
