@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { gql } from "apollo-boost";
 import { useMutation } from '@apollo/react-hooks';
-import { SUBMIT_COMMENT } from "../../queries";
+import { SUBMIT_COMMENT, REPLIES_FRAGMENT } from "../../queries";
 import { View, Text, TouchableOpacity } from "react-native";
 import styled from 'styled-components';
 
@@ -39,51 +39,14 @@ const AddComment: FC<IProps> = (props) => {
         update(cache, data: any) {
             const replies_fragment: any = cache.readFragment({
                 id: `Comment:${props.thread_id}`,
-                fragment: gql`
-                fragment replies on Comment {
-                    id
-                    replies {
-                        edges {
-                             id
-                             body
-                             user_id
-                             user {
-                                id
-                                username
-                                user_avatar
-                             }
-                             time {
-                                time_stamp
-                             }
-                        }
-                    }
-                }
-              `
+                fragment: REPLIES_FRAGMENT
             })
 
             const new_replies_list = [...replies_fragment.replies.edges, data.data.submitComment]
             replies_fragment.replies.edges = new_replies_list
             cache.writeFragment({
                 id: `Comment:${props.thread_id}`,
-                fragment: gql`
-                fragment replies on Comment {
-                    id
-                    replies {
-                        edges {
-                             id
-                             body
-                             user_id
-                             user {
-                                id
-                                username
-                                user_avatar
-                             }
-                             time {
-                                time_stamp
-                             }
-                        }
-                    }
-                }`,
+                fragment: REPLIES_FRAGMENT,
                 data: replies_fragment
             })
         }
