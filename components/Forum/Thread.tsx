@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground, ScrollView } from "react-native";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import ThreadLoader from './ThreadLoader';
 import {
     NavigationParams,
@@ -27,8 +28,8 @@ const ContainerStyle = {
 }
 
 export default class Thread extends Component<IProps> {
-    static navigationOptions = ({ navigation }) => {
 
+    static navigationOptions = ({ navigation }) => {
         return {
             title: navigation.getParam('title'),
             headerLeft: null,
@@ -36,6 +37,7 @@ export default class Thread extends Component<IProps> {
     }
 
     render() {
+
         const thread_id = this.props.navigation.getParam('thread_id')
         return (
             <View style={{ height: "100%" }}>
@@ -44,10 +46,10 @@ export default class Thread extends Component<IProps> {
                         <Text style={{ textAlign: 'center', fontFamily: 'gelasio', color: '#fff', }}>Forum</Text>
                     </ImageBackground>
                 </View>
-                <ScrollView style={ContainerStyle} resetScrollToCoords={null} scrollEnabled>
+                <KeyboardAwareScrollView style={ContainerStyle} enableResetScrollToCoords={false} scrollEnabled>
                     <ThreadLoader thread_id={thread_id} navigation={this.props.navigation} />
                     <View style={{ marginTop: 20 }} />
-                </ScrollView>
+                </KeyboardAwareScrollView>
             </View>
         )
     }
