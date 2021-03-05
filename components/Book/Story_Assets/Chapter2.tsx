@@ -58,7 +58,7 @@ The creature paused for a moment.
  
 "Uh." Jake wished he had paid more attention to astronomy. "The Milky Way?"
  
-"Milky Way..hmm...no I have not heard of this. I am reviewing my Lithium Radar flight log. One moment, yes. I believe I am in what our ancestors termed the Nilofar System -- Eta Omega. We are in a spiroid galaxy, of some sort, one of its outer arms. Let me check. Yes. That is correct. This makes no sense to me. I am baffled.”, it replied.
+"Milky Way..hmm...no I have not heard of this. I am reviewing my Lithium Radar flight log. One moment, yes. I believe I am in what our ancestors termed the Nilofar System — Eta Omega. We are in a spiroid galaxy, of some sort, one of its outer arms. Let me check. Yes. That is correct. This makes no sense to me. I am baffled.”, it replied.
  
 "How...how, how do you speak English?!, Jake exclaimed, feeling sick. He was still trembling and thinking of sprinting for his life again. The early evening sky was shifting into the darker night.
  

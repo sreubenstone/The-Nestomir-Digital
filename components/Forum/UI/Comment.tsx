@@ -37,7 +37,7 @@ const TopCard = styled.View`
 
 
 const Comment: FC<IProps> = (props) => {
-    // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
+    // TIME STAMPS — CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
     const converted = JSON.parse(props.data.time.time_stamp)
     const js_date_object = new Date(converted)
     const moment_object = moment(js_date_object)

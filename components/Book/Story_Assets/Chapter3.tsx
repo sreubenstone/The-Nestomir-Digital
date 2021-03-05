@@ -1,6 +1,6 @@
 const ChapterThree1 = `They were speeding through the clouds. The sensation of moving at this high of a velocity outdoors was inconceivable. Gigantic puffs of cumulus clouds the size of small apartment buildings passed by them almost instantaneously. 
 
-"Is this a dream?" Jake thought to himself. "If this is a stress-induced hallucination, then when is it going to end? If it's not -- then how is this possible? What will my mother and brother think when I'm not home in the morning?". Jake’s thoughts continued to race through his grey matter at a speed mirroring his physical velocity.
+"Is this a dream?" Jake thought to himself. "If this is a stress-induced hallucination, then when is it going to end? If it's not — then how is this possible? What will my mother and brother think when I'm not home in the morning?". Jake’s thoughts continued to race through his grey matter at a speed mirroring his physical velocity.
 
 Jake staired in front of him as the dragon creature banked effortlessly in both directions to avoid larger, more intimidating storm clouds.
 
@@ -110,7 +110,7 @@ This knowledge combined with the fact that our species has the physical strength
 
 The acting Naronian Imperial Chairman at the time, Iglod The Wise, then positioned on the now lost continent of Akrecious, recognized that he had to make a critical decision. This decision would have far reaching implications throughout history and The Nestomir.
 
-With the Venthum threat of gaining an established stronghold dangerously close to Naronia -- Iglod The Wise knew he had to act quickly. 
+With the Venthum threat of gaining an established stronghold dangerously close to Naronia — Iglod The Wise knew he had to act quickly. 
 
 The relationship at the time between Naronia and Draconia was in its nascent stages. A few explorer ships visited Draconia peacefully about twelve thousand years ago. They began to explore the Draconian ecology and natural resources. The Naronian Council listed Draconia as a great place of potential exploration and excavation at the time. 
 
@@ -360,7 +360,7 @@ The needle was gigantic up close. It was a thick, intimidating, herculean struct
 
 Jake glanced up and down the gigantic steel beams. He locked onto the structure with raw amazement at the epic proportions of the metallic construction. Its curvature, shape, and size, were so precisely defined by its makers. How can we build such objects? Jake’s thoughts dipped through the engineering tunnels of his mind. How can some beings spend their time bullying others, while others erect things that effectively prove the almost magical potential of man? Jake imagined eating at the top of it.
 
-“I will have to figure out a way to stand while my wings grip the Needle securely. I am worried that if I land directly on the antennae section -- it could vibrate the structure and cause catastrophic damage. From experience, it would be much wiser to land on the mid section of the tower and climb up.
+“I will have to figure out a way to stand while my wings grip the Needle securely. I am worried that if I land directly on the antennae section — it could vibrate the structure and cause catastrophic damage. From experience, it would be much wiser to land on the mid section of the tower and climb up.
 
 “Climb up!”, shouted Jake.
 
