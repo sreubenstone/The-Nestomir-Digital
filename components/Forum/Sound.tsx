@@ -39,6 +39,12 @@ export default class Sound extends Component<IProps> {
                 await this.playbackInstance.loadAsync(require("../../assets/sound/truthyfalsey.mp3"));
             }
 
+            if (this.props.sound_file === 'ecosystem') {
+                await this.playbackInstance.loadAsync(require("../../assets/sound/ecosystem.mp3"));
+            }
+
+
+
         } catch (error) {
             console.log('sound load error')
         }
@@ -64,7 +70,7 @@ export default class Sound extends Component<IProps> {
             }
 
         } catch (error) {
-            console.log('error in sound play')
+            console.log('error in sound play,', error)
         }
     }
 
