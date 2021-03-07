@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProfileLoader from "./ProfileLoader";
+
 import {
   NavigationParams,
   NavigationScreenProp,
@@ -13,7 +14,6 @@ interface IProps {
 export default class Profile extends Component<IProps> {
   static navigationOptions = {
     header: null
-    // headerTitle: () => <Logo />
   };
 
   render() {

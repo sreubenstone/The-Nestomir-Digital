@@ -27,6 +27,7 @@ export const GET_PROFILE = gql`
       id
       username
       user_avatar
+      tagline
       threads {
         id
         title
@@ -55,6 +56,7 @@ export const GET_AUTH = gql`
       id
       username
       user_avatar
+      tagline
     }
   }
 `;
@@ -201,5 +203,16 @@ export const PUSH_TOKEN = gql`
     }
   }
 `;
+
+export const SAVE_PROFILE = gql`
+  mutation saveProfile ($tagline: String!) {
+    saveProfile(tagline: $tagline) {
+      id
+      tagline
+    }
+  }
+`;
+
+
 
 
