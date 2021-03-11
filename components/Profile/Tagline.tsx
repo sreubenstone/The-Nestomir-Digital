@@ -27,11 +27,12 @@ const Tagline: FC<IProps> = ({ tagline, user_id }) => {
                 multiline
                 maxLength={250}
                 editable={is_me}
-                style={{ borderColor: 'grey', borderRadius: 3, padding: 7, borderWidth: is_me ? .25 : 0, marginTop: 15, textAlign: is_me ? 'left' : 'center' }}
+                placeholder={is_me ? "...my summary goes here" : "I'm new here."}
+                style={{ height: 60, borderColor: 'grey', borderRadius: 3, padding: 7, borderWidth: is_me ? .25 : 0, marginTop: 15, textAlign: is_me ? 'left' : 'center' }}
             />
             {is_me &&
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <Text style={{ fontSize: 10, color: 'grey', marginTop: 5, marginRight: 20 }}>{value.length}/250</Text>
+                    <Text style={{ fontSize: 10, color: 'grey', marginTop: 5, marginRight: 20 }}>{value ? value.length : '0'}/250</Text>
                     <TouchableOpacity onPress={() => saveProfile({ variables: { tagline: value } })}>
                         <Text style={{ fontSize: 10, color: '#0195FF', marginTop: 5 }}>{!mutationLoading ? "Save" : "SAVING"}</Text>
                     </TouchableOpacity>
