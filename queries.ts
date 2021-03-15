@@ -2,28 +2,28 @@ import { gql } from "apollo-boost";
 
 export const REPLIES_FRAGMENT = gql`
   fragment replies on Comment {
-      id
-      replies {
-          edges {
-              id
-              body
-              user_id
-              user {
-                id
-                username
-                user_avatar
-              }
-              time {
-                time_stamp
-            }
-          }
+    id
+    replies {
+      edges {
+        id
+        body
+        user_id
+        user {
+          id
+          username
+          user_avatar
+        }
+        time {
+          time_stamp
+        }
       }
+    }
   }
-`
+`;
 
 export const GET_PROFILE = gql`
-  query getProfile ($id: Int) {
-    getProfile (id: $id) {
+  query getProfile($id: Int) {
+    getProfile(id: $id) {
       id
       username
       user_avatar
@@ -38,7 +38,7 @@ export const GET_PROFILE = gql`
           user_avatar
         }
         time {
-          time_stamp
+          thread_updated
         }
       }
       bookmark {
@@ -62,8 +62,8 @@ export const GET_AUTH = gql`
 `;
 
 export const GET_THREAD = gql`
-  query getThread ($thread_id: Int) {
-    getThread (thread_id: $thread_id) {
+  query getThread($thread_id: Int) {
+    getThread(thread_id: $thread_id) {
       id
       title
       body
@@ -78,17 +78,17 @@ export const GET_THREAD = gql`
       }
       replies {
         edges {
+          id
+          body
+          user_id
+          user {
             id
-            body
-            user_id
-            user {
-              id
-              username
-              user_avatar
-            }
-            time {
-              time_stamp
-            }
+            username
+            user_avatar
+          }
+          time {
+            time_stamp
+          }
         }
         pageInfo {
           oldestReplyCursor
@@ -98,10 +98,9 @@ export const GET_THREAD = gql`
   }
 `;
 
-
 export const GET_COMMENTS = gql`
-  query getComments ($thread_id: Int, $before: Int) {
-    getComments (thread_id: $thread_id, before: $before ) {
+  query getComments($thread_id: Int, $before: Int) {
+    getComments(thread_id: $thread_id, before: $before) {
       id
       user_id
       body
@@ -112,7 +111,7 @@ export const GET_COMMENTS = gql`
       }
       time {
         time_stamp
-        }
+      }
     }
   }
 `;
@@ -129,12 +128,11 @@ export const GET_FORUM_THREADS = gql`
         user_avatar
       }
       time {
-        time_stamp
+        thread_updated
       }
     }
   }
 `;
-
 
 export const GET_CHAPTER_THREADS = gql`
   query getChapterThreads($chapter_id: Int) {
@@ -148,12 +146,11 @@ export const GET_CHAPTER_THREADS = gql`
         user_avatar
       }
       time {
-        time_stamp
+        thread_updated
       }
     }
   }
 `;
-
 
 export const GET_BOOKMARK = gql`
   query {
@@ -184,8 +181,6 @@ export const SUBMIT_COMMENT = gql`
   }
 `;
 
-
-
 export const UPDATE_BOOKMARK = gql`
   mutation updateBookmark($chapter: Int, $position: Int) {
     updateBookmark(chapter: $chapter, position: $position) {
@@ -197,7 +192,7 @@ export const UPDATE_BOOKMARK = gql`
 `;
 
 export const PUSH_TOKEN = gql`
-  mutation savePushToken ($push_token: String!) {
+  mutation savePushToken($push_token: String!) {
     savePushToken(push_token: $push_token) {
       id
     }
@@ -205,14 +200,10 @@ export const PUSH_TOKEN = gql`
 `;
 
 export const SAVE_PROFILE = gql`
-  mutation saveProfile ($tagline: String!) {
+  mutation saveProfile($tagline: String!) {
     saveProfile(tagline: $tagline) {
       id
       tagline
     }
   }
 `;
-
-
-
-
