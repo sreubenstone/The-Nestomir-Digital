@@ -16,6 +16,7 @@
     "expo-av": "~8.7.0",
     "expo-notifications": "~0.8.2",
     "expo-secure-store": "~9.3.0",
+    "expo-updates": "~0.4.1",
     "graphql": "^14.6.0",
     "moment": "^2.29.1",
     "react": "16.13.1",

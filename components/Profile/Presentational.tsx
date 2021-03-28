@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Config from "../../config.js";
 import * as SecureStore from "expo-secure-store";
+import * as Updates from "expo-updates";
 import { Text, View, ImageBackground, Image, TouchableOpacity, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
 import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from "../Forum/UI/PostListing";
@@ -56,11 +56,16 @@ const Presentational: FC<IProps> = (props) => {
                   return <PostListing data={item} navigation={props.navigation} key={i} />;
                 })}
 
-            {!Config.env && (
-              <TouchableOpacity onPress={() => SecureStore.deleteItemAsync("jwt")}>
-                <Text>Log out (dev)</Text>
+            <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 10 }}>
+              <TouchableOpacity
+                onPress={async () => {
+                  await SecureStore.deleteItemAsync("jwt");
+                  await Updates.reloadAsync();
+                }}
+              >
+                <Text style={{ fontSize: 9 }}>Log out</Text>
               </TouchableOpacity>
-            )}
+            </View>
           </View>
         </View>
       </TouchableWithoutFeedback>
