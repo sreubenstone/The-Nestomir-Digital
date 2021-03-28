@@ -1,25 +1,18 @@
 import React, { FC, useState } from "react";
 import { Text, TextInput, View, TouchableOpacity } from "react-native";
-import { useQuery } from "@apollo/react-hooks";
 import { useMutation } from "@apollo/react-hooks";
-import { GET_AUTH, SAVE_PROFILE } from "../../queries";
+import { SAVE_PROFILE } from "../../queries";
 import { Dimensions } from "react-native";
 
 interface IProps {
   tagline: string;
-  user_id: number;
+  is_me: boolean;
 }
 
-const Tagline: FC<IProps> = ({ tagline, user_id }) => {
+const Tagline: FC<IProps> = ({ tagline, is_me }) => {
   const windowWidth = Dimensions.get("window").width;
-  const auth_info = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
   const [saveProfile, { loading: mutationLoading, error: mutationError }] = useMutation(SAVE_PROFILE);
-  let is_me = false;
-  if (user_id === auth_info.data.getAuth.id) {
-    is_me = true;
-  }
   const [value, onChangeText] = useState(tagline);
-
   return (
     <View style={{ flexDirection: "row", justifyContent: "center" }}>
       <View style={{ width: windowWidth > 800 ? "75%" : "100%" }}>

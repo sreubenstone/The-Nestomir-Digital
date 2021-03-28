@@ -1,6 +1,9 @@
 import React, { FC } from "react";
 import * as SecureStore from "expo-secure-store";
 import * as Updates from "expo-updates";
+import { useQuery } from "@apollo/react-hooks";
+import { GET_AUTH, SAVE_PROFILE } from "../../queries";
+
 import { Text, View, ImageBackground, Image, TouchableOpacity, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
 import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from "../Forum/UI/PostListing";
@@ -13,6 +16,11 @@ interface IProps {
 }
 
 const Presentational: FC<IProps> = (props) => {
+  const auth_info = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
+  let is_me = false;
+  if (props.data.id === auth_info.data.getAuth.id) {
+    is_me = true;
+  }
   return (
     <KeyboardAvoidingView style={{ height: "100%" }}>
       <View style={{ height: "21%" }}>
@@ -22,9 +30,8 @@ const Presentational: FC<IProps> = (props) => {
         <View style={ProgressStyles.container}>
           <View style={{ width: "100%" }}>
             <Image source={{ uri: `${props.data.user_avatar}` }} style={{ width: 125, height: 125, borderRadius: 9, position: "absolute", top: -80, left: "50%", marginLeft: -62.5 }} />
-
             <Text style={{ textAlign: "center", marginTop: 50, fontWeight: "800", fontSize: 19 }}>{props.data.username}</Text>
-            <Tagline tagline={props.data.tagline} user_id={props.data.id} />
+            <Tagline tagline={props.data.tagline} is_me={is_me} />
             <View
               style={[
                 GlobalStyles.flexRowSpace,
@@ -56,16 +63,18 @@ const Presentational: FC<IProps> = (props) => {
                   return <PostListing data={item} navigation={props.navigation} key={i} />;
                 })}
 
-            <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 10 }}>
-              <TouchableOpacity
-                onPress={async () => {
-                  await SecureStore.deleteItemAsync("jwt");
-                  await Updates.reloadAsync();
-                }}
-              >
-                <Text style={{ fontSize: 9 }}>Log out</Text>
-              </TouchableOpacity>
-            </View>
+            {is_me && (
+              <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 10 }}>
+                <TouchableOpacity
+                  onPress={async () => {
+                    await SecureStore.deleteItemAsync("jwt");
+                    await Updates.reloadAsync();
+                  }}
+                >
+                  <Text style={{ fontSize: 9 }}>Log out</Text>
+                </TouchableOpacity>
+              </View>
+            )}
           </View>
         </View>
       </TouchableWithoutFeedback>
