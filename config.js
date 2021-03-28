@@ -1,4 +1,4 @@
-const prod = false;
+const prod = true;
 
 const prod_server = "https://dendro-backend.herokuapp.com";
 const dev_server = "https://3af6b319630b.ngrok.io";

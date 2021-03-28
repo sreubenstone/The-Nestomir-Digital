@@ -3,11 +3,7 @@
     "name": "The Nestomir",
     "slug": "theNestomir",
     "privacy": "unlisted",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -23,13 +19,18 @@
     "updates": {
       "fallbackToCacheTimeout": 10000
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.thenestomir.thenestomir",
       "buildNumber": "1.0.1"
+    },
+    "android": {
+      "package": "com.thenestomir.thenestomirapp",
+      "googleServicesFile": "./google-services.json",
+      "icon": "./assets/images/icon.png",
+      "permissions": [],
+      "versionCode": 1
     }
   }
 }
