@@ -10,22 +10,22 @@ const ChapterLoaderStyles = StyleSheet.create({
     backgroundColor: "#F5F3F3",
     shadowOffset: { width: 0, height: 2 },
     shadowColor: "black",
-    shadowOpacity: 0.5
+    shadowOpacity: 0.5,
   },
   image: {
     height: 40,
     width: 25,
     marginRight: 20,
-    marginTop: 50
-  }
+    marginTop: 50,
+  },
 });
 
 const BookStyles = StyleSheet.create({
   bookFont: {
     fontSize: 17,
     lineHeight: 26,
-    fontFamily: "gelasio"
-  }
+    fontFamily: "gelasio",
+  },
 });
 
 const ProgressCardStyles = StyleSheet.create({
@@ -37,7 +37,7 @@ const ProgressCardStyles = StyleSheet.create({
     shadowOffset: { width: 5, height: 10 },
     shadowColor: "#F7F8FA",
     shadowOpacity: 1,
-    marginBottom: 12
+    marginBottom: 12,
   },
 
   tagContainer1: {
@@ -49,7 +49,7 @@ const ProgressCardStyles = StyleSheet.create({
     padding: 2,
     paddingLeft: 6,
     paddingRight: 6,
-    marginTop: 5
+    marginTop: 5,
   },
 
   tagContainer2: {
@@ -61,15 +61,15 @@ const ProgressCardStyles = StyleSheet.create({
     padding: 2,
     paddingLeft: 6,
     paddingRight: 6,
-    marginTop: 5
+    marginTop: 5,
   },
 
   im: {
     width: 100,
     height: 100,
     borderRadius: 14,
-    marginBottom: 15
-  }
+    marginBottom: 15,
+  },
 });
 
 const ProgressStyles = StyleSheet.create({
@@ -77,18 +77,20 @@ const ProgressStyles = StyleSheet.create({
     fontSize: 18,
     fontFamily: "gelasio-bold",
     textAlign: "center",
-    marginBottom: 6
+    marginBottom: 6,
   },
 
   subTitle: {
     fontSize: 12,
     textAlign: "center",
-    marginBottom: 10
+    marginBottom: 10,
   },
 
   container: {
     height: "84%",
     width: "100%",
+    flexDirection: "row",
+    justifyContent: "center",
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     zIndex: 10,
@@ -97,8 +99,8 @@ const ProgressStyles = StyleSheet.create({
     paddingTop: 14,
     paddingLeft: 15,
     paddingRight: 15,
-    backgroundColor: "#FFF"
-  }
+    backgroundColor: "#FFF",
+  },
 });
 
 const GlobalStyles = StyleSheet.create({
@@ -107,61 +109,61 @@ const GlobalStyles = StyleSheet.create({
     paddingLeft: 25,
     paddingRight: 25,
     backgroundColor: "#F5F3F3",
-    height: "100%"
+    height: "100%",
   },
 
   flexRow: {
-    flexDirection: "row"
+    flexDirection: "row",
   },
 
   flexRowSpace: {
     flexDirection: "row",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
   },
 
   flexCenter: {
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
   imageCard: {
     width: 50,
     height: 50,
-    borderRadius: 10
+    borderRadius: 10,
   },
 
   chapterImage: {
     width: 75,
     height: 75,
     borderRadius: 14,
-    marginBottom: 15
+    marginBottom: 15,
   },
 
   textHeader: {
     fontSize: 26,
     fontFamily: "gelasio-med",
-    marginBottom: 10
+    marginBottom: 10,
   },
 
   textCardTitle: {
     fontSize: 15,
-    fontFamily: "gelasio-med"
+    fontFamily: "gelasio-med",
   },
 
   textCardSubtitle: {
-    fontSize: 12
+    fontSize: 12,
   },
 
   headerText: {
     fontSize: 11,
-    fontFamily: "gelasio-med"
+    fontFamily: "gelasio-med",
   },
 
   bookTitle: {
     fontSize: 20,
     fontFamily: "gelasio-bold",
     textAlign: "center",
-    marginBottom: 10
+    marginBottom: 10,
   },
 
   chapterTitle: {
@@ -169,14 +171,8 @@ const GlobalStyles = StyleSheet.create({
     fontFamily: "gelasio-bold",
     textAlign: "center",
     marginTop: 45,
-    marginBottom: 10
-  }
+    marginBottom: 10,
+  },
 });
 
-export {
-  GlobalStyles,
-  ProgressStyles,
-  ProgressCardStyles,
-  BookStyles,
-  ChapterLoaderStyles
-};
+export { GlobalStyles, ProgressStyles, ProgressCardStyles, BookStyles, ChapterLoaderStyles };

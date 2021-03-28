@@ -1,12 +1,7 @@
 import React, { Component } from "react";
-import {
-  View,
-  ScrollView,
-  InteractionManager,
-} from "react-native";
+import { View, ScrollView, InteractionManager } from "react-native";
 import { GlobalStyles } from "../../Stylesheet";
-import BookPane from './BookPane';
-import ForumModal from "../Forum/ForumModal";
+import BookPane from "./BookPane";
 import Checkpoint from "../Forum/Checkpoint";
 import styled from "styled-components";
 import Prologue from "./Prologue";
@@ -26,20 +21,15 @@ import Chapter13 from "./Chapter13";
 import Chapter14 from "./Chapter14";
 import Chapter15 from "./Chapter15";
 import Chapter16 from "./Chapter16";
-import {
-  NavigationParams,
-  NavigationScreenProp,
-  NavigationState,
-} from "react-navigation";
-
-
+import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
+import { Dimensions } from "react-native";
 
 const BreakIcon = styled.Text`
   text-align: center;
   font-size: 18px;
   margin-top: 30px;
   margin-bottom: 30px;
-`
+`;
 
 interface IState {
   bookmark: number;
@@ -118,20 +108,16 @@ export default class ChapterLoader extends Component<IProps, IState> {
     } else {
       if (bookmark === 0) {
         this.setState({ bookmark: null });
-        return
+        return;
       }
       this.setState({ bookmark: screenPos });
     }
   };
 
   render() {
+    const windowWidth = Dimensions.get("window").width;
     const { navigation } = this.props;
-    const {
-      bookmark,
-      screenPos,
-      overLay,
-      animationComplete,
-    } = this.state;
+    const { bookmark, screenPos, overLay, animationComplete } = this.state;
     const chapter = navigation.getParam("chapter");
     const chapter_index = navigation.getParam("chapter_index");
     const diff = Math.abs(screenPos - bookmark);
@@ -141,9 +127,9 @@ export default class ChapterLoader extends Component<IProps, IState> {
       <View style={{ position: "relative" }}>
         <ScrollView
           // contentOffset={{ x: 0, y: bookmark }}
-          ref={ref => this.scrollView = ref}
+          ref={(ref) => (this.scrollView = ref)}
           onContentSizeChange={(contentWidth, contentHeight) => {
-            this.scrollView.scrollTo({ x: 0, y: bookmark })
+            this.scrollView.scrollTo({ x: 0, y: bookmark });
           }}
           style={[GlobalStyles.container1]}
           scrollEventThrottle={100}
@@ -154,13 +140,13 @@ export default class ChapterLoader extends Component<IProps, IState> {
           onScrollBeginDrag={() => this.setState({ scrolling: true })}
           onScrollEndDrag={() => this.setState({ scrolling: false })}
         >
-          {animationComplete ?
-            <View>
+          {animationComplete ? (
+            <View style={{ paddingLeft: windowWidth > 800 ? 55 : 0, paddingRight: windowWidth > 800 ? 55 : 0 }}>
               <CurrentChapter />
               <BreakIcon>✧</BreakIcon>
               <Checkpoint chapter_index={chapter_index} navigation={navigation} />
             </View>
-            : null}
+          ) : null}
         </ScrollView>
         <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} />
       </View>

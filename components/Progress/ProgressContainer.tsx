@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
-import Push from './Push';
+import Push from "./Push";
 import ProgressMap from "./ProgressMap";
 import { ProgressStyles } from "../../Stylesheet";
-import {
-  NavigationParams,
-  NavigationScreenProp,
-  NavigationState,
-} from "react-navigation";
+import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-  data: any
+  data: any;
 }
 
 export default class ProgressContainer extends Component<IProps> {
@@ -27,17 +23,17 @@ export default class ProgressContainer extends Component<IProps> {
           <ImageBackground source={require("../../assets/images/solarsystem.png")} style={{ width: "100%", height: "100%" }} />
         </View>
         <View style={ProgressStyles.container}>
-          <Text style={ProgressStyles.title}>The Nestomir</Text>
-          <Text style={ProgressStyles.subTitle}>The epic journey
-          <Text style={{ fontStyle: "italic" }}> awaits.</Text>
-          </Text>
-          <ProgressMap navigation={navigation} bookmark={data} />
+          <View style={{ width: "100%" }}>
+            <Text style={ProgressStyles.title}>The Nestomir</Text>
+            <Text style={ProgressStyles.subTitle}>
+              The epic journey
+              <Text style={{ fontStyle: "italic" }}> awaits.</Text>
+            </Text>
+            <ProgressMap navigation={navigation} bookmark={data} />
+          </View>
         </View>
         <Push />
       </View>
     );
   }
 }
-
-
-
