@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground, TouchableOpacity, Image } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
 import ProfileButtonForum from "./ProfileButtonForum";
 import ForumLoader from "./ForumLoader";
 import { ProgressStyles } from "../../Stylesheet";

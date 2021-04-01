@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
+import { View, Text, ImageBackground, TouchableOpacity, Keyboard, TouchableWithoutFeedback } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import styled from "styled-components";
 import { ProgressStyles } from "../../Stylesheet";
@@ -81,57 +81,59 @@ export default class Login extends Component<IProps> {
         <View style={{ height: "21%" }}>
           <ImageBackground source={require("../../assets/images/dragon.png")} style={{ width: "100%", height: "100%" }} />
         </View>
-        <View style={ProgressStyles.container}>
-          <View style={{ width: windowWidth > 800 ? "70%" : "100%" }}>
-            <Text style={ProgressStyles.title}>Log in</Text>
-            <Text style={ProgressStyles.subTitle}>Dive back into the adventure.</Text>
-            <View style={{ marginTop: 15 }}>
-              <Title>EMAIL</Title>
-              <Insert onChangeText={(text) => this.setState({ email: text })} value={email} autoCapitalize="none" />
-              <Title>PASSWORD</Title>
-              <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" />
-            </View>
-            {error ? <ErrorText>{error}</ErrorText> : null}
+        <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+          <View style={ProgressStyles.container}>
+            <View style={{ width: windowWidth > 800 ? "70%" : "100%" }}>
+              <Text style={ProgressStyles.title}>Log in</Text>
+              <Text style={ProgressStyles.subTitle}>Dive back into the adventure.</Text>
+              <View style={{ marginTop: 15 }}>
+                <Title>EMAIL</Title>
+                <Insert onChangeText={(text) => this.setState({ email: text })} value={email} autoCapitalize="none" />
+                <Title>PASSWORD</Title>
+                <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" />
+              </View>
+              {error ? <ErrorText>{error}</ErrorText> : null}
 
-            <View style={{ marginTop: 10 }}>
-              <TouchableOpacity
-                onPress={() => {
-                  if (!email || !pw) {
-                    this.setState({
-                      error: "Username, Email, or Password can not be blank!",
-                    });
-                    return;
-                  }
-                  if (!this.validateEmail(email)) {
-                    this.setState({ error: "Invalid email format." });
-                    return;
-                  }
-                  this.logIn();
-                }}
-              >
-                <Button>
-                  <Text
-                    style={{
-                      color: "white",
-                      textAlign: "center",
-                      fontWeight: "bold",
-                      paddingTop: 8,
-                      paddingBottom: 8,
-                    }}
-                  >
-                    LOG IN
+              <View style={{ marginTop: 10 }}>
+                <TouchableOpacity
+                  onPress={() => {
+                    if (!email || !pw) {
+                      this.setState({
+                        error: "Username, Email, or Password can not be blank!",
+                      });
+                      return;
+                    }
+                    if (!this.validateEmail(email)) {
+                      this.setState({ error: "Invalid email format." });
+                      return;
+                    }
+                    this.logIn();
+                  }}
+                >
+                  <Button>
+                    <Text
+                      style={{
+                        color: "white",
+                        textAlign: "center",
+                        fontWeight: "bold",
+                        paddingTop: 8,
+                        paddingBottom: 8,
+                      }}
+                    >
+                      LOG IN
+                    </Text>
+                  </Button>
+                </TouchableOpacity>
+                <Text style={{ textAlign: "center", marginTop: 9, fontSize: 10 }}>
+                  Don't have an account?{" "}
+                  <Text style={{ color: "#8367AF" }} onPress={() => this.props.toggle(true)}>
+                    Sign up{" "}
                   </Text>
-                </Button>
-              </TouchableOpacity>
-              <Text style={{ textAlign: "center", marginTop: 9, fontSize: 10 }}>
-                Don't have an account?{" "}
-                <Text style={{ color: "#8367AF" }} onPress={() => this.props.toggle(true)}>
-                  Sign up{" "}
                 </Text>
-              </Text>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableWithoutFeedback>
       </View>
     );
   }
