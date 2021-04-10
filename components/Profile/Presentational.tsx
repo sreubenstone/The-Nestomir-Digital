@@ -57,14 +57,16 @@ const Presentational: FC<IProps> = (props) => {
               </View>
             </View>
             <Text style={{ marginTop: 20, fontWeight: "800", fontSize: 17, marginBottom: 15 }}>Forum Activity</Text>
-            {!props.data.threads
-              ? null
-              : props.data.threads.map((item, i) => {
-                  return <PostListing data={item} navigation={props.navigation} key={i} />;
-                })}
+            {!props.data.threads ? (
+              <Text style={{ color: "grey", fontSize: 10 }}>Forum threads {props.data.username} commented in will appear here.</Text>
+            ) : (
+              props.data.threads.map((item, i) => {
+                return <PostListing data={item} navigation={props.navigation} key={i} />;
+              })
+            )}
 
             {is_me && (
-              <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 10 }}>
+              <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 35 }}>
                 <TouchableOpacity
                   onPress={async () => {
                     await SecureStore.deleteItemAsync("jwt");

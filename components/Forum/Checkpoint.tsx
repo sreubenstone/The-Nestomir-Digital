@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_CHAPTER_THREADS } from "../../queries";
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import PostListing from "./UI/PostListing";
 import styled from "styled-components";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
@@ -37,12 +37,14 @@ const Checkpoint: FC<IProps> = (props) => {
     <Container>
       <Header>Chapter Relevant Threads</Header>
       {!data.getChapterThreads.length && (
-        <Text style={{ textAlign: "center", fontSize: 10 }}>
-          This chapter has no threads associated to it yet.{" "}
-          <TouchableOpacity onPress={() => props.navigation.navigate("Forum")}>
-            <Text style={{ textAlign: "center", fontSize: 10, color: "#0195FF", marginTop: 10 }}>➵ Hit the Forum to discover other interesting threads!</Text>
-          </TouchableOpacity>
-        </Text>
+        <View>
+          <Text style={{ textAlign: "center", fontSize: 10 }}>This chapter has no threads associated to it yet.</Text>
+          <View>
+            <TouchableOpacity onPress={() => props.navigation.navigate("Forum")}>
+              <Text style={{ textAlign: "center", fontSize: 10, color: "#0195FF", marginTop: 10 }}>➵ Hit the Forum to discover other interesting threads!</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       )}
       {data.getChapterThreads.map((item, i) => {
         return <PostListing data={item} key={i} navigation={props.navigation} />;

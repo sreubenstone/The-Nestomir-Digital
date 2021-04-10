@@ -29,7 +29,14 @@ const Tagline: FC<IProps> = ({ tagline, is_me }) => {
         {is_me && (
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
             <Text style={{ fontSize: 10, color: "grey", marginTop: 5, marginRight: 20 }}>{value ? value.length : "0"}/250</Text>
-            <TouchableOpacity onPress={() => saveProfile({ variables: { tagline: value } })}>
+            <TouchableOpacity
+              onPress={() => {
+                if (!value.length) {
+                  return;
+                }
+                saveProfile({ variables: { tagline: value } });
+              }}
+            >
               <Text style={{ fontSize: 10, color: "#0195FF", marginTop: 5 }}>{!mutationLoading ? "Save" : "SAVING"}</Text>
             </TouchableOpacity>
           </View>

@@ -1,7 +1,7 @@
 const prod = false;
 
 const prod_server = "https://dendro-backend.herokuapp.com";
-const dev_server = "https://3af6b319630b.ngrok.io";
+const dev_server = "https://a2155ca21be1.ngrok.io";
 
 const export_env_urls = () => {
   if (prod) {
