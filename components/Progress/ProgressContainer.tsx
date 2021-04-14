@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground } from "react-native";
+import { View, Text, ImageBackground, Image } from "react-native";
 import Push from "./Push";
 import ProgressMap from "./ProgressMap";
+import ReaderStat from "./ReaderStat";
 import { ProgressStyles } from "../../Stylesheet";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
@@ -30,6 +31,7 @@ export default class ProgressContainer extends Component<IProps> {
               <Text style={{ fontStyle: "italic" }}> awaits.</Text>
             </Text>
             <ProgressMap navigation={navigation} bookmark={data} />
+            <ReaderStat />
           </View>
         </View>
         <Push />
