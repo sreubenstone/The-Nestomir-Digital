@@ -5,6 +5,7 @@ const TOC = [
     image: `https://i.ytimg.com/vi/kGpcl23DyDw/maxresdefault.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Prologue",
   },
 
@@ -14,6 +15,7 @@ const TOC = [
     image: `https://image.freepik.com/free-vector/trophy-sketch-set_1284-4035.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter1",
   },
 
@@ -23,6 +25,7 @@ const TOC = [
     image: `https://i.pinimg.com/originals/09/5c/2c/095c2ccf70ef910ffadc778779dc8507.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter2",
   },
 
@@ -32,6 +35,7 @@ const TOC = [
     image: `http://2.bp.blogspot.com/-XeVTRNoWUgo/TknJiI7qYKI/AAAAAAAAAUM/NnC7H2txSoE/s1600/you+002.JPG`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter3",
   },
 
@@ -41,6 +45,7 @@ const TOC = [
     image: `https://t4.ftcdn.net/jpg/02/47/42/81/360_F_247428197_wpaAVCuxUrlf43AW6WkBH2Z4D62cY95L.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter4",
   },
 
@@ -50,6 +55,7 @@ const TOC = [
     image: `https://ryanclachrie.files.wordpress.com/2012/06/cockpit.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter5",
   },
 
@@ -59,6 +65,7 @@ const TOC = [
     image: `https://cartoonize-online.com/gallery/cartoons/f/b/4/779234.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter6",
   },
 
@@ -68,6 +75,7 @@ const TOC = [
     image: `https://previews.123rf.com/images/torky/torky1111/torky111100032/11133478-ski-lift-sketch.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter7",
   },
 
@@ -77,6 +85,7 @@ const TOC = [
     image: `https://img2.pngio.com/battleaxe-png-3-png-image-battle-axe-drawing-png-1000_709.png`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter8",
   },
 
@@ -86,6 +95,7 @@ const TOC = [
     image: `https://thumbs.dreamstime.com/b/hand-drawn-sketch-illustration-architecture-landmark-koutoubia-mosque-morocco-casablanca-hand-drawn-sketch-illustration-168519516.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter9",
   },
 
@@ -95,6 +105,7 @@ const TOC = [
     image: `https://i.pinimg.com/originals/81/76/ae/8176ae26e93e67b9da12988e10b83adf.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter10",
   },
 
@@ -104,6 +115,7 @@ const TOC = [
     image: `https://paintingvalley.com/sketches/beach-scene-sketch-3.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter11",
   },
 
@@ -113,6 +125,7 @@ const TOC = [
     image: `https://cdnb.artstation.com/p/assets/images/images/022/325/655/large/laura-guedes-dojo-sketch.jpg?1574987125`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter12",
   },
 
@@ -122,6 +135,7 @@ const TOC = [
     image: `https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/hand-drawn-open-notebook-on-stack-of-books-iam-nee.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter13",
   },
 
@@ -131,6 +145,7 @@ const TOC = [
     image: `http://nehlibrary.org/wp-content/uploads/2013/05/stanley-coast-ink-drive-rock7-11.jpeg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter14",
   },
 
@@ -140,6 +155,7 @@ const TOC = [
     image: `https://cdna.artstation.com/p/assets/images/images/021/856/584/large/johannes-schiehsl-hangar-big.jpg?1573196125`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter15",
   },
 
@@ -149,6 +165,7 @@ const TOC = [
     image: `https://ih1.redbubble.net/image.889628986.9419/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg`,
     progress: null,
     bookmark: null,
+    percentage: null,
     id: "Chapter16",
   },
 ];

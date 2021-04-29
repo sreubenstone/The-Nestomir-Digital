@@ -159,6 +159,7 @@ export const GET_BOOKMARK = gql`
       user_id
       chapter
       position
+      percentage
     }
   }
 `;
@@ -182,11 +183,12 @@ export const SUBMIT_COMMENT = gql`
 `;
 
 export const UPDATE_BOOKMARK = gql`
-  mutation updateBookmark($chapter: Int, $position: Int) {
-    updateBookmark(chapter: $chapter, position: $position) {
+  mutation updateBookmark($chapter: Int, $position: Int, $percentage: Float) {
+    updateBookmark(chapter: $chapter, position: $position, percentage: $percentage) {
       id
       chapter
       position
+      percentage
     }
   }
 `;

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { View, ScrollView, InteractionManager } from "react-native";
 import { GlobalStyles } from "../../Stylesheet";
 import BookPane from "./BookPane";
+import ProgressBar from "./ProgressBar";
 import Checkpoint from "../Forum/Checkpoint";
 import styled from "styled-components";
 import Prologue from "./Prologue";
@@ -34,6 +35,7 @@ const BreakIcon = styled.Text`
 interface IState {
   bookmark: number;
   screenPos: number;
+  progress_count: number;
   overLay: boolean;
   scrolling: boolean;
   animationComplete: boolean;
@@ -51,10 +53,14 @@ export default class ChapterLoader extends Component<IProps, IState> {
   state = {
     bookmark: this.props.navigation.getParam("bookmark"),
     screenPos: 0,
+    progress_count: 0,
     overLay: false,
     scrolling: false,
     animationComplete: false,
   };
+
+  scrollViewContent_height = 0;
+  scrollView_height = 0;
 
   chapters = {
     Prologue: Prologue,
@@ -85,7 +91,17 @@ export default class ChapterLoader extends Component<IProps, IState> {
   }
 
   setPos = (e) => {
-    this.setState({ screenPos: e.nativeEvent.contentOffset.y });
+    if (e.nativeEvent.contentOffset.y < 0) {
+      this.setState({ screenPos: e.nativeEvent.contentOffset.y, progress_count: 0 });
+      return;
+    }
+
+    if (e.nativeEvent.contentOffset.y > this.scrollViewContent_height - this.scrollView_height) {
+      this.setState({ screenPos: e.nativeEvent.contentOffset.y, progress_count: 1 });
+      return;
+    }
+
+    this.setState({ screenPos: e.nativeEvent.contentOffset.y, progress_count: Math.abs(e.nativeEvent.contentOffset.y / (this.scrollViewContent_height - this.scrollView_height)) });
   };
 
   toggleOverLay = () => {
@@ -117,7 +133,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
   render() {
     const windowWidth = Dimensions.get("window").width;
     const { navigation } = this.props;
-    const { bookmark, screenPos, overLay, animationComplete } = this.state;
+    const { bookmark, screenPos, overLay, animationComplete, progress_count } = this.state;
     const chapter = navigation.getParam("chapter");
     const chapter_index = navigation.getParam("chapter_index");
     const diff = Math.abs(screenPos - bookmark);
@@ -130,7 +146,9 @@ export default class ChapterLoader extends Component<IProps, IState> {
           ref={(ref) => (this.scrollView = ref)}
           onContentSizeChange={(contentWidth, contentHeight) => {
             this.scrollView.scrollTo({ x: 0, y: bookmark });
+            this.scrollViewContent_height = contentHeight;
           }}
+          onLayout={(event) => (this.scrollView_height = event.nativeEvent.layout.height)}
           style={[GlobalStyles.container1]}
           scrollEventThrottle={100}
           onScroll={this.setPos}
@@ -148,7 +166,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
             </View>
           ) : null}
         </ScrollView>
-        <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} />
+        <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} progress_count={progress_count} />
+        <ProgressBar overLay={overLay} progress_count={progress_count} />
       </View>
     );
   }
