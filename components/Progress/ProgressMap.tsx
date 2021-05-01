@@ -46,8 +46,11 @@ const ProgressMap: FC<IProps> = (props) => {
                   <Text style={GlobalStyles.textCardTitle}>{item.chapter}</Text>
                   <Text style={GlobalStyles.textCardSubtitle}>{item.caption}</Text>
                   {item.progress ? (
-                    <View style={item.progress == "in_progress" ? ProgressCardStyles.tagContainer1 : ProgressCardStyles.tagContainer2}>
-                      <Text style={{ fontSize: 9, color: "#fff", fontWeight: "600" }}>{item.progress == "in_progress" ? `In Progress (${Math.round(item.percentage)} % read, keep going!)` : "Completed"} </Text>
+                    <View>
+                      <View style={item.progress == "in_progress" ? ProgressCardStyles.tagContainer1 : ProgressCardStyles.tagContainer2}>
+                        <Text style={{ fontSize: 9, color: "#fff", fontWeight: "600" }}>{item.progress == "in_progress" ? `In Progress` : "Completed"} </Text>
+                      </View>
+                      {item.progress == "in_progress" && <Text style={{ fontSize: 10, marginTop: 4 }}>{Math.round(item.percentage)}% read, keep going!</Text>}
                     </View>
                   ) : null}
                 </View>
