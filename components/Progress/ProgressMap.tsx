@@ -3,6 +3,9 @@ import { View, ScrollView, Text, Image, TouchableOpacity } from "react-native";
 import { ProgressCardStyles, GlobalStyles } from "../../Stylesheet";
 import { TOC } from "../../TOC";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
+import { useQuery } from "@apollo/react-hooks";
+import { GET_AUTH } from "../../queries";
+import { analytics_chapter_open } from "../../Analytics";
 
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
@@ -10,6 +13,7 @@ interface IProps {
 }
 
 const ProgressMap: FC<IProps> = (props) => {
+  const { loading, error, data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
   const { navigation, bookmark } = props;
 
   function mod(num, pos, per) {
@@ -38,7 +42,13 @@ const ProgressMap: FC<IProps> = (props) => {
     <ScrollView>
       {Prog.map((item, i) => {
         return (
-          <TouchableOpacity onPress={() => navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark, chapter_index: i })} key={i}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark, chapter_index: i });
+              analytics_chapter_open(data.getAuth.id, i);
+            }}
+            key={i}
+          >
             <View style={ProgressCardStyles.container}>
               <View style={GlobalStyles.flexRow}>
                 <Image style={ProgressCardStyles.im} source={{ uri: item.image }} />

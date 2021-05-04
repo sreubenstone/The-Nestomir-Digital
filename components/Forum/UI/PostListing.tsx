@@ -1,8 +1,11 @@
 import React, { FC, useState } from "react";
 import { View, Text, Image } from "react-native";
+import { useQuery } from "@apollo/react-hooks";
+import { GET_AUTH } from "../../../queries";
 import styled from "styled-components";
 import moment from "moment";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
+import { analytics_thread_open } from "../../../Analytics";
 
 interface IProps {
   data: any;
@@ -17,6 +20,7 @@ const Container = styled.View`
 `;
 
 const PostListing: FC<IProps> = (props) => {
+  const { loading, error, data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
   const [on, switchToggle] = useState(false);
   // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
   const converted = JSON.parse(props.data.time.thread_updated);
@@ -31,6 +35,7 @@ const PostListing: FC<IProps> = (props) => {
         e.stopPropagation();
         props.navigation.navigate("Thread", { thread_id: props.data.id, title: props.data.title });
         switchToggle(!on);
+        analytics_thread_open(data.getAuth.id, props.data.id);
       }}
     >
       <View style={{ flexDirection: "row" }}>
