@@ -8,10 +8,11 @@ import Profile from "../components/Profile/Profile__";
 import Forum from "../components/Forum/Forum__";
 import Thread from "../components/Forum/Thread";
 import ChapterLoader from "../components/Book/ChapterLoader__";
+import Support from "../components/Support/SupportEntry__";
 
 const StoryStack = createStackNavigator({
-  ProgressEntry: ProgressEntry,
-  ChapterLoader: ChapterLoader
+  ProgressEntry,
+  ChapterLoader,
 });
 
 StoryStack.navigationOptions = ({ navigation }) => {
@@ -22,27 +23,22 @@ StoryStack.navigationOptions = ({ navigation }) => {
   }
   return {
     tabBarLabel: "Story",
-    tabBarVisible
+    tabBarVisible,
   };
 };
 
-// const ProfileStack = createStackNavigator({
-//   Profile: Profile
-// });
-
 const ForumStack = createStackNavigator({
-  Forum: Forum,
-  Thread: Thread,
-  Profile: Profile
+  Forum,
+  Thread,
+  Profile,
+  Support,
 });
 
 export default createAppContainer(
   createBottomTabNavigator(
     {
       Story: StoryStack,
-      // Alerts: ForumStack,
       Forum: ForumStack,
-      // Profile: ProfileStack
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({
@@ -62,12 +58,12 @@ export default createAppContainer(
             iconName = "ios-chatbubble-ellipses";
           }
           return <Ionicons name={iconName} size={25} color={tintColor} />;
-        }
+        },
       }),
       tabBarOptions: {
         activeTintColor: "gray",
-        inactiveTintColor: "gray"
-      }
+        inactiveTintColor: "gray",
+      },
     }
   )
 );

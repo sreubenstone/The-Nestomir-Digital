@@ -5,7 +5,7 @@ import { TOC } from "../../TOC";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
-import { analytics_chapter_open } from "../../Analytics";
+import analytics from "../../Analytics";
 
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
@@ -45,7 +45,7 @@ const ProgressMap: FC<IProps> = (props) => {
           <TouchableOpacity
             onPress={() => {
               navigation.navigate("ChapterLoader", { chapter: item.id, bookmark: item.bookmark, chapter_index: i });
-              analytics_chapter_open(data.getAuth.id, i);
+              analytics("chapter_open", { distinct_id: data.getAuth.id, chapter: i });
             }}
             key={i}
           >

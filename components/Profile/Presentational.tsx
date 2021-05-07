@@ -2,8 +2,7 @@ import React, { FC } from "react";
 import * as SecureStore from "expo-secure-store";
 import * as Updates from "expo-updates";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_AUTH, SAVE_PROFILE } from "../../queries";
-
+import { GET_AUTH } from "../../queries";
 import { Text, View, ImageBackground, Image, TouchableOpacity, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
 import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from "../Forum/UI/PostListing";

@@ -209,3 +209,11 @@ export const SAVE_PROFILE = gql`
     }
   }
 `;
+
+export const SAVE_SUPPORT_REQUEST = gql`
+  mutation save_Support_Request($body: String) {
+    save_Support_Request(body: $body) {
+      body
+    }
+  }
+`;

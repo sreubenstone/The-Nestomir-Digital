@@ -5,7 +5,7 @@ import { GET_AUTH } from "../../../queries";
 import styled from "styled-components";
 import moment from "moment";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-import { analytics_thread_open } from "../../../Analytics";
+import analytics from "../../../Analytics";
 
 interface IProps {
   data: any;
@@ -35,7 +35,7 @@ const PostListing: FC<IProps> = (props) => {
         e.stopPropagation();
         props.navigation.navigate("Thread", { thread_id: props.data.id, title: props.data.title });
         switchToggle(!on);
-        analytics_thread_open(data.getAuth.id, props.data.id);
+        analytics("thread_open", { distinct_id: data.getAuth.id, thread_id: props.data.id });
       }}
     >
       <View style={{ flexDirection: "row" }}>
