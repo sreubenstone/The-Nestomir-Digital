@@ -7,6 +7,7 @@ import { Text, View, ImageBackground, Image, TouchableOpacity, Keyboard, Touchab
 import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from "../Forum/UI/PostListing";
 import Tagline from "./Tagline";
+import ProfileAvatar from "./Profile_Avatar";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
@@ -28,8 +29,8 @@ const Presentational: FC<IProps> = (props) => {
       <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <View style={ProgressStyles.container}>
           <View style={{ width: "100%" }}>
-            <Image source={{ uri: `${props.data.user_avatar}` }} style={{ width: 125, height: 125, borderRadius: 9, position: "absolute", top: -80, left: "50%", marginLeft: -62.5 }} />
-            <Text style={{ textAlign: "center", marginTop: 50, fontWeight: "800", fontSize: 19 }}>{props.data.username}</Text>
+            <ProfileAvatar uri={props.data.user_avatar} />
+            <Text style={{ textAlign: "center", marginTop: 55, fontWeight: "800", fontSize: 19 }}>{props.data.username}</Text>
             <Tagline tagline={props.data.tagline} is_me={is_me} />
             <View
               style={[

@@ -210,6 +210,15 @@ export const SAVE_PROFILE = gql`
   }
 `;
 
+export const SAVE_PROFILE_PICTURE = gql`
+  mutation saveProfilePicture($uri: String!) {
+    saveProfilePicture(uri: $uri) {
+      id
+      user_avatar
+    }
+  }
+`;
+
 export const SAVE_SUPPORT_REQUEST = gql`
   mutation save_Support_Request($body: String) {
     save_Support_Request(body: $body) {
