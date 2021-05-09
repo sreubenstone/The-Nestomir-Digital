@@ -31,11 +31,13 @@ const ContainerA = styled.View`
 
 interface IProps {
   uri: string;
+  is_me: boolean;
 }
 
 let CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dshxqbjrf/upload";
 
 const ProfileAvatar: FC<IProps> = (props) => {
+  const { uri, is_me } = props;
   const [saveProfilePicture, { loading: mutationLoading, error: mutationError }] = useMutation(SAVE_PROFILE_PICTURE);
   let openImagePickerAsync = async () => {
     let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -78,10 +80,12 @@ const ProfileAvatar: FC<IProps> = (props) => {
   };
   return (
     <View>
-      <Picture source={{ uri: `${props.uri}` }} />
-      <TouchableOpacity onPress={() => openImagePickerAsync()}>
-        <Icon source={require("../../assets/images/camera.png")} />
-      </TouchableOpacity>
+      <Picture source={{ uri }} />
+      {is_me && (
+        <TouchableOpacity onPress={() => openImagePickerAsync()}>
+          <Icon source={require("../../assets/images/camera.png")} />
+        </TouchableOpacity>
+      )}
       {mutationLoading && (
         <ContainerA>
           <ActivityIndicator size="small" color="#0000ff" />

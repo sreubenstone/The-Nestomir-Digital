@@ -21,6 +21,7 @@ const Presentational: FC<IProps> = (props) => {
   if (props.data.id === auth_info.data.getAuth.id) {
     is_me = true;
   }
+
   return (
     <KeyboardAvoidingView style={{ height: "100%" }}>
       <View style={{ height: "21%" }}>
@@ -29,7 +30,7 @@ const Presentational: FC<IProps> = (props) => {
       <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <View style={ProgressStyles.container}>
           <View style={{ width: "100%" }}>
-            <ProfileAvatar uri={props.data.user_avatar} />
+            <ProfileAvatar uri={props.data.user_avatar} is_me={is_me} />
             <Text style={{ textAlign: "center", marginTop: 55, fontWeight: "800", fontSize: 19 }}>{props.data.username}</Text>
             <Tagline tagline={props.data.tagline} is_me={is_me} />
             <View
