@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, ScrollView, InteractionManager } from "react-native";
+import { View, ScrollView, InteractionManager, Modal, Text } from "react-native";
 import { GlobalStyles } from "../../Stylesheet";
 import BookPane from "./BookPane";
 import ProgressBar from "./ProgressBar";
@@ -24,6 +24,7 @@ import Chapter15 from "./Chapter15";
 import Chapter16 from "./Chapter16";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import { Dimensions } from "react-native";
+import GlossaryModal from "../Glossary/GlossaryModal";
 
 const BreakIcon = styled.Text`
   text-align: center;
@@ -39,6 +40,8 @@ interface IState {
   overLay: boolean;
   scrolling: boolean;
   animationComplete: boolean;
+  glossary: boolean;
+  glossary_element: string;
 }
 
 interface IProps {
@@ -57,6 +60,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
     overLay: false,
     scrolling: false,
     animationComplete: false,
+    glossary: false,
+    glossary_element: "Function",
   };
 
   scrollViewContent_height = 0;
@@ -111,6 +116,10 @@ export default class ChapterLoader extends Component<IProps, IState> {
     this.setState({ overLay: !this.state.overLay });
   };
 
+  toggleGlossary = (name: string) => {
+    this.setState({ glossary: !this.state.glossary, glossary_element: name });
+  };
+
   setBookMark = () => {
     // Permitting 0 screen position book mark so creates convolusion in this function should be rewritten
     const { bookmark, screenPos } = this.state;
@@ -133,7 +142,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
   render() {
     const windowWidth = Dimensions.get("window").width;
     const { navigation } = this.props;
-    const { bookmark, screenPos, overLay, animationComplete, progress_count } = this.state;
+    const { bookmark, screenPos, overLay, animationComplete, progress_count, glossary, glossary_element } = this.state;
     const chapter = navigation.getParam("chapter");
     const chapter_index = navigation.getParam("chapter_index");
     const diff = Math.abs(screenPos - bookmark);
@@ -160,14 +169,15 @@ export default class ChapterLoader extends Component<IProps, IState> {
         >
           {animationComplete ? (
             <View style={{ paddingLeft: windowWidth > 800 ? 55 : 0, paddingRight: windowWidth > 800 ? 55 : 0 }}>
-              <CurrentChapter />
+              <CurrentChapter toggleGlossary={this.toggleGlossary} />
               <BreakIcon>✧</BreakIcon>
               <Checkpoint chapter_index={chapter_index} navigation={navigation} />
             </View>
           ) : null}
         </ScrollView>
         <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} progress_count={progress_count} />
-        <ProgressBar overLay={overLay} progress_count={progress_count} />
+        <ProgressBar overLay={overLay} glossary={glossary} progress_count={progress_count} />
+        <GlossaryModal glossary={glossary} glossary_element={glossary_element} toggleGlossary={this.toggleGlossary} />
       </View>
     );
   }
