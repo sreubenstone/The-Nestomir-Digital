@@ -1,6 +1,6 @@
 const Glossary = {
   Function: {
-    title: "The Function",
+    title: "Function",
     pron: "fuhngk•shuhn",
     description: "A function is a block of organized, reusable code that is used to perform a single, related action.",
     ldshab: "Known as The Holy Reusable Root in Naronian culture. Known to be the essence of all programming.",
@@ -10,6 +10,17 @@ const Glossary = {
       { title: "w3schools: Creating a Python Function", url: "https://www.w3schools.com/python/python_functions.asp" },
     ],
     recommended: ["Write a Python function that calculates the average return of your investment over a period of time.", "Write a Python function that calculates your average velocity on a run."],
+  },
+
+  Memory: {
+    title: "Memory",
+    pron: "mem·​o·​ry",
+    description: "Computer memory is any physical device capable of storing information temporarily, like RAM (random access memory).",
+    snippit: "dog = 'rex'\n# ex. Python is opening a slot in memory\n# to store the value of dog.",
+    suggested: [
+      { title: "Explain That Stuff: Computer Memory", url: "https://www.explainthatstuff.com/how-computer-memory-works.html" },
+      { title: "Real Python: Memory Management (advanced)", url: "https://realpython.com/python-memory-management/" },
+    ],
   },
 
   Variable: {
@@ -24,17 +35,6 @@ const Glossary = {
       { title: "w3schools: Defining Python Variables", url: "https://www.w3schools.com/python/python_variables.asp" },
     ],
     recommended: ["Use a Jupyter notebook to create a variable and save your name in it, then print it to the screen."],
-  },
-
-  Memory: {
-    title: "Memory",
-    pron: "mem·​o·​ry",
-    description: "Computer memory is any physical device capable of storing information temporarily, like RAM (random access memory).",
-    snippit: "dog = 'rex'\n# ex. Python is opening a slot in memory\n# to store the value of dog.",
-    suggested: [
-      { title: "Explain That Stuff: Computer Memory", url: "https://www.explainthatstuff.com/how-computer-memory-works.html" },
-      { title: "Real Python: Memory Management (advanced)", url: "https://realpython.com/python-memory-management/" },
-    ],
   },
 };
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import styled from "styled-components";
-import GlossaryWord from "../Glossary/GlossaryWord";
+import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
   width: 100%;

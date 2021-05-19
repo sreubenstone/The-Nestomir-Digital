@@ -26,7 +26,9 @@ export default class Forum extends Component<IProps> {
         </View>
         <View style={ProgressStyles.container}>
           <View style={{ width: "100%" }}>
-            <Text style={{ textAlign: "center", marginTop: 5, fontWeight: "800", fontSize: 19, marginBottom: 20 }}>Forum</Text>
+            <Text style={ProgressStyles.title}>Forum</Text>
+            <Text style={ProgressStyles.subTitle}>Discuss thoughts and ideas.</Text>
+            <View style={{ marginTop: 15 }} />
             <ForumLoader navigation={navigation} />
           </View>
         </View>

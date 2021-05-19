@@ -24,7 +24,7 @@ import Chapter15 from "./Chapter15";
 import Chapter16 from "./Chapter16";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import { Dimensions } from "react-native";
-import GlossaryModal from "../Glossary/GlossaryModal";
+import GlossaryModal from "../Glossary/inline/GlossaryModal";
 
 const BreakIcon = styled.Text`
   text-align: center;

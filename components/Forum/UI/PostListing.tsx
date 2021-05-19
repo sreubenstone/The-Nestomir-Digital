@@ -43,9 +43,9 @@ const PostListing: FC<IProps> = (props) => {
           <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 30, height: 30, borderRadius: 12 }} />
           {props.data.audio ? <Image source={require("../../../assets/images/microphone.png")} style={{ width: 15, height: 15, top: 20, right: -3, position: "absolute" }} /> : null}
         </View>
-        <Text style={{ color: "#0195FF", marginTop: 4, marginLeft: 14 }}>{props.data.title}</Text>
+        <Text style={{ color: "#0195FF", marginTop: 4, marginLeft: 14, fontFamily: "gelasio" }}>{props.data.title}</Text>
       </View>
-      <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10 }}>{props.data.title.length > 29 ? moment_object.fromNow().slice(0, 9) : moment_object.fromNow()}</Text>
+      <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10, fontFamily: "gelasio" }}>{props.data.title.length > 29 ? moment_object.fromNow().slice(0, 9) : moment_object.fromNow()}</Text>
     </Container>
   );
 };

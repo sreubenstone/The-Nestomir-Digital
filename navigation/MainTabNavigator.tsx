@@ -9,6 +9,8 @@ import Forum from "../components/Forum/Forum__";
 import Thread from "../components/Forum/Thread";
 import ChapterLoader from "../components/Book/ChapterLoader__";
 import Support from "../components/Support/SupportEntry__";
+import FullGlossaryIndex from "../components/Glossary/main/GlossaryEntry__";
+import GlossaryDetail from "../components/Glossary/main/GlossaryDetailView";
 
 const StoryStack = createStackNavigator({
   ProgressEntry,
@@ -34,11 +36,17 @@ const ForumStack = createStackNavigator({
   Support,
 });
 
+const GlossaryStack = createStackNavigator({
+  FullGlossaryIndex,
+  GlossaryDetail,
+});
+
 export default createAppContainer(
   createBottomTabNavigator(
     {
       Story: StoryStack,
       Forum: ForumStack,
+      Glossary: GlossaryStack,
     },
     {
       defaultNavigationOptions: ({ navigation }) => ({
@@ -48,14 +56,13 @@ export default createAppContainer(
           if (routeName === "Story") {
             iconName = `ios-journal`;
           }
-          if (routeName === "Profile") {
-            iconName = `ios-person`;
-          }
-          if (routeName === "Alerts") {
-            iconName = `ios-notifications`;
-          }
+
           if (routeName === "Forum") {
             iconName = "ios-chatbubble-ellipses";
+          }
+
+          if (routeName === "Glossary") {
+            iconName = "ios-planet-outline";
           }
           return <Ionicons name={iconName} size={25} color={tintColor} />;
         },
