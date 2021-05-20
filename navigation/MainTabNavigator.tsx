@@ -6,11 +6,11 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import ProgressEntry from "../components/Progress/ProgressEntry__";
 import Profile from "../components/Profile/Profile__";
 import Forum from "../components/Forum/Forum__";
-import Thread from "../components/Forum/Thread";
+import Thread from "../components/Forum/Thread__";
 import ChapterLoader from "../components/Book/ChapterLoader__";
 import Support from "../components/Support/SupportEntry__";
 import FullGlossaryIndex from "../components/Glossary/main/GlossaryEntry__";
-import GlossaryDetail from "../components/Glossary/main/GlossaryDetailView";
+import GlossaryDetail from "../components/Glossary/main/GlossaryDetail__";
 
 const StoryStack = createStackNavigator({
   ProgressEntry,

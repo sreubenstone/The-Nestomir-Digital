@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
+import { TouchableOpacity, Image } from "react-native";
+
 import Glossary from "../Glossary";
 import Presentational from "../ui/Presentational";
 import styled from "styled-components";
@@ -9,13 +11,21 @@ interface IProps {
 }
 
 const Container = styled.View`
-  margin-top: 15%;
+  margin-top: 0%;
   padding: 15px;
+  padding-top: 10px;
 `;
 
 export default class GlossaryDetailView extends Component<IProps> {
-  static navigationOptions = {
-    header: null,
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam("glossary_element"),
+      headerLeft: (
+        <TouchableOpacity onPress={() => navigation.navigate("FullGlossaryIndex")}>
+          <Image source={require("../../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 12.5 }} />
+        </TouchableOpacity>
+      ),
+    };
   };
 
   render() {

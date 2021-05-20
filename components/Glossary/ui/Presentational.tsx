@@ -51,7 +51,7 @@ const Presentational: FC<IProps> = ({ item, modal }) => {
   };
   return (
     <View>
-      <Title>{item.title}</Title>
+      {modal && <Title>{item.title}</Title>}
       <SubHeader>{item.pron}</SubHeader>
 
       <SectionHeader>Description</SectionHeader>
