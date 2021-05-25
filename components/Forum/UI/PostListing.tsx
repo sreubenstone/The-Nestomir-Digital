@@ -20,7 +20,7 @@ const Container = styled.View`
 `;
 
 const PostListing: FC<IProps> = (props) => {
-  const { loading, error, data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
+  const { data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
   const [on, switchToggle] = useState(false);
   // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
   const converted = JSON.parse(props.data.time.thread_updated);

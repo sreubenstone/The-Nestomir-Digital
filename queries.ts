@@ -61,6 +61,23 @@ export const GET_AUTH = gql`
   }
 `;
 
+export const GET_MY_NOTIFICATIONS = gql`
+  query {
+    getMyNotifications {
+      id
+      user_id
+      read
+      body
+      thread_id
+      thread_title
+      notification_image
+      time {
+        time_stamp
+      }
+    }
+  }
+`;
+
 export const GET_THREAD = gql`
   query getThread($thread_id: Int) {
     getThread(thread_id: $thread_id) {
@@ -206,6 +223,14 @@ export const SAVE_PROFILE = gql`
     saveProfile(tagline: $tagline) {
       id
       tagline
+    }
+  }
+`;
+
+export const MARK_READ = gql`
+  mutation {
+    markRead {
+      id
     }
   }
 `;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, ScrollView, InteractionManager, Modal, Text } from "react-native";
+import { View, ScrollView, InteractionManager } from "react-native";
 import { GlobalStyles } from "../../Stylesheet";
 import BookPane from "./BookPane";
 import ProgressBar from "./ProgressBar";
