@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_MY_NOTIFICATIONS } from "../../queries";
 import NotificationItem from "./UI/NotificationItem";
-import { Modal, Text, TouchableOpacity } from "react-native";
+import { Modal, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 

@@ -19,6 +19,7 @@ const Container = styled.View`
   padding: 10px;
   border-width: 0.5px;
   border-color: #d1d5da;
+  margin-bottom: 100px;
 `;
 
 const Header = styled.Text`

@@ -7,15 +7,14 @@ import { NavigationParams, NavigationScreenProp, NavigationState } from "react-n
 
 interface IProps {
   navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  toggleProfileModal: () => void;
 }
 
-const ProfileButtonForum: FC<IProps> = (props) => {
-  const { loading, error, data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
-  if (loading) return <Text>Loading...</Text>;
-  if (error) return <Text>Error! ${error.message}</Text>;
+const ProfileButtonForum: FC<IProps> = ({ toggleProfileModal }) => {
+  const { data } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
 
   return (
-    <TouchableOpacity onPress={() => props.navigation.navigate("Profile", { user_id: data.getAuth.id })}>
+    <TouchableOpacity onPress={() => toggleProfileModal()}>
       <Image style={{ width: 34, height: 34, borderRadius: 17 }} source={{ uri: `${data.getAuth.user_avatar}` }} />
     </TouchableOpacity>
   );

@@ -51,7 +51,7 @@ const Comment: FC<IProps> = (props) => {
       </TopCard>
       <CommentCard>
         <Text style={{ fontFamily: "gelasio", marginTop: 10, color: "#787D9C" }}>{props.data.body}</Text>
-        <Text style={{ fontFamily: "gelasio", marginTop: 10, color: "#787D9C" }}>👍🏻</Text>
+        {/* <Text style={{ fontFamily: "gelasio", marginTop: 10, color: "#787D9C" }}>👍🏻</Text> */}
       </CommentCard>
     </View>
   );
