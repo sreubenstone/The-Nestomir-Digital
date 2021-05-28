@@ -13,10 +13,8 @@ interface IProps {
 }
 
 const Container = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
   opacity: ${(props) => (props.on ? 0.2 : 1.0)};
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 `;
 
 const PostListing: FC<IProps> = (props) => {
@@ -38,14 +36,16 @@ const PostListing: FC<IProps> = (props) => {
         analytics("thread_open", { distinct_id: data.getAuth.id, thread_id: props.data.id });
       }}
     >
-      <View style={{ flexDirection: "row" }}>
-        <View>
-          <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 30, height: 30, borderRadius: 12 }} />
-          {props.data.audio ? <Image source={require("../../../assets/images/microphone.png")} style={{ width: 15, height: 15, top: 20, right: -3, position: "absolute" }} /> : null}
+      <View style={{ flexDirection: "row", alignItems: "center" }}>
+        <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 40, height: 40, borderRadius: 15 }} />
+        <View style={{ marginLeft: 13 }}>
+          <Text style={{ color: "#0195FF", fontFamily: "gelasio" }}>{props.data.title}</Text>
+          <Text style={{ color: "#6B737C", fontFamily: "gelasio", fontSize: 12, marginTop: 2 }}>
+            posted by {props.data.user.username} • last reply {moment_object.fromNow()}
+          </Text>
+          {props.data.audio ? <Image source={require("../../../assets/images/sound_wave.png")} style={{ width: 16, height: 16, marginTop: 5 }} /> : null}
         </View>
-        <Text style={{ color: "#0195FF", marginTop: 4, marginLeft: 14, fontFamily: "gelasio" }}>{props.data.title}</Text>
       </View>
-      <Text style={{ color: "#6B737C", marginTop: 4, marginRight: 10, fontFamily: "gelasio" }}>{props.data.title.length > 29 ? moment_object.fromNow().slice(0, 9) : moment_object.fromNow()}</Text>
     </Container>
   );
 };

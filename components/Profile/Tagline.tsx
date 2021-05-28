@@ -24,7 +24,7 @@ const Tagline: FC<IProps> = ({ tagline, is_me }) => {
           maxLength={250}
           editable={is_me}
           placeholder={is_me ? "...my summary goes here" : "I'm new here."}
-          style={{ height: 45, borderColor: "grey", borderRadius: 3, padding: 7, borderWidth: is_me ? 0.25 : 0, marginTop: 15, textAlign: is_me ? "left" : "center" }}
+          style={{ height: 45, borderColor: "grey", borderRadius: 3, padding: 7, borderWidth: 0, backgroundColor: is_me ? "#F7F7F7" : null, marginTop: 15, textAlign: is_me ? "left" : "center" }}
         />
         {is_me && (
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
