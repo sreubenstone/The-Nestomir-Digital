@@ -170,8 +170,24 @@ const GlobalStyles = StyleSheet.create({
     fontSize: 17,
     fontFamily: "gelasio-bold",
     textAlign: "center",
-    marginTop: 45,
+    marginTop: 55,
     marginBottom: 10,
+  },
+
+  chapterSubTitle: {
+    fontSize: 14,
+    fontFamily: "gelasio-bold",
+    textAlign: "center",
+    marginTop: 5,
+    marginBottom: 10,
+  },
+
+  chapterSubTitleCaption: {
+    fontSize: 12,
+    fontFamily: "gelasio",
+    textAlign: "center",
+    marginTop: 0,
+    marginBottom: 20,
   },
 });
 
