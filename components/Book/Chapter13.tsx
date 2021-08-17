@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
-  height: 200px;
+  width: 360px;
+  height: ${(props) => (props.height ? props.height : 200)};
   border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -175,7 +175,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Jake placed the pointer of his mouse inside the center of the cell. He then typed in:
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_1.png")} />
+          <StoryGraphic height={100} source={require("./../../assets/images/lessons/lesson8_1.png")} />
         </View>
         <Caption>(Jupyter Notebook Cell)</Caption>
 
@@ -288,7 +288,7 @@ export default class Chapter13 extends Component<IProps> {
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>function</Text>.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_6.png")} />
+          <StoryGraphic height={173} source={require("./../../assets/images/lessons/lesson8_6.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -308,7 +308,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“I think so. You write in the name of the dictionary, then place the key name in quotes inside of brackets next to it,” Jake replied. He added another line of code to the function.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_7.png")} />
+          <StoryGraphic height={210} source={require("./../../assets/images/lessons/lesson8_7.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -327,7 +327,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Jake modified his code at the bottom.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_8.png")} />
+          <StoryGraphic height={210} source={require("./../../assets/images/lessons/lesson8_8.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -353,7 +353,7 @@ export default class Chapter13 extends Component<IProps> {
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> function, passing in his real birth month, June, as the input argument.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_9.png")} />
+          <StoryGraphic height={270} source={require("./../../assets/images/lessons/lesson8_9.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 

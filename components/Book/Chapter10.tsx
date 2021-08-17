@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
-  height: 200px;
+  width: 360px;
+  height: ${(props) => (props.height ? props.height : 200)};
   border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -366,13 +366,13 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>Eggs</Text>
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>Milk</Text>
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>Ice Cream</Text>
-          {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>Hamburger Patties</Text>
+          {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>Hamburgers</Text>
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>Cheese</Text>
           {"\n"}
           {"\n"}"In Python, we can create this list like this." He began writing below the grocery list in python form on the chalkboard.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson5_3.png")} />
+          <StoryGraphic height={85} source={require("./../../assets/images/lessons/lesson5_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -386,7 +386,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}He erased the first list and wrote in another.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson5_4.png")} />
+          <StoryGraphic height={115} source={require("./../../assets/images/lessons/lesson5_4.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -405,7 +405,7 @@ export default class Chapter10 extends Component<IProps> {
           list element?" Kliggins added a line underneath his previous list example. "We use brackets and then the number of the element of the list we want to access."
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson5_5.png")} />
+          <StoryGraphic height={140} source={require("./../../assets/images/lessons/lesson5_5.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -439,7 +439,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"Yes. We can use a list as you see here. We use a <Text style={{ fontFamily: "gelasibro-italic" }}>list of dictionaries</Text>, to represent our list of users, in a very neat and efficient way."
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson5_6.png")} />
+          <StoryGraphic height={325} source={require("./../../assets/images/lessons/lesson5_6.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -451,7 +451,7 @@ export default class Chapter10 extends Component<IProps> {
           easier on the eyes. What we're looking at here is a list, and it’s three items are dictionaries. Like this.” Kliggins sketched another line on the bottom of the board to make the code more conceptually clear.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson5_7.png")} />
+          <StoryGraphic height={110} source={require("./../../assets/images/lessons/lesson5_7.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 

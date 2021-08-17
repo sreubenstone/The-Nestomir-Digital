@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
-  height: 200px;
+  width: 360px;
+  height: ${(props) => (props.height ? props.height : 200)};
   border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -261,12 +261,12 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>
             <Text style={{ fontFamily: "gelasibro-italic" }}></Text>def
           </Text>
-          <Text style={{ fontFamily: "gelasibro-italic" }}></Text> keyword. Next, we give a unique name to the function; it can be just about any name we choose. Then we place a colon <Text style={{ color: "#0C2443", fontFamily: "code" }}>:</Text> at
-          the end of the <Text style={{ fontFamily: "gelasibro-italic" }}>function name</Text> to complete the <Text style={{ fontFamily: "gelasibro-italic" }}>function header</Text>. Angelica would probably have defined her notification function
-          header like this:"
+          <Text style={{ fontFamily: "gelasibro-italic" }}></Text> keyword. Next, we give a unique name to the function; it can be just about any name we choose. Then we place a set of parentheses ( ) and a colon{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>:</Text> at the end of the <Text style={{ fontFamily: "gelasibro-italic" }}>function name</Text> to complete the <Text style={{ fontFamily: "gelasibro-italic" }}>function header</Text>.
+          Angelica would probably have defined her notification function header like this:"
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_1.png")} />
+          <StoryGraphic height={125} source={require("./../../assets/images/lessons/lesson7_1.png")} />
         </View>
         <Caption>(Dojo Whiteboard)</Caption>
 
@@ -279,7 +279,7 @@ export default class Chapter12 extends Component<IProps> {
           Python instructions would go. I’ve used <Text style={{ fontFamily: "gelasibro-italic" }}>Python comments</Text> to document what the intent of each step would be.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_2.png")} />
+          <StoryGraphic height={170} source={require("./../../assets/images/lessons/lesson7_2.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -293,7 +293,7 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}She scribbled something else below, then turned to him. “Correct. And very important...to trigger, or to <Text style={{ fontFamily: "gelasibro-italic" }}>call</Text> a function, we use this syntax in Python.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_3.png")} />
+          <StoryGraphic height={125} source={require("./../../assets/images/lessons/lesson7_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -354,7 +354,7 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>argument</Text>. To call a function in this manner, we use this syntax.” Zena wrote below.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_5.png")} />
+          <StoryGraphic height={105} source={require("./../../assets/images/lessons/lesson7_5.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -362,7 +362,7 @@ export default class Chapter12 extends Component<IProps> {
           // Section 6 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          “You can see, we are passing in the string <Text style={{ fontFamily: "gelasibro-italic" }}>You have received a new comment on your post!</Text> as our <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> argument.{"\n"}
+          “You can see, we are passing in the string <Text style={{ fontFamily: "gelasibro-italic" }}>Your post received a new comment!</Text> as our <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> argument.{"\n"}
           {"\n"}“We can now change the specific message that is displayed for each notification by placing in a custom <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> when we call the function. Parameters, or inputs, give us greater
           flexibility in our functions. Parameters let coders make slight alterations to their function's instructions, without having to change all of them.”{"\n"}
           {"\n"}

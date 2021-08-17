@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
+  width: 360px;
   height: 200px;
   border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -359,7 +359,7 @@ export default class Chapter6 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson2_1.png")} />
         </View>
-        <Caption>(View of code file)</Caption>
+        {/* <Caption>(View of code file)</Caption> */}
 
         {
           // Section 2 Below, Goes Text, Graphic

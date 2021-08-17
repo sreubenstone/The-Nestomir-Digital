@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
+  width: 360px;
   height: 200px;
   border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -358,7 +358,7 @@ export default class Chapter7 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Interesting.</Text> Jake looked back at the code editor. Dendro brought up the if-statement he wrote a few moments ago.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_6.png")} />
+          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -378,7 +378,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“Precisely,” Dendro replied. “Now I will make a small modification.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_7.png")} />
+          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_6.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -395,7 +395,7 @@ export default class Chapter7 extends Component<IProps> {
           Dendro explained.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_8.png")} />
+          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_7.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 

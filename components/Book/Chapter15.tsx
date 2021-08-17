@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
-  height: 200px;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 360px;
+  height: ${(props) => (props.height ? props.height : 200)};
+  border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -281,11 +281,11 @@ export default class Chapter15 extends Component<IProps> {
           of an HTTP Post request. You can see, an HTTP request is fairly easy to read–it’s just text.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson9_1.png")} />
+          <StoryGraphic height={127} radius={"none"} source={require("./../../assets/images/lessons/lesson9_1.png")} />
         </View>
         <Caption>(Zena's note: an HTTP message is written with text only!)</Caption>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson9_2.png")} />
+          <StoryGraphic height={200} radius={"none"} source={require("./../../assets/images/lessons/lesson9_2.png")} />
         </View>
         <Caption>(Zena's note: this is an example HTTP POST Request!)</Caption>
 
