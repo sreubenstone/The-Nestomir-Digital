@@ -6,8 +6,8 @@ import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
   width: 360px;
-  height: 200px;
-  border-radius: 20px;
+  height: ${(props) => (props.height ? props.height : 200)};
+  border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
   margin-bottom: 25px;
 `;
@@ -245,7 +245,7 @@ export default class Chapter7 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson3_1.png")} />
         </View>
-        <Caption>(Dendro's Code Editor)</Caption>
+        {/* <Caption>(Dendro's Code Editor)</Caption> */}
 
         {
           // Section 2 Below, Goes Text, Graphic
@@ -263,7 +263,7 @@ export default class Chapter7 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson3_1.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>An expression in Python.</Caption>
 
         {
           // Section 3 Below, Goes Text, Graphic
@@ -282,7 +282,7 @@ export default class Chapter7 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson3_2.png")} />
         </View>
-        <Caption>(This code will only run if the above if-statement expression simplifies to True.)</Caption>
+        <Caption>The if-statement's code block will only run if its expression is True.</Caption>
 
         {
           // Section 4 Below, Goes Text, Graphic
@@ -331,7 +331,7 @@ export default class Chapter7 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson3_5.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Print allows us to SEE the value of anything in our program.</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic
@@ -353,7 +353,6 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}Jake looked at him wide-eyed.{"\n"}
           {"\n"}“Don't be intimidated by it. You can even customize the colors.” Dendro stuck his tongue out. “It is a graphical interface programmers can use to talk more intimately with our computer, and for our computer to talk to us. It’s where
           we as coders tell Python to run our program, when we’re ready.”{"\n"}
-          {"\n"}TERMINAL GRAPHIC GOES HERE{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Interesting.</Text> Jake looked back at the code editor. Dendro brought up the if-statement he wrote a few moments ago.
         </Text>
@@ -367,12 +366,30 @@ export default class Chapter7 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           “Watch what happens when I officially run our Python file, <Text style={{ fontFamily: "gelasibro-italic" }}>practice.py</Text>, on our computer. Keep your eye on the terminal window.”{"\n"}
-          {"\n"}Jake watched as Dendro's thick fingers typed <Text style={{ color: "#0C2443", fontFamily: "code" }}>python3 practice.py</Text> next to the cursor blinking on the terminal before he hit the enter key. “When we wish to run a Python
-          program, we type in <Text style={{ fontFamily: "gelasibro-italic" }}>Python3</Text> and the name of the file we wish to run, assuming Python is installed on your machine, and that our terminal is toggled into the folder our file is saved
-          in. So it’s clear, the terminal runs commands inside a specific folder on our computer.” Dendro hit the enter key. “We use <Text style={{ fontFamily: "gelasibro-italic" }}>Python3</Text> to indicate the version of Python we have installed
-          on our machine.”{"\n"}
+          {"\n"}Jake watched as Dendro's thick fingers typed <Text style={{ color: "#0C2443", fontFamily: "code" }}>python3 practice.py</Text> next to the cursor blinking on the terminal before he hit the enter key.
+        </Text>
+
+        <View style={GlobalStyles.flexCenter}>
+          <StoryGraphic height={450} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin1.png")} />
+        </View>
+        <Caption>
+          The terminal is where we tell the Python program (the fancy term is "Python interpreter") to process our Python file. Most code editors allow us to access the terminal from within the editor. Recognize the terminal is a seperate program
+          that speaks to the innards of the computer. When we run our Python code from the terminal - what we're saying is "operating system...please use the python program to process this file."
+        </Caption>
+
+        <Text style={BookStyles.bookFont}>
+          “When we wish to run a Python program, we type in <Text style={{ fontFamily: "gelasibro-italic" }}>Python3</Text> and the name of the file we wish to run, assuming Python is installed on your machine, and that our terminal is toggled into
+          the folder our file is saved in. So it’s clear, the terminal runs commands inside a specific folder on our computer.” Dendro hit the enter key. “We use <Text style={{ fontFamily: "gelasibro-italic" }}>Python3</Text> to indicate the version
+          of Python we have installed on our machine.”{"\n"}
           {"\n"}The terminal cursor dropped down a line and displayed:  <Text style={{ color: "#0C2443", fontFamily: "code" }}>"This code block is running!</Text>"{"\n"}
-          {"\n"}terminal graphic goes here{"\n"}
+        </Text>
+
+        <View style={GlobalStyles.flexCenter}>
+          <StoryGraphic height={450} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin2.png")} />
+        </View>
+        <Caption>The results of print are displayed inside the computer's terminal.</Caption>
+
+        <Text style={BookStyles.bookFont}>
           {"\n"}Jake looked at the if-statement then back at the message. “The if-statement's code block fired because the if statement's expression is true, <Text style={{ color: "#0C2443", fontFamily: "code" }}>2 == 2</Text>!” Jake blurted out.
           “That's so cool when you actually see it. So the terminal is where the print function displays its output?”{"\n"}
           {"\n"}“Precisely,” Dendro replied. “Now I will make a small modification.”

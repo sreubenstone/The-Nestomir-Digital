@@ -324,7 +324,7 @@ export default class Chapter10 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson5_1.png")} />
         </View>
-        <Caption>(Kliggin's Chalkboard)</Caption>
+        <Caption>Kliggins's Chalkboard</Caption>
 
         {
           // Section 2 Below, Goes Text, Graphic
@@ -441,7 +441,7 @@ export default class Chapter10 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={325} source={require("./../../assets/images/lessons/lesson5_6.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Mentally zoom out for a moment. It's just dictionaries sitting inside a list!</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic
@@ -453,7 +453,7 @@ export default class Chapter10 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={110} source={require("./../../assets/images/lessons/lesson5_7.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>This is a powerful pattern in programming.</Caption>
 
         {
           // Section 8 Below, Goes Text, Graphic

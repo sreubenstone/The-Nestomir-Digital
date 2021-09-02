@@ -26,7 +26,7 @@ export default class Chapter1 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://image.freepik.com/free-vector/trophy-sketch-set_1284-4035.jpg`,
+              uri: `https://image.flaticon.com/icons/png/512/4345/4345761.png`,
             }}
           />
         </View>

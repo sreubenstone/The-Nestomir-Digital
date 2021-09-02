@@ -358,6 +358,7 @@ export default class Chapter15 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_6.png")} />
         </View>
+        <Caption>This can be visually intimidating. But all that's happening is Jake is inserting two arguments into the function. The first argument is the URL, the secong argument is a dictionary.</Caption>
 
         {
           // Section 6 Below, Goes Text, Graphic
@@ -379,6 +380,7 @@ export default class Chapter15 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_7.png")} />
         </View>
+        <Caption>The requests.post function RETURNS a response. We can store that response in variable, then print it to the terminal screen. This is key fundamental of working with Python and the internet.</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic

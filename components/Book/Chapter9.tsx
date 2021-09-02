@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 100%;
-  height: 200px;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 360px;
+  height: ${(props) => (props.height ? props.height : 200)};
+  border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;
 
 const Caption = styled.Text`
@@ -204,6 +204,14 @@ export default class Chapter9 extends Component<IProps> {
           {"\n"}Jake looked at the terminal. It seemed simple enough. Dendro had just done it in front of him, and now he was tasked with connecting to a powerful ecosystem that he wasn't aware existed moments ago. He typed{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>pip install SciPy</Text> into the terminal window. Then he pressed enter. The terminal flashed with the same loading indicator and text he saw when Dendro ran the command. Then a few
           seconds later he saw the message <Text style={{ color: "#0C2443", fontFamily: "code" }}>Successfully Installed SciPy</Text>.{"\n"}
+        </Text>
+
+        <View style={GlobalStyles.flexCenter}>
+          <StoryGraphic height={165} source={require("./../../assets/images/lessons/lesson4_1.png")} />
+        </View>
+        <Caption>We use the terminal to interact with other programs on our computer, like PIP. Here, Jake used the terminal to tell PIP to download SciPy to Dendro's machine.</Caption>
+
+        <Text style={BookStyles.bookFont}>
           {"\n"}“That is wild,” Jake said. “So, it is now in our project?”{"\n"}
           {"\n"}Dendro turned and said, “The library has been downloaded to our machine, and it is now accessible to us. But remember, to use it in our project we must{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>

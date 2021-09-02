@@ -7,7 +7,7 @@ import GlossaryWord from "../Glossary/inline/GlossaryWord";
 const StoryGraphic = styled.Image`
   width: 360px;
   height: ${(props) => (props.height ? props.height : 200)};
-  border-radius: 20px;
+  border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
   margin-bottom: 25px;
 `;
@@ -164,6 +164,18 @@ export default class Chapter13 extends Component<IProps> {
           .”{"\n"}
           {"\n"}Jake clicked the <Text style={{ fontFamily: "gelasibro-italic" }}>Python 3</Text> link. Immediately, a new browser tab opened. At the top of the page was a wide, grey text box with a blinking cursor inside of it.{"\n"}
           {"\n"}“You have just created your real life Jupyter Notebook,” Zena said.{"\n"}
+        </Text>
+
+        <View style={GlobalStyles.flexCenter}>
+          <StoryGraphic height={155} radius={"none"} source={require("./../../assets/images/lessons/lesson8_addin.png")} />
+        </View>
+        <Caption>View of Jupyter Notebook. The grey box at the bottom is a cell. Feel free to open up this link on the browser to follow along.</Caption>
+
+        {
+          // Section - MODIFIED BECAUSE NEW GRAPHIC INSERTED ABOVE
+        }
+
+        <Text style={BookStyles.bookFont}>
           {"\n"}Jake felt a wave of excitement run through him. He was eager to type something, anything. “So, it's a real notebook but with Python?”{"\n"}
           {"\n"}“Yes,” Zena responded.{"\n"}
           {"\n"}“How does it work?” Jake rubbed his hands against the table.{"\n"}
@@ -244,7 +256,7 @@ export default class Chapter13 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson8_4.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Pseudocoding is incredibly powerful. But most of us get too excited and start writing code without making the outline.</Caption>
 
         {
           // Section 5 Below, Goes Text, Graphic
@@ -265,7 +277,7 @@ export default class Chapter13 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson8_5.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>A function defined with one parameter.</Caption>
 
         {
           // Section 6 Below, Goes Text, Graphic
@@ -290,7 +302,7 @@ export default class Chapter13 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={173} source={require("./../../assets/images/lessons/lesson8_6.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Jake's function. He's added a dictionary inside of the function called horoscopes.</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic
@@ -355,7 +367,7 @@ export default class Chapter13 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={270} source={require("./../../assets/images/lessons/lesson8_9.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Remember - the bottom two lines of code here are not part of the function getHoroscope definition. They are separate lines of code.</Caption>
 
         {
           // Section 10 Below, Goes Text, Graphic

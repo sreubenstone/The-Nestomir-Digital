@@ -268,7 +268,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={125} source={require("./../../assets/images/lessons/lesson7_1.png")} />
         </View>
-        <Caption>(Dojo Whiteboard)</Caption>
+        <Caption>Dojo Whiteboard</Caption>
 
         {
           // Section 2 Below, Goes Text, Graphic
@@ -281,7 +281,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={170} source={require("./../../assets/images/lessons/lesson7_2.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Here, five dummy instructions are sitting inside of the function send_notification.</Caption>
 
         {
           // Section 3 Below, Goes Text, Graphic
@@ -295,7 +295,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={125} source={require("./../../assets/images/lessons/lesson7_3.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>We must trigger the function to run it. You WILL forget this. It happens to the best of us ;).</Caption>
 
         {
           // Section 4 Below, Goes Text, Graphic
@@ -387,7 +387,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_6.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Note the Python return keyword.</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic
@@ -403,7 +403,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_7.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Keep in mind - in Python we indent to create a new code block. (a + b is indented underneath the function definition - which in Python means it is the codeblock associated to this function.)</Caption>
 
         {
           // Section 8 Below, Goes Text, Graphic
@@ -415,7 +415,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_8.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>Keep in mind the line sum = add(2,3) is not indented. This means it is a separate statement, not directly affiliated to the function above. For begginers, sometimes visually you can get confused.</Caption>
 
         {
           // Section 9 Below, Goes Text, Graphic
@@ -431,7 +431,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_9.png")} />
         </View>
-        {/* <Caption>(Dendro's monitor)</Caption> */}
+        <Caption>We NEED that return keyword! Don't forget it when you need it.</Caption>
 
         {
           // Section 10 Below, Goes Text, Graphic

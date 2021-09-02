@@ -48,7 +48,7 @@ const ProgressCardStyles = StyleSheet.create({
     borderRadius: 17,
     padding: 2,
     paddingLeft: 6,
-    paddingRight: 6,
+    paddingRight: 5,
     marginTop: 5,
   },
 
@@ -60,15 +60,16 @@ const ProgressCardStyles = StyleSheet.create({
     borderRadius: 17,
     padding: 2,
     paddingLeft: 6,
-    paddingRight: 6,
+    paddingRight: 5,
     marginTop: 5,
   },
 
   im: {
-    width: 100,
-    height: 100,
-    borderRadius: 14,
-    marginBottom: 15,
+    width: 40,
+    height: 40,
+    borderRadius: 15,
+    marginTop: 15,
+    marginBottom: 0,
   },
 });
 
@@ -151,7 +152,9 @@ const GlobalStyles = StyleSheet.create({
   },
 
   textCardSubtitle: {
-    fontSize: 12,
+    fontSize: 15,
+    fontFamily: "gelasio",
+    marginTop: 5,
   },
 
   headerText: {

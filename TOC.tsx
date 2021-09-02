@@ -2,7 +2,7 @@ const TOC = [
   {
     chapter: "Prologue",
     caption: "The journey begins.",
-    image: `https://i.ytimg.com/vi/kGpcl23DyDw/maxresdefault.jpg`,
+    image: `https://image.flaticon.com/icons/png/128/3484/3484064.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -12,7 +12,7 @@ const TOC = [
   {
     chapter: "Chapter 1",
     caption: "Life in Grapefield is less than pleasant.",
-    image: `https://image.freepik.com/free-vector/trophy-sketch-set_1284-4035.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/4345/4345761.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -22,7 +22,7 @@ const TOC = [
   {
     chapter: "Chapter 2",
     caption: "Grapefield 150th Anniversary celebrations.",
-    image: `https://i.pinimg.com/originals/09/5c/2c/095c2ccf70ef910ffadc778779dc8507.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/5140/5140498.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -32,7 +32,7 @@ const TOC = [
   {
     chapter: "Chapter 3",
     caption: "Wrong turn into corn.",
-    image: `http://2.bp.blogspot.com/-XeVTRNoWUgo/TknJiI7qYKI/AAAAAAAAAUM/NnC7H2txSoE/s1600/you+002.JPG`,
+    image: `https://image.flaticon.com/icons/png/512/2675/2675308.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -42,7 +42,7 @@ const TOC = [
   {
     chapter: "Chapter 4",
     caption: "Into the Wisconsin sky.",
-    image: `https://t4.ftcdn.net/jpg/02/47/42/81/360_F_247428197_wpaAVCuxUrlf43AW6WkBH2Z4D62cY95L.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/547/547408.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -52,7 +52,7 @@ const TOC = [
   {
     chapter: "Chapter 5",
     caption: "What's that you say, a force?",
-    image: `https://ryanclachrie.files.wordpress.com/2012/06/cockpit.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/4283/4283023.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -62,7 +62,7 @@ const TOC = [
   {
     chapter: "Chapter 6",
     caption: "On the factory floor.",
-    image: `https://cartoonize-online.com/gallery/cartoons/f/b/4/779234.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/284/284474.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -72,7 +72,7 @@ const TOC = [
   {
     chapter: "Chapter 7",
     caption: "Slopes, rinks, and forest trees.",
-    image: `https://previews.123rf.com/images/torky/torky1111/torky111100032/11133478-ski-lift-sketch.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/1543/1543870.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -82,7 +82,7 @@ const TOC = [
   {
     chapter: "Chapter 8",
     caption: "There's definitely company.",
-    image: `https://img2.pngio.com/battleaxe-png-3-png-image-battle-axe-drawing-png-1000_709.png`,
+    image: `https://image.flaticon.com/icons/png/512/1727/1727365.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -92,7 +92,7 @@ const TOC = [
   {
     chapter: "Chapter 9",
     caption: "Palm trees and foreign quarters.",
-    image: `https://thumbs.dreamstime.com/b/hand-drawn-sketch-illustration-architecture-landmark-koutoubia-mosque-morocco-casablanca-hand-drawn-sketch-illustration-168519516.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/1939/1939516.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -101,8 +101,8 @@ const TOC = [
 
   {
     chapter: "Chapter 10",
-    caption: "Underground Meetings with friends.",
-    image: `https://i.pinimg.com/originals/81/76/ae/8176ae26e93e67b9da12988e10b83adf.jpg`,
+    caption: "Underground Meetings",
+    image: `https://image.flaticon.com/icons/png/512/2215/2215849.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -112,7 +112,7 @@ const TOC = [
   {
     chapter: "Chapter 11",
     caption: "Surf boards and Eggs.",
-    image: `https://paintingvalley.com/sketches/beach-scene-sketch-3.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/4724/4724357.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -122,7 +122,7 @@ const TOC = [
   {
     chapter: "Chapter 12",
     caption: "El Funccion & Acelera I",
-    image: `https://cdnb.artstation.com/p/assets/images/images/022/325/655/large/laura-guedes-dojo-sketch.jpg?1574987125`,
+    image: `https://image.flaticon.com/icons/png/512/3057/3057168.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -132,7 +132,7 @@ const TOC = [
   {
     chapter: "Chapter 13",
     caption: "Notebooks have power.",
-    image: `https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/hand-drawn-open-notebook-on-stack-of-books-iam-nee.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/3330/3330321.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -142,7 +142,7 @@ const TOC = [
   {
     chapter: "Chapter 14",
     caption: "Parties in the desert.",
-    image: `http://nehlibrary.org/wp-content/uploads/2013/05/stanley-coast-ink-drive-rock7-11.jpeg`,
+    image: `https://image.flaticon.com/icons/png/512/2714/2714077.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -152,7 +152,7 @@ const TOC = [
   {
     chapter: "Chapter 15",
     caption: "Hangars and Requests.",
-    image: `https://cdna.artstation.com/p/assets/images/images/021/856/584/large/johannes-schiehsl-hangar-big.jpg?1573196125`,
+    image: `https://image.flaticon.com/icons/png/512/1857/1857059.png`,
     progress: null,
     bookmark: null,
     percentage: null,
@@ -162,7 +162,7 @@ const TOC = [
   {
     chapter: "Chapter 16",
     caption: "Playground Landings.",
-    image: `https://ih1.redbubble.net/image.889628986.9419/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg`,
+    image: `https://image.flaticon.com/icons/png/512/2497/2497993.png`,
     progress: null,
     bookmark: null,
     percentage: null,

@@ -26,7 +26,7 @@ export default class Prologue extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://i.ytimg.com/vi/kGpcl23DyDw/maxresdefault.jpg`,
+              uri: `https://image.flaticon.com/icons/png/128/3484/3484064.png`,
             }}
           />
         </View>

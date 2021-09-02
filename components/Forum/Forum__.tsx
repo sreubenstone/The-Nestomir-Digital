@@ -42,7 +42,7 @@ export default class Forum extends Component<IProps, IState> {
               <ProfileButtonForum navigation={navigation} toggleProfileModal={this.toggleProfileModal} />
             </View>
           </View>
-          <ImageBackground source={require("../../assets/images/code.png")} style={{ width: "100%", height: "100%" }} />
+          <ImageBackground source={require("../../assets/images/zena.png")} style={{ width: "100%", height: "100%" }} />
         </View>
         <View style={ProgressStyles.container}>
           <View style={{ width: "100%" }}>
