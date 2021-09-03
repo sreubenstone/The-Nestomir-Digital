@@ -172,9 +172,9 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}“Not exactly. The world, or I should say, our Universe, will continue to be revolutionized by code. But it doesn’t mean we all have to become coders. It means we should appreciate the power code gives us, with respect to any industry
           or passion. We can reinvent art, enhance our ability to make music, help our businesses analyze data, and solve a variety of cross functional problems in an unprecedented manner. All fields, medicine, art, science, sports, gaming, can
           benefit. Understanding it <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> critical. However, becoming a coder is a choice.”{"\n"}
-          {"\n"}Dendro scrolled down the page on his screen. “Here I am using a very important programming concept, called <Text style={{ fontFamily: "gelasibro-italic" }}>a variable</Text>. A variable stores information in our computer’s memory so
-          we can retrieve it later. Here I am using a variable to store the sensitivity value of our aileron, the flap-like things on the wing that help us tilt the ship. This sensitivity controls how sharp our turns will feel, especially in a
-          storm.”{"\n"}
+          {"\n"}Dendro scrolled down the page on his screen. “Here I am using a very important programming concept, called <Text style={{ fontFamily: "gelasibro-italic" }}>a variable</Text>. A variable stores information in our computer’s{" "}
+          <GlossaryWord lookup_string="Algorithm" word="memory" toggleGlossary={this.props.toggleGlossary} /> so we can retrieve it later. Here I am using a variable to store the sensitivity value of our aileron, the flap-like things on the wing that
+          help us tilt the ship. This sensitivity controls how sharp our turns will feel, especially in a storm.”{"\n"}
           {"\n"}Dendro tapped some keys on his glowing keyboard. “In Python, to declare a new variable, we simply write the name of the variable and use an<Text style={{ color: "#0C2443", fontFamily: "code" }}>=</Text> sign to assign a variable's
           value. See here, I’m updating our aileron’s sensitivity value in our Python program.{"\n"}
           {"\n"}Dendro zoomed in on his screen and shifted the monitor towards Jake.

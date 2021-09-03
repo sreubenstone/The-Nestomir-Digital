@@ -21,17 +21,15 @@ const Word = styled.Text`
 interface IProps {
   word: string;
   toggleGlossary: (name: string) => void;
+  lookup_string: string;
 }
 
-const GlossaryWord: FC<IProps> = ({ word, toggleGlossary }) => {
-  const capitalize = (s) => {
-    return s.charAt(0).toUpperCase() + s.slice(1);
-  };
+const GlossaryWord: FC<IProps> = ({ word, toggleGlossary, lookup_string }) => {
   return (
     <WordContainer
       onTouchEndCapture={(e) => {
         e.stopPropagation();
-        toggleGlossary(word.charAt(0).toUpperCase() + word.slice(1));
+        toggleGlossary(lookup_string);
       }}
     >
       <Word>{word}</Word>

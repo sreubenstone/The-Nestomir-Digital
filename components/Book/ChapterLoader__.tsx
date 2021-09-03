@@ -116,8 +116,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
     this.setState({ overLay: !this.state.overLay });
   };
 
-  toggleGlossary = (name: string) => {
-    this.setState({ glossary: !this.state.glossary, glossary_element: name });
+  toggleGlossary = (lookup_string: string) => {
+    this.setState({ glossary: !this.state.glossary, glossary_element: lookup_string });
   };
 
   setBookMark = () => {
