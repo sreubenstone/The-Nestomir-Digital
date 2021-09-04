@@ -3,7 +3,7 @@ const prod = false;
 const mixpanel_token = "ad526bf26dc5a7a977fb8abd4acc7cea";
 
 const prod_server = "https://dendro-backend.herokuapp.com";
-const dev_server = "https://8b62-65-217-244-98.ngrok.io";
+const dev_server = "https://36a5-2603-7000-3940-bc-49a6-907c-e124-20c7.ngrok.io";
 
 const export_env_urls = () => {
   if (prod) {
