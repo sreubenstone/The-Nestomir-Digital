@@ -3,7 +3,7 @@ import * as SecureStore from "expo-secure-store";
 import * as Updates from "expo-updates";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
-import { Text, View, ImageBackground, Image, TouchableOpacity, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
+import { Text, View, ImageBackground, ScrollView, TouchableOpacity, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
 import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from "../Forum/UI/PostListing";
 import Tagline from "./Tagline";
@@ -58,14 +58,15 @@ const Presentational: FC<IProps> = (props) => {
               </View>
             </View>
             <Text style={{ marginTop: 20, fontWeight: "800", fontSize: 17, marginBottom: 15 }}>Forum Activity</Text>
-            {!props.data.threads ? (
-              <Text style={{ color: "grey", fontSize: 10 }}>Forum threads {props.data.username} commented in will appear here.</Text>
-            ) : (
-              props.data.threads.map((item, i) => {
-                return <PostListing data={item} navigation={props.navigation} key={i} />;
-              })
-            )}
-
+            <ScrollView>
+              {!props.data.threads ? (
+                <Text style={{ color: "grey", fontSize: 10 }}>Forum threads {props.data.username} commented in will appear here.</Text>
+              ) : (
+                props.data.threads.map((item, i) => {
+                  return <PostListing data={item} navigation={props.navigation} key={i} />;
+                })
+              )}
+            </ScrollView>
             {is_me && (
               <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 35 }}>
                 <TouchableOpacity

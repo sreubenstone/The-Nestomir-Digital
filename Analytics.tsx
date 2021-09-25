@@ -7,10 +7,28 @@ interface IEvent {
 }
 
 function analytics(event_name: string, properties: IEvent) {
+  if (event_name === "chapter_open") {
+    const reading_buddy_event = {
+      user_id: properties.distinct_id,
+      chapter_opened: properties.chapter,
+    };
+
+    const options_buddy = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(reading_buddy_event),
+    };
+
+    fetch(`${Env.server}/buddy`, options_buddy)
+      .then((response) => response.json())
+      .catch((err) => console.error(err));
+  }
+
+  // only track mixpanel in production
+
   if (!Env.env) {
     return;
   }
-
   const event = {
     event: event_name,
     properties: {

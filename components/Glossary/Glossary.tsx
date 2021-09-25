@@ -4,10 +4,8 @@ const Glossary = {
     pron: "algo•rhythm",
     description:
       "Refers to any set of rules or steps. Technically, a function is an algorithm, but, when we use the term algorithm in the world of code, we usually are referring to a set of steps that help us perform an intensive task, like sorting or organizing large sets of information.",
-    suggested: [
-      { title: "Defining Your Own Python Function", url: "https://realpython.com/defining-your-own-python-function/" },
-      { title: "w3schools: Creating a Python Function", url: "https://www.w3schools.com/python/python_functions.asp" },
-    ],
+    suggested: [{ title: "Python - Algorithm Design - tutorialspoint", url: "https://www.tutorialspoint.com/python_data_structure/python_algorithm_design.htm" }],
+    recommended: ["Write an algorithm that, based on 3 variables, a, b, and c, returns the largest of all Vvriables."],
   },
 
   Argument: {
@@ -15,6 +13,16 @@ const Glossary = {
     pron: "ar•gument",
     description:
       "The values passed as the parameters of a function. Functions take input. The variables we define as the inputs for our functions are known as parameters. When we trigger the function in our code (which means passing in real values for our input), those values are referred to as arguments.",
+    suggested: [
+      { title: "Defining Your Own Python Function", url: "https://realpython.com/defining-your-own-python-function/" },
+      { title: "w3schools: Creating a Python Function", url: "https://www.w3schools.com/python/python_functions.asp" },
+    ],
+  },
+
+  Argus: {
+    title: "Argus",
+    pron: "ar•gus",
+    description: "Second outermost planet in Star System A, The Nestomir.",
     suggested: [
       { title: "Defining Your Own Python Function", url: "https://realpython.com/defining-your-own-python-function/" },
       { title: "w3schools: Creating a Python Function", url: "https://www.w3schools.com/python/python_functions.asp" },

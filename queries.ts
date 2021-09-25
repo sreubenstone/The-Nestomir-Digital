@@ -181,6 +181,16 @@ export const GET_BOOKMARK = gql`
   }
 `;
 
+export const GET_MY_READING_BUDDIES = gql`
+  query {
+    getMyReadingBuddies {
+      id
+      username
+      user_avatar
+    }
+  }
+`;
+
 export const SUBMIT_COMMENT = gql`
   mutation submitComment($thread_id: Int, $body: String) {
     submitComment(thread_id: $thread_id, body: $body) {
@@ -206,6 +216,23 @@ export const UPDATE_BOOKMARK = gql`
       chapter
       position
       percentage
+    }
+  }
+`;
+
+export const ADD_READING_BUDDY = gql`
+  mutation addReadingBuddy($secret_code: String!) {
+    addReadingBuddy(secret_code: $secret_code) {
+      id
+    }
+  }
+`;
+
+export const REMOVE_READING_BUDDY = gql`
+  mutation removeReadingBuddy($buddy_id: Int!) {
+    removeReadingBuddy(buddy_id: $buddy_id) {
+      id
+      username
     }
   }
 `;
