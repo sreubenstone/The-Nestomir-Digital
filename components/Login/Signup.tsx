@@ -24,9 +24,23 @@ const ErrorText = styled.Text`
   text-align: center;
 `;
 
+const SubTitle = styled.Text`
+  font-size: 10px;
+  color: grey;
+`;
+
 const Button = styled.View`
   background-color: #50cd9e;
   border-radius: 18px;
+`;
+
+const Bubble = styled.View`
+  background-color: #e4dcdc;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  padding: 3px;
+  padding-left: 5px;
 `;
 
 const Insert = styled.TextInput`
@@ -42,6 +56,7 @@ export default class Signup extends Component<IProps> {
     email: "",
     username: "",
     pw: "",
+    reader_code: "",
     error: null,
   };
 
@@ -76,7 +91,7 @@ export default class Signup extends Component<IProps> {
 
   render() {
     const windowWidth = Dimensions.get("window").width;
-    const { username, email, pw, error } = this.state;
+    const { username, email, pw, error, reader_code } = this.state;
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
@@ -94,6 +109,11 @@ export default class Signup extends Component<IProps> {
                 <Insert onChangeText={(text) => this.setState({ email: text })} value={email} autoCapitalize="none" />
                 <Title>PASSWORD</Title>
                 <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" />
+                <Title>READER CODE</Title>
+                <Bubble>
+                  <SubTitle>Were you referred by a friend? If so enter their secret reader code here.</SubTitle>
+                </Bubble>
+                <Insert onChangeText={(text) => this.setState({ reader_code: text })} value={reader_code} autoCapitalize="none" />
               </View>
               {error ? <ErrorText>{error}</ErrorText> : null}
               <View style={{ marginTop: 10 }}>
