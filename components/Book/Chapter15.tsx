@@ -116,20 +116,23 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}When the home screen appeared, Zena slid the disc into the side of the machine. She massaged her bandaged shoulder as she waited for something to load. A few moments later, a program popped up; Jake could see a set of unfamiliar
           characters appear in the program’s window: thirty lines of strange looking shapes and characters. <Text style={{ fontFamily: "gelasibro-italic" }}>Those almost look like Greek letters.</Text>
           {"\n"}
-          {"\n"}A look of disappointment shone on Zena’s face “The contents of this disc are not written in plain Venthum Gorak. That <Text style={{ fontFamily: "gelasibro-italic" }}>was</Text> fanciful. This is a cipher, a secret code. I don't
-          recognize the pattern at all,” she said.{"\n"}
-          {"\n"}“Try Cipherium,” Dendro spoke out. He had entered the room without them noticing and was leaning against the doorway watching them.{"\n"}
+          {"\n"}A look of disappointment shone on Zena’s face “The contents of this disc are not written in plain Venthum Gorak. That <Text style={{ fontFamily: "gelasibro-italic" }}>was</Text> fanciful. This is a{" "}
+          <GlossaryWord lookup_string="Cipher" word="cipher" toggleGlossary={this.props.toggleGlossary} />, a secret code. I don't recognize the pattern at all,” she said.{"\n"}
+          {"\n"}“Try <GlossaryWord lookup_string="Cipherium" word="Cipherium" toggleGlossary={this.props.toggleGlossary} />
+          ,” Dendro spoke out. He had entered the room without them noticing and was leaning against the doorway watching them.{"\n"}
           {"\n"}“There you are!” She nodded and clicked an icon on her application dock. A magenta window appeared, and she proceeded to paste in the string of alien characters she copied from the previous application into a small blinking text field
           on the current screen, then hit enter. A horizontal loading indicator filled itself out. Then the application read:{"\n"}
           {"\n"}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>No relevant cipher detected. Nearest match: .0023%.</Text>
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>
+            No relevant <GlossaryWord lookup_string="Cipher" word="cipher" toggleGlossary={this.props.toggleGlossary} /> detected. Nearest match: .0023%.
+          </Text>
           {"\n"}
           {"\n"}“Nothing coming up on <Text style={{ fontFamily: "gelasibro-italic" }}>Cipherium</Text>, Dendro. Nothing whatsoever,” Zena said. “This is not something <Text style={{ fontFamily: "gelasibro-italic" }}>Cipherium</Text> has come in
           contact within the past.”{"\n"}
           {"\n"}“I don't know,” Dendro said, as he leaned against the far wall. “I have no idea how to crack an unrecognizable code. That's why I need to get my ship.”{"\n"}
           {"\n"}“What is Cipherium?” Jake asked.{"\n"}
-          {"\n"}“It is a special program we can use to help us crack encoded messages.” She continued to massage her shoulder and collarbone. A small grouping of blood began to seep through her shirt. “There is nothing we can do. If Cipherium can’t
-          crack the code, then no other software we have access to can...this requires the help of a specialist.”{"\n"}
+          {"\n"}“It is a special program we can use to help us crack encoded messages.” She continued to massage her shoulder and collarbone. A small grouping of blood began to seep through her shirt. “There is nothing we can do. If{" "}
+          <GlossaryWord lookup_string="Cipherium" word="Cipherium" toggleGlossary={this.props.toggleGlossary} /> can’t crack the code, then no other software we have access to can...this requires the help of a specialist.”{"\n"}
           {"\n"}Just then, the small green shop owner appeared. He had apparently been eavesdropping from just outside the open room. He walked over and said: “May I take a look?” Zena glanced at him curiously, then she looked at Dendro, who nodded
           approvingly. “Be my guest<Text style={{ fontFamily: "gelasibro-italic" }}>.”</Text> She spun the computer around so the garage owner could view the contents of the screen.{"\n"}
           {"\n"}He took off his goggles and put his hands on the table, bringing his face closer to the screen. He had thick inset eye sockets, and large, round eyeballs, making him appear almost frog-like. He then pulled out a set of spectacles from
@@ -146,9 +149,10 @@ export default class Chapter15 extends Component<IProps> {
           steel plated front door.{"\n"}
           {"\n"}“See you soon,” Zena shouted at him. She looked down at the table. A few moments later, she appeared to have entered a trance. She was thinking hard about something. “<Text style={{ fontFamily: "gelasibro-italic" }}>Bulk Cipher</Text>
           . <Text style={{ fontFamily: "gelasibro-italic" }}>What</Text> does that remind me of?” She patted her fist against the table a few times. “Wait. Jonko. Zimmer's friend. From the forces. Naronian Cyber Intel. He would rant at Gelfer's
-          Tavern on 27th block. That guy wouldn't shut up about his boss. On and on about his side projects. But his boss wouldn't listen. Code cracking. Cypher decryption. Yes. He mentioned that he had built a server. A server to help decode obscure
-          ciphers that were created in outback undergrounds. That coders for hire, cryptic masterminds with no loyalty to any party were rumored to create these things. Missionaries of sorts. People with nothing better to do. He may have mentioned a
-          Bulk Cipher. We may be able to hit his server if it's still online. I knew I’d heard that term before.” She pulled her laptop closer.{"\n"}
+          Tavern on 27th block. That guy wouldn't shut up about his boss. On and on about his side projects. But his boss wouldn't listen. Code cracking. Cypher{" "}
+          <GlossaryWord lookup_string="Decryption" word="decryption" toggleGlossary={this.props.toggleGlossary} />. Yes. He mentioned that he had built a server. A server to help decode obscure ciphers that were created in outback undergrounds. That
+          coders for hire, cryptic masterminds with no loyalty to any party were rumored to create these things. Missionaries of sorts. People with nothing better to do. He may have mentioned a
+          <GlossaryWord lookup_string="Bulkcipher" word="Bulk Cipher" toggleGlossary={this.props.toggleGlossary} />. We may be able to hit his server if it's still online. I knew I’d heard that term before.” She pulled her laptop closer.{"\n"}
           {"\n"}“I will leave you to it then,” the garage owner said. The small man gave a subtle bow then walked back into the hangar.{"\n"}
           {"\n"}“Hit the server?” Jake asked.{"\n"}
           {"\n"}Zena patted down her wound. A tiny bit of blood was seeping through her shirt. “Yes, the server.”{"\n"}
@@ -163,7 +167,8 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}“Okay, then. If you say so. I will trust my mental hardware,” he said.{"\n"}
           {"\n"}“Good,” she replied. “Now let’s learn.” She began fidgeting with a wrench that had been left on the table. “To understand the <Text style={{ fontFamily: "gelasibro-italic" }}>server</Text>, we must first understand the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>internet</Text>. The construct of the internet is so stunning it assuages some of the pain in my shoulder when I think about it. Do you have any understanding of how the internet works?” Zena
-          asked. “I should mention there is a bridge between Earth’s internet, and the internet of all enlightened systems, and the Nestomir. The bridge has limitations, but it has been constructed through our civilian satellite networks.”{"\n"}
+          asked. “I should mention there is a bridge between Earth’s internet, and the internet of all <GlossaryWord lookup_string="Enlightened" word="Enlightened" toggleGlossary={this.props.toggleGlossary} /> systems, and the Nestomir. The bridge
+          has limitations, but it has been constructed through our civilian satellite networks.”{"\n"}
           {"\n"}“That’s wild. And no, not really, I don’t really know how the internet works,” Jake said.” I know I use the internet to log into apps and websites. And to play multiplayer games. I mean, yea, almost everything uses the internet. But I
           don't really know what it's doing to make everything connect.”{"\n"}
           {"\n"}Zena replied, “Sometimes it’s good to recognize what we do not know. The internet is simple when you look at it from a high-level. It enables computers from anywhere on your planet, or even the universe, to communicate, incredibly
@@ -186,12 +191,15 @@ export default class Chapter15 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>general</Text> direction. The internet works in a nearly <Text style={{ fontFamily: "gelasibro-italic" }}>identical</Text> fashion. When we send a message over the internet, the message is
           addressed, and then moves through a series of nodes, or post offices, which we call <Text style={{ fontFamily: "gelasibro-italic" }}>routers</Text> in internet terms, until it can be delivered locally to the correct street address, or{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>IP</Text> address.”{"\n"}
-          {"\n"}“I think I see what you’re saying. That’s wild,” Jake said. “I never knew the internet worked that way...it’s hard to believe...but I've never even thought about it to be honest...so that's what an IP address is? It's like your street
-          address?”{"\n"}
+          {"\n"}“I think I see what you’re saying. That’s wild,” Jake said. “I never knew the internet worked that way...it’s hard to believe...but I've never even thought about it to be honest...so that's what an{" "}
+          <GlossaryWord lookup_string="Ipaddress" word="IP Address" toggleGlossary={this.props.toggleGlossary} /> is? It's like your street address?”{"\n"}
           {"\n"}“Yes,” Zena said. “At least your public IP. But we don't need to get too deep into networking right now.”{"\n"}
           {"\n"}“But how does the internet move things around so fast?” Jake asked.{"\n"}
           {"\n"}“Well, the internet leverages the speed of light. When data moves across the cables and wires that make up the backbone of the internet, it moves at light speed. It's only when things get directed at our internet post offices, our{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>routers</Text>, do things slow down a bit. But even then, because of how efficient computers are at processing information, those delays are very subtle from a human standpoint,” Zena said.
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Router" word="routers" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          , do things slow down a bit. But even then, because of how efficient computers are at processing information, those delays are very subtle from a human standpoint,” Zena said.
           {"\n"}
           {"\n"}“So, it’s really the speed of light? That's impressive. That's how we can send messages so fast on social networks and play games online. Dang, we really do take it for granted,” Jake remarked.{"\n"}
           {"\n"}“Yes. We do take it for granted,” she replied. “Now, that brings me back to servers. Have you ever heard the terms <Text style={{ fontFamily: "gelasibro-italic" }}>client</Text> or{" "}
@@ -199,11 +207,13 @@ export default class Chapter15 extends Component<IProps> {
           need to understand them both today if we are to make an attempt at decoding this message.”{"\n"}
           {"\n"}“Yes, I’ve heard of servers. Client, I’m not sure,” he said.{"\n"}
           {"\n"}“Let me try and explain them clearly: a <Text style={{ fontFamily: "gelasibro-italic" }}>client</Text> is a piece of software a user of the internet loads up to visualize an application. I'm talking about the apps you open on your
-          phone or the websites you load on your browser. They are clients of the internet. A <Text style={{ fontFamily: "gelasibro-italic" }}>server</Text>, on the other hand, is a computer that stores, coordinates, and centralizes all the
-          information in an application. For example, I’ve heard of Earth’s Instagram. We have something quite similar in the Nestomir. Now, when you open the Instagram app, you are using the Instagram client. The app on your phone{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> the client and this client requests information from the Instagram server, like the newest pictures that have been uploaded by the accounts you follow. Servers can sit anywhere
-          across the world. Clients request information from servers, and servers serve the requested information back to the client. By enabling a <Text style={{ fontFamily: "gelasibro-italic" }}>client server architecture</Text>, many users can
-          access the same system, and the server can keep information across the application centralized. Almost any app you can imagine will obey this client server relationship.”{"\n"}
+          phone or the websites you load on your browser. They are <GlossaryWord lookup_string="Client" word="clients" toggleGlossary={this.props.toggleGlossary} /> of the internet. A <Text style={{ fontFamily: "gelasibro-italic" }}>server</Text>, on
+          the other hand, is a computer that stores, coordinates, and centralizes all the information in an application. For example, I’ve heard of Earth’s Instagram. We have something quite similar in the Nestomir. Now, when you open the Instagram
+          app, you are using the Instagram client. The app on your phone <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> the client and this client requests information from the Instagram server, like the newest pictures that have been
+          uploaded by the accounts you follow. Servers can sit anywhere across the world. Clients request information from servers, and servers serve the requested information back to the{" "}
+          <GlossaryWord lookup_string="Client" word="client" toggleGlossary={this.props.toggleGlossary} />. By enabling a <Text style={{ fontFamily: "gelasibro-italic" }}>client server architecture</Text>, many users can access the same system, and
+          the server can keep information across the application centralized. Almost any app you can imagine will obey this <GlossaryWord lookup_string="Clientserver" word="client server" toggleGlossary={this.props.toggleGlossary} /> relationship.”
+          {"\n"}
           {"\n"}“That’s interesting,” Jake said.  “Everything has to be kept in sync.”{"\n"}
           {"\n"}“Precisely,” Zena replied. “Now, if you will excuse me for just one moment, I need to stretch my legs, and I also am going to see if this man has any tea. Do you want any?”{"\n"}
           {"\n"}“Just water,” Jake said.{"\n"}
@@ -211,19 +221,21 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}Zena took a deliberately slow sip of her libation. “Now where were we? Right, we talked a bit about the internet, and we discussed the client-server model. Next”—she pounded her fist against the table, the metal wrench on the table
           rattled loudly—“we must discuss the language clients and servers use to communicate with one another over the internet.”{"\n"}
           {"\n"}“They have a language?” Jake asked.{"\n"}
-          {"\n"}“They most certainly do, kid.” Zena’s eyes lit up. “Sometimes we refer to this language that computer’s use to communicate between one another as a <Text style={{ fontFamily: "gelasibro-italic" }}>protocol</Text>. Protocol is a fancy
-          way of saying language. The English language is a communication protocol. It abides by a strict set of rules, or grammar, that enable individuals to understand one another.{"\n"}
+          {"\n"}“They most certainly do, kid.” Zena’s eyes lit up. “Sometimes we refer to this language that computer’s use to communicate between one another as a <Text style={{ fontFamily: "gelasibro-italic" }}>protocol</Text>.{" "}
+          <GlossaryWord lookup_string="Protocol" word="Protocol" toggleGlossary={this.props.toggleGlossary} /> is a fancy way of saying language. The English language is a communication protocol. It abides by a strict set of rules, or grammar, that
+          enable individuals to understand one another.{"\n"}
           {"\n"}“I never thought about it that way, but yea, I guess that’s how communication works,” Jake remarked.{"\n"}
           {"\n"}“Yes. And that's where <Text style={{ fontFamily: "gelasibro-italic" }}>HTTP protocol</Text> comes into play. <Text style={{ fontFamily: "gelasibro-italic" }}>HTTP</Text> is a{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>protocol</Text>, or <Text style={{ fontFamily: "gelasibro-italic" }}>language</Text>, that engineers designed to allow clients and servers to communicate efficiently over the internet,” Zena
           explained. “Nearly every interaction you make over the internet, whether it be sending a chat, uploading a comment, or liking a YouTube video, or asking for the latest news article from your favorite publication, is executed over the
-          internet through an HTTP message.”{"\n"}
+          internet through an <GlossaryWord lookup_string="Httpmessage" word="HTTP message" toggleGlossary={this.props.toggleGlossary} />
+          .”{"\n"}
           {"\n"}“I’ve seen HTTP. You see it on your browser, in the address bar!” Jake replied.{"\n"}
-          {"\n"}“Yes, exactly. Your browser uses HTTP protocol to communicate with other computers on the internet,” Zena said. She took another generous swig of her tea. “Now, we’ve talked a bit about clients and servers, as well as this language we
-          use called HTTP, but to make everything work effectively, between <Text style={{ fontFamily: "gelasibro-italic" }}>clients</Text> and <Text style={{ fontFamily: "gelasibro-italic" }}>servers</Text>, we must recognize that the HTTP language,
-          or protocol, follows a communication pattern that we refer to as <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text>-<Text style={{ fontFamily: "gelasibro-italic" }}>response</Text>. This might sound fancy, but all it means is
-          that when a client makes a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> to a server using HTTP, the server <Text style={{ fontFamily: "gelasibro-italic" }}>responds</Text> to the client using HTTP.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Request-response, request-response</Text>.”{"\n"}
+          {"\n"}“Yes, exactly. Your browser uses <GlossaryWord lookup_string="Http" word="HTTP" toggleGlossary={this.props.toggleGlossary} /> protocol to communicate with other computers on the internet,” Zena said. She took another generous swig of
+          her tea. “Now, we’ve talked a bit about clients and servers, as well as this language we use called HTTP, but to make everything work effectively, between <Text style={{ fontFamily: "gelasibro-italic" }}>clients</Text> and{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>servers</Text>, we must recognize that the HTTP language, or protocol, follows a communication pattern that we refer to as <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text>-
+          <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text>. This might sound fancy, but all it means is that when a client makes a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> to a server using HTTP, the server{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>responds</Text> to the client using HTTP. <Text style={{ fontFamily: "gelasibro-italic" }}>Request-response, request-response</Text>.”{"\n"}
           {"\n"}“That’s pretty simple, I guess,” Jake said.{"\n"}
           {"\n"}“Yes, nearly all exchanges happening over the internet take this <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text> form. And the beauty of HTTP protocol is
           that it makes it easy for us to customize our communications. For example, we can very easily <Text style={{ fontFamily: "gelasibro-italic" }}>address</Text> our HTTP message, choose the{" "}
@@ -244,41 +256,52 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}- HTTP messages power most of the communication that takes place on the internet.{"\n"}- An HTTP message takes the form of either a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> (message sent from client to server)
           or a <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text> (message sent from server to client).{"\n"}- An HTTP message is made up of two sections, the <Text style={{ fontFamily: "gelasibro-italic" }}>header</Text>, and the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text>. (HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Headers</Text> contain high level information (and instructions), i.e., in what{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> should data be delivered by the server? The HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> contains information the user actually inserts into the computer{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>that we need to send to our server to save</Text>, i.e., the actual text of the comment you want to save (post) to a social network.{"\n"}- Every HTTP message must indicate a{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>method (very important, see below)</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> should data be delivered by the server? The HTTP{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Httpbody" word="body" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          contains information the user actually inserts into the computer <Text style={{ fontFamily: "gelasibro-italic" }}>that we need to send to our server to save</Text>, i.e., the actual text of the comment you want to save (post) to a social
+          network.{"\n"}- Every HTTP message must indicate a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>method (very important, see below)</Text>
           {"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>On HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Request Methods</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}- The request method indicates the <Text style={{ fontFamily: "gelasibro-italic" }}>overall nature/vibe</Text> of an HTTP request.{"\n"}- The two most used request methods are HTTP GET and HTTP POST.{"\n"}- HTTP GET signifies we are
+          {"\n"}- The request method indicates the <Text style={{ fontFamily: "gelasibro-italic" }}>overall nature/vibe</Text> of an HTTP request.{"\n"}- The two most used request methods are{" "}
+          <GlossaryWord lookup_string="Httpget" word="HTTP GET" toggleGlossary={this.props.toggleGlossary} /> and <GlossaryWord lookup_string="Httppost" word="HTTP POST" toggleGlossary={this.props.toggleGlossary} />.{"\n"}- HTTP GET signifies we are
           asking our server to respond with data loaded from a specific resource (an image, file, etc, that exists in a specific folder on the server).{"\n"}- HTTP POST method signifies we are sending something to the server to save for later.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}>On</Text> HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Headers</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}- HTTP Headers can be thought of as the settings we place on our HTTP message.{"\n"}- For example, the HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Content-Type</Text> header establishes the{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> of the data we are sending in our HTTP message (e.g., text, image, csv, pdf, etc).{"\n"}
+          {"\n"}- HTTP Headers can be thought of as the settings we place on our HTTP message.{"\n"}- For example, the HTTP{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Httpcontenttype" word="Content-Type" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          header establishes the <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> of the data we are sending in our HTTP message (e.g., text, image, csv, pdf, etc).{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}>On</Text> HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Body</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}- The body of our HTTP message is where we usually store the data uploaded by a user.{"\n"}- HTTP GET messages usually do not contain a body (only headers) because we are not sending anything to the server to save{"\n"}- If we place a
-          comment on a picture on our favorite social network, the <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> of our request would contain the text of the comment, e.g, “Nice cat, dude!”.{"\n"}- The body of our HTTP message is
-          sometimes referred to as the <Text style={{ fontFamily: "gelasibro-italic" }}>payload</Text>.{"\n"}
+          {"\n"}- The body of our HTTP message is where we usually store the data uploaded by a user.{"\n"}- <GlossaryWord lookup_string="Httpget" word="HTTP GET" toggleGlossary={this.props.toggleGlossary} /> messages usually do not contain a body
+          (only headers) because we are not sending anything to the server to save{"\n"}- If we place a comment on a picture on our favorite social network, the <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> of our request would contain
+          the text of the comment, e.g, “Nice cat, dude!”.{"\n"}- The body of our HTTP message is sometimes referred to as the <Text style={{ fontFamily: "gelasibro-italic" }}>payload</Text>.{"\n"}
           {"\n"}Jake mumbled out loud as he read through the notes. “Hm...so each message is <Text style={{ fontFamily: "gelasibro-italic" }}>either</Text> a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> or a{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text>, and that depends if it’s going from client <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> server, or server{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> client...makes sense. Now we use <Text style={{ fontFamily: "gelasibro-italic" }}>HTTP headers</Text> to place settings on our{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>HTTP messages</Text> like something to indicate the format of our data...that’s clear. The <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> is where we store the information the
-          user uploads...but I see here we need to actually specify the overall nature of a request with a <Text style={{ fontFamily: "gelasibro-italic" }}>request method</Text> like GET or POST? Really?”{"\n"}
-          {"\n"}“Yes, we must <Text style={{ fontFamily: "gelasibro-italic" }}>always</Text> indicate the HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>request method</Text> when we send an HTTP request. HTTP request methods help our server
-          keep things organized. By making it clear what we want to do with our message, like asking the server for information, or asking the server to save information for later, we can make it much easier for our server to accomplish these tasks
-          efficiently. For example, on Jonko’s server, we need to use a POST request when we ask his server to decrypt these characters. The reason for this is that we need to send the server a relatively large payload: the cipher we want it to
-          decrypt. His server may also save this cipher for later to better train his code decryption algorithms.” She scrolled down the page. “Here, check this out. This is an example of a real HTTP GET request, and the one below is a real example
-          of an HTTP Post request. You can see, an HTTP request is fairly easy to read–it’s just text.”
+          <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> client...makes sense. Now we use{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Httpheader" word="HTTP headers" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          to place settings on our <Text style={{ fontFamily: "gelasibro-italic" }}>HTTP messages</Text> like something to indicate the format of our data...that’s clear. The <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> is where we
+          store the information the user uploads...but I see here we need to actually specify the overall nature of a request with a <Text style={{ fontFamily: "gelasibro-italic" }}>request method</Text> like GET or POST? Really?”{"\n"}
+          {"\n"}“Yes, we must <Text style={{ fontFamily: "gelasibro-italic" }}>always</Text> indicate the HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>request method</Text> when we send an HTTP request. HTTP{" "}
+          <GlossaryWord lookup_string="Httprequestmethod" word="request methods" toggleGlossary={this.props.toggleGlossary} /> help our server keep things organized. By making it clear what we want to do with our message, like asking the server for
+          information, or asking the server to save information for later, we can make it much easier for our server to accomplish these tasks efficiently. For example, on Jonko’s server, we need to use a POST request when we ask his server to
+          decrypt these characters. The reason for this is that we need to send the server a relatively large <GlossaryWord lookup_string="Payload" word="payload" toggleGlossary={this.props.toggleGlossary} />: the cipher we want it to decrypt. His
+          server may also save this cipher for later to better train his code decryption <GlossaryWord lookup_string="Algorithm" word="algorithms" toggleGlossary={this.props.toggleGlossary} />
+          .” She scrolled down the page. “Here, check this out. This is an example of a real HTTP GET request, and the one below is a real example of an HTTP Post request. You can see, an HTTP request is fairly easy to read–it’s just text.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={127} radius={"none"} source={require("./../../assets/images/lessons/lesson9_1.png")} />
@@ -297,13 +320,14 @@ export default class Chapter15 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>actually</Text> make a request to a server? Like what do we use to create an HTTP message in the first place?”{"\n"}
           {"\n"}Zena grinned and eyeballed the code editor icon on her application dock.{"\n"}
           {"\n"}“Wait, are you telling me we can use <Text style={{ fontFamily: "gelasibro-italic" }}>Python</Text> to make a request over the internet?” Jake asked.{"\n"}
-          {"\n"}“Yes, yes we certainly can, Python can do this job well, and so can other tools–which we don’t have time to discuss now,” Zena said. “There is a very special open-source library in Python, known as{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Requests</Text>, that enables us to make HTTP requests over the internet. Here, one moment. I will open up a fresh Python file for us in our code editor.” Zena played with the computer for a
-          moment, then spun it back towards Jake. A blank code file, entitled <Text style={{ fontFamily: "gelasibro-italic" }}>cipher.py</Text>, displayed on the screen. “Our goal today is to send a POST request to Jonko’s server. To do this, we will
-          send an HTTP message to his server, over the internet. This message must contain the correct request headers, the server’s URL, as well as our payload, or message body.”{"\n"}
+          {"\n"}“Yes, yes we certainly can, Python can do this job well, and so can other tools–which we don’t have time to discuss now,” Zena said. “There is a very special open-source{" "}
+          <GlossaryWord lookup_string="Library" word="library" toggleGlossary={this.props.toggleGlossary} /> in Python, known as <Text style={{ fontFamily: "gelasibro-italic" }}>Requests</Text>, that enables us to make HTTP requests over the
+          internet. Here, one moment. I will open up a fresh Python file for us in our code editor.” Zena played with the computer for a moment, then spun it back towards Jake. A blank code file, entitled{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>cipher.py</Text>, displayed on the screen. “Our goal today is to send a POST request to Jonko’s server. To do this, we will send an HTTP message to his server, over the internet. This message
+          must contain the correct request headers, the server’s <GlossaryWord lookup_string="Url" word="URL" toggleGlossary={this.props.toggleGlossary} />, as well as our payload, or message body.”{"\n"}
           {"\n"}“So, how do we do this?” Jake asked eagerly.{"\n"}
-          {"\n"}“Let's start off by importing the <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> library. I have already downloaded the requests library with PIP, so we can skip that step today. On the first line, please generate
-          the correct import statement.”{"\n"}
+          {"\n"}“Let's start off by <GlossaryWord lookup_string="Importstatement" word="importing" toggleGlossary={this.props.toggleGlossary} /> the <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> library. I have already downloaded
+          the requests library with PIP, so we can skip that step today. On the first line, please generate the correct import statement.”{"\n"}
           {"\n"}Jake made his attempt on the screen.  “Like this? I've never used a library before. Dendro only showed me a few examples on the ship.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -315,10 +339,11 @@ export default class Chapter15 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           Zena eyed his code. “This is correct. Nice work. And don't worry, this is a great opportunity to use a library for a genuine purpose,” she responded. “What you've done here is import the{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> library. In Python, an imported library takes the form of a <Text style={{ fontFamily: "gelasibro-italic" }}>module</Text>. A module can be thought of as a collection of{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>prewritten</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>functions</Text>.”{"\n"}
-          {"\n"}“So, there is a function buried inside this <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> thing<Text style={{ fontFamily: "gelasibro-italic" }}>—requests module—</Text>that will allow us to create an HTTP message?”
-          Jake asked.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> library. In Python, an imported library takes the form of a <Text style={{ fontFamily: "gelasibro-italic" }}>module</Text>. A{" "}
+          <GlossaryWord lookup_string="Module" word="module" toggleGlossary={this.props.toggleGlossary} /> can be thought of as a collection of <Text style={{ fontFamily: "gelasibro-italic" }}>prewritten</Text>{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>functions</Text>.”{"\n"}
+          {"\n"}“So, there is a <GlossaryWord lookup_string="Function" word="function" toggleGlossary={this.props.toggleGlossary} /> buried inside this <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> thing
+          <Text style={{ fontFamily: "gelasibro-italic" }}>—requests module—</Text>that will allow us to create an HTTP message?” Jake asked.{"\n"}
           {"\n"}“Precisely. Modules allow us to neatly organize imported code. To access a function inside of an imported module we use what’s called the <Text style={{ fontFamily: "gelasibro-italic" }}>dot</Text> syntax. Today we want to access the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>post</Text> function, which is stored inside of <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text>. The <Text style={{ fontFamily: "gelasibro-italic" }}>post</Text> function
           inside of the <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text> module permits us to send an HTTP POST request over the internet. Here, let me demonstrate.” Zena added a line below Jake’s.
@@ -334,10 +359,13 @@ export default class Chapter15 extends Component<IProps> {
           “So that’s how you access a prewritten function stored inside <Text style={{ fontFamily: "gelasibro-italic" }}>requests</Text>? You just go <Text style={{ color: "#0C2443", fontFamily: "code" }}>requests.post</Text>? That’s so simple. I
           think I understand more now why coder’s get obsessed with this stuff,” Jake said. He looked at the screen. “Ok, so now we’ve figured out how to access the <Text style={{ fontFamily: "gelasibro-italic" }}>post</Text> function, but how do we
           pass the information we need to create the correct HTTP message...don’t we need to provide the server URL and the message body?”{"\n"}
-          {"\n"}“You are correct. If you remember from your lessons, functions grant us the power to provide them <Text style={{ fontFamily: "gelasibro-italic" }}>inputs</Text>. The first parameter of our{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>post</Text> function accepts the URL. The second parameter accepts the message body, which takes the form of dictionary data structure. You can start to see how all of the topics we’ve
-          learned about start to come together to enable us to do useful things. Note, the url we want to hit on Jonko’s server is http://nww.jonko-creations.nest/ciphers”.{"\n"}
-          {"\n"}“So we actually use the inputs of the function...let me think….a dictionary.” He typed for a few moments, modifying Zena’s code, then looked up at her.
+          {"\n"}“You are correct. If you remember from your lessons, functions grant us the power to provide them <Text style={{ fontFamily: "gelasibro-italic" }}>inputs</Text>. The first{" "}
+          <GlossaryWord lookup_string="Parameter" word="parameter" toggleGlossary={this.props.toggleGlossary} /> of our <Text style={{ fontFamily: "gelasibro-italic" }}>post</Text> function accepts the URL. The second parameter accepts the message
+          body, which takes the form of <GlossaryWord lookup_string="Dictionary" word="dictionary" toggleGlossary={this.props.toggleGlossary} />{" "}
+          <GlossaryWord lookup_string="Datastructure" word="data structure" toggleGlossary={this.props.toggleGlossary} />. You can start to see how all of the topics we’ve learned about start to come together to enable us to do useful things. Note,
+          the url we want to hit on Jonko’s server is http://nww.jonko-creations.nest/ciphers”.{"\n"}
+          {"\n"}“So we actually use the <GlossaryWord lookup_string="Input" word="inputs" toggleGlossary={this.props.toggleGlossary} /> of the function...let me think….a dictionary.” He typed for a few moments, modifying Zena’s code, then looked up
+          at her.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_5.png")} />
@@ -358,7 +386,10 @@ export default class Chapter15 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_6.png")} />
         </View>
-        <Caption>This can be visually intimidating. But all that's happening is Jake is inserting two arguments into the function. The first argument is the URL, the secong argument is a dictionary.</Caption>
+        <Caption>
+          This can be visually intimidating. But all that's happening is Jake is inserting two arguments into the function. The first <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} /> is the URL, the
+          secong argument is a dictionary.
+        </Caption>
 
         {
           // Section 6 Below, Goes Text, Graphic
@@ -373,14 +404,19 @@ export default class Chapter15 extends Component<IProps> {
           message–that is if his server cannot decode our cipher successfully but let us pray that does not happen.”{"\n"}
           {"\n"}“So how can we see the server’s response? Where on Earth would that go?” Jake asked frustrated.{"\n"}
           {"\n"}“What’s the other powerful thing functions can do a…?” Zena edged Jake on.{"\n"}
-          {"\n"}“A return, and output? Are you serious? It’s that cool? The function’s return is the response from the server? No way!”{"\n"}
+          {"\n"}“A return, and <GlossaryWord lookup_string="Output" word="output" toggleGlossary={this.props.toggleGlossary} />? Are you serious? It’s that cool? The function’s{" "}
+          <GlossaryWord lookup_string="Returnstatement" word="return" toggleGlossary={this.props.toggleGlossary} /> is the response from the server? No way!”{"\n"}
           {"\n"}Zena grinned.{"\n"}
           {"\n"}Jake updated his code rapidly. He was beginning to get a better feel for this stuff.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_7.png")} />
         </View>
-        <Caption>The requests.post function RETURNS a response. We can store that response in variable, then print it to the terminal screen. This is key fundamental of working with Python and the internet.</Caption>
+        <Caption>
+          The requests.post function RETURNS a response. We can store that response in <GlossaryWord lookup_string="Variable" word="variable" toggleGlossary={this.props.toggleGlossary} />, then{" "}
+          <GlossaryWord lookup_string="Print" word="print" toggleGlossary={this.props.toggleGlossary} /> it to the <GlossaryWord lookup_string="Terminal" word="terminal" toggleGlossary={this.props.toggleGlossary} /> screen. This is key fundamental of
+          working with Python and the <GlossaryWord lookup_string="Internet" word="internet" toggleGlossary={this.props.toggleGlossary} />.
+        </Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic
@@ -396,8 +432,8 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>The -- Dark Continent. ∑asdfklas;dfklasdfkl..asdfasdfas∑df. Forces.</Text>
           {"\n"}
-          {"\n"}“Holy — ”. Zena exclaimed. She pushed herself closer to the screen. “It worked! Or at least Jonko’s server decoded <Text style={{ fontFamily: "gelasibro-italic" }}>some</Text> of it. The Dark Continent?{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Druinȉtis</Text>?<Text style={{ fontFamily: "gelasibro-italic" }}>”</Text>
+          {"\n"}“Holy — ”. Zena exclaimed. She pushed herself closer to the screen. “It worked! Or at least Jonko’s <GlossaryWord lookup_string="Server" word="server" toggleGlossary={this.props.toggleGlossary} /> decoded{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>some</Text> of it. The Dark Continent? <Text style={{ fontFamily: "gelasibro-italic" }}>Druinȉtis</Text>?<Text style={{ fontFamily: "gelasibro-italic" }}>”</Text>
           {"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>“Ah</Text>.” A squiggly mark burned into Jake's arm, below the other three. “That <Text style={{ fontFamily: "gelasibro-italic" }}>kills</Text>.” He rubbed the marking vigorously. “Now what
@@ -405,9 +441,12 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}Zena took his arm and examined the mark. “You will learn about this marking soon enough.” She closed her laptop and stood up and began to pace. “The dark continent? How can this be? What does this portend? I{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>cannot</Text> believe his server is <Text style={{ fontFamily: "gelasibro-italic" }}>still</Text> operational.”{"\n"}
           {"\n"}“What is the dark continent?” Jake asked again, still rubbing his wrist.{"\n"}
-          {"\n"}“The Dark Continent, or <Text style={{ fontFamily: "gelasibro-italic" }}>Druinȉtis</Text>, is one of the most poorly understood continents of Limora,” Zena stated.{"\n"}
+          {"\n"}“The Dark Continent, or <Text style={{ fontFamily: "gelasibro-italic" }}>Druinȉtis</Text>, is one of the most poorly understood continents of{" "}
+          <GlossaryWord lookup_string="Limora" word="Limora" toggleGlossary={this.props.toggleGlossary} />
+          ,” Zena stated.{"\n"}
           {"\n"}“So what does that mean?” Jake asked. “And why can’t you tell me what this marking signifies? I have four marks now; my mother is going to end me.”{"\n"}
-          {"\n"}“I do not know what this message means. The cipher was only partially decoded. But Druinȉtis...why would a Knight of Diu Khien be carrying a message about Druinȉtis? What business would it have there?” Zena uttered. She continued
+          {"\n"}“I do not know what this message means. The cipher was only partially decoded. But <GlossaryWord lookup_string="Druinitis" word="Druinȉtis" toggleGlossary={this.props.toggleGlossary} />
+          ...why would a <GlossaryWord lookup_string="Knightofdiukhien" word="Knight of Diu Khien" toggleGlossary={this.props.toggleGlossary} /> be carrying a message about Druinȉtis? What business would it have there?” Zena uttered. She continued
           pacing. “And that marking you must find out about on your own, I’m afraid. It will come in due time.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Great. More mysteries to crack.</Text>
@@ -416,11 +455,14 @@ export default class Chapter15 extends Component<IProps> {
           the back tarmac to see the ship land. Dendro stepped out a few moments later. Zena informed him of what they had learned.{"\n"}
           {"\n"}“Nice job, son. You are really finding your way with that editor,” Dendro said. “As for Druinȉtis, I do not understand. That is a mystery to me. That continent has never been known to have a Venthem presence. It is a wicked place
           however, filled with crime, debauchery, and anarchy.”{"\n"}
-          {"\n"}They walked back into the hangar and watched in silence as the garage owner coordinated a variety of large robotic machines underneath the towering <Text style={{ fontFamily: "gelasibro-italic" }}>FS-Gravis</Text>. Sometime later,
-          after the raucous noises of welding and sawing, a trolley-like robot appeared from underneath Zimmer’s ship. In its grips was an extended silver cylinder, much longer than the communications receiver. Three strips of curved metal wrapped
-          around its smooth surface, making it appear something like a thirty foot long churro. <Text style={{ fontFamily: "gelasibro-italic" }}>Is that the interstellar booster?</Text> The robotic trolley wheeled it outside. As the robot headed for
-          Dendro’s ship, the garage owner followed behind it, carrying two toolboxes. They were told to watch from inside the hangar. From here all they could see was a shower of sparks and smoke as the installation commenced. About an hour later the
-          garage owner came back inside and informed them that the transplant was complete.{"\n"}
+          {"\n"}They walked back into the hangar and watched in silence as the garage owner coordinated a variety of large robotic machines underneath the towering{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Fsgravis" word="FS-Gravis" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . Sometime later, after the raucous noises of welding and sawing, a trolley-like robot appeared from underneath Zimmer’s ship. In its grips was an extended silver cylinder, much longer than the communications receiver. Three strips of
+          curved metal wrapped around its smooth surface, making it appear something like a thirty foot long churro. <Text style={{ fontFamily: "gelasibro-italic" }}>Is that the interstellar booster?</Text> The robotic trolley wheeled it outside. As
+          the robot headed for Dendro’s ship, the garage owner followed behind it, carrying two toolboxes. They were told to watch from inside the hangar. From here all they could see was a shower of sparks and smoke as the installation commenced.
+          About an hour later the garage owner came back inside and informed them that the transplant was complete.{"\n"}
           {"\n"}“Thank you for your help,” Dendro said.{"\n"}
           {"\n"}“My pleasure. Until we meet again.” The frog-like man responded. “The Beacon is ready to fly.”{"\n"}
           {"\n"}“Let’s go,” Dendro commanded.

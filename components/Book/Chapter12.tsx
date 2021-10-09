@@ -147,21 +147,27 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}"Who is Vostluka?" Jake asked.{"\n"}
           {"\n"}"Jetubro Vostluka, the man that inherited the Venthum throne. The Vostluka line has maintained totalitarian rule over planet Venthe for over a millennium,” Dendro uttered. “They have suppressed their people with their ruthless
           ideology that his father, Doglav Vostluka, and his father before him, helped create. It is called <Text style={{ fontFamily: "gelasibro-italic" }}>The New Doctrine</Text>: only a small portion shall thrive, the rest must live mentally
-          captive. The New Doctrine preaches that learning and prosperity cannot be spread out or democratized. The Vostlukas torture Venthum citizens who have managed to rebel."{"\n"}
+          captive. The New Doctrine preaches that learning and prosperity cannot be spread out or democratized. The Vostlukas torture <GlossaryWord lookup_string="Venthum" word="Venthum" toggleGlossary={this.props.toggleGlossary} /> citizens who have
+          managed to rebel."{"\n"}
           {"\n"}"What do you mean... <Text style={{ fontFamily: "gelasibro-italic" }}>mentally captive</Text>?" Jake asked.{"\n"}
           {"\n"}"The air on Venthe is medicated. The people breathe in an altered atmosphere infused with a chemistry designed to suppress their drive and curiosity,” Dendro replied.{"\n"}
           {"\n"}"Are you kidding me?" Jake asked.{"\n"}
           {"\n"}"No. Nothing can grow naturally on the planet any longer due to the tampering of their atmosphere," Dendro said. “Our satellite reconnaissance has shown this to be true,” Dendro said.{"\n"}
           {"\n"}Jake began to speak, but Zimmer butted in, “What do you mean by a more nefarious scheme?”{"\n"}
-          {"\n"}“I do not know. My gut has warned me of this for a long time. I believe they are after a deeper understanding of the <Text style={{ fontFamily: "gelasibro-italic" }}>Utma</Text>—our understanding of the Utma, understandings our great
-          spiritual leaders and scientists have obtained and cultivated over thousands of years of painstaking effort. This is one area their culture could never excel. But I do not know how it will be done.”{"\n"}
+          {"\n"}“I do not know. My gut has warned me of this for a long time. I believe they are after a deeper understanding of the <Text style={{ fontFamily: "gelasibro-italic" }}>Utma</Text>—our understanding of the{" "}
+          <GlossaryWord lookup_string="Theutma" word="Utma" toggleGlossary={this.props.toggleGlossary} />, understandings our great spiritual leaders and scientists have obtained and cultivated over thousands of years of painstaking effort. This is
+          one area their culture could never excel. But I do not know how it will be done.”{"\n"}
           {"\n"}Zimmer put his hands through his thick hair. “That is certainly possible. But what evidence is there of such a ploy?{"\n"}
           {"\n"}"None, but today, it matters not. The only thing we can do now is regroup," Dendro responded. “That is why I must get back to my men.”{"\n"}
           {"\n"}They sat there for a moment without speaking. Each one of them appeared to be lost in thought.{"\n"}
           {"\n"}“How can I possibly help?” Jake asked. “I can’t really fight.”{"\n"}
           {"\n"}Dendro clenched his jaw. “This is not your fight, kid. But, you have already been an essential companion on this journey. Now, enough talk of enemies and war,” Dendro said. “These battles will be fought in due time. Today we are here
-          to give you the opportunity to train, Earthling. You demonstrated <Text style={{ fontFamily: "gelasibro-italic" }}>Foresight</Text> with no training. That is not something any of us can easily ignore. It has sparked a deep intrigue in
-          Zimmer, Zena, and I, and I’m sure it would in our spiritual leaders. We are encouraging you to take your learnings a bit further today by stepping onto this mat. Are you up for that, son?”{"\n"}
+          to give you the opportunity to train, Earthling. You demonstrated{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Foresight" word="Foresight" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          with no training. That is not something any of us can easily ignore. It has sparked a deep intrigue in Zimmer, Zena, and I, and I’m sure it would in our spiritual leaders. We are encouraging you to take your learnings a bit further today by
+          stepping onto this mat. Are you up for that, son?”{"\n"}
           {"\n"}"I guess so," Jake replied, concerned about the implications of this decision.{"\n"}
           {"\n"}"Good,” Dendro said. “We have together agreed that, as translated into your common tongue, <Text style={{ fontFamily: "gelasibro-italic" }}>The Function</Text> will be the benefit lesson Zena will train you on today. It is an
           essential teaching in our Holy Curricula. And to do that in a formal setting, the dojo, is something we are all eager to witness. “We’ve left your training attire in the fitting room over there. Please change and then meet us on the mat.”
@@ -181,15 +187,17 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>. You have worked hard for these, and the Utma has rewarded you, and today, hopefully, she will reward you again. Now let's begin our lesson, and then hopefully, get some training
           time in after. And yes, today, I will take the place of your spiritual teacher."{"\n"}
           {"\n"}Zena began to walk left and right in front of him, in short paces, her hands held together behind her back. "The Function. El Funccion' in Old Naronian. La Subroutina' in Middle-Tarvezian. It's a precious tool and many Ld'Shab
-          spiritual teachers believe it to be the root of all programming...but what is a function? Well, from one angle, it's a set of instructions. A set of steps. A set of steps that can be stored once, and then can be triggered again and again."
+          spiritual teachers believe it to be the root of all programming...but what is a <GlossaryWord lookup_string="Function" word="function" toggleGlossary={this.props.toggleGlossary} />? Well, from one angle, it's a set of instructions. A set of
+          steps. A set of steps that can be stored once, and then can be triggered again and again."
           {"\n"}
           {"\n"}Zena continued, “But why do we need this capability? The capability to fire off a set of instructions that only need to be defined once. And why is it so important?{"\n"}
           {"\n"}"Well, to really understand the Function, we must first understand the Utma. The Utma believes in efficiency. She believes in efficiency because we cannot achieve our creative purpose unless we build things in an{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>efficient</Text> manner. This holds true especially when working with computers. And at the heart of being efficient when we work with computers is the importance of making instructions{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>reusable</Text>. Functions let us perform this critical task of making instructions reusable. Some spiritual leaders have even referred to the Function as{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>the Holy Reusable Root</Text> in certain spiritual texts.”{"\n"}
-          {"\n"}“The Holy Reusable Root?” Jake asked.{"\n"}
-          {"\n"}“Yes. The function is so essential to life around us that she reserves her own Ld'Shab linguistics,” Zena responded.{"\n"}
+          {"\n"}“<GlossaryWord lookup_string="Theholyreusableroot" word="The Holy Reusable Root" toggleGlossary={this.props.toggleGlossary} />
+          ?” Jake asked.{"\n"}
+          {"\n"}“Yes. The <GlossaryWord lookup_string="Function" word="function" toggleGlossary={this.props.toggleGlossary} /> is so essential to life around us that she reserves her own Ld'Shab linguistics,” Zena responded.{"\n"}
           {"\n"}“Okay, but is it? What is a function actually?” Jake asked. "I get it. It's like instructions that can be repeated, but what does that mean?"{"\n"}
           {"\n"}“The best way to demonstrate the Function is not with a textbook explanation but with a real-world example. The one that comes to mind is through something that happens in the coding world every day: sending notifications to us in the
           apps we know and love, in both of our galaxies”{"\n"}
@@ -324,12 +332,13 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}“Hmm,” Jake said. “So how could you even fix that? You can’t right? Or wouldn’t this thing no longer be reusable?”{"\n"}
           {"\n"}“Great question. And it's the identical question early engineers asked as they built their software. But they figured out a way. Inspired by a similar pattern in math, they introduced the concept of{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>input</Text>, which is simply information that is sent to the function, to be used by the steps inside of the function, when the function is{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>called</Text>. Input gives us that incredible ability to make functions both reusable, and customizable when we run them.”{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>called</Text>. <GlossaryWord lookup_string="Input" word="Input" toggleGlossary={this.props.toggleGlossary} /> gives us that incredible ability to make functions both reusable, and
+          customizable when we run them.”{"\n"}
           {"\n"}“Jeez. That's some intense stuff,” Jake said as tightened the belt of his robe.{"\n"}
           {"\n"}“We do not fear the intense,” Zena said. She walked back to the white board and pushed it back towards Jake.{"\n"}
           {"\n"}She stepped in front of the board again and said, “Let’s look at this thing called <Text style={{ fontFamily: "gelasibro-italic" }}>input</Text>. In Python we refer to each input we provide our function as a{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>parameter</Text>. In the case of our function, I'm going to add one new input, one new parameter, called <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text>. But, a function can
-          have as many parameters as we see fit, it need not only be one.”{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>parameter</Text>. In the case of our function, I'm going to add one new input, one new <GlossaryWord lookup_string="Parameter" word="parameter" toggleGlossary={this.props.toggleGlossary} />,
+          called <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text>. But, a function can have as many parameters as we see fit, it need not only be one.”{"\n"}
           {"\n"}Zena modified the whiteboard.
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -345,13 +354,14 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}“Now, any step in our function can access the <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> we pass inside the function. For example, if step four determines what text is sent to the user’s phone, we can now pass in
           a specific <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> at the time we call our function. I am using{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>
-            <Text style={{ fontFamily: "gelasibro-italic" }}></Text>print
+            <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
+            <GlossaryWord lookup_string="Print" word="print" toggleGlossary={this.props.toggleGlossary} />
           </Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text> just to demonstrate the concept.{"\n"}
           {"\n"}“I see,” Jake said. “I think I get it. So, let me think. Each feature can use the same function but pass in a separate message.”{"\n"}
-          {"\n"}“Precisely. Each feature can now <Text style={{ fontFamily: "gelasibro-italic" }}>call</Text> this function, while adding in its own <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> argument. Note, when we call a
-          function and <Text style={{ fontFamily: "gelasibro-italic" }}>set a value</Text> for the parameter, we refer to that <Text style={{ fontFamily: "gelasibro-italic" }}>value</Text> as an{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>argument</Text>. To call a function in this manner, we use this syntax.” Zena wrote below.
+          {"\n"}“Precisely. Each feature can now <Text style={{ fontFamily: "gelasibro-italic" }}>call</Text> this function, while adding in its own <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text>{" "}
+          <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} />. Note, when we call a function and <Text style={{ fontFamily: "gelasibro-italic" }}>set a value</Text> for the parameter, we refer to that{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>value</Text> as an <Text style={{ fontFamily: "gelasibro-italic" }}>argument</Text>. To call a function in this manner, we use this syntax.” Zena wrote below.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={105} source={require("./../../assets/images/lessons/lesson7_5.png")} />
@@ -375,12 +385,14 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}Jake looked at her, his eyebrows drawing together.{"\n"}
           {"\n"}Zena continued, “When a function <Text style={{ fontFamily: "gelasibro-italic" }}>returns</Text>, the function hands off information to its teammate, the code that follows it.”{"\n"}
           {"\n"}“Like the code below it? Like next in line?” Jake asked.{"\n"}
-          {"\n"}“Yes, essentially. When Angelica triggers the <Text style={{ color: "#0C2443", fontFamily: "code" }}>send_notification</Text> function, she may have wanted to return something to the code following it. What information do you think
-          Angelika might want the send_notification function to hand off to the code following it?{"\n"}
+          {"\n"}“Yes, essentially. When Angelica triggers the <Text style={{ color: "#0C2443", fontFamily: "code" }}>send_notification</Text> function, she may have wanted to{" "}
+          <GlossaryWord lookup_string="Returnstatement" word="return" toggleGlossary={this.props.toggleGlossary} /> something to the code following it. What information do you think Angelika might want the send_notification function to hand off to
+          the code following it?{"\n"}
           {"\n"}“I'm not sure. I have no idea,” Jake said.{"\n"}
           {"\n"}“It's hard to answer without real world experience. But in this type of message sending scenario, it might be information related to: did my message get sent properly? Oftentimes the code, or steps, following the sending of a
-          notification, will want to know if there were any issues delivering the notification to the user’s phone. For example, the function could return a string to the code following it, with the value of either ‘Success’ or ‘Failed.’ Returning is
-          an essential tool, because the more you build stuff, the more you'll see how much you're going to want to hand off the result of functions to the code waiting in line.”{"\n"}
+          notification, will want to know if there were any issues delivering the notification to the user’s phone. For example, the function could return a string to the code following it, with the value of either ‘Success’ or ‘Failed.’{" "}
+          <GlossaryWord lookup_string="Returnstatement" word="Returning" toggleGlossary={this.props.toggleGlossary} /> is an essential tool, because the more you build stuff, the more you'll see how much you're going to want to hand off the result of
+          functions to the code waiting in line.”{"\n"}
           {"\n"}“Interesting,” Jake said.” So, you are looking for a result that other code can do something with. That's super cool.”{"\n"}
           {"\n"}“Precisely. In Python, to return, we use the keyword return like this:”
         </Text>
@@ -395,7 +407,7 @@ export default class Chapter12 extends Component<IProps> {
         <Text style={BookStyles.bookFont}>
           “Here, our <Text style={{ color: "#0C2443", fontFamily: "code" }}>send_notification</Text> function can hand off whatever we feel is needed.”{"\n"}
           {"\n"}“So, it goes at the end of the function,” Jake said.{"\n"}
-          {"\n"}“Yep. It might be better to view a simpler example to really make return click,” Zena said.{"\n"}
+          {"\n"}“Yep. It might be better to view a simpler example to really make <GlossaryWord lookup_string="Returnstatement" word="return" toggleGlossary={this.props.toggleGlossary} /> click,” Zena said.{"\n"}
           {"\n"}“She wiped off the board, then began scribbling. Let's write a new function that adds two numbers together. To do this, we will <Text style={{ fontFamily: "gelasibro-italic" }}>define</Text> a new function called{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>add</Text>, which takes two parameters <Text style={{ color: "#0C2443", fontFamily: "code" }}>a</Text> and <Text style={{ color: "#0C2443", fontFamily: "code" }}>b</Text>. The function
           has one step. See here.”
@@ -415,14 +427,17 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_8.png")} />
         </View>
-        <Caption>Keep in mind the line sum = add(2,3) is not indented. This means it is a separate statement, not directly affiliated to the function above. For begginers, sometimes visually you can get confused.</Caption>
+        <Caption>
+          Keep in mind the line sum = add(2,3) is not indented. This means it is a separate <GlossaryWord lookup_string="Statement" word="statement" toggleGlossary={this.props.toggleGlossary} />, not directly affiliated to the function above. For
+          begginers, sometimes visually you can get confused.
+        </Caption>
 
         {
           // Section 9 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
           “What do you think the result of <Text style={{ color: "#0C2443", fontFamily: "code" }}>sum</Text> will be in <Text style={{ color: "#0C2443", fontFamily: "code" }}>sum = add(2,3)</Text>? So it’s super clear, what the last line is saying
-          is: please store the result of the function add(2,3) in the variable named sum.”{"\n"}
+          is: please store the result of the function add(2,3) in the <GlossaryWord lookup_string="Variable" word="variable" toggleGlossary={this.props.toggleGlossary} /> named sum.”{"\n"}
           {"\n"}“Yea, so 2 + 3? So 5?” Jake asked.{"\n"}
           {"\n"}Zena shook her head.{"\n"}
           {"\n"}“Oh, wait. There's no return keyword written in your function!” Jake felt proud to spot the mistake.{"\n"}
@@ -440,13 +455,17 @@ export default class Chapter12 extends Component<IProps> {
           “Ah. So, we must explicitly write return. Like you said. Makes sense. Cool,” Jake observed.{"\n"}
           {"\n"}“Yes. Or else our function will actually hand off <Text style={{ fontFamily: "gelasibro-italic" }}>nothing</Text> to <Text style={{ color: "#0C2443", fontFamily: "code" }}>sum</Text> in line 3. If we{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>printed</Text> the value of <Text style={{ color: "#0C2443", fontFamily: "code" }}>sum</Text> to the screen, after running this code, we would see{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>NONE</Text> printed out, <Text style={{ fontFamily: "gelasibro-italic" }}>not</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>5</Text>. NONE is another Python data type
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>NONE</Text> printed out, <Text style={{ fontFamily: "gelasibro-italic" }}>not</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>5</Text>. NONE is another Python{" "}
+          <GlossaryWord lookup_string="Datatype" word="data type" toggleGlossary={this.props.toggleGlossary} />
           that essentially expresses that something is empty.”{"\n"}
           {"\n"}“I hope I don't forget,” Jake said.{"\n"}
           {"\n"}“You will. But you will learn,” Zena said.{"\n"}
           {"\n"}Zena walked to the center of the mat.{"\n"}
           {"\n"}“Believe it or not, we've now introduced to you the fundamentals of The Function, the atomic unit of purpose, in programming. We discussed where it emerged from: the need for{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>reusability</Text>. We discussed <Text style={{ fontFamily: "gelasibro-italic" }}>input</Text>. We discussed output, also known as the{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Reusability" word="reusability" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . We discussed <Text style={{ fontFamily: "gelasibro-italic" }}>input</Text>. We discussed <GlossaryWord lookup_string="Output" word="output" toggleGlossary={this.props.toggleGlossary} />, also known as the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>return</Text>. There are more theories you may learn in the future on the best ways to construct functions, but for this lesson, this is what is required for a foundational understanding.”
           {"\n"}
           {"\n"}“That's awesome,” Jake said.{"\n"}
@@ -480,7 +499,8 @@ export default class Chapter12 extends Component<IProps> {
           his thoughts. <Text style={{ fontFamily: "gelasibro-italic" }}>We need to take Celsius and convert it to Fahrenheit. So, we give the function Celsius, and it spits out Fahrenheit. In, out.</Text>
           {"\n"}
           {"\n"}Rain began to fall against the opaque windows.{"\n"}
-          {"\n"}“We use an input for this right?” He paused. “A parameter?” He looked at Zena, uncertain. She made no reaction. Jake added a <Text style={{ fontFamily: "gelasibro-italic" }}>Celsius</Text> parameter to the function.
+          {"\n"}“We use an input for this right?” He paused. “A parameter?” He looked at Zena, uncertain. She made no reaction. Jake added a <Text style={{ fontFamily: "gelasibro-italic" }}>Celsius</Text>{" "}
+          <GlossaryWord lookup_string="Parameter" word="parameter" toggleGlossary={this.props.toggleGlossary} /> to the function.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_11.png")} />
@@ -555,16 +575,20 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}
           {"\n"}“Now we train your powers,” Zena replied. She walked to the shelf and picked up a small aluminum axe, then returned. “This is your training weapon.” She placed it in his hands, receded a few steps, then began to walk in a circle
           around him.{"\n"}
-          {"\n"}“The Utma has granted you access to three unique powers: <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text>, <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, and{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>. This is no easy feat, especially with such unique training circumstances. You may have already felt the force of your first granted power,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text>, running through you. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> gives her soldiers the ability to bring a certain calmness to our minds in moments of
-          intense stress. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> is subtle, but its effects will grow over time, especially with the right practice.”{"\n"}
+          {"\n"}“The Utma has granted you access to three unique powers:{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Initma" word="Initma" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          , <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, and <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>. This is no easy feat, especially with such unique training circumstances. You may have already felt
+          the force of your first granted power, <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text>, running through you. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> gives her soldiers the ability to bring a certain
+          calmness to our minds in moments of intense stress. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> is subtle, but its effects will grow over time, especially with the right practice.”{"\n"}
           {"\n"}Jake thought of his out-of-body performance on the rink, but he wasn’t sure if that had been <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> or something else.{"\n"}
           {"\n"}Zena took her right foot in her hand, bending her leg backwards to stretch out her quadriceps, then continued her pacing. “You have achieved <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, weapons harnessing.” When she
           said this Jake let his axe fall to his side. It hovered next to him in position as he rotated his body.{"\n"}
           {"\n"}Zena nodded in approval. “And on this mat today, you have been granted the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,” she said. “<Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,
-          or the Accelerated Parry, allows a soldier to evade an enemy blow by providing them with a short burst of blinding speed. We access this power by envisioning ourselves quite literally, as the great masters have taught us,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>moving like a blur</Text>. Then we lean in the desired direction, with complete faith, to dodge our opponent’s strike.”{"\n"}
+          or the <GlossaryWord lookup_string="Theacceleratedparry" word="Accelerated Parry" toggleGlossary={this.props.toggleGlossary} />, allows a soldier to evade an enemy blow by providing them with a short burst of blinding speed. We access this
+          power by envisioning ourselves quite literally, as the great masters have taught us, <Text style={{ fontFamily: "gelasibro-italic" }}>moving like a blur</Text>. Then we lean in the desired direction, with complete faith, to dodge our
+          opponent’s strike.”{"\n"}
           {"\n"}Zena walked to the center of the mat and signaled for Jake to follow. As he walked up to her, she stood still, spreading her feet apart and bending her knees, forming a reactive fighting stance. “We always keep our bodies in athletic
           form when we train.” Jake examined the positioning of her feet, limbs, and back. He spread his legs out, straightened his spine, and bent his knees.{"\n"}
           {"\n"}"Good. Practice that for a moment." As Zena headed for the shelf, Jake stayed in position, trying to get his body to feel more comfortable. When came back a few moments later carrying a long, curved sword, she gently kicked the back

@@ -34,9 +34,11 @@ export default class Prologue extends Component<IProps> {
           // Section 1 Below
         }
         <Text style={BookStyles.bookFont}>
-          The pilot of the <Text style={{ fontFamily: "gelasibro-italic" }}>FS Gravis</Text> checked his quantum starmap. He was closing in on his destination-and now it was time to phase back into real-space. He initiated the interstellar drive's
-          five second phase-down sequence by hitting the glowing blue button in front of him and waving his hand over the ship's engine control screen. A few seconds later, the familiar sounds of warped space opening itself up, and then stitching
-          itself back together, echoed through the freighter. After a loud clang and a blinding flash of light, the ship sat in the target system as if it had been there all along.{"\n"}
+          The pilot of the <Text style={{ fontFamily: "gelasibro-italic" }}>FS Gravis</Text> checked his <GlossaryWord lookup_string="Quantumstarmap" word="quantum starmap" toggleGlossary={this.props.toggleGlossary} />. He was closing in on his
+          destination-and now it was time to phase back into <GlossaryWord lookup_string="Realspace" word="real-space" toggleGlossary={this.props.toggleGlossary} />. He initiated the{" "}
+          <GlossaryWord lookup_string="Interstellarbooster" word="interstellar drive's" toggleGlossary={this.props.toggleGlossary} /> five second phase-down sequence by hitting the glowing blue button in front of him and waving his hand over the
+          ship's engine control screen. A few seconds later, the familiar sounds of warped space opening itself up, and then stitching itself back together, echoed through the freighter. After a loud clang and a blinding flash of light, the ship sat
+          in the target system as if it had been there all along.{"\n"}
           {"\n"}Radar confirmed that he was positioned inside of a uni-starred solar system with nine planets. <Text style={{ fontFamily: "gelasibro-italic" }}>We’ve arrived</Text>, he thought. A feeling of satisfaction and relief surged through him
           as he scanned the vast expanse of this new galaxy. He tapped his leather seat handle.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Thank you for getting me—us—here. I can’t believe I purchased you for one hundred thousand Naronian Kroners! What a steal.</Text>

@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { SliderComponent } from "react-native";
 import styled from "styled-components";
 
 const WordContainer = styled.View`

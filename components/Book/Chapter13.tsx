@@ -95,19 +95,22 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“This stuff takes time getting used to, I can imagine,” Zena said.{"\n"}
           {"\n"}“What is this place, <Text style={{ fontFamily: "gelasibro-italic" }}>actually</Text>?” Jake asked.{"\n"}
           {"\n"}"This is a spiritual garden, a place where Ld'Shab practitioners come to pray and socialize. These gardens are an important part of Naronian culture, and that culture has proliferated into the{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Enlightened</Text> systems."{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Enlightened" word="Enlightened" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          systems."{"\n"}
           {"\n"}"<Text style={{ fontFamily: "gelasibro-italic" }}>Enlightened</Text> systems?" Jake asked. “I think I remember Dendro mentioning this term.”{"\n"}
-          {"\n"}"Yes. The Naronian Senate began to branch out into new star systems a few thousand years ago, at the beginning of the Affagi Era," Zena said. "These out-of-galaxy settlements we refer to as{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Enlightened</Text> societies. We refer to them as such because a small portion of the members are made up of the planet's indigenous species—in Casablanca's case,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>humans</Text>. We use the term <Text style={{ fontFamily: "gelasibro-italic" }}>Enlightened</Text> because these people now know the truth that they are not alone in the universe.” She
-          swirled her teacup around gently.{"\n"}
+          {"\n"}"Yes. The Naronian Senate began to branch out into new star systems a few thousand years ago, at the beginning of the <GlossaryWord lookup_string="Theaffagi" word="Affagi" toggleGlossary={this.props.toggleGlossary} /> Era," Zena said.
+          "These out-of-galaxy settlements we refer to as <Text style={{ fontFamily: "gelasibro-italic" }}>Enlightened</Text> societies. We refer to them as such because a small portion of the members are made up of the planet's indigenous species—in
+          Casablanca's case, <Text style={{ fontFamily: "gelasibro-italic" }}>humans</Text>. We use the term <Text style={{ fontFamily: "gelasibro-italic" }}>Enlightened</Text> because these people now know the truth that they are not alone in the
+          universe.” She swirled her teacup around gently.{"\n"}
           {"\n"}"There are humans that are aware of your culture? Jake asked. “I know that Dendro mentioned something about a <Text style={{ fontFamily: "gelasibro-italic" }}>settled system</Text> before…” He patted down the hair on the side of his
           head to prevent himself from twirling it.{"\n"}
           {"\n"}"Yes, I know it's a bit much to take in, but know only a small pool of local beings are offered the opportunity to join Naronian society. Enlightened satellite governments have worked hard on recruiting the right balance of native
           residents, as well as ones emigrating from the Nestomir. Here in Casablanca, which is a relatively new Enlightened City, only a handful of local beings are members," Zena explained.{"\n"}
           {"\n"}Jake thought about what Zena had just told him. "But, why would you leave the Nestomir to come to Earth?" He asked.{"\n"}
-          {"\n"}"Well, people often make the move to pursue a better life. Enlightened cities, and in some instances, planets, can provide greater economic opportunity for folks, specifically in emerging industries like intergalactic sports and
-          agriculture," Zena answered. She pulled her chair a bit closer to the table.{"\n"}
+          {"\n"}"Well, people often make the move to pursue a better life. <GlossaryWord lookup_string="Enlightened" word="Enlightened" toggleGlossary={this.props.toggleGlossary} /> cities, and in some instances, planets, can provide greater economic
+          opportunity for folks, specifically in emerging industries like intergalactic sports and agriculture," Zena answered. She pulled her chair a bit closer to the table.{"\n"}
           {"\n"}"That's insane. <Text style={{ fontFamily: "gelasibro-italic" }}>It really is."</Text> Jake looked around the room again. <Text style={{ fontFamily: "gelasibro-italic" }}></Text> "Not only are we not alone, but we are also sharing the
           planet with a select group of humans who know about your existence," Jake stated.{"\n"}
           {"\n"}"That is correct. The members of Enlightened cities are very proud, to the extent they have almost generated a culture of their own," Zena said. She slid an empty mug over to him. "Here, have some tea," she said. She poured the
@@ -134,7 +137,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“What?” Jake asked.{"\n"}
           {"\n"}“I know you were in the dojo just yesterday. But if you're up for it, I'd love to show you something,” Zena said.{"\n"}
           {"\n"}“What is it?” Jake asked.{"\n"}
-          {"\n"}“It's a tool. Something I want to show you. It's called a Jupyter Notebook,” she said.{"\n"}
+          {"\n"}“It's a tool. Something I want to show you. It's called a <GlossaryWord lookup_string="Jupyternotebook" word="Jupyter Notebook" toggleGlossary={this.props.toggleGlossary} />
+          ,” she said.{"\n"}
           {"\n"}A waiter passed by carrying a plate with a giant tea kettle and a fish on a plate of lettuce.{"\n"}
           {"\n"}“It’s a tool that lets us easily experiment with our Python code. In the Nestomir, we use a similar notebook tool called the Perimetas Pad, but it's basically the same thing.” She took another gulp of tea from her mug. “The Jupyter
           Notebook is an open-source application that runs in your web browser. It allows you to create living and breathing Python notebooks that contain real Python code, visualizations, graphics and text, as well as other remarkable things. It is
@@ -163,7 +167,8 @@ export default class Chapter13 extends Component<IProps> {
           </Text>
           .”{"\n"}
           {"\n"}Jake clicked the <Text style={{ fontFamily: "gelasibro-italic" }}>Python 3</Text> link. Immediately, a new browser tab opened. At the top of the page was a wide, grey text box with a blinking cursor inside of it.{"\n"}
-          {"\n"}“You have just created your real life Jupyter Notebook,” Zena said.{"\n"}
+          {"\n"}“You have just created your real life <GlossaryWord lookup_string="Jupyternotebook" word="Jupyter Notebook" toggleGlossary={this.props.toggleGlossary} />
+          ,” Zena said.{"\n"}
         </Text>
 
         <View style={GlobalStyles.flexCenter}>
@@ -182,8 +187,9 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“The Notebook is broken up into <Text style={{ fontFamily: "gelasibro-italic" }}>cells</Text>—these grey text boxes you see here, where the cursor is blinking. In a Jupyter Notebook, a cell is where we write and organize our code,”
           she responded.{"\n"}
           {"\n"}Jake put his pointer finger on the computer touch pad.{"\n"}
-          {"\n"}Zena pointed at the first <Text style={{ fontFamily: "gelasibro-italic" }}>cell</Text> in the Jupyter Notebook. “Try running your first line of Python. Create a new variable called{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>age</Text> in the first notebook cell, and then assign a value to it. Go ahead, right in there, give it a shot.”{"\n"}
+          {"\n"}Zena pointed at the first <Text style={{ fontFamily: "gelasibro-italic" }}>cell</Text> in the Jupyter Notebook. “Try running your first line of Python. Create a new{" "}
+          <GlossaryWord lookup_string="Variable" word="variable" toggleGlossary={this.props.toggleGlossary} /> called <Text style={{ color: "#0C2443", fontFamily: "code" }}>age</Text> in the first notebook cell, and then assign a value to it. Go
+          ahead, right in there, give it a shot.”{"\n"}
           {"\n"}Jake placed the pointer of his mouse inside the center of the cell. He then typed in:
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -236,8 +242,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“Yes, this will be a collaborative process,” Zena added.{"\n"}
           {"\n"}“So how do we do this? “Jake said, looking at the Jupyter screen. “What does it take to build a horoscope app?”{"\n"}
           {"\n"}“The first thing we want to do when we try and build an app like this is to create a basic outline of the functionality. This means writing down the precise steps we want our program to perform. Even the most experienced coders
-          implement this process when they begin new projects. Sometimes we refer to this outlining method as pseudo-coding. Pseudocoding is the procedure of jotting down the steps of our program using English. It does not require us to use Python
-          syntax just yet. Can you take a stab at outlining the steps in English?” Zena responded.{"\n"}
+          implement this process when they begin new projects. Sometimes we refer to this outlining method as <GlossaryWord lookup_string="Pseudocoding" word="pseudo-coding" toggleGlossary={this.props.toggleGlossary} />. Pseudocoding is the procedure
+          of jotting down the steps of our program using English. It does not require us to use Python syntax just yet. Can you take a stab at outlining the steps in English?” Zena responded.{"\n"}
           {"\n"}“I can try,” Jake replied.{"\n"}
           {"\n"}Zena pointed to the top center of the Jupyter Notebook screen. “You see up here where the center dropdown menu says <Text style={{ fontFamily: "gelasibro-italic" }}>Code</Text>? You can toggle this dropdown selector to{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text>. The <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> option allows us to write regular text in the cells of our notebook. This will be useful for writing our
@@ -269,10 +275,16 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“Now, let's begin to implement these steps with real Python code. Go ahead and use a new cell in the notebook by hitting <Text style={{ fontFamily: "gelasibro-italic" }}>shift-enter</Text> again. For today, because we don’t need to
           deliver a fully polished product, we can design this app as a <Text style={{ fontFamily: "gelasibro-italic" }}>function</Text> first. So, take a try knowing this point. And it’s okay to think out loud. In fact, it’s better, so I can help.
           Don’t worry about messing up. Coding is all about making mistakes and adapting quickly. Even the masters mess up. It’s just part of coding. And don't forget to toggle the central dropdown bar back into{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Python</Text>, it's set to <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> now,” Zena added.{"\n"}
-          {"\n"}Jake toggled the central dropdown menu back to Python and put the cursor in the new notebook cell. He thought for a few moments, then spoke out loud, “So step one is to enter the month we were born. You said we can use a function for
-          this attempt today. We are entering in a month. So, what does that mean? That’s an input, right? So, can I start by creating a function with one input? Like I did yesterday in the dojo? He kept his eyes on the screen. He wrote in the
-          function header by defining a function named <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> and giving it one input parameter named <Text style={{ color: "#0C2443", fontFamily: "code" }}>month</Text>.
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Python</Text>, it's set to{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Markdown" word="Markdown" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          now,” Zena added.{"\n"}
+          {"\n"}Jake toggled the central dropdown menu back to Python and put the cursor in the new notebook cell. He thought for a few moments, then spoke out loud, “So step one is to enter the month we were born. You said we can use a{" "}
+          <GlossaryWord lookup_string="Function" word="function" toggleGlossary={this.props.toggleGlossary} /> for this attempt today. We are entering in a month. So, what does that mean? That’s an{" "}
+          <GlossaryWord lookup_string="Input" word="input" toggleGlossary={this.props.toggleGlossary} />, right? So, can I start by creating a <GlossaryWord lookup_string="Function" word="function" toggleGlossary={this.props.toggleGlossary} /> with
+          one input? Like I did yesterday in the dojo? He kept his eyes on the screen. He wrote in the function header by defining a function named <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> and giving it one input
+          parameter named <Text style={{ color: "#0C2443", fontFamily: "code" }}>month</Text>.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson8_5.png")} />
@@ -283,7 +295,8 @@ export default class Chapter13 extends Component<IProps> {
           // Section 6 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          “Excellent. This is how we define a function with one input,” Zena replied. “What's next?”{"\n"}
+          “Excellent. This is how we define a function with one <GlossaryWord lookup_string="Input" word="input" toggleGlossary={this.props.toggleGlossary} />
+          ,” Zena replied. “What's next?”{"\n"}
           {"\n"}Jake reviewed Zena's pseudocode. <Text style={{ fontFamily: "gelasibro-italic" }}>Step 2: Use the month entered to look up the matching horoscope.</Text>
           {"\n"}
           {"\n"}“We need to look up the corresponding horoscope based on the month that is passed into the function,” Jake said out loud. “But we don’t have anything right now storing any information about our horoscopes.”{"\n"}
@@ -293,9 +306,11 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“So, what are you really doing here?” Zena probed.{"\n"}
           {"\n"}“I am looking up information. I’m searching for something. I’m taking January, then finding the name, and the corresponding definition. I’m looking up something by a name?” Jake said.{"\n"}
           {"\n"}“Yes. And what type of tool do we use to do this?” Zena continued.{"\n"}
-          {"\n"}“A dictionary!” Jake said enthusiastically.{"\n"}
+          {"\n"}“A <GlossaryWord lookup_string="Dictionary" word="dictionary" toggleGlossary={this.props.toggleGlossary} />
+          !” Jake said enthusiastically.{"\n"}
           {"\n"}“Exactly. So go ahead and create a dictionary right there inside this function you've created. You can make up whatever horoscopes you deem fit! That's half the fun.” Zena smiled.{"\n"}
-          {"\n"}“In the function's code block? I think I remember the syntax. The open and closed brackets, the keys and values. Give me a minute to think of some good ones.”{"\n"}
+          {"\n"}“In the function's code block? I think I remember the syntax. The open and closed brackets, the <GlossaryWord lookup_string="Key" word="keys" toggleGlossary={this.props.toggleGlossary} /> and values. Give me a minute to think of some
+          good ones.”{"\n"}
           {"\n"}Two minutes later Jake finished creating his <Text style={{ color: "#0C2443", fontFamily: "code" }}>horoscopes</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>dictionary</Text> inside of his newly created{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>function</Text>.
         </Text>
@@ -311,7 +326,8 @@ export default class Chapter13 extends Component<IProps> {
           Zena glanced at the cell. “This is excellent. You have correctly added a dictionary to your function.” She chuckled as she viewed the code. “I wish I was born in April,” she remarked. “When is your birthday?”{"\n"}
           {"\n"}“June,” Jake said with a smile.{"\n"}
           {"\n"}Zena chuckled. “I get it. Now to recap, we've defined a function called <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text>. Our function has one parameter, named{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>month</Text>. And we've leveraged a dictionary data structure inside of our function to store our monthly horoscopes,” Zena said.{"\n"}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>month</Text>. And we've leveraged a dictionary <GlossaryWord lookup_string="Datastructure" word="data structure" toggleGlossary={this.props.toggleGlossary} /> inside of our function to
+          store our monthly horoscopes,” Zena said.{"\n"}
           {"\n"}Jake grinned. “So, what’s next?”{"\n"}
           {"\n"}“You tell me,” Zena replied.{"\n"}
           {"\n"}Jake raised his eyebrows as he examined the cell. “Well, we still need to look up the horoscope in the dictionary based on the month that is inputted into our function. But I have no idea how to do this,” Jake said.{"\n"}
@@ -355,14 +371,17 @@ export default class Chapter13 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Step 3: Display the value of the horoscope to our screen.</Text>
           {"\n"}
           {"\n"}“Ah. Right. I need to display the value of the function to the screen. That makes sense. Hmmm. We need to <Text style={{ fontFamily: "gelasibro-italic" }}>print</Text> right? In the previous lesson we assigned a new variable to the{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>output</Text> of the function. Then we printed the value of that variable to the screen,” Jake said aloud.{"\n"}
-          {"\n"}Zena shook her head. “Yes, this is one way of doing this. Give it a go. And don’t forget to return!”{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>output</Text> of the function. Then we <GlossaryWord lookup_string="Print" word="printed" toggleGlossary={this.props.toggleGlossary} /> the value of that variable to the screen,” Jake said
+          aloud.{"\n"}
+          {"\n"}Zena shook her head. “Yes, this is one way of doing this. Give it a go. And don’t forget to <GlossaryWord lookup_string="Returnstatement" word="return" toggleGlossary={this.props.toggleGlossary} />
+          !”{"\n"}
           {"\n"}“Right.” Jake spent some time playing around with the cell. He added the{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>
             <Text style={{ fontFamily: "gelasibro-italic" }}></Text>return
           </Text>
-          <Text style={{ fontFamily: "gelasibro-italic" }}></Text> keyword at the end of his function's code block. Then he defined a new variable and set it equal to the output of his{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> function, passing in his real birth month, June, as the input argument.
+          <Text style={{ fontFamily: "gelasibro-italic" }}></Text> keyword at the end of his function's code block. Then he defined a new variable and set it equal to the{" "}
+          <GlossaryWord lookup_string="Output" word="output" toggleGlossary={this.props.toggleGlossary} /> of his <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> function, passing in his real birth month, June, as the input{" "}
+          <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} />.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={270} source={require("./../../assets/images/lessons/lesson8_9.png")} />
@@ -383,7 +402,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“Aw. That looks bad. I could have <Text style={{ fontFamily: "gelasibro-italic" }}>sworn</Text> this was right. Darn it,” Jake said.{"\n"}
           {"\n"}“Let me take a look. Oh. Yes. Take a look at the statement <Text style={{ color: "#0C2443", fontFamily: "code" }}>my_scope = getHoroscope(June)</Text>,” Zena said.{"\n"}
           {"\n"}“Ah! I didn't use <Text style={{ fontFamily: "gelasibro-italic" }}>quotes</Text>, I passed in the name of a non-existent variable named June! We must pass in a text string, not a variable name. He fixed his code quickly by placing his
-          argument in quotes. The line now read:  <Text style={{ color: "#0C2443", fontFamily: "code" }}>my_scope = getHoroscope("June")</Text>.Then he re-ran the cell.{"\n"}
+          <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} /> in quotes. The line now read:  <Text style={{ color: "#0C2443", fontFamily: "code" }}>my_scope = getHoroscope("June")</Text>.Then he re-ran
+          the cell.{"\n"}
           {"\n"}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>You will find an alien in a cornfield.</Text>
           {"\n"}
@@ -395,7 +415,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“That’s my horoscope! I don't think I'll be getting a new pet until next year! Your code appears to be operational. Congratulations, you just built a working piece of software,” Zena said.{"\n"}
           {"\n"}“Thanks,” Jake responded, blushing. “That’s amazing.”{"\n"}
           {"\n"}“Yes, it is. It’s real.” Zena looked at him. “Let’s recap what we did for a second.{"\n"}
-          {"\n"}We defined a function called <Text style={{ fontFamily: "gelasibro-italic" }}>getHoroscope</Text> with an input parameter named <Text style={{ fontFamily: "gelasibro-italic" }}>month</Text>.{"\n"}
+          {"\n"}We defined a function called <Text style={{ fontFamily: "gelasibro-italic" }}>getHoroscope</Text> with an input <GlossaryWord lookup_string="Parameter" word="parameter" toggleGlossary={this.props.toggleGlossary} /> named{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>month</Text>.{"\n"}
           {"\n"}We created a new dictionary, named <Text style={{ fontFamily: "gelasibro-italic" }}>horoscopes</Text>, which housed our horoscope values.{"\n"}
           {"\n"}We accessed the proper value in our dictionary by leveraging the power of parameters, using the <Text style={{ fontFamily: "gelasibro-italic" }}>horoscopes[month]</Text> syntax.{"\n"}
           {"\n"}We returned the dictionary value in the function so that it could be handed off to any code waiting in line for the function’s result.{"\n"}

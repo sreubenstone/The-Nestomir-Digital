@@ -94,13 +94,14 @@ export default class Chapter11 extends Component<IProps> {
           {"\n"}She looked at him incredulously but continued eating. “What are you interested in?” She asked a few bites later.{"\n"}
           {"\n"}He felt more eggs and coffee fall into his stomach. “Me, well, I love to play flag football. I'm a pretty big gamer, even though I've been looking for new titles to play as of late. I, um, do find electronics interesting.” He thought
           of the ground spinners, then of Nassir’s robotics stand at Rush Park but he wasn’t sure why. “I spend a lot of time taking care of my younger brother,” Jake replied. "What about you?”{"\n"}
-          {"\n"}Zena put her aviators on the table, which exposed her keen purple eyes. “I guess you could say I have quite a few interests. Training, learning logistics, sharpening my software skills, studying Ld’Shab Philosophy... You know, all
-          that good stuff.”{"\n"}
+          {"\n"}Zena put her aviators on the table, which exposed her keen purple eyes. “I guess you could say I have quite a few interests. Training, learning logistics, sharpening my software skills, studying{" "}
+          <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} /> Philosophy... You know, all that good stuff.”{"\n"}
           {"\n"}“So you can code?” Jake mumbled as he swallowed another heap of eggs.{"\n"}
-          {"\n"}She smiled. “Yes. I trained rigorously on Naronia. And in other places around my galaxy.”{"\n"}
+          {"\n"}She smiled. “Yes. I trained rigorously on <GlossaryWord lookup_string="Naronia" word="Naronia" toggleGlossary={this.props.toggleGlossary} />. And in other places around my galaxy.”{"\n"}
           {"\n"}“It's amazing that you all code. I hope one day I can really begin to grasp all of this. I’m still a bit of a noob,” Jake said. “And where did you grow up?”{"\n"}
-          {"\n"}“Well, I grew up on Tarvezius,” she said. Jake studied her cheekbones, and perfectly formed lips as she spoke. Her chin and jawline came together in an exquisite three-dimensional form. She was an archetype for beauty in any galaxy.
-          "It's the fourth outermost planet in The Nestomir, Star System A. It’s a long story," she added as she took another sip of her espresso. "Was a long time ago. My family still lives there.”{"\n"}
+          {"\n"}“Well, I grew up on <GlossaryWord lookup_string="Tarvezius" word="Tarvezius" toggleGlossary={this.props.toggleGlossary} />
+          ,” she said. Jake studied her cheekbones, and perfectly formed lips as she spoke. Her chin and jawline came together in an exquisite three-dimensional form. She was an archetype for beauty in any galaxy. "It's the fourth outermost planet in
+          The Nestomir, Star System A. It’s a long story," she added as she took another sip of her espresso. "Was a long time ago. My family still lives there.”{"\n"}
           {"\n"}“Why did you leave your home planet?” Jake asked.{"\n"}
           {"\n"}She wiped some coffee off her lips with her napkin. “I don’t think I’ll ever really know. It just kind of happened naturally. At least that’s what I tell myself. I was always looking for something more. On Tarvezius, I had my family.
           But I was missing the freedom I craved. The continent I hail from on Tarvezius is corrupt. I love our people and our culture, but our rights are limited. Sure, you can make a decent life for yourself, but something was different about my
@@ -208,14 +209,17 @@ export default class Chapter11 extends Component<IProps> {
           {"\n"}“It was you interfacing with your—our—source of life. When the board begins to move, it means we are getting closer to envisioning our path. Our Ld’Shab philosophy goes very deep, but ultimately, things always drive towards the same
           thing: finding our path, or our purpose. That's why so much of our core teachings are underpinned by <Text style={{ fontFamily: "gelasibro-italic" }}>La’Tishvah</Text>,” Zena said.{"\n"}
           {"\n"}“Learning with purpose?” Jake asked.{"\n"}
-          {"\n"}“Correct.” She moved the warm sand between her toes. “The Benefit Teachings you have begun to undertake help open our minds and inspire us to learn more. But what they are really attempting to do is to encourage us to become masters
-          of learning by making us avid practitioners of building things. You may have gotten that vibe from the real-world tasks you had to complete to earn those two markings,” she said as she eyed his right hand.{"\n"}
+          {"\n"}“Correct.” She moved the warm sand between her toes. “The <GlossaryWord lookup_string="Thebenefitteachings" word="Benefit Teachings" toggleGlossary={this.props.toggleGlossary} /> you have begun to undertake help open our minds and
+          inspire us to learn more. But what they are really attempting to do is to encourage us to become masters of learning by making us avid practitioners of building things. You may have gotten that vibe from the real-world tasks you had to
+          complete to earn those two markings,” she said as she eyed his right hand.{"\n"}
           {"\n"}Jake thought of the factory command room, then of the program he wrote to update the ship’s aileron settings. Then he looked down at the markings on his wrist. “But in life, after the lessons, how do we know what to build?” Jake
           asked.{"\n"}
-          {"\n"}“That is a great question, Earthling. What I can tell you is to follow your gut, and don’t be afraid to fail. When I first got to Naronia, and joined the First Temple, I immersed myself in all elements of the Learning Force. I studied
-          the Spiritual Planes. I locked myself in my dormitory for days and fully engulfed my body and mind in the Sub-Forces Doctrine. And when studying the force of Computation, I picked numerous projects. Ideas. Things I tried to create to help
-          me learn new topics faster. Each project pushed me. I wrote a program to plot the shipping logistics of freighters in the Kuwali bay. I used a Python library to help me predict the populations of endangered species living inside the Ezekad
-          Rainforest. There were countless other projects to name. Each project grew me as a person. I made so many mistakes. But through those mistakes I learned,” Zena recounted.{"\n"}
+          {"\n"}“That is a great question, Earthling. What I can tell you is to follow your gut, and don’t be afraid to fail. When I first got to Naronia, and joined the{" "}
+          <GlossaryWord lookup_string="Thefirsttemple" word="First Temple" toggleGlossary={this.props.toggleGlossary} />, I immersed myself in all elements of the Learning Force. I studied the{" "}
+          <GlossaryWord lookup_string="Thespiritualplanes" word="Spiritual Planes" toggleGlossary={this.props.toggleGlossary} />. I locked myself in my dormitory for days and fully engulfed my body and mind in the{" "}
+          <GlossaryWord lookup_string="The" word="Sub-Forces Doctrine" toggleGlossary={this.props.toggleGlossary} />. And when studying the force of Computation, I picked numerous projects. Ideas. Things I tried to create to help me learn new topics
+          faster. Each project pushed me. I wrote a program to plot the shipping logistics of freighters in the Kuwali bay. I used a Python library to help me predict the populations of endangered species living inside the Ezekad Rainforest. There
+          were countless other projects to name. Each project grew me as a person. I made so many mistakes. But through those mistakes I learned,” Zena recounted.{"\n"}
           {"\n"}“But what can I build?” Jake asked.{"\n"}
           {"\n"}“It will come to you...soon,” Zena said.
         </Text>

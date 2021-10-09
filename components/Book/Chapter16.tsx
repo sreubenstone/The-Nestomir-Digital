@@ -102,7 +102,7 @@ export default class Chapter16 extends Component<IProps> {
           declared him a missing person the morning after. Teachers and police officers interviewed his friends. Members of the community combed through the nearby woods. Mr. Fellison, the owner of Iron Tavern, led a crew of volunteers through the
           nearby cornfield, Cedar Oaks, but all they found was the remnants of an odd fire that had taken place in the middle of the vegetation.{"\n"}
           {"\n"}Jake explained to the police he had slept in an alleyway a town over (he took the train), snatched food from a local grocery store, and sat in a neighborhood park during the day (garnering quite a tan, though his mother found that
-          quite peculiar) thinking about the things that were troubling his mind. But there were no talks of Naronia, distant galaxies, or the Utma.{"\n"}
+          quite peculiar) thinking about the things that were troubling his mind. But there were no talks of Naronia, distant galaxies, or the <GlossaryWord lookup_string="Theutma" word="Utma" toggleGlossary={this.props.toggleGlossary} />.{"\n"}
           {"\n"}A few weeks later, as snowy October skies pushed away the temperate weather of September, Jake stood in his bedroom looking into the mirror. He had just showered. His arms looked stronger, thicker somehow.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I don't look like me,</Text> he thought. He ran his fingers over the three markings on his forearm. He might be able to hide these during winter, but he hadn’t the faintest idea what he was
           going to do come spring.{"\n"}

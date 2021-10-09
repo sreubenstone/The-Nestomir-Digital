@@ -60,8 +60,9 @@ export default class Chapter10 extends Component<IProps> {
           precious locks, he threw a black San Diego Padres baseball cap over his head, and tucked his ears underneath it, then turned around to face Jake. “I’m ready to go,” he said. The bump from the shoulder bandage stuck out quite noticeably.
           {"\n"}
           {"\n"}“Dendro, I need help with this tie,” Jake pleaded.{"\n"}
-          {"\n"}Dendro signaled for him to come in front of the mirror. He reached his thick Gobrahim hands around Jake’s neck. “Haven’t done this in a while, not since a Special Ops mission on Argus. Black tie affair.” He fumbled with the tie for a
-          few moments, then finally made a perfect knot around Jake’s neck. “There you go,” Dendro said proudly.{"\n"}
+          {"\n"}Dendro signaled for him to come in front of the mirror. He reached his thick Gobrahim hands around Jake’s neck. “Haven’t done this in a while, not since a Special Ops mission on{" "}
+          <GlossaryWord lookup_string="Argus" word="Argus" toggleGlossary={this.props.toggleGlossary} />. Black tie affair.” He fumbled with the tie for a few moments, then finally made a perfect knot around Jake’s neck. “There you go,” Dendro said
+          proudly.{"\n"}
           {"\n"}Jake looked in the mirror. He looked better than he thought he would. He fixed his collar and patted down the side of his hair.{"\n"}
           {"\n"}“Let’s go,” Dendro uttered. “Don’t want to be late.”{"\n"}
           {"\n"}Jake followed Dendro south as the sun dipped below the horizon. The evening air was cool as they walked past street vendors, bar patrons and restaurant goers, couples, teenagers, restaurants, cabarets, and wine bars. The pink lights
@@ -132,17 +133,18 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}
           {"\n"}Dendro rolled his eyes.{"\n"}
           {"\n"}Zimmer straightened his back against the booth, then took a few more puffs of his cigar—white exhaust streamed out of his nostrils as his hands came together outstretched in front of him, forming a triangle. “You see I had heard many
-          stories while conducting outback missions in the Forces...stories about Indo-One—the under-explored, under-regulated, tropical continent of a planet in our native solar system, Cyprus-A. I listened to men talk about its lush forests, white
-          sandy beaches, and crystal clear waters, and most importantly its treasure chest of exportable goods. As I became more and more frustrated with the Force's leadership, I envisioned quitting my post and running my own operation—my own
-          business. One day my imagination got the best of me, and I left The Forces, without explanation—I hope one day my brothers in arms can forgive me—and I embarked on a long journey to locate goods I could transport off-planet, either legally,
-          or, let’s say, via my own methods.”{"\n"}
+          stories while conducting outback missions in the Forces...stories about Indo-One—the under-explored, under-regulated, tropical continent of a planet in our native solar system,{" "}
+          <GlossaryWord lookup_string="Cyprusa" word="Cyprus-A" toggleGlossary={this.props.toggleGlossary} />. I listened to men talk about its lush forests, white sandy beaches, and crystal clear waters, and most importantly its treasure chest of
+          exportable goods. As I became more and more frustrated with the Force's leadership, I envisioned quitting my post and running my own operation—my own business. One day my imagination got the best of me, and I left The Forces, without
+          explanation—I hope one day my brothers in arms can forgive me—and I embarked on a long journey to locate goods I could transport off-planet, either legally, or, let’s say, via my own methods.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>So Zimmer is a Solar Forces operative turned smuggler?</Text> Jake thought.{"\n"}
-          {"\n"}“After exploring various islands and continents in Star System A, with no luck, I realized it was time to finally make my way to Indo-One. As I inquired further, through the help of some network contacts, I learned more and more about
-          Jasmine Tea, the highly coveted crop that can only be grown in an Indo-One climate. Jasmine Tea has some unique properties, one being that it has an unusually high grade of caffeine, making it a highly coveted commodity in the galaxy.”
-          Zimmer cleared his throat. “So I put together a crew....an elite one. We headed to the island continent on my stealthy Vortex Sail One and we landed in a small village named Kava. The plan was for each of us to travel separately across
-          different continental agricultural routes to learn as much as we could on the ground about the opportunities and secrets of Indo-One. I took the southwestern seafront, a stretch of one hundred square miles southwest of the Kava village. I
-          spent days traveling to local towns on my motorbike, scouting the terrain and learning whatever I could about the, let's call it, economic opportunities."{"\n"}
+          {"\n"}“After exploring various islands and continents in <GlossaryWord lookup_string="Starsystema" word="Star System A" toggleGlossary={this.props.toggleGlossary} />, with no luck, I realized it was time to finally make my way to{" "}
+          <GlossaryWord lookup_string="Indoone" word="Indo-One" toggleGlossary={this.props.toggleGlossary} />. As I inquired further, through the help of some network contacts, I learned more and more about Jasmine Tea, the highly coveted crop that
+          can only be grown in an Indo-One climate. Jasmine Tea has some unique properties, one being that it has an unusually high grade of caffeine, making it a highly coveted commodity in the galaxy.” Zimmer cleared his throat. “So I put together
+          a crew....an elite one. We headed to the island continent on my stealthy Vortex Sail One and we landed in a small village named Kava. The plan was for each of us to travel separately across different continental agricultural routes to learn
+          as much as we could on the ground about the opportunities and secrets of Indo-One. I took the southwestern seafront, a stretch of one hundred square miles southwest of the Kava village. I spent days traveling to local towns on my motorbike,
+          scouting the terrain and learning whatever I could about the, let's call it, economic opportunities."{"\n"}
           {"\n"}The waiter placed three whiskeys and a diet coke (with lemon) on the table.{"\n"}
           {"\n"}"I soon found myself enjoying the island-continent. In the mornings I worked, but in the afternoon I explored the beaches, food, and other delicacies of the island. I kept in touch with my team over the long radio. Each of us seemed
           to be on our own little adventure enjoying the mystical continent. We agreed to meet back up in four weeks. But a month later I was in love, and not just with the land, but with a woman. A local waitress named Kasandra. I ended up moving
@@ -166,9 +168,10 @@ export default class Chapter10 extends Component<IProps> {
           land and disguised it as Cyprus Banana-vine, a popular crop already being farmed in various parts of the continent. But it was not Banana. It was Blue Jasmine. He brought his men to help cut down the forest and my team brought the
           logistical expertise and the science. We had two thousand acres of irrigated land. Every three months our ships were escorted out as official military vehicles. We handled distribution. They helped with fuel. Profits came back and we div’d
           them up. Blue Jasmine grew better on Cyprus-A, it just did."{"\n"}
-          {"\n"}"We ran a lucrative operation for five years. Sadly, two years into the undertaking, my girlfriend, Kasandra, finally made the decision to take a maître d job on Tarvezius. The job enabled her to pursue her dream of becoming an
-          Ld’Shab healer. She said she wasn’t going to make the mistake of entering a long-distance relationship. She said I was a special part of her life, but her dream was to heal people. One day she kissed me hard on the cheek, said goodbye and
-          left our beach hut with one bag on her shoulder, and that was it."{"\n"}
+          {"\n"}"We ran a lucrative operation for five years. Sadly, two years into the undertaking, my girlfriend, Kasandra, finally made the decision to take a maître d job on{" "}
+          <GlossaryWord lookup_string="Tarvezius" word="Tarvezius" toggleGlossary={this.props.toggleGlossary} />. The job enabled her to pursue her dream of becoming an
+          <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} /> healer. She said she wasn’t going to make the mistake of entering a long-distance relationship. She said I was a special part of her life, but
+          her dream was to heal people. One day she kissed me hard on the cheek, said goodbye and left our beach hut with one bag on her shoulder, and that was it."{"\n"}
           {"\n"}"I focused more and more on business to take my mind off her. And that focus paid off because the business began to thrive. We built a well-oiled machine. Life was good. For nearly five years my men and I successfully managed the
           operations. And during that time, on a business trip to Naronia, I met Zena, who became a critical part of our operation."{"\n"}
           {"\n"}Zena raised her glass again, smiling.{"\n"}
@@ -180,8 +183,9 @@ export default class Chapter10 extends Component<IProps> {
           told me there were no other options. We had to pay the fine, take the earnings we had left, and lay low for a while. But he did share one additional item of news that night as well, and one essential to the understanding of this story.”
           {"\n"}
           {"\n"}“He looked at me with bloodshot eyes and said: ‘A trusted mercenary contact of mine mentioned something he shouldn't have in front of me...and I know who you fight for and where you come from. I figured this is the least I can do
-          after what's transpired. There is going to be an <Text style={{ fontFamily: "gelasibro-italic" }}>ambush</Text>. An <Text style={{ fontFamily: "gelasibro-italic" }}>ambush</Text> in The Larhadian Asteroid Belt. They are going to dupe the
-          Naronian forces with a small Recon Legion, but it's going to be the biggest ambush in modern history. Delpher's day.’"{"\n"}
+          after what's transpired. There is going to be an <Text style={{ fontFamily: "gelasibro-italic" }}>ambush</Text>. An <Text style={{ fontFamily: "gelasibro-italic" }}>ambush</Text> in{" "}
+          <GlossaryWord lookup_string="Thelarhadianasteroidbelt" word="The Larhadian Asteroid Belt" toggleGlossary={this.props.toggleGlossary} />. They are going to dupe the Naronian forces with a small Recon Legion, but it's going to be the biggest
+          ambush in modern history. Delpher's day.’"{"\n"}
           {"\n"}"That was all he knew. I asked him about the credibility of his source, but he would not give me any names. From the look in his eye, and the way he said it, I knew he was being truthful. We sat there drinking and smoking for a while.
           I thought about you, Dendro, and my team. I knew I had to do something, and Delpher’s day was only a few weeks away. We sat there for some time.  I argued with Bonjetti that there were still ways to salvage our operation, but once we
           scrutinized every viable option, and it was clear that those ideas were flawed, I ultimately gave in. We then reminisced over the past five years we had shared together. The memories. The successes. Eventually we shook hands and left. You
@@ -192,9 +196,9 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}“A few days into the shutdown period, and after much persistence, I received word that a venerated agricultural contact had finally agreed to meet me...on Earth of all places...only a few hours after the end of Delpher's Day, which
           was fast approaching. And that time slot was...I quote...a <Text style={{ fontFamily: "gelasibro-italic" }}>take it or leave it</Text> scenario. As is usual in life, nothing is ever simple, so I was forced to generate the best plan I could.
           One day sitting on the beach I made my decision.{"\n"}
-          {"\n"}A few weeks later, the shutdown was complete. I had a goodbye breakfast with my men, then headed for the spaceport with nothing more than a suitcase. I had my freighter, the FS Gravis, parked in a hanger in North Kava–bought her
-          eighteen months back with my earnings...she made it easier for our squad to transport heavy equipment and supplies across the galaxy. I recited a little goodbye prayer before I fired her up. Then I ascended into Indo-One's crisp sky, looked
-          back just once to take in the land I had come to love, then headed for the fight.”{"\n"}
+          {"\n"}A few weeks later, the shutdown was complete. I had a goodbye breakfast with my men, then headed for the spaceport with nothing more than a suitcase. I had my freighter, the{" "}
+          <GlossaryWord lookup_string="Fsgravis" word="FS Gravis" toggleGlossary={this.props.toggleGlossary} />, parked in a hanger in North Kava–bought her eighteen months back with my earnings...she made it easier for our squad to transport heavy
+          equipment and supplies across the galaxy. I recited a little goodbye prayer before I fired her up. Then I ascended into Indo-One's crisp sky, looked back just once to take in the land I had come to love, then headed for the fight.”{"\n"}
           {"\n"}“But I got to The Belt too late; it appeared that you got hit a little earlier than expected. As I stared around The Larhadian expanse, it looked as though a cyclone from hell had been agitated, entered our dimension, then set out to
           destroy all life in its path. Ships had been transformed into smoldering carcasses of molten metal, and there seemed to be more bodies, debris, and blood floating around than asteroids. I pressed on, in search of life, maneuvering the
           freighter around for hours. I even turned on our life homing beacon, but there was nothing but death and destruction, and no sign of the enemy.”{"\n"}
@@ -207,8 +211,9 @@ export default class Chapter10 extends Component<IProps> {
           and that your ship's emergency boosters would alleviate some of the impact.{"\n"}
           {"\n"}“So I watched you fall down towards what they call North America, as we jettisoned around Earth's orbit. He hit me good once, blew out one of my rear blaster engines, and my shields took serious damage, but what he didn't know was
           that my baby was retrofitted with Prometheus II's--the most expensive cruise missiles in the galaxy. I guess he didn't realize the price I put on defense. A few revolutions later, I stalled, and got him in front of me for a few moments, and
-          that was it for him. Bye bye. The Prometheus's must have looked like kisses of death from the devil himself. I found out later he was a bounty hunter from Limora who worked for another Jasmine Tea dealer, someone I had a run in with in the
-          past. He had eyes on the ground on Indo-One, and someone tipped him off when I departed.{"\n"}
+          that was it for him. Bye bye. The Prometheus's must have looked like kisses of death from the devil himself. I found out later he was a bounty hunter from{" "}
+          <GlossaryWord lookup_string="Limora" word="Limora" toggleGlossary={this.props.toggleGlossary} /> who worked for another Jasmine Tea dealer, someone I had a run in with in the past. He had eyes on the ground on Indo-One, and someone tipped
+          him off when I departed.{"\n"}
           {"\n"}“At the time I took him out, I only had an hour to get to my meeting. I put my ship down in a depot with a trusted old friend of mine just outside of Casablanca. My ship is there now, getting repaired. I knew you'd be alright once you
           woke up, just a little disoriented. I've been working on the meeting I had two nights ago, the night we arrived in-system, for two standard years. You must understand that my own life depended on it. I called you a bunch of times throughout
           the twenty-four hours or so after you hit the ground, but you were out cold, until I got to you yesterday, around noon Casablanca time. And I had no way of picking you up. But now we're all here. And the rest you know.”{"\n"}
@@ -231,11 +236,12 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}Jake studied Zimmer's face. His canines protruded sharply out of his gums. How did the universe evolve his teeth so like a wolf’s? Then Zimmer looked at him with a smile.{"\n"}
           {"\n"}"Son, did you know Dendro and I go way back?" He asked.{"\n"}
           {"\n"}Jake nodded.{"\n"}
-          {"\n"}"We grew up together in the Lower Palisades. The notorious neighborhood in Sector 8 of Moon City, the capital city of Naronia, located on the gray continent of Nubibus. It is well known that The Palisades pop out some of the baddest
-          men and women in the known Universe." Zimmer turned and threw a quick wink at Dendro. "We met on the playground Socre’ field. The first time I met Dendro, I didn't much like him. I thought he thought he was tough. I remember when we bumped
-          into each other on the playground pitch. We spent that game talking a lot of smack to each other. We musta been thirteen years old. I'll never forget it. But what was remarkable, was after that game, I ended up at my buddy Keton's house on
-          Estimor street. Dendro had a cousin who had introduced them before as well. So little did we know we would end up in the same house a few hours later. We spent the night cracking jokes and listening to Keton's crazy older brother tell
-          stories about the Forces. He was on leave at the time. What a hard-nosed guy. Crazy too. We got Szechuan food that night, you remember that?"{"\n"}
+          {"\n"}"We grew up together in the Lower Palisades. The notorious neighborhood in Sector 8 of <GlossaryWord lookup_string="Mooncity" word="Moon City" toggleGlossary={this.props.toggleGlossary} />, the capital city of{" "}
+          <GlossaryWord lookup_string="Naronia" word="Naronia" toggleGlossary={this.props.toggleGlossary} />, located on the gray continent of Nubibus. It is well known that The Palisades pop out some of the baddest men and women in the known
+          Universe." Zimmer turned and threw a quick wink at Dendro. "We met on the playground Socre’ field. The first time I met Dendro, I didn't much like him. I thought he thought he was tough. I remember when we bumped into each other on the
+          playground pitch. We spent that game talking a lot of smack to each other. We musta been thirteen years old. I'll never forget it. But what was remarkable, was after that game, I ended up at my buddy Keton's house on Estimor street. Dendro
+          had a cousin who had introduced them before as well. So little did we know we would end up in the same house a few hours later. We spent the night cracking jokes and listening to Keton's crazy older brother tell stories about the Forces. He
+          was on leave at the time. What a hard-nosed guy. Crazy too. We got Szechuan food that night, you remember that?"{"\n"}
           {"\n"}Dendro nodded.{"\n"}
           {"\n"}“Became best buds. We worked out together. Chased girls together. Got our first motorbikes together. Boy, did we work out a lot then. Dendro didn’t speak much but the girls were all over him.”{"\n"}
           {"\n"}Dendro raised his eyebrows and smiled ever so slightly.{"\n"}
@@ -251,8 +257,8 @@ export default class Chapter10 extends Component<IProps> {
           weren't used to cleaning toilets. But we learned together, and our training squad always had each other's backs. The Forces training is tough in general, but no one gets it quite like Special Ops."{"\n"}
           {"\n"}"Got that right," Dendro grunted.{"\n"}
           {"\n"}"Even with all of the hype, when we first got to camp, we did not expect the intensity of the training that was to come,” Zimmer said as he looked over to Dendro. "Remember one of our first{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Benefit Lessons</Text>? When we got shook up in Sergeant Kliggin's class? We had no understanding of the Universe around us then–the Utma. We thought learning had no deep meaning. Boy, were
-          we wrong."{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Benefit Lessons</Text>? When we got shook up in Sergeant Kliggin's class? We had no understanding of the Universe around us then–
+          <GlossaryWord lookup_string="Theutma" word="the Utma" toggleGlossary={this.props.toggleGlossary} />. We thought learning had no deep meaning. Boy, were we wrong."{"\n"}
           {"\n"}"Holla," Dendro grunted again.{"\n"}
           {"\n"}"I'll never forget how my young mind changed that day—when Kliggins walked us through <Text style={{ fontFamily: "gelasibro-italic" }}>The Essence of Data</Text>.” Zimmer took another puff of his cigar, blew out more white smoke, and
           continued, “That guy was such a character, remember, Dendro?{"\n"}
@@ -268,18 +274,19 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}
           {"\n"}“Well, men, today's <Text style={{ fontFamily: "gelasibro-italic" }}>Benefit Lesson</Text> is called <Text style={{ fontFamily: "gelasibro-italic" }}>The Essence of Data</Text>,” Kliggins announced.{"\n"}
           {"\n"}Kliggins took a few steps forward, then skipped and danced around the room in his metal toed boots. The men half howled with laughter.{"\n"}
-          {"\n"}Kliggins looked around the room, with a stern look on his face, and said, "Let’s begin...What is data? Well, data is information. And what is information? Information is text, numbers, pictures, audio, videos, instructions, and
-          anything—and I mean anything with respect to computing at least—that can ultimately be saved as zeros and ones. It can be your grandmother's legendary meatball recipe. It can be the address of your favorite restaurant. It can be the
-          sequence of your genetic code. It can be the love letter you accidentally sent to the wrong person on the internet. It can be a memory you typed up on your favorite word processor. Information can be stored. Information can be deleted.
-          Information can be sent."{"\n"}
+          {"\n"}Kliggins looked around the room, with a stern look on his face, and said, "Let’s begin...What is <GlossaryWord lookup_string="Data" word="data" toggleGlossary={this.props.toggleGlossary} />? Well, data is information. And what is
+          information? Information is text, numbers, pictures, audio, videos, instructions, and anything—and I mean anything with respect to computing at least—that can ultimately be saved as zeros and ones. It can be your grandmother's legendary
+          meatball recipe. It can be the address of your favorite restaurant. It can be the sequence of your genetic code. It can be the love letter you accidentally sent to the wrong person on the internet. It can be a memory you typed up on your
+          favorite word processor. Information can be stored. Information can be deleted. Information can be sent."{"\n"}
           {"\n"}The esteemed lieutenant took another swig of his Kahve and held the mug in his hands as he took a few more steps forward. "Now, as each of you know, we use code to provide intelligible instructions to our computer. As coders, these
           instructions often require us to communicate with our computer about how it should best store, organize, and orient the information we want it to manipulate." Kliggins backed up and put his hands against his desk.{"\n"}
           {"\n"}"How can we speak to a computer about orienting information without having the <Text style={{ fontFamily: "gelasibro-italic" }}>right tools</Text> to communicate <Text style={{ fontFamily: "gelasibro-italic" }}>about data</Text> in
-          the first place? This question led Naronia's first programmers and our great spiritual teachers to design the world's first <Text style={{ fontFamily: "gelasibro-italic" }}>data structure</Text>s. Data structures are highly logical and
-          organized ways we can speak to the computer about information. Data structures are critical to everything us coders do–and they make our life a heck of a lot easier!”{"\n"}
+          the first place? This question led Naronia's first programmers and our great spiritual teachers to design the world's first <Text style={{ fontFamily: "gelasibro-italic" }}>data structure</Text>s.{" "}
+          <GlossaryWord lookup_string="Datastructure" word="Data structures" toggleGlossary={this.props.toggleGlossary} /> are highly logical and organized ways we can speak to the computer about information. Data structures are critical to
+          everything us coders do–and they make our life a heck of a lot easier!”{"\n"}
           {"\n"}Kliggins continued, "Just as we use different military equipment to accomplish different military objectives, programmers use different <Text style={{ fontFamily: "gelasibro-italic" }}>data structures</Text> to perform different
           coding objectives. So, to reiterate, men, we use <Text style={{ fontFamily: "gelasibro-italic" }}>data structures to communicate with our computer about how to</Text> store and organize our data more efficiently. And the beautiful thing
-          about a data structure is that they are simply patterns. Patterns to arrange information!"{"\n"}
+          about a <GlossaryWord lookup_string="Datastructure" word="data structure" toggleGlossary={this.props.toggleGlossary} /> is that they are simply patterns. Patterns to arrange information!"{"\n"}
           {"\n"}"Now say it with me, class."{"\n"}
           {"\n"}And the men repeated with him in unison, “
           <Text style={{ fontFamily: "gelasibro-italic" }}>
@@ -290,14 +297,19 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"Great question, Sanchez." Kliggins jumped up in the air and clapped his boots together. The class went into hysterics. Then he continued. "I should first mention that we use data structures all the time. A to-do list is a data
           structure. The table of contents of a book, working together with its respective chapters, is another type of data structure. So are index cards. They are all examples of data structures. They are patterns we use to organize information
           more efficiently." Kliggins paused. "The two almighty data structures we'll discuss in this benefit lesson that are utterly essential to us as coders and that were explicitly designed for the realm of software are{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>The Dictionary</Text> and <Text style={{ fontFamily: "gelasibro-italic" }}>The List</Text>.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>The Dictionary</Text> and{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            The <GlossaryWord lookup_string="List" word="List" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          .{"\n"}
           {"\n"}A few of the trainees began chattering. Kleacho scribbled something down in his notebook.{"\n"}
           {"\n"}Kliggins paused and looked around the room deliberately, making sure each student made eye contact with him. "What is a <Text style={{ fontFamily: "gelasibro-italic" }}>dictionary</Text>, you say? What is a{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>list</Text>? They are data structures. Data structures no different than a to-do list or an index card, but they are designed for the more practical use cases that we face as programmers."
           {"\n"}
-          {"\n"}Kliggins walked over to the chalkboard on the side of the room and faced the class. "Let us start with our beloved dictionary. We use a dictionary data structure when we want to store and look up information{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>by name</Text>. A dictionary in software functions similarly to the dictionary we use every day to look up the definition of words, at least from a high level." He picked up a piece of chalk.
-          "Now, look here. If we were to, say, look up the definition of the word "Effervescent" in a standard dictionary, how would we go about doing that?"{"\n"}
+          {"\n"}Kliggins walked over to the chalkboard on the side of the room and faced the class. "Let us start with our beloved dictionary. We use a{" "}
+          <GlossaryWord lookup_string="Dictionary" word="dictionary" toggleGlossary={this.props.toggleGlossary} /> data structure when we want to store and look up information <Text style={{ fontFamily: "gelasibro-italic" }}>by name</Text>. A
+          dictionary in software functions similarly to the dictionary we use every day to look up the definition of words, at least from a high level." He picked up a piece of chalk. "Now, look here. If we were to, say, look up the definition of the
+          word "Effervescent" in a standard dictionary, how would we go about doing that?"{"\n"}
           {"\n"}"Henderson?" Kliggins shouted. "How would you go about finding the word’s definition?"{"\n"}
           {"\n"}"Uhh… I'm not sure, sir. I'd just look it up? I’d find the word. Then read the definition?" Henderson replied.{"\n"}
           {"\n"}Kliggins began writing. "Yes, Henderson. That's correct. Your procedure might look something like this."{"\n"}
@@ -319,7 +331,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Effervescent: vivacious; merry; lively; sparkling.</Text>
           {"\n"}
-          {"\n"}"Now let's see how we translate this into a dictionary in Python. In Python, one way we can create a dictionary is like this:"
+          {"\n"}"Now let's see how we translate this into a <GlossaryWord lookup_string="Dictionary" word="dictionary" toggleGlossary={this.props.toggleGlossary} /> in Python. In Python, one way we can create a dictionary is like this:"
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson5_1.png")} />
@@ -339,8 +351,8 @@ export default class Chapter10 extends Component<IProps> {
             'meatball': <Text style={{ fontFamily: "gelasibro-italic" }}></Text>"a piece of meat"
           </Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>. Note, we must add a comma behind our value, if our dictionary is to contain more than one key-value pair.”{"\n"}
-          {"\n"}"Now, we can store almost anything in a value that is associated to a key inside of a dictionary. We could store a number, a boolean True or False, we could even store another dictionary! But here, in this example, we are storing
-          strings—a combination of characters–words—and it is why they are encapsulated in quotes.”{"\n"}
+          {"\n"}"Now, we can store almost anything in a value that is associated to a key inside of a dictionary. We could store a number, a <GlossaryWord lookup_string="Boolean" word="boolean" toggleGlossary={this.props.toggleGlossary} /> True or
+          False, we could even store another dictionary! But here, in this example, we are storing strings—a combination of characters–words—and it is why they are encapsulated in quotes.”{"\n"}
           {"\n"}Some of the men in the course began to take notes, some kept their heads up and watched the board intently.{"\n"}
           {"\n"}"To retrieve the <Text style={{ fontFamily: "gelasibro-italic" }}>value of a key</Text> we do this:"
         </Text>
@@ -381,8 +393,9 @@ export default class Chapter10 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           "As you can see, we place the contents of our list inside of opening and closing brackets <Text style={{ color: "#0C2443", fontFamily: "code" }}>[</Text>  <Text style={{ color: "#0C2443", fontFamily: "code" }}>]</Text> and then separate
-          them with a comma. In this grocery list example, we are storing strings inside each element of this list, because they are the names of foods, but a list's elements can contain nearly any data type we want. And like our dictionary example,
-          we must assign our list to a new variable, or else we cannot access it later."{"\n"}
+          them with a comma. In this grocery list example, we are storing <GlossaryWord lookup_string="String" word="strings" toggleGlossary={this.props.toggleGlossary} /> inside each element of this list, because they are the names of foods, but a
+          list's elements can contain nearly any <GlossaryWord lookup_string="Datatype" word="data type" toggleGlossary={this.props.toggleGlossary} /> we want. And like our dictionary example, we must assign our list to a new variable, or else we
+          cannot access it later."{"\n"}
           {"\n"}He erased the first list and wrote in another.
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -447,8 +460,9 @@ export default class Chapter10 extends Component<IProps> {
           // Section 7 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          “The code here may look confusing. But I’m simply formatting it in a way that makes it take up more vertical space so that it doesn't run too far across the right of the board, which is something we’d like to do in a code editor, which is
-          easier on the eyes. What we're looking at here is a list, and it’s three items are dictionaries. Like this.” Kliggins sketched another line on the bottom of the board to make the code more conceptually clear.
+          “The code here may look confusing. But I’m simply formatting it in a way that makes it take up more vertical space so that it doesn't run too far across the right of the board, which is something we’d like to do in a{" "}
+          <GlossaryWord lookup_string="Texteditor" word="code editor" toggleGlossary={this.props.toggleGlossary} />, which is easier on the eyes. What we're looking at here is a list, and it’s three items are dictionaries. Like this.” Kliggins
+          sketched another line on the bottom of the board to make the code more conceptually clear.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={110} source={require("./../../assets/images/lessons/lesson5_7.png")} />
@@ -460,9 +474,9 @@ export default class Chapter10 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           "Sometimes, seeing things formatted in a certain way can appear quite daunting. When I saw my first list of dictionaries, I almost passed out. But once your brain understands what the individual elements of the code are doing, visualizing
-          code will start to feel quite natural. Using a list to store dictionaries is incredibly powerful. Many of the apps you use today use this type of data structure to store information, like a list of friends, or a list of products.” Kliggins
-          paused to stretch his neck. "The great thing about today, if you’ve been paying attention, is that if you understand the concept of a dictionary, a list, and how we use lists and dictionaries together, you've actually come quite a long way
-          in the journey of understanding data and code."{"\n"}
+          code will start to feel quite natural. Using a <GlossaryWord lookup_string="List" word="list" toggleGlossary={this.props.toggleGlossary} /> to store dictionaries is incredibly powerful. Many of the apps you use today use this type of data
+          structure to store information, like a list of friends, or a list of products.” Kliggins paused to stretch his neck. "The great thing about today, if you’ve been paying attention, is that if you understand the concept of a dictionary, a
+          list, and how we use lists and dictionaries together, you've actually come quite a long way in the journey of understanding data and code."{"\n"}
           {"\n"}"Now there is one more thing I'd like to discuss in this lesson. Coders are obsessed”—Kliggins bent down and slapped the floor with both hands—"absolutely obsessed with how much effort is required for our computer to find, add, and
           delete elements from a specific data structure.  For example, when we work with dictionaries and lists, coders will often think long and hard about these types of things."{"\n"}
           {"\n"}Kliggins erased the chalkboard and then wrote down three bullets.{"\n"}
@@ -473,13 +487,14 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}Kliggins faced the class. "In real life, when we use this powerful language we call code, whether it be in creative work, school, or in the Forces, we have to be critical about how we do these things here because we want our code to
           be <Text style={{ fontFamily: "gelasibro-italic" }}>as efficient as possible</Text>. For example, our computer can very easily look up the value of a key in a dictionary. In fact, the process is so efficient, the time it takes for a
           computer to look up the value of a key in a dictionary often <Text style={{ fontFamily: "gelasibro-italic" }}>doesn't even depend</Text> on how big, or how many entries exist in the dictionary. I should mention, the reason for this is the
-          computer uses an underlying tool, called a <Text style={{ fontFamily: "gelasibro-italic" }}>hash table</Text>. We'll go into the details of hash tables in later lessons."{"\n"}
+          computer uses an underlying tool, called a <Text style={{ fontFamily: "gelasibro-italic" }}>hash table</Text>. We'll go into the details of{" "}
+          <GlossaryWord lookup_string="Hashtable" word="hash tables" toggleGlossary={this.props.toggleGlossary} /> in later lessons."{"\n"}
           {"\n"}"But when it comes to looking up the value of an item in a Python list, though the computing process is still very fast, it is still not quite as efficient as looking up the value of a key in a dictionary–the time it takes our
           computer to retrieve an element in a list grows <Text style={{ fontFamily: "gelasibro-italic" }}>proportionally</Text> with the number of items in the list. This is because our computer{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>has to run through each item in the list</Text> sequentially until it arrives at the item we care about.”{"\n"}
           {"\n"}Kliggins walked back to the center of the classroom. "It's important that we are aware of these things, but don't let people in the industry bully you about data structures and computing efficiency. There are many coders out there
-          that take pride in memorizing the innards of data structures, and the algorithms we use to operate over them, and they love to make it clear what they think they know better than you. Yes, these things are important, however, always
-          remember, the mark of real intelligence is first and foremost the ability to teach, not the ability to show off what we know."{"\n"}
+          that take pride in memorizing the innards of data structures, and the <GlossaryWord lookup_string="Algorithm" word="algorithms" toggleGlossary={this.props.toggleGlossary} /> we use to operate over them, and they love to make it clear what
+          they think they know better than you. Yes, these things are important, however, always remember, the mark of real intelligence is first and foremost the ability to teach, not the ability to show off what we know."{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           <Text style={{ textAlign: "center" }}>

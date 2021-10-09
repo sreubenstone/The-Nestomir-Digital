@@ -58,7 +58,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}As Jake scooped the eggs into his mouth, he tried to take in all he could of the apartment. The Kahve maker, the tubes running up the wall, the floating globe.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I hope I don’t forget this place.</Text>
           {"\n"}
-          {"\n"}A few minutes later, Dendro said, as he glanced at his Lithium Radar bio-readout: "They are here. Let’s go.”{"\n"}
+          {"\n"}A few minutes later, Dendro said, as he glanced at his <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} /> bio-readout: "They are here. Let’s go.”{"\n"}
           {"\n"}Dendro threw on his baseball cap and sunglasses, picked up his duffels and headed for the apartment door. Jake grabbed his items, giving the apartment one last look before he left forever, then followed Dendro out of 6C Tangiers.
           {"\n"}
           {"\n"}When they busted open the building's doors, Jake could see, sitting parked, directly in front of them on the side of the street, a vintage light blue Cadillac sedan. Through the passenger window, were Zena’s penetrating eyes, and
@@ -89,8 +89,8 @@ export default class Chapter14 extends Component<IProps> {
           someway off in the desert.{"\n"}
           {"\n"}"What is that thing?" Jake asked.{"\n"}
           {"\n"}Zimmer replied, "That’s the brilliant <Text style={{ fontFamily: "gelasibro-italic" }}>Abbas Nitro Circuit</Text>, Morocco’s own Enlightened Racing League stadium."{"\n"}
-          {"\n"}Jake peered out at the structure again. Now that he knew what he was looking at, his brain assembled the shapes and contours. It did appear to be a stadium, but it was obscured by the desert heat. "This Enlightened Society, you say,
-          has its own racing league?" Jake asked.{"\n"}
+          {"\n"}Jake peered out at the structure again. Now that he knew what he was looking at, his brain assembled the shapes and contours. It did appear to be a stadium, but it was obscured by the desert heat. "This{" "}
+          <GlossaryWord lookup_string="Enlightened" word="Enlightened" toggleGlossary={this.props.toggleGlossary} /> Society, you say, has its own racing league?" Jake asked.{"\n"}
           {"\n"}"Affirmative. The league has gained tremendous popularity recently," Zimmer replied.{"\n"}
           {"\n"}Jake tried to imagine an alien crowd cheering on what were most likely futuristic race cars. It was hard to believe, even with what he’d seen this week. "How can these events possibly go by undetected?"{"\n"}
           {"\n"}"Stealth containment fields of course. It’s a vision-obscuring technology. But there’s no need for it during the daytime. This used to be a legitimate racing stadium, but it’s been abandoned. At night, when races take place, the
@@ -197,7 +197,8 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}"This way," she motioned. They followed her onto the candlelit trail and continued walking towards the coast. Jake could see festival workers laboring tirelessly to get the stage ready for the after-dinner event.{"\n"}
           {"\n"}As they neared the palace, Jake noticed a grid of festival-attendees huddled in the sand. The patrons were on their knees, and a tall, robed being with a shaved head, looked to be leading the group in prayer.{"\n"}
           {"\n"}"What is going on over there?" Jake asked.{"\n"}
-          {"\n"}"Nightly Ld’Shab meditations. It’s twenty minutes of prayer and twenty minutes of daily reflection," Zena elucidated. "Smoothes out the soul," she added.{"\n"}
+          {"\n"}"Nightly <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} /> meditations. It’s twenty minutes of prayer and twenty minutes of daily reflection," Zena elucidated. "Smoothes out the soul,"
+          she added.{"\n"}
           {"\n"}They soon approached a line swelling up in front of the Rudeu Palace. Jake could see the building more clearly. It reminded him of something he'd seen in a French TV show his mom used to watch.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I hated that series,</Text> he thought.{"\n"}
           {"\n"}A stone balcony stretched around the second floor, and above, three turrets were constructed into the roof. They sat perched on top of the building, giving the entire structure the appearance of a miniature castle. Colossal candlelit
@@ -206,7 +207,9 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}They hustled up to the back of the queue. Zena stood on her tippy toes and looked to the front of the line. "I wonder if Governor Ouardi is inside?"{"\n"}
           {"\n"}Zimmer put his hands through his slicked-back hair. "He must be. A fellow that important is most likely overseeing all the setup of tonight’s affairs. I want to shake his hand and introduce myself."{"\n"}
           {"\n"}A few moments later, the couple in front of them began to shuffle forward. As they moved towards the gated entrance, Jake could see two large men in black suits checking tickets.{"\n"}
-          {"\n"}Zimmer slung his arm around Dendro's back. "Just like the good old days, huh, brother? Work during the day and perform our explorations at night? Remember that night on Argus?"{"\n"}
+          {"\n"}Zimmer slung his arm around Dendro's back. "Just like the good old days, huh, brother? Work during the day and perform our explorations at night? Remember that night on{" "}
+          <GlossaryWord lookup_string="Argus" word="Argus" toggleGlossary={this.props.toggleGlossary} />
+          ?"{"\n"}
           {"\n"}Dendro shook his head affirmatively, grinning slightly.{"\n"}
           {"\n"}Then Zimmer used his hip to playfully bump Dendro’s side. He reached across Dendro’s chest and held Dendro’s dog tag in his hands. "Can we do a <Text style={{ fontFamily: "gelasibro-italic" }}>tag-switch</Text> like we used to do? To
           bring us good luck on dangerous missions?"{"\n"}
@@ -243,7 +246,11 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}A short time later, as he continued to eat his entree, Jake couldn't help but eavesdrop on a conversation between two alien men sitting diagonally across from him.{"\n"}
           {"\n"}“Minister Krestine knows what’s best for her people. Parliament has made wretched decisions in the past, but I trust her prevailing strategy,” one of the men said.{"\n"}
           {"\n"}“But, my dear friend, where are the results? The kidnappings continue. Vostluka is cunning. He will place spies underneath our noses. The Viceroys will continue to gain control over The Galaxy’s nuclear energy supply. And have his
-          brainwashed followers of <Text style={{ fontFamily: "gelasibro-italic" }}>The New Doctrine</Text> not gotten closer to our borders, <Text style={{ fontFamily: "gelasibro-italic" }}>at least spiritually</Text>?”{"\n"}
+          brainwashed followers of{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Thenewdoctrine" word="The New Doctrine" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          not gotten closer to our borders, <Text style={{ fontFamily: "gelasibro-italic" }}>at least spiritually</Text>?”{"\n"}
           {"\n"}"I don’t know about <Text style={{ fontFamily: "gelasibro-italic" }}>that</Text>. We cannot blame her for <Text style={{ fontFamily: "gelasibro-italic" }}>everything</Text>. And we certainly cannot blame her for Naronia's lack of
           visibility into the Viceroy operations–they hide their business in dark places. Their filth cannot be traced, that is, unless we decide to go deeper into the Venthum controlled regions. Imagine if we placed..."{"\n"}
           {"\n"}A man sitting next to them began speaking too loudly for Jake to continue listening.{"\n"}
@@ -308,7 +315,8 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}"Yes, yes, what an interesting person! And thank you so much for the tickets!" Zena bellowed.{"\n"}
           {"\n"}"No difficulty. I am glad Marcus continues to network and bring me interesting contacts," The Governor replied. "So, how are you enjoying tonight?"{"\n"}
           {"\n"}"You and your staff have really outdone themselves," she said. "My friends and I are having a wonderful time. That dinner was superb."{"\n"}
-          {"\n"}"Thank you. I'm so glad," the Governor said with a friendly smile. "Forgive me, I did not know that you are also Tarvezian–where did you grow up?"{"\n"}
+          {"\n"}"Thank you. I'm so glad," the Governor said with a friendly smile. "Forgive me, I did not know that you are also <GlossaryWord lookup_string="Tarvezius" word="Tarvezian" toggleGlossary={this.props.toggleGlossary} /> –where did you
+          grow up?"{"\n"}
           {"\n"}"Southern Coastal regions, near Elminhir. In a smaller village called Zatputo," Zena responded.{"\n"}
           {"\n"}"Ah! Not so far from my upbringing in Zeldinis. We may have bumped into each other! But probably not. I’m much older than you," Ouardi said.{"\n"}
           {"\n"}The Governor and Zena chatted for a short time about their Tarvezian upbringings until Dendro butted in, "Governor, what is the sentiment amongst the Casablanca Enlightened...any concerns growing in the community as of late?"{"\n"}
@@ -402,7 +410,11 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}"On my lead!" Dendro bellowed. "Jake, only distract!”{"\n"}
           {"\n"}As they circled the brute, the creature began twirling its mace, as if to taunt them, but there were no facial expressions, just a double-horned helmet, jagged battle armor, and glowing crimson eyes–nothing to make it appear sentient,
           human, or capable of feeling anything. Jake caught sight of the designs on its plated armor more clearly. They were intricate carvings of glyphs, star systems, and other foreign objects. Dendro eyed his three comrades, then shouted, “Stay
-          back!" He then jutted forward, flipped, and landed five feet in front of the <Text style={{ fontFamily: "gelasibro-italic" }}>Knight of Diu Khien</Text>.{"\n"}
+          back!" He then jutted forward, flipped, and landed five feet in front of the{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Knightofdiukhien" word="Knight of Diu Khien" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          .{"\n"}
           {"\n"}The creature stopped twirling its mace and focused in on Dendro. Then the Solar Forces warrior darted to his left with his axe held high. He tried to juke and use his speed to create a fortuitous strike angle, but the hulk of metal
           moved as smoothly as he did and was there to meet him.{"\n"}
           {"\n"}
@@ -439,10 +451,16 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>My friends need my help</Text>. <Text style={{ fontFamily: "gelasibro-italic" }}>It’s time to act. I have no choice.</Text>
           {"\n"}
-          {"\n"}If he could distract the creature, he might buy time for Dendro to get up and aid his comrades. Jake closed his eyes and focused in on his memories training in the dojo. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text>.
-          He took a few deep breaths and felt slightly calmer. Was the Utma granted power of mind control coming to his aid, or was it his natural ability? Then he thought of <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>The Accelerated Parry</Text>. Jake looked at his axe, then at his grounded comrades and something came over him–Jake sprinted for the creature. His intention was not to fight it, just to
-          distract it. <Text style={{ fontFamily: "gelasibro-italic" }}>I can get out of its way in time</Text>, Jake thought.{"\n"}
+          {"\n"}If he could distract the creature, he might buy time for Dendro to get up and aid his comrades. Jake closed his eyes and focused in on his memories training in the dojo.{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Initma" word="Initma" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . He took a few deep breaths and felt slightly calmer. Was the Utma granted power of mind control coming to his aid, or was it his natural ability? Then he thought of <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Theacceleratedparry" word="The Accelerated Parry" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . Jake looked at his axe, then at his grounded comrades and something came over him–Jake sprinted for the creature. His intention was not to fight it, just to distract it.{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>I can get out of its way in time</Text>, Jake thought.{"\n"}
           {"\n"}Captain Tango yelled as Jake ran at The Knight. Then Jake envisioned himself darting at a forty-five-degree angle with superhuman speed—<Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>—and he did. He entered a
           timeless blur and appeared a few feet to his right an instant later…but the move served no purpose; he was still too far away from the metallic demon. The Knight raised its arm, and Jake’s weapon flew straight from his hands and crashed
           against the back wall. <Text style={{ fontFamily: "gelasibro-italic" }}>Oh, jeez</Text>. He looked at his empty palm. <Text style={{ fontFamily: "gelasibro-italic" }}>Fail</Text>.{"\n"}

@@ -57,7 +57,8 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}The ship ailerons sculpted a stable flight path through the cold night air. Jake felt his body become lighter as they descended. He could see the sprawling lights of a city off the front right of the ship’s nose. The ship then banked
           left and began to rapidly descend.{"\n"}
           {"\n"}Jake slowly breathed in and out (a meditation technique his health teacher had recommended). The silver medallion gently bounced against his chest. It gave him a sense of comfort, yet he did not know why. He thought about the code on
-          Dendro’s computer, the sensitivity variable, and opening up memory slots inside the machine. He envisioned having the power to control the flow and movement of information.{"\n"}
+          Dendro’s computer, the sensitivity variable, and opening up <GlossaryWord lookup_string="Memory" word="memory" toggleGlossary={this.props.toggleGlossary} /> slots inside the machine. He envisioned having the power to control the flow and
+          movement of information.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>A coder’s job is to move information around as efficiently as possible,</Text> Dendro had said. The statement stuck in his head. He thought about the floating axe.{"\n"}
           {"\n"}Another warm chill ran throughout his body. <Text style={{ fontFamily: "gelasibro-italic" }}>This man, this creature, had incontrovertible powers. Could he get them too?</Text>
@@ -126,8 +127,9 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}Dendro positioned himself below the entry hatch on the roof, which opened up to the snowy night sky above them. A small ladder funneled downward.{"\n"}
           {"\n"}“I also said there might be some rough patches. I did not expect this many personnel inside of the facility at this time of night. I’m going to need your help,” Dendro said, impassively.{"\n"}
           {"\n"}“Isn’t it dangerous?”{"\n"}
-          {"\n"}“If we follow Lithium Radar’s instructions, this should be a no-brainer operation. We get the suits, we hit the floor, we get the card, then we get the radium, and we’re out of here as quickly as we came. But I won’t lie to you.
-          Anything can happen in <Text style={{ fontFamily: "gelasibro-italic" }}>any</Text> operation. I need your help here, son. Then we can get you home, I promise,” Dendro said.{"\n"}
+          {"\n"}“If we follow Lithium Radar’s instructions, this should be a no-brainer operation. We get the suits, we hit the floor, we get the card, then we get the{" "}
+          <GlossaryWord lookup_string="Radium" word="radium" toggleGlossary={this.props.toggleGlossary} />, and we’re out of here as quickly as we came. But I won’t lie to you. Anything can happen in{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>any</Text> operation. I need your help here, son. Then we can get you home, I promise,” Dendro said.{"\n"}
           {"\n"}Jake stood there. His heart was beating in his throat. <Text style={{ fontFamily: "gelasibro-italic" }}>What can I do?</Text> Where could he hide anyway if he said no?{"\n"}
           {"\n"}“Let’s roll,” Dendro said.{"\n"}
           {"\n"}Jake’s face made contact with the icy air as he climbed up the first few rungs of the ship ladder. <Text style={{ fontFamily: "gelasibro-italic" }}>That is seriously cold.</Text> A moment later, he stood on top of the ship, glancing
@@ -350,11 +352,15 @@ export default class Chapter6 extends Component<IProps> {
           mysterious symbols. <Text style={{ fontFamily: "gelasibro-italic" }}>How can I possibly find anything intelligible?</Text>
           {"\n"}
           {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Wait. Dendro mentioned a search. Control-F.</Text> He quickly hit <Text style={{ fontFamily: "gelasibro-italic" }}>control-f</Text> on the giant black keyboard. A search modal popped up. He
-          typed in ‘key fob permissions.’ To his surprise, something popped up. It appeared to be a link to a file where this phrase had been found in the codebase. He clicked it.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            Wait. Dendro mentioned a search. <GlossaryWord lookup_string="Controlf" word="Control-F" toggleGlossary={this.props.toggleGlossary} />.
+          </Text>{" "}
+          He quickly hit <Text style={{ fontFamily: "gelasibro-italic" }}>control-f</Text> on the giant black keyboard. A search modal popped up. He typed in ‘key fob permissions.’ To his surprise, something popped up. It appeared to be a link to a
+          file where this phrase had been found in the codebase. He clicked it.{"\n"}
           {"\n"}A new tab popped up,
           <Text style={{ fontFamily: "gelasibro-italic" }}> factory_key_permissions_config.py. </Text>
-          The text editor automatically scrolled halfway down the file. There were swaths of code above and below, but in the dead center of the screen he saw:
+          The text <GlossaryWord lookup_string="Texteditor" word="editor" toggleGlossary={this.props.toggleGlossary} /> automatically scrolled halfway down the file. There were swaths of code above and below, but in the dead center of the screen he
+          saw:
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson2_1.png")} />
@@ -391,10 +397,12 @@ export default class Chapter6 extends Component<IProps> {
           // Section 3 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          <Text style={{ fontFamily: "gelasibro-italic" }}>This is a Python variable called</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>floor_manager_vault_access</Text>.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Somewhere in memory this variable is set to</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text>.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>This has to mean that the floor manager does not have access to open the vault! If I set this to</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>hopefully that will allow this card to open the gate</Text>. He quickly flipped the value.
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            This is a Python <GlossaryWord lookup_string="Variable" word="variable" toggleGlossary={this.props.toggleGlossary} /> called
+          </Text>{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>floor_manager_vault_access</Text>. <Text style={{ fontFamily: "gelasibro-italic" }}>Somewhere in memory this variable is set to</Text>{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text>. <Text style={{ fontFamily: "gelasibro-italic" }}>This has to mean that the floor manager does not have access to open the vault! If I set this to</Text>{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>, <Text style={{ fontFamily: "gelasibro-italic" }}>hopefully that will allow this card to open the gate</Text>. He quickly flipped the value.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson2_3.png")} />
@@ -443,7 +451,7 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}They waited a moment for the garage door to rise far enough for them to duck under. <Text style={{ fontFamily: "gelasibro-italic" }}>Faster, please.</Text> When they rolled under the garage-door opening, Jake's vision was immediately
           immersed by shifting yellow lights and snowfall. He could hear the revving of car engines and skidding tires—five white trucks were speeding towards them.{"\n"}
           {"\n"}“Follow me!” Dendro instructed as he veered right, off the mountain road, heading straight for the top of the ridge.{"\n"}
-          {"\n"}“IMMEDIATE TAKE OFF REQUIRED. No runway available!” Dendro shouted into his Lithium Radar.{"\n"}
+          {"\n"}“IMMEDIATE TAKE OFF REQUIRED. No runway available!” Dendro shouted into his <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} />.{"\n"}
           {"\n"}Jake’s feet catapulted through the snow as he followed Dendro. <Text style={{ fontFamily: "gelasibro-italic" }}>So freaking hard to run in this suit!</Text> He couldn’t help but turn his head around to see what was coming for them.
           Five white hummers screeched to a stop in front of the cargo entrance where they had been seconds before. The car doors opened, and multiple men popped out. They held long rifles in their hands, and they were pointed in Jake’s direction.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>This is not what I signed up for.</Text> Red lasers danced across the powder to his left and right. <Text style={{ fontFamily: "gelasibro-italic" }}>Is this where I die?</Text>
@@ -496,9 +504,10 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}“You went into shock. It happens,” Dendro said.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Shock?</Text> The stream of previous events ran through his mind. “They could have killed us! I had to knock a man unconscious with a fire extinguisher!”{"\n"}
-          {"\n"}“I apologize, son, but I’ve never been stranded on a planet before with no knowledge of my unit’s whereabouts, especially without a comms receiver. I never expected it to get this...hectic. But missions can go sideways, and we must
-          adapt. With the survival-probabilities delivered to me by Lithium Radar, getting the Radium in this fashion was still the safest way to get both of us home. I know it sounds nutty, but you got caught up in a tragic mess when you stumbled
-          upon this ship. I am sorry, I really am. I knew those men would not shoot to kill, only to intimidate us. I am doing everything in my power to keep you safe. Trust me, kid.”{"\n"}
+          {"\n"}“I apologize, son, but I’ve never been stranded on a planet before with no knowledge of my unit’s whereabouts, especially without a{" "}
+          <GlossaryWord lookup_string="Communicationsreceiver" word="comms receiver" toggleGlossary={this.props.toggleGlossary} />. I never expected it to get this...hectic. But missions can go sideways, and we must adapt. With the
+          survival-probabilities delivered to me by Lithium Radar, getting the Radium in this fashion was still the safest way to get both of us home. I know it sounds nutty, but you got caught up in a tragic mess when you stumbled upon this ship. I
+          am sorry, I really am. I knew those men would not shoot to kill, only to intimidate us. I am doing everything in my power to keep you safe. Trust me, kid.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Great.</Text> Jake thought. “Won’t they be on high alert now? They saw us escape in a fighter ship!” Jake asked, pointedly.{"\n"}
           {"\n"}“We train specifically for these off-planet situations. The radar avoidance polymers embedded in this ship will prevent any Earth entity from spotting us through any radar or sensors. We were not in the field of view of any cameras
@@ -512,7 +521,8 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}Jake looked at Dendro with a quizzical look. “The power to calm ourselves down in battle?”{"\n"}
           {"\n"}“Yes. The power to use the energy around us to calm down our hearts and anxious minds,” Dendro said.{"\n"}
           {"\n"}“You’re telling me I have a superpower now? I don’t feel any different,” Jake said.{"\n"}
-          {"\n"}“Our benefits blossom within us over time. But there is no doubt the Utma has planted <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> inside of you.” Dendro flashed a grin as he examined the marking on Jake’s forearm.
+          {"\n"}“Our <GlossaryWord lookup_string="Utmabenefits" word="benefits" toggleGlossary={this.props.toggleGlossary} /> blossom within us over time. But there is no doubt the Utma has planted{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> inside of you.” Dendro flashed a grin as he examined the marking on Jake’s forearm.
           {"\n"}
           {"\n"}Jake sat down, overcome by a wave of emotions. <Text style={{ fontFamily: "gelasibro-italic" }}>Have I really been infused with this new superpower? No way.</Text> He did, however, understand code slightly better. He even felt a
           slight sense of pride when had a moment to recollect what he pulled off on the computer. It reminded him of a scene from <Text style={{ fontFamily: "gelasibro-italic" }}>Mission Impossible</Text>.{" "}

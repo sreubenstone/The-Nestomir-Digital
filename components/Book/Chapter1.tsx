@@ -41,8 +41,8 @@ export default class Chapter1 extends Component<IProps> {
           {"\n"}A few moments later, Jake’s eyes fell to the bottom two rows of the trophy case which were dedicated to his father, Eric Addison. There were so many trophies and degrees that they had to be stacked one behind the other on each row.
           Jake looked at the football photograph on the second shelf. It was from his dad’s state championship winning high school football team. Eric’s gaze stared back at him confidently from the dormant trophy case.{"\n"}
           {"\n"}Eric Addison had been a star all his life. Eric followed in his father Willie’s footsteps when it came to athletics, academics, and life in general. Eric excelled in mathematics at a very young age. He jumped three grades in the
-          subject when he was just eleven years old. He became the first middle schooler in Grapefield’s history to walk over to Grapefield High School for calculus class. He also became known for writing love notes as an eleven-year-old and tossing
-          them at girls many years older than him.{"\n"}
+          subject when he was just eleven years old. He became the first middle schooler in <GlossaryWord lookup_string="Grapefield" word="Grapefield's" toggleGlossary={this.props.toggleGlossary} /> history to walk over to Grapefield High School for
+          calculus class. He also became known for writing love notes as an eleven-year-old and tossing them at girls many years older than him.{"\n"}
           {"\n"}Eric did not have the same passion Willie had for the sciences. Instead of pursuing a scientific career, Eric was interested in law and politics. Eric became a lawyer and was famous for outwitting construction defense attorneys and
           racking up legal wins.{"\n"}
           {"\n"}Jake’s eyes, which had a light blue circle around his brown irises, looked three trophy rows upward. The top rows of the trophy case were dedicated to his grandfather, William “Willie” Addison. Like his son, he grew up to become a
@@ -53,11 +53,12 @@ export default class Chapter1 extends Component<IProps> {
           The medals and accolades were even more densely stacked than Eric’s.{"\n"}
           {"\n"}Willie Addison had a reputation for being an overbearing and arrogant man. Jake heard many stories throughout his life that testified to this fact. However, Jake’s father was always there to defend Willie’s legacy. Eric always said it
           was only jealousy that made people say bad things about him. But Jake knew there were two sides to his grandfather’s story.{"\n"}
-          {"\n"}There was no doubt that Willie was a math and physics prodigy. As an eighteen-year-old, he made a name for himself in 1950’s academia when he self-published insights concerning a solution for the famous Riemann Hypothesis. It was a
-          math problem that had stumped scientists and mathematicians for hundreds of years. Willie made a name for himself by publishing groundbreaking research papers but was out of academia. It happened in the fall of 1968, after a scandal
-          involving Willie’s alleged plagiarizing of his research partners. His university never officially accused him of wrongdoing, but they also never came to his defense. Out of frustration, Willie stepped away from academia and joined Quantum
-          Teletronics, a cutting edge electronics company at the time founded by Willie’s college friend, Arthur Lemoire. Willie’s ingenious efforts at Quantum Teletronics ended up helping modernize the designs of the modern microchip. But a decade
-          after joining Quantum, he was involved in yet another scandal—he was accused of stock fraud. After many legal battles, and government fines, Willie had no job and no money. A year later he died.{"\n"}
+          {"\n"}There was no doubt that Willie was a math and physics prodigy. As an eighteen-year-old, he made a name for himself in 1950’s academia when he self-published insights concerning a solution for the famous{" "}
+          <GlossaryWord lookup_string="Riemannhypothesis" word="Riemann Hypothesis" toggleGlossary={this.props.toggleGlossary} />. It was a math problem that had stumped scientists and mathematicians for hundreds of years. Willie made a name for
+          himself by publishing groundbreaking research papers but was out of academia. It happened in the fall of 1968, after a scandal involving Willie’s alleged plagiarizing of his research partners. His university never officially accused him of
+          wrongdoing, but they also never came to his defense. Out of frustration, Willie stepped away from academia and joined Quantum Teletronics, a cutting edge electronics company at the time founded by Willie’s college friend, Arthur Lemoire.
+          Willie’s ingenious efforts at Quantum Teletronics ended up helping modernize the designs of the modern microchip. But a decade after joining Quantum, he was involved in yet another scandal—he was accused of stock fraud. After many legal
+          battles, and government fines, Willie had no job and no money. A year later he died.{"\n"}
           {"\n"}Jake stood for a moment longer looking at his ancestry and then walked down the hallway to his younger brother’s room. He knocked on the door.{"\n"}
           {"\n"}“What?! I’m about to drop into a battle royale!” Jimmy yelled.{"\n"}
           {"\n"}“Dude, we have to get to school. Mom is out with Aunt Holly, I told you,” Jake said.{"\n"}

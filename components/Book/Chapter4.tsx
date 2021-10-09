@@ -68,11 +68,12 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}“What? A what?” Jake asked. He thought about running again.{"\n"}
           {"\n"}The creature did not respond at first; instead, it gazed upward. Then it appeared to swipe through something on the screen built into its arm. A few moments later, it tapped something in frustration, as if the display were not
           working.{"\n"}
-          {"\n"}“Our Delta One Death Cruiser. It was hit. Our captain. He lost control. We went into full electrostatic tumble. It was an ambush. How could we not see it? The Larhadian Asteroid Belt. Venthum forces. Three million light years away?
-          They went full stealth. We’ve never seen it happen in fifteen millennia,” the creature said as it peered up at the sky again. "How can this be? How can I possibly be here?"{"\n"}
+          {"\n"}“Our <GlossaryWord lookup_string="Delta1deathcruiser" word="Delta One Death Cruiser" toggleGlossary={this.props.toggleGlossary} />. It was hit. Our captain. He lost control. We went into full electrostatic tumble. It was an ambush.
+          How could we not see it? The <GlossaryWord lookup_string="Thelarhadianasteroidbelt" word="The Larhadian Asteroid Belt" toggleGlossary={this.props.toggleGlossary} />. Venthum forces. Three million light years away? They went full stealth.
+          We’ve never seen it happen in fifteen millennia,” the creature said as it peered up at the sky again. "How can this be? How can I possibly be here?"{"\n"}
           {"\n"}“You come from space?” Jake asked tremulously.{"\n"}
-          {"\n"}“We all come from space. But yes, I am from a galaxy foreign <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>you,</Text> known as the Nestomir. It is a spiroid galaxy a few
-          million light years away from here, apparently,” the creature responded in its rough voice.{"\n"}
+          {"\n"}“We all come from space. But yes, I am from a galaxy foreign <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>you,</Text> known as{" "}
+          <GlossaryWord lookup_string="Thenestomir" word="The Nestomir" toggleGlossary={this.props.toggleGlossary} />. It is a spiroid galaxy a few million light years away from here, apparently,” the creature responded in its rough voice.{"\n"}
           {"\n"}“The Nestomir?” Jake repeated.{"\n"}
           {"\n"}"We lost our right wing,” the creature blurted out, in an aggravated tone. “I have no booster. I could not have gotten here alone.”{"\n"}
           {"\n"}Jake began to feel extremely dizzy.{"\n"}
@@ -80,15 +81,23 @@ export default class Chapter4 extends Component<IProps> {
           cried. He closed his eyes waiting for something, or someone to wake him up from this obvious dream.{"\n"}
           {"\n"}He opened his eyes again, but he was still in the pit.{"\n"}
           {"\n"}The creature peered at him. "I must get back to base. The Venthum are cunning. They will be sweeping all the known systems by now, even if they have limited resources in these regions. How did I get here? No response from ground
-          comms. Something's very wrong." The creature’s eyes flickered. “My Lithium Radar does not make mistakes.” It flipped over its left forearm again. The screen appeared to display some sort of starmap. “It confirms I am in the Nilofar System,
-          Eta Omega, in the local tongue, the Milky Way, on an aquatic centric planet called Earth.”{"\n"}
+          comms. Something's very wrong." The creature’s eyes flickered. “My <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} /> does not make mistakes.” It flipped over its left forearm
+          again. The screen appeared to display some sort of starmap. “It confirms I am in the{" "}
+          <GlossaryWord
+            lookup_string="Nilofarsystem"
+            word="Nilofar System,
+          Eta Omega"
+            toggleGlossary={this.props.toggleGlossary}
+          />
+          , in the local tongue, the Milky Way, on an aquatic centric planet called Earth.”{"\n"}
           {"\n"}"Yes, the Earth. You are on Earth," Jake said. "How...how, how do you speak English?” Jake was still trembling and thinking of sprinting for his life again.{"\n"}
           {"\n"}"Our Naronian forefathers mapped these systems many years ago. All sentient species in the Nestomir have evolved over thousands of years to interpret language and dialects based on a wave signal all life forms give off, called the
           Utma. That's how I can speak your tongue, and many others," the creature said.{"\n"}
           {"\n"}"So you...you are…really an alien?" Jake blurted.{"\n"}
-          {"\n"}"Affirmative. From the glorious planet of Naronia,” the warrior thing responded.{"\n"}
+          {"\n"}"Affirmative. From the glorious planet of <GlossaryWord lookup_string="Naronia" word="Naronia" toggleGlossary={this.props.toggleGlossary} />
+          ,” the warrior thing responded.{"\n"}
           {"\n"}"Naronia?"{"\n"}
-          {"\n"}"Yes. Though my ancestors are from a planet called Gobhar, which was destroyed thousands of years ago,” it said.{"\n"}
+          {"\n"}"Yes. Though my ancestors are from a planet called <GlossaryWord lookup_string="Gobhar" word="Gobhar" toggleGlossary={this.props.toggleGlossary} />, which was destroyed thousands of years ago,” it said.{"\n"}
           {"\n"}The creature stared back up at the night sky. “Stay here for a moment. Do not move.”{"\n"}
           {"\n"}Jake watched as the thing shuffled towards the ship. <Text style={{ fontFamily: "gelasibro-italic" }}>What have I done?</Text> It took a lap around the perimeter of the crash site. It was clear now that the flying thing was a
           spaceship. The front of it was the side facing away from him and was partially buried in the ground. The ship’s rear was sticking up in the air, facing Jake. He watched as the creature ran its hands across certain edges and panels of the
@@ -117,7 +126,8 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}"I’m afraid it <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> real, kid. I am sorry. We must leave now,” it uttered in its deep baritone. “We are not safe here. The enemy will be exploring all known systems, making sure
           there are no stragglers. You are coming with me. It is Spectator One Protocol.”{"\n"}
           {"\n"}“Spectator <Text style={{ fontFamily: "gelasibro-italic" }}>what</Text>?” Jake said.{"\n"}
-          {"\n"}“Spectator One. Any bystander who witnesses a critical war event must be cared for by the Forces until one of our colonels debriefs you on base,” the creature said. “I’ll help you up, let’s go!”{"\n"}
+          {"\n"}“<GlossaryWord lookup_string="Spectatorone" word="Spectator One" toggleGlossary={this.props.toggleGlossary} />. Any bystander who witnesses a critical war event must be cared for by the Forces until one of our colonels debriefs you on
+          base,” the creature said. “I’ll help you up, let’s go!”{"\n"}
           {"\n"}Jake stood there, paralyzed with his mouth hanging open.{"\n"}
           {"\n"}“Do not make me come and get you. You must come with me. <Text style={{ fontFamily: "gelasibro-italic" }}>Spectator One</Text> is a rule I must not disobey. There have been terrible tragedies in the past when it has been ignored. The
           enemy could be watching, and if they’ve seen you, or traced us, you are not safe. They will hunt you down. I cannot leave you here, but I promise to help get you home as fast as I can.”{"\n"}
@@ -151,28 +161,30 @@ export default class Chapter4 extends Component<IProps> {
           There was a large glowing computer screen in front of the creature. It had a map flashing on it. There was another large monitor in the center of the cockpit dashboard, two others on the top, near the ceiling, on adjustable mounts. There
           was also a smaller screen with a keyboard directly in front of Jake, but it was off.{"\n"}
           {"\n"}The creature swiped through a few screens on the computer display in front of him. A minute later, the monitor brought up a pulsating 3D diagram that looked like an architectural sketch of a torpedo.{"\n"}
-          {"\n"}“I knew it,” the creature said. “The communications receiver is busted. That is why I am not getting anything back from base. Galactic mercy,” it grumbled. “We must get into the air, then sort this out.”{"\n"}
+          {"\n"}“I knew it,” the creature said. “The <GlossaryWord lookup_string="Communicationsreceiver" word="communications receiver" toggleGlossary={this.props.toggleGlossary} /> is busted. That is why I am not getting anything back from base.
+          Galactic mercy,” it grumbled. “We must get into the air, then sort this out.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>What the heck is a communications receiver?</Text> Jake thought.{"\n"}
           {"\n"}The creature looked at him and uttered, “Hold tight.”{"\n"}
           {"\n"}It pulled down gently on the button-covered joystick, then flicked three small levers on the front left of the cockpit dashboard. There was a powerful low frequency roar as the ship engines had fired to life.{"\n"}
           {"\n"}“Please, let me out. I want nothing to do with this. I’ll never look back. Forget the protocol. I’ll probably wake up tomorrow and fully believe this was a dream. Two days from now I won’t remember it happened!” Jake pleaded, feeling
           queasy.{"\n"}
-          {"\n"}“I cannot take you back. Not yet. It is a strict Solar Forces protocol, even out-of-galaxy.”{"\n"}
+          {"\n"}“I cannot take you back. Not yet. It is a strict <GlossaryWord lookup_string="Thesolarforces" word="Solar Forces" toggleGlossary={this.props.toggleGlossary} /> protocol, even out-of-galaxy.”{"\n"}
           {"\n"}“Let me go! I beg you!” Jake shrieked{"\n"}
           {"\n"}The creature took its hand off the joystick. “You are not being kidnapped, kid. Whether you deserve it, doesn’t matter. My duty now is to keep you safe.”{"\n"}
           {"\n"}Jake started to tremble again. He felt was going to throw up.{"\n"}
-          {"\n"}The creature’s eyebrows rose as he studied a smaller purple screen on the central console. “We have no choice but to fix our Communications Receiver. The radium core is corrupted.”{"\n"}
+          {"\n"}The creature’s eyebrows rose as he studied a smaller purple screen on the central console. “We have no choice but to fix our Communications Receiver. The{" "}
+          <GlossaryWord lookup_string="Radium" word="radium" toggleGlossary={this.props.toggleGlossary} /> core is corrupted.”{"\n"}
           {"\n"}The creature tapped a strange looking icon on the monitor in front him. A 2D map appeared that appeared to be a topographical map of the continental United States.{"\n"}
-          {"\n"}“This is in fact a settled system...I <Text style={{ fontFamily: "gelasibro-italic" }}>believe</Text> it’s the Guido Van Rossum system. But there are no radium depots listed in the Enlightened Registry. We could explore further, but I
-          have no contacts that I trust here.” The creature paused for a few moments. “There is also no guarantee that I would find the right type of garage which contains the parts we require—256-bit receivers are not commonly found within civilian
-          populations.”{"\n"}
+          {"\n"}“This is in fact a settled system...I <Text style={{ fontFamily: "gelasibro-italic" }}>believe</Text> it’s the <GlossaryWord lookup_string="Guidovanrossum" word="Guido Van Rossum" toggleGlossary={this.props.toggleGlossary} /> system.
+          But there are no radium depots listed in the <GlossaryWord lookup_string="Enlightenedregistry" word="Enlightened Registry" toggleGlossary={this.props.toggleGlossary} />. We could explore further, but I have no contacts that I trust here.”
+          The creature paused for a few moments. “There is also no guarantee that I would find the right type of garage which contains the parts we require—256-bit receivers are not commonly found within civilian populations.”{"\n"}
           {"\n"}The screen let out a chime. The creature glanced back at the glowing monitor.{"\n"}
           {"\n"}
           <Text style={{ textAlign: "center" }}>40.7608° N, 111.8910° W | 1,437 Miles | Waypoint Guidance Available</Text>
           {"\n"}
-          {"\n"}“It seems Lithium Radar has discovered a candidate for us to get our Radium needed to fix our receiver. Let’s see here.” The warrior creature scrolled through the map. “Yes, it has identified a laboratory just outside of Salt Lake
-          City, Utah, United States, North America, as a 99.997% positive source of Radium.”{"\n"}
+          {"\n"}“It seems <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} /> has discovered a candidate for us to get our Radium needed to fix our receiver. Let’s see here.” The warrior
+          creature scrolled through the map. “Yes, it has identified a laboratory just outside of Salt Lake City, Utah, United States, North America, as a 99.997% positive source of Radium.”{"\n"}
           {"\n"}The creature clicked on a blinking indicator on the screen. He looked at a set of characters too hard to see from where Jake was sitting. “It appears to be a private laboratory facility...
           <Text style={{ fontFamily: "gelasibro-italic" }}>Chiral Laboratories</Text>...it does contract work for your government...won’t be able to get more information until we’re on the ground in the vicinity of their wired network.”{"\n"}
           {"\n"}“You want to take us to Utah? Are you serious?” Jake asked.{"\n"}
@@ -207,7 +219,9 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>The ship computer speaks?</Text>
           {"\n"}
-          {"\n"}The creature unbuckled its seatbelt, stood up, stretched its neck, then stuck out its hand. “The name’s Dendro. Dendro Salāhakāra, Solar Forces, Special Operations Captain, Tier II, Republic of Naronia, Star System A, The Nestomir.”
+          {"\n"}The creature unbuckled its seatbelt, stood up, stretched its neck, then stuck out its hand. “The name’s Dendro. Dendro Salāhakāra,{" "}
+          <GlossaryWord lookup_string="Thesolarforces" word="Solar Forces" toggleGlossary={this.props.toggleGlossary} />, Special Operations Captain, Tier II, Republic of{" "}
+          <GlossaryWord lookup_string="Naronia" word="Naronia" toggleGlossary={this.props.toggleGlossary} />, <GlossaryWord lookup_string="Starsystema" word="Star System A" toggleGlossary={this.props.toggleGlossary} />, The Nestomir.”
           {"\n"}
           {"\n"}Jake stuck out his hand. “Jake Addison”.{"\n"}
           {"\n"}“Jake Addison, the Earthling who discovered me in the dark of night,” Dendro said. “I...I smelled something. I was curious. I should never have walked through the alley,” Jake said.{"\n"}
@@ -219,8 +233,8 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}“I am sorry. There is nothing I can do until I can communicate back to base. Let’s fix this receiver and you’ll be home soon,” Dendro said.{"\n"}
           {"\n"}Jake squeezed his head back against the headrest as they cut through the ozone. The blue light beams on the long nose of the ship reflected through the damp night sky. A new reality began to set in. And Jake had no control.{"\n"}
           {"\n"}“So you are some kind of warrior, a captain from your galaxy?” Jake asked.{"\n"}
-          {"\n"}“Affirmative. I am a soldier, a captain, in the Solar Forces Special Operations unit,” Dendro said. “The Solar Forces is the core military power serving the Republic of Naronia. Naronia is the capital of my galaxy. You are sitting in
-          a special operations military fighter right now.”{"\n"}
+          {"\n"}“Affirmative. I am a soldier, a captain, in the Solar Forces Special Operations unit,” Dendro said. “The Solar Forces is the core military power serving the{" "}
+          <GlossaryWord lookup_string="Republicofnaronia" word="Republic of Naronia" toggleGlossary={this.props.toggleGlossary} />. Naronia is the capital of my galaxy. You are sitting in a special operations military fighter right now.”{"\n"}
           {"\n"}“That’s impressive...I guess.” He paused for a moment, still struggling to comprehend he was talking to, something, someone, not from Earth. “And you have no understanding how you ended up half-submerged inside of a crater in a
           cornfield in Grapefield, Wisconsin? Grapefield, one of the <Text style={{ fontFamily: "gelasibro-italic" }}>least</Text> happening places on Earth?”{"\n"}
           {"\n"}“I have not the faintest indication. The last thing I remember was exiting our Solar Forces Destroyer in this ship. I must have been knocked out the instant the gate opened by a nearby plasma explosion. And it must have been a big
@@ -230,45 +244,52 @@ export default class Chapter4 extends Component<IProps> {
           prepared for what happened next. The last thing I remember was diving into the ship after the emergency sirens fired off, and I was in open space, and the firefight had already begun. Then I was out cold,” Dendro said. “The Venthum are
           cunning.”{"\n"}
           {"\n"}“The Venthum?” Jake asked.{"\n"}
-          {"\n"}“Our ancient enemy. An enemy we’ve fought for over ten millennia. Many thousands of years ago we were great allies. Millions of lives have been lost in the Dark Wars that occurred between our civilizations, both which were before my
-          time,” Dendro said. “Our culture carries a great hatred for our great enemy. And now, nearly five thousand years since the end of the second Dark War, another great war is coming.”{"\n"}
+          {"\n"}“Our ancient enemy. An enemy we’ve fought for over ten millennia. Many thousands of years ago we were great allies. Millions of lives have been lost in the{" "}
+          <GlossaryWord lookup_string="Darkwars" word="Dark Wars" toggleGlossary={this.props.toggleGlossary} /> that occurred between our civilizations, both which were before my time,” Dendro said. “Our culture carries a great hatred for our great
+          enemy. And now, nearly five thousand years since the end of the second Dark War, another great war is coming.”{"\n"}
           {"\n"}Dendro swiveled his neck in a stretching motion, exposing additional tattoos on his skin.{"\n"}
           {"\n"}“You think they are searching for us?” Jake asked, his stomach tightening.{"\n"}
-          {"\n"}“Venthum Space Legion search and destroy battalions scout populated systems after successful ambushes,” Dendro said. “The less of the enemy that returns home, the better.”{"\n"}
+          {"\n"}“<GlossaryWord lookup_string="Venthemspacelegions" word="Venthum Space Legion" toggleGlossary={this.props.toggleGlossary} /> search and destroy battalions scout populated systems after successful ambushes,” Dendro said. “The less of
+          the enemy that returns home, the better.”{"\n"}
           {"\n"}“Can they track us?” Jake asked.{"\n"}
           {"\n"}“I do not think so. At least not with the technology we know of. But they have advanced their stealth-ship signature recognition, which means we need to be careful and stay out of sight as much as possible. At thirty thousand feet, we
           are the safest.”{"\n"}
           {"\n"}“So you’re not even sure what they can do?” Jake asked, despondently.{"\n"}
-          {"\n"}“With the Venthum, nothing is ever certain. The enemy hides their assets well. It is too great a risk to leave you until we know we have not been tracked. That’s why we must communicate back to base, regroup, and disperse as fast as
-          we can.”{"\n"}
+          {"\n"}“With the <GlossaryWord lookup_string="Venthum" word="Venthum" toggleGlossary={this.props.toggleGlossary} />, nothing is ever certain. The enemy hides their assets well. It is too great a risk to leave you until we know we have not
+          been tracked. That’s why we must communicate back to base, regroup, and disperse as fast as we can.”{"\n"}
           {"\n"}Jake inhaled deeply. <Text style={{ fontFamily: "gelasibro-italic" }}>How can we be safe? Will we ever come down from the sky?</Text>
           {"\n"}
           {"\n"}They cruised along for a few more minutes. Jake tried to calm his heart down and put things into perspective.{"\n"}
           {"\n"}“How far away is it? Your galaxy?” Jake asked.{"\n"}
           {"\n"}“You ask a lot of questions.” The creature put his gloves back on and adjusted the throttle slightly. “The Nestomir is approximately three and a half million light years from your home planet Earth.”{"\n"}
           {"\n"}“How could you possibly get here?” Jake asked, stunned.{"\n"}
-          {"\n"}“We are ahead of you in terms of technological evolution. We became interstellar five thousand years ago with the discovery of quantum space,” Dendro said. “But my ship does not have a booster installed, so I cannot travel through the
-          stars alone, at least, not for now.”{"\n"}
+          {"\n"}“We are ahead of you in terms of technological evolution. We became interstellar five thousand years ago with the discovery of{" "}
+          <GlossaryWord lookup_string="Quantumspace" word="quantum space" toggleGlossary={this.props.toggleGlossary} />
+          ,” Dendro said. “But my ship does not have a <GlossaryWord lookup_string="Interstellarbooster" word="booster" toggleGlossary={this.props.toggleGlossary} /> installed, so I cannot travel through the stars alone, at least, not for now.”{"\n"}
           {"\n"}Jake scratched his chin. <Text style={{ fontFamily: "gelasibro-italic" }}>Quantum space?</Text>  He pondered for a moment about the implications of traveling through the stars. Then he thought of Dendro’s planet. “What is your world
           like?”{"\n"}
           {"\n"}“Well, Earthing, my home planet of Naronia is a complicated world, and I would have trouble knowing where to start if I were to describe it to you. It is a busy planet, with a variety of races living amongst one another. The planet
-          Naronia is the capital of the Nestomir Galaxy, to those societies under jurisdiction of the Naronian Republic.”{"\n"}
+          Naronia is the capital of <GlossaryWord lookup_string="Thenestomir" word="The Nestomir Galaxy" toggleGlossary={this.props.toggleGlossary} />, to those societies under jurisdiction of the Naronian Republic.”{"\n"}
           {"\n"}“The Naronian Republic?”{"\n"}
-          {"\n"}“Yes. The Naronian Republic was founded three thousand years ago, after the Mentosi brought back political stability to Naronia. It has brought extraordinary advances to our society in education, safety, infrastructure,
-          medicine–almost all aspects of life.” Dendro stretched his neck in both directions. “However, many class and race issues that have plagued our society for generations still exist today.”{"\n"}
+          {"\n"}“Yes. The Naronian Republic was founded three thousand years ago, after <GlossaryWord lookup_string="Thementosi" word="The Mentosi" toggleGlossary={this.props.toggleGlossary} /> brought back political stability to Naronia. It has
+          brought extraordinary advances to our society in education, safety, infrastructure, medicine–almost all aspects of life.” Dendro stretched his neck in both directions. “However, many class and race issues that have plagued our society for
+          generations still exist today.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>“Class and race issues?” Jake asked. Just like Earth</Text>, Jake thought. “And who are the Mentosi?”{"\n"}
-          {"\n"}“The Mentosi are an ancient Naronian race. They are the only species of high-intelligence native to Naronia. The ruling Mentosi family, the Affagi, sit at the forefront of Naronian politics. The Affagi have been the primary leaders in
-          all of the Naronian government for over twenty-five hundred years,” Dendro said.{"\n"}
+          {"\n"}“The Mentosi are an ancient Naronian race. They are the only species of high-intelligence native to <GlossaryWord lookup_string="Naronia" word="Naronia" toggleGlossary={this.props.toggleGlossary} />. The ruling Mentosi family,{" "}
+          <GlossaryWord lookup_string="Theaffagi" word="The Affagi" toggleGlossary={this.props.toggleGlossary} />, sit at the forefront of Naronian politics. The Affagi have been the primary leaders in all of the Naronian government for over
+          twenty-five hundred years,” Dendro said.{"\n"}
           {"\n"}“And there are really class issues where you come from?” Jake asked.{"\n"}
           {"\n"}Dendro massaged his left arm. “The class and race issues are complicated. The Mentosi, as well as the first sentient races to immigrate to Naronia, are what our culture refers to as{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Tier I</Text> races. These races get the first pick at education, high-paying jobs, and the best that life has to offer in the galaxy. Tier II races, which consist of races that arrived to
           Naronia later in our history, have limited job options, and have disadvantages in many areas of society, including the military.”{"\n"}
           {"\n"}“That is sad. You would think you would have corrected those issues, especially if you’ve figured out interstellar travel,” Jake said.{"\n"}
           {"\n"}Dendro's eyes widened momentarily, then his face went stoic again. “It <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> hard, but I love my planet. She will heal over time.” He massaged the silver orb on his chest. Then he
-          waved his pointer around the cockpit. “This baby, my ship, they won’t even give me a booster, and I’m a Special Ops captain. The Gobrahim immigrated into Naronia long after the Tier I races.”{"\n"}
+          waved his pointer around the cockpit. “This baby, my ship, they won’t even give me a booster, and I’m a Special Ops captain. The <GlossaryWord lookup_string="Gobrahim" word="Gobrahim" toggleGlossary={this.props.toggleGlossary} /> immigrated
+          into Naronia long after the Tier I races.”{"\n"}
           {"\n"}“So you are...” Jake began.{"\n"}
-          {"\n"}“The Gobrahim, my people, are classified as a Tier II Race. We immigrated a relatively short time ago, in the galactic time frame, after my ancestral planet, Gobhar, was destroyed in the First Dark War.”{"\n"}
+          {"\n"}“The Gobrahim, my people, are classified as a Tier II Race. We immigrated a relatively short time ago, in the galactic time frame, after my ancestral planet,{" "}
+          <GlossaryWord lookup_string="Gobhar" word="Gobhar" toggleGlossary={this.props.toggleGlossary} />, was destroyed in the First Dark War.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>His ancestral planet was destroyed?</Text> “Is there anything you can do about these societal issues?” Jake asked.{"\n"}
           {"\n"}“I can fight. I can learn. And I can make a difference, where nature lets me.” Dendro pushed down on the throttle slightly.{"\n"}
@@ -276,13 +297,13 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}“But you said these Mentosi rule. How can these Mentosi <Text style={{ fontFamily: "gelasibro-italic" }}>rule</Text> if it is a republic? Jake asked.{"\n"}
           {"\n"}Dendro raised his thick eyebrows. “You are an inquisitive one, kid. What you’re asking is an important question. And it’s not one for me to analyze out loud as a member of our armed forces. I will say that there is a fine line between
           what is a democracy and what is not. Our Solar Senate and the Naronian Counsel work together as an effective balance of powers, yet the tentacles of Affagi influence are wrapped around nearly all elements of Naronian society; it’s not hard
-          to see that they possess a form of authoritative rule. However, even as a Tier II race, I’ve always seen The Affagi as a benevolent entity, even with their antiquated class ideologies. At the end of the day, they have been the single most
-          important driver of some of the greatest things to happen to our culture, like our greatly enlightened education system, the arts, and the growth of our military. What we need to do is to figure out a way to evolve for the better, not
-          eliminate the things they’ve achieved.{"\n"}
+          to see that they possess a form of authoritative rule. However, even as a Tier II race, I’ve always seen <GlossaryWord lookup_string="Theaffagi" word="The Affagi" toggleGlossary={this.props.toggleGlossary} /> as a benevolent entity,
+          even with their antiquated class ideologies. At the end of the day, they have been the single most important driver of some of the greatest things to happen to our culture, like our greatly enlightened education system, the arts, and the
+          growth of our military. What we need to do is to figure out a way to evolve for the better, not eliminate the things they’ve achieved.{"\n"}
           {"\n"}Dendro shifted a red lever on the dashboard to its left most position. “Enough politics. C’mon, let’s stretch these legs and have a quick tour of the ship.”{"\n"}
           {"\n"}The robed warrior pushed himself up, walked up the two cockpit stairs, and went down the short hallway. Jake followed, taking a quick peep at the golden axe resting on the wall.{"\n"}
-          {"\n"}They stopped in the small space in between the living area of the ship and the cockpit. “This is the <Text style={{ fontFamily: "gelasibro-italic" }}>caravine</Text>,” Dendro said. “This is where I’d be able to map out communication
-          logistics across the galaxy and beyond. But our booster’s broken.”{"\n"}
+          {"\n"}They stopped in the small space in between the living area of the ship and the cockpit. “This is the <GlossaryWord lookup_string="Caravine" word="caravine" toggleGlossary={this.props.toggleGlossary} />
+          ,” Dendro said. “This is where I’d be able to map out communication logistics across the galaxy and beyond. But our booster’s broken.”{"\n"}
           {"\n"}Jake turned towards the mix of wires and lights on the ceiling high black panel in front of him. <Text style={{ fontFamily: "gelasibro-italic" }}>Those are a lot of switches.</Text>
           {"\n"}
           {"\n"}He followed Dendro into the midsection of the ship. The captain pointed at the stove and sink area. “Here is where I cook, make tea, and anything else I need to survive on a long interstellar journey.” He pointed to the machine next
@@ -290,22 +311,23 @@ export default class Chapter4 extends Component<IProps> {
           filtration.”{"\n"}
           {"\n"}The creature grabbed a thin glass column from inside of a small brown kettle on the counter. “Here, have a sip. It’ll warm your spirit”.{"\n"}
           {"\n"}The liquid in the glass was a solid amber color. Steam was funneling out the top. “What is this stuff?”{"\n"}
-          {"\n"}“Jasmine tea. Don’t worry. It’s all natural.”{"\n"}
+          {"\n"}“<GlossaryWord lookup_string="Jasminetea" word="Jasmine Tea" toggleGlossary={this.props.toggleGlossary} />. Don’t worry. It’s all natural.”{"\n"}
           {"\n"}Jake put his mouth on the column and dipped his tongue inside. Hints of caramel, mint, and chai lightly massaged his tongue.{"\n"}
           {"\n"}Jake dribbled a bit the liquid on his chin and wiped it off. “It’s good. It’s kind of sweet, but very smooth. I like it.”{"\n"}
           {"\n"}The warrior’s chiseled face flashed a grin.{"\n"}
           {"\n"}Jake turned towards the peculiar looking machine Dendro had pointed to a moment ago. The metal base had three glass beakers sitting on top of it. The largest beaker bubbled with purple liquid, and the other two bubbled with a dark
           brown liquid. Multiple tubes ran out of the back of the contraption. One of the tubes was solid gold.{"\n"}
-          {"\n"}“What is Kahve?” Jake asked.{"\n"}
+          {"\n"}“What is <GlossaryWord lookup_string="Kahve" word="Kahve" toggleGlossary={this.props.toggleGlossary} />
+          ?” Jake asked.{"\n"}
           {"\n"}“It’s like what you would call <Text style={{ fontFamily: "gelasibro-italic" }}>coffee</Text>. It’s a bit smoother, and a lot stronger,” Dendro said.{"\n"}
           {"\n"}“What is the gold tube?” Jake asked curiously.{"\n"}
           {"\n"}Dendro giggled under his breath and pulled up the small plated window above it. “Here, Earthling. Have a look.”{"\n"}
           {"\n"}“Whoa.” Jake stared at the curved right wing. “That’s so cool.” Just beyond it, a fifteen-foot stream of blue flame poured out from the rectangular engine blocks.{"\n"}
           {"\n"}“How fast can this thing really go?” Jake asked.{"\n"}
           {"\n"}“It’s hard to say. A lot of variables: wind, fuel grade, atmospheric density, atmospheric oxygen-to-nitrogen ratios. In the current atmospheric state, I could probably push her to Mach 7. That’s seven times the speed of sound in Earth
-          air. But I have to treat her right.” Dendro tapped the counter gently with his knuckles. “Only ever push her to the limit when I really have to. She’s been with me through thick and thin–she’s an authentic Sentauri Beacon I, the smoothest
-          stealth fighter I’ve ever flown. Triple hydrogen blast furnace engines. Full cavity deflection shields. Can’t find these in production anymore, they were replaced by the new Star Beacon VII’s only five years back. The Forces said it was
-          more economic,” Dendro said. The blue light from the engines grazed across his face.{"\n"}
+          air. But I have to treat her right.” Dendro tapped the counter gently with his knuckles. “Only ever push her to the limit when I really have to. She’s been with me through thick and thin–she’s an authentic{" "}
+          <GlossaryWord lookup_string="Sentauribeacon1" word="Sentauri Beacon I" toggleGlossary={this.props.toggleGlossary} />, the smoothest stealth fighter I’ve ever flown. Triple hydrogen blast furnace engines. Full cavity deflection shields.
+          Can’t find these in production anymore, they were replaced by the new Star Beacon VII’s only five years back. The Forces said it was more economic,” Dendro said. The blue light from the engines grazed across his face.{"\n"}
           {"\n"}He pointed at the door next to the fridge. “Here’s the bathroom. Lock broke, not sure how, but don’t worry, I won’t peek.” He chuckled and walked to the back of the compartment and put his right eye against a wall sensor. The sliding
           doors skidded open.{"\n"}
           {"\n"}Jake followed him into the room. This room felt like a bedroom in a futuristic military barracks. The walls were plated with cold metal panels. The left corner of the space had a narrow bed. It was covered by a felt blanket and a

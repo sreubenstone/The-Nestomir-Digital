@@ -61,8 +61,8 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}He threw his body out of the car, smashed into the Earth, and rolled over on the pavement a few times.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Holy moly</Text>. As the truck accelerated, he saw the barn ignite. Dendro had commenced his plan. Jake wrapped his arms around his knees and tried to calm himself. The goal was to distract
-          at least a few of the Venthum troopers in the battalion with the burning barn. The truck’s heat signature was designed to confuse the Venthum team, so that the troopers would run away from the burning structure, back onto the street, to
-          examine the oncoming threat. This created a ripe time for Dendro to strike.{"\n"}
+          at least a few of the <GlossaryWord lookup_string="Venthum" word="Venthum" toggleGlossary={this.props.toggleGlossary} /> troopers in the battalion with the burning barn. The truck’s heat signature was designed to confuse the Venthum team,
+          so that the troopers would run away from the burning structure, back onto the street, to examine the oncoming threat. This created a ripe time for Dendro to strike.{"\n"}
           {"\n"}Jake watched the car maintain a nearly perfect line towards its target. Just as Dendro had anticipated, two battle-plated figures ran from the barn perimeter, to see what they sensed hurling down the street.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Holy smokes! This can’t be real.</Text> The alien soldiers shuffled into a practiced battle formation in the middle of the road, their laser aimed at the incoming target.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>They must be seven or eight feet tall!</Text> Jake thought<Text style={{ fontFamily: "gelasibro-italic" }}>.</Text> The creatures wore silver metal helmets on their heads, and to Jake’s
@@ -90,7 +90,8 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}“Where the heck is the mountain?!" Jake cried.{"\n"}
           {"\n"}“We’re nearly there!” Dendro shouted.{"\n"}
           {"\n"}Fifty feet ahead the forest opened, not far from the gate in the road that he had passed earlier. Jake spotted the main ski lodge two hundred feet ahead of him. Dendro sprinted towards it.{"\n"}
-          {"\n"}The warrior glanced at his glowing Lithium Radar as they sprinted up to the structure. “Get inside! Left hallway! Get somewhere cold!  Where they can’t track you. There’s a maintenance room, a refrigerator. Go!!”{"\n"}
+          {"\n"}The warrior glanced at his glowing <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} /> as they sprinted up to the structure. “Get inside! Left hallway! Get somewhere cold! 
+          Where they can’t track you. There’s a maintenance room, a refrigerator. Go!!”{"\n"}
           {"\n"}“Wait!” Jake screamed.{"\n"}
           {"\n"}“GET IN THERE! GO!” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Dendro yelled.{"\n"}
           {"\n"}Jake hustled up to the main door of the lodge, gasping for air, as Dendro sprinted down the path and around the building out of sight. <Text style={{ fontFamily: "gelasibro-italic" }}>I gotta hide</Text>.{" "}
@@ -246,9 +247,12 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}Dendro stood behind the trooper’s body gripping his bloody golden axe. He peered at Jake, sizing him up. “How did you do that, son?" Dendro asked incredulously. The patch of blood above his shoulder had grown larger. He appeared to be
           seriously wounded.{"\n"}
           {"\n"}Jake looked down at his axe, but the top edge was no longer pulsating. “I don’t know. I felt something. I saw marks. I don’t know… It wasn’t me.” The golden rays of dawn broke over the top of the forest trees.{"\n"}
-          {"\n"}Dendro stared at him. “I do not understand. I watched. To achieve <Text style={{ fontFamily: "gelasibro-italic" }}>foresight</Text>...that is not possible,” Dendro muttered. “Years of training are required. Even then, it is not
-          guaranteed. Took me a decade.” He looked to the ground as if he were thinking deeply. Then his yellow eyes locked onto Jake. “To be wisest is to admit we know nothing. Nothing at all. We’ll discuss this more later,” Dendro said, grimacing
-          as he felt his shoulder. “Let’s get out of here!”{"\n"}
+          {"\n"}Dendro stared at him. “I do not understand. I watched. To achieve{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Foresight" word="Foresight" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          ...that is not possible,” Dendro muttered. “Years of training are required. Even then, it is not guaranteed. Took me a decade.” He looked to the ground as if he were thinking deeply. Then his yellow eyes locked onto Jake. “To be wisest is
+          to admit we know nothing. Nothing at all. We’ll discuss this more later,” Dendro said, grimacing as he felt his shoulder. “Let’s get out of here!”{"\n"}
           {"\n"}"But can you fly with that wound?" Jake asked.{"\n"}
           {"\n"}"I will do what I can,” Dendro replied.{"\n"}
           {"\n"}They hustled down the forest road, passing the smoking truck which had lodged itself into a large tree. They soon reached the burnt barn facility, passing by the dead aliens lying face down on the ground, and headed to the ship.{"\n"}

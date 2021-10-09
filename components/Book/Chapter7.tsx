@@ -120,7 +120,8 @@ export default class Chapter7 extends Component<IProps> {
           and hitting the earth, safely.{"\n"}
           {"\n"}Jake studied his surroundings. It was eerie being in an abandoned location like this, a place where so many people used to visit but was now utterly desolate.{"\n"}
           {"\n"}They headed for the barn-looking facility twenty feet away. One of its tall side doors was partially open. When he stepped inside it was pitch black, and he groaned, "It smells awful."{"\n"}
-          {"\n"}“This? This is nothing. I once slept with a family of Zengagi Water Elephants on Limora for two weeks on a mission gone awry. Don’t complain," Dendro said in the darkness.{"\n"}
+          {"\n"}“This? This is nothing. I once slept with a family of Zengagi Water Elephants on <GlossaryWord lookup_string="Limora" word="Limora" toggleGlossary={this.props.toggleGlossary} /> for two weeks on a mission gone awry. Don’t complain,"
+          Dendro said in the darkness.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>What the heck is a Zengagi water elephant?</Text> Jake thought. A few moments later he heard Dendro place the Radium box on the ground and walk back out of the side door.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Where is he going?</Text> He heard Dendro walk back inside half a minute later, then heard jostling of something on the ground. A small fire ignited, lighting the room with its orange glow.
@@ -203,42 +204,49 @@ export default class Chapter7 extends Component<IProps> {
           responded. “But please promise me once we get word back to your base, you’ll take me home.”{"\n"}
           {"\n"}“I promise you, kid,” Dendro replied, nodding solemnly.{"\n"}
           {"\n"}“Alright,” Jake responded, “so, what am I learning? I already understand variables.”{"\n"}
-          {"\n"}“There is much, much, more to this thing we call code. This lesson I'd like to commence is called Basic Control flow in Python.”{"\n"}
+          {"\n"}“There is much, much, more to this thing we call code. This lesson I'd like to commence is called Basic <GlossaryWord lookup_string="Controlflow" word="Control Flow" toggleGlossary={this.props.toggleGlossary} /> in Python.”{"\n"}
           {"\n"}“Control flow in Python?” Jake repeated.{"\n"}
           {"\n"}“Control flow allows us to grant the power of decision making to our programs. Oftentimes when we code, we have the need to give our program the ability to make a choice. This is where control flow comes in. It grants us the power to
           give our Python programs the ability to make decisions.”{"\n"}
           {"\n"}“Why would our program need to make a decision?”{"\n"}
           {"\n"}“Almost all useful programs need the ability to make choices. For example, think of the code that operates a vending machine. When a user selects a drink, the program must choose which drink to dispense based on which drink was
-          chosen. If the user selects Drink A, then the software must tell the machine to dispense Drink A, but if the user selects Drink B, then the software must tell the machine to dispense Drink B. You wouldn't want to get the wrong drink, would
-          you? Many choices in computer programs take the form of: if this, then that.”{"\n"}
+          chosen. If the user selects Drink A, then the <GlossaryWord lookup_string="Software" word="software" toggleGlossary={this.props.toggleGlossary} /> must tell the machine to dispense Drink A, but if the user selects Drink B, then the software
+          must tell the machine to dispense Drink B. You wouldn't want to get the wrong drink, would you? Many choices in computer programs take the form of: if this, then that.”{"\n"}
           {"\n"}“That makes sense, I just never imagined it as a decision though. I guess it is, in a way…the program is making a decision <Text style={{ fontFamily: "gelasibro-italic" }}>based</Text> on the user’s decision, or input,” Jake said.” He
           thought of Nassir's robot turning right and left on the grass at Allen Park as the gizmo took commands from the RC controller.{"\n"}
           {"\n"}“Then how do you implement decisions in Python?” Jake asked, eagerly.{"\n"}
           {"\n"}“We use something called an <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>,”said Dendro. “An if statement is called a conditional statement.{"\n"}
           {"\n"}“A <Text style={{ fontFamily: "gelasibro-italic" }}>what</Text>?” Jake asked.{"\n"}
-          {"\n"}“A conditional <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>. It is a block of code that only fires if a certain <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text> is True.” Dendro opened his
-          laptop and pulled up his purple code editor application. He pulled up a file named <Text style={{ fontFamily: "gelasibro-italic" }}>practice.py</Text> and began typing.{"\n"}
+          {"\n"}“A conditional <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>. It is a block of code that only fires if a certain{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Expression" word="expression" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          is True.” Dendro opened his laptop and pulled up his purple code editor application. He pulled up a file named <Text style={{ fontFamily: "gelasibro-italic" }}>practice.py</Text> and began typing.{"\n"}
           {"\n"}“So, there is something actually called an <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>, but what is an <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text>?”{"\n"}
           {"\n"}“You have a keen mind to spot the concepts you are not familiar with yet. You should be proud of that–there is great potential in you as a pupil,” Dendro uttered. “Understanding the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text> is both critical to life and to this lesson. Allow me to explain briefly as we do not have much time. An <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text>{" "}
           is a piece of code, that when computed, ends up simplified to only one single value.” Dendro typed something into the application. “When I say computed, I mean finding the result of a mathematical operation.”{"\n"}
-          {"\n"}“Here, take a look. The <Text style={{ color: "#0C2443", fontFamily: "code" }}>3 + 3</Text> you see written in our editor here is an example of an expression in code. This is because it simplifies to 6, a singular value,” explained
-          Dendro.{"\n"}
+          {"\n"}“Here, take a look. The <Text style={{ color: "#0C2443", fontFamily: "code" }}>3 + 3</Text> you see written in our editor here is an example of an{" "}
+          <GlossaryWord lookup_string="Expression" word="expression" toggleGlossary={this.props.toggleGlossary} /> in code. This is because it simplifies to 6, a singular value,” explained Dendro.{"\n"}
           {"\n"}Jake looked at the screen. “Ok, I see. You just added the numbers.”{"\n"}
           {"\n"}“Yes, in programming, math <Text style={{ fontFamily: "gelasibro-italic" }}>and</Text> logic are interconnected,” Dendro replied.{"\n"}
           {"\n"}“So then 9 + 10 + 11 + 100 would also be an expression?” Jake inquired.{"\n"}
           {"\n"}“Yes, it evaluates to <Text style={{ fontFamily: "gelasibro-italic" }}>one</Text> value, 130,” Dendro responded.{"\n"}
           {"\n"}“An expression doesn’t seem <Text style={{ fontFamily: "gelasibro-italic" }}>that</Text> hard to understand,” Jake said.{"\n"}
           {"\n"}“It's not. <Text style={{ fontFamily: "gelasibro-italic" }}>Nothing</Text> really is. It's just a matter of having the right teacher,” Dendro replied, with a smile.{"\n"}
-          {"\n"}Dendro pointed to the laptop screen. “The counterpart to the expression, is the <Text style={{ fontFamily: "gelasibro-italic" }}>statement</Text>.” Dendro deleted the previous line and began typing in something different. “A{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>statement</Text> is a piece of code that <Text style={{ fontFamily: "gelasibro-italic" }}>directs</Text> something. It represents an action or a command to be carried out. A statement does
-          not evaluate to a singular value. For example, looking at our screen here, <Text style={{ color: "#0C2443", fontFamily: "code" }}>cat = 4</Text> is a statement. It is a command telling the computer to set the value of a variable named{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>cat</Text> to the number four, however <Text style={{ fontFamily: "gelasibro-italic" }}>it does not</Text> simplify down to a singular value. All, and I mean{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>all</Text> of code, is a combination of just expressions and statements,” Dendro said.{"\n"}
+          {"\n"}Dendro pointed to the laptop screen. “The counterpart to the expression, is the{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Statement" word="statement" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          .” Dendro deleted the previous line and began typing in something different. “A <Text style={{ fontFamily: "gelasibro-italic" }}>statement</Text> is a piece of code that <Text style={{ fontFamily: "gelasibro-italic" }}>directs</Text>{" "}
+          something. It represents an action or a command to be carried out. A statement does not evaluate to a singular value. For example, looking at our screen here, <Text style={{ color: "#0C2443", fontFamily: "code" }}>cat = 4</Text> is a
+          statement. It is a command telling the computer to set the value of a variable named <Text style={{ color: "#0C2443", fontFamily: "code" }}>cat</Text> to the number four, however{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>it does not</Text> simplify down to a singular value. All, and I mean <Text style={{ fontFamily: "gelasibro-italic" }}>all</Text> of code, is a combination of just expressions and
+          statements,” Dendro said.{"\n"}
           {"\n"}Jake thought for a moment. “So I know everything now?” Jake said, kidding. He felt the urge to discuss this with Nassir.{"\n"}
           {"\n"}Dendro chuckled. “Not quite. But all masters are masters of the fundamentals of their field. The spiritual leaders teach us this in the Forces,” Dendro said. “But you are moving in the right direction. One very important thing is that
-          although expressions can simplify down to a single number, they can also evaluate down to other singular things, like a boolean value of <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text> or{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text>.”{"\n"}
+          although expressions can simplify down to a single number, they can also evaluate down to other singular things, like a <GlossaryWord lookup_string="Boolean" word="boolean" toggleGlossary={this.props.toggleGlossary} /> value of{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text> or <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text>.”{"\n"}
           {"\n"}Jake looked at him, puzzled.{"\n"}
           {"\n"}“Look here.” Dendro deleted the previous code and wrote a new line on the screen.
         </Text>
@@ -252,13 +260,14 @@ export default class Chapter7 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           Jake squinted. “What is that double equals sign?”{"\n"}
-          {"\n"}“The double equals sign <Text style={{ color: "#0C2443", fontFamily: "code" }}>==</Text> is what we call a <Text style={{ fontFamily: "gelasibro-italic" }}>comparison operator</Text>. It compares two values against each other and then
-          spits out a singular <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text> or <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text> value. The double equals sign in Python is called the{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>equality operator</Text>. It determines if two values are equivalent. The less than <Text style={{ color: "#0C2443", fontFamily: "code" }}>{"<"}</Text> and greater than{" "}
+          {"\n"}“The double equals sign <Text style={{ color: "#0C2443", fontFamily: "code" }}>==</Text> is what we call a <GlossaryWord lookup_string="Comparisonoperator" word="comparison operator" toggleGlossary={this.props.toggleGlossary} />. It
+          compares two values against each other and then spits out a singular <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text> or <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text> value. The double equals sign in
+          Python is called the <Text style={{ fontFamily: "gelasibro-italic" }}>equality operator</Text>. It determines if two values are equivalent. The less than <Text style={{ color: "#0C2443", fontFamily: "code" }}>{"<"}</Text> and greater than{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>{">"}</Text> characters are also comparison operators,” Dendro said.{"\n"}
           {"\n"}“So these symbols are like math,” Jake replied.{"\n"}
-          {"\n"}“Yes. Now look here closely again. Based on what I just said, what do you think this code, this <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text>, simplifies down to?” Dendro said. “Remember, comparison operators,
-          like our double equals sign, compare two things, and then spit out a singular <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text> or <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text> value.
+          {"\n"}“Yes. Now look here closely again. Based on what I just said, what do you think this code, this <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text>, simplifies down to?” Dendro said. “Remember,{" "}
+          <GlossaryWord lookup_string="Comparisonoperator" word="comparison operators" toggleGlossary={this.props.toggleGlossary} />, like our double equals sign, compare two things, and then spit out a singular{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text> or <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text> value.
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson3_1.png")} />
@@ -291,8 +300,9 @@ export default class Chapter7 extends Component<IProps> {
           “Yes. This example here is a bit silly, as two will always equal two, but it demonstrates how the if statement works. Any code we place in the <Text style={{ fontFamily: "gelasibro-italic" }}>if statement code block</Text>, which is{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>indented</Text> below in Python, will run because <Text style={{ color: "#0C2443", fontFamily: "code" }}>2 == 2</Text> always simplifies down to{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>. So no matter what code we put in the if statement code block, in this scenario, it will always run. We can use a{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>#</Text> sign to leave a comment in our code—this is a text-based comment that is ignored by Python. It's used to allow for coders to take notes within their code. Leaving these
-          comments regularly in our code, or documenting what each step in our program does, is one of the most important things we can do as coders,” Dendro said.{"\n"}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>#</Text> sign to leave a <GlossaryWord lookup_string="Codecomment" word="comment" toggleGlossary={this.props.toggleGlossary} /> in our code—this is a text-based comment that is ignored
+          by Python. It's used to allow for coders to take notes within their code. Leaving these comments regularly in our code, or <GlossaryWord lookup_string="Documentation" word="documenting" toggleGlossary={this.props.toggleGlossary} /> what
+          each step in our program does, is one of the most important things we can do as coders,” Dendro said.{"\n"}
           {"\n"}Jake thought for a moment as he peered at lines one and two. “I think I get it. You’re showing how the if-statement works. The statement on line one evaluates to <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>, so
           whatever code goes indented below it will fire. And comments seem useful. I think I understand,” Jake said. “It’s pretty simple. If the expression is <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>, the code in the
           indented block runs. If it's <Text style={{ color: "#0C2443", fontFamily: "code" }}>False</Text>, it does not run.”{"\n"}
@@ -313,9 +323,12 @@ export default class Chapter7 extends Component<IProps> {
         <Text style={BookStyles.bookFont}>
           “What is <Text style={{ fontFamily: "gelasibro-italic" }}>print</Text>?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake asked, confused.{"\n"}
           {"\n"}Dendro pointed to line two. “This <Text style={{ color: "#0C2443", fontFamily: "code" }}>print()</Text> command is a tool that the Python creator made to let us see the results of our Python code more easily.{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>Print()</Text> is a function that displays selected pieces of our program on our screen. You have not received formal training in functions yet, but for now know that functions are
-          prewritten commands that we can store and trigger whenever we want. Anytime we want to display a message or display the value of something like a variable to our screen, we can use{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>print()</Text>. It is extremely useful when we want to understand what's happening inside of our code. See here.”
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>
+            <GlossaryWord lookup_string="Print" word="Print()" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          is a function that displays selected pieces of our program on our screen. You have not received formal training in functions yet, but for now know that functions are prewritten commands that we can store and trigger whenever we want.
+          Anytime we want to display a message or display the value of something like a variable to our screen, we can use <Text style={{ color: "#0C2443", fontFamily: "code" }}>print()</Text>. It is extremely useful when we want to understand what's
+          happening inside of our code. See here.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson3_4.png")} />
@@ -342,14 +355,16 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“That's cool. So on line two print would display the value of the variable cat,” Jake said.{"\n"}
           {"\n"}“Yes. As our programs get larger, and more steps are involved, printing allows us to trace through the results of each individual step in our code. This is essential, because as we begin to learn coding, we have the tendency to write
           all of the coding steps necessary to solve a problem before we test any of the individual lines. We must print the results of each step to see if each line is working as intended. We all learn the hard way that not printing out the results
-          of each step to our screen is usually an awful way to do things. It is much more effective to ensure that the first step and second step in our program crunch data as intended before we write steps three through ten. Print allows us to see
-          how information moves through the program, and it allows us to see visually if things are working properly,” Dendro said.{"\n"}
+          of each step to our screen is usually an awful way to do things. It is much more effective to ensure that the first step and second step in our program crunch{" "}
+          <GlossaryWord lookup_string="Data" word="data" toggleGlossary={this.props.toggleGlossary} /> as intended before we write steps three through ten. Print allows us to see how information moves through the program, and it allows us to see
+          visually if things are working properly,” Dendro said.{"\n"}
           {"\n"}“It’s kind of like being more diligent with your work? My mom is always telling me that,” said Jake.{"\n"}
           {"\n"}“You could look at it like that. Programming is a lot like plumbing. We are moving information through a series of unique steps, and oftentimes, each step modifies the information we are working with. We have to make sure the
           information is in the right form before we pass it to the next step in our process. This is the power of <Text style={{ color: "#0C2443", fontFamily: "code" }}>print()</Text>. We can visualize what our information looks like after each
           step. Take a look at this.” Dendro punched some keys on the keyboard and a small window popped up on the bottom of the code editor. It had a blinking cursor next to the left margin.{"\n"}
           {"\n"}“What's that thing?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake asked<Text style={{ fontFamily: "gelasibro-italic" }}>. “</Text>That looks more matrixy.”{"\n"}
-          {"\n"}“This is our computer's Terminal,” Dendro said.{"\n"}
+          {"\n"}“This is our computer's <GlossaryWord lookup_string="Terminal" word="Terminal" toggleGlossary={this.props.toggleGlossary} />
+          ,” Dendro said.{"\n"}
           {"\n"}Jake looked at him wide-eyed.{"\n"}
           {"\n"}“Don't be intimidated by it. You can even customize the colors.” Dendro stuck his tongue out. “It is a graphical interface programmers can use to talk more intimately with our computer, and for our computer to talk to us. It’s where
           we as coders tell Python to run our program, when we’re ready.”{"\n"}
@@ -366,7 +381,8 @@ export default class Chapter7 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           “Watch what happens when I officially run our Python file, <Text style={{ fontFamily: "gelasibro-italic" }}>practice.py</Text>, on our computer. Keep your eye on the terminal window.”{"\n"}
-          {"\n"}Jake watched as Dendro's thick fingers typed <Text style={{ color: "#0C2443", fontFamily: "code" }}>python3 practice.py</Text> next to the cursor blinking on the terminal before he hit the enter key.
+          {"\n"}Jake watched as Dendro's thick fingers typed <Text style={{ color: "#0C2443", fontFamily: "code" }}>python3 practice.py</Text> next to the cursor blinking on the{" "}
+          <GlossaryWord lookup_string="Terminal" word="terminal" toggleGlossary={this.props.toggleGlossary} /> before he hit the enter key.
         </Text>
 
         <View style={GlobalStyles.flexCenter}>
@@ -374,7 +390,8 @@ export default class Chapter7 extends Component<IProps> {
         </View>
         <Caption>
           The terminal is where we tell the Python program (the fancy term is "Python interpreter") to process our Python file. Most code editors allow us to access the terminal from within the editor. Recognize the terminal is a seperate program
-          that speaks to the innards of the computer. When we run our Python code from the terminal - what we're saying is "operating system...please use the python program to process this file."
+          that speaks to the innards of the computer. When we run our Python code from the terminal - what we're saying is "<GlossaryWord lookup_string="Operatingsystem" word="operating system" toggleGlossary={this.props.toggleGlossary} />
+          ...please use the python program to process this file."
         </Caption>
 
         <Text style={BookStyles.bookFont}>
@@ -391,7 +408,7 @@ export default class Chapter7 extends Component<IProps> {
 
         <Text style={BookStyles.bookFont}>
           {"\n"}Jake looked at the if-statement then back at the message. “The if-statement's code block fired because the if statement's expression is true, <Text style={{ color: "#0C2443", fontFamily: "code" }}>2 == 2</Text>!” Jake blurted out.
-          “That's so cool when you actually see it. So the terminal is where the print function displays its output?”{"\n"}
+          “That's so cool when you actually see it. So the <GlossaryWord lookup_string="Terminal" word="terminal" toggleGlossary={this.props.toggleGlossary} /> is where the print function displays its output?”{"\n"}
           {"\n"}“Precisely,” Dendro replied. “Now I will make a small modification.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -451,13 +468,14 @@ export default class Chapter7 extends Component<IProps> {
           and if the windspeed is over 100 kilometers per hour, the flaps will turn on. You see, digging deeper into this topic was not so bad, was it? I remember a spiritual teacher of ours once said,{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>‘There are many layers to things. As we peel back the onion, we become wiser, and when we learn, there should never be a reason to fear the unlayering of these new elements.</Text>’”{"\n"}
           {"\n"}“That’s a good saying,” Jake agreed.{"\n"}
-          {"\n"}“You now have a general understanding of Python conditionals. There are smaller tidbits of information you will learn later, like the <Text style={{ color: "#0C2443", fontFamily: "code" }}>else</Text> statement, which is really just a
-          fancier way to write another if statement, but this is a good start,” Dendro said encouragingly.{"\n"}
+          {"\n"}“You now have a general understanding of Python conditionals. There are smaller tidbits of information you will learn later, like the <Text style={{ color: "#0C2443", fontFamily: "code" }}>else</Text>{" "}
+          <GlossaryWord lookup_string="Elsestatement" word="statement" toggleGlossary={this.props.toggleGlossary} />, which is really just a fancier way to write another if statement, but this is a good start,” Dendro said encouragingly.{"\n"}
           {"\n"}Jake was excited about his newfound knowledge. He then felt an intense heat wave, a burning sensation, pulsate through his body. He pushed himself back in alarm before he remembered.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Ah.</Text> He rolled up his sleeve. A marking that looked like an upside down <Text style={{ fontFamily: "gelasibro-italic" }}>7</Text> was imprinted just a centimeter from the first marking.
           He ran his fingers over the mark. It was a tattoo, but deeper. Like a branding. <Text style={{ fontFamily: "gelasibro-italic" }}>My mom’s gonna kill me.</Text>
           {"\n"}
-          {"\n"}“You now have been granted the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, or Weapon’s harnessing in the common tongue,” Dendro uttered.{"\n"}
+          {"\n"}“You now have been granted the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, or <GlossaryWord lookup_string="Weaponsharnessing" word="Weapon's Harnessing" toggleGlossary={this.props.toggleGlossary} /> in the
+          common tongue,” Dendro uttered.{"\n"}
           {"\n"}“That’s cool,” Jake said as he looked at the marking. <Text style={{ fontFamily: "gelasibro-italic" }}>Maybe I am my father’s son</Text>. “But when do I get to use it?” He was still skeptical of his new powers, even if he had been
           impressed when he saw Dendro harness them.{"\n"}
           {"\n"}“Hopefully never.” Dendro winked at him. “But the learning shall stay with you.”{"\n"}
@@ -504,8 +522,9 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“That <Text style={{ fontFamily: "gelasibro-italic" }}>freaking</Text> guy!” Dendro shot up and put his hands on his hips. He shook his head. “He has the nerve to hang up.” Dendro tapped his arm-screen and appeared to call the number
           back, but there was no answer.{"\n"}
           {"\n"}“Who is Zimmer?” Jake asked.{"\n"}
-          {"\n"}“Zimmer Rexus. He’s an old friend. We served in the Solar Forces together, until he left suddenly.” Dendro began to pace around the room. “He brought me here? How is that possible? Did he find me in the belt? But how could he have
-          known?” Dendro paced nervously around the fire-lit room. “We have no choice. We must leave now for Casablanca. If the communication lines are down, then we are in more danger than I realized. And you are coming with me, kid.”{"\n"}
+          {"\n"}“Zimmer Rexus. He’s an old friend. We served in the <GlossaryWord lookup_string="Thesolarforces" word="Solar Forces" toggleGlossary={this.props.toggleGlossary} /> together, until he left suddenly.” Dendro began to pace around the
+          room. “He brought me here? How is that possible? Did he find me in the belt? But how could he have known?” Dendro paced nervously around the fire-lit room. “We have no choice. We must leave now for Casablanca. If the communication lines are
+          down, then we are in more danger than I realized. And you are coming with me, kid.”{"\n"}
           {"\n"}“You’re not serious? Casablanca? Isn't that on the other side of the world?” Jake asked. “My family doesn’t even know where I am. I have to get home.”{"\n"}
           {"\n"}“It is too dangerous right now,” Dendro said.{"\n"}
           {"\n"}

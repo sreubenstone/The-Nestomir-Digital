@@ -75,9 +75,10 @@ export default class Chapter9 extends Component<IProps> {
           You saved us. And I never in a million years thought I’d be saying that,” Dendro responded.{"\n"}
           {"\n"}Jake thought for a moment. It was true, without his intervening, they would both most certainly be dead. He thought about the tall, ghostly troopers and their glowing long-blades… the backward curving legs.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Yuck.</Text> Even though he practically killed one himself, the thought of them still made him shiver. “Those fighters… those were Venthum soldiers?”{"\n"}
-          {"\n"}“Affirmative. Multiple races fight in the Venthum Space Legions, just as multiple races fight for the Republic of Naronia, in the Solar Forces. Skruzden Warriors tend to make up the Venthum search and destroy battalions. The Skruzden
-          are an ancient race, native to the planet of Venthe,” Dendro explained. “They are a species governed and controlled by the Ring of Vernost, the ruling political body on Venthe. They are also the only other race indigenous to Venthe besides
-          the Native Venthum. Those were Skruzden warriors on the rink.”{"\n"}
+          {"\n"}“Affirmative. Multiple races fight in the <GlossaryWord lookup_string="Venthumspacelegions" word="Venthum Space Legions" toggleGlossary={this.props.toggleGlossary} />, just as multiple races fight for the Republic of Naronia, in the
+          Solar Forces. <GlossaryWord lookup_string="Skruzdenwarriors" word="Skruzden Warriors" toggleGlossary={this.props.toggleGlossary} /> tend to make up the Venthum search and destroy battalions. The Skruzden are an ancient race, native to the
+          planet of Venthe,” Dendro explained. “They are a species governed and controlled by the Ring of Vernost, the ruling political body on Venthe. They are also the only other race indigenous to Venthe besides the Native Venthum. Those were
+          Skruzden warriors on the rink.”{"\n"}
           {"\n"}It was hard to fathom. Sinister creatures from another world with complex histories, joining up to fight the good in their galaxy. And he nearly took one down on his own? As they continued to fly in silence, he played the fight
           sequence over and over again in his head. <Text style={{ fontFamily: "gelasibro-italic" }}>Had that really been him</Text>?{"\n"}
           {"\n"}As they soared over the Atlantic, Dendro peered curiously at a colorful graphic on the screen in front of him. Jake couldn't quite make out the image. The graphic looked to be made up of thinly spaced lines that formed a complex
@@ -103,16 +104,31 @@ export default class Chapter9 extends Component<IProps> {
           Nestomir’s internet developed a similarly shaped software ecosystem independent of one another. Our spiritual leaders believe this open source phenomena to be a natural evolution that takes place at some point in the history of all living
           things.”{"\n"}
           {"\n"}Dendro toggled something on the console. “And what is remarkable is that we can download these shared collections of code into our projects. These publicly available segments of code, which we call{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>libraries</Text>, or sometimes <Text style={{ fontFamily: "gelasibro-italic" }}>modules</Text>, help us do all sorts of incredible things with our projects including granting us the power to
-          create art, develop artificial intelligence, and synthesize music, as well as many other incredible things.” Dendro patted down his man bun gently. “Nira’s first year-seven project is focused on getting the student to understand a library
-          of their choosing, and then asks them to employ it successfully,” Dendro said. “In Nira’s case, she has chosen to use an open source Python library called <Text style={{ fontFamily: "gelasibro-italic" }}>XRabbit</Text>, similar to Earth’s
-          Python art library, <Text style={{ fontFamily: "gelasibro-italic" }}>Turtle</Text>, to help her create art. This library provides her with a bunch of tools that make it easy for her to draw complex shapes with Python.”{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>libraries</Text>, or sometimes{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Modules" word="modules" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          , help us do all sorts of incredible things with our projects including granting us the power to create art, develop artificial intelligence, and synthesize music, as well as many other incredible things.” Dendro patted down his man bun
+          gently. “Nira’s first year-seven project is focused on getting the student to understand a <GlossaryWord lookup_string="Library" word="library" toggleGlossary={this.props.toggleGlossary} />
+          of their choosing, and then asks them to employ it successfully,” Dendro said. “In Nira’s case, she has chosen to use an open source Python <GlossaryWord
+            lookup_string="Library"
+            word="library"
+            toggleGlossary={this.props.toggleGlossary}
+          />{" "}
+          called <Text style={{ fontFamily: "gelasibro-italic" }}>XRabbit</Text>, similar to Earth’s Python art library,{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Turtle" word="Turtle" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          , to help her create art. This library provides her with a bunch of tools that make it easy for her to draw complex shapes with Python.”{"\n"}
           {"\n"}“Hmm, that is interesting. I've heard Nassir mention the term <Text style={{ fontFamily: "gelasibro-italic" }}>library</Text> before when he was talking about his robotics project, but I had no idea what it meant,” Jake replied. “So{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>that’s</Text> what it is—a shared collection of code?”{"\n"}
           {"\n"}“A library is a segment of code uploaded to the internet by another programmer that any other coder can use, and most of the time, in both of our galaxies, programmers share these segments of code online for free.” Dendro pulled up
           another screen and began typing something into the keyboard. “First and foremost, libraries prevent us from spending time trying to solve a problem that someone else has already solved. Need to construct a graph in Python? You can download
           the Earth-based library named <Text style={{ fontFamily: "gelasibro-italic" }}>MatPlotLib</Text>. Want to start building a new video game? Then get a head start by downloading the Earth-based{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>PyGame</Text>. There are over 337,000 Python libraries in existence across both of our galaxies and it grows every day,” Dendro said.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Pygame" word="PyGame" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . There are over 337,000 Python libraries in existence across both of our galaxies and it grows every day,” Dendro said.{"\n"}
           {"\n"}“How do you know so much about Earth?” Jake asked.{"\n"}
           {"\n"}“Because your system is well known in Naronia for its enthusiastic adoption of code.  Earth’s history is taught in many of our social studies courses,” Dendro said.{"\n"}
           {"\n"}“That's radical...your society...knows about Earth's development,” Jake responded. “There’s one thing I don't understand,” Jake said. “Why would anyone upload their code for free?”{"\n"}
@@ -130,19 +146,25 @@ export default class Chapter9 extends Component<IProps> {
           {"\n"}“Yes. I should note Python actually provides us with a powerful set of <Text style={{ fontFamily: "gelasibro-italic" }}>built-in</Text> libraries. These <Text style={{ fontFamily: "gelasibro-italic" }}>built-in</Text> libraries are
           considered to be a part of the ecosystem, but they don't have to be explicitly downloaded into our projects. For example, there is a <Text style={{ fontFamily: "gelasibro-italic" }}>built-in</Text> Python library called{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Datetime</Text> which helps us do things more easily with dates like convert a timestamp across time zones. There is another <Text style={{ fontFamily: "gelasibro-italic" }}>built-in</Text>{" "}
-          Python library called <Text style={{ fontFamily: "gelasibro-italic" }}>Math</Text> which helps us expand our ability to perform math within our code like getting the factorial of a number,” Dendro said.{"\n"}
+          Python library called{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Math" word="Math" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          which helps us expand our ability to perform math within our code like getting the factorial of a number,” Dendro said.{"\n"}
           {"\n"}“So, we don't always have to worry about downloading stuff?” Jake asked.{"\n"}
           {"\n"}“No, we do not,” Dendro replied. He swiveled the monitor over to Jake. Inside of the application, a page loaded that appeared to be some kind of wiki. Dendro scrolled down a little further. “Here is the homepage for Earth's version of
           the library my niece used to create her school art project. As I mentioned, it's called <Text style={{ fontFamily: "gelasibro-italic" }}>Turtle Graphics</Text>—it's a Python art library.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Turtle</Text> is a <Text style={{ fontFamily: "gelasibro-italic" }}>built-in</Text> Python library that enables us to create art with code. This wiki page we're looking at here is what
-          coder's call <Text style={{ fontFamily: "gelasibro-italic" }}>documentation</Text>. Documentation is essentially an instruction manual that the creator of a library publishes to the internet to show other coders how to use their code
-          properly.”{"\n"}
+          coder's call <Text style={{ fontFamily: "gelasibro-italic" }}>documentation</Text>. <GlossaryWord lookup_string="Documentation" word="Documentation" toggleGlossary={this.props.toggleGlossary} /> is essentially an instruction manual that the
+          creator of a library publishes to the internet to show other coders how to use their code properly.”{"\n"}
           {"\n"}“That seems useful. Instructions for a library make sense. But does this <Text style={{ fontFamily: "gelasibro-italic" }}>documentation</Text> show you how to <Text style={{ fontFamily: "gelasibro-italic" }}>actually</Text> create art
           with this library?” Jake asked.{"\n"}
-          {"\n"}“Yes, that is what the documentation is for. It walks you through how you can accomplish those things with the code it provides you. We don’t have time to read through this documentation right now, but you would see in the
-          documentation it showing us somewhere in the beginning of the instructions to use something called an{" "}
+          {"\n"}“Yes, that is what the documentation is for. It walks you through how you can accomplish those things with the code it provides you. We don’t have time to read through this{" "}
+          <GlossaryWord lookup_string="Documentation" word="documentation" toggleGlossary={this.props.toggleGlossary} /> right now, but you would see in the documentation it showing us somewhere in the beginning of the instructions to use something
+          called an{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>
-            <Text style={{ fontFamily: "gelasibro-italic" }}></Text>import
+            <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
+            <GlossaryWord lookup_string="Importstatement" word="import" toggleGlossary={this.props.toggleGlossary} />
           </Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text> statement. Jake looked away to think for a moment, then his eyes went back to the screen.{"\n"}
           {"\n"}“In Python, when we want to use a library, a module, in our program, we must use an{" "}
@@ -169,9 +191,16 @@ export default class Chapter9 extends Component<IProps> {
           {"\n"}Dendro cleared his throat. “Python is known for its extraordinary ecosystem. It has libraries that stretch across a wide variety of industries including science, music, medicine, math, writing, you name it.”{"\n"}
           {"\n"}“What libraries do you use?” Jake asked.{"\n"}
           {"\n"}“Well, kid, I've used quite a few in my day. I’ll refer to the Earth’s version of these libraries when I speak with you. One of my favorite Python libraries is called{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>BeautifulSoup</Text>. It is a library I can use to help me mine data from public websites on the internet. Another fascinating library that I employ to work with our ship's data, which I
-          mentioned before, is called <Text style={{ fontFamily: "gelasibro-italic" }}>MatplotLib</Text>. This library helps me create sophisticated graphs and charts with data. I've also been meaning to learn{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>TensorFlow</Text>, which helps me with building artificial intelligence. An ocean of libraries exists in both of our worlds, one just has to explore. And it's all free,” Dendro said.{"\n"}
+          <GlossaryWord lookup_string="Beautifulsoup" word="Beautiful Soup" toggleGlossary={this.props.toggleGlossary} />. It is a library I can use to help me mine data from public websites on the internet. Another fascinating library that I employ
+          to work with our ship's data, which I mentioned before, is called{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Matplotlib" word="Matplotlib" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . This library helps me create sophisticated graphs and charts with data. I've also been meaning to learn{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Tensorflow" word="Tensorflow" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          , which helps me with building artificial intelligence. An ocean of libraries exists in both of our worlds, one just has to explore. And it's all free,” Dendro said.{"\n"}
           {"\n"}Jake's eyebrows furrowed. He should have listened to Nassir more on their bus rides to school, but he had been too busy thinking about fantasy football. He imagined having the power to integrate these libraries into something he was
           building. He thought about using it for his speaker project.{"\n"}
           {"\n"}
@@ -180,11 +209,13 @@ export default class Chapter9 extends Component<IProps> {
           {"\n"}“How easily can you bring someone else's library into your own project. Like one that isn't <Text style={{ fontFamily: "gelasibro-italic" }}>built in</Text>?” Jake asked.{"\n"}
           {"\n"}“PIP,” Dendro said.{"\n"}
           {"\n"}“PIP?” Jake asked.{"\n"}
-          {"\n"}“Affirmative. PIP is a separate program that allows coders to easily install open-source libraries into their Python projects. In fact, it only takes a simple command to install a new library into your project. It's so easy to
-          download a library, it feels like magic.” Dendro scratched his chin. “The PIP program interacts with something called the Python Package Index, also known as PyPI, which is a Wikipedia-like platform that stores almost all of the Python open
-          source libraries published on the internet. The PIP program is so heavily used amongst Python coders that it even comes included when you download Python onto your computer. Here, take a look at this.”{"\n"}
-          {"\n"}Dendro pulled up the terminal window again. He typed in <Text style={{ color: "#0C2443", fontFamily: "code" }}>pip install tensorflow</Text> and hit enter. A bunch of messages flashed across the terminal screen, and a white loading
-          bar slowly began to fill itself out. Then, the terminal window dropped another line and read: <Text style={{ color: "#0C2443", fontFamily: "code" }}>Successfully Installed tensorflow</Text>.{"\n"}
+          {"\n"}“Affirmative. <GlossaryWord lookup_string="Pip" word="PIP" toggleGlossary={this.props.toggleGlossary} /> is a separate program that allows coders to easily install open-source libraries into their Python projects. In fact, it only
+          takes a simple command to install a new library into your project. It's so easy to download a library, it feels like magic.” Dendro scratched his chin. “The PIP program interacts with something called the Python Package Index, also known as{" "}
+          <GlossaryWord lookup_string="Pypi" word="PyPi" toggleGlossary={this.props.toggleGlossary} />, which is a Wikipedia-like platform that stores almost all of the Python open source libraries published on the internet. The PIP program is so
+          heavily used amongst Python coders that it even comes included when you download Python onto your computer. Here, take a look at this.”{"\n"}
+          {"\n"}Dendro pulled up the <GlossaryWord lookup_string="Terminal" word="terminal" toggleGlossary={this.props.toggleGlossary} /> window again. He typed in <Text style={{ color: "#0C2443", fontFamily: "code" }}>pip install tensorflow</Text>{" "}
+          and hit enter. A bunch of messages flashed across the terminal screen, and a white loading bar slowly began to fill itself out. Then, the terminal window dropped another line and read:{" "}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>Successfully Installed tensorflow</Text>.{"\n"}
           {"\n"}“That's it. In seven point four seconds, we brought one of the most powerful artificial intelligence libraries on Earth with potentially millions of lines of code into our project. Like magic.”{"\n"}
           {"\n"}“<Text style={{ fontFamily: "gelasibro-italic" }}>Whoa</Text>. It did that <Text style={{ fontFamily: "gelasibro-italic" }}>that</Text> fast?” Jake’s eyes opened wide.{"\n"}
           {"\n"}“Yes. Remember, code is just text. So even if we are downloading millions of lines of code that took hundreds of thousands of hours for, say, the Earth company Google to build, it only takes a few seconds to install it into our
@@ -198,7 +229,11 @@ export default class Chapter9 extends Component<IProps> {
           playing field of life.”{"\n"}
           {"\n"}“Wow, I hadn’t thought about it that way,” Jake said.{"\n"}
           {"\n"}“Everything will be touched by open source, coder or not, so we must all be aware of its profound essence around us.” Dendro swiveled the keyboard tray towards Jake. “Here, the terminal window is open. I want you to install your first
-          library. Let's try <Text style={{ fontFamily: "gelasibro-italic" }}>SciPy</Text>. It enables our projects to perform many interesting tasks in the fields of mathematics and engineering. Try adding it to this project I have open.”{"\n"}
+          library. Let's try{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Scipy" word="SciPy" toggleGlossary={this.props.toggleGlossary} />
+          </Text>
+          . It enables our projects to perform many interesting tasks in the fields of mathematics and engineering. Try adding it to this project I have open.”{"\n"}
           {"\n"}“Me? Um, okay. That sounds cool,” Jake said. He studied the screen. “So, I just use that PIP command that you used before?”{"\n"}
           {"\n"}Dendro nodded.{"\n"}
           {"\n"}Jake looked at the terminal. It seemed simple enough. Dendro had just done it in front of him, and now he was tasked with connecting to a powerful ecosystem that he wasn't aware existed moments ago. He typed{" "}
@@ -329,7 +364,11 @@ export default class Chapter9 extends Component<IProps> {
           {"\n"}"Next time, leave a note,” Dendro said sternly. “I got you some food. It’s on the table. Eat up.” Jake noticed something bulging out of Dendro’s robe near his injured shoulder.{"\n"}
           {"\n"}“What is that?” Jake asked.{"\n"}
           {"\n"}“Got stitched up. Zimmer referred me to a trusted medic,” he said. “Should be nearly fully healed up in a few days. Thank goodness for Naronian medicine.” He walked over to the armchair next to the bed and sat down. He opened a
-          tattered book that he had picked up from the night table: <Text style={{ fontFamily: "gelasibro-italic" }}>The Philosophical Tenets of The Ld’Shab</Text> was written in gold across its front cover
+          tattered book that he had picked up from the night table:{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>
+            <GlossaryWord lookup_string="Thephilosophicaltenets" word="The Philosophical Tenets of The Ld'Shab" toggleGlossary={this.props.toggleGlossary} />
+          </Text>{" "}
+          was written in gold across its front cover
           <Text style={{ fontFamily: "gelasibro-italic" }}>.</Text>
           {"\n"}
           {"\n"}A plate of what looked like lamb stew was steaming on the table. <Text style={{ fontFamily: "gelasibro-italic" }}>That looks legit</Text>. Jake sat down and began to shovel it into his mouth. As he gobbled up the meat, Dendro flipped
