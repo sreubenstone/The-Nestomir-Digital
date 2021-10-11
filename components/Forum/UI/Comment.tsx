@@ -26,7 +26,7 @@ const TopCard = styled.View`
   border-top-right-radius: 5px;
   border-width: 0.5px;
   border-color: #d1d5da;
-  background-color: #f6f8fa;
+  background-color: #d7ebf5;
 `;
 
 const Comment: FC<IProps> = (props) => {

@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const SyntaxView = styled.View`
-  height: 63px;
+  height: 83px;
   margin-top: 5px;
   width: 100%;
 `;
@@ -74,16 +74,20 @@ const Presentational: FC<IProps> = ({ item, modal }) => {
         </View>
       )}
 
-      <SectionHeader>Suggested Earth Learnings</SectionHeader>
-      {item.suggested.map((sug) => {
-        return (
-          <TouchableOpacity onPress={() => openURL(sug.url)}>
-            <LineEl>
-              • <Link>{sug.title}</Link>
-            </LineEl>
-          </TouchableOpacity>
-        );
-      })}
+      {item.suggested && (
+        <View>
+          <SectionHeader>Suggested Earth Learnings</SectionHeader>
+          {item.suggested.map((sug) => {
+            return (
+              <TouchableOpacity onPress={() => openURL(sug.url)}>
+                <LineEl>
+                  • <Link>{sug.title}</Link>
+                </LineEl>
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+      )}
 
       {item.recommended && !modal && (
         <View>
