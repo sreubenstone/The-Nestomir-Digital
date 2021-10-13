@@ -79,7 +79,7 @@ export default class Login extends Component<IProps> {
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
-          <ImageBackground source={require("../../assets/images/dragon.png")} style={{ width: "100%", height: "100%" }} />
+          <ImageBackground source={require("../../assets/images/title.png")} style={{ width: "100%", height: "100%" }} />
         </View>
         <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
           <View style={ProgressStyles.container}>

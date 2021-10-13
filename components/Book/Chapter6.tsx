@@ -41,7 +41,7 @@ export default class Chapter6 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://cartoonize-online.com/gallery/cartoons/f/b/4/779234.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

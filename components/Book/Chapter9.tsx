@@ -41,7 +41,7 @@ export default class Chapter9 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://thumbs.dreamstime.com/b/hand-drawn-sketch-illustration-architecture-landmark-koutoubia-mosque-morocco-casablanca-hand-drawn-sketch-illustration-168519516.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

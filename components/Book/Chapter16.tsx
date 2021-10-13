@@ -41,7 +41,7 @@ export default class Chapter16 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://ih1.redbubble.net/image.889628986.9419/aps,504x498,small,transparent-pad,600x600,f8f8f8.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

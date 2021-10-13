@@ -40,7 +40,7 @@ export default class Chapter14 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `http://nehlibrary.org/wp-content/uploads/2013/05/stanley-coast-ink-drive-rock7-11.jpeg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

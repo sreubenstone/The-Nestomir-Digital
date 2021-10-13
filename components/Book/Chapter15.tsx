@@ -41,7 +41,7 @@ export default class Chapter15 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://cdna.artstation.com/p/assets/images/images/021/856/584/large/johannes-schiehsl-hangar-big.jpg?1573196125`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

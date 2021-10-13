@@ -24,7 +24,7 @@ export default class Chapter8 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://img2.pngio.com/battleaxe-png-3-png-image-battle-axe-drawing-png-1000_709.png`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

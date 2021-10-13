@@ -41,7 +41,7 @@ export default class Chapter11 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://paintingvalley.com/sketches/beach-scene-sketch-3.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

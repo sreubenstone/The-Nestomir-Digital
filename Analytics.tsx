@@ -7,6 +7,7 @@ interface IEvent {
 }
 
 function analytics(event_name: string, properties: IEvent) {
+  // READING BUDDY DATA BEING SENT HERE
   if (event_name === "chapter_open") {
     const reading_buddy_event = {
       user_id: properties.distinct_id,

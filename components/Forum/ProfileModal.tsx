@@ -1,7 +1,9 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
-import { Modal, Text, TouchableOpacity } from "react-native";
+import * as SecureStore from "expo-secure-store";
+import * as Updates from "expo-updates";
+import { Modal, TouchableOpacity } from "react-native";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import styled from "styled-components";
 
@@ -53,6 +55,14 @@ const ProfileModal: FC<IProps> = ({ profile_modal, navigation, toggleProfileModa
           }}
         >
           <Link>Report Issue or Feedback</Link>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={async () => {
+            await SecureStore.deleteItemAsync("jwt");
+            await Updates.reloadAsync();
+          }}
+        >
+          <Link style={{ marginTop: 25 }}>Log out</Link>
         </TouchableOpacity>
       </InnerContainer>
     </Modal>

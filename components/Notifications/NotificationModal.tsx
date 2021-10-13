@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_MY_NOTIFICATIONS } from "../../queries";
 import NotificationItem from "./UI/NotificationItem";
-import { Modal, TouchableOpacity } from "react-native";
+import { Modal, TouchableOpacity, ScrollView } from "react-native";
 import styled from "styled-components";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
@@ -41,11 +41,13 @@ const GlossaryModal: FC<IProps> = ({ notif_modal, navigation, toggleNotifModal }
       </TouchableOpacity>
       <InnerContainer>
         <Title>Notifications</Title>
-        {!data.getMyNotifications.length
-          ? null
-          : data.getMyNotifications.map((notification) => {
-              return <NotificationItem notification={notification} navigation={navigation} toggleNotifModal={toggleNotifModal} />;
-            })}
+        <ScrollView>
+          {!data.getMyNotifications.length
+            ? null
+            : data.getMyNotifications.map((notification) => {
+                return <NotificationItem notification={notification} navigation={navigation} toggleNotifModal={toggleNotifModal} />;
+              })}
+        </ScrollView>
       </InnerContainer>
     </Modal>
   );

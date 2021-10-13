@@ -25,7 +25,7 @@ const Presentational: FC<IProps> = (props) => {
   return (
     <KeyboardAvoidingView style={{ height: "100%" }}>
       <View style={{ height: "21%" }}>
-        <ImageBackground source={require("../../assets/images/sky.png")} style={{ width: "100%", height: "100%" }} />
+        <ImageBackground source={require("../../assets/images/dendrojake_2.png")} style={{ width: "100%", height: "100%" }} />
       </View>
       <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <View style={ProgressStyles.container}>
@@ -58,7 +58,7 @@ const Presentational: FC<IProps> = (props) => {
               </View>
             </View>
             <Text style={{ marginTop: 20, fontWeight: "800", fontSize: 17, marginBottom: 15 }}>Forum Activity</Text>
-            <ScrollView>
+            <ScrollView style={{ height: "100%" }}>
               {!props.data.threads ? (
                 <Text style={{ color: "grey", fontSize: 10 }}>Forum threads {props.data.username} commented in will appear here.</Text>
               ) : (
@@ -67,18 +67,6 @@ const Presentational: FC<IProps> = (props) => {
                 })
               )}
             </ScrollView>
-            {is_me && (
-              <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 35 }}>
-                <TouchableOpacity
-                  onPress={async () => {
-                    await SecureStore.deleteItemAsync("jwt");
-                    await Updates.reloadAsync();
-                  }}
-                >
-                  <Text style={{ fontSize: 9 }}>Log out</Text>
-                </TouchableOpacity>
-              </View>
-            )}
           </View>
         </View>
       </TouchableWithoutFeedback>

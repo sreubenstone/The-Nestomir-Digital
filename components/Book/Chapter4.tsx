@@ -24,7 +24,7 @@ export default class Chapter4 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://t4.ftcdn.net/jpg/02/47/42/81/360_F_247428197_wpaAVCuxUrlf43AW6WkBH2Z4D62cY95L.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

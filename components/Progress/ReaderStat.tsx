@@ -14,7 +14,7 @@ const ReaderStat: FC = () => {
         <Image source={require("../../assets/images/alien.png")} style={{ width: 40, height: 40, marginRight: 5 }} />
         <View style={{ backgroundColor: "#FFF", width: "75%", borderWidth: 0.5, borderRadius: 5, padding: 4, borderColor: "grey" }}>
           <Text style={{ fontSize: 11 }}>
-            There are <Text style={{ color: "#0195FF" }}>{Math.floor(Math.random() * 20)}</Text> readers currently reading. Don't miss out on the adventure!
+            There are <Text style={{ color: "#0195FF" }}>{Math.floor(Math.random() * 20) + 5}</Text> readers currently reading. Don't miss out on the adventure!
           </Text>
         </View>
       </View>

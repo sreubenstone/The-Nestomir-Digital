@@ -50,17 +50,17 @@ const ProgressMap: FC<IProps> = (props) => {
             key={i}
           >
             <View style={ProgressCardStyles.container}>
-              <View style={GlobalStyles.flexRow}>
+              <View style={[GlobalStyles.flexRow, { alignItems: "center" }]}>
                 <Image style={ProgressCardStyles.im} source={{ uri: item.image }} />
-                <View style={{ marginLeft: "3.5%" }}>
+                <View style={{ marginLeft: "4.0%" }}>
                   <Text style={GlobalStyles.textCardTitle}>{item.chapter}</Text>
                   <Text style={GlobalStyles.textCardSubtitle}>{item.caption}</Text>
                   {item.progress ? (
                     <View>
                       <View style={item.progress == "in_progress" ? ProgressCardStyles.tagContainer1 : ProgressCardStyles.tagContainer2}>
-                        <Text style={{ fontSize: 12, color: "#fff", fontWeight: "600" }}>{item.progress == "in_progress" ? `In Progress` : "Completed"} </Text>
+                        <Text style={{ fontSize: 12, color: "#fff", fontWeight: "600", fontFamily: "gelasio" }}>{item.progress == "in_progress" ? `In Progress` : "Completed"} </Text>
                       </View>
-                      {item.progress == "in_progress" && <Text style={{ fontSize: 10, marginTop: 6 }}>{Math.round(item.percentage)}% read, keep going!</Text>}
+                      {item.progress == "in_progress" && <Text style={{ fontSize: 10, marginTop: 6, fontFamily: "gelasio" }}>{Math.round(item.percentage)}% read, keep going!</Text>}
                     </View>
                   ) : null}
                 </View>

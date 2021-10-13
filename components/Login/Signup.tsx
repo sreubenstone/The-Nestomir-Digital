@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import * as SecureStore from "expo-secure-store";
-import { View, Text, ImageBackground, TouchableOpacity, Keyboard, TouchableWithoutFeedback } from "react-native";
+import { View, Text, Linking, ImageBackground, TouchableOpacity, Keyboard, TouchableWithoutFeedback } from "react-native";
 import styled from "styled-components";
 import { ProgressStyles } from "../../Stylesheet";
 import Env from "./../../config";
 import { Dimensions } from "react-native";
+import T_CModal from "./T&CModal";
+import PrivModal from "./PrivPolicyModal";
+import privModal from "./PrivPolicyModal";
+import Checkbox from "./Checkbox";
 
 interface IProps {
   toggle: any;
@@ -22,6 +26,7 @@ const ErrorText = styled.Text`
   font-weight: 300;
   font-size: 10px;
   text-align: center;
+  margin-bottom: 12px;
 `;
 
 const SubTitle = styled.Text`
@@ -35,12 +40,12 @@ const Button = styled.View`
 `;
 
 const Bubble = styled.View`
-  background-color: #e4dcdc;
-  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 0px;
   margin-top: 4px;
   margin-bottom: 5px;
   padding: 3px;
-  padding-left: 5px;
+  padding-left: 0px;
 `;
 
 const Insert = styled.TextInput`
@@ -58,6 +63,9 @@ export default class Signup extends Component<IProps> {
     pw: "",
     reader_code: "",
     error: null,
+    t_cModal: false,
+    priv_modal: false,
+    checked: false,
   };
 
   signUp = async () => {
@@ -89,13 +97,22 @@ export default class Signup extends Component<IProps> {
     return re.test(email);
   };
 
+  termsToggle = () => this.setState({ checked: !this.state.checked });
+
+  // toggleTModal = () => this.setState({ t_cModal: !this.state.t_cModal });
+
+  // togglePModal = () => this.setState({ priv_modal: !this.state.priv_modal });
+
   render() {
     const windowWidth = Dimensions.get("window").width;
-    const { username, email, pw, error, reader_code } = this.state;
+    const { username, email, pw, error, reader_code, t_cModal, priv_modal, checked } = this.state;
+    const openURL = (url) => {
+      Linking.openURL(url).catch((err) => console.error("An error occurred", err));
+    };
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
-          <ImageBackground source={require("../../assets/images/dragon.png")} style={{ width: "100%", height: "100%" }} />
+          <ImageBackground source={require("../../assets/images/title.png")} style={{ width: "100%", height: "100%" }} />
         </View>
         <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
           <View style={ProgressStyles.container}>
@@ -116,12 +133,26 @@ export default class Signup extends Component<IProps> {
                 <Insert onChangeText={(text) => this.setState({ reader_code: text })} value={reader_code} autoCapitalize="none" />
               </View>
               {error ? <ErrorText>{error}</ErrorText> : null}
+              <View style={{ flexDirection: "row" }}>
+                <Checkbox checked={checked} termsToggle={this.termsToggle} />
+                <Text style={{ fontSize: 9, marginBottom: 3, marginLeft: 7.5 }}>
+                  I understand and agree to{" "}
+                  <Text onPress={() => openURL("https://www.thenestomir.com/terms/")} style={{ color: "#8367AF" }}>
+                    Terms and Conditions
+                  </Text>{" "}
+                  and{" "}
+                  <Text onPress={() => openURL("https://www.thenestomir.com/privacy_policy/")} style={{ color: "#8367AF" }}>
+                    Privacy Policy
+                  </Text>
+                  .
+                </Text>
+              </View>
               <View style={{ marginTop: 10 }}>
                 <TouchableOpacity
                   onPress={() => {
-                    if (!username || !pw || !email) {
+                    if (!username || !pw || !email || !checked) {
                       this.setState({
-                        error: "Username, Email, or Password can not be blank!",
+                        error: "Username, Email, or Password can not be blank!\n Terms and Privacy Policy must be checked.",
                       });
                       return;
                     }
@@ -156,6 +187,8 @@ export default class Signup extends Component<IProps> {
             </View>
           </View>
         </TouchableWithoutFeedback>
+        {/* <T_CModal open={t_cModal} toggleTModal={this.toggleTModal} />
+        <PrivModal open={priv_modal} togglePModal={this.togglePModal} /> */}
       </View>
     );
   }

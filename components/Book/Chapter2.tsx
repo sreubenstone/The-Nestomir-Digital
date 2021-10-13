@@ -35,14 +35,14 @@ export default class Chapter2 extends Component<IProps> {
     return (
       <View>
         <Text style={GlobalStyles.chapterTitle}>Chapter 2</Text>
-        {/* <View style={GlobalStyles.flexCenter}>
+        <View style={GlobalStyles.flexCenter}>
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://i.pinimg.com/originals/09/5c/2c/095c2ccf70ef910ffadc778779dc8507.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
-        </View> */}
+        </View>
         {
           // Section 1 Below
         }

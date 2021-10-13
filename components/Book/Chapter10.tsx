@@ -41,7 +41,7 @@ export default class Chapter10 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://i.pinimg.com/originals/81/76/ae/8176ae26e93e67b9da12988e10b83adf.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

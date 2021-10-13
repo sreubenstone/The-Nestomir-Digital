@@ -18,8 +18,8 @@ interface IProps {
 }
 
 const FriendIcon = styled.Image`
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
 `;
 
 export default class ProgressContainer extends Component<IProps> {
@@ -42,7 +42,7 @@ export default class ProgressContainer extends Component<IProps> {
         <View style={{ height: "21%" }}>
           <View style={{ position: "absolute", zIndex: 5, left: "88%", top: "27%" }}>
             <TouchableOpacity onPress={() => this.toggleReaderModal()}>
-              <FriendIcon source={require("../../assets/images/friend.png")} />
+              <FriendIcon source={require("../../assets/images/lightning.png")} />
             </TouchableOpacity>
           </View>
           <ImageBackground source={require("../../assets/images/dendrojake.png")} style={{ width: "100%", height: "100%" }} />
@@ -59,7 +59,7 @@ export default class ProgressContainer extends Component<IProps> {
           </View>
         </View>
         <Push />
-        <ReadingBuddiesModal reader_modal={reader_modal} toggleReaderModal={this.toggleReaderModal} />
+        <ReadingBuddiesModal navigation={navigation} reader_modal={reader_modal} toggleReaderModal={this.toggleReaderModal} />
       </View>
     );
   }

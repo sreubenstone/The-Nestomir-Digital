@@ -24,25 +24,29 @@ const Title = styled.Text`
 const SubHeader = styled.Text`
   margin-top: 5px;
   text-align: center;
+  font-family: "gelasio";
 `;
 
 const SectionHeader = styled.Text`
   font-weight: bold;
+  font-family: "gelasio-bold";
   margin-top: 22px;
 `;
 
 const Desc = styled.Text`
   margin-top: 10px;
   font-family: "gelasio";
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 const LineEl = styled.Text`
   margin-top: 5px;
+  font-family: "gelasio";
 `;
 
 const Link = styled.Text`
   color: #0195ff;
+  font-family: "gelasio";
 `;
 
 const Presentational: FC<IProps> = ({ item, modal }) => {

@@ -41,7 +41,7 @@ export default class Chapter12 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://cdnb.artstation.com/p/assets/images/images/022/325/655/large/laura-guedes-dojo-sketch.jpg?1574987125`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

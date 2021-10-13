@@ -41,7 +41,7 @@ export default class Chapter13 extends Component<IProps> {
           <Image
             style={GlobalStyles.chapterImage}
             source={{
-              uri: `https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/hand-drawn-open-notebook-on-stack-of-books-iam-nee.jpg`,
+              uri: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633998380/chapter_symbol_sfj0ji.png`,
             }}
           />
         </View>

@@ -187,6 +187,11 @@ export const GET_MY_READING_BUDDIES = gql`
       id
       username
       user_avatar
+      bookmark {
+        id
+        chapter
+        percentage
+      }
     }
   }
 `;

@@ -18,7 +18,7 @@ const RemoveBuddy: FC<IProps> = ({ buddy_id, refetch }) => {
         refetch();
       }}
     >
-      <Text style={{ marginLeft: 25, fontSize: 10 }}>remove</Text>
+      <Text style={{ marginLeft: 10, marginTop: 6.5, fontSize: 8 }}>remove</Text>
     </TouchableOpacity>
   );
 };
