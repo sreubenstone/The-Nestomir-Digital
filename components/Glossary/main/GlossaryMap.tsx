@@ -13,7 +13,7 @@ const GlossaryMap: FC<IProps> = (props) => {
     <ScrollView>
       {Object.keys(Glossary).map((entry) => {
         return (
-          <TouchableOpacity onPress={() => props.navigation.navigate("GlossaryDetail", { glossary_element: entry })}>
+          <TouchableOpacity onPress={() => props.navigation.navigate("GlossaryDetail", { glossary_element: entry, entry_title: Glossary[entry].title })}>
             <Text style={{ marginTop: 30, fontFamily: "gelasio", fontSize: 17 }}>{Glossary[entry].title}</Text>
           </TouchableOpacity>
         );

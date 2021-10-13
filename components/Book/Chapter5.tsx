@@ -149,7 +149,7 @@ export default class Chapter5 extends Component<IProps> {
           <GlossaryWord lookup_string="Bernardpinkett" word="Bernard Pinkett" toggleGlossary={this.props.toggleGlossary} /> in 13,997 Sentient. The Earthling,{" "}
           <GlossaryWord lookup_string="Guidovanrossum" word="Guido Van Rossum" toggleGlossary={this.props.toggleGlossary} />, who gets credit on your planet for inventing the language, actually stumbled upon Python during a Naronian government
           experiment. The language’s designs were left on his desk by a Naronian agent in an attempt to study how Python would proliferate out of the galaxy.{" "}
-          <GlossaryWord lookup_string="Gudiovanrossum" word="Guido" toggleGlossary={this.props.toggleGlossary} /> took credit for its creation,” Dendro stated.{"\n"}
+          <GlossaryWord lookup_string="Guidovanrossum" word="Guido" toggleGlossary={this.props.toggleGlossary} /> took credit for its creation,” Dendro stated.{"\n"}
           {"\n"}“Are you serious?” Jake asked, wide eyed.{"\n"}
           {"\n"}“I would not joke around about something like that”, Dendro responded.{"\n"}
           {"\n"}“Do you mean to tell me your society knows of Earth and has interacted with Earth before?” Jake asked, baffled. “I thought I heard you mention something about that before.”{"\n"}

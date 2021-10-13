@@ -169,7 +169,7 @@ export default class Chapter10 extends Component<IProps> {
           logistical expertise and the science. We had two thousand acres of irrigated land. Every three months our ships were escorted out as official military vehicles. We handled distribution. They helped with fuel. Profits came back and we div’d
           them up. Blue Jasmine grew better on Cyprus-A, it just did."{"\n"}
           {"\n"}"We ran a lucrative operation for five years. Sadly, two years into the undertaking, my girlfriend, Kasandra, finally made the decision to take a maître d job on{" "}
-          <GlossaryWord lookup_string="Tarvezius" word="Tarvezius" toggleGlossary={this.props.toggleGlossary} />. The job enabled her to pursue her dream of becoming an
+          <GlossaryWord lookup_string="Tarvezius" word="Tarvezius" toggleGlossary={this.props.toggleGlossary} />. The job enabled her to pursue her dream of becoming an{" "}
           <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} /> healer. She said she wasn’t going to make the mistake of entering a long-distance relationship. She said I was a special part of her life, but
           her dream was to heal people. One day she kissed me hard on the cheek, said goodbye and left our beach hut with one bag on her shoulder, and that was it."{"\n"}
           {"\n"}"I focused more and more on business to take my mind off her. And that focus paid off because the business began to thrive. We built a well-oiled machine. Life was good. For nearly five years my men and I successfully managed the
@@ -190,7 +190,7 @@ export default class Chapter10 extends Component<IProps> {
           I thought about you, Dendro, and my team. I knew I had to do something, and Delpher’s day was only a few weeks away. We sat there for some time.  I argued with Bonjetti that there were still ways to salvage our operation, but once we
           scrutinized every viable option, and it was clear that those ideas were flawed, I ultimately gave in. We then reminisced over the past five years we had shared together. The memories. The successes. Eventually we shook hands and left. You
           see Bonjetti had been critical to everything we were doing, and now we had two weeks to shut the whole thing down. And so we did.”{"\n"}
-          {"\n"}“During that shutdown period, I hit up all my contacts. I desperately tried to see if any business opportunities were emerging on the horizon--I no longer saw use in staying on an island-continent that could no longer bear the fruit I
+          {"\n"}“During that shutdown period, I hit up all my contacts. I desperately tried to see if any business opportunities were emerging on the horizon–I no longer saw use in staying on an island-continent that could no longer bear the fruit I
           needed, and none of my men did either. We planned on leaving once the shutdown was complete. And at night, I stayed up thinking about how I could possibly help The Naronian Forces. I knew I was going to have to do something based on the
           intel I received from Bonjetti.”{"\n"}
           {"\n"}“A few days into the shutdown period, and after much persistence, I received word that a venerated agricultural contact had finally agreed to meet me...on Earth of all places...only a few hours after the end of Delpher's Day, which
@@ -481,7 +481,9 @@ export default class Chapter10 extends Component<IProps> {
           delete elements from a specific data structure.  For example, when we work with dictionaries and lists, coders will often think long and hard about these types of things."{"\n"}
           {"\n"}Kliggins erased the chalkboard and then wrote down three bullets.{"\n"}
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>How easily can our computer find a specific value in a list or dictionary?</Text>
+          {"\n"}
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>How easily can our computer insert a new value into a list or dictionary?</Text>
+          {"\n"}
           {"\n"}- <Text style={{ fontFamily: "gelasibro-italic" }}>How easily can our computer delete an item from a list or dictionary?</Text>
           {"\n"}
           {"\n"}Kliggins faced the class. "In real life, when we use this powerful language we call code, whether it be in creative work, school, or in the Forces, we have to be critical about how we do these things here because we want our code to

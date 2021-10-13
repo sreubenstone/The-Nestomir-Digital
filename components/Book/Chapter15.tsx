@@ -123,9 +123,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}“There you are!” She nodded and clicked an icon on her application dock. A magenta window appeared, and she proceeded to paste in the string of alien characters she copied from the previous application into a small blinking text field
           on the current screen, then hit enter. A horizontal loading indicator filled itself out. Then the application read:{"\n"}
           {"\n"}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>
-            No relevant <GlossaryWord lookup_string="Cipher" word="cipher" toggleGlossary={this.props.toggleGlossary} /> detected. Nearest match: .0023%.
-          </Text>
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>No relevant cipher detected. Nearest match: .0023%.</Text>
           {"\n"}
           {"\n"}“Nothing coming up on <Text style={{ fontFamily: "gelasibro-italic" }}>Cipherium</Text>, Dendro. Nothing whatsoever,” Zena said. “This is not something <Text style={{ fontFamily: "gelasibro-italic" }}>Cipherium</Text> has come in
           contact within the past.”{"\n"}
@@ -151,7 +149,7 @@ export default class Chapter15 extends Component<IProps> {
           . <Text style={{ fontFamily: "gelasibro-italic" }}>What</Text> does that remind me of?” She patted her fist against the table a few times. “Wait. Jonko. Zimmer's friend. From the forces. Naronian Cyber Intel. He would rant at Gelfer's
           Tavern on 27th block. That guy wouldn't shut up about his boss. On and on about his side projects. But his boss wouldn't listen. Code cracking. Cypher{" "}
           <GlossaryWord lookup_string="Decryption" word="decryption" toggleGlossary={this.props.toggleGlossary} />. Yes. He mentioned that he had built a server. A server to help decode obscure ciphers that were created in outback undergrounds. That
-          coders for hire, cryptic masterminds with no loyalty to any party were rumored to create these things. Missionaries of sorts. People with nothing better to do. He may have mentioned a
+          coders for hire, cryptic masterminds with no loyalty to any party were rumored to create these things. Missionaries of sorts. People with nothing better to do. He may have mentioned a{" "}
           <GlossaryWord lookup_string="Bulkcipher" word="Bulk Cipher" toggleGlossary={this.props.toggleGlossary} />. We may be able to hit his server if it's still online. I knew I’d heard that term before.” She pulled her laptop closer.{"\n"}
           {"\n"}“I will leave you to it then,” the garage owner said. The small man gave a subtle bow then walked back into the hangar.{"\n"}
           {"\n"}“Hit the server?” Jake asked.{"\n"}
@@ -247,47 +245,57 @@ export default class Chapter15 extends Component<IProps> {
           loaded up a new program and displayed:{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Notes on HTTP</Text>
+          <Text style={{ fontFamily: "gelasio-bold", fontSize: 24 }}>Notes on HTTP</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
           {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>HTTP Basics<Text style={{ fontFamily: "gelasibro-italic" }}></Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
+          <Text style={{ fontFamily: "gelasio-bold" }}>HTTP Basics</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}- HTTP messages power most of the communication that takes place on the internet.{"\n"}- An HTTP message takes the form of either a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> (message sent from client to server)
-          or a <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text> (message sent from server to client).{"\n"}- An HTTP message is made up of two sections, the <Text style={{ fontFamily: "gelasibro-italic" }}>header</Text>, and the{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text>. (HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Headers</Text> contain high level information (and instructions), i.e., in what{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> should data be delivered by the server? The HTTP{" "}
+          {"\n"}• HTTP messages power most of the communication that takes place on the internet.{"\n"}
+          {"\n"}• An HTTP message takes the form of either a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> (message sent from client to server) or a <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text> (message sent from
+          server to client).{"\n"}
+          {"\n"}• An HTTP message is made up of two sections, the <Text style={{ fontFamily: "gelasibro-italic" }}>header</Text>, and the <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text>. (HTTP{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Headers</Text> contain high level information (and instructions), i.e., in what <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> should data be delivered by the server? The HTTP{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             <GlossaryWord lookup_string="Httpbody" word="body" toggleGlossary={this.props.toggleGlossary} />
           </Text>{" "}
           contains information the user actually inserts into the computer <Text style={{ fontFamily: "gelasibro-italic" }}>that we need to send to our server to save</Text>, i.e., the actual text of the comment you want to save (post) to a social
-          network.{"\n"}- Every HTTP message must indicate a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>method (very important, see below)</Text>
+          network.{"\n"}
+          {"\n"}• Every HTTP message must indicate a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>method (very important, see below)</Text>
           {"\n"}
-          {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>On HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Request Methods</Text>
-          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
-          {"\n"}
-          {"\n"}- The request method indicates the <Text style={{ fontFamily: "gelasibro-italic" }}>overall nature/vibe</Text> of an HTTP request.{"\n"}- The two most used request methods are{" "}
-          <GlossaryWord lookup_string="Httpget" word="HTTP GET" toggleGlossary={this.props.toggleGlossary} /> and <GlossaryWord lookup_string="Httppost" word="HTTP POST" toggleGlossary={this.props.toggleGlossary} />.{"\n"}- HTTP GET signifies we are
-          asking our server to respond with data loaded from a specific resource (an image, file, etc, that exists in a specific folder on the server).{"\n"}- HTTP POST method signifies we are sending something to the server to save for later.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
-          <Text style={{ fontFamily: "gelasibro-italic" }}>On</Text> HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Headers</Text>
+          <Text style={{ fontFamily: "gelasio-bold" }}> On HTTP</Text> <Text style={{ fontFamily: "gelasio-bold" }}>Request Methods</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}- HTTP Headers can be thought of as the settings we place on our HTTP message.{"\n"}- For example, the HTTP{" "}
+          {"\n"}• The request method indicates the <Text style={{ fontFamily: "gelasibro-italic" }}>overall nature/vibe</Text> of an HTTP request.{"\n"}
+          {"\n"}• The two most used request methods are <GlossaryWord lookup_string="Httpget" word="HTTP GET" toggleGlossary={this.props.toggleGlossary} /> and{" "}
+          <GlossaryWord lookup_string="Httppost" word="HTTP POST" toggleGlossary={this.props.toggleGlossary} />.{"\n"}
+          {"\n"}• HTTP GET signifies we are asking our server to respond with data loaded from a specific resource (an image, file, etc, that exists in a specific folder on the server).{"\n"}
+          {"\n"}• HTTP POST method signifies we are sending something to the server to save for later.{"\n"}
+          {"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
+          <Text style={{ fontFamily: "gelasio-bold" }}>On HTTP</Text> <Text style={{ fontFamily: "gelasio-bold" }}>Headers</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
+          {"\n"}
+          {"\n"}• HTTP Headers can be thought of as the settings we place on our HTTP message.{"\n"}
+          {"\n"}• For example, the HTTP{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             <GlossaryWord lookup_string="Httpcontenttype" word="Content-Type" toggleGlossary={this.props.toggleGlossary} />
           </Text>{" "}
           header establishes the <Text style={{ fontFamily: "gelasibro-italic" }}>format</Text> of the data we are sending in our HTTP message (e.g., text, image, csv, pdf, etc).{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
-          <Text style={{ fontFamily: "gelasibro-italic" }}>On</Text> HTTP <Text style={{ fontFamily: "gelasibro-italic" }}>Body</Text>
+          <Text style={{ fontFamily: "gelasio-bold" }}>On HTTP</Text>
+          <Text style={{ fontFamily: "gelasio-bold" }}> Body</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}- The body of our HTTP message is where we usually store the data uploaded by a user.{"\n"}- <GlossaryWord lookup_string="Httpget" word="HTTP GET" toggleGlossary={this.props.toggleGlossary} /> messages usually do not contain a body
-          (only headers) because we are not sending anything to the server to save{"\n"}- If we place a comment on a picture on our favorite social network, the <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> of our request would contain
-          the text of the comment, e.g, “Nice cat, dude!”.{"\n"}- The body of our HTTP message is sometimes referred to as the <Text style={{ fontFamily: "gelasibro-italic" }}>payload</Text>.{"\n"}
+          {"\n"}• The body of our HTTP message is where we usually store the data uploaded by a user.{"\n"} {"\n"}• <GlossaryWord lookup_string="Httpget" word="HTTP GET" toggleGlossary={this.props.toggleGlossary} /> messages usually do not contain a
+          body (only headers) because we are not sending anything to the server to save{"\n"}
+          {"\n"}• If we place a comment on a picture on our favorite social network, the <Text style={{ fontFamily: "gelasibro-italic" }}>body</Text> of our request would contain the text of the comment, e.g, “Nice cat, dude!”.{"\n"} {"\n"}• The body
+          of our HTTP message is sometimes referred to as the <Text style={{ fontFamily: "gelasibro-italic" }}>payload</Text>.{"\n"}
           {"\n"}Jake mumbled out loud as he read through the notes. “Hm...so each message is <Text style={{ fontFamily: "gelasibro-italic" }}>either</Text> a <Text style={{ fontFamily: "gelasibro-italic" }}>request</Text> or a{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>response</Text>, and that depends if it’s going from client <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> server, or server{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>to</Text> client...makes sense. Now we use{" "}
@@ -386,10 +394,7 @@ export default class Chapter15 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_6.png")} />
         </View>
-        <Caption>
-          This can be visually intimidating. But all that's happening is Jake is inserting two arguments into the function. The first <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} /> is the URL, the
-          secong argument is a dictionary.
-        </Caption>
+        <Caption>This can be visually intimidating. But all that's happening is Jake is inserting two arguments into the function. The first argument is the URL, the secong argument is a dictionary.</Caption>
 
         {
           // Section 6 Below, Goes Text, Graphic
@@ -412,11 +417,7 @@ export default class Chapter15 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson9_7.png")} />
         </View>
-        <Caption>
-          The requests.post function RETURNS a response. We can store that response in <GlossaryWord lookup_string="Variable" word="variable" toggleGlossary={this.props.toggleGlossary} />, then{" "}
-          <GlossaryWord lookup_string="Print" word="print" toggleGlossary={this.props.toggleGlossary} /> it to the <GlossaryWord lookup_string="Terminal" word="terminal" toggleGlossary={this.props.toggleGlossary} /> screen. This is key fundamental of
-          working with Python and the <GlossaryWord lookup_string="Internet" word="internet" toggleGlossary={this.props.toggleGlossary} />.
-        </Caption>
+        <Caption>The requests.post function RETURNS a response. We can store that response in a variable, then prints it to the terminal screen. This is key fundamental of working with Python and the internet.</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic

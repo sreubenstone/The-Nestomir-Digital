@@ -390,8 +390,7 @@ export default class Chapter7 extends Component<IProps> {
         </View>
         <Caption>
           The terminal is where we tell the Python program (the fancy term is "Python interpreter") to process our Python file. Most code editors allow us to access the terminal from within the editor. Recognize the terminal is a seperate program
-          that speaks to the innards of the computer. When we run our Python code from the terminal - what we're saying is "<GlossaryWord lookup_string="Operatingsystem" word="operating system" toggleGlossary={this.props.toggleGlossary} />
-          ...please use the python program to process this file."
+          that speaks to the innards of the computer. When we run our Python code from the terminal - what we're saying is "operating system ...please use the python program to process this file."
         </Caption>
 
         <Text style={BookStyles.bookFont}>

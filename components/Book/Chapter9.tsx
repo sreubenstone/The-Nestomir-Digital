@@ -109,13 +109,9 @@ export default class Chapter9 extends Component<IProps> {
             <GlossaryWord lookup_string="Modules" word="modules" toggleGlossary={this.props.toggleGlossary} />
           </Text>
           , help us do all sorts of incredible things with our projects including granting us the power to create art, develop artificial intelligence, and synthesize music, as well as many other incredible things.” Dendro patted down his man bun
-          gently. “Nira’s first year-seven project is focused on getting the student to understand a <GlossaryWord lookup_string="Library" word="library" toggleGlossary={this.props.toggleGlossary} />
-          of their choosing, and then asks them to employ it successfully,” Dendro said. “In Nira’s case, she has chosen to use an open source Python <GlossaryWord
-            lookup_string="Library"
-            word="library"
-            toggleGlossary={this.props.toggleGlossary}
-          />{" "}
-          called <Text style={{ fontFamily: "gelasibro-italic" }}>XRabbit</Text>, similar to Earth’s Python art library,{" "}
+          gently. “Nira’s first year-seven project is focused on getting the student to understand a <GlossaryWord lookup_string="Library" word="library" toggleGlossary={this.props.toggleGlossary} /> of their choosing, and then asks them to employ it
+          successfully,” Dendro said. “In Nira’s case, she has chosen to use an open source Python <GlossaryWord lookup_string="Library" word="library" toggleGlossary={this.props.toggleGlossary} /> called{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>XRabbit</Text>, similar to Earth’s Python art library,{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             <GlossaryWord lookup_string="Turtle" word="Turtle" toggleGlossary={this.props.toggleGlossary} />
           </Text>

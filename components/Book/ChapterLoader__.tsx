@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, ScrollView, InteractionManager } from "react-native";
+import { View, ScrollView, InteractionManager, Dimensions } from "react-native";
 import { GlobalStyles } from "../../Stylesheet";
 import BookPane from "./BookPane";
 import ProgressBar from "./ProgressBar";
@@ -23,7 +23,6 @@ import Chapter14 from "./Chapter14";
 import Chapter15 from "./Chapter15";
 import Chapter16 from "./Chapter16";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-import { Dimensions } from "react-native";
 import GlossaryModal from "../Glossary/inline/GlossaryModal";
 
 const BreakIcon = styled.Text`

@@ -19,7 +19,7 @@ const Container = styled.View`
 export default class GlossaryDetailView extends Component<IProps> {
   static navigationOptions = ({ navigation }) => {
     return {
-      title: navigation.getParam("glossary_element"),
+      title: navigation.getParam("entry_title"),
       headerLeft: (
         <TouchableOpacity onPress={() => navigation.navigate("FullGlossaryIndex")}>
           <Image source={require("../../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 12.5 }} />

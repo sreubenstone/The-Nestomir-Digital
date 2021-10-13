@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
+import { View, Text, ImageBackground, TouchableOpacity, Dimensions } from "react-native";
 import Push from "./Push";
 import ProgressMap from "./ProgressMap";
 import ReaderStat from "./ReaderStat";
@@ -18,8 +18,8 @@ interface IProps {
 }
 
 const FriendIcon = styled.Image`
-  width: 26px;
-  height: 26px;
+  width: ${(props) => (props.windowWidth < 800 ? "26px" : "50px")};
+  height: ${(props) => (props.windowWidth < 800 ? "26px" : "50px")};
 `;
 
 export default class ProgressContainer extends Component<IProps> {
@@ -34,6 +34,7 @@ export default class ProgressContainer extends Component<IProps> {
   toggleReaderModal = () => this.setState({ reader_modal: !this.state.reader_modal });
 
   render() {
+    const windowWidth = Dimensions.get("window").width;
     const { navigation, data } = this.props;
     const { reader_modal } = this.state;
 
@@ -42,7 +43,7 @@ export default class ProgressContainer extends Component<IProps> {
         <View style={{ height: "21%" }}>
           <View style={{ position: "absolute", zIndex: 5, left: "88%", top: "27%" }}>
             <TouchableOpacity onPress={() => this.toggleReaderModal()}>
-              <FriendIcon source={require("../../assets/images/lightning.png")} />
+              <FriendIcon windowWidth={windowWidth} source={require("../../assets/images/lightning.png")} />
             </TouchableOpacity>
           </View>
           <ImageBackground source={require("../../assets/images/dendrojake.png")} style={{ width: "100%", height: "100%" }} />

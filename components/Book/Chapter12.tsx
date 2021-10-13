@@ -427,10 +427,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_8.png")} />
         </View>
-        <Caption>
-          Keep in mind the line sum = add(2,3) is not indented. This means it is a separate <GlossaryWord lookup_string="Statement" word="statement" toggleGlossary={this.props.toggleGlossary} />, not directly affiliated to the function above. For
-          begginers, sometimes visually you can get confused.
-        </Caption>
+        <Caption>Keep in mind the line sum = add(2,3) is not indented. This means it is a separate statement, not directly affiliated to the function above. For begginers, sometimes visually you can get confused.</Caption>
 
         {
           // Section 9 Below, Goes Text, Graphic

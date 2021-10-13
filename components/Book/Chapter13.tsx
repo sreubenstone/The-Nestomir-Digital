@@ -153,8 +153,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Zena smiled and signaled to Jake to put his hands on the keys.{"\n"}
           {"\n"}When Jake put his fingers down, the alien characters disappeared, replaced by the standard English QWERTY keyboard. “Whoa!” Jake shouted. A few beings across the room looked in their direction.{"\n"}
           {"\n"}Zena gave him a friendly wink. “The password is passionfruit. Don’t ask.” She slid her chair closer to him. “My machine is running Atvian 3.0. It’s very similar to your UNIX based operating systems on Earth, like Mac OS. But because
-          this is browser-based, not much will change across different computers, or even operating systems.” She pointed at the bottom of the screen. “The nebula icon down here, that's my browser. Open it up. Then put
-          [https://jupyter.org/](https://jupyter.org/) in the address bar and hit enter.”{"\n"}
+          this is browser-based, not much will change across different computers, or even operating systems.” She pointed at the bottom of the screen. “The nebula icon down here, that's my browser. Open it up. Then put{" "}
+          <Text style={{ color: "blue" }}>https://jupyter.org</Text> in the address bar and hit enter.”{"\n"}
           {"\n"}A web page loaded. There was a logo with the word Jupyter on the top left.{"\n"}
           {"\n"}“Scroll down the page a little bit. Click on <Text style={{ fontFamily: "gelasibro-italic" }}>Try it In Your Browser</Text>,” Zena said.{"\n"}
           {"\n"}Jake scrolled down the page and hit the orange <Text style={{ fontFamily: "gelasibro-italic" }}>Try It In Your Browser</Text> link. The page loaded.{"\n"}
@@ -401,7 +401,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}
           {"\n"}“Aw. That looks bad. I could have <Text style={{ fontFamily: "gelasibro-italic" }}>sworn</Text> this was right. Darn it,” Jake said.{"\n"}
           {"\n"}“Let me take a look. Oh. Yes. Take a look at the statement <Text style={{ color: "#0C2443", fontFamily: "code" }}>my_scope = getHoroscope(June)</Text>,” Zena said.{"\n"}
-          {"\n"}“Ah! I didn't use <Text style={{ fontFamily: "gelasibro-italic" }}>quotes</Text>, I passed in the name of a non-existent variable named June! We must pass in a text string, not a variable name. He fixed his code quickly by placing his
+          {"\n"}“Ah! I didn't use <Text style={{ fontFamily: "gelasibro-italic" }}>quotes</Text>, I passed in the name of a non-existent variable named June! We must pass in a text string, not a variable name. He fixed his code quickly by placing his{" "}
           <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} /> in quotes. The line now read:  <Text style={{ color: "#0C2443", fontFamily: "code" }}>my_scope = getHoroscope("June")</Text>.Then he re-ran
           the cell.{"\n"}
           {"\n"}
