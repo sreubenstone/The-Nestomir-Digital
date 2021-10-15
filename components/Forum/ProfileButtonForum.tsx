@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
-import { TouchableOpacity, Text, Image } from "react-native";
+import { TouchableOpacity, Image } from "react-native";
 
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 

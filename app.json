@@ -4,16 +4,16 @@
     "slug": "theNestomir",
     "privacy": "unlisted",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/ios_icon.png",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
     "notification": {
-      "icon": "./assets/images/icon.png",
+      "icon": "./assets/images/ios_icon.png",
       "color": "#fff"
     },
     "updates": {
@@ -23,7 +23,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.thenestomir.thenestomir",
-      "buildNumber": "1.0.2"
+      "buildNumber": "1.0.3"
     },
     "android": {
       "package": "com.thenestomir.thenestomirapp",

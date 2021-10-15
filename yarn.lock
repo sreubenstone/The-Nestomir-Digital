@@ -4688,6 +4688,11 @@ expo-av@~8.7.0:
     lodash "^4.17.15"
     nullthrows "^1.1.0"
 
+expo-clipboard@~1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/expo-clipboard/-/expo-clipboard-1.0.2.tgz#7b759aef61616ce700c4077f0ab1589c974887f8"
+  integrity sha512-0uarcOHQKPW658eMhW2KBnTxtiS7yFQZ95j+Dz71Kn50X9V7HGXsexEETQ0lL05ArDAgpVRTPHz0YKkaq8Kn/Q==
+
 expo-constants@9.3.1:
   version "9.3.1"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-9.3.1.tgz#1cab4896ea5e626fc7f19f49893526c94b481443"

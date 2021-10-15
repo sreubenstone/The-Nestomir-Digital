@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import { Text } from "react-native";
-import Navigator from "./navigation/MainTabNavigator";
 import SignUpContainer from "./components/Login/Container";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "./queries";

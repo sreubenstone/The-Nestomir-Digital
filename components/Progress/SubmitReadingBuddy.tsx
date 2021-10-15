@@ -43,7 +43,7 @@ const ReaderModal: FC<IProps> = ({ refetch }) => {
             refetch();
           }}
         >
-          <View style={{ backgroundColor: "#6382E9", padding: 5, borderRadius: 10, marginTop: 3 }}>
+          <View style={{ backgroundColor: "#6382E9", padding: 5, borderRadius: 10, marginTop: 4 }}>
             <Text style={{ color: "#fff", fontSize: 11 }}>Submit</Text>
           </View>
         </TouchableOpacity>

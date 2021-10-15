@@ -57,6 +57,7 @@ export const GET_AUTH = gql`
       username
       user_avatar
       tagline
+      secret_code
     }
   }
 `;
