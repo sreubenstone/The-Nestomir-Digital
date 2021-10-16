@@ -90,7 +90,7 @@ export default class Login extends Component<IProps> {
                 <Title>EMAIL</Title>
                 <Insert onChangeText={(text) => this.setState({ email: text })} value={email} autoCapitalize="none" />
                 <Title>PASSWORD</Title>
-                <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" />
+                <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" secureTextEntry={true} />
               </View>
               {error ? <ErrorText>{error}</ErrorText> : null}
 

@@ -28,7 +28,10 @@
     "android": {
       "package": "com.thenestomir.thenestomirapp",
       "googleServicesFile": "./google-services.json",
-      "icon": "./assets/images/icon.png",
+      "icon": "./assets/images/android_base_icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/foreground_android_icon.png"
+      },
       "permissions": [],
       "versionCode": 1
     },

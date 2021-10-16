@@ -125,7 +125,7 @@ export default class Signup extends Component<IProps> {
                 <Title>EMAIL</Title>
                 <Insert onChangeText={(text) => this.setState({ email: text })} value={email} autoCapitalize="none" />
                 <Title>PASSWORD</Title>
-                <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" />
+                <Insert onChangeText={(text) => this.setState({ pw: text })} value={pw} autoCapitalize="none" secureTextEntry={true} />
                 <Title>READER CODE</Title>
                 <Bubble>
                   <SubTitle>Were you referred by a friend? If so enter their secret reader code here.</SubTitle>

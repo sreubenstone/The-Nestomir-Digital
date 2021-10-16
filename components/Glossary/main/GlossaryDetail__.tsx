@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-import { TouchableOpacity, Image } from "react-native";
+import { TouchableOpacity, Image, ScrollView } from "react-native";
 
 import Glossary from "../Glossary";
 import Presentational from "../ui/Presentational";
@@ -35,7 +35,9 @@ export default class GlossaryDetailView extends Component<IProps> {
 
     return (
       <Container>
-        <Presentational modal={false} item={item} />
+        <ScrollView>
+          <Presentational modal={false} item={item} />
+        </ScrollView>
       </Container>
     );
   }
