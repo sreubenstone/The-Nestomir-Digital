@@ -15,7 +15,7 @@ const ProfileButtonForum: FC<IProps> = ({ toggleProfileModal }) => {
 
   return (
     <TouchableOpacity onPress={() => toggleProfileModal()}>
-      <Image style={{ width: 34, height: 34, borderRadius: 17 }} source={{ uri: `${data.getAuth.user_avatar}` }} />
+      <Image style={{ width: 34, height: 34, borderRadius: 17, marginLeft: 11 }} source={{ uri: `${data.getAuth.user_avatar}` }} />
     </TouchableOpacity>
   );
 };

@@ -10,7 +10,7 @@ const BackIcon = styled.Image`
   height: 25px;
   width: 25px;
   margin-top: 55px;
-  margin-left: 10px;
+  margin-left: 15px;
 `;
 
 interface IProps {
@@ -38,7 +38,7 @@ const BookPane: FC<IProps> = (props) => {
       <TouchableOpacity onPress={() => navigation.navigate("ProgressEntry")}>
         <BackIcon source={require("../../assets/images/back.png")} />
       </TouchableOpacity>
-      <Text style={{ marginTop: 62, fontFamily: "gelasio-bold", marginLeft: 10 }}>The Nestomir, {chapter}</Text>
+      <Text style={{ marginTop: 62, fontFamily: "gelasio-bold", marginLeft: 8 }}>The Nestomir, {chapter}</Text>
       <TouchableOpacity
         onPress={() => {
           setBookMark();

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground, TouchableOpacity, Dimensions } from "react-native";
+import ProfileButtonForum from "./../Forum/ProfileButtonForum";
+import ProfileModal from "./../Forum/ProfileModal";
 import Push from "./Push";
 import ProgressMap from "./ProgressMap";
 import ReaderStat from "./ReaderStat";
@@ -10,6 +12,7 @@ import styled from "styled-components";
 
 interface IState {
   reader_modal: boolean;
+  profile_modal: boolean;
 }
 
 interface IProps {
@@ -29,22 +32,27 @@ export default class ProgressContainer extends Component<IProps> {
 
   state = {
     reader_modal: false,
+    profile_modal: false,
   };
 
   toggleReaderModal = () => this.setState({ reader_modal: !this.state.reader_modal });
+  toggleProfileModal = () => this.setState({ profile_modal: !this.state.profile_modal });
 
   render() {
     const windowWidth = Dimensions.get("window").width;
     const { navigation, data } = this.props;
-    const { reader_modal } = this.state;
+    const { reader_modal, profile_modal } = this.state;
 
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
-          <View style={{ position: "absolute", zIndex: 5, left: "88%", top: "27%" }}>
-            <TouchableOpacity onPress={() => this.toggleReaderModal()}>
-              <FriendIcon windowWidth={windowWidth} source={require("../../assets/images/lightning.png")} />
-            </TouchableOpacity>
+          <View style={{ position: "absolute", zIndex: 5, left: "78%", top: "27%" }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <TouchableOpacity onPress={() => this.toggleReaderModal()}>
+                <FriendIcon windowWidth={windowWidth} source={require("../../assets/images/lightning.png")} />
+              </TouchableOpacity>
+              <ProfileButtonForum navigation={navigation} toggleProfileModal={this.toggleProfileModal} />
+            </View>
           </View>
           <ImageBackground source={require("../../assets/images/dendrojake.png")} style={{ width: "100%", height: "100%" }} />
         </View>
@@ -61,6 +69,7 @@ export default class ProgressContainer extends Component<IProps> {
         </View>
         <Push />
         <ReadingBuddiesModal navigation={navigation} reader_modal={reader_modal} toggleReaderModal={this.toggleReaderModal} />
+        <ProfileModal navigation={navigation} profile_modal={profile_modal} toggleProfileModal={this.toggleProfileModal} />
       </View>
     );
   }

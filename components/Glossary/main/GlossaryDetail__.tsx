@@ -22,7 +22,7 @@ export default class GlossaryDetailView extends Component<IProps> {
       title: navigation.getParam("entry_title"),
       headerLeft: (
         <TouchableOpacity onPress={() => navigation.navigate("FullGlossaryIndex")}>
-          <Image source={require("../../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 12.5 }} />
+          <Image source={require("../../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 15.5 }} />
         </TouchableOpacity>
       ),
     };

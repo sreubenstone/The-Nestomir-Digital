@@ -28,7 +28,7 @@ export default class Thread extends Component<IProps> {
       title: navigation.getParam("title"),
       headerLeft: (
         <TouchableOpacity onPress={() => navigation.navigate("Forum")}>
-          <Image source={require("../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 12.5 }} />
+          <Image source={require("../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 15.5 }} />
         </TouchableOpacity>
       ),
     };

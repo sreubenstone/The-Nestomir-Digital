@@ -19,7 +19,7 @@ export default class Chapter4 extends Component<IProps> {
   render() {
     return (
       <View>
-        <Text style={GlobalStyles.chapterTitle}>Chapter 3</Text>
+        <Text style={GlobalStyles.chapterTitle}>Chapter 4</Text>
         <View style={GlobalStyles.flexCenter}>
           <Image
             style={GlobalStyles.chapterImage}
