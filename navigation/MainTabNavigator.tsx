@@ -15,6 +15,7 @@ import GlossaryDetail from "../components/Glossary/main/GlossaryDetail__";
 const StoryStack = createStackNavigator({
   ProgressEntry,
   ChapterLoader,
+  Profile_Profile: Profile,
 });
 
 StoryStack.navigationOptions = ({ navigation }) => {

@@ -42,7 +42,7 @@ const ProfileModal: FC<IProps> = ({ profile_modal, navigation, toggleProfileModa
       <InnerContainer>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("Profile", { user_id: data.getAuth.id });
+            navigation.navigate("Profile_Profile", { user_id: data.getAuth.id });
             toggleProfileModal();
           }}
         >

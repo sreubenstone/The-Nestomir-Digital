@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, ImageBackground, TouchableOpacity, Dimensions } from "react-native";
-import ProfileButtonForum from "./../Forum/ProfileButtonForum";
-import ProfileModal from "./../Forum/ProfileModal";
+import ProfileButtonForum from "./ProfileButtonForum";
+import ProfileModal from "./ProfileModal";
 import Push from "./Push";
 import ProgressMap from "./ProgressMap";
 import ReaderStat from "./ReaderStat";
