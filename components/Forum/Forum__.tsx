@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground, Image, TouchableOpacity } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
 import NotificationButtonForum from "./NotificationButtonForum";
 import ForumLoader from "./ForumLoader";
 import NotificationModal from "../Notifications/NotificationModal";

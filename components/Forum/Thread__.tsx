@@ -45,7 +45,7 @@ export default class Thread extends Component<IProps> {
             alignItems: "center",
           }}
         >
-          <ImageBackground source={require("../../assets/images/dragon.png")} style={{ width: "100%", height: "100%", flexDirection: "row" }}>
+          <ImageBackground source={require("../../assets/images/zena.png")} style={{ width: "100%", height: "100%", flexDirection: "row" }}>
             <Text
               style={{
                 textAlign: "center",

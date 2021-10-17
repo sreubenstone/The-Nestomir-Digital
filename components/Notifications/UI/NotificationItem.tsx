@@ -16,6 +16,7 @@ const Container = styled.View`
   padding: 15px;
   height: 100px;
   width: 100%;
+  overflow: hidden;
 `;
 
 const Pic = styled.Image`

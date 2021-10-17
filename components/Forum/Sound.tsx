@@ -37,8 +37,12 @@ export default class Sound extends Component<IProps> {
         await this.playbackInstance.loadAsync(require("../../assets/sound/truthyfalsey.mp3"));
       }
 
-      if (this.props.sound_file === "ecosystem") {
-        await this.playbackInstance.loadAsync(require("../../assets/sound/ecosystem.mp3"));
+      if (this.props.sound_file === "opensource") {
+        await this.playbackInstance.loadAsync(require("../../assets/sound/opensource.mp3"));
+      }
+
+      if (this.props.sound_file === "jupyter") {
+        await this.playbackInstance.loadAsync(require("../../assets/sound/jupyter.mp3"));
       }
     } catch (error) {
       console.log("sound load error");

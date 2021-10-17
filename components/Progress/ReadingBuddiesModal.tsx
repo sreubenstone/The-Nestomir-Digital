@@ -25,8 +25,8 @@ const OuterContainer = styled.View`
 
 const InnerContainer = styled.View`
   background-color: #fff;
-  height: 60%;
-  width: 82%;
+  height: 80%;
+  width: 88%;
   border-radius: 11px;
   padding: 15px;
   border-color: #0195ff;
@@ -64,7 +64,9 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
   if (error) return <Text>Error! ${error.message}</Text>;
 
   const copyToClipboard = () => {
-    Clipboard.default.setString(`Use this code to sign up for The Nestomir on iOS or Android: ${profile_object.getAuth.secret_code}`);
+    Clipboard.default.setString(
+      `Hey this is my secret reader code for The Nestomir: ${profile_object.getAuth.secret_code}. I get $10 if you enter this when you sign up 😁. If you've already signed up you can use the code to add me as a reading buddy. If you don't know what The Nestomir is...it's the coolest sci fi book/app ever 😜.`
+    );
   };
 
   return (
@@ -78,48 +80,51 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
             <Icon source={require("../../assets/images/lightning.png")} />
             <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15 }}>
               <Text style={{ color: "grey", fontSize: 12, textAlign: "center" }}>
-                This is your secret reader code: <Text style={{ fontWeight: "bold" }}>{profile_object.getAuth.secret_code}.</Text> Use it to sync up your book with friends! When you share it with someone who has not signed up yet, make sure they
-                enter your secret code on sign up, and you will receive $10.
+                Paste in your friend's secret reader code in the text box below to add them as a reading buddy. Your friends can also add you with your code. {"\n\n"} When you share your secret code with someone who has not signed up yet, make sure
+                they enter your secret code when they sign up, and you will receive $10!
               </Text>
             </View>
+            <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15, borderRadius: 5 }}>
+              <Text style={{ color: "grey", fontSize: 15, textAlign: "center", fontWeight: "bold" }}>{profile_object.getAuth.secret_code}</Text>
+            </View>
             <TouchableOpacity onPress={() => copyToClipboard()}>
-              <Text style={{ textAlign: "right", fontSize: 10, color: "#5C79B9" }}>copy code</Text>
+              <Text style={{ textAlign: "right", fontSize: 10, color: "grey" }}>copy</Text>
             </TouchableOpacity>
             <Text style={{ marginBottom: 7.5, fontFamily: "gelasio-med", marginTop: 23 }}>+ Reading Buddy</Text>
             <SubmitReadingBuddy refetch={refetch} />
-
             <Text style={{ marginBottom: 14.5, marginTop: 25, fontFamily: "gelasio-bold" }}>My Reading Buddies</Text>
-
-            {!data.getMyReadingBuddies ? (
-              <Text style={{ fontSize: 11 }}>Reading buddies receive notifications about each other's reading positions. You have no reading buddies yet.</Text>
-            ) : (
-              data.getMyReadingBuddies.map((buddy) => {
-                return (
-                  <ScrollView>
-                    <Card>
-                      <View style={{ flexDirection: "row", alignItems: "center" }}>
-                        <TouchableOpacity
-                          onPress={() => {
-                            toggleReaderModal();
-                            navigation.navigate("Profile", { user_id: buddy.id });
-                          }}
-                        >
-                          <Image source={{ uri: buddy.user_avatar }} style={{ width: 60, height: 60, borderRadius: 30 }} />
-                        </TouchableOpacity>
-                        <View style={{ marginLeft: "3.0%" }}>
-                          <Text style={{ marginLeft: 10, fontFamily: "gelasio-med" }}>{buddy.username}</Text>
-                          <Text style={{ marginLeft: 10, marginTop: 3, fontFamily: "gelasio", fontSize: 11 }}>
-                            on: {!buddy.chapter ? "Prologue" : buddy.chapter}, {!buddy.percentage ? "0" : buddy.percentage}% read
-                          </Text>
-                          <RemoveBuddy refetch={refetch} buddy_id={buddy.id} />
+            <ScrollView>
+              {!data.getMyReadingBuddies ? (
+                <Text style={{ fontSize: 11 }}>Reading buddies receive notifications about each other's reading positions...add one above.</Text>
+              ) : (
+                data.getMyReadingBuddies.map((buddy) => {
+                  return (
+                    <View>
+                      <Card>
+                        <View style={{ flexDirection: "row", alignItems: "center" }}>
+                          <TouchableOpacity
+                            onPress={() => {
+                              toggleReaderModal();
+                              navigation.navigate("Profile", { user_id: buddy.id });
+                            }}
+                          >
+                            <Image source={{ uri: buddy.user_avatar }} style={{ width: 60, height: 60, borderRadius: 30 }} />
+                          </TouchableOpacity>
+                          <View style={{ marginLeft: "3.0%" }}>
+                            <Text style={{ marginLeft: 10, fontFamily: "gelasio-med" }}>{buddy.username}</Text>
+                            <Text style={{ marginLeft: 10, marginTop: 3, fontFamily: "gelasio", fontSize: 11 }}>
+                              on: {!buddy.bookmark.chapter ? "Prologue" : buddy.bookmark.chapter}, {!buddy.bookmark.percentage ? "0" : buddy.bookmark.percentage}% read
+                            </Text>
+                            <RemoveBuddy refetch={refetch} buddy_id={buddy.id} />
+                          </View>
                         </View>
-                      </View>
-                    </Card>
-                    <Line />
-                  </ScrollView>
-                );
-              })
-            )}
+                      </Card>
+                      <Line />
+                    </View>
+                  );
+                })
+              )}
+            </ScrollView>
             <TouchableOpacity onPress={() => refetch()}>
               <Text style={{ textAlign: "center", fontSize: 9, color: "#6382E9", marginTop: 25 }}>Refresh list</Text>
             </TouchableOpacity>

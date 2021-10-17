@@ -33,7 +33,7 @@ const ReaderModal: FC<IProps> = ({ refetch }) => {
 
   return (
     <View>
-      <Form placeholder="insert secret reader code here" onChangeText={(text) => setBody(text)} value={body} />
+      <Form placeholder="insert friend's secret reader code here" onChangeText={(text) => setBody(text)} value={body} />
       {mutationError ? <ErrorText>{mutationError.message}</ErrorText> : null}
       <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>
         <TouchableOpacity

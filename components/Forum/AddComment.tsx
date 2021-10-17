@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { gql } from "apollo-boost";
 import { useMutation } from "@apollo/react-hooks";
 import { SUBMIT_COMMENT, REPLIES_FRAGMENT } from "../../queries";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Platform } from "react-native";
 import styled from "styled-components";
 
 interface IProps {
@@ -56,7 +56,7 @@ const AddComment: FC<IProps> = (props) => {
     <View>
       <Line />
       <Divider />
-      <Form placeholder="Leave a comment.." multiline value={body} onChangeText={(text) => setBody(text)} />
+      <Form placeholder="Leave a comment.." multiline value={body} onChangeText={(text) => setBody(text)} style={{ textAlignVertical: "top" }} />
       <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>
         <TouchableOpacity
           onPress={() => {
