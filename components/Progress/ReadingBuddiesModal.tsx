@@ -113,7 +113,7 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
                           <View style={{ marginLeft: "3.0%" }}>
                             <Text style={{ marginLeft: 10, fontFamily: "gelasio-med" }}>{buddy.username}</Text>
                             <Text style={{ marginLeft: 10, marginTop: 3, fontFamily: "gelasio", fontSize: 11 }}>
-                              on: {!buddy.bookmark.chapter ? "Prologue" : buddy.bookmark.chapter}, {!buddy.bookmark.percentage ? "0" : buddy.bookmark.percentage}% read
+                              on chapter: {!buddy.bookmark.chapter ? "Prologue" : buddy.bookmark.chapter}, {!buddy.bookmark.percentage ? "0" : Math.round(buddy.bookmark.percentage)}% read
                             </Text>
                             <RemoveBuddy refetch={refetch} buddy_id={buddy.id} />
                           </View>

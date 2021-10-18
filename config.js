@@ -1,4 +1,4 @@
-const prod = false;
+const prod = true;
 
 const mixpanel_token = "ad526bf26dc5a7a977fb8abd4acc7cea";
 
