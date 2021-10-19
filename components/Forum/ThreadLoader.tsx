@@ -7,10 +7,9 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Comment from "./UI/Comment";
 import styled from "styled-components";
 import AddComment from "./AddComment";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   thread_id: number;
 }
 

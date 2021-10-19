@@ -2,11 +2,10 @@ import React, { FC, useState } from "react";
 import moment from "moment";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import styled from "styled-components";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
   data: any;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const CommentCard = styled.View`

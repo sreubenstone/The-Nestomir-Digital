@@ -22,7 +22,6 @@ import Chapter13 from "./Chapter13";
 import Chapter14 from "./Chapter14";
 import Chapter15 from "./Chapter15";
 import Chapter16 from "./Chapter16";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import GlossaryModal from "../Glossary/inline/GlossaryModal";
 
 const BreakIcon = styled.Text`
@@ -44,7 +43,8 @@ interface IState {
 }
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
+  route: any;
 }
 
 export default class ChapterLoader extends Component<IProps, IState> {
@@ -53,7 +53,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
   };
 
   state = {
-    bookmark: this.props.navigation.getParam("bookmark"),
+    bookmark: this.props.route.params.bookmark,
     screenPos: 0,
     progress_count: 0,
     overLay: false,
@@ -140,10 +140,10 @@ export default class ChapterLoader extends Component<IProps, IState> {
 
   render() {
     const windowWidth = Dimensions.get("window").width;
-    const { navigation } = this.props;
+    const { route, navigation } = this.props;
     const { bookmark, screenPos, overLay, animationComplete, progress_count, glossary, glossary_element } = this.state;
-    const chapter = navigation.getParam("chapter");
-    const chapter_index = navigation.getParam("chapter_index");
+    const { chapter } = route.params;
+    const { chapter_index } = route.params;
     const diff = Math.abs(screenPos - bookmark);
     const CurrentChapter = this.chapters[chapter];
 

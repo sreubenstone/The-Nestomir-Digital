@@ -6,12 +6,11 @@ import * as Clipboard from "expo-clipboard";
 import SubmitReadingBuddy from "./SubmitReadingBuddy";
 import RemoveBuddy from "./RemoveBuddy";
 import styled from "styled-components";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
   reader_modal: boolean;
   toggleReaderModal: () => void;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const OuterContainer = styled.View`
@@ -64,7 +63,7 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
   if (error) return <Text>Error! ${error.message}</Text>;
 
   const copyToClipboard = () => {
-    Clipboard.default.setString(
+    Clipboard.setString(
       `Hey this is my secret reader code for The Nestomir: ${profile_object.getAuth.secret_code}. I get $10 if you enter this when you sign up 😁. If you've already signed up you can use the code to add me as a reading buddy. If you don't know what The Nestomir is...it's the coolest sci fi book/app ever 😜.`
     );
   };

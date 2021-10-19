@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import moment from "moment";
 import styled from "styled-components";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   toggleNotifModal: () => void;
   notification: any;
 }

@@ -4,12 +4,11 @@ import { GET_MY_NOTIFICATIONS } from "../../queries";
 import NotificationItem from "./UI/NotificationItem";
 import { Modal, TouchableOpacity, ScrollView } from "react-native";
 import styled from "styled-components";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
   notif_modal: boolean;
   toggleNotifModal: () => void;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const InnerContainer = styled.View`

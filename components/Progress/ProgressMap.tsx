@@ -2,13 +2,12 @@ import React, { FC } from "react";
 import { View, ScrollView, Text, Image, TouchableOpacity } from "react-native";
 import { ProgressCardStyles, GlobalStyles } from "../../Stylesheet";
 import { TOC } from "../../TOC";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
 import analytics from "../../Analytics";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   bookmark: any;
 }
 

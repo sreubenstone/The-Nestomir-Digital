@@ -4,10 +4,9 @@ import NotificationButtonForum from "./NotificationButtonForum";
 import ForumLoader from "./ForumLoader";
 import NotificationModal from "../Notifications/NotificationModal";
 import { ProgressStyles } from "../../Stylesheet";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 interface IState {

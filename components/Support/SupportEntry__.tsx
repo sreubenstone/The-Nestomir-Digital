@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import Form from "./Form";
 
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 export default class Support extends Component<IProps> {

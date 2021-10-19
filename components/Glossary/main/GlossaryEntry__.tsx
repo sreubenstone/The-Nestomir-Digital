@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import GlossaryMap from "./GlossaryMap";
 import { ProgressStyles } from "../../../Stylesheet";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 export default class GlossaryEntry extends Component<IProps> {

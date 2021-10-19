@@ -4,10 +4,8 @@ import { GET_PROFILE } from "../../queries";
 import Presentational from "./Presentational";
 import { Text } from "react-native";
 
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   user_id: Number;
 }
 

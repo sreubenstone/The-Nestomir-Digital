@@ -3,10 +3,9 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { useMutation } from "@apollo/react-hooks";
 import { SAVE_SUPPORT_REQUEST } from "../../queries";
 import styled from "styled-components";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const FormInput = styled.TextInput`

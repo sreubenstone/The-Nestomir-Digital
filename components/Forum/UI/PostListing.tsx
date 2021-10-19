@@ -4,12 +4,11 @@ import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../../queries";
 import styled from "styled-components";
 import moment from "moment";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import analytics from "../../../Analytics";
 
 interface IProps {
   data: any;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const Container = styled.View`

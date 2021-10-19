@@ -2,10 +2,8 @@ import React, { FC } from "react";
 import { Text, ScrollView, View, TouchableOpacity } from "react-native";
 import Glossary from "../Glossary";
 
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const GlossaryMap: FC<IProps> = (props) => {

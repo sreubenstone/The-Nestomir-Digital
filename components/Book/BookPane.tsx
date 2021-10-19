@@ -4,7 +4,6 @@ import { UPDATE_BOOKMARK } from "./../../queries";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 import { ChapterLoaderStyles } from "../../Stylesheet";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 const BackIcon = styled.Image`
   height: 25px;
@@ -14,7 +13,7 @@ const BackIcon = styled.Image`
 `;
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   overLay: boolean;
   chapter: string;
   bookmark: number;

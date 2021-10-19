@@ -4,13 +4,12 @@ import { GET_AUTH } from "../../queries";
 import * as SecureStore from "expo-secure-store";
 import * as Updates from "expo-updates";
 import { Modal, TouchableOpacity } from "react-native";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import styled from "styled-components";
 
 interface IProps {
   profile_modal: boolean;
   toggleProfileModal: () => void;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const InnerContainer = styled.View`

@@ -3,10 +3,8 @@ import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
 import { TouchableOpacity, Image, Dimensions } from "react-native";
 
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
-
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   toggleProfileModal: () => void;
 }
 

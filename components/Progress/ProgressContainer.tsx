@@ -6,7 +6,6 @@ import Push from "./Push";
 import ProgressMap from "./ProgressMap";
 import ReaderStat from "./ReaderStat";
 import { ProgressStyles } from "../../Stylesheet";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 import ReadingBuddiesModal from "./ReadingBuddiesModal";
 import styled from "styled-components";
 
@@ -16,7 +15,7 @@ interface IState {
 }
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
   data: any;
 }
 

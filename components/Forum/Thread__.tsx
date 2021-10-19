@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { View, Text, ImageBackground, TouchableOpacity, Image } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import ThreadLoader from "./ThreadLoader";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
+  route: any;
 }
 
 const ContainerStyle = {
@@ -23,19 +23,8 @@ const ContainerStyle = {
 };
 
 export default class Thread extends Component<IProps> {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      title: navigation.getParam("title"),
-      headerLeft: (
-        <TouchableOpacity onPress={() => navigation.navigate("Forum")}>
-          <Image source={require("../../assets/images/back.png")} style={{ width: 20, height: 20, marginLeft: 15.5 }} />
-        </TouchableOpacity>
-      ),
-    };
-  };
-
   render() {
-    const thread_id = this.props.navigation.getParam("thread_id");
+    const { thread_id } = this.props.route.params;
     return (
       <View style={{ height: "100%" }}>
         <View

@@ -4,11 +4,10 @@ import { GET_CHAPTER_THREADS } from "../../queries";
 import { Text, TouchableOpacity, View } from "react-native";
 import PostListing from "./UI/PostListing";
 import styled from "styled-components";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
   chapter_index: number;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const Container = styled.View`

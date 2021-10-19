@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../queries";
 import { Text, View, ImageBackground, ScrollView, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
@@ -7,11 +6,10 @@ import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
 import PostListing from "../Forum/UI/PostListing";
 import Tagline from "./Tagline";
 import ProfileAvatar from "./Profile_Avatar";
-import { NavigationParams, NavigationScreenProp, NavigationState } from "react-navigation";
 
 interface IProps {
   data: any;
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: any;
 }
 
 const Presentational: FC<IProps> = (props) => {
