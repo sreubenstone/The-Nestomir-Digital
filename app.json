@@ -4,7 +4,7 @@
     "slug": "theNestomir",
     "privacy": "unlisted",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/images/ios_icon.png",
     "splash": {
@@ -23,7 +23,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.thenestomir.thenestomir",
-      "buildNumber": "1.0.4"
+      "buildNumber": "1.0.5"
     },
     "android": {
       "package": "com.thenestomir.thenestomirapp",

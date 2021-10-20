@@ -45,7 +45,7 @@ const ProfileModal: FC<IProps> = ({ profile_modal, navigation, toggleProfileModa
             toggleProfileModal();
           }}
         >
-          <Link style={{ marginTop: 40, marginBottom: 25 }}>My Profile</Link>
+          <Link style={{ marginTop: 40, marginBottom: 45 }}>My Profile</Link>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
@@ -61,7 +61,7 @@ const ProfileModal: FC<IProps> = ({ profile_modal, navigation, toggleProfileModa
             await Updates.reloadAsync();
           }}
         >
-          <Link style={{ marginTop: 25 }}>Log out</Link>
+          <Link style={{ marginTop: 45 }}>Log out</Link>
         </TouchableOpacity>
       </InnerContainer>
     </Modal>

@@ -25,6 +25,7 @@ function StoryStackScreen() {
       <StoryStack.Screen name="ProgressEntry" options={{ headerShown: false }} component={ProgressEntry} />
       <StoryStack.Screen name="ChapterLoader" options={{ headerShown: false }} component={ChapterLoader} />
       <StoryStack.Screen name="Profile_Profile" options={{ headerShown: false }} component={Profile} />
+      <StoryStack.Screen name="Support" component={Support} />
     </StoryStack.Navigator>
   );
 }
@@ -37,7 +38,6 @@ function ForumStackScreen() {
       <ForumStack.Screen name="Forum_main" options={{ headerShown: false }} component={Forum} />
       <ForumStack.Screen name="Thread" component={Thread} />
       <ForumStack.Screen name="Profile" options={{ headerShown: false }} component={Profile} />
-      <ForumStack.Screen name="Support" component={Support} />
     </ForumStack.Navigator>
   );
 }

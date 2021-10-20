@@ -8,8 +8,8 @@ const ReaderStat: FC = () => {
     setTimeout(() => setAppear(false), 5000);
   });
 
-  return (
-    <View style={{ position: "absolute", bottom: "101%", left: "9%", display: appear ? "flex" : "none" }}>
+  return appear ? (
+    <View style={{ position: "absolute", bottom: "101%", left: "9%", display: "flex" }}>
       <View style={{ flexDirection: "row" }}>
         <Image source={require("../../assets/images/alien.png")} style={{ width: 40, height: 40, marginRight: 5 }} />
         <View style={{ backgroundColor: "#FFF", width: "75%", borderWidth: 0.5, borderRadius: 5, padding: 4, borderColor: "grey" }}>
@@ -19,7 +19,7 @@ const ReaderStat: FC = () => {
         </View>
       </View>
     </View>
-  );
+  ) : null;
 };
 
 export default ReaderStat;

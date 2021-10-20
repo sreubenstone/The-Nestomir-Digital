@@ -38,7 +38,7 @@ const Form: FC<IProps> = (props) => {
   }
   return (
     <View>
-      <FormInput multiline height="175px" placeholder={placeholder} value={body} onChangeText={(text) => setBody(text)} />
+      <FormInput multiline height="175px" placeholder={placeholder} value={body} onChangeText={(text) => setBody(text)} style={{ textAlignVertical: "top" }} />
       {success && (
         <View>
           <Text style={{ marginTop: 4 }}>You have successfully submitted your request.</Text>

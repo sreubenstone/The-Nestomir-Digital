@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Platform } from "react-native";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../../../queries";
 import styled from "styled-components";
@@ -39,7 +39,7 @@ const PostListing: FC<IProps> = (props) => {
         <Image source={{ uri: `${props.data.user.user_avatar}` }} style={{ width: 40, height: 40, borderRadius: 15 }} />
         <View style={{ marginLeft: 13 }}>
           <Text style={{ color: "#0195FF", fontFamily: "gelasio" }}>{props.data.title}</Text>
-          <Text style={{ color: "#6B737C", fontFamily: "gelasio", fontSize: 12, marginTop: 2 }}>
+          <Text style={{ color: "#6B737C", fontFamily: "gelasio", fontSize: Platform.OS === "android" ? 9 : 12, marginTop: 2, overflow: "hidden" }}>
             posted by {props.data.user.username} • last reply {moment_object.fromNow()}
           </Text>
           {props.data.audio ? <Image source={require("../../../assets/images/sound_wave.png")} style={{ width: 16, height: 16, marginTop: 5 }} /> : null}

@@ -24,14 +24,14 @@ const Tagline: FC<IProps> = ({ tagline, is_me }) => {
           maxLength={250}
           editable={is_me}
           placeholder={is_me ? "...my summary goes here" : "I'm new here."}
-          style={{ height: 45, borderColor: "grey", borderRadius: 3, padding: 7, borderWidth: 0, backgroundColor: is_me ? "#F7F7F7" : null, marginTop: 15, textAlign: is_me ? "left" : "center" }}
+          style={{ height: 45, borderColor: "grey", borderRadius: 3, padding: 7, borderWidth: 0, backgroundColor: is_me ? "#F7F7F7" : null, marginTop: 15, textAlignVertical: "top", textAlign: is_me ? "left" : "center" }}
         />
         {is_me && (
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
             <Text style={{ fontSize: 10, color: "grey", marginTop: 5, marginRight: 20 }}>{value ? value.length : "0"}/250</Text>
             <TouchableOpacity
               onPress={() => {
-                if (!value.length) {
+                if (value == null || !value.length) {
                   return;
                 }
                 saveProfile({ variables: { tagline: value } });

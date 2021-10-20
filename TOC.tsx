@@ -11,7 +11,7 @@ const TOC = [
 
   {
     chapter: "Chapter 1",
-    caption: "Life in Grapefield is less than pleasant.",
+    caption: "Grapefield is less than pleasant.",
     image: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633995688/1_nv1zps.png`,
     progress: null,
     bookmark: null,
@@ -21,7 +21,7 @@ const TOC = [
 
   {
     chapter: "Chapter 2",
-    caption: "Grapefield 150th Anniversary celebrations.",
+    caption: "Grapefield 150th Anniversary.",
     image: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633995825/2_smkadz.png`,
     progress: null,
     bookmark: null,
