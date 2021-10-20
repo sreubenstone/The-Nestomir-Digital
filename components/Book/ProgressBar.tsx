@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { View, Image, Text, StyleSheet } from "react-native";
+import { View, Image, Text, StyleSheet, Platform } from "react-native";
 import styled from "styled-components";
 
 interface IProps {
@@ -14,16 +14,14 @@ const ProgressContainer = styled.View`
   height: 100px;
   flex-direction: row;
   justify-content: space-between;
-  top: 88%;
+  top: ${(props) => (props.android ? "85%" : "88%")};
 `;
 
 const ProgressBar: FC<IProps> = ({ overLay, glossary, progress_count }) => {
-  return (
-    <ProgressContainer
-      style={{
-        display: glossary ? "none" : overLay ? "none" : "flex",
-      }}
-    >
+  const android = Platform.OS === "android";
+
+  return glossary ? null : overLay ? null : (
+    <ProgressContainer android={android}>
       <View style={{ width: "100%" }}>
         <View style={{ flexDirection: "row", justifyContent: "center" }}>
           <View style={{ height: 8.5, width: "90%", backgroundColor: "white", borderColor: "#0195FF", borderWidth: 0.25, borderRadius: 10, marginTop: 40, shadowOffset: { width: 0, height: 2 }, shadowColor: "black", shadowOpacity: 0.5 }}>

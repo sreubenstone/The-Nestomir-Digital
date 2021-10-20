@@ -32,8 +32,8 @@ const BookPane: FC<IProps> = (props) => {
     console.log(mutationError);
   }
 
-  return (
-    <View style={[ChapterLoaderStyles.overlaybox, { display: overLay ? "flex" : "none" }]}>
+  return overLay ? (
+    <View style={ChapterLoaderStyles.overlaybox}>
       <TouchableOpacity onPress={() => navigation.navigate("ProgressEntry")}>
         <BackIcon source={require("../../assets/images/back.png")} />
       </TouchableOpacity>
@@ -52,7 +52,7 @@ const BookPane: FC<IProps> = (props) => {
         <Image source={bookmark === null ? require("../../assets/images/bookmark.png") : diff < 50 ? require("../../assets/images/bookmarked.png") : require("../../assets/images/bookmark.png")} style={ChapterLoaderStyles.image} />
       </TouchableOpacity>
     </View>
-  );
+  ) : null;
 };
 
 export default BookPane;
