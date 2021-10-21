@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, ImageBackground } from "react-native";
+import { View, Text, ImageBackground, ScrollView } from "react-native";
 import NotificationButtonForum from "./NotificationButtonForum";
 import ForumLoader from "./ForumLoader";
 import NotificationModal from "../Notifications/NotificationModal";
@@ -40,7 +40,9 @@ export default class Forum extends Component<IProps, IState> {
             <Text style={ProgressStyles.title}>Forum</Text>
             <Text style={ProgressStyles.subTitle}>Discuss thoughts and ideas.</Text>
             <View style={{ marginTop: 15 }} />
-            <ForumLoader navigation={navigation} />
+            <ScrollView>
+              <ForumLoader navigation={navigation} />
+            </ScrollView>
           </View>
         </View>
         <NotificationModal navigation={navigation} notif_modal={notif_modal} toggleNotifModal={this.toggleNotifModal} />

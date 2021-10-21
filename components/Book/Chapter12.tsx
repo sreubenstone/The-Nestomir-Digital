@@ -5,9 +5,9 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 360px;
+  width: ${(props) => (props.width ? props.width : 360)};
   height: ${(props) => (props.height ? props.height : 200)};
-  border-radius: 20px;
+  border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
   margin-bottom: 25px;
 `;
@@ -287,7 +287,7 @@ export default class Chapter12 extends Component<IProps> {
           Python instructions would go. I’ve used <Text style={{ fontFamily: "gelasibro-italic" }}>Python comments</Text> to document what the intent of each step would be.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={170} source={require("./../../assets/images/lessons/lesson7_2.png")} />
+          <StoryGraphic height={153} source={require("./../../assets/images/lessons/lesson7_2.png")} />
         </View>
         <Caption>Here, five dummy instructions are sitting inside of the function send_notification.</Caption>
 
@@ -364,7 +364,7 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>value</Text> as an <Text style={{ fontFamily: "gelasibro-italic" }}>argument</Text>. To call a function in this manner, we use this syntax.” Zena wrote below.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={105} source={require("./../../assets/images/lessons/lesson7_5.png")} />
+          <StoryGraphic height={97} source={require("./../../assets/images/lessons/lesson7_5.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -397,7 +397,7 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}“Precisely. In Python, to return, we use the keyword return like this:”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_6.png")} />
+          <StoryGraphic height={178} source={require("./../../assets/images/lessons/lesson7_6.png")} />
         </View>
         <Caption>Note the Python return keyword.</Caption>
 
@@ -453,8 +453,7 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}“Yes. Or else our function will actually hand off <Text style={{ fontFamily: "gelasibro-italic" }}>nothing</Text> to <Text style={{ color: "#0C2443", fontFamily: "code" }}>sum</Text> in line 3. If we{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>printed</Text> the value of <Text style={{ color: "#0C2443", fontFamily: "code" }}>sum</Text> to the screen, after running this code, we would see{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>NONE</Text> printed out, <Text style={{ fontFamily: "gelasibro-italic" }}>not</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>5</Text>. NONE is another Python{" "}
-          <GlossaryWord lookup_string="Datatype" word="data type" toggleGlossary={this.props.toggleGlossary} />
-          that essentially expresses that something is empty.”{"\n"}
+          <GlossaryWord lookup_string="Datatype" word="data type" toggleGlossary={this.props.toggleGlossary} /> that essentially expresses that something is empty.”{"\n"}
           {"\n"}“I hope I don't forget,” Jake said.{"\n"}
           {"\n"}“You will. But you will learn,” Zena said.{"\n"}
           {"\n"}Zena walked to the center of the mat.{"\n"}
@@ -514,7 +513,7 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Nine over five, times Celsius, add thirty-two</Text>. He sketched the equation on the board. His mind cycled through a few options, but he spotted the opportunity to use his input.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_12.png")} />
+          <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson7_12.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -525,7 +524,7 @@ export default class Chapter12 extends Component<IProps> {
           He looked at his work. It seemed right. “But I'm not actually doing anything with the value of the equation,” he noted. “Can I store it in a variable?” He looked at Zena. No reaction. He put it in a variable anyway.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_13.png")} />
+          <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson7_13.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -539,7 +538,7 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>The return</Text>. He updated his code once again.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_14.png")} />
+          <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson7_14.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -552,7 +551,7 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>I can call the function and set a new variable to its result! As Zena demonstrated before!</Text>
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson7_15.png")} />
+          <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson7_15.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 

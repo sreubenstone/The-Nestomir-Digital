@@ -5,7 +5,7 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 360px;
+  width: ${(props) => (props.width ? props.width : 360)};
   height: ${(props) => (props.height ? props.height : 200)};
   border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
@@ -238,7 +238,7 @@ export default class Chapter9 extends Component<IProps> {
         </Text>
 
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={165} source={require("./../../assets/images/lessons/lesson4_1.png")} />
+          <StoryGraphic height={155} source={require("./../../assets/images/lessons/lesson4_1.png")} />
         </View>
         <Caption>We use the terminal to interact with other programs on our computer, like PIP. Here, Jake used the terminal to tell PIP to download SciPy to Dendro's machine.</Caption>
 

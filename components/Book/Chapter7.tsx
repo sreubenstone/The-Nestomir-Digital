@@ -5,7 +5,7 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 360px;
+  width: ${(props) => (props.width ? props.width : 360)};
   height: ${(props) => (props.height ? props.height : 200)};
   border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
@@ -289,7 +289,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“If 2 equals 2?” Jake asked, bewildered.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_2.png")} />
+          <StoryGraphic height={100} source={require("./../../assets/images/lessons/lesson3_2.png")} />
         </View>
         <Caption>The if-statement's code block will only run if its expression is True.</Caption>
 
@@ -313,7 +313,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}Jake looked at the screen.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_3.png")} />
+          <StoryGraphic height={150} source={require("./../../assets/images/lessons/lesson3_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -331,7 +331,7 @@ export default class Chapter7 extends Component<IProps> {
           happening inside of our code. See here.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_4.png")} />
+          <StoryGraphic height={175} source={require("./../../assets/images/lessons/lesson3_4.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -372,7 +372,7 @@ export default class Chapter7 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Interesting.</Text> Jake looked back at the code editor. Dendro brought up the if-statement he wrote a few moments ago.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_3.png")} />
+          <StoryGraphic height={175} source={require("./../../assets/images/lessons/lesson3_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -386,7 +386,7 @@ export default class Chapter7 extends Component<IProps> {
         </Text>
 
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={450} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin1.png")} />
+          <StoryGraphic height={400} width={300} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin1.png")} />
         </View>
         <Caption>
           The terminal is where we tell the Python program (the fancy term is "Python interpreter") to process our Python file. Most code editors allow us to access the terminal from within the editor. Recognize the terminal is a seperate program
@@ -401,7 +401,7 @@ export default class Chapter7 extends Component<IProps> {
         </Text>
 
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={450} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin2.png")} />
+          <StoryGraphic height={400} width={300} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin2.png")} />
         </View>
         <Caption>The results of print are displayed inside the computer's terminal.</Caption>
 
@@ -411,7 +411,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“Precisely,” Dendro replied. “Now I will make a small modification.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson3_6.png")} />
+          <StoryGraphic height={175} source={require("./../../assets/images/lessons/lesson3_6.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 

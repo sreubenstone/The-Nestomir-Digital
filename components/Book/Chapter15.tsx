@@ -5,7 +5,7 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 360px;
+  width: ${(props) => (props.width ? props.width : 360)};
   height: ${(props) => (props.height ? props.height : 200)};
   border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
@@ -312,11 +312,11 @@ export default class Chapter15 extends Component<IProps> {
           .” She scrolled down the page. “Here, check this out. This is an example of a real HTTP GET request, and the one below is a real example of an HTTP Post request. You can see, an HTTP request is fairly easy to read–it’s just text.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={127} radius={"none"} source={require("./../../assets/images/lessons/lesson9_1.png")} />
+          <StoryGraphic height={107} width={300} radius={"none"} source={require("./../../assets/images/lessons/lesson9_1.png")} />
         </View>
         <Caption>(Zena's note: an HTTP message is written with text only!)</Caption>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={200} radius={"none"} source={require("./../../assets/images/lessons/lesson9_2.png")} />
+          <StoryGraphic height={160} width={290} radius={"none"} source={require("./../../assets/images/lessons/lesson9_2.png")} />
         </View>
         <Caption>(Zena's note: this is an example HTTP POST Request!)</Caption>
 
@@ -376,7 +376,7 @@ export default class Chapter15 extends Component<IProps> {
           at her.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson9_5.png")} />
+          <StoryGraphic height={186} source={require("./../../assets/images/lessons/lesson9_5.png")} />
         </View>
 
         {
@@ -392,7 +392,7 @@ export default class Chapter15 extends Component<IProps> {
           looked at Zena.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson9_6.png")} />
+          <StoryGraphic height={177} source={require("./../../assets/images/lessons/lesson9_6.png")} />
         </View>
         <Caption>This can be visually intimidating. But all that's happening is Jake is inserting two arguments into the function. The first argument is the URL, the secong argument is a dictionary.</Caption>
 
@@ -415,7 +415,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}Jake updated his code rapidly. He was beginning to get a better feel for this stuff.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson9_7.png")} />
+          <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson9_7.png")} />
         </View>
         <Caption>The requests.post function RETURNS a response. We can store that response in a variable, then prints it to the terminal screen. This is key fundamental of working with Python and the internet.</Caption>
 

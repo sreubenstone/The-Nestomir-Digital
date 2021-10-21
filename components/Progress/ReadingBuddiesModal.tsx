@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_MY_READING_BUDDIES, GET_AUTH } from "../../queries";
-import { Modal, Text, View, TouchableOpacity, Image, ScrollView, Keyboard, TouchableWithoutFeedback } from "react-native";
+import { Modal, Text, View, TouchableOpacity, Image, ScrollView, Keyboard, TouchableWithoutFeedback, Platform } from "react-native";
 import * as Clipboard from "expo-clipboard";
 import SubmitReadingBuddy from "./SubmitReadingBuddy";
 import RemoveBuddy from "./RemoveBuddy";
@@ -24,8 +24,8 @@ const OuterContainer = styled.View`
 
 const InnerContainer = styled.View`
   background-color: #fff;
-  height: 80%;
-  width: 88%;
+  height: ${(props) => (props.android ? "96%" : "80%")};
+  width: ${(props) => (props.android ? "98%" : "88%")};
   border-radius: 11px;
   padding: 15px;
   border-color: #0195ff;
@@ -57,6 +57,7 @@ const Line = styled.View`
 `;
 
 const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navigation }) => {
+  const android = Platform.OS === "android";
   const { data: profile_object } = useQuery(GET_AUTH, { fetchPolicy: "cache-only" });
   const { loading, error, data, refetch } = useQuery(GET_MY_READING_BUDDIES);
   if (loading) return <Text>Loading...</Text>;
@@ -72,27 +73,28 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
     <Modal visible={reader_modal} animationType="fade" transparent={true}>
       <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <OuterContainer>
-          <InnerContainer>
+          <InnerContainer android={android}>
             <TouchableOpacity onPress={() => toggleReaderModal()}>
               <Close>x</Close>
             </TouchableOpacity>
-            <Icon source={require("../../assets/images/lightning.png")} />
-            <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15 }}>
-              <Text style={{ color: "grey", fontSize: 12, textAlign: "center" }}>
-                Paste in your friend's secret reader code in the text box below to add them as a reading buddy. Your friends can also add you with your code. {"\n\n"} When you share your secret code with someone who has not signed up yet, make sure
-                they enter your secret code when they sign up, and you will receive $10!
-              </Text>
-            </View>
-            <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15, borderRadius: 5 }}>
-              <Text style={{ color: "grey", fontSize: 15, textAlign: "center", fontWeight: "bold" }}>{profile_object.getAuth.secret_code}</Text>
-            </View>
-            <TouchableOpacity onPress={() => copyToClipboard()}>
-              <Text style={{ textAlign: "right", fontSize: 10, color: "grey" }}>copy</Text>
-            </TouchableOpacity>
-            <Text style={{ marginBottom: 7.5, fontFamily: "gelasio-med", marginTop: 23 }}>+ Reading Buddy</Text>
-            <SubmitReadingBuddy refetch={refetch} />
-            <Text style={{ marginBottom: 14.5, marginTop: 25, fontFamily: "gelasio-bold" }}>My Reading Buddies</Text>
             <ScrollView>
+              <Icon source={require("../../assets/images/lightning.png")} />
+              <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15 }}>
+                <Text style={{ color: "grey", fontSize: 12, textAlign: "center" }}>
+                  Paste in your friend's secret reader code in the text box below to add them as a reading buddy. Your friends can also add you with your code. {"\n\n"} When you share your secret code with someone who has not signed up yet, make sure
+                  they enter your secret code when they sign up, and you will receive $10!
+                </Text>
+              </View>
+              <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15, borderRadius: 5 }}>
+                <Text style={{ color: "grey", fontSize: 15, textAlign: "center", fontWeight: "bold" }}>{profile_object.getAuth.secret_code}</Text>
+              </View>
+              <TouchableOpacity onPress={() => copyToClipboard()}>
+                <Text style={{ textAlign: "right", fontSize: 10, color: "grey" }}>copy</Text>
+              </TouchableOpacity>
+
+              <Text style={{ marginBottom: 7.5, fontFamily: "gelasio-med", marginTop: 23 }}>+ Reading Buddy</Text>
+              <SubmitReadingBuddy refetch={refetch} />
+              <Text style={{ marginBottom: 14.5, marginTop: 25, fontFamily: "gelasio-bold" }}>My Reading Buddies</Text>
               {!data.getMyReadingBuddies ? (
                 <Text style={{ fontSize: 11 }}>Reading buddies receive notifications about each other's reading positions...add one above.</Text>
               ) : (
@@ -123,10 +125,11 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
                   );
                 })
               )}
+
+              <TouchableOpacity onPress={() => refetch()}>
+                <Text style={{ textAlign: "center", fontSize: 9, color: "#6382E9", marginTop: 25, marginBottom: 150 }}>Refresh list</Text>
+              </TouchableOpacity>
             </ScrollView>
-            <TouchableOpacity onPress={() => refetch()}>
-              <Text style={{ textAlign: "center", fontSize: 9, color: "#6382E9", marginTop: 25 }}>Refresh list</Text>
-            </TouchableOpacity>
           </InnerContainer>
         </OuterContainer>
       </TouchableWithoutFeedback>

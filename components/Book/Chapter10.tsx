@@ -5,9 +5,9 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 360px;
+  width: ${(props) => (props.width ? props.width : 360)};
   height: ${(props) => (props.height ? props.height : 200)};
-  border-radius: 20px;
+  border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
   margin-bottom: 25px;
 `;
@@ -357,7 +357,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"To retrieve the <Text style={{ fontFamily: "gelasibro-italic" }}>value of a key</Text> we do this:"
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson5_2.png")} />
+          <StoryGraphic height={170} source={require("./../../assets/images/lessons/lesson5_2.png")} />
         </View>
         {/* <Caption>(Kliggin's Chalkboard)</Caption> */}
 
@@ -384,7 +384,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"In Python, we can create this list like this." He began writing below the grocery list in python form on the chalkboard.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={85} source={require("./../../assets/images/lessons/lesson5_3.png")} />
+          <StoryGraphic height={76.5} source={require("./../../assets/images/lessons/lesson5_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -399,7 +399,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}He erased the first list and wrote in another.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={115} source={require("./../../assets/images/lessons/lesson5_4.png")} />
+          <StoryGraphic height={105} source={require("./../../assets/images/lessons/lesson5_4.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -418,7 +418,7 @@ export default class Chapter10 extends Component<IProps> {
           list element?" Kliggins added a line underneath his previous list example. "We use brackets and then the number of the element of the list we want to access."
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={140} source={require("./../../assets/images/lessons/lesson5_5.png")} />
+          <StoryGraphic height={126} source={require("./../../assets/images/lessons/lesson5_5.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -465,7 +465,7 @@ export default class Chapter10 extends Component<IProps> {
           sketched another line on the bottom of the board to make the code more conceptually clear.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={110} source={require("./../../assets/images/lessons/lesson5_7.png")} />
+          <StoryGraphic height={101} source={require("./../../assets/images/lessons/lesson5_7.png")} />
         </View>
         <Caption>This is a powerful pattern in programming.</Caption>
 

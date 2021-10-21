@@ -5,7 +5,7 @@ import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
 
 const StoryGraphic = styled.Image`
-  width: 360px;
+  width: ${(props) => (props.width ? props.width : 360)};
   height: ${(props) => (props.height ? props.height : 200)};
   border-radius: ${(props) => (props.radius == "none" ? 0 : 20)};
   margin-top: 25px;
@@ -172,7 +172,7 @@ export default class Chapter13 extends Component<IProps> {
         </Text>
 
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={155} radius={"none"} source={require("./../../assets/images/lessons/lesson8_addin.png")} />
+          <StoryGraphic height={140} radius={"none"} source={require("./../../assets/images/lessons/lesson8_addin.png")} />
         </View>
         <Caption>View of Jupyter Notebook. The grey box at the bottom is a cell. Feel free to open up this link on the browser to follow along.</Caption>
 
@@ -251,7 +251,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Jake toggled the option selector into <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> and placed the cursor into the new notebook cell. He typed in two steps that he felt best described their horoscope program.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_3.png")} />
+          <StoryGraphic height={175} source={require("./../../assets/images/lessons/lesson8_3.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -260,7 +260,7 @@ export default class Chapter13 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>Zena looked at Jake's work. “You are correct. But allow me to make some modifications.” She slid the computer over to her and added in her version of the pseudocode in a new cell below Jake's.</Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic source={require("./../../assets/images/lessons/lesson8_4.png")} />
+          <StoryGraphic height={175} source={require("./../../assets/images/lessons/lesson8_4.png")} />
         </View>
         <Caption>Pseudocoding is incredibly powerful. But most of us get too excited and start writing code without making the outline.</Caption>
 
@@ -315,7 +315,7 @@ export default class Chapter13 extends Component<IProps> {
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>getHoroscope</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>function</Text>.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={173} source={require("./../../assets/images/lessons/lesson8_6.png")} />
+          <StoryGraphic height={160} source={require("./../../assets/images/lessons/lesson8_6.png")} />
         </View>
         <Caption>Jake's function. He's added a dictionary inside of the function called horoscopes.</Caption>
 
@@ -336,7 +336,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“I think so. You write in the name of the dictionary, then place the key name in quotes inside of brackets next to it,” Jake replied. He added another line of code to the function.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={210} source={require("./../../assets/images/lessons/lesson8_7.png")} />
+          <StoryGraphic height={194} source={require("./../../assets/images/lessons/lesson8_7.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -355,7 +355,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Jake modified his code at the bottom.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={210} source={require("./../../assets/images/lessons/lesson8_8.png")} />
+          <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson8_8.png")} />
         </View>
         {/* <Caption>(Dendro's monitor)</Caption> */}
 
@@ -384,7 +384,7 @@ export default class Chapter13 extends Component<IProps> {
           <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} />.
         </Text>
         <View style={GlobalStyles.flexCenter}>
-          <StoryGraphic height={270} source={require("./../../assets/images/lessons/lesson8_9.png")} />
+          <StoryGraphic height={237} width={330} source={require("./../../assets/images/lessons/lesson8_9.png")} />
         </View>
         <Caption>Remember - the bottom two lines of code here are not part of the function getHoroscope definition. They are separate lines of code.</Caption>
 
