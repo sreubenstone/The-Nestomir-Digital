@@ -26,7 +26,11 @@ const PostListing: FC<IProps> = (props) => {
   return (
     <TouchableOpacity
       onPress={() => {
-        props.navigation.navigate("Thread", { thread_id: props.data.id, title: props.data.title });
+        props.navigation.navigate("Forum", {
+          screen: "Thread",
+          params: { thread_id: props.data.id, title: props.data.title },
+          initial: false,
+        });
         analytics("thread_open", { distinct_id: data.getAuth.id, thread_id: props.data.id });
       }}
     >
