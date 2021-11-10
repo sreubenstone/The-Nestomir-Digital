@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import * as ImagePicker from "expo-image-picker";
 import { useMutation } from "@apollo/react-hooks";
 import { SAVE_PROFILE_PICTURE } from "../../queries";
-import { View, TouchableOpacity, ActivityIndicator, StyleSheet } from "react-native";
+import { View, ActivityIndicator, TouchableNativeFeedback, Platform, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 
 const Picture = styled.Image`
@@ -78,14 +78,22 @@ const ProfileAvatar: FC<IProps> = (props) => {
       })
       .catch((err) => console.log(err));
   };
+
+  // ternary below is due to issue with position absolute on Android
+
   return (
     <View>
       <Picture source={{ uri }} />
-      {is_me && (
-        <TouchableOpacity onPress={() => openImagePickerAsync()}>
-          <Icon source={require("../../assets/images/camera.png")} />
-        </TouchableOpacity>
-      )}
+      {is_me &&
+        (Platform.OS === "android" ? (
+          <TouchableNativeFeedback onPress={() => openImagePickerAsync()}>
+            <Icon source={require("../../assets/images/camera.png")} />
+          </TouchableNativeFeedback>
+        ) : (
+          <TouchableOpacity onPress={() => openImagePickerAsync()}>
+            <Icon source={require("../../assets/images/camera.png")} />
+          </TouchableOpacity>
+        ))}
       {mutationLoading && (
         <ContainerA>
           <ActivityIndicator size="small" color="#0000ff" />

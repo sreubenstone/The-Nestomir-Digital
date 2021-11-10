@@ -106,7 +106,7 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
                           <TouchableOpacity
                             onPress={() => {
                               toggleReaderModal();
-                              navigation.navigate("Profile", { user_id: buddy.id });
+                              navigation.navigate("Profile_Profile", { user_id: buddy.id });
                             }}
                           >
                             <Image source={{ uri: buddy.user_avatar }} style={{ width: 60, height: 60, borderRadius: 30 }} />
