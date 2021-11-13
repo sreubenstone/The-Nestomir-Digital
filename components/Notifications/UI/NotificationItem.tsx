@@ -25,14 +25,6 @@ const Pic = styled.Image`
   margin-right: 15px;
 `;
 
-const Divider = styled.View`
-  border-bottom-width: 1px;
-  margin-left: 25px;
-  margin-right: 25px;
-  border-style: solid;
-  border-color: grey;
-`;
-
 const NotificationItem: FC<IProps> = ({ notification, navigation, toggleNotifModal }) => {
   // TIME STAMPS -- CONVERT TIME STRING TO JS OBECT (JSON.parse), THEN INSERT this object INTO JAVASCRIPT DATE(), THEN PASS THIS Date object INTO MOMENT.
   const converted = JSON.parse(notification.time.time_stamp);
@@ -53,7 +45,6 @@ const NotificationItem: FC<IProps> = ({ notification, navigation, toggleNotifMod
             <Text style={{ marginBottom: 5, marginTop: 3, color: "grey" }}>{moment_object.fromNow()}</Text>
           </View>
         </Container>
-        <Divider />
       </View>
     </TouchableOpacity>
   );

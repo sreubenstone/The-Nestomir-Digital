@@ -57,6 +57,12 @@ const Tab = createBottomTabNavigator();
 
 const Entry: FC<IProps> = () => {
   const { loading, error, data, refetch } = useQuery(GET_MY_NOTIFICATIONS);
+
+  const filter = data.getMyNotifications.filter((item) => {
+    return !item.read;
+  });
+
+  const badgeCount = filter.length;
   const _handleAppStateChange = (nextAppState) => {
     if (nextAppState === "active") {
       refetch();
@@ -90,7 +96,7 @@ const Entry: FC<IProps> = () => {
         })}
       >
         <Tab.Screen name="Story" options={{ headerShown: false }} component={StoryStackScreen} />
-        <Tab.Screen name="Forum" options={{ headerShown: false }} component={ForumStackScreen} />
+        <Tab.Screen name="Forum" options={{ headerShown: false, tabBarBadge: !badgeCount ? null : badgeCount }} component={ForumStackScreen} />
         <Tab.Screen name="Glossary" options={{ headerShown: false }} component={GlossaryStackScreen} />
       </Tab.Navigator>
     </NavigationContainer>

@@ -20,8 +20,8 @@ interface IProps {
 }
 
 const FriendIcon = styled.Image`
-  width: ${(props) => (props.windowWidth < 800 ? "26px" : "50px")};
-  height: ${(props) => (props.windowWidth < 800 ? "26px" : "50px")};
+  width: ${(props) => (props.windowWidth < 800 ? "35px" : "50px")};
+  height: ${(props) => (props.windowWidth < 800 ? "35px" : "50px")};
 `;
 
 export default class ProgressContainer extends Component<IProps> {
