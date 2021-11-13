@@ -98,9 +98,9 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
               {!data.getMyReadingBuddies ? (
                 <Text style={{ fontSize: 11 }}>Reading buddies receive notifications about each other's reading positions...add one above.</Text>
               ) : (
-                data.getMyReadingBuddies.map((buddy) => {
+                data.getMyReadingBuddies.map((buddy, i) => {
                   return (
-                    <View>
+                    <View key={i}>
                       <Card>
                         <View style={{ flexDirection: "row", alignItems: "center" }}>
                           <TouchableOpacity

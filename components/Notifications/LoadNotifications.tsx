@@ -58,11 +58,6 @@ const Tab = createBottomTabNavigator();
 const Entry: FC<IProps> = () => {
   const { loading, error, data, refetch } = useQuery(GET_MY_NOTIFICATIONS);
 
-  const filter = data.getMyNotifications.filter((item) => {
-    return !item.read;
-  });
-
-  const badgeCount = filter.length;
   const _handleAppStateChange = (nextAppState) => {
     if (nextAppState === "active") {
       refetch();
@@ -74,6 +69,11 @@ const Entry: FC<IProps> = () => {
 
   if (loading) return <Text>Loading...</Text>;
   if (error) return <Text>Error! ${error.message}</Text>;
+  const filter = data.getMyNotifications.filter((item) => {
+    return !item.read;
+  });
+
+  const badgeCount = filter.length;
   return (
     <NavigationContainer>
       <Tab.Navigator
