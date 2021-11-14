@@ -32,6 +32,7 @@ const NotificationItem: FC<IProps> = ({ notification, navigation, toggleNotifMod
   const moment_object = moment(js_date_object);
   return (
     <TouchableOpacity
+      style={{ marginBottom: 10 }}
       onPress={() => {
         navigation.navigate("Thread", { thread_id: notification.thread_id, title: notification.thread_title });
         toggleNotifModal();

@@ -45,7 +45,7 @@ export default class ProgressContainer extends Component<IProps> {
     return (
       <View style={{ height: "100%" }}>
         <View style={{ height: "21%" }}>
-          <View style={{ position: "absolute", zIndex: 5, left: windowWidth < 800 ? "78%" : "83%", top: "27%" }}>
+          <View style={{ position: "absolute", zIndex: 5, left: windowWidth < 800 ? "76%" : "83%", top: "27%" }}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
               <TouchableOpacity onPress={() => this.toggleReaderModal()}>
                 <FriendIcon windowWidth={windowWidth} source={require("../../assets/images/lightning.png")} />

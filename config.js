@@ -1,9 +1,9 @@
-const prod = true;
+const prod = false;
 
 const mixpanel_token = "ad526bf26dc5a7a977fb8abd4acc7cea";
 
 const prod_server = "https://dendro-backend.herokuapp.com";
-const dev_server = "https://f9df-2603-7000-3940-bc-7d3c-4233-e1ae-ae17.ngrok.io";
+const dev_server = "https://e49a-2603-7000-3940-bc-a135-3a08-1103-8807.ngrok.io";
 
 const export_env_urls = () => {
   if (prod) {
