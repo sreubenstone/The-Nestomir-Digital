@@ -3,6 +3,7 @@ import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import styled from "styled-components";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
+import Egg from "../Egg/EggInline";
 
 const StoryGraphic = styled.Image`
   width: 360px;
@@ -22,6 +23,7 @@ const Caption = styled.Text`
 
 interface IProps {
   toggleGlossary: (id: string) => void;
+  toggleEggModal: (quiz_number: number) => void;
 }
 
 export default class Chapter5 extends Component<IProps> {
@@ -51,7 +53,7 @@ export default class Chapter5 extends Component<IProps> {
         <Text style={BookStyles.bookFont}>
           Jake’s vision came into focus an undetermined amount of time later. His head felt a bit clearer. Sleep had its ways of medicating the mind.{"\n"}
           {"\n"}His nap had instilled some positivity in him, and a new thought popped into his head. Maybe he could devise a plan to extricate himself from Dendro’s control and return to his family. He tightened up the strings on his hoodie so the
-          fabric stretched tighter around his head. The low hum of the ship’s engines was still audible. He looked at the futuristic Kahve maker bubbling on the countertop, and then the retina scanner next to Dendro’s dormitory door.{"\n"}
+          fabric stretched tighter around his head. The low hum of the ship’s engines was still audible. He looked at the futuristic Kahve maker bubbling on the countertop, and then at the retina scanner next to Dendro’s dormitory door.{"\n"}
           {"\n"}He walked back down the short hallway into the cockpit. Dendro was huddled over some papers. He picked up his head every few moments to tinker with the display in front of him. “How long was I out?” Jake asked, a hint of sleepiness
           still in his voice.{"\n"}
           {"\n"}“About an Earth hour,” he responded.{"\n"}
@@ -121,11 +123,11 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}"So, your soldiers, the special operatives…they are the only ones who train to gain these powers?" Jake asked.{"\n"}
           {"\n"}“Affirmative. Our training. Our focus. Our development. It all revolves around studying the <Text style={{ fontFamily: "gelasibro-italic" }}>Core Understandings</Text> derived from{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>The Holy Curricula</Text>.” Dendro stroked the silver orb hanging from his neck.{"\n"}
-          {"\n"}“But Python you said?” Jake looked at the screen. “How can you learn something so complicated? Jake asked.{"\n"}
+          {"\n"}“But Python you said?” Jake looked at the screen. “How can you learn something so complicated?" Jake asked.{"\n"}
           {"\n"}“Well, for one, Naronian society does a much better job at teaching in general—The Solar Forces, our schools, all parts of society—all have a unique take on learning. We appreciate nature and the tools she’s given us. We do not fear
-          technical complexity; we learn to appreciate intricate things, not fear them.  But it starts for us with our spiritual teachers. They train our military personnel, and so bits and pieces of their wisdom slips into our hands. This wisdom,
-          and these critical lessons, are taught to us in training. There is <Text style={{ fontFamily: "gelasibro-italic" }}>no choice</Text> but to learn. And as each leader imparts their knowledge, we grow closer to the Utma. And the meaning,
-          purpose, and understanding of <Text style={{ fontFamily: "gelasibro-italic" }}>The Holy Curricula</Text> make more sense to us."{"\n"}
+          technical complexity; we learn to appreciate intricate things, not fear them. But it starts for us with our spiritual teachers. They train our military personnel, and so bits and pieces of their wisdom slip into our hands. This wisdom, and
+          these critical lessons, are taught to us in training. There is <Text style={{ fontFamily: "gelasibro-italic" }}>no choice</Text> but to learn. And as each leader imparts their knowledge, we grow closer to the Utma. And the meaning, purpose,
+          and understanding of <Text style={{ fontFamily: "gelasibro-italic" }}>The Holy Curricula</Text> make more sense to us."{"\n"}
           {"\n"}Dendro massaged his elbow for a moment as if it bothered him. "Growing up in the Lower Palisades, an impoverished neighborhood of Naronia, I had nothing but fighting, girls, and sports on my mind. I didn't think I could amount to
           anything. But once I was introduced to our <Text style={{ fontFamily: "gelasibro-italic" }}>Holy Curricula</Text> in training—and to code I was forever changed.”{"\n"}
           {"\n"}“But I don’t even understand what code is. Where does code <Text style={{ fontFamily: "gelasibro-italic" }}>even go</Text>? Like <Text style={{ fontFamily: "gelasibro-italic" }}>where</Text> do you put it? I get it helps us give
@@ -139,7 +141,7 @@ export default class Chapter5 extends Component<IProps> {
           From playing video games to crunching numbers, at the end of the day it's just an arrangement—a very complex arrangement of these electrical switches firing together that makes a computer tick. At the lowest levels of the computer, at the
           transistor level, the computer only understands these ONs and OFFs. We use a number system called <GlossaryWord lookup_string="Binary" word="binary" toggleGlossary={this.props.toggleGlossary} /> to describe this language of ON and OFF. It
           consists of only two digits: zeroes and ones, or ON’S and OFF’S,” Dendro said. “You can think of it as a certain type of morse code – a simple pattern, but by using math, we can represent and process almost any type of information we want
-          quite efficiently.{"\n"}
+          quite efficiently."{"\n"}
           {"\n"}“Okay, I think I get it. So code is just a way to….translate what we want the computer to do, into these zeroes and ones...these ONs and OFFs?” Jake asked.{"\n"}
           {"\n"}“Precisely. We <Text style={{ fontFamily: "gelasibro-italic" }}>could</Text> speak to the computer in zeroes and ones, but it would take years to write the most basic instructions. That’s why we need an intermediary. We can imagine
           code as a space between the computer and the being, a place where we are able to coexist. This is the space where we write our programs with what we call code and it is the primary reason why scientists and engineers in the Nestomir
@@ -151,7 +153,7 @@ export default class Chapter5 extends Component<IProps> {
           experiment. The language’s designs were left on his desk by a Naronian agent in an attempt to study how Python would proliferate out of the galaxy.{" "}
           <GlossaryWord lookup_string="Guidovanrossum" word="Guido" toggleGlossary={this.props.toggleGlossary} /> took credit for its creation,” Dendro stated.{"\n"}
           {"\n"}“Are you serious?” Jake asked, wide eyed.{"\n"}
-          {"\n"}“I would not joke around about something like that”, Dendro responded.{"\n"}
+          {"\n"}“I would not joke around about something like that,” Dendro responded.{"\n"}
           {"\n"}“Do you mean to tell me your society knows of Earth and has interacted with Earth before?” Jake asked, baffled. “I thought I heard you mention something about that before.”{"\n"}
           {"\n"}“Oh, yes. We ventured out of the galaxy some five hundred years ago.”{"\n"}
           {"\n"}"That is both terrifying and incredible, I guess. But one thing I don't understand. How, if a computer only understands zeros and ones, can it process this code, this Python, which is made up of{" "}
@@ -167,17 +169,17 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}"Yes. What coders are often doing is examining where information is coming from, and then figuring out the most efficient way to get it where it needs to go. It's about the{" "}
           <GlossaryWord lookup_string="Data" word="data" toggleGlossary={this.props.toggleGlossary} />, the <Text style={{ fontFamily: "gelasibro-italic" }}>information</Text>, that a programmer cares most about,{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>and it just so happens</Text> that code is the only tool we have at our disposal to move information from one place to another.”{"\n"}
-          {"\n"}"Jeez. So, we focus on moving information around first, not writing the code?" Jake asked, as he wrinkled his nose{"\n"}
+          {"\n"}"Jeez. So, we focus on moving information around first, not writing the code?" Jake asked, as he wrinkled his nose.{"\n"}
           {"\n"}"Yes. It's about the problem-solving thought process of organizing and moving information around and getting it to where it needs to go. A great programmer thinks about how the information moves around first, and then writes the code
           to move it.”{"\n"}
           {"\n"}Dendro cleared his throat with a grunt. “The syntax, the brackets, semi-colons, indents, ‘they don’t mean nothin’, Professor Alvarez used to tell us in basic training. What matters is how you break down the problem you are trying to
           solve,” Dendro said.{"\n"}
           {"\n"}"Interesting. I think I get that. But I still don't fully get why we really use code in the first place for computer games and apps?" Jake asked.{"\n"}
           {"\n"}“We can use code to build a web server to power your new social network, to implement a pattern in your next piece of digital art, or to control your homemade music synthesizer. We can use code to create a new arcade video game. We
-          can use it to write a program to organize accounting for a new business, or to write the next algorithm that predicts the price of a cryptocurrency—yes, that is popular in the Nestomir as well.” Dendro clicked around on his screen. “We can
+          can use it to write a program to organize accounting for a new business, or to write the next algorithm that predicts the price of a cryptocurrency—yes, that is popular in The Nestomir as well.” Dendro clicked around on his screen. “We can
           use code to generate software that can aid in our ability to understand and cure deadly diseases. At the end of the day, we have to appreciate that sentient beings and computers are a powerful combination. That’s why we need to learn to
           communicate with computers in the first place.”{"\n"}
-          {"\n"}“So you think it’s essential to learn code?” Jake asked, tugging on his earlobe{"\n"}
+          {"\n"}“So you think it’s essential to learn code?” Jake asked, tugging on his earlobe.{"\n"}
           {"\n"}“Not exactly. The world, or I should say, our Universe, will continue to be revolutionized by code. But it doesn’t mean we all have to become coders. It means we should appreciate the power code gives us, with respect to any industry
           or passion. We can reinvent art, enhance our ability to make music, help our businesses analyze data, and solve a variety of cross functional problems in an unprecedented manner. All fields, medicine, art, science, sports, gaming, can
           benefit. Understanding it <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> critical. However, becoming a coder is a choice.”{"\n"}
@@ -186,7 +188,7 @@ export default class Chapter5 extends Component<IProps> {
           can retrieve it later. Here I am using a variable to store the sensitivity value of our aileron, the flap-like things on the wing that help us tilt the ship. This sensitivity controls how sharp our turns will feel, especially in a storm.”
           {"\n"}
           {"\n"}Dendro tapped some keys on his glowing keyboard. “In Python, to declare a new variable, we simply write the name of the variable and use an<Text style={{ color: "#0C2443", fontFamily: "code" }}>=</Text> sign to assign a variable's
-          value. See here, I’m updating our aileron’s sensitivity value in our Python program.{"\n"}
+          value. See here, I’m updating our aileron’s sensitivity value in our Python program."{"\n"}
           {"\n"}Dendro zoomed in on his screen and shifted the monitor towards Jake.
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -221,7 +223,7 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}“You shall see,” Dendro responded.{"\n"}
           {"\n"}The cockpit let out a few high-pitched beeps.{"\n"}
           {"\n"}Dendro looked at the monitor mounted over his head.  “We must prepare for landing. Make sure you’re buckled in. We will be in the Salt Lake City airspace in the next forty-five minutes. Once on the ground, Lithium Radar should be able
-          to tap into local WAN and local WIFI, letting us to pull up detailed floor and security plans of the lab facility.{"\n"}
+          to tap into local WAN and local WIFI, letting us to pull up detailed floor and security plans of the lab facility."{"\n"}
           {"\n"}“So, this should be a simple in and out?” Jake asked innocently.{"\n"}
           {"\n"}“It should be. I won’t know for sure until we’re on the ground–there could be some rough patches, but let’s hope for the best. Hold tight,” Dendro said.
         </Text>

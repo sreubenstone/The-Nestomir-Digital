@@ -23,6 +23,7 @@ import Chapter14 from "./Chapter14";
 import Chapter15 from "./Chapter15";
 import Chapter16 from "./Chapter16";
 import GlossaryModal from "../Glossary/inline/GlossaryModal";
+import EggModal from "../Egg/EggModal";
 
 const BreakIcon = styled.Text`
   text-align: center;
@@ -40,6 +41,8 @@ interface IState {
   animationComplete: boolean;
   glossary: boolean;
   glossary_element: string;
+  eggmodal: boolean;
+  quiz_number: number;
 }
 
 interface IProps {
@@ -61,6 +64,8 @@ export default class ChapterLoader extends Component<IProps, IState> {
     animationComplete: false,
     glossary: false,
     glossary_element: "Function",
+    eggmodal: false,
+    quiz_number: 0,
   };
 
   scrollViewContent_height = 0;
@@ -119,6 +124,10 @@ export default class ChapterLoader extends Component<IProps, IState> {
     this.setState({ glossary: !this.state.glossary, glossary_element: lookup_string });
   };
 
+  toggleEggModal = (quiz_number) => {
+    this.setState({ eggmodal: !this.state.eggmodal, quiz_number });
+  };
+
   setBookMark = () => {
     // Permitting 0 screen position book mark so creates convolusion in this function should be rewritten
     const { bookmark, screenPos } = this.state;
@@ -141,7 +150,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
   render() {
     const windowWidth = Dimensions.get("window").width;
     const { route, navigation } = this.props;
-    const { bookmark, screenPos, overLay, animationComplete, progress_count, glossary, glossary_element } = this.state;
+    const { bookmark, screenPos, overLay, animationComplete, progress_count, glossary, glossary_element, eggmodal, quiz_number } = this.state;
     const { chapter } = route.params;
     const { chapter_index } = route.params;
     const diff = Math.abs(screenPos - bookmark);
@@ -168,7 +177,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
         >
           {animationComplete ? (
             <View style={{ paddingLeft: windowWidth > 800 ? 55 : 0, paddingRight: windowWidth > 800 ? 55 : 0 }}>
-              <CurrentChapter toggleGlossary={this.toggleGlossary} />
+              <CurrentChapter toggleGlossary={this.toggleGlossary} toggleEggModal={this.toggleEggModal} />
               <BreakIcon>✧</BreakIcon>
               <Checkpoint chapter_index={chapter_index} navigation={navigation} />
             </View>
@@ -177,6 +186,7 @@ export default class ChapterLoader extends Component<IProps, IState> {
         <BookPane navigation={navigation} chapter_index={chapter_index} setBookMark={this.setBookMark} bookmark={bookmark} overLay={overLay} screenPos={screenPos} chapter={chapter} diff={diff} progress_count={progress_count} />
         <ProgressBar overLay={overLay} glossary={glossary} progress_count={progress_count} />
         <GlossaryModal glossary={glossary} glossary_element={glossary_element} toggleGlossary={this.toggleGlossary} />
+        {/* <EggModal eggmodal={eggmodal} toggleEggModal={this.toggleEggModal} quiz_number={quiz_number} /> */}
       </View>
     );
   }

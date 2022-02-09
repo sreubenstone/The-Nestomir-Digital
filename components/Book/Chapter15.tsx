@@ -51,8 +51,8 @@ export default class Chapter15 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           Dendro smashed his fists against the countertop. "He deserved better! I should have been there to protect my brother! He would have been there to protect me." He slumped forward over the counter. "It is my fault. I think that thing thought
-          he was me." He looked out the window of the medical RV for a few moments, muttering something to himself. Then he turned around to look at Zena. "But we must keep our composure. We must stop dwelling on what we should have done, and focus
-          on getting him back. Let's address these wounds." Dendro pulled a first aid kit off the wall, and sat down in the chair next to Zena.{"\n"}
+          he was me." He looked out the window of the medical RV for a few moments, muttering something to himself. Then he turned around to look at Zena. "But we must keep our composure. We must stop dwelling on what we should have done and focus on
+          getting him back. Let's address these wounds." Dendro pulled a first aid kit off the wall and sat down in the chair next to Zena.{"\n"}
           {"\n"}"I should never have brought us here," she said solemnly, tears gently rolling down her cheek. "He was my business partner, mentor, and friend. I owe him more than I care to say." She tried to hold back the tears. "They will torture
           him I know it - we cannot let him spend a lifetime in their demonic grips!"{"\n"}
           {"\n"}"We will find him," Dendro said quietly. "We will find a way, somehow."{"\n"}
@@ -103,7 +103,7 @@ export default class Chapter15 extends Component<IProps> {
           resonator. Now she's almost as good as new. Cleaned up a few other scratches as well," the garage owner said in his glottal accent. "Luckily I worked on the lower-tier brigades back at the old shipyards on Elgro."{"\n"}
           {"\n"}Dendro peered at the ship. "And the booster is unimpaired?"{"\n"}
           {"\n"}"Affirmative. The interstellar booster was not damaged in the action." The fellow adjusted his goggles slightly. "You need a booster transplant. I assume that means you have access to an additional ship?"{"\n"}
-          {"\n"}"Yes, sir. My Sentauri Beacon II. I put her down some seven miles from here. I will head out on foot and bring her back if that is permissible," Dendro replied.{"\n"}
+          {"\n"}"Yes, sir. My Sentauri Beacon I. I put her down some seven miles from here. I will head out on foot and bring her back if that is permissible," Dendro replied.{"\n"}
           {"\n"}The goggled being nodded. "Put her down on the tarmac out back, and mind you, the transplant will take a few hours, and it will not be cheap–seventeen thousand Naronian Kroners to be exact," the creature remarked.{"\n"}
           {"\n"}"That is not a problem," Dendro stated.{"\n"}
           {"\n"}Zena stepped forward. "Sir, could we use the side room as we wait? We have some urgent business to attend to, and that workbench in there would be quite useful."{"\n"}
@@ -116,7 +116,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}When the home screen appeared, Zena slid the disc into the side of the machine. She massaged her bandaged shoulder as she waited for something to load. A few moments later, a program popped up; Jake could see a set of unfamiliar
           characters appear in the program’s window: thirty lines of strange looking shapes and characters. <Text style={{ fontFamily: "gelasibro-italic" }}>Those almost look like Greek letters.</Text>
           {"\n"}
-          {"\n"}A look of disappointment shone on Zena’s face “The contents of this disc are not written in plain Venthum Gorak. That <Text style={{ fontFamily: "gelasibro-italic" }}>was</Text> fanciful. This is a{" "}
+          {"\n"}A look of disappointment shone on Zena’s face. “The contents of this disc are not written in plain Venthum Gorak. That <Text style={{ fontFamily: "gelasibro-italic" }}>was</Text> fanciful. This is a{" "}
           <GlossaryWord lookup_string="Cipher" word="cipher" toggleGlossary={this.props.toggleGlossary} />, a secret code. I don't recognize the pattern at all,” she said.{"\n"}
           {"\n"}“Try <GlossaryWord lookup_string="Cipherium" word="Cipherium" toggleGlossary={this.props.toggleGlossary} />
           ,” Dendro spoke out. He had entered the room without them noticing and was leaning against the doorway watching them.{"\n"}
@@ -126,7 +126,7 @@ export default class Chapter15 extends Component<IProps> {
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>No relevant cipher detected. Nearest match: .0023%.</Text>
           {"\n"}
           {"\n"}“Nothing coming up on <Text style={{ fontFamily: "gelasibro-italic" }}>Cipherium</Text>, Dendro. Nothing whatsoever,” Zena said. “This is not something <Text style={{ fontFamily: "gelasibro-italic" }}>Cipherium</Text> has come in
-          contact within the past.”{"\n"}
+          contact with in the past.”{"\n"}
           {"\n"}“I don't know,” Dendro said, as he leaned against the far wall. “I have no idea how to crack an unrecognizable code. That's why I need to get my ship.”{"\n"}
           {"\n"}“What is Cipherium?” Jake asked.{"\n"}
           {"\n"}“It is a special program we can use to help us crack encoded messages.” She continued to massage her shoulder and collarbone. A small grouping of blood began to seep through her shirt. “There is nothing we can do. If{" "}
@@ -143,7 +143,7 @@ export default class Chapter15 extends Component<IProps> {
           all sorts of things, you know. I still play around with my own encodings, for fun that is, to this day.”{"\n"}
           {"\n"}Zena looked at him in disbelief. “You mean to tell me you've seen this code before? You're telling me this a cipher created on one of The Nestomir’s outback planets?”{"\n"}
           {"\n"}The man pulled off the spectacles and nodded. “Yes. Many black-market technologies were invented in the outback undergrounds. I grew up around it.”{"\n"}
-          {"\n"}Zena looked over to Dendro, who was grinning. “It sounds like you're in better hands than we expected. I'll leave you to it then. I am heading for the ship,” Dendro said. He waived, then pranced over to the exit, disappearing out the
+          {"\n"}Zena looked over to Dendro, who was grinning. “It sounds like you're in better hands than we expected. I'll leave you to it then. I am heading for the ship,” Dendro said. He waved, then pranced over to the exit, disappearing out the
           steel plated front door.{"\n"}
           {"\n"}“See you soon,” Zena shouted at him. She looked down at the table. A few moments later, she appeared to have entered a trance. She was thinking hard about something. “<Text style={{ fontFamily: "gelasibro-italic" }}>Bulk Cipher</Text>
           . <Text style={{ fontFamily: "gelasibro-italic" }}>What</Text> does that remind me of?” She patted her fist against the table a few times. “Wait. Jonko. Zimmer's friend. From the forces. Naronian Cyber Intel. He would rant at Gelfer's
@@ -183,7 +183,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}“Before we explain its connection to the internet, let’s examine how the postcard actually reaches your friend,” she commented. “The mail carrier will pick it up from the mailbox and push the letter to the next step in its journey,
           the post office. Then the employee in the post office puts it on a truck that takes it to a post office in California. Then an employee there puts it on a delivery vehicle that takes it to a post office in Chula Vista. The{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>point</Text> is, each employee pushes the letter in the <Text style={{ fontFamily: "gelasibro-italic" }}>general</Text> direction of your friend’s home, until it funnels all the way down to
-          the local mail person who will deliver the postcard to your friend’s street address.{"\n"}
+          the local mail person who will deliver the postcard to your friend’s street address."{"\n"}
           {"\n"}“It's a series of <Text style={{ fontFamily: "gelasibro-italic" }}>nodes,</Text> connecting points on the network<Text style={{ fontFamily: "gelasibro-italic" }}>,</Text> that direct, our{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>route</Text>, our letter. Each node has more information about where the letter should go next, but no node, except the last, actually sends it to exactly where it needs to go, only the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>general</Text> direction. The internet works in a nearly <Text style={{ fontFamily: "gelasibro-italic" }}>identical</Text> fashion. When we send a message over the internet, the message is
@@ -206,7 +206,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}“Yes, I’ve heard of servers. Client, I’m not sure,” he said.{"\n"}
           {"\n"}“Let me try and explain them clearly: a <Text style={{ fontFamily: "gelasibro-italic" }}>client</Text> is a piece of software a user of the internet loads up to visualize an application. I'm talking about the apps you open on your
           phone or the websites you load on your browser. They are <GlossaryWord lookup_string="Client" word="clients" toggleGlossary={this.props.toggleGlossary} /> of the internet. A <Text style={{ fontFamily: "gelasibro-italic" }}>server</Text>, on
-          the other hand, is a computer that stores, coordinates, and centralizes all the information in an application. For example, I’ve heard of Earth’s Instagram. We have something quite similar in the Nestomir. Now, when you open the Instagram
+          the other hand, is a computer that stores, coordinates, and centralizes all the information in an application. For example, I’ve heard of Earth’s Instagram. We have something quite similar in The Nestomir. Now, when you open the Instagram
           app, you are using the Instagram client. The app on your phone <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> the client and this client requests information from the Instagram server, like the newest pictures that have been
           uploaded by the accounts you follow. Servers can sit anywhere across the world. Clients request information from servers, and servers serve the requested information back to the{" "}
           <GlossaryWord lookup_string="Client" word="client" toggleGlossary={this.props.toggleGlossary} />. By enabling a <Text style={{ fontFamily: "gelasibro-italic" }}>client server architecture</Text>, many users can access the same system, and
@@ -388,7 +388,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}“Yes. Our second parameter will take the form of a dictionary with one key. In this case, if I remember correctly, that key is entitled <Text style={{ fontFamily: "gelasibro-italic" }}>decode</Text>. So, take a stab at creating that
           dictionary, then paste the cipher from the other application window as the value of the decode key.”{"\n"}
           {"\n"}“Okay. Um. Let’s see here…” Jake spent a moment configuring his second parameter, a dictionary.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>A dictionary right here? Passed into the function? It seems a bit weird to add a dictionary as an input, but maybe that’s not weird in the world of coding.”</Text> He finished his attempt and
+          <Text style={{ fontFamily: "gelasibro-italic" }}>A dictionary right here? Passed into the function? It seems a bit weird to add a dictionary as an input, but maybe that’s not weird in the world of coding.</Text> He finished his attempt and
           looked at Zena.
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -417,7 +417,7 @@ export default class Chapter15 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={190} source={require("./../../assets/images/lessons/lesson9_7.png")} />
         </View>
-        <Caption>The requests.post function RETURNS a response. We can store that response in a variable, then prints it to the terminal screen. This is key fundamental of working with Python and the internet.</Caption>
+        <Caption>The requests.post function RETURNS a response. We can store that response in a variable, then print it to the terminal screen. This is a key fundamental of working with Python and the internet.</Caption>
 
         {
           // Section 7 Below, Goes Text, Graphic
@@ -447,14 +447,14 @@ export default class Chapter15 extends Component<IProps> {
           ,” Zena stated.{"\n"}
           {"\n"}“So what does that mean?” Jake asked. “And why can’t you tell me what this marking signifies? I have four marks now; my mother is going to end me.”{"\n"}
           {"\n"}“I do not know what this message means. The cipher was only partially decoded. But <GlossaryWord lookup_string="Druinitis" word="Druinȉtis" toggleGlossary={this.props.toggleGlossary} />
-          ...why would a <GlossaryWord lookup_string="Knightofdiukhien" word="Knight of Diu Khien" toggleGlossary={this.props.toggleGlossary} /> be carrying a message about Druinȉtis? What business would it have there?” Zena uttered. She continued
+          ...why would a <GlossaryWord lookup_string="Knightofdiukhien" word="Knight of Dieu Khien" toggleGlossary={this.props.toggleGlossary} /> be carrying a message about Druinȉtis? What business would it have there?” Zena uttered. She continued
           pacing. “And that marking you must find out about on your own, I’m afraid. It will come in due time.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Great. More mysteries to crack.</Text>
           {"\n"}
           {"\n"}After some time of watching Zena pace around the room in silence, they walked into the main hangar and rested on a set of couches there until they heard the roar of the Sentauri Beacon’s vertical take-off engines. They ran out onto
           the back tarmac to see the ship land. Dendro stepped out a few moments later. Zena informed him of what they had learned.{"\n"}
-          {"\n"}“Nice job, son. You are really finding your way with that editor,” Dendro said. “As for Druinȉtis, I do not understand. That is a mystery to me. That continent has never been known to have a Venthem presence. It is a wicked place
+          {"\n"}“Nice job, son. You are really finding your way with that editor,” Dendro said. “As for Druinȉtis, I do not understand. That is a mystery to me. That continent has never been known to have a Venthum presence. It is a wicked place
           however, filled with crime, debauchery, and anarchy.”{"\n"}
           {"\n"}They walked back into the hangar and watched in silence as the garage owner coordinated a variety of large robotic machines underneath the towering{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>

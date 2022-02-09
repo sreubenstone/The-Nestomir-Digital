@@ -50,14 +50,14 @@ export default class Chapter7 extends Component<IProps> {
           // Section 1 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          A high-pitched alert woke Jake up some time later. He opened his eyes. It was still dark outside the cockpit panorama. <Text style={{ fontFamily: "gelasibro-italic" }}>Where is he taking us?</Text> He turned to look at Dendro. The Gobrahim
+          A high-pitched alert woke Jake up some time later. He opened his eyes. It was still dark outside the cockpit panorama. <Text style={{ fontFamily: "gelasibro-italic" }}>Where is he taking us?</Text> He turned to look at Dendro. The Gobhrahim
           warrior appeared to be lost in thought.{"\n"}
           {"\n"}“Where are we going?” Jake asked.{"\n"}
           {"\n"}“Somewhere safe to fix the receiver. Lithium Radar has recommended a regrouping point three hundred miles to the southeast, in Colorado. It appears to be an abandoned facility far away from any populated areas,” Dendro said.{"\n"}
           {"\n"}“So, we can fix the ship, and head home? Both of us?” Jake asked.{"\n"}
           {"\n"}“That is the plan. As soon as I communicate back to base.” Dendro said.{"\n"}
           {"\n"}A jolt of hope ran through Jake’s heart. <Text style={{ fontFamily: "gelasibro-italic" }}>This soon will be over</Text>. Being gone for less than a day would not be the end of the world, but he would have a lot of explaining to do. He
-          imagined sitting down with Nassir and walking him through the events that had taken place. A Gobrahim warrior. The inklings of a war in a galaxy three million light years away. The Utma. Would anyone believe him? Did it matter? What would
+          imagined sitting down with Nassir and walking him through the events that had taken place. A Gobhrahim warrior. The inklings of a war in a galaxy three million light years away. The Utma. Would anyone believe him? Did it matter? What would
           he say about the markings on his arm? Or would he make up a complete lie about it all?{"\n"}
           {"\n"}Dendro tightened his belt. “Commencing descent.”{"\n"}
           {"\n"}Jake’s stomach floated upward as the ship dropped. About half a minute later, a new mountain range came into view.{"\n"}
@@ -72,7 +72,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}With Jake’s neck pressed hard back against the headrest, his eyes swerved upward to examine the twin peaks. The large mountains were stacked up against each other, leaving room for what appeared to be a small mountain pass running in
           between them. <Text style={{ fontFamily: "gelasibro-italic" }}>We’re not navigating through that I hope, are we?</Text>
           {"\n"}
-          {"\n"}Jake’s perception of reality began to change in the speeding ship. He was in an interstellar spaceship flying over interstellar terrain. Snow covered wavelets passed through the soft powder below, like magical stones dropped into a
+          {"\n"}Jake’s perception of reality began to change in the speeding ship. He was in an interstellar spaceship flying over interstellar terrain. Snow-covered wavelets passed through the soft powder below, like magical stones dropped into a
           pond of vibrating time. New possibilities opened inside of him then, even if he was not consciously aware of it in the moment.{"\n"}
           {"\n"}With two thousand meters separating them from the base of the mountain, and Dendro continuing to steer the ship towards the very narrow pass Jake’s heart rate accelerated.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Dude, what are you doing! We’re gonna crash!</Text> Jake squeezed the seat handles and closed his eyes.{" "}
@@ -215,7 +215,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“That makes sense, I just never imagined it as a decision though. I guess it is, in a way…the program is making a decision <Text style={{ fontFamily: "gelasibro-italic" }}>based</Text> on the user’s decision, or input,” Jake said.” He
           thought of Nassir's robot turning right and left on the grass at Allen Park as the gizmo took commands from the RC controller.{"\n"}
           {"\n"}“Then how do you implement decisions in Python?” Jake asked, eagerly.{"\n"}
-          {"\n"}“We use something called an <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>,”said Dendro. “An if statement is called a conditional statement.{"\n"}
+          {"\n"}“We use something called an <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>,”said Dendro. “An if statement is called a conditional statement."{"\n"}
           {"\n"}“A <Text style={{ fontFamily: "gelasibro-italic" }}>what</Text>?” Jake asked.{"\n"}
           {"\n"}“A conditional <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>. It is a block of code that only fires if a certain{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
@@ -389,7 +389,7 @@ export default class Chapter7 extends Component<IProps> {
           <StoryGraphic height={400} width={300} radius={"none"} source={require("./../../assets/images/lessons/lesson3_addin1.png")} />
         </View>
         <Caption>
-          The terminal is where we tell the Python program (the fancy term is "Python interpreter") to process our Python file. Most code editors allow us to access the terminal from within the editor. Recognize the terminal is a seperate program
+          The terminal is where we tell the Python program (the fancy term is "Python interpreter") to process our Python file. Most code editors allow us to access the terminal from within the editor. Recognize the terminal is a separate program
           that speaks to the innards of the computer. When we run our Python code from the terminal - what we're saying is "operating system ...please use the python program to process this file."
         </Caption>
 
@@ -461,7 +461,7 @@ export default class Chapter7 extends Component<IProps> {
         <Text style={BookStyles.bookFont}>
           “Like this?” Jake asked.  “We use the greater than <Text style={{ fontFamily: "gelasibro-italic" }}>comparison operator</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>{">"}</Text>, and if the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>expression</Text> <Text style={{ color: "#0C2443", fontFamily: "code" }}>windspeed {">"} 100</Text> evaluates to <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>, we set the{" "}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>flaps</Text> variable to <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>.{"\n"}
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>flaps</Text> variable to <Text style={{ color: "#0C2443", fontFamily: "code" }}>True</Text>."{"\n"}
           {"\n"}“Precisely.” Dendro gave Jake a friendly tap on the back. “That is excellent, my young friend.” Dendro saved the file. “You missed the colon <Text style={{ color: "#0C2443", fontFamily: "code" }}>:</Text> after the{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>if windspeed {">"} 100</Text>, which closes our if statement expression, but otherwise perfect. This should improve our flight performance. Now, every five seconds this code will run,
           and if the windspeed is over 100 kilometers per hour, the flaps will turn on. You see, digging deeper into this topic was not so bad, was it? I remember a spiritual teacher of ours once said,{" "}
@@ -532,7 +532,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“I do not know. I cannot make you any more promises. The ship can get us there in hours. From there, we will meet with Zimmer. Hopefully he will have information to guide us <Text style={{ fontFamily: "gelasibro-italic" }}>both</Text>{" "}
           home safely,” Dendro said. “I know your mother will be worried sick. But I will do everything I can to make that temporary.”{"\n"}
           {"\n"}Jake sat there, looking at the ground. His thoughts began to race. Would he ever get home? <Text style={{ fontFamily: "gelasibro-italic" }}></Text> And even more disturbing,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Why did a part of him ache to make the journey across the world to a place he had never seen before?</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}>why did a part of him ache to make the journey across the world to a place he had never seen before?</Text>
           {"\n"}
           {"\n"}There was a loud rattling of cracking tree branches off in the distance. The ground vibrated. Some of the dirt on the ground kicked up into the air.{"\n"}
           {"\n"}

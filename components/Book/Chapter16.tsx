@@ -54,7 +54,7 @@ export default class Chapter16 extends Component<IProps> {
           spotted a topographic map of the North American continent emerging on a cockpit display.{"\n"}
           {"\n"}"How far are we?" Jake asked.{"\n"}
           {"\n"}"About an hour," Dendro responded. "We're almost there."{"\n"}
-          {"\n"}Maybe this is all coming to an end, he thought. Dendro had explained at takeoff that he had no choice but to bring Jake home. It was the least dangerous option with Zimmer gone, Knights of Diu Khien after them, and still no
+          {"\n"}Maybe this is all coming to an end, he thought. Dendro had explained at takeoff that he had no choice but to bring Jake home. It was the least dangerous option with Zimmer gone, Knights of Dieu Khien after them, and still no
           communication access to his men. Spectator One would be disobeyed.{"\n"}
           {"\n"}Jake studied the interstellar booster's control screen. The display had been embedded into the cockpit’s center console. A multi-colored circular progress meter sat in the center. That is a magical piece of equipment. Dendro now had
           the power to cut through space and traverse the heavens at will.{"\n"}

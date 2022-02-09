@@ -129,7 +129,7 @@ export default class Chapter11 extends Component<IProps> {
           {"\n"}They walked south down the boardwalk, passing Saturday joggers and beachgoers. Soon, they turned left onto a small side street called <Text style={{ fontFamily: "gelasibro-italic" }}>Palace’ Di Vina</Text>. It wound and turned down a
           sandy path. Eventually, they came upon a white sign that read in blue letters: <Text style={{ fontFamily: "gelasibro-italic" }}>Plage Aïn Diab</Text>.﻿ They walked ahead and arrived at a small beach. Zena took off her shoes and Jake
           followed her across the sand to a shack up ahead.{"\n"}
-          {"\n"}“Ayy, Zeena, my girl. What will it be today for yah, my lady?” a large man in the white hat and dark sunglasses said in a Caribbean accent as they approached.{"\n"}
+          {"\n"}“Ayy, Zeena, my girl. What will it be today for yah, my lady?” A large man in a white hat and dark sunglasses said in a Caribbean accent as they approached.{"\n"}
           {"\n"}“Two Ld’Shab Riders, my good friend,” Zena said.{"\n"}
           {"\n"}“Coming right up fer ya," the man responded.{"\n"}
           {"\n"}He came back from behind a small shed holding two boogie-like boards. As he lay them on the counter, Jake could see they had a hardened epoxy resin coating on the surface, like a surfboard, and that curiously, in the center of each
@@ -142,7 +142,7 @@ export default class Chapter11 extends Component<IProps> {
           {"\n"}“That’s better," she said as she shook her head to get the kinks out of her hair. Her elf shaped ears poked out and became visible. “Today we are going to ride the Ld’Shab Board, or as some call it, The Naronian Spirit Board,” Zena
           said.{"\n"}
           {"\n"}“A Naronian Spirit Board? Is that just what you call a boogie-board? I’m not bad at that,” Jake said.{"\n"}
-          {"\n"}Zena smiled. ﻿“Well, then show me how it’s done." Her black hair swayed in the sea breeze. "I brought you a bathing suit. You can change over there. I’ll turn around.”{"\n"}
+          {"\n"}Zena smiled. "Well, then show me how it’s done." Her black hair swayed in the sea breeze. "I brought you a bathing suit. You can change over there. I’ll turn around.”{"\n"}
           {"\n"}Jake took the suit, which she had kept in her small bag, and changed quickly, frightened Zena might turn around too soon﻿.{"\n"}
           {"\n"}“Okay, I’m ready,” he called at her.{"\n"}
           {"\n"}Zena turned around, then nodded her head in the direction of the water.{"\n"}
@@ -179,7 +179,7 @@ export default class Chapter11 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Wow, she has some serious skills.</Text>
           {"\n"}
           {"\n"}A short while later, she came back around and hit a larger wave. “Whoa!” Jake shouted instinctively, as Zena popped up nearly ten feet in the air and landed smoothly. He continued to watch her navigate the ocean.{"\n"}
-          {"\n"}A few minutes later she rode back into shore. She walked up to him, smiled, and put her board against his chest. “Your turn,” she said.{"\n"}
+          {"\n"}A few minutes later she rode back to shore. She walked up to him, smiled, and put her board against his chest. “Your turn,” she said.{"\n"}
           {"\n"}“That was neat," he muttered. “But what do I even do?”{"\n"}
           {"\n"}“Find your <Text style={{ fontFamily: "gelasibro-italic" }}>path</Text>,” she said.{"\n"}
           {"\n"}Jake walked down to the shoreline, put the board in the water, then stood up on it slowly as white foam splashed around his ankles.{"\n"}

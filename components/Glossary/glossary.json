@@ -1,1 +1,1473 @@
-{"Algorithm":{"title":"Algorithm","Type":"Lesson","Status":"Ready","pron":"al•goh•rhythm","description":"An algorithm is not exclusive to coding. It refers to any set of rules or steps that serve a distinct purpose. Technically a function is an algorithm, but, when we use the term algorithm, we usually mean a set of steps that help us perform a data intensive task, like sorting or organizing large sets of information. This goes back to the culture of coding...as seen in the lesson here...when tasks become data or information heavy...it really really matters how we structure our code...because we can cause expensive time losses in our program. So, with respect to coding, an algorithm refers to this data heavy use case of instructions (not always, but usually).","snippit":"dog = 3","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python - Algorithm Design - tutorialspoint","url":"https://www.tutorialspoint.com/python_data_structure/python_algorithm_design.htm"}],"recommended":["Write an algorithm that, based on 3 variables, a, b, and c, returns the largest of all variables. It does not need to be coded using Python."],"Key":"Algorithm"},"Argument":{"title":"Argument","Type":"Lesson","Status":"Ready","pron":"arg u ment","description":"Functions take input. The variables we define as the inputs for our functions when we define the function are known as parameters. When we actually trigger the function, and pass in real values for those parameters, those values are referred to as arguments.","snippit":"def add(a,b):\n   return a +b\n\nadd(2,5)","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Function Arguments - W3Schools","url":"https://www.w3schools.com/python/gloss_python_function_arguments.asp"}],"recommended":["Create a function with one argument."],"Key":"Argument"},"Argus":{"title":"Argus","Status":"Ready","pron":"Ar gus","description":"Second outermost planet in Star System A, The Nestomir","ldshab":"More information being imported from the archives soon.","Key":"Argus"},"Beautifulsoup":{"title":"Beautiful soup","Type":"Lesson","Status":"Ready","pron":"beautiful soup","description":"Earth based Python library which provides tools for coders to webscrape (pull information off of webpages).","snippit":"from bs4 import BeautifulSoup\n\nsoup = BeautifulSoup(page.content, 'html.parser')","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"How to scrape web pages with beautiful soup - Digital Ocean","url":"https://www.digitalocean.com/community/tutorials/how-to-scrape-web-pages-with-beautiful-soup-and-python-3"}],"recommended":["Advanced: Import BeautifulSoup into your Python project and make an attempt at scraping a webpage. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],"Key":"Beautifulsoup"},"Bernardpinkett":{"title":"Bernard Pinkett","Type":"Story","Status":"Ready","pron":"Bern ard Pink ett","description":"Creator of The Python programming language (Nestomir based).","ldshab":"More information being imported from the archives soon.","Key":"Bernardpinkett"},"Binary":{"title":"Binary","Type":"Lesson","Status":"Ready","pron":"beye nair ee","description":"The Binary number system represents numerical values using only 0's and 1's (Binary is a base 2 number system). The number system you're used to is a base 10 number system, e.g., 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. All number systems can represent all numbers. The fact we only need two \"characters\" or numerical values to create that number system is special...it means we can use circuitry to compute math very easily. It's this concept that gave birth to modern computing. See our suggested reading below to learn more about binary.","snippit":"010001","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Binary Number System - Math is Fun","url":"https://www.mathsisfun.com/binary-number-system.html"},{"title":"Binary Number System - Britannica","url":"https://www.britannica.com/science/binary-number-system"}],"recommended":["Express all numbers from 11 to 20 in a binary number system."],"Key":"Binary"},"Boolean":{"title":"Boolean","Type":"Lesson","Status":"Ready","pron":"boo lee an","description":"A boolean is a specific data type in Python (and in almost all programming language). A boolean has two values, True or False. That's the simple version. And that will get you a long way. To understand on a deeper level...it's about the WHY? Why does a True or False data type matter? It's because it makes programming more efficient. Being able to switch someone on and off, with a variable (we set a variable to a boolean value), we can create programs faster and more efficiently.","snippit":"car_on = True\n#this variable has been assigned a boolean value","ldshab":"Le Bul","suggested":[{"title":"Binary Variable - LearnDataSci","url":"https://www.learndatasci.com/glossary/binary-variable/"}],"recommended":["Using a Jupyter Notebook, assign a variable that you create to a boolean value. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],"Key":"Boolean"},"Bulkcipher":{"title":"Bulk Cipher","Type":"Story","Status":"Ready","pron":"bulk seye fur","description":"Secret coded language developed in the undergrounds of The  Nestomir. Its intention was to provide a top secret and anonymous way of communicating amongst military outfits.","ldshab":"More information being imported from the archives soon.","Key":"Bulkcipher"},"Caravine":{"title":"Caravine","Type":"Story","Status":"Ready","pron":"kara veen","description":"Area of Solar Forces fighter ships responsible for coordinating complex satellite communications from both a stellar and interstellar perspective.","ldshab":"More information being imported from the archives soon.","Key":"Caravine"},"Cipher":{"title":"Cipher","Type":"Lesson","Status":"Ready","pron":"ciph er","description":"Any type of coded language or information.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Cipher - Britannica","url":"https://www.britannica.com/topic/cipher"}],"Key":"Cipher"},"Cipherium":{"title":"Cipherium","Type":"Story","Status":"Ready","pron":"Ceye fear e um","description":"A hard-to-obtain program which aids in the un-coding of secret messages sent across the universe. Usually only accessible by the military and criminals who access it illegally.","ldshab":"More information being imported from the archives soon.","Key":"Cipherium"},"Client":{"title":"Client","Type":"Lesson","Status":"Ready","pron":"cly int","description":"In the world of computing and the internet, we refer to the device (or the specific program) in the end users hands as the client. For example, when using Instagram, the app is the client. But there is much more to Instagram...e.g., its database, server, etc.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What Does Client Mean? - techopedia","url":"https://www.techopedia.com/definition/437/client"},{"title":"Client - Computer Hope","url":"https://www.computerhope.com/jargon/c/client.htm"}],"Key":"Client"},"Clientserver":{"title":"Client Server Architecture","Type":"Lesson","Status":"Ready","pron":"cli ent serv ur ark ih tek chur","description":"To keep it simple, the web was created with both clients and servers in mind. We need clients because we need ways for users like us to easily consume information coming from over the internet. For a client, think of the app on your phone showing you a news feed. And we need servers because we need a way to store our information in an easy to access way. For server, we're talking the actual computer sitting in a warehouse somewhere that is responding to all the requests coming from our clients.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Client-Server Architecture - Britannica","url":"https://www.britannica.com/technology/client-server-architecture"},{"title":"Client-Server Definition - OmniSci","url":"https://www.omnisci.com/technical-glossary/client-server"}],"Key":"Clientserver"},"Code":{"title":"Code","Type":"Lesson","Status":"Ready","pron":"code","description":"General term to refer to the construction of a computer program through text-based characters.","snippit":"cat_age = 7","ldshab":"Code","suggested":[{"title":"Code","url":"https://whatis.techtarget.com/definition/code"}],"Key":"Code"},"Codecomment":{"title":"Comment as in code comment #","Type":"Lesson","Status":"Ready","pron":"comm ent","description":"Comments are how coders document their code, inside of their code! (See documentation). Comments are completely ignored by the Python interpreter when our programs are run...but they allow us as coders to take notes inside of our code. Why do we document our code? To remember why we wrote a specific line of code in a certain way. Often times, when we program, we forget what we've done. It happens quite often. This is why commenting our code is so essential. Commenting is essentially annotation in a programmers world.","snippit":"# comment goes here ","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Commenting Python Code - Stack Abuse","url":"https://stackabuse.com/commenting-python-code/"}],"recommended":["Write a function or algorithm in Python that incorporates two or more lines of comments, starting with a hashtag (#). Always feel free to use Jupyter Notebook (taught in Ch. 13)."],"Key":"Codecomment"},"Communicationsreceiver":{"title":"Communications receiver","Type":"Story","Status":"Ready","pron":"commun i cations receiver","description":"Device installed in Nestomirian ships which enables them to communicate inter-galaxy.","ldshab":"More information being imported from the archives soon.","Key":"Communicationsreceiver"},"Comparisonoperator":{"title":"Comparison operator","Type":"Lesson","Status":"Ready","pron":"comp ar i sun op ur ayte er","description":"Comparison operators are used to compare two values. For example, the greater than sign > allows us to determine if one value is larger than another. ","snippit":"3 > 4\n# an expression using a comparison operator.\n# this expression will resolve to False","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Comparison Operators with Syntax and Examples - DataFlair","url":"https://data-flair.training/blogs/python-comparison-operators/"}],"recommended":["Write a function in Python that, based on 2 variables, a and b, two positive numbers, returns and prints the largest one. (Feel free to use a Jupyter Notebook...taughtin Chapter 13)"],"Key":"Comparisonoperator"},"Compiler":{"title":"Compiler","Type":"Lesson","Status":"Ready","pron":"Com peye eler","description":"An interpreter is another computer program which executes source code (like Python). This is in comparison to a compiler, which is a program which breaks down source code into machine code (0's and 1's). Interpreters allow coders to more easily run their programs (the coder does not need to wait for the entire program to be compiled down to machine language). However, compiled programs can often be faster when they are run. There is a trade off, but most coders like the interpreted environment.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Compiler - Britannica","url":"https://www.britannica.com/technology/compiler"}],"recommended":["Spend some time googling articles about compilers beyond the one listed here. There is an endless amount of information out there. (It's good to practice self-learning)."],"Key":"Compiler"},"Controlflow":{"title":"Control Flow","Type":"Lesson","Status":"Ready","pron":"con trol flow","description":"Control flow is a term used to describe how a coder can use the tools of a programming language to make decisions based on the output of something else in the program.","snippit":"k = 10\nif k == 10:\n   print(\"k is set to 10\")","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What are control flow statements in Python? - Educative.io","url":"https://www.educative.io/edpresso/what-are-control-flow-statements-in-python"},{"title":"Control Flow - Computer Hope","url":"https://www.computerhope.com/jargon/c/contflow.htm"}],"recommended":["Try creating your first Python conditional statement in a Jupyter Notebook (taught in ch. 13). Can you think of something in your life that might benefit from a program that could make a decision for you? If this, then that? Try and simulate it with Python if statements."],"Key":"Controlflow"},"Controlf":{"title":"Control-F","Type":"Lesson","Status":"Ready","pron":"Control ef","description":"We use control-f on our keyboard (control key + f key) to bring up the search bar. We use this search bar to find an element of text in the file or web page we are looking at.","ldshab":"More information being imported from the archives soon.","Key":"Controlf"},"Cyprusa":{"title":"Cyprus A","Type":"Story","Status":"Ready","pron":"Cy prus A","description":"Outermost planet in Star System A.","ldshab":"More information being imported from the archives soon.","Key":"Cyprusa"},"Darkwars":{"title":"Dark Wars","Type":"Story","Status":"Ready","pron":"Dark Warz","description":"Galactic wars which took place between Naronia and the Venthe forces. The First Dark War took place in 4,000 Sentient Age. The Second Dark War took place 8,900 Sentient. Both wars resulted in catastrophic losses for both sides, including the destruction of planets. Both wars played a significant role in shaping the galaxy, galactic immigration, and political structures. More information will be uploaded from the archives soon.","ldshab":"More information being imported from the archives soon.","Key":"Darkwars"},"Data":{"title":"Data","Type":"Lesson","Status":"Ready","pron":"day duh","description":"Data is a generic term for information. ","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Definition of Data","url":"https://www.merriam-webster.com/dictionary/data"},{"title":"Qualitative and Quantitative Data - Science Notes","url":"https://sciencenotes.org/qualitative-quantitative-data-definitions-examples/"}],"Key":"Data"},"Datastructure":{"title":"Data Structure","Type":"Lesson","Status":"Ready","pron":"day tuh struk chur","description":"A data structure is a mechanism to store data in a specific pattern. That pattern, or data structure, is optimized for the problem we want to solve. For example, do we want to look up information by name, or through a list? Depending on the use case, we choose a specific data structure to store information. ","snippit":"list = ['Ice', 'Meat', 'Veggies']\n# A list is an example data structure in Python","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Data Structures - GeeksforGeeks","url":"https://www.geeksforgeeks.org/data-structures/"},{"title":"8 Common Data Structures every Programmer Must Know","url":"https://towardsdatascience.com/8-common-data-structures-every-programmer-must-know-171acf6a1a42"}],"Key":"Datastructure"},"Datatype":{"title":"Data type","Type":"Lesson","Status":"Ready","pron":"Dayda type","description":"\"A data type, in programming, is a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error. A string, for example, is a data type that is used to classify text and an integer is a data type used to classify whole numbers.\" - TechTarget. The most common data types we use are integers, booleans, and strings.","snippit":"cat = \"freddie\"\n# this is a string\n\nage=14\n# this is an integer\n\nam_I_cool = True\n# this is a boolean","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What are Data Types and Why are They Important?","url":"https://dataled.academy/guides/data-types/"},{"title":"Data Types – Programming Fundamentals","url":"https://press.rebus.community/programmingfundamentals/chapter/data-types/"}],"recommended":["Assign different data types to different variables. Create a string, number, and boolean. Go ahead, try it with three different variables. Feel free to use a Jupyter Notebook in the browser, which is taught in Chapter 13."],"Key":"Datatype"},"Datetime":{"title":"Datetime","Type":"Lesson","Status":"Ready","pron":"date time","description":"Built in Python library that allows coders to work with dates more easily.","snippit":"import datetime\nx = datetime.datetime.now()\n","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"w3schools: Python Datetime","url":"https://www.w3schools.com/python/python_datetime.asp"}],"recommended":["Advanced: Import datetime into a Jupyter notebook then print the current date to the screen. (Jupyter Notebook taught in Chapter 13)."],"Key":"Datetime"},"Decryption":{"title":"Decryption","Type":"Lesson","Status":"Ready","pron":"de cryp tion","description":"The process of unscrambling encrypted information. ","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"How Does Decryption Work?","url":"https://www.hypr.com/decryption/#:~:text=Decryption%20is%20a%20process%20that%20transforms%20encrypted%20information%20into%20its%20original%20format.&text=To%20do%20this%2C%20parties%20to,algorithms%20are%20also%20called%20ciphers.)"}],"Key":"Decryption"},"Delta1deathcruiser":{"title":"Delta 1 Death Cruiser","Type":"Story","Status":"Ready","pron":"Del tuh Wun Deth Croo Zur","description":"Massive Carrier Ships commissioned and used by The Solar Forces in large scale attacks.","ldshab":"More information being imported from the archives soon.","Key":"Delta1deathcruiser"},"Dictionary":{"title":"Dictionary","Type":"Lesson","Status":"Ready","pron":"dict shun air ee","description":"A Python dictionary is a data structure that allows us to organize information with keys that are associated to specific values. It is very similar to how a regular dictionary works where words are the keys, the values are the associated definition of the corresponding word. Dictionaries are incredibly powerful, as many things we wish to organize, when we build almost anything, requires us to store things by name.","snippit":"contact = {\n   'name': \"John\", \n   'address': \"13 Graee-end road\"\n}\n# example of storying a dictionary in a python variable","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Dictionaries - w3 Schools","url":"https://www.w3schools.com/python/python_dictionaries.asp"}],"recommended":["Create a Python dictionary that stores each of your friends first names as keys - and then store (in the values) (as strings) the first thing that comes to mind when you think of each friend."],"Key":"Dictionary"},"Documentation":{"title":"Documentation","Type":"Lesson","Status":"Ready","pron":"dok you men tay shun","description":"Documentation refers to the website or writing a coder creates to EXPLAIN how to USE the program they have created. It's an explainer, a how to guide, for coders. And it's essential, because it's not often easy to read or understand exactly what another coder did!","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Code Documentation: The Complete Beginner’s Guide - Submain Blog","url":"https://blog.submain.com/code-documentation-the-complete-beginners-guide/"}],"recommended":["Write a function that achieves a simple purpose, then use Python comments (#) to explain the purpose and intent of the function. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],"Key":"Documentation"},"Druinitis":{"title":"Druinȉtis","Type":"Story","Status":"Ready","pron":"Drooo en eye tus","description":"The Dark Continent of the planet Limora. See Limora.","ldshab":"More information being imported from the archives soon.","Key":"Druinitis"},"Elsestatement":{"title":"else statement","Type":"Lesson","Status":"Ready","pron":"else state ment","description":"An else statement is a code block that runs whenever its associated if statement expression evaluations to false. If this is true, do this, else, run this code, etc.","snippit":"k = 10\n\nif k == 10:\n   print(\"k is set to 10\")\nelse:\n   print(\"k is not set to 10\")\n","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Conditions - w3 Schools","url":"https://www.w3schools.com/python/python_conditions.asp"}],"recommended":["Code this in Python: Assign a variable called MyPet to the string ..dog...Then write an if else statement that achieves: if MyPet is equal to..dog...print()...My pet is a dog...to the screen, else it should print ...My pet is not a dog...Always feel free to use Jupyter Notebook (taught in Ch. 13)."],"Key":"Elsestatement"},"Encoding":{"title":"Encoding","Type":"Lesson","Status":"Ready","pron":"en code ing","description":"Encoding refers to modifying information to fit a specific format. It's important to note, it does not necessarily mean for security purposes. Encoding a piece of text can also be used to change the format of the text in a way that is less susceptible to errors (removing certain characters, etc).","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Unicode & Character Encodings in Python: A Painless Guide - Real Python","url":"https://realpython.com/python-encodings-guide/"}],"Key":"Encoding"},"Encryption":{"title":"Encryption","Type":"Lesson","Status":"Ready","pron":"en cryp shin","description":"The process of using mathematical principals to scramble information. This scrambled information can only be de-scrambled (decrypted) with a special key that only certain people have access to, similar to a password. The only difference is that this key actually plays a role in scrambling the information in the first place. ","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is Encryption - CloudFlare","url":"https://www.cloudflare.com/learning/ssl/what-is-encryption/"}],"Key":"Encryption"},"Enlightened":{"title":"Enlightened","Type":"Story","Status":"Ready","pron":"En light end","description":"An englightened city refers to a city outside of The Nestomir Galaxy which contains Nestomirian residents (immigrants). The term enlightened is used because each enlightened city contains a small population of native residents who are aware of the alien population; thus these natives are enlightened that they are not alone in the universe.","ldshab":"More information being imported from the archives soon.","Key":"Enlightened"},"Enlightenedregistry":{"title":"Enlightened Registry","Type":"Story","Status":"Ready","pron":"enlight en ed reg i stree","description":"List of cities across the Universe who contain a population alien to the native planet.","ldshab":"More information being imported from the archives soon.","Key":"Enlightenedregistry"},"Expression":{"title":"Expression","Type":"Lesson","Status":"Ready","pron":"ehx pressh un","description":"An expression in programming is a piece of code the resolves to a singular value. ","snippit":"3 + 4\n# This is an expression, as it resolves to one value (7).","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is an Expression? - Geeks4Geeks","url":"https://www.geeksforgeeks.org/what-is-an-expression-and-what-are-the-types-of-expressions/"}],"recommended":["Using a Jupyter Notebook, assign a variable to a Python expression (see definition). Then print this value to the screen. Like 4 + 8, etc...just to get a feel for what an expression is. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],"Key":"Expression"},"Floatingpointnumber":{"title":"Floating Point Number","Type":"Lesson","Status":"Ready","pron":"floa ting point num bur","description":"Another primitive Python data type. \"Floating-point numbers are represented in computer hardware as base 2 (binary) fractions. For example, the decimal fraction 0.125 has value 1/10 + 2/100 + 5/1000, and in the same way the binary fraction 0.001 has value 0/2 + 0/4 + 1/8. These two fractions have identical values, the only real difference being that the first is written in base 10 fractional notation, and the second in base 2. Unfortunately, most decimal fractions cannot be represented exactly as binary fractions. A consequence is that, in general, the decimal floating-point numbers you enter are only approximated by the binary floating-point numbers actually stored in the machine.\" - GeeksForGeeks","snippit":"my_age = 10.33","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Floats - Real Python (video)","url":"https://realpython.com/lessons/floats/"}],"recommended":["Assign a variable the value of 4.3. Then use the type function in Python to print the type of this variable to the screen. For example: a = 4.3 (first line of code) // print(type(a)) (second line of code). Python will tell you you have created a floating point number. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],"Key":"Floatingpointnumber"},"Foresight":{"title":"Foresight","Type":"Story","Status":"Ready","pron":"4 Site","description":"Extremely advanced power granted by The Utma. Only the greatest spiritual teachers and Solar Forces warriors are able to attain this power long term. It grants a sentient being the ability to predict certain movements before they happen. It is still not fully understood.","ldshab":"More information being imported from the archives soon.","Key":"Foresight"},"Fsgravis":{"title":"FS Gravis","Type":"Story","Status":"Ready","pron":"FS gra vis","description":"Zimmer's freighter ship.","ldshab":"More information being imported from the archives soon.","Key":"Fsgravis"},"Function":{"title":"Function","Type":"Lesson","Status":"Ready","pron":"fuhngk•shuhn","description":"A function is a set of instructions written with code. It is often used to repeat a commonly used set of instructions so they do not need to be written more than once. We define a function in Python using the def keyword. Remember, to actually trigger a function, we use the function name, then two parentheses after the function name. e.g., add().","snippit":"def add(x,y):\n  return x + y","ldshab":"Known as The Holy Reusable Root in Naronian culture. Known to be the essence of all programming.","suggested":[{"title":"Python Functions - w3 Schols","url":"https://www.w3schools.com/python/python_functions.asp"}],"recommended":["Create your own horoscope app using a Jupyter notebook (once you finish Chapter 13)."],"desc_sources":"Tutorials Point","Key":"Function"},"Gobhar":{"title":"Gobhar","Type":"Story","Status":"Ready","pron":"Go bar","description":"Dendro's ancestral planet. Gobhar was destroyed during The First Dark War.","ldshab":"More information being imported from the archives soon.","Key":"Gobhar"},"Gobrahim":{"title":"Gobrahim","Type":"Story","Status":"Ready","pron":"goe bar","description":"Those descending from the planet of Gobhar. See Gobhar.","ldshab":"More information being imported from the archives soon.","Key":"Gobrahim"},"Grapefield":{"title":"Grapefield, Wisconsin","Type":"Story","Status":"Ready","pron":"Grape feeld","description":"Jake's hometown. Located in central Wisconsin, a state in the USA.","ldshab":"More information being imported from the archives soon.","Key":"Grapefield"},"Guidovanrossum":{"title":"Guido Van Rossum","Type":"Story","Status":"Ready","pron":"Guee doh van ross uhm","description":"Known as the creator of Python as Earth, even though Python was created by Bernard Pinkett of The Nestomir.","ldshab":"More information being imported from the archives soon.","Key":"Guidovanrossum"},"Hashtable":{"title":"hash table","Type":"Lesson","Status":"Ready","pron":"hash table","description":"\"Hashing is a technique that is used to uniquely identify a specific object from a group of similar objects.\" - HackerEarth","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is a hash table? (Educative)","url":"https://www.educative.io/edpresso/what-is-a-hash-table"}],"Key":"Hashtable"},"Holycurricula":{"title":"Holy Curricula","Type":"Story","Status":"Ready","pron":"Holee Kurik you lah","description":"Curriculum defined by the great Naronian Spiritual Teachers. This curriculum is as close of a map as has been developed to coordinate learning with the attainment of powers from The Utma.","ldshab":"More information being imported from the archives soon.","Key":"Holycurricula"},"Http":{"title":"HTTP","Type":"Lesson","Status":"Ready","pron":"h t t p","description":"HTTP is a protocol created by engineers to allow computers to send messages efficiently over the internet. (See protocol). This means every message sent over the internet needs to follow a very specific pattern/set of rules to keep every thing working smoothly.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Introduction to HTTP","url":"http://www.steves-internet-guide.com/http-basics/"}],"Key":"Http"},"Httpbody":{"title":"http body","Type":"Lesson","Status":"Ready","pron":"h t t p bod ee","description":"The body is where we store information inserted by a user in HTTP request. For example, if a user is filling out their profile on a website, when they click \"save\", what's happening behind the scenes is that our client (the website) is sending an HTTP request to a server telling it to save whatever the user inputted as their profile description. The text the user inserted will get inserted in the http request BODY.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Anatomy of an HTTP request","url":"https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/"}],"Key":"Httpbody"},"Httpcontenttype":{"title":"Http content-type","Type":"Lesson","Status":"Ready","pron":"h t t p content type","description":"This is a standard HTTP header. (See HTTP Header). This header allows us to tell our server (when we make a request) what format we are sending our data, or what format we wish to get back.","snippit":"import requests\n\nheaders = {'Content-type': 'content_type_value'}\n\nr = requests.get(url, headers=headers)\n\n# we can set the content type header using the requests library","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"HTTP Headers | Content Type","url":"https://www.geeksforgeeks.org/http-headers-content-type/"}],"Key":"Httpcontenttype"},"Httpget":{"title":"http get","Type":"Lesson","Status":"Ready","pron":"H T T P GET","description":"(See http request method). We use the GET request method when we are informing our server that our request relates to retrieving information it already has access to...like a picture or a file. Keep in mind request, methods were not created for simple organization of request types. We often need to separate out requests by these methods, e.g., GET and POST, for security reasons.","snippit":"import requests\n\nx =requests.get('https://w3schools.com/python/demopage.htm')\n\nprint(x.text)\n\n# example of GET request (ex. from w3 schools)","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Anatomy of an HTTP request","url":"https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/"}],"Key":"Httpget"},"Httpheader":{"title":"HTTP header","Type":"Lesson","Status":"Ready","pron":"h t t p hed ur","description":"HTTP headers let the client and the server pass additional instructions with an HTTP request or response. It's a way to tune or adjust our request. For example, the content-type header allows us to dictate what format we send the information a user has given us to send over the internet.","snippit":"import requests\n\nresponse = requests.get(\n    'https://api.github.com/search/repositories',\n    params={'q': 'requests+language:python'},\n    headers={'Accept': 'application/vnd.github.v3.text-match+json'},\n)\n\n# we can set headers like this","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Anatomy of an HTTP request","url":"https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/"}],"Key":"Httpheader"},"Httpmessage":{"title":"HTTP message","Type":"Lesson","Status":"Ready","pron":"h t t p mes ige","description":"Refers to the entire HTTP request or response.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Anatomy of an HTTP request","url":"https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/"}],"Key":"Httpmessage"},"Httppost":{"title":"http post","Type":"Lesson","Status":"Ready","pron":"h t t p post","description":"HTTP request method. (See http request method). We use the POST request method when we are informing our server that our request relates to saving information. Keep in mind request, methods were not created for simple organization of request types. We often need to separate out requests by these methods, e.g., GET and POST, for security reasons.","snippit":"import requests\n\nurl = 'https://www.w3schools.com/python/demopage.php'\\n\n\nmyobj = {'somekey': 'somevalue'}\n\nx = requests.post(url, data = myobj)\n\nprint(x.text)\n\n# the data here, myobj, is our payload\n# snippit taken from W3 schools example","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Anatomy of an HTTP request","url":"https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/"}],"Key":"Httppost"},"Httprequestmethod":{"title":"HTTP request method","Type":"Lesson","Status":"Ready","pron":"h t t p rek west meth id","description":"Every single HTTP request must containt a request METHOD. This is a specific instruction that tells our server how to think about the incoming request. For example. HTTP GET informs our server we are most likely asking for information it already has. HTTP POST tells our server our request most likely wants it to save information so we can access it later. See HTTP GET and HTTP POST.","ldshab":"La Internet Methodistas","suggested":[{"title":"Anatomy of an HTTP request","url":"https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/"}],"Key":"Httprequestmethod"},"Ifstatement":{"title":"If-statement","Type":"Lesson","Status":"Ready","pron":"if stayt mint","description":"A Python statement that runs its code block only if its respective expression evaluates to true. Key building block for building programs.","snippit":"if on == True:\n   shipMove()","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Conditions","url":"https://www.w3schools.com/python/python_conditions.asp"}],"recommended":["See control flow."],"Key":"Ifstatement"},"Importstatement":{"title":"import statement","Type":"Lesson","Status":"Ready","pron":"import state ment","description":"An import statement in python tells our program that the specific file we're working on needs access to a specific Python library. We need to do this when we use libraries in Python...and in most programming languages. ","snippit":"import datetime\n#example of an import statement","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"A Quick Guide to Understanding Python's Import Statement","url":"https://medium.com/cold-brew-code/a-quick-guide-to-understanding-pythons-import-statement-505eea2d601f"}],"Key":"Importstatement"},"Indoone":{"title":"Indo One","Type":"Story","Status":"Ready","pron":"in doe wun","description":"Smallest, and outermost planet in Star System A, The Nestomir galaxy. Tropical planet.","ldshab":"More information being imported from the archives soon.","Key":"Indoone"},"Initma":{"title":"Initma","Type":"Story","Status":"Ready","pron":"in eet mah","description":"Power granted by The Utma. Initma enables a Solar Forces warrior to calm down their mind down in battle.","ldshab":"More information being imported from the archives soon.","Key":"Initma"},"Input":{"title":"Input","Type":"Lesson","Status":"Ready","pron":"in put","description":"This is the information we pass to a function. It is also referred to as a function's parameter(s). We also use the term input in the more generic sense to describe any information passed to something else, to derive a result. ","ldshab":"La Inputá","suggested":[{"title":"Programming - Functions","url":"https://www.cs.utah.edu/~germain/PPS/Topics/functions.html"}],"Key":"Input"},"Internet":{"title":"Internet","Type":"Lesson","Status":"Ready","pron":"/ˈin(t)ərˌnet/","description":"The internet is a network of networks. It connects different webs of computers to one another. Through years of iteration and development, brilliant engineers and scientists have developed protocols to enable different networks of computers to interact with each other.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is the Internet? - Khan Academy","url":"https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:introducing-the-internet/v/what-is-the-internet"}],"recommended":["Use the Python requests library to send a GET request to a test server: https://jsonplaceholder.typicode.com. Print the response to the screen. This is a challenging task. You will have to read through the documentation to find the correct URL to get the specific resource from this server. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],"Key":"Internet"},"Interpreter":{"title":"Interpreter","Type":"Lesson","Status":"Ready","pron":"in tur prit ur","description":"An interpreter is another computer program which executes source code (like Python). This is in comparison to a compiler, which is a program which breaks down source code into machine code (0's and 1's). Interpreters allow coders to more easily run their programs (the coder does not need to wait for the entire program to be compiled down to machine language). However, compiled programs can often be faster when they are run. There is a trade off, but most coders like the interpreted environment.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Assemblers, Compilers, and Interpreters","url":"https://www.bbc.co.uk/bitesize/guides/zgmpr82/revision/2#:~:text=An%20interpreter%20translates%20code%20into,to%20debug%20than%20compiled%20code."}],"Key":"Interpreter"},"Interstellarbooster":{"title":"Interstellar Booster","Type":"Story","Status":"Ready","pron":"inter stell ar boost er","description":"Special device which enables a ship to enter and leave quantum space. Critical to long distance travel between the stars. These devices are extremely expensive, and not easy to obtain.","ldshab":"More information being imported from the archives soon.","Key":"Interstellarbooster"},"Ipaddress":{"title":"IP address","Type":"Lesson","Status":"Ready","pron":"eye pea ah dress","description":"An IP address is a unique numerical address for your computer on the internet. Similar to a street address. ","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is an IP address?","url":"https://www.mozilla.org/en-US/products/vpn/more/what-is-an-ip-address/"}],"Key":"Ipaddress"},"Jasminetea":{"title":"Jasmine Tea","Type":"Story","Status":"Ready","pron":"jaz min tee","description":"Popular beverage in The Nestomir galaxy. Brings both great focus and calm to its drinkers. ","ldshab":"More information being imported from the archives soon.","Key":"Jasminetea"},"Jenfoge":{"title":"Jenfogē","Type":"Story","Status":"Ready","pron":"jen foe jey","description":"Solar Forces game developed by its soldiers. Involves grenades, drinking, and putting.","ldshab":"More information being imported from the archives soon.","Key":"Jenfoge"},"Jupyternotebook":{"title":"Jupyter Notebook","Type":"Lesson","Status":"Ready","pron":"jup it ur noet book","description":"Program, runnable in the browser, that allows coders to create a notebook using Python. It provides a really, really awesome way for coders to integrate code into their research and technical projects. You can include code, but also standard writing, images, all that a real notebook could store. It also is a great way for beginners to learn BECAUSE you do not need to deal with some of the complexity needed to set up your Python environment.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Jupyter Notebook: An Introduction","url":"https://realpython.com/jupyter-notebook-introduction/"}],"recommended":["Open up a Jupyter Notebook (after you complete chapter 13) and run wild. Write a function. Create some conditional statements. Make a dictionary then a list. Make mistakes. Learn. Get better. Start to get a feel for what it is to code: to mess up then learn!!"],"Key":"Jupyternotebook"},"Kahve":{"title":"Kahve","Type":"Story","Status":"Ready","pron":"kah vey","description":"Coffee-like drink native to The Nestomir.","ldshab":"More information being imported from the archives soon.","Key":"Kahve"},"Key":{"title":"Key","Type":"Lesson","Status":"Ready","pron":"Kee","description":"Python dictionaries are made up of keys and values. A key is the name we look up to find the associated information to the key name. For example, in a real dictionary, the keys are the word names, and the values are the definitions.","snippit":"dict = {'catname': \"nancy\"}\n\nprint(dict['catname'])\n# here we print the value of the key 'catname'","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python - Dictionary","url":"https://www.tutorialspoint.com/python/python_dictionary.htm"}],"recommended":["See Dictionary."],"Key":"Key"},"Knightofdiukhien":{"title":"Knight of Diu Khien","Type":"Story","Status":"Ready","pron":"knights of dee yoo kee yen","description":"Guardians of The Vostluka bloodline. Usually always by their masters side.","ldshab":"More information being imported from the archives soon.","Key":"Knightofdiukhien"},"Latishvah":{"title":"La'Tishvah","Type":"Story","Status":"Ready","pron":"La Tish Vah","description":"One of the holiest most deeply spiritual terms in Naronian culture. La'Tishvah quite literally means To Learn With Purpose in the common tongue.","ldshab":"More information being imported from the archives soon.","Key":"Latishvah"},"Lan":{"title":"LAN","Type":"Lesson","Status":"Ready","pron":"lan","description":"Local are network. This is a network that brings together computers within a limited area such as a, school, office, or university campus.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is a Local Area Network?","url":"https://www.howtogeek.com/353283/what-is-a-local-area-network-lan/"}],"Key":"Lan"},"Ldshab":{"title":"Ld'Shab","Type":"Story","Status":"Ready","pron":"El dih shab","description":"Central religion adopted by Naronian Culture. It is a religion based on learning.","ldshab":"More information being imported from the archives soon.","Key":"Ldshab"},"Library":{"title":"Libraries","Type":"Lesson","Status":"Ready","pron":"leye brar ee","description":"Term used to describe a bundled module of code that can be downloaded or used in a variety of projects to serve a specific purpose. Important to note that a library, in the case of Python, or any other language, is PURE code (Python). ","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Stackoverflow: What exactly is a Python library?","url":"https://stackoverflow.com/questions/18474784/what-exactly-is-a-python-library"}],"recommended":["Import Turtle into your Jupyter Notebook (after chapter 13). Check out this Real Python tutorial and follow along: https://realpython.com/beginners-guide-python-turtle/"],"Key":"Library"},"Limora":{"title":"Limora","Type":"Story","Status":"Ready","pron":"Li Mor Ah","description":"Mysterious, crime-filled planet. Limora has a special continent on it called, Druinȉtis, a.k.a., The Dark Continent, which is believed to house Venthem operations\n","ldshab":"More information being imported from the archives soon.","Key":"Limora"},"List":{"title":"List","Type":"Lesson","Status":"Ready","pron":"list","description":"A list in python is a built in, complex, data type in Python. Complex means it's not what we refer to as a primitive data type (number, string, boolean, etc). Lists allow us to story multiple items in a single variable in a specific order. Under the hood, lists rely on data structures - which store lists in memory in as efficient of a way as possible.","snippit":"grocery_list = ['eggs', 'coffee', 'milk']","ldshab":"La Listisima","suggested":[{"title":"Python Lists","url":"https://www.w3schools.com/python/python_lists.asp"}],"recommended":["Store a basic grocery list to a variable","Create a list of dictionaries (used to store user data) as shown in chapter 10. Always feel free to use Jupyter Notebook (taught in Ch. 13)."],"Key":"List"},"Lithiumradar":{"title":"Lithium Radar","Type":"Story","Status":"Ready","pron":"lith i um ray dar","description":"Communications device installed in special opps soldiers of The Solar Forces.","ldshab":"More information being imported from the archives soon.","Key":"Lithiumradar"},"Markdown":{"title":"Markdown","Type":"Lesson","Status":"Ready","pron":"mark down","description":"Markdown is a syntax used by programmers to format written text. Different inline symbols create different formatting, like bold, italic, etc.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Getting Started with Markdown","url":"https://www.markdownguide.org/getting-started/"}],"recommended":["Play around with markdown formatting using https://stackedit.io/"],"Key":"Markdown"},"Math":{"title":"Math","Type":"Lesson","Status":"Ready","pron":"math","description":"Built-in Python library that you can use for mathematical tasks.\n\n","snippit":"import math\n\nprint(math.pi)\n>> 3.141592653589793","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python math Module, w3","url":"https://www.w3schools.com/python/module_math.asp"}],"recommended":["Check out https://www.w3schools.com/python/module_math.asp. Then, using a Jupyter Notebook...play around with some mathematical functions provided by the Python Math module."],"Key":"Math"},"Matplotlib":{"title":"Matplotlib","Type":"Lesson","Status":"Ready","pron":"math plot lib","description":"Open source, earth-based, Python library which allows us to nicely graph and plot data.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"MATPLOTLIB Tutorial (Datacamp)","url":"https://www.datacamp.com/community/tutorials/matplotlib-tutorial-python"}],"recommended":["Follow this great tutorial: https://www.geeksforgeeks.org/using-matplotlib-with-jupyter-notebook/. Make sure to go down to the Jupyter Notebook section."],"Key":"Matplotlib"},"Memory":{"title":"Memory","Type":"Lesson","Status":"Ready","pron":"mem·​o·​ry","description":"Memory is where the computer stores temporary information in a program. Think of it as short term memory in your brain. It's not where you store your life story, but more where you store the grocery list you know you have to get at the supermarket later. It's important recognize it's physical. It's actual hardware, which using circuitry, can store information in a program. We often refer to computer memory as RAM (random access memory).","snippit":"dog = 'rex'\n\n# ex. Python is opening a slot in memory\\n# to store the value of dog.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"How Computer Memory Works (How Stuff Works)","url":"https://computer.howstuffworks.com/computer-memory1.htm"}],"Key":"Memory"},"Modules":{"title":"Modules","Type":"Lesson","Status":"Ready","pron":"mojools","description":"A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include runnable code. Grouping related code into a module makes the code easier to understand and use. It also makes the code logically organized. - GeeksforGeeks","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Modules and Packages","url":"https://realpython.com/python-modules-packages/"}],"Key":"Modules"},"Mooncity":{"title":"Moon City ","Type":"Story","Status":"Ready","pron":"Nalia","description":"Capital city of The Republic of Naronia","ldshab":"More information being imported from the archives soon.","Key":"Mooncity"},"Naronia":{"title":"Naronia","Type":"Story","Status":"Ready","pron":"nah rone ee ah","description":"Capital planet of The Nestomir galaxy and Star System A. Home of The Naronian Republic and The Solar Forces.","ldshab":"More information being imported from the archives soon.","Key":"Naronia"},"Nilofarsystem":{"title":"Nilofar System, Eta Omega","Type":"Story","Status":"Ready","pron":"nil o far system, eta omega","description":"Naronia's name for The Milky Way.","ldshab":"More information being imported from the archives soon.","Key":"Nilofarsystem"},"Operatingsystem":{"title":"Operating System","Type":"Lesson","Status":"Ready","pron":"op ur ate ing sys tum","description":"You can think of a computer’s operating system as the\nprogram of all programs working inside of a computer. The operating system also has an intimate relationship with our computer’s hardware. It’s coordinating all of the inputted and outputted information from each individual program and ensuring it gets to the right place at the right time.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is an operating system?","url":"https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/"}],"Key":"Operatingsystem"},"Output":{"title":"Output","Type":"Lesson","Status":"Ready","pron":"owt put","description":"Functions take inputs (parameters) and RETURN output. Input, output. For example, a function add, takes in two numbers as input, and returns the sum as an output.","snippit":"add(a,b):\n   return a + b \n\n# a + b is our output which we have to explicitly RETURN","ldshab":"More information being imported from the archives soon.","Key":"Output"},"Parameter":{"title":"Parameter","Type":"Lesson","Status":"Ready","pron":"pah ram ih tur","description":"A parameter is another term for INPUT (with respect to a function). For example, if we have a function, named add, that adds two numbers that we pass it, let's say, a, and b, together, a and b are what we refer to as the parameters of the function.","snippit":"add(a,b)\n# a and b are our functions parameters","ldshab":"More information being imported from the archives soon.","Key":"Parameter"},"Payload":{"title":"Payload","Type":"Lesson","Status":"Ready","pron":"pei load","description":"In the context of the lesson, a payload is the user inserted data we embed in the body of our http post request. It's kind of like the \"cargo\", that's why we refer to it as a payload.","snippit":"import requests\n\nurl = 'https://www.w3schools.com/python/demopage.php'\nmyobj = {'somekey': 'somevalue'}\n\nx = requests.post(url, data = myobj)\n\nprint(x.text)\n\n# the data here, myobj, is our payload\n# snippit taken from W3 schools exmaple","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is a payload in web services?","url":"https://www.quora.com/What-is-Payload-in-web-services"}],"recommended":["(Attempt after Chapter 15 only). Using the Python requests library, send an HTTP POST request to https://jsonplaceholder.typicode.com/posts. Story the result of the POST request to a variable - then print that response to the screen. Again - you should read through documentation in this URL. This service is a dummy server which allow us to practice sending requests to a server."],"Key":"Payload"},"Pip":{"title":"PIP","Type":"Lesson","Status":"Ready","pron":"pip","description":"pip is a package-management program in Python used to install and manage software packages (libraries). It taps into an online collection of public (open source) packages, called the Python Package Index. It allows us to download libraries into our projects extremely easily.","snippit":"pip install tensorflow","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is PIP?","url":"https://realpython.com/what-is-pip/"}],"Key":"Pip"},"Print":{"title":"Print","Type":"Lesson","Status":"Ready","pron":"print","description":"Print is a built in Python function. We use it anywhere in our code to display the result of a specific value in our program to OUR TERMINAL. Print is essential because when a program runs, we can't actually SEE anything happening UNLESS we display the results of certain steps of our program to our screen (terminal). You will get NOWHERE as a coder without learning how to use print. Even senior engineers use PRIN ALL OVER THEIR PROGRAMS. It helps us catch mistakes EARLY. As humans, we're prone to making a lot of careless errors, and legitimate errors. This is fine, we just need a way of easily isolating those issues which is what PRINT enable us to do (most of the time)! In other words print() is a coders BEST FRIEND.","snippit":"cat = 3 + 9\nprint(cat)\n#terminal will display 12","ldshab":"La Amiga","suggested":[{"title":"Your guide to the Python print function","url":"https://realpython.com/python-print/"}],"recommended":["Open up a Jupyter Notebook. Write a function of your choosing. Print() the result of the function (the output) to the Jupyter Notebook cell."],"Key":"Print"},"Protocol":{"title":"Protocol","Type":"Lesson","Status":"Ready","pron":"/ˈprōdəˌkôl,ˈprōdəˌkäl/","description":"A protocol is a set of rules that everyone, or everything, in the same system obeys. It allows things to stay in sync. Without a protocol, it makes it extremely hard for machines (or even humans) to communicate with each other.","ldshab":"Protokima.","suggested":[{"title":"What is a protocol?","url":"https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/"}],"Key":"Protocol"},"Pseudocoding":{"title":"pseudo-coding","Type":"Lesson","Status":"Ready","pron":"soo doh coh ding","description":"Pseudo-coding is the process of using written language (e.g., English) to map out the steps of your program BEFORE you write real code. It's like outlining your essay before you write it, and it often saves you a ton of time!","snippit":"# see chapter 12","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Pseudocode and its importance","url":"https://s-jax.medium.com/pseudocode-and-its-importance-5f71e38a0d95"}],"recommended":["Think of an app you want to build. After you've determined your app's most important *feature*, try writing down in a notepad the exact steps required to complete this feature. Be as detailed as humanly possible to that another person who had no idea what the feature was could replicate it. This is your first foray into pseudocoding!"],"Key":"Pseudocoding"},"Pygame":{"title":"PyGame","Type":"Lesson","Status":"Ready","pron":"py game","description":"PyGame is an open source Python library (earth-based) that enables coders to build games more easily.","snippit":"# Import and initialize the pygame library\nimport pygame\npygame.init()\n\n# Set up the drawing window\nscreen = pygame.display.set_mode([500, 500])","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"PyGame: A Primer","url":"https://realpython.com/pygame-a-primer/"}],"Key":"Pygame"},"Pypi":{"title":"PyPI","Type":"Lesson","Status":"Ready","pron":"peye peye","description":"The official third party open source software library repository for Python. PIP connects to PyPI.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"How to Use PyPi and PIP","url":"https://www.liquidweb.com/kb/how-to-use-pypi-pip/"}],"Key":"Pypi"},"Python":{"title":"Python","Type":"Lesson","Status":"Ready","pron":"python","description":"General purpose coding language developed in The Nestomir galaxy.","ldshab":"Python in the common tongue.","Key":"Python"},"Quantumspace":{"title":"Quantum Space","Type":"Story","Status":"Ready","pron":"Quan Tum Spayce","description":"A series of micro dimensions where only information exists. Used for interstellar travel. ","ldshab":"More information being imported from the archives soon.","Key":"Quantumspace"},"Quantumstarmap":{"title":"Quantum Starmap","Type":"Story","Status":"Ready","pron":"cuan tum star map","description":"A map used for ship navigation through quantum space. Partially leverages the massive energy-mass of stars to hone in on interstellar destinations.","ldshab":"More information being imported from the archives soon.","Key":"Quantumstarmap"},"Radium":{"title":"Radium","Type":"Story","Status":"Ready","pron":"Ray dee um","description":"Radioactive element present on both Earth and Naronian planets.","ldshab":"More information being imported from the archives soon.","Key":"Radium"},"Realspace":{"title":"Real Space","Type":"Story","Status":"Ready","pron":"real space","description":"The dimensions where standard life exists. As opposed to quantum space, where only information exists","ldshab":"More information to come shortly","Key":"Realspace"},"Republicofnaronia":{"title":"Republic of Naronia","Type":"Story","Status":"Ready","pron":"Re public of nah rone ya","description":"Principal ruling republic of the planet of Naronia. Power is separated between The Solar Senate and The Naronian Council.","ldshab":"More information being imported from the archives soon.","Key":"Republicofnaronia"},"Reusability":{"title":"Resusability","Type":"Lesson","Status":"Ready","pron":"re use a bil i tee","description":"Reusability is a critical concept in all of programming, and engineering in general (and probably life also :)). But in the domain of coding, it refers to creating and organizing programs in a such a way where the same instructions never have to be repeated. This is one of the primary skills of experienced coders, and something often hard to really \"get\" as a beginner.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Code Reuse: Functions and Modules","url":"https://www.oreilly.com/library/view/head-first-python/9781491919521/ch04.html"}],"recommended":["See function."],"Key":"Reusability"},"Returnstatement":{"title":"Return statement","Type":"Lesson","Status":"Ready","pron":"return state ment","description":"A return statement is an essential piece of coding. We use return statements to DELIVER THE OUTPUT of our functions. For a function to actually spit out or return output based on the instructions and input of our function, we must RETURN. We often forget to do this when we first learn to code. (We expect the function to do it automatically, but functions need to be explicitly told to return something!)","snippit":"def add(a,b): \n   return a + b","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Return Statement Best Practices","url":"https://realpython.com/python-return-statement/"}],"recommended":["(After chapter 13) Practice writing the add function from Chapter 12 in a Jupyter Notebook. Play around with using the return keyword. Using the lesson from the story, see for yourself what happens when you do and do not use the RETURN keyword by assigning the result of the function to a new variable which you print out to the screen."],"Key":"Returnstatement"},"Riemannhypothesis":{"title":"Riemann Hypothesis","Type":"Story","Status":"Ready","pron":"Reemahn Hypothesis","description":"In mathematics, the Riemann hypothesis is a conjecture that the Riemann zeta function has its zeros only at the negative even integers and complex numbers with real part 1/2. Many consider it to be the most important unsolved problem in pure mathematics. It is of great interest in number theory because it implies results about the distribution of prime numbers. It was proposed by Bernhard Riemann (1859), after whom it is named. - Wikipedia (Earth)","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"The Riemann Hypothesis, explained","url":"https://www.cantorsparadise.com/the-riemann-hypothesis-explained-fa01c1f75d3f"}],"Key":"Riemannhypothesis"},"Ringofvernost":{"title":"Ring of Vernost","Type":"Story","Status":"Ready","pron":"Ring of Vern Nost","description":"Ruling political circle in the government of Venthe.","ldshab":"More information being imported from the archives soon.","Key":"Ringofvernost"},"Router":{"title":"Router","Type":"Lesson","Status":"Ready","pron":"row tur","description":"A router is a piece of networking equipment that forwards data between computer networks. Routers perform the data directing functions on the Internet. They are very similar to a traffic cop directing traffic to the necessary lanes. Without them, information has no idea where to go.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is a router and how does it work?","url":"https://www.lifewire.com/what-is-a-router-2618162"}],"recommended":["Find the wifi router in your house. Stare at at it for a few moments and appreciate it. :)"],"Key":"Router"},"Scipy":{"title":"SciPy","Type":"Lesson","Status":"Ready","pron":"sci pie","description":"\"SciPy is a collection of mathematical algorithms and convenience functions built on the NumPy extension of Python. It adds significant power to the interactive Python session by providing the user with high-level commands and classes for manipulating and visualizing data. With SciPy, an interactive Python session becomes a data-processing and system-prototyping environment rivaling systems, such as MATLAB, IDL, Octave, R-Lab, and SciLab.\" - SciPi.org\n\n","snippit":"from scipy import misc\nimport matplotlib.pyplot as plt\n\nface = misc.face()\nplt.imshow(face)\nplt.show()\n\n# snippit taken from Real Python article","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Introduction to SciPy (w3 Schools)","url":"https://www.w3schools.com/python/scipy/scipy_intro.php"}],"recommended":["I love w3 schools. Check out this well organized intro to SciPy...https://www.w3schools.com/python/scipy/scipy_intro.php. It's not the simplest stuff. But it's good to take a look at."],"Key":"Scipy"},"Sentauribeacon1":{"title":"Sentauri Beacon 1","Type":"Story","Status":"Ready","pron":"sen taur i beek in wun","description":"The model of Dendro's Solar Forces fighter ship. These were more expensive than their successors, but production of them stopped because of their expense. Dendro was one of the last captains to get one.","ldshab":"More information being imported from the archives soon.","Key":"Sentauribeacon1"},"Server":{"title":"Server","Type":"Lesson","Status":"Ready","pron":"sur vur","description":"A server is a computer that sits on the internet listening. It awaits requests from clients (people like you and me, aliens, and other computers). When a server receives a request, it looks up a response, usually by talking to a database, then responds with the right information in the right format to the client. See client.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is a Server?","url":"https://www.computerhope.com/jargon/s/server.htm"}],"Key":"Server"},"Skruzdenwarriors":{"title":"Skruzden Warriors","Type":"Story","Status":"Ready","pron":"skrooz den","description":"Multiple races fight in the Venthum Space Legions, just as multiple races fight for The Republic of Naronia, in the Solar Forces. Skruzden Warriors tend to make up The Venthum search and destroy battalions–The Skruzden are an ancient race, native to the planet of Venthe. They are a species governed and controlled by The Ring of Vernost, the ruling political body on Venthe. They are also the only other race indigenous to Venthe, besides the Native Venthum. Those were Skruzden warriors on the rink.”","ldshab":"More information being imported from the archives soon.","Key":"Skruzdenwarriors"},"Software":{"title":"Software","Type":"Lesson","Status":"Ready","pron":"soft wear","description":"Refers to the code based instructions that tell a computer how to work.","ldshab":"More information being imported from the archives soon.","Key":"Software"},"Spectatorone":{"title":"Spectator One","Type":"Story","Status":"Ready","pron":"spec tator one","description":"Solar Forces protocol which states that a witness of a war-related event, who is non-military, must be taken under the protection of The Solar Forces until a high ranking general decides on next steps.","ldshab":"More information being imported from the archives soon.","Key":"Spectatorone"},"Starsystema":{"title":"Star System A","Type":"Story","Status":"Ready","pron":"Star System A","description":"The binary star system located inside The Nestomir galaxy that houses the planet of Naronia and the planets in this story.","ldshab":"More information being imported from the archives soon.","Key":"Starsystema"},"Statement":{"title":"Statement","Type":"Lesson","Status":"Ready","pron":"state mint","description":"An expression produces or resolves to a single value. A STATEMENT is simply an instruction in a computer program that does not resolve to a specific value. ","snippit":"if ...\nelse ...","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Statement vs. Expression (stackoverflow thread)","url":"https://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python"}],"Key":"Statement"},"String":{"title":"String","Type":"Lesson","Status":"Ready","pron":"string","description":"In computing, when concerning data types, a string is a specific sequence of characters. For example the name \"Jason\" is a string, with 5 characters running in a specific order. We use quotes, single, or double, in Python, to generate strings. \"Jason\", \"Cat\", \"Ra32ndomsStrIng\"","snippit":"my_name = \"Steven\"","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python String","url":"https://www.geeksforgeeks.org/python-strings/#:~:text=In%20Python%2C%20Strings%20are%20arrays,access%20elements%20of%20the%20string."}],"recommended":["Using a Jupyter Notebook (must be done after Chapter 13) Assign your first name to a Python variable called first_name. If you do this successfully, you have just stored a string to a Python variable."],"Key":"String"},"Subforcesdoctrine":{"title":"Sub Forces Doctrine","Type":"Story","Status":"Ready","pron":"Sub Forces Doct rine","description":"Ld'Sahb religious lore concerning how The Utma can be broken down into distinguished sub-forces.","ldshab":"More information being imported from the archives soon.","Key":"Subforcesdoctrine"},"Tarvezius":{"title":"Tarvezius","Type":"Story","Status":"Ready","pron":"tar vez i us","description":"Zena's home planet.","ldshab":"More information being imported from the archives soon.","Key":"Tarvezius"},"Tensorflow":{"title":"Tensorflow","Type":"Lesson","Status":"Ready","pron":"Tensor•Flow","description":"Artificial intelligence library created by Google.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is TensorFlow?","url":"https://www.guru99.com/what-is-tensorflow.html"}],"recommended":["Build a neural network using TensorFlow. Just kidding, this is well beyond the scope of this book, however, you can feel free to try. And note, it's not that far beyond the scope of Part I - it's all about fundamentals. If you absorb a learning ideology + Python fundamentals...you are making great headway to being able to build your first neural network. You can check out this article here: https://towardsdatascience.com/tensorflow-for-absolute-beginners-28c1544fb0d6"],"Key":"Tensorflow"},"Teqwequarnebula":{"title":"Teqwequar Nebula","Type":"Story","Status":"Ready","pron":"tek we kar neb you lah","description":"The nebula the Ld'Shab religion believes to be the singularity point of creation.","ldshab":"More information being imported from the archives soon.","Key":"Teqwequarnebula"},"Terminal":{"title":"Terminal","Type":"Lesson","Status":"Ready","pron":"term in ul","description":"The terminal (often interchangeable in modern times with \"computer console or shell\") is an important tool in a coders roladex. The terminal is essentially is a way for us to talk natively with our computer's operating system. When we run a Python program, that program is interfacing with our computer's operating system. When we use a command like print() for example, we are telling the computer's operating system to display a value it is housing in memory to our screen. Because the terminal is the native way a human can speak to our computer, the computer displays that value on the terminal. Most code editors give us quick access to our computer's terminal...it's a small sub window with a blinking cursor. The terminal is also where we tell our computer's operating system to run our python program.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Shell (computing) - Wikipedia","url":"https://en.wikipedia.org/wiki/Shell_(computing)"}],"Key":"Terminal"},"Texteditor":{"title":"Text Editor","Type":"Lesson","Status":"Ready","pron":"text ed it or","description":"A text editor is essentially a word processing program that allows us to more easily write and organize our code. It's ESSENTIAL to remember that code is JUST TEXT. You could write code in a microsoft word file if you wanted to, but code editors do special things for us like highlight and format code so it's much much easier to read as coders.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Getting Started with Python and VS Code","url":"https://www.youtube.com/watch?v=E9U-EBG8jVk"}],"recommended":["Our preferred editor of choice is VS Code. See this getting started tutorial for VS Code with Python here: https://code.visualstudio.com/docs/python/python-tutorial."],"Key":"Texteditor"},"Theacceleratedparry":{"title":"The accelerated parry","Type":"Story","Status":"Ready","pron":"acceler ated parri","description":"Power granted by The Utma which allows a solar forces fighter to dodge a blow with a hyper fast, blur like movement. In the Naronian tongue it is known as Accelera I.","ldshab":"More information being imported from the archives soon.","Key":"Theacceleratedparry"},"Theaffagi":{"title":"The Affagi","Type":"Story","Status":"Ready","pron":"a faj ee","description":" The ruling Mentosi family, The Affagi, sit at the forefront of Naronian politics. The Affagi have been the primary leaders in all of the Naronian government for over twenty five hundred hundred years.","ldshab":"More information being imported from the archives soon.","Key":"Theaffagi"},"Thebenefitteachings":{"title":"The Benefit Teachings","Type":"Story","Status":"Ready","pron":"The Benefit Teachingz","description":"The specific teachings of The Holy Curricula, as adapted by The Solar Forces.","ldshab":"More information being imported from the archives soon.","Key":"Thebenefitteachings"},"Thefirsttemple":{"title":"The First Temple","Type":"Story","Status":"Ready","pron":"The First Tem pul","description":"The First Ld'Shab temple created by the first Spiritual Teachers.","ldshab":"More information being imported from the archives soon.","Key":"Thefirsttemple"},"Theholyreusableroot":{"title":"The Holy Reusable Root","Type":"Lesson","Status":"Ready","pron":"the hol ee re use a ble root","description":"Ld'Shab spiritual term used to refer to The Function (see The Function)","ldshab":"More information being imported from the archives soon.","Key":"Theholyreusableroot"},"Thelarhadianasteroidbelt":{"title":"The Larhadian Asteroid Belt","Type":"Story","Status":"Ready","pron":"lar hade ee an ","description":"Asteroid belt located in between Venthe, Tarvezius, and Naronia.","ldshab":"More information being imported from the archives soon.","Key":"Thelarhadianasteroidbelt"},"Thementosi":{"title":"The Mentosi","Type":"Story","Status":"Ready","pron":"Men toh see","description":"The Mentosi are an ancient Naronian race. They are the only species of high-intelligence native to Naronia. The ruling Mentosi family, The Affagi, sit at the forefront of Naronian politics. The Affagi have been the primary leaders in all of the Naronian government for over twenty five hundred hundred years.\n","ldshab":"More information being imported from the archives soon.","Key":"Thementosi"},"Thenestomir":{"title":"The Nestomir","Type":"Story","Status":"Ready","pron":"The nest o meer","description":"Spiroid galaxy located approximately 3 million light years from Earth.","ldshab":"More information being imported from the archives soon.","Key":"Thenestomir"},"Thenewdoctrine":{"title":"The New Doctrine","Type":"Story","Status":"Ready","pron":"The Noo Doct rin","description":"Political document created by The Vostluka line (leading family on Venthe). The document professes that only specific citizens should be educated. It also professes that these selected citizens should not be offered a diverse range of knowledge - only highly specific skills. The document led to the misting of Venthe; this involved filling the Venthe atmosphere with a chemistry that removes ambition from its citizens. ","ldshab":"More information being imported from the archives soon.","Key":"Thenewdoctrine"},"Thephilosophicaltenets":{"title":"The Philosophical Tenets of the Ld'Shab","Type":"Story","Status":"Ready","pron":"The Phil o soph i cal Ten ets of the El Dih Shab","description":"Critical book which helped guide pieces of Naronian culture as well as the Ld'Shab religion.","ldshab":"More information being imported from the archives soon.","Key":"Thephilosophicaltenets"},"Thesolarforces":{"title":"The Solar Forces","Type":"Story","Status":"Ready","pron":"The Sole Er Forces","description":"The military arm of The Republic of Naronia. Sworn to protect the republic and its constituents, as well as maintain order in The Nestomir Galaxy.","ldshab":"More information being imported from the archives soon.","Key":"Thesolarforces"},"Thespiritualplanes":{"title":"The Spiritual Planes","Type":"Story","Status":"Ready","pron":"Thuh Spir it u al Planes","description":"Ld'Shab religious lore concerning dimensions of the spirit. ","ldshab":"More information being imported from the archives soon.","Key":"Thespiritualplanes"},"Theutma":{"title":"The Utma","Type":"Story","Status":"Ready","pron":"The oot mah","description":"Force believed to drive how all sentient beings love, learn, create, it is worshipped by the people of Naronia. The religion of Ld'Shab is centered around its worship. It is not perfectly understood, but believed to permeate the known universe and beyond. Sometimes referred to as The Learning Force.","ldshab":"La Utma","Key":"Theutma"},"Transistor":{"title":"Transistor","Type":"Lesson","Status":"Ready","pron":"tranzist ur","description":"The transistor is one of the electrical inventions that led to the birth of modern computing. A transistor is essentially an electrical switch, which uses a small electrical current to determine if a another, much larger, electrical current can flow out of its gates. A transistor represents a 0 or a 1 in the hardware of computers. Current on, current of, 1, 0.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"How do transistors work?","url":"https://www.explainthatstuff.com/howtransistorswork.html#:~:text=A%20transistor%20works%20when%20the,type%20and%20p%2Dtype%20silicon.&text=By%20turning%20a%20small%20input,switch%20at%20the%20same%20time."}],"Key":"Transistor"},"Turtle":{"title":"Turtle","Type":"Lesson","Status":"Ready","pron":"turtle","description":"Earth based open sourced Python art library.","snippit":"import turtle\ns = turtle.getscreen()","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"The Beginners Guide to Turtle","url":"https://realpython.com/beginners-guide-python-turtle/"}],"recommended":["Import Turtle into your Jupyter Notebook (after chapter 13). Check out this Real Python tutorial and follow along: https://realpython.com/beginners-guide-python-turtle/"],"Key":"Turtle"},"Unix":{"title":"Unix","Type":"Lesson","Status":"Ready","pron":"Un ix","description":"Unix is an early earth-based operating system that has impacted how most modern computing systems are structured today. Initially created in Bell Labs in the 1970's, many of its core features, such as multitasking, and permitting multi-user usership, have trickled into nearly all the digital devices we know and love, including video game systems. It is a grandparent of modern operating systems, if you will.","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"UNIX Introduction","url":"http://www.ee.surrey.ac.uk/Teaching/Unix/unixintro.html"}],"Key":"Unix"},"Url":{"title":"URL","Type":"Lesson","Status":"Ready","pron":"you are el","description":"URL stands for Uniform Resource Locator. A URL is nothing more than the address of a given unique resource on the Web. In theory, each valid URL points to a unique resource. Such resources can be an HTML page, a CSS document, an image, etc. In practice, there are some exceptions, the most common being a URL pointing to a resource that no longer exists or that has moved. As the resource represented by the URL and the URL itself are handled by the Web server, it is up to the owner of the web server to carefully manage that resource and its associated URL. - Mozilla developer docs. Essentially a URL is a web address that allows us to access a highly specific entity over the internet. \n","snippit":"www.dog.com/asdf","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"What is a URL (Mozilla)","url":"https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL"}],"Key":"Url"},"Utmabenefits":{"title":"Utma Benefits","Type":"Story","Status":"Ready","pron":"Utma Ben efits","description":"Super powers granted by The Utma.","ldshab":"More information being imported from the archives soon.","Key":"Utmabenefits"},"Value":{"title":"Value","Type":"Lesson","Status":"Ready","pron":"val yoo","description":"In the lesson context, this refers to the value associated to a specific key in a dictionary. ","snippit":"dict = {'catname': \"nancy\"}\nprint(dict['catname'])\n# here we print the value of the key 'catname'","ldshab":"More information being imported from the archives soon.","suggested":[{"title":"Python Dictionary get() method","url":"https://www.tutorialspoint.com/python/dictionary_get.htm"}],"recommended":["After Chapter 13, spin up a Jupyter Notebook in the browser and define your first dictionary. Next, print a value of a specific key to the screen."],"Key":"Value"},"Variable":{"title":"Variable","Type":"Lesson","Status":"Ready","pron":"/ˈverēəb(ə)l/","description":"A variable in Python is a dedicated place in computer memory to store values. Think of it like a safe. There is the safe, and what you store in the safe. The variable is the safe, and the items in the safe is the data stored in the variable. The information stored in a variable can change (most of the time), that is why we refer to them as variables. It's important to note that there are distinct data types in Python. Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc.","snippit":"apples = 2\n# apples is the variable name \\n# 2 is the data stored inside of it.","ldshab":"La Variable, developed by Spiritual Teacher Kredo Fredrickson in 12890 Sentient.","suggested":[{"title":"What is a variable?","url":"http://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf"}],"recommended":["After Chapter 13, spin up a Jupyter Notebook in the browser and define your first variable. Maybe store your pets name or your sibling's age?"],"Key":"Variable"},"Venthe":{"title":"Venthe","Type":"Story","Status":"Ready","pron":"ven th","description":"Inner most planet in Star System A, also known as The Cracked Planet. The planet is partially cracked from a nuclear explosion. ","ldshab":"More information being imported from the archives soon.","Key":"Venthe"},"Venthum":{"title":"Venthum","Type":"Story","Status":"Ready","pron":"Venth um","description":"General term referring to races and species descending from the planet of Venthe. Often used to refer to the Venthem government. It is important to note that the people Venthe, though not well understood, are essentially held captive by ruling powers there.","ldshab":"More information being imported from the archives soon.","Key":"Venthum"},"Venthumspacelegions":{"title":"Venthum Space Legions","Type":"Story","Status":"Ready","pron":"Venthem Space Lege ens","description":"Military force of The Venthem","ldshab":"More information being imported from the archives soon.","Key":"Venthumspacelegions"},"Weaponsharnessing":{"title":"Weapon's harnessing","Type":"Story","Status":"Ready","pron":"Weapon's Harn essing","description":"See Zegmu.","ldshab":"More information being imported from the archives soon.","Key":"Weaponsharnessing"},"Zegmu":{"title":"Zegmu","Type":"Story","Status":"Ready","pron":"zeg moo","description":"A super power granted by The Utma force which enables a solar forces soldier to use a dusted weapon. It also enables a fighter to levitate their weapon in mid-air. Dusted refers to stardust from the Teqwequar nebula, believed to be the center of creation.","ldshab":"More information being imported from the archives soon.","Key":"Zegmu"}}
+{
+  "Algorithm": {
+    "title": "Algorithm",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "al•goh•rhythm",
+    "description": "An algorithm is not exclusive to coding. It refers to any set of rules or steps that serve a distinct purpose. Technically a function is an algorithm, but, when we use the term algorithm, we usually mean a set of steps that help us perform a data intensive task, like sorting or organizing large sets of information. This goes back to the culture of coding...as seen in the lesson here...when tasks become data or information heavy...it really really matters how we structure our code...because we can cause expensive time losses in our program. So, with respect to coding, an algorithm refers to this data heavy use case of instructions (not always, but usually).",
+    "snippit": "dog = 3",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python - Algorithm Design - tutorialspoint", "url": "https://www.tutorialspoint.com/python_data_structure/python_algorithm_design.htm" }],
+    "recommended": ["Write an algorithm that, based on 3 variables, a, b, and c, returns the largest of all variables. It does not need to be coded using Python."],
+    "Key": "Algorithm"
+  },
+  "Argument": {
+    "title": "Argument",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "arg u ment",
+    "description": "Functions take input. The variables we define as the inputs for our functions when we define the function are known as parameters. When we actually trigger the function, and pass in real values for those parameters, those values are referred to as arguments.",
+    "snippit": "def add(a,b):\n   return a +b\n\nadd(2,5)",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Function Arguments - W3Schools", "url": "https://www.w3schools.com/python/gloss_python_function_arguments.asp" }],
+    "recommended": ["Create a function with one argument."],
+    "Key": "Argument"
+  },
+  "Argus": { "title": "Argus", "Status": "Ready", "pron": "Ar gus", "description": "Second outermost planet in Star System A, The Nestomir", "ldshab": "More information being imported from the archives soon.", "Key": "Argus" },
+  "Beautifulsoup": {
+    "title": "Beautiful soup",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "beautiful soup",
+    "description": "Earth based Python library which provides tools for coders to webscrape (pull information off of webpages).",
+    "snippit": "from bs4 import BeautifulSoup\n\nsoup = BeautifulSoup(page.content, 'html.parser')",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "How to scrape web pages with beautiful soup - Digital Ocean", "url": "https://www.digitalocean.com/community/tutorials/how-to-scrape-web-pages-with-beautiful-soup-and-python-3" }],
+    "recommended": [
+      "Advanced: Import BeautifulSoup into your Python project and make an attempt at scraping a webpage. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."
+    ],
+    "Key": "Beautifulsoup"
+  },
+  "Bernardpinkett": {
+    "title": "Bernard Pinkett",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Bern ard Pink ett",
+    "description": "Creator of The Python programming language (Nestomir based).",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Bernardpinkett"
+  },
+  "Binary": {
+    "title": "Binary",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "beye nair ee",
+    "description": "The Binary number system represents numerical values using only 0's and 1's (Binary is a base 2 number system). The number system you're used to is a base 10 number system, e.g., 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. All number systems can represent all numbers. The fact we only need two \"characters\" or numerical values to create that number system is special...it means we can use circuitry to compute math very easily. It's this concept that gave birth to modern computing. See our suggested reading below to learn more about binary.",
+    "snippit": "010001",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "Binary Number System - Math is Fun", "url": "https://www.mathsisfun.com/binary-number-system.html" },
+      { "title": "Binary Number System - Britannica", "url": "https://www.britannica.com/science/binary-number-system" }
+    ],
+    "recommended": ["Express all numbers from 11 to 20 in a binary number system."],
+    "Key": "Binary"
+  },
+  "Boolean": {
+    "title": "Boolean",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "boo lee an",
+    "description": "A boolean is a specific data type in Python (and in almost all programming language). A boolean has two values, True or False. That's the simple version. And that will get you a long way. To understand on a deeper level...it's about the WHY? Why does a True or False data type matter? It's because it makes programming more efficient. Being able to switch someone on and off, with a variable (we set a variable to a boolean value), we can create programs faster and more efficiently.",
+    "snippit": "car_on = True\n#this variable has been assigned a boolean value",
+    "ldshab": "Le Bul",
+    "suggested": [{ "title": "Binary Variable - LearnDataSci", "url": "https://www.learndatasci.com/glossary/binary-variable/" }],
+    "recommended": ["Using a Jupyter Notebook, assign a variable that you create to a boolean value. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."],
+    "Key": "Boolean"
+  },
+  "Bulkcipher": {
+    "title": "Bulk Cipher",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "bulk seye fur",
+    "description": "Secret coded language developed in the undergrounds of The  Nestomir. Its intention was to provide a top secret and anonymous way of communicating amongst military outfits.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Bulkcipher"
+  },
+  "Caravine": {
+    "title": "Caravine",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "kara veen",
+    "description": "Area of Solar Forces fighter ships responsible for coordinating complex satellite communications from both a stellar and interstellar perspective.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Caravine"
+  },
+  "Cipher": {
+    "title": "Cipher",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "ciph er",
+    "description": "Any type of coded language or information.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Cipher - Britannica", "url": "https://www.britannica.com/topic/cipher" }],
+    "Key": "Cipher"
+  },
+  "Cipherium": {
+    "title": "Cipherium",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Ceye fear e um",
+    "description": "A hard-to-obtain program which aids in the un-coding of secret messages sent across the universe. Usually only accessible by the military and criminals who access it illegally.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Cipherium"
+  },
+  "Client": {
+    "title": "Client",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "cly int",
+    "description": "In the world of computing and the internet, we refer to the device (or the specific program) in the end users hands as the client. For example, when using Instagram, the app is the client. But there is much more to Instagram...e.g., its database, server, etc.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "What Does Client Mean? - techopedia", "url": "https://www.techopedia.com/definition/437/client" },
+      { "title": "Client - Computer Hope", "url": "https://www.computerhope.com/jargon/c/client.htm" }
+    ],
+    "Key": "Client"
+  },
+  "Clientserver": {
+    "title": "Client Server Architecture",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "cli ent serv ur ark ih tek chur",
+    "description": "To keep it simple, the web was created with both clients and servers in mind. We need clients because we need ways for users like us to easily consume information coming from over the internet. For a client, think of the app on your phone showing you a news feed. And we need servers because we need a way to store our information in an easy to access way. For server, we're talking the actual computer sitting in a warehouse somewhere that is responding to all the requests coming from our clients.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "Client-Server Architecture - Britannica", "url": "https://www.britannica.com/technology/client-server-architecture" },
+      { "title": "Client-Server Definition - OmniSci", "url": "https://www.omnisci.com/technical-glossary/client-server" }
+    ],
+    "Key": "Clientserver"
+  },
+  "Code": {
+    "title": "Code",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "code",
+    "description": "General term to refer to the construction of a computer program through text-based characters.",
+    "snippit": "cat_age = 7",
+    "ldshab": "Code",
+    "suggested": [{ "title": "Code", "url": "https://whatis.techtarget.com/definition/code" }],
+    "Key": "Code"
+  },
+  "Codecomment": {
+    "title": "Comment as in code comment #",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "comm ent",
+    "description": "Comments are how coders document their code, inside of their code! (See documentation). Comments are completely ignored by the Python interpreter when our programs are run...but they allow us as coders to take notes inside of our code. Why do we document our code? To remember why we wrote a specific line of code in a certain way. Often times, when we program, we forget what we've done. It happens quite often. This is why commenting our code is so essential. Commenting is essentially annotation in a programmers world.",
+    "snippit": "# comment goes here ",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Commenting Python Code - Stack Abuse", "url": "https://stackabuse.com/commenting-python-code/" }],
+    "recommended": ["Write a function or algorithm in Python that incorporates two or more lines of comments, starting with a hashtag (#). Always feel free to use Jupyter Notebook (taught in Ch. 13)."],
+    "Key": "Codecomment"
+  },
+  "Communicationsreceiver": {
+    "title": "Communications receiver",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "commun i cations receiver",
+    "description": "Device installed in Nestomirian ships which enables them to communicate inter-galaxy.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Communicationsreceiver"
+  },
+  "Comparisonoperator": {
+    "title": "Comparison operator",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "comp ar i sun op ur ayte er",
+    "description": "Comparison operators are used to compare two values. For example, the greater than sign > allows us to determine if one value is larger than another. ",
+    "snippit": "3 > 4\n# an expression using a comparison operator.\n# this expression will resolve to False",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Comparison Operators with Syntax and Examples - DataFlair", "url": "https://data-flair.training/blogs/python-comparison-operators/" }],
+    "recommended": ["Write a function in Python that, based on 2 variables, a and b, two positive numbers, returns and prints the largest one. (Feel free to use a Jupyter Notebook...taughtin Chapter 13)"],
+    "Key": "Comparisonoperator"
+  },
+  "Compiler": {
+    "title": "Compiler",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "Com peye eler",
+    "description": "An interpreter is another computer program which executes source code (like Python). This is in comparison to a compiler, which is a program which breaks down source code into machine code (0's and 1's). Interpreters allow coders to more easily run their programs (the coder does not need to wait for the entire program to be compiled down to machine language). However, compiled programs can often be faster when they are run. There is a trade off, but most coders like the interpreted environment.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Compiler - Britannica", "url": "https://www.britannica.com/technology/compiler" }],
+    "recommended": ["Spend some time googling articles about compilers beyond the one listed here. There is an endless amount of information out there. (It's good to practice self-learning)."],
+    "Key": "Compiler"
+  },
+  "Controlflow": {
+    "title": "Control Flow",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "con trol flow",
+    "description": "Control flow is a term used to describe how a coder can use the tools of a programming language to make decisions based on the output of something else in the program.",
+    "snippit": "k = 10\nif k == 10:\n   print(\"k is set to 10\")",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "What are control flow statements in Python? - Educative.io", "url": "https://www.educative.io/edpresso/what-are-control-flow-statements-in-python" },
+      { "title": "Control Flow - Computer Hope", "url": "https://www.computerhope.com/jargon/c/contflow.htm" }
+    ],
+    "recommended": [
+      "Try creating your first Python conditional statement in a Jupyter Notebook (taught in ch. 13). Can you think of something in your life that might benefit from a program that could make a decision for you? If this, then that? Try and simulate it with Python if statements."
+    ],
+    "Key": "Controlflow"
+  },
+  "Controlf": {
+    "title": "Control-F",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "Control ef",
+    "description": "We use control-f on our keyboard (control key + f key) to bring up the search bar. We use this search bar to find an element of text in the file or web page we are looking at.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Controlf"
+  },
+  "Cyprusa": { "title": "Cyprus A", "Type": "Story", "Status": "Ready", "pron": "Cy prus A", "description": "Outermost planet in Star System A.", "ldshab": "More information being imported from the archives soon.", "Key": "Cyprusa" },
+  "Darkwars": {
+    "title": "Dark Wars",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Dark Warz",
+    "description": "Galactic wars which took place between Naronia and the Venthe forces. The First Dark War took place in 4,000 Sentient Age. The Second Dark War took place 8,900 Sentient. Both wars resulted in catastrophic losses for both sides, including the destruction of planets. Both wars played a significant role in shaping the galaxy, galactic immigration, and political structures. More information will be uploaded from the archives soon.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Darkwars"
+  },
+  "Data": {
+    "title": "Data",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "day duh",
+    "description": "Data is a generic term for information. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "Definition of Data", "url": "https://www.merriam-webster.com/dictionary/data" },
+      { "title": "Qualitative and Quantitative Data - Science Notes", "url": "https://sciencenotes.org/qualitative-quantitative-data-definitions-examples/" }
+    ],
+    "Key": "Data"
+  },
+  "Datastructure": {
+    "title": "Data Structure",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "day tuh struk chur",
+    "description": "A data structure is a mechanism to store data in a specific pattern. That pattern, or data structure, is optimized for the problem we want to solve. For example, do we want to look up information by name, or through a list? Depending on the use case, we choose a specific data structure to store information. ",
+    "snippit": "list = ['Ice', 'Meat', 'Veggies']\n# A list is an example data structure in Python",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "Data Structures - GeeksforGeeks", "url": "https://www.geeksforgeeks.org/data-structures/" },
+      { "title": "8 Common Data Structures every Programmer Must Know", "url": "https://towardsdatascience.com/8-common-data-structures-every-programmer-must-know-171acf6a1a42" }
+    ],
+    "Key": "Datastructure"
+  },
+  "Datatype": {
+    "title": "Data type",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "Dayda type",
+    "description": "\"A data type, in programming, is a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error. A string, for example, is a data type that is used to classify text and an integer is a data type used to classify whole numbers.\" - TechTarget. The most common data types we use are integers, booleans, and strings.",
+    "snippit": "cat = \"freddie\"\n# this is a string\n\nage=14\n# this is an integer\n\nam_I_cool = True\n# this is a boolean",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      { "title": "What are Data Types and Why are They Important?", "url": "https://dataled.academy/guides/data-types/" },
+      { "title": "Data Types – Programming Fundamentals", "url": "https://press.rebus.community/programmingfundamentals/chapter/data-types/" }
+    ],
+    "recommended": ["Assign different data types to different variables. Create a string, number, and boolean. Go ahead, try it with three different variables. Feel free to use a Jupyter Notebook in the browser, which is taught in Chapter 13."],
+    "Key": "Datatype"
+  },
+  "Datetime": {
+    "title": "Datetime",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "date time",
+    "description": "Built in Python library that allows coders to work with dates more easily.",
+    "snippit": "import datetime\nx = datetime.datetime.now()\n",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "w3schools: Python Datetime", "url": "https://www.w3schools.com/python/python_datetime.asp" }],
+    "recommended": ["Advanced: Import datetime into a Jupyter notebook then print the current date to the screen. (Jupyter Notebook taught in Chapter 13)."],
+    "Key": "Datetime"
+  },
+  "Decryption": {
+    "title": "Decryption",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "de cryp tion",
+    "description": "The process of unscrambling encrypted information. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      {
+        "title": "How Does Decryption Work?",
+        "url": "https://www.hypr.com/decryption/#:~:text=Decryption%20is%20a%20process%20that%20transforms%20encrypted%20information%20into%20its%20original%20format.&text=To%20do%20this%2C%20parties%20to,algorithms%20are%20also%20called%20ciphers.)"
+      }
+    ],
+    "Key": "Decryption"
+  },
+  "Delta1deathcruiser": {
+    "title": "Delta 1 Death Cruiser",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Del tuh Wun Deth Croo Zur",
+    "description": "Massive Carrier Ships commissioned and used by The Solar Forces in large scale attacks.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Delta1deathcruiser"
+  },
+  "Dictionary": {
+    "title": "Dictionary",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "dict shun air ee",
+    "description": "A Python dictionary is a data structure that allows us to organize information with keys that are associated to specific values. It is very similar to how a regular dictionary works where words are the keys, the values are the associated definition of the corresponding word. Dictionaries are incredibly powerful, as many things we wish to organize, when we build almost anything, requires us to store things by name.",
+    "snippit": "contact = {\n   'name': \"John\", \n   'address': \"13 Graee-end road\"\n}\n# example of storying a dictionary in a python variable",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Dictionaries - w3 Schools", "url": "https://www.w3schools.com/python/python_dictionaries.asp" }],
+    "recommended": ["Create a Python dictionary that stores each of your friends first names as keys - and then store (in the values) (as strings) the first thing that comes to mind when you think of each friend."],
+    "Key": "Dictionary"
+  },
+  "Documentation": {
+    "title": "Documentation",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "dok you men tay shun",
+    "description": "Documentation refers to the website or writing a coder creates to EXPLAIN how to USE the program they have created. It's an explainer, a how to guide, for coders. And it's essential, because it's not often easy to read or understand exactly what another coder did!",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Code Documentation: The Complete Beginner’s Guide - Submain Blog", "url": "https://blog.submain.com/code-documentation-the-complete-beginners-guide/" }],
+    "recommended": [
+      "Write a function that achieves a simple purpose, then use Python comments (#) to explain the purpose and intent of the function. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."
+    ],
+    "Key": "Documentation"
+  },
+  "Druinitis": {
+    "title": "Druinȉtis",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Drooo en eye tus",
+    "description": "The Dark Continent of the planet Limora. See Limora.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Druinitis"
+  },
+  "Elsestatement": {
+    "title": "else statement",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "else state ment",
+    "description": "An else statement is a code block that runs whenever its associated if statement expression evaluates to false. If this is true, do this, else, run this code, etc.",
+    "snippit": "k = 10\n\nif k == 10:\n   print(\"k is set to 10\")\nelse:\n   print(\"k is not set to 10\")\n",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Conditions - w3 Schools", "url": "https://www.w3schools.com/python/python_conditions.asp" }],
+    "recommended": [
+      "Code this in Python: Assign a variable called MyPet to the string ..dog...Then write an if else statement that achieves: if MyPet is equal to..dog...print()...My pet is a dog...to the screen, else it should print ...My pet is not a dog...Always feel free to use Jupyter Notebook (taught in Ch. 13)."
+    ],
+    "Key": "Elsestatement"
+  },
+  "Encoding": {
+    "title": "Encoding",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "en code ing",
+    "description": "Encoding refers to modifying information to fit a specific format. It's important to note, it does not necessarily mean for security purposes. Encoding a piece of text can also be used to change the format of the text in a way that is less susceptible to errors (removing certain characters, etc).",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Unicode & Character Encodings in Python: A Painless Guide - Real Python", "url": "https://realpython.com/python-encodings-guide/" }],
+    "Key": "Encoding"
+  },
+  "Encryption": {
+    "title": "Encryption",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "en cryp shin",
+    "description": "The process of using mathematical principals to scramble information. This scrambled information can only be de-scrambled (decrypted) with a special key that only certain people have access to, similar to a password. The only difference is that this key actually plays a role in scrambling the information in the first place. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is Encryption - CloudFlare", "url": "https://www.cloudflare.com/learning/ssl/what-is-encryption/" }],
+    "Key": "Encryption"
+  },
+  "Enlightened": {
+    "title": "Enlightened",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "En light end",
+    "description": "An englightened city refers to a city outside of The Nestomir Galaxy which contains Nestomirian residents (immigrants). The term enlightened is used because each enlightened city contains a small population of native residents who are aware of the alien population; thus these natives are enlightened that they are not alone in the universe.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Enlightened"
+  },
+  "Enlightenedregistry": {
+    "title": "Enlightened Registry",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "enlight en ed reg i stree",
+    "description": "List of cities across the Universe who contain a population alien to the native planet.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Enlightenedregistry"
+  },
+  "Expression": {
+    "title": "Expression",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "ehx pressh un",
+    "description": "An expression in programming is a piece of code the resolves to a singular value. ",
+    "snippit": "3 + 4\n# This is an expression, as it resolves to one value (7).",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is an Expression? - Geeks4Geeks", "url": "https://www.geeksforgeeks.org/what-is-an-expression-and-what-are-the-types-of-expressions/" }],
+    "recommended": [
+      "Using a Jupyter Notebook, assign a variable to a Python expression (see definition). Then print this value to the screen. Like 4 + 8, etc...just to get a feel for what an expression is. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."
+    ],
+    "Key": "Expression"
+  },
+  "Floatingpointnumber": {
+    "title": "Floating Point Number",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "floa ting point num bur",
+    "description": "Another primitive Python data type. \"Floating-point numbers are represented in computer hardware as base 2 (binary) fractions. For example, the decimal fraction 0.125 has value 1/10 + 2/100 + 5/1000, and in the same way the binary fraction 0.001 has value 0/2 + 0/4 + 1/8. These two fractions have identical values, the only real difference being that the first is written in base 10 fractional notation, and the second in base 2. Unfortunately, most decimal fractions cannot be represented exactly as binary fractions. A consequence is that, in general, the decimal floating-point numbers you enter are only approximated by the binary floating-point numbers actually stored in the machine.\" - GeeksForGeeks",
+    "snippit": "my_age = 10.33",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Floats - Real Python (video)", "url": "https://realpython.com/lessons/floats/" }],
+    "recommended": [
+      "Assign a variable the value of 4.3. Then use the type function in Python to print the type of this variable to the screen. For example: a = 4.3 (first line of code) // print(type(a)) (second line of code). Python will tell you you have created a floating point number. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."
+    ],
+    "Key": "Floatingpointnumber"
+  },
+  "Foresight": {
+    "title": "Foresight",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "4 Site",
+    "description": "Extremely advanced power granted by The Utma. Only the greatest spiritual teachers and Solar Forces warriors are able to attain this power long term. It grants a sentient being the ability to predict certain movements before they happen. It is still not fully understood.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Foresight"
+  },
+  "Fsgravis": { "title": "FS Gravis", "Type": "Story", "Status": "Ready", "pron": "FS gra vis", "description": "Zimmer's freighter ship.", "ldshab": "More information being imported from the archives soon.", "Key": "Fsgravis" },
+  "Function": {
+    "title": "Function",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "fuhngk•shuhn",
+    "description": "A function is a set of instructions written with code. It is often used to repeat a commonly used set of instructions so they do not need to be written more than once. We define a function in Python using the def keyword. Remember, to actually trigger a function, we use the function name, then two parentheses after the function name. e.g., add().",
+    "snippit": "def add(x,y):\n  return x + y",
+    "ldshab": "Known as The Holy Reusable Root in Naronian culture. Known to be the essence of all programming.",
+    "suggested": [{ "title": "Python Functions - w3 Schols", "url": "https://www.w3schools.com/python/python_functions.asp" }],
+    "recommended": ["Create your own horoscope app using a Jupyter notebook (once you finish Chapter 13)."],
+    "desc_sources": "Tutorials Point",
+    "Key": "Function"
+  },
+  "Gobhar": {
+    "title": "Gobhar",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Go bar",
+    "description": "Dendro's ancestral planet. Gobhar was destroyed during The First Dark War.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Gobhar"
+  },
+  "Gobrahim": {
+    "title": "Gobrahim",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "goe bar",
+    "description": "Those descending from the planet of Gobhar. See Gobhar.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Gobrahim"
+  },
+  "Grapefield": {
+    "title": "Grapefield, Wisconsin",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Grape feeld",
+    "description": "Jake's hometown. Located in central Wisconsin, a state in the USA.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Grapefield"
+  },
+  "Guidovanrossum": {
+    "title": "Guido Van Rossum",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Guee doh van ross uhm",
+    "description": "Known as the creator of Python as Earth, even though Python was created by Bernard Pinkett of The Nestomir.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Guidovanrossum"
+  },
+  "Hashtable": {
+    "title": "hash table",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "hash table",
+    "description": "\"Hashing is a technique that is used to uniquely identify a specific object from a group of similar objects.\" - HackerEarth",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is a hash table? (Educative)", "url": "https://www.educative.io/edpresso/what-is-a-hash-table" }],
+    "Key": "Hashtable"
+  },
+  "Holycurricula": {
+    "title": "Holy Curricula",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Holee Kurik you lah",
+    "description": "Curriculum defined by the great Naronian Spiritual Teachers. This curriculum is as close of a map as has been developed to coordinate learning with the attainment of powers from The Utma.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Holycurricula"
+  },
+  "Http": {
+    "title": "HTTP",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p",
+    "description": "HTTP is a protocol created by engineers to allow computers to send messages efficiently over the internet. (See protocol). This means every message sent over the internet needs to follow a very specific pattern/set of rules to keep every thing working smoothly.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Introduction to HTTP", "url": "http://www.steves-internet-guide.com/http-basics/" }],
+    "Key": "Http"
+  },
+  "Httpbody": {
+    "title": "http body",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p bod ee",
+    "description": "The body is where we store information inserted by a user in HTTP request. For example, if a user is filling out their profile on a website, when they click \"save\", what's happening behind the scenes is that our client (the website) is sending an HTTP request to a server telling it to save whatever the user inputted as their profile description. The text the user inserted will get inserted in the http request BODY.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Anatomy of an HTTP request", "url": "https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/" }],
+    "Key": "Httpbody"
+  },
+  "Httpcontenttype": {
+    "title": "Http content-type",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p content type",
+    "description": "This is a standard HTTP header. (See HTTP Header). This header allows us to tell our server (when we make a request) what format we are sending our data, or what format we wish to get back.",
+    "snippit": "import requests\n\nheaders = {'Content-type': 'content_type_value'}\n\nr = requests.get(url, headers=headers)\n\n# we can set the content type header using the requests library",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "HTTP Headers | Content Type", "url": "https://www.geeksforgeeks.org/http-headers-content-type/" }],
+    "Key": "Httpcontenttype"
+  },
+  "Httpget": {
+    "title": "http get",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "H T T P GET",
+    "description": "(See http request method). We use the GET request method when we are informing our server that our request relates to retrieving information it already has access to...like a picture or a file. Keep in mind request, methods were not created for simple organization of request types. We often need to separate out requests by these methods, e.g., GET and POST, for security reasons.",
+    "snippit": "import requests\n\nx =requests.get('https://w3schools.com/python/demopage.htm')\n\nprint(x.text)\n\n# example of GET request (ex. from w3 schools)",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Anatomy of an HTTP request", "url": "https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/" }],
+    "Key": "Httpget"
+  },
+  "Httpheader": {
+    "title": "HTTP header",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p hed ur",
+    "description": "HTTP headers let the client and the server pass additional instructions with an HTTP request or response. It's a way to tune or adjust our request. For example, the content-type header allows us to dictate what format we send the information a user has given us to send over the internet.",
+    "snippit": "import requests\n\nresponse = requests.get(\n    'https://api.github.com/search/repositories',\n    params={'q': 'requests+language:python'},\n    headers={'Accept': 'application/vnd.github.v3.text-match+json'},\n)\n\n# we can set headers like this",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Anatomy of an HTTP request", "url": "https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/" }],
+    "Key": "Httpheader"
+  },
+  "Httpmessage": {
+    "title": "HTTP message",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p mes ige",
+    "description": "Refers to the entire HTTP request or response.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Anatomy of an HTTP request", "url": "https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/" }],
+    "Key": "Httpmessage"
+  },
+  "Httppost": {
+    "title": "http post",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p post",
+    "description": "HTTP request method. (See http request method). We use the POST request method when we are informing our server that our request relates to saving information. Keep in mind request, methods were not created for simple organization of request types. We often need to separate out requests by these methods, e.g., GET and POST, for security reasons.",
+    "snippit": "import requests\n\nurl = 'https://www.w3schools.com/python/demopage.php'\\n\n\nmyobj = {'somekey': 'somevalue'}\n\nx = requests.post(url, data = myobj)\n\nprint(x.text)\n\n# the data here, myobj, is our payload\n# snippit taken from W3 schools example",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Anatomy of an HTTP request", "url": "https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/" }],
+    "Key": "Httppost"
+  },
+  "Httprequestmethod": {
+    "title": "HTTP request method",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "h t t p rek west meth id",
+    "description": "Every single HTTP request must contain a request METHOD. This is a specific instruction that tells our server how to think about the incoming request. For example, HTTP GET informs our server we are most likely asking for information it already has. HTTP POST tells our server our request most likely wants it to save information so we can access it later. See HTTP GET and HTTP POST.",
+    "ldshab": "La Internet Methodistas",
+    "suggested": [{ "title": "Anatomy of an HTTP request", "url": "https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/" }],
+    "Key": "Httprequestmethod"
+  },
+  "Ifstatement": {
+    "title": "If-statement",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "if stayt mint",
+    "description": "A Python statement that runs its code block only if its respective expression evaluates to true. Key building block for building programs.",
+    "snippit": "if on == True:\n   shipMove()",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Conditions", "url": "https://www.w3schools.com/python/python_conditions.asp" }],
+    "recommended": ["See control flow."],
+    "Key": "Ifstatement"
+  },
+  "Importstatement": {
+    "title": "import statement",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "import state ment",
+    "description": "An import statement in python tells our program that the specific file we're working on needs access to a specific Python library. We need to do this when we use libraries in Python...and in most programming languages. ",
+    "snippit": "import datetime\n#example of an import statement",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "A Quick Guide to Understanding Python's Import Statement", "url": "https://medium.com/cold-brew-code/a-quick-guide-to-understanding-pythons-import-statement-505eea2d601f" }],
+    "Key": "Importstatement"
+  },
+  "Indoone": {
+    "title": "Indo One",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "in doe wun",
+    "description": "Smallest, and outermost planet in Star System A, The Nestomir galaxy. Tropical planet.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Indoone"
+  },
+  "Initma": {
+    "title": "Initma",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "in eet mah",
+    "description": "Power granted by The Utma. Initma enables a Solar Forces warrior to calm down their mind down in battle.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Initma"
+  },
+  "Input": {
+    "title": "Input",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "in put",
+    "description": "This is the information we pass to a function. It is also referred to as a function's parameter(s). We also use the term input in the more generic sense to describe any information passed to something else, to derive a result. ",
+    "ldshab": "La Inputá",
+    "suggested": [{ "title": "Programming - Functions", "url": "https://www.cs.utah.edu/~germain/PPS/Topics/functions.html" }],
+    "Key": "Input"
+  },
+  "Internet": {
+    "title": "Internet",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "/ˈin(t)ərˌnet/",
+    "description": "The internet is a network of networks. It connects different webs of computers to one another. Through years of iteration and development, brilliant engineers and scientists have developed protocols to enable different networks of computers to interact with each other.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is the Internet? - Khan Academy", "url": "https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:introducing-the-internet/v/what-is-the-internet" }],
+    "recommended": [
+      "Use the Python requests library to send a GET request to a test server: https://jsonplaceholder.typicode.com. Print the response to the screen. This is a challenging task. You will have to read through the documentation to find the correct URL to get the specific resource from this server. It is best to perform this activity after Chapter 13 when you learn about a specific Python environment called The Jupyter Notebook."
+    ],
+    "Key": "Internet"
+  },
+  "Interpreter": {
+    "title": "Interpreter",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "in tur prit ur",
+    "description": "An interpreter is another computer program which executes source code (like Python). This is in comparison to a compiler, which is a program which breaks down source code into machine code (0's and 1's). Interpreters allow coders to more easily run their programs (the coder does not need to wait for the entire program to be compiled down to machine language). However, compiled programs can often be faster when they are run. There is a trade off, but most coders like the interpreted environment.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Assemblers, Compilers, and Interpreters", "url": "https://www.bbc.co.uk/bitesize/guides/zgmpr82/revision/2#:~:text=An%20interpreter%20translates%20code%20into,to%20debug%20than%20compiled%20code." }],
+    "Key": "Interpreter"
+  },
+  "Interstellarbooster": {
+    "title": "Interstellar Booster",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "inter stell ar boost er",
+    "description": "Special device which enables a ship to enter and leave quantum space. Critical to long distance travel between the stars. These devices are extremely expensive, and not easy to obtain.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Interstellarbooster"
+  },
+  "Ipaddress": {
+    "title": "IP address",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "eye pea ah dress",
+    "description": "An IP address is a unique numerical address for your computer on the internet. Similar to a street address. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is an IP address?", "url": "https://www.mozilla.org/en-US/products/vpn/more/what-is-an-ip-address/" }],
+    "Key": "Ipaddress"
+  },
+  "Jasminetea": {
+    "title": "Jasmine Tea",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "jaz min tee",
+    "description": "Popular beverage in The Nestomir galaxy. Brings both great focus and calm to its drinkers. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Jasminetea"
+  },
+  "Jenfoge": {
+    "title": "Jenfogē",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "jen foe jey",
+    "description": "Solar Forces game developed by its soldiers. Involves grenades, drinking, and putting.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Jenfoge"
+  },
+  "Jupyternotebook": {
+    "title": "Jupyter Notebook",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "jup it ur noet book",
+    "description": "Program, runnable in the browser, that allows coders to create a notebook using Python. It provides a really, really awesome way for coders to integrate code into their research and technical projects. You can include code, but also standard writing, images, all that a real notebook could store. It also is a great way for beginners to learn BECAUSE you do not need to deal with some of the complexity needed to set up your Python environment.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Jupyter Notebook: An Introduction", "url": "https://realpython.com/jupyter-notebook-introduction/" }],
+    "recommended": [
+      "Open up a Jupyter Notebook (after you complete chapter 13) and run wild. Write a function. Create some conditional statements. Make a dictionary then a list. Make mistakes. Learn. Get better. Start to get a feel for what it is to code: to mess up then learn!!"
+    ],
+    "Key": "Jupyternotebook"
+  },
+  "Kahve": { "title": "Kahve", "Type": "Story", "Status": "Ready", "pron": "kah vey", "description": "Coffee-like drink native to The Nestomir.", "ldshab": "More information being imported from the archives soon.", "Key": "Kahve" },
+  "Key": {
+    "title": "Key",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "Kee",
+    "description": "Python dictionaries are made up of keys and values. A key is the name we look up to find the associated information to the key name. For example, in a real dictionary, the keys are the word names, and the values are the definitions.",
+    "snippit": "dict = {'catname': \"nancy\"}\n\nprint(dict['catname'])\n# here we print the value of the key 'catname'",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python - Dictionary", "url": "https://www.tutorialspoint.com/python/python_dictionary.htm" }],
+    "recommended": ["See Dictionary."],
+    "Key": "Key"
+  },
+  "Knightofdiukhien": {
+    "title": "Knight of Diu Khien",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "knights of dee yoo kee yen",
+    "description": "Guardians of The Vostluka bloodline. Usually always by their masters side.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Knightofdiukhien"
+  },
+  "Latishvah": {
+    "title": "La'Tishvah",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "La Tish Vah",
+    "description": "One of the holiest most deeply spiritual terms in Naronian culture. La'Tishvah quite literally means To Learn With Purpose in the common tongue.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Latishvah"
+  },
+  "Lan": {
+    "title": "LAN",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "lan",
+    "description": "Local are network. This is a network that brings together computers within a limited area such as a, school, office, or university campus.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is a Local Area Network?", "url": "https://www.howtogeek.com/353283/what-is-a-local-area-network-lan/" }],
+    "Key": "Lan"
+  },
+  "Ldshab": {
+    "title": "Ld'Shab",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "El dih shab",
+    "description": "Central religion adopted by Naronian Culture. It is a religion based on learning.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Ldshab"
+  },
+  "Library": {
+    "title": "Libraries",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "leye brar ee",
+    "description": "Term used to describe a bundled module of code that can be downloaded or used in a variety of projects to serve a specific purpose. Important to note that a library, in the case of Python, or any other language, is PURE code (Python). ",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Stackoverflow: What exactly is a Python library?", "url": "https://stackoverflow.com/questions/18474784/what-exactly-is-a-python-library" }],
+    "recommended": ["Import Turtle into your Jupyter Notebook (after chapter 13). Check out this Real Python tutorial and follow along: https://realpython.com/beginners-guide-python-turtle/"],
+    "Key": "Library"
+  },
+  "Limora": {
+    "title": "Limora",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Li Mor Ah",
+    "description": "Mysterious, crime-filled planet. Limora has a special continent on it called, Druinȉtis, a.k.a., The Dark Continent, which is believed to house Venthem operations\n",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Limora"
+  },
+  "List": {
+    "title": "List",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "list",
+    "description": "A list in python is a built in, complex, data type in Python. Complex means it's not what we refer to as a primitive data type (number, string, boolean, etc). Lists allow us to story multiple items in a single variable in a specific order. Under the hood, lists rely on data structures - which store lists in memory in as efficient of a way as possible.",
+    "snippit": "grocery_list = ['eggs', 'coffee', 'milk']",
+    "ldshab": "La Listisima",
+    "suggested": [{ "title": "Python Lists", "url": "https://www.w3schools.com/python/python_lists.asp" }],
+    "recommended": ["Store a basic grocery list to a variable", "Create a list of dictionaries (used to store user data) as shown in chapter 10. Always feel free to use Jupyter Notebook (taught in Ch. 13)."],
+    "Key": "List"
+  },
+  "Lithiumradar": {
+    "title": "Lithium Radar",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "lith i um ray dar",
+    "description": "Communications device installed in special opps soldiers of The Solar Forces.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Lithiumradar"
+  },
+  "Markdown": {
+    "title": "Markdown",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "mark down",
+    "description": "Markdown is a syntax used by programmers to format written text. Different inline symbols create different formatting, like bold, italic, etc.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Getting Started with Markdown", "url": "https://www.markdownguide.org/getting-started/" }],
+    "recommended": ["Play around with markdown formatting using https://stackedit.io/"],
+    "Key": "Markdown"
+  },
+  "Math": {
+    "title": "Math",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "math",
+    "description": "Built-in Python library that you can use for mathematical tasks.\n\n",
+    "snippit": "import math\n\nprint(math.pi)\n>> 3.141592653589793",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python math Module, w3", "url": "https://www.w3schools.com/python/module_math.asp" }],
+    "recommended": ["Check out https://www.w3schools.com/python/module_math.asp. Then, using a Jupyter Notebook...play around with some mathematical functions provided by the Python Math module."],
+    "Key": "Math"
+  },
+  "Matplotlib": {
+    "title": "Matplotlib",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "math plot lib",
+    "description": "Open source, earth-based, Python library which allows us to nicely graph and plot data.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "MATPLOTLIB Tutorial (Datacamp)", "url": "https://www.datacamp.com/community/tutorials/matplotlib-tutorial-python" }],
+    "recommended": ["Follow this great tutorial: https://www.geeksforgeeks.org/using-matplotlib-with-jupyter-notebook/. Make sure to go down to the Jupyter Notebook section."],
+    "Key": "Matplotlib"
+  },
+  "Memory": {
+    "title": "Memory",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "mem·​o·​ry",
+    "description": "Memory is where the computer stores temporary information in a program. Think of it as short term memory in your brain. It's not where you store your life story, but more where you store the grocery list you know you have to get at the supermarket later. It's important recognize it's physical. It's actual hardware, which using circuitry, can store information in a program. We often refer to computer memory as RAM (random access memory).",
+    "snippit": "dog = 'rex'\n\n# ex. Python is opening a slot in memory\\n# to store the value of dog.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "How Computer Memory Works (How Stuff Works)", "url": "https://computer.howstuffworks.com/computer-memory1.htm" }],
+    "Key": "Memory"
+  },
+  "Modules": {
+    "title": "Modules",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "mojools",
+    "description": "A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include runnable code. Grouping related code into a module makes the code easier to understand and use. It also makes the code logically organized. - GeeksforGeeks",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Modules and Packages", "url": "https://realpython.com/python-modules-packages/" }],
+    "Key": "Modules"
+  },
+  "Mooncity": { "title": "Moon City ", "Type": "Story", "Status": "Ready", "pron": "Nalia", "description": "Capital city of The Republic of Naronia", "ldshab": "More information being imported from the archives soon.", "Key": "Mooncity" },
+  "Naronia": {
+    "title": "Naronia",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "nah rone ee ah",
+    "description": "Capital planet of The Nestomir galaxy and Star System A. Home of The Naronian Republic and The Solar Forces.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Naronia"
+  },
+  "Nilofarsystem": {
+    "title": "Nilofar System, Eta Omega",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "nil o far system, eta omega",
+    "description": "Naronia's name for The Milky Way.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Nilofarsystem"
+  },
+  "Operatingsystem": {
+    "title": "Operating System",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "op ur ate ing sys tum",
+    "description": "You can think of a computer’s operating system as the\nprogram of all programs working inside of a computer. The operating system also has an intimate relationship with our computer’s hardware. It’s coordinating all of the inputted and outputted information from each individual program and ensuring it gets to the right place at the right time.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is an operating system?", "url": "https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/" }],
+    "Key": "Operatingsystem"
+  },
+  "Output": {
+    "title": "Output",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "owt put",
+    "description": "Functions take inputs (parameters) and RETURN output. Input, output. For example, a function add, takes in two numbers as input, and returns the sum as an output.",
+    "snippit": "add(a,b):\n   return a + b \n\n# a + b is our output which we have to explicitly RETURN",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Output"
+  },
+  "Parameter": {
+    "title": "Parameter",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "pah ram ih tur",
+    "description": "A parameter is another term for INPUT (with respect to a function). For example, if we have a function, named add, that adds two numbers that we pass it, let's say, a, and b, together, a and b are what we refer to as the parameters of the function.",
+    "snippit": "add(a,b)\n# a and b are our functions parameters",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Parameter"
+  },
+  "Payload": {
+    "title": "Payload",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "pei load",
+    "description": "In the context of the lesson, a payload is the user inserted data we embed in the body of our http post request. It's kind of like the \"cargo\", that's why we refer to it as a payload.",
+    "snippit": "import requests\n\nurl = 'https://www.w3schools.com/python/demopage.php'\nmyobj = {'somekey': 'somevalue'}\n\nx = requests.post(url, data = myobj)\n\nprint(x.text)\n\n# the data here, myobj, is our payload\n# snippit taken from W3 schools exmaple",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is a payload in web services?", "url": "https://www.quora.com/What-is-Payload-in-web-services" }],
+    "recommended": [
+      "(Attempt after Chapter 15 only). Using the Python requests library, send an HTTP POST request to https://jsonplaceholder.typicode.com/posts. Story the result of the POST request to a variable - then print that response to the screen. Again - you should read through documentation in this URL. This service is a dummy server which allow us to practice sending requests to a server."
+    ],
+    "Key": "Payload"
+  },
+  "Pip": {
+    "title": "PIP",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "pip",
+    "description": "pip is a package-management program in Python used to install and manage software packages (libraries). It taps into an online collection of public (open source) packages, called the Python Package Index. It allows us to download libraries into our projects extremely easily.",
+    "snippit": "pip install tensorflow",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is PIP?", "url": "https://realpython.com/what-is-pip/" }],
+    "Key": "Pip"
+  },
+  "Print": {
+    "title": "Print",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "print",
+    "description": "Print is a built in Python function. We use it anywhere in our code to display the result of a specific value in our program to OUR TERMINAL. Print is essential because when a program runs, we can't actually SEE anything happening UNLESS we display the results of certain steps of our program to our screen (terminal). You will get NOWHERE as a coder without learning how to use print. Even senior engineers use PRIN ALL OVER THEIR PROGRAMS. It helps us catch mistakes EARLY. As humans, we're prone to making a lot of careless errors, and legitimate errors. This is fine, we just need a way of easily isolating those issues which is what PRINT enable us to do (most of the time)! In other words print() is a coders BEST FRIEND.",
+    "snippit": "cat = 3 + 9\nprint(cat)\n#terminal will display 12",
+    "ldshab": "La Amiga",
+    "suggested": [{ "title": "Your guide to the Python print function", "url": "https://realpython.com/python-print/" }],
+    "recommended": ["Open up a Jupyter Notebook. Write a function of your choosing. Print() the result of the function (the output) to the Jupyter Notebook cell."],
+    "Key": "Print"
+  },
+  "Protocol": {
+    "title": "Protocol",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "/ˈprōdəˌkôl,ˈprōdəˌkäl/",
+    "description": "A protocol is a set of rules that everyone, or everything, in the same system obeys. It allows things to stay in sync. Without a protocol, it makes it extremely hard for machines (or even humans) to communicate with each other.",
+    "ldshab": "Protokima.",
+    "suggested": [{ "title": "What is a protocol?", "url": "https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/" }],
+    "Key": "Protocol"
+  },
+  "Pseudocoding": {
+    "title": "pseudo-coding",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "soo doh coh ding",
+    "description": "Pseudo-coding is the process of using written language (e.g., English) to map out the steps of your program BEFORE you write real code. It's like outlining your essay before you write it, and it often saves you a ton of time!",
+    "snippit": "# see chapter 12",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Pseudocode and its importance", "url": "https://s-jax.medium.com/pseudocode-and-its-importance-5f71e38a0d95" }],
+    "recommended": [
+      "Think of an app you want to build. After you've determined your app's most important *feature*, try writing down in a notepad the exact steps required to complete this feature. Be as detailed as humanly possible to that another person who had no idea what the feature was could replicate it. This is your first foray into pseudocoding!"
+    ],
+    "Key": "Pseudocoding"
+  },
+  "Pygame": {
+    "title": "PyGame",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "py game",
+    "description": "PyGame is an open source Python library (earth-based) that enables coders to build games more easily.",
+    "snippit": "# Import and initialize the pygame library\nimport pygame\npygame.init()\n\n# Set up the drawing window\nscreen = pygame.display.set_mode([500, 500])",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "PyGame: A Primer", "url": "https://realpython.com/pygame-a-primer/" }],
+    "Key": "Pygame"
+  },
+  "Pypi": {
+    "title": "PyPI",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "peye peye",
+    "description": "The official third party open source software library repository for Python. PIP connects to PyPI.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "How to Use PyPi and PIP", "url": "https://www.liquidweb.com/kb/how-to-use-pypi-pip/" }],
+    "Key": "Pypi"
+  },
+  "Python": { "title": "Python", "Type": "Lesson", "Status": "Ready", "pron": "python", "description": "General purpose coding language developed in The Nestomir galaxy.", "ldshab": "Python in the common tongue.", "Key": "Python" },
+  "Quantumspace": {
+    "title": "Quantum Space",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Quan Tum Spayce",
+    "description": "A series of micro dimensions where only information exists. Used for interstellar travel. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Quantumspace"
+  },
+  "Quantumstarmap": {
+    "title": "Quantum Starmap",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "cuan tum star map",
+    "description": "A map used for ship navigation through quantum space. Partially leverages the massive energy-mass of stars to hone in on interstellar destinations.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Quantumstarmap"
+  },
+  "Radium": {
+    "title": "Radium",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Ray dee um",
+    "description": "Radioactive element present on both Earth and Naronian planets.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Radium"
+  },
+  "Realspace": {
+    "title": "Real Space",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "real space",
+    "description": "The dimensions where standard life exists. As opposed to quantum space, where only information exists",
+    "ldshab": "More information to come shortly",
+    "Key": "Realspace"
+  },
+  "Republicofnaronia": {
+    "title": "Republic of Naronia",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Re public of nah rone ya",
+    "description": "Principal ruling republic of the planet of Naronia. Power is separated between The Solar Senate and The Naronian Council.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Republicofnaronia"
+  },
+  "Reusability": {
+    "title": "Resusability",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "re use a bil i tee",
+    "description": "Reusability is a critical concept in all of programming, and engineering in general (and probably life also :)). But in the domain of coding, it refers to creating and organizing programs in a such a way where the same instructions never have to be repeated. This is one of the primary skills of experienced coders, and something often hard to really \"get\" as a beginner.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Code Reuse: Functions and Modules", "url": "https://www.oreilly.com/library/view/head-first-python/9781491919521/ch04.html" }],
+    "recommended": ["See function."],
+    "Key": "Reusability"
+  },
+  "Returnstatement": {
+    "title": "Return statement",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "return state ment",
+    "description": "A return statement is an essential piece of coding. We use return statements to DELIVER THE OUTPUT of our functions. For a function to actually spit out or return output based on the instructions and input of our function, we must RETURN. We often forget to do this when we first learn to code. (We expect the function to do it automatically, but functions need to be explicitly told to return something!)",
+    "snippit": "def add(a,b): \n   return a + b",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Return Statement Best Practices", "url": "https://realpython.com/python-return-statement/" }],
+    "recommended": [
+      "(After chapter 13) Practice writing the add function from Chapter 12 in a Jupyter Notebook. Play around with using the return keyword. Using the lesson from the story, see for yourself what happens when you do and do not use the RETURN keyword by assigning the result of the function to a new variable which you print out to the screen."
+    ],
+    "Key": "Returnstatement"
+  },
+  "Riemannhypothesis": {
+    "title": "Riemann Hypothesis",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Reemahn Hypothesis",
+    "description": "In mathematics, the Riemann hypothesis is a conjecture that the Riemann zeta function has its zeros only at the negative even integers and complex numbers with real part 1/2. Many consider it to be the most important unsolved problem in pure mathematics. It is of great interest in number theory because it implies results about the distribution of prime numbers. It was proposed by Bernhard Riemann (1859), after whom it is named. - Wikipedia (Earth)",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "The Riemann Hypothesis, explained", "url": "https://www.cantorsparadise.com/the-riemann-hypothesis-explained-fa01c1f75d3f" }],
+    "Key": "Riemannhypothesis"
+  },
+  "Ringofvernost": {
+    "title": "Ring of Vernost",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Ring of Vern Nost",
+    "description": "Ruling political circle in the government of Venthe.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Ringofvernost"
+  },
+  "Router": {
+    "title": "Router",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "row tur",
+    "description": "A router is a piece of networking equipment that forwards data between computer networks. Routers perform the data directing functions on the Internet. They are very similar to a traffic cop directing traffic to the necessary lanes. Without them, information has no idea where to go.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is a router and how does it work?", "url": "https://www.lifewire.com/what-is-a-router-2618162" }],
+    "recommended": ["Find the wifi router in your house. Stare at at it for a few moments and appreciate it. :)"],
+    "Key": "Router"
+  },
+  "Scipy": {
+    "title": "SciPy",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "sci pie",
+    "description": "\"SciPy is a collection of mathematical algorithms and convenience functions built on the NumPy extension of Python. It adds significant power to the interactive Python session by providing the user with high-level commands and classes for manipulating and visualizing data. With SciPy, an interactive Python session becomes a data-processing and system-prototyping environment rivaling systems, such as MATLAB, IDL, Octave, R-Lab, and SciLab.\" - SciPi.org\n\n",
+    "snippit": "from scipy import misc\nimport matplotlib.pyplot as plt\n\nface = misc.face()\nplt.imshow(face)\nplt.show()\n\n# snippit taken from Real Python article",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Introduction to SciPy (w3 Schools)", "url": "https://www.w3schools.com/python/scipy/scipy_intro.php" }],
+    "recommended": ["I love w3 schools. Check out this well organized intro to SciPy...https://www.w3schools.com/python/scipy/scipy_intro.php. It's not the simplest stuff. But it's good to take a look at."],
+    "Key": "Scipy"
+  },
+  "Sentauribeacon1": {
+    "title": "Sentauri Beacon 1",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "sen taur i beek in wun",
+    "description": "The model of Dendro's Solar Forces fighter ship. These were more expensive than their successors, but production of them stopped because of their expense. Dendro was one of the last captains to get one.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Sentauribeacon1"
+  },
+  "Server": {
+    "title": "Server",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "sur vur",
+    "description": "A server is a computer that sits on the internet listening. It awaits requests from clients (people like you and me, aliens, and other computers). When a server receives a request, it looks up a response, usually by talking to a database, then responds with the right information in the right format to the client. See client.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is a Server?", "url": "https://www.computerhope.com/jargon/s/server.htm" }],
+    "Key": "Server"
+  },
+  "Skruzdenwarriors": {
+    "title": "Skruzden Warriors",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "skrooz den",
+    "description": "Multiple races fight in the Venthum Space Legions, just as multiple races fight for The Republic of Naronia, in the Solar Forces. Skruzden Warriors tend to make up The Venthum search and destroy battalions–The Skruzden are an ancient race, native to the planet of Venthe. They are a species governed and controlled by The Ring of Vernost, the ruling political body on Venthe. They are also the only other race indigenous to Venthe, besides the Native Venthum. Those were Skruzden warriors on the rink.”",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Skruzdenwarriors"
+  },
+  "Software": {
+    "title": "Software",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "soft wear",
+    "description": "Refers to the code based instructions that tell a computer how to work.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Software"
+  },
+  "Spectatorone": {
+    "title": "Spectator One",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "spec tator one",
+    "description": "Solar Forces protocol which states that a witness of a war-related event, who is non-military, must be taken under the protection of The Solar Forces until a high ranking general decides on next steps.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Spectatorone"
+  },
+  "Starsystema": {
+    "title": "Star System A",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Star System A",
+    "description": "The binary star system located inside The Nestomir galaxy that houses the planet of Naronia and the planets in this story.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Starsystema"
+  },
+  "Statement": {
+    "title": "Statement",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "state mint",
+    "description": "An expression produces or resolves to a single value. A STATEMENT is simply an instruction in a computer program that does not resolve to a specific value. ",
+    "snippit": "if ...\nelse ...",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Statement vs. Expression (stackoverflow thread)", "url": "https://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python" }],
+    "Key": "Statement"
+  },
+  "String": {
+    "title": "String",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "string",
+    "description": "In computing, when concerning data types, a string is a specific sequence of characters. For example the name \"Jason\" is a string, with 5 characters running in a specific order. We use quotes, single, or double, in Python, to generate strings. \"Jason\", \"Cat\", \"Ra32ndomsStrIng\"",
+    "snippit": "my_name = \"Steven\"",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python String", "url": "https://www.geeksforgeeks.org/python-strings/#:~:text=In%20Python%2C%20Strings%20are%20arrays,access%20elements%20of%20the%20string." }],
+    "recommended": ["Using a Jupyter Notebook (must be done after Chapter 13) Assign your first name to a Python variable called first_name. If you do this successfully, you have just stored a string to a Python variable."],
+    "Key": "String"
+  },
+  "Subforcesdoctrine": {
+    "title": "Sub Forces Doctrine",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Sub Forces Doct rine",
+    "description": "Ld'Sahb religious lore concerning how The Utma can be broken down into distinguished sub-forces.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Subforcesdoctrine"
+  },
+  "Tarvezius": { "title": "Tarvezius", "Type": "Story", "Status": "Ready", "pron": "tar vez i us", "description": "Zena's home planet.", "ldshab": "More information being imported from the archives soon.", "Key": "Tarvezius" },
+  "Tensorflow": {
+    "title": "Tensorflow",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "Tensor•Flow",
+    "description": "Artificial intelligence library created by Google.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is TensorFlow?", "url": "https://www.guru99.com/what-is-tensorflow.html" }],
+    "recommended": [
+      "Build a neural network using TensorFlow. Just kidding, this is well beyond the scope of this book, however, you can feel free to try. And note, it's not that far beyond the scope of Part I - it's all about fundamentals. If you absorb a learning ideology + Python fundamentals...you are making great headway to being able to build your first neural network. You can check out this article here: https://towardsdatascience.com/tensorflow-for-absolute-beginners-28c1544fb0d6"
+    ],
+    "Key": "Tensorflow"
+  },
+  "Teqwequarnebula": {
+    "title": "Teqwequar Nebula",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "tek we kar neb you lah",
+    "description": "The nebula the Ld'Shab religion believes to be the singularity point of creation.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Teqwequarnebula"
+  },
+  "Terminal": {
+    "title": "Terminal",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "term in ul",
+    "description": "The terminal (often interchangeable in modern times with \"computer console or shell\") is an important tool in a coders roladex. The terminal is essentially is a way for us to talk natively with our computer's operating system. When we run a Python program, that program is interfacing with our computer's operating system. When we use a command like print() for example, we are telling the computer's operating system to display a value it is housing in memory to our screen. Because the terminal is the native way a human can speak to our computer, the computer displays that value on the terminal. Most code editors give us quick access to our computer's terminal...it's a small sub window with a blinking cursor. The terminal is also where we tell our computer's operating system to run our python program.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Shell (computing) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Shell_(computing)" }],
+    "Key": "Terminal"
+  },
+  "Texteditor": {
+    "title": "Text Editor",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "text ed it or",
+    "description": "A text editor is essentially a word processing program that allows us to more easily write and organize our code. It's ESSENTIAL to remember that code is JUST TEXT. You could write code in a microsoft word file if you wanted to, but code editors do special things for us like highlight and format code so it's much much easier to read as coders.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Getting Started with Python and VS Code", "url": "https://www.youtube.com/watch?v=E9U-EBG8jVk" }],
+    "recommended": ["Our preferred editor of choice is VS Code. See this getting started tutorial for VS Code with Python here: https://code.visualstudio.com/docs/python/python-tutorial."],
+    "Key": "Texteditor"
+  },
+  "Theacceleratedparry": {
+    "title": "The accelerated parry",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "acceler ated parri",
+    "description": "Power granted by The Utma which allows a solar forces fighter to dodge a blow with a hyper fast, blur like movement. In the Naronian tongue it is known as Accelera I.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Theacceleratedparry"
+  },
+  "Theaffagi": {
+    "title": "The Affagi",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "a faj ee",
+    "description": "The ruling Mentosi family, The Affagi, sit at the forefront of Naronian politics. The Affagi have been the primary leaders in all of the Naronian government for over twenty five hundred years.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Theaffagi"
+  },
+  "Thebenefitteachings": {
+    "title": "The Benefit Teachings",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The Benefit Teachingz",
+    "description": "The specific teachings of The Holy Curricula, as adapted by The Solar Forces.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thebenefitteachings"
+  },
+  "Thefirsttemple": {
+    "title": "The First Temple",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The First Tem pul",
+    "description": "The First Ld'Shab temple created by the first Spiritual Teachers.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thefirsttemple"
+  },
+  "Theholyreusableroot": {
+    "title": "The Holy Reusable Root",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "the hol ee re use a ble root",
+    "description": "Ld'Shab spiritual term used to refer to The Function (see The Function)",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Theholyreusableroot"
+  },
+  "Thelarhadianasteroidbelt": {
+    "title": "The Larhadian Asteroid Belt",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "lar hade ee an ",
+    "description": "Asteroid belt located in between Venthe, Tarvezius, and Naronia.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thelarhadianasteroidbelt"
+  },
+  "Thementosi": {
+    "title": "The Mentosi",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Men toh see",
+    "description": "The Mentosi are an ancient Naronian race. They are the only species of high-intelligence native to Naronia. The ruling Mentosi family, The Affagi, sit at the forefront of Naronian politics. The Affagi have been the primary leaders in all of the Naronian government for over twenty five hundred years.\n",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thementosi"
+  },
+  "Thenestomir": {
+    "title": "The Nestomir",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The nest o meer",
+    "description": "Spiroid galaxy located approximately 3 million light years from Earth.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thenestomir"
+  },
+  "Thenewdoctrine": {
+    "title": "The New Doctrine",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The Noo Doct rin",
+    "description": "Political document created by The Vostluka line (leading family on Venthe). The document professes that only specific citizens should be educated. It also professes that these selected citizens should not be offered a diverse range of knowledge - only highly specific skills. The document led to the misting of Venthe; this involved filling the Venthe atmosphere with a chemistry that removes ambition from its citizens. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thenewdoctrine"
+  },
+  "Thephilosophicaltenets": {
+    "title": "The Philosophical Tenets of the Ld'Shab",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The Phil o soph i cal Ten ets of the El Dih Shab",
+    "description": "Critical book which helped guide pieces of Naronian culture as well as the Ld'Shab religion.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thephilosophicaltenets"
+  },
+  "Thesolarforces": {
+    "title": "The Solar Forces",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The Sole Er Forces",
+    "description": "The military arm of The Republic of Naronia. Sworn to protect the republic and its constituents, as well as maintain order in The Nestomir Galaxy.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thesolarforces"
+  },
+  "Thespiritualplanes": {
+    "title": "The Spiritual Planes",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Thuh Spir it u al Planes",
+    "description": "Ld'Shab religious lore concerning dimensions of the spirit. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Thespiritualplanes"
+  },
+  "Theutma": {
+    "title": "The Utma",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "The oot mah",
+    "description": "Force believed to drive how all sentient beings love, learn, create, it is worshipped by the people of Naronia. The religion of Ld'Shab is centered around its worship. It is not perfectly understood, but believed to permeate the known universe and beyond. Sometimes referred to as The Learning Force.",
+    "ldshab": "La Utma",
+    "Key": "Theutma"
+  },
+  "Transistor": {
+    "title": "Transistor",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "tranzist ur",
+    "description": "The transistor is one of the electrical inventions that led to the birth of modern computing. A transistor is essentially an electrical switch, which uses a small electrical current to determine if a another, much larger, electrical current can flow out of its gates. A transistor represents a 0 or a 1 in the hardware of computers. Current on, current of, 1, 0.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [
+      {
+        "title": "How do transistors work?",
+        "url": "https://www.explainthatstuff.com/howtransistorswork.html#:~:text=A%20transistor%20works%20when%20the,type%20and%20p%2Dtype%20silicon.&text=By%20turning%20a%20small%20input,switch%20at%20the%20same%20time."
+      }
+    ],
+    "Key": "Transistor"
+  },
+  "Turtle": {
+    "title": "Turtle",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "turtle",
+    "description": "Earth based open sourced Python art library.",
+    "snippit": "import turtle\ns = turtle.getscreen()",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "The Beginners Guide to Turtle", "url": "https://realpython.com/beginners-guide-python-turtle/" }],
+    "recommended": ["Import Turtle into your Jupyter Notebook (after chapter 13). Check out this Real Python tutorial and follow along: https://realpython.com/beginners-guide-python-turtle/"],
+    "Key": "Turtle"
+  },
+  "Unix": {
+    "title": "Unix",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "Un ix",
+    "description": "Unix is an early earth-based operating system that has impacted how most modern computing systems are structured today. Initially created in Bell Labs in the 1970's, many of its core features, such as multitasking, and permitting multi-user usership, have trickled into nearly all the digital devices we know and love, including video game systems. It is a grandparent of modern operating systems, if you will.",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "UNIX Introduction", "url": "http://www.ee.surrey.ac.uk/Teaching/Unix/unixintro.html" }],
+    "Key": "Unix"
+  },
+  "Url": {
+    "title": "URL",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "you are el",
+    "description": "URL stands for Uniform Resource Locator. A URL is nothing more than the address of a given unique resource on the Web. In theory, each valid URL points to a unique resource. Such resources can be an HTML page, a CSS document, an image, etc. In practice, there are some exceptions, the most common being a URL pointing to a resource that no longer exists or that has moved. As the resource represented by the URL and the URL itself are handled by the Web server, it is up to the owner of the web server to carefully manage that resource and its associated URL. - Mozilla developer docs. Essentially a URL is a web address that allows us to access a highly specific entity over the internet. \n",
+    "snippit": "www.dog.com/asdf",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "What is a URL (Mozilla)", "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL" }],
+    "Key": "Url"
+  },
+  "Utmabenefits": {
+    "title": "Utma Benefits",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Utma Ben efits",
+    "description": "Super powers granted by The Utma.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Utmabenefits"
+  },
+  "Value": {
+    "title": "Value",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "val yoo",
+    "description": "In the lesson context, this refers to the value associated to a specific key in a dictionary. ",
+    "snippit": "dict = {'catname': \"nancy\"}\nprint(dict['catname'])\n# here we print the value of the key 'catname'",
+    "ldshab": "More information being imported from the archives soon.",
+    "suggested": [{ "title": "Python Dictionary get() method", "url": "https://www.tutorialspoint.com/python/dictionary_get.htm" }],
+    "recommended": ["After Chapter 13, spin up a Jupyter Notebook in the browser and define your first dictionary. Next, print a value of a specific key to the screen."],
+    "Key": "Value"
+  },
+  "Variable": {
+    "title": "Variable",
+    "Type": "Lesson",
+    "Status": "Ready",
+    "pron": "/ˈverēəb(ə)l/",
+    "description": "A variable in Python is a dedicated place in computer memory to store values. Think of it like a safe. There is the safe, and what you store in the safe. The variable is the safe, and the items in the safe is the data stored in the variable. The information stored in a variable can change (most of the time), that is why we refer to them as variables. It's important to note that there are distinct data types in Python. Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc.",
+    "snippit": "apples = 2\n# apples is the variable name \\n# 2 is the data stored inside of it.",
+    "ldshab": "La Variable, developed by Spiritual Teacher Kredo Fredrickson in 12890 Sentient.",
+    "suggested": [{ "title": "What is a variable?", "url": "http://www.aees.gov.in/htmldocs/downloads/XI_Class_Content_Computer_Science/8-Handout.pdf" }],
+    "recommended": ["After Chapter 13, spin up a Jupyter Notebook in the browser and define your first variable. Maybe store your pets name or your sibling's age?"],
+    "Key": "Variable"
+  },
+  "Venthe": {
+    "title": "Venthe",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "ven th",
+    "description": "Inner most planet in Star System A, also known as The Cracked Planet. The planet is partially cracked from a nuclear explosion. ",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Venthe"
+  },
+  "Venthum": {
+    "title": "Venthum",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Venth um",
+    "description": "General term referring to races and species descending from the planet of Venthe. Often used to refer to the Venthem government. It is important to note that the people of Venthe, though not well understood, are essentially held captive by ruling powers there.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Venthum"
+  },
+  "Venthumspacelegions": {
+    "title": "Venthum Space Legions",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Venthem Space Lege ens",
+    "description": "Military force of The Venthem",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Venthumspacelegions"
+  },
+  "Weaponsharnessing": {
+    "title": "Weapon's harnessing",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "Weapon's Harn essing",
+    "description": "See Zegmu.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Weaponsharnessing"
+  },
+  "Zegmu": {
+    "title": "Zegmu",
+    "Type": "Story",
+    "Status": "Ready",
+    "pron": "zeg moo",
+    "description": "A super power granted by The Utma force which enables a solar forces soldier to use a dusted weapon. It also enables a fighter to levitate their weapon in mid-air. Dusted refers to stardust from the Teqwequar nebula, believed to be the center of creation.",
+    "ldshab": "More information being imported from the archives soon.",
+    "Key": "Zegmu"
+  }
+}

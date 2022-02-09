@@ -52,7 +52,7 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Vrr vrrr vrooooooooooooom! Vrooooooooooooom!</Text>
           {"\n"}
-          {"\n"}The engine roared, but the stone seemed stable. <Text style={{ fontFamily: "gelasibro-italic" }}>Seems like it will hold.</Text> Jake cracked the driver side door ajar, and then took his foot off the brake.{" "}
+          {"\n"}The engine roared, but the stone seemed stable. <Text style={{ fontFamily: "gelasibro-italic" }}>Seems like it will hold.</Text> Jake cracked the driver's side door ajar, and then took his foot off the brake.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>We’re moving.</Text> The car rolled forward slowly, still in neutral. <Text style={{ fontFamily: "gelasibro-italic" }}>Here comes the hard part.</Text> He swung his legs out of the vehicle,
           with his arms still on the wheel. <Text style={{ fontFamily: "gelasibro-italic" }}>I can do this. But I need to roll out quickly.</Text> He set the transmission into drive, and the car immediately jolted forward.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Oh man, this is faster than I thought!</Text> He felt the whiplash in his neck as he accelerated down the street in the hulking container of aluminum and steel.{" "}
@@ -132,7 +132,7 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}A few minutes later, he opened the fridge cautiously, silently. He tiptoed to the maintenance room door. His back against the wall, he opened the door slowly. There were no signs of anything living.{"\n"}
           {"\n"}He decided he had no option but to get back outside and try and find Dendro. He walked down the hall and entered the unoccupied lobby of the lodge. The front door was busted open. He peeked outside and spotted strange footprints in
           the snow. They led out away from the central lodging area towards the open valley.{"\n"}
-          {"\n"}Five hundred feet away, in the center of the field were two dark figures, and they appeared to be holding their hands to their helmets. The subtle red glow from their laser cannons were visible.{"\n"}
+          {"\n"}Five hundred feet away, in the center of the field were two dark figures, and they appeared to be holding their hands to their helmets. The subtle red glow from their laser cannons was visible.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>They are still hunting us</Text>, Jake thought. <Text style={{ fontFamily: "gelasibro-italic" }}>Dendro was right. There is no running.</Text> There was no sign of the Naronian warrior. He
           was not sure what to do. He kept his eyes on the receding fighters, who clearly did not know where he or Dendro were. Jake had a feeling that was going to change pretty fast. Luck was only going to take them so far.{"\n"}
@@ -176,7 +176,7 @@ export default class Chapter8 extends Component<IProps> {
           trooper’s blows upward and to the side with blinding speed. The troopers continued to back him up, slowly.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>They want to exhaust him,</Text> Jake thought.{"\n"}
-          {"\n"}Then a series of rapid paced offensive exchanges pushed them back off from one another. That’s when Dendro got on his knees for an instant, brought his two hands together next to his face, as if he were praying, then did something
+          {"\n"}Then a series of rapid-paced offensive exchanges pushed them back off from one another. That’s when Dendro got on his knees for an instant, brought his two hands together next to his face, as if he were praying, then did something
           unbelievable. <Text style={{ fontFamily: "gelasibro-italic" }}>What the…?</Text>
           {"\n"}
           {"\n"}He cocked his legs and flipped high in the air over the two troopers. On his way down, he slashed his axe down on the protruding legs of his rightmost opponent. The creature tumbled backward and let off a demented howl. But it was not
@@ -233,7 +233,7 @@ export default class Chapter8 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>What the heck?</Text>
           {"\n"}
           {"\n"}His hands weren't numb anymore.{"\n"}
-          {"\n"}Strange looking characters moved across his vision as if some alien language were speaking to him from out of the void. The solid blue hue emitted from the top of his axe began to pulse, as if it were loading something: data or
+          {"\n"}Strange looking characters moved across his vision as if some alien language was speaking to him from out of the void. The solid blue hue emitted from the top of his axe began to pulse, as if it were loading something: data or
           something more profound. Jake felt a euphoric wave pulsate through his body, and his eyes were forced shut. When he reopened them, he wasn’t Jake Addison any longer, at least not the Jake Addison he knew.{"\n"}
           {"\n"}He approached his red-eyed opponent once again and met the Venthum sword mid-way through its arc with his silver axe. This time there was no vibrational shock. Then his axe moved in perfect rhythm, as if his moves had been rehearsed.
           {"\n"}

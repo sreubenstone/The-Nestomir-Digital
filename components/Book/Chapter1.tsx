@@ -43,8 +43,8 @@ export default class Chapter1 extends Component<IProps> {
           {"\n"}Eric Addison had been a star all his life. Eric followed in his father Willie’s footsteps when it came to athletics, academics, and life in general. Eric excelled in mathematics at a very young age. He jumped three grades in the
           subject when he was just eleven years old. He became the first middle schooler in <GlossaryWord lookup_string="Grapefield" word="Grapefield's" toggleGlossary={this.props.toggleGlossary} /> history to walk over to Grapefield High School for
           calculus class. He also became known for writing love notes as an eleven-year-old and tossing them at girls many years older than him.{"\n"}
-          {"\n"}Eric did not have the same passion Willie had for the sciences. Instead of pursuing a scientific career, Eric was interested in law and politics. Eric became a lawyer and was famous for outwitting construction defense attorneys and
-          racking up legal wins.{"\n"}
+          {"\n"}Eric, nonetheless, did not have the same passion Willie had for the sciences. Instead of pursuing a scientific career, Eric was interested in law and politics. Eric became a lawyer and was famous for outwitting construction defense
+          attorneys and racking up legal wins.{"\n"}
           {"\n"}Jake’s eyes, which had a light blue circle around his brown irises, looked three trophy rows upward. The top rows of the trophy case were dedicated to his grandfather, William “Willie” Addison. Like his son, he grew up to become a
           high school football legend. Football and physics were his obsessions. Across his shelves lay all types of intimidating academic and athletic achievements.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
@@ -84,7 +84,7 @@ export default class Chapter1 extends Component<IProps> {
           {"\n"}The two of them hustled down the stairs. When Jake saw Jimmy head for the Cheerios on the kitchen counter, he said, “No time for food!”{"\n"}
           {"\n"}Jimmy moaned. “Seriously?” He diverted his route to the vanilla crusted cereal and circled into the foyer. Then the boys scooped up their book bags, exited the house, hopped across their tulip and rose entrenched lawn, and hit the
           Grapefield pavement in full stride.{"\n"}
-          {"\n"}The two jogged side by side in the center of the road, in a textbook-filled-bookbag induced jog-waddle. The soles of their sneakers cut across the freshly fallen leaves a minute later they reached the Elm Road and Cedar Street
+          {"\n"}The two jogged side by side in the center of the road, in a textbook-filled-bookbag induced jog-waddle. The soles of their sneakers cut across the freshly fallen leaves and a minute later they reached the Elm Road and Cedar Street
           intersection. Traffic was picking up, but Jake could see the school bus. It was a block down Elm Street. The last kid ran up the steps and the bus’s red stop sign began to retract.{"\n"}
           {"\n"}“No! It’s leaving! Run!” Jake yelled, dragging his brother forward in a gut-wrenching sprint. If their mother found out they missed the bus again, their lives were over. Jake and Jimmy ran for the bus, as their backpacks bounced up
           and down{"\n"}
@@ -115,7 +115,7 @@ export default class Chapter1 extends Component<IProps> {
           {"\n"}“And we’re setting up a demo for the Robotics Club,” Nassir added. “I can’t wait to show that off. We have a bunch of robot cars and gizmos that will be moving around on the grass.”{"\n"}
           {"\n"}“That sounds cool. I’ll come check it out,” Jake said. <Text style={{ fontFamily: "gelasibro-italic" }}>Will I though?</Text> He looked out through the window again at the Grapefield streets. They were pretty this time of the year. A
           creamy yellow and brown luster came from everywhere in sight as the fall leaves cascaded on lawns, roofs, and freshly laid pavement. They passed by the Grapefield town hall, where Jake’s aunt (his mother’s sister), Holly, worked.{"\n"}
-          {"\n"}The bus then turned on Barley Street. Three minutes later, they drove past Grapefield Middle’s entrance gate and a minute later they came to a stop in front of the school’s main entrance.{"\n"}
+          {"\n"}The bus then turned onto Barley Street. Three minutes later, they drove past Grapefield Middle’s entrance gate and a minute later they came to a stop in front of the school’s main entrance.{"\n"}
           {"\n"}“See you later,” Jake said to Nassir as they exited the bus. Nassir waved back and then joined the swath of middle schoolers funneling into the school’s front doors. Jake could see his friend Derek Kladler’s gigantic head standing out
           in the crowd.{"\n"}
           {"\n"}Jake and Jimmy headed for the path to Grapefield Elementary. They curled down the sidewalk in front of the middle school, passed the baseball fields and tennis courts, and then headed down the short woody road that led to the back of
@@ -302,7 +302,7 @@ export default class Chapter1 extends Component<IProps> {
           if the virtual players in Madden became indistinguishable from real football on TV. <Text style={{ fontFamily: "gelasibro-italic" }}>How can a machine, a computer, simulate reality so well…what could all the electricity be doing?</Text>
           {"\n"}
           {"\n"}“Ehh. I don’t know if I want to play another one,” Jake said.{"\n"}
-          {"\n"}“Fine. Shen Mom is coming home?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jimmy asked.{"\n"}
+          {"\n"}“Fine. When is Mom coming home?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jimmy asked.{"\n"}
           {"\n"}“She texted me late. That usually means after ten. You know how her job gets,” Jake said.{"\n"}
           {"\n"}“Yeah. I just wish she wouldn’t stay out so late,” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jimmy said.{"\n"}
           {"\n"}“I do too. But she works hard for us. You should appreciate that,” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake said.{"\n"}
@@ -319,10 +319,10 @@ export default class Chapter1 extends Component<IProps> {
           {"\n"}“Weird,” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake said.  “I think I’m gonna go lie down.” He placed the controller on the ground. “I’m shot.” He put his hands through his hair again, exposing his jagged widow’s
           peak, and rubbed his eyes. “Mom should be home soon.”{"\n"}
           {"\n"}Jake undressed, brushed his teeth, and flossed rigorously—as his father had always reminded him to do, and then plopped into his bed.{"\n"}
-          {"\n"}He thought of Ashley Martin. Her long, straight lustrous black hair. <Text style={{ fontFamily: "gelasibro-italic" }}>Who could talk to that? What boy had the courage? How do some people do it so easily?</Text> Then his mind switched
+          {"\n"}He thought of Ashley Martin. Her long, straight, lustrous black hair. <Text style={{ fontFamily: "gelasibro-italic" }}>Who could talk to that? What boy had the courage? How do some people do it so easily?</Text> Then his mind switched
           to a visceral image of Mr. Harrison’s slightly enlarged behind clunking down the classroom aisles. <Text style={{ fontFamily: "gelasibro-italic" }}>What did Mr. Harrison know of creativity? What did he know of anything?</Text>
           {"\n"}
-          {"\n"}Jake flipped onto his side. <Text style={{ fontFamily: "gelasibro-italic" }}>I hope tomorrow is a better day.</Text> His rumbling thoughts seemed to match the pattern of the rain fall for a while, until he slowly drifted off to sleep.
+          {"\n"}Jake flipped onto his side. <Text style={{ fontFamily: "gelasibro-italic" }}>I hope tomorrow is a better day.</Text> His rumbling thoughts seemed to match the pattern of the rainfall for a while until he slowly drifted off to sleep.
           {"\n"}
           {"\n"}Twenty minutes later he was awakened when heard his door open slightly. His mother’s head was partially sticking through the door. She looked at him for a few moments. Then she closed the door again a few moments later.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I’m lucky to have her,</Text> he thought.

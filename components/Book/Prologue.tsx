@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import { Text, View, Image } from "react-native";
 import { GlobalStyles, BookStyles } from "../../Stylesheet";
 import GlossaryWord from "../Glossary/inline/GlossaryWord";
+import Egg from "../Egg/EggInline";
 
 interface IProps {
   toggleGlossary: (id: string) => void;
+  toggleEggModal: (quiz_number: number) => void;
 }
 
 export default class Prologue extends Component<IProps> {

@@ -86,7 +86,7 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Oh man.</Text> Jake thought. <Text style={{ fontFamily: "gelasibro-italic" }}>I can’t wait.</Text>
           {"\n"}
-          {"\n"}Three stubby concrete chimneys sat on the top of the building, and it was terribly odd that there were no visible windows. The only light came from a phosphorescence coming from the very bottom of the structure. “That is a creepy
+          {"\n"}Three stubby concrete chimneys sat on the top of the building, and it was terribly odd that there were no visible windows. The only light came from phosphorescence coming from the very bottom of the structure. “That is a creepy
           looking place,” Jake blurted out.{"\n"}
           {"\n"}“Kind of place you build if you don’t want people to know what you’re doing,” Dendro agreed. “Hold on. I’m going to bring her in tight and steady.” He pulled the ship a few degrees to the left, then punched something into his armrest
           keypad. Three quick beeps blasted out from the cockpit dashboard. A high-powered chopping sound began rattling from the ship, rattling the floorboards underneath them.{"\n"}
@@ -114,7 +114,7 @@ export default class Chapter6 extends Component<IProps> {
           capacity until midnight, GMT.  There are an estimated two hundred and forty factory personnel working at this hour.”{"\n"}
           {"\n"}“Two hundred forty!” Jake shouted. “You can’t be serious!”{"\n"}
           {"\n"}Dendro stuck his hand up to silence him. “Employee entrance is located on the north side of the compound. That is the side that faced away from us when we approached. But that will be no good, too many eyes. The security depot
-          entrance is located on the western wall, towards the north corner. That is the wall right above this ridge.” He scrolled further down the white document. “There appears to be two guards on duty at this hour, and one security camera. The
+          entrance is located on the western wall, towards the north corner. That is the wall right above this ridge.” He scrolled further down the white document. “There appear to be two guards on duty at this hour, and one security camera. The
           security depot leads directly onto the main factory floor. Lithium Radar lists this as our safest point of entry.” He scanned more of the illuminated diagrams present on the screen. “I’ve got the rest. Let’s go.” Dendro abruptly stood up.
           He grabbed the golden axe from its wall mount and clipped it to his belt.{"\n"}
           {"\n"}“Dude, wait up!” Jake said. “We aren’t about to attempt to break into a factory filled with two hundred and forty employees, are we?” He chased the soldier down the short hallway. “Where’d you go?”{"\n"}
@@ -375,7 +375,7 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}
           {"\n"}“RIVIERA IS PULLING UP TO THE FACILITY. LAY DOWN YOUR WEAPONS.”{"\n"}
           {"\n"}For a moment, Jake thought this might be a way to dupe him into surrendering, but out of the corner of his eye he saw something moving on one of the monitors on the front wall. It was a surveillance camera feed. CAMERA 8 - SEPTON RD
-          sat in the bottom right corner of the display. A caravan of white Humvees were driving single file past a few structures he didn't recognize. It didn’t appear to be the main factory, but it must have been somewhere down the road leading up
+          sat in the bottom right corner of the display. A caravan of white Humvees was driving single file past a few structures he didn't recognize. It didn’t appear to be the main factory, but it must have been somewhere down the road leading up
           to the cargo bay.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>They really are coming. How long is that road? Would they shoot me? Kill me? Arrest me?</Text>

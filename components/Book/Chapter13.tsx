@@ -107,8 +107,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}"There are humans that are aware of your culture? Jake asked. “I know that Dendro mentioned something about a <Text style={{ fontFamily: "gelasibro-italic" }}>settled system</Text> before…” He patted down the hair on the side of his
           head to prevent himself from twirling it.{"\n"}
           {"\n"}"Yes, I know it's a bit much to take in, but know only a small pool of local beings are offered the opportunity to join Naronian society. Enlightened satellite governments have worked hard on recruiting the right balance of native
-          residents, as well as ones emigrating from the Nestomir. Here in Casablanca, which is a relatively new Enlightened City, only a handful of local beings are members," Zena explained.{"\n"}
-          {"\n"}Jake thought about what Zena had just told him. "But, why would you leave the Nestomir to come to Earth?" He asked.{"\n"}
+          residents, as well as ones emigrating from The Nestomir. Here in Casablanca, which is a relatively new Enlightened City, only a handful of local beings are members," Zena explained.{"\n"}
+          {"\n"}Jake thought about what Zena had just told him. "But, why would you leave The Nestomir to come to Earth?" He asked.{"\n"}
           {"\n"}"Well, people often make the move to pursue a better life. <GlossaryWord lookup_string="Enlightened" word="Enlightened" toggleGlossary={this.props.toggleGlossary} /> cities, and in some instances, planets, can provide greater economic
           opportunity for folks, specifically in emerging industries like intergalactic sports and agriculture," Zena answered. She pulled her chair a bit closer to the table.{"\n"}
           {"\n"}"That's insane. <Text style={{ fontFamily: "gelasibro-italic" }}>It really is."</Text> Jake looked around the room again. <Text style={{ fontFamily: "gelasibro-italic" }}></Text> "Not only are we not alone, but we are also sharing the
@@ -122,7 +122,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}"Yes, I can see how it would feel that way. What a wild ride it has been, but I do have some good news to share with you," Zena said. She put her cup down. "Zimmer's ship will be ready to fly by Wednesday, two days from now. He also
           feels strongly that we will be able to get Dendro secure access to our military comms lines within the next forty-eight hours. We have a contact here with close ties to the Naronian embassy. Getting access to our embassy out-of-galaxy has
           been incredibly difficult."{"\n"}
-          {"\n"}Jake was excited and relieved to hear he might be going home soon, but he was still skeptical. "That's good to hear. But what if the Naronian Forces hold onto <Text style={{ fontFamily: "gelasibro-italic" }}>Spectator One</Text>, the
+          {"\n"}Jake was excited and relieved to hear he might be going home soon, but he was still skeptical. "That's good to hear. But what if the Naronian Forces hold on to <Text style={{ fontFamily: "gelasibro-italic" }}>Spectator One</Text>, the
           law that Dendro mentioned, and demand that he has to continue holding onto me for the time being?" Jake asked as he took another gulp of his tea.{"\n"}
           {"\n"}"Let's not think about that. We'll have to deal with that scenario if it emerges, but we see absolutely no reason for the Forces to want to hold onto you for any longer. We believe the immediate threat has been suppressed. But the
           rule must be obeyed. We must get permission to bring you home. We are confident we soon will."{"\n"}
@@ -140,7 +140,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“It's a tool. Something I want to show you. It's called a <GlossaryWord lookup_string="Jupyternotebook" word="Jupyter Notebook" toggleGlossary={this.props.toggleGlossary} />
           ,” she said.{"\n"}
           {"\n"}A waiter passed by carrying a plate with a giant tea kettle and a fish on a plate of lettuce.{"\n"}
-          {"\n"}“It’s a tool that lets us easily experiment with our Python code. In the Nestomir, we use a similar notebook tool called the Perimetas Pad, but it's basically the same thing.” She took another gulp of tea from her mug. “The Jupyter
+          {"\n"}“It’s a tool that lets us easily experiment with our Python code. In The Nestomir, we use a similar notebook tool called the Perimetas Pad, but it's basically the same thing.” She took another gulp of tea from her mug. “The Jupyter
           Notebook is an open-source application that runs in your web browser. It allows you to create living and breathing Python notebooks that contain real Python code, visualizations, graphics and text, as well as other remarkable things. It is
           an extraordinary tool to explore, create, and see where different coding ideas take you. Many in academia use Jupyter Notebooks to store their research. It's used all over to explore ideas in Python. In fact, you can even search online for
           famous Jupyter Notebooks, download them, and mess around with them.”{"\n"}
@@ -152,7 +152,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Jake opened the computer. The alien characters on the keyboard were illuminated by orange light. He scanned the board. “How can I use this? The letters are foreign,” Jake said.{"\n"}
           {"\n"}Zena smiled and signaled to Jake to put his hands on the keys.{"\n"}
           {"\n"}When Jake put his fingers down, the alien characters disappeared, replaced by the standard English QWERTY keyboard. “Whoa!” Jake shouted. A few beings across the room looked in their direction.{"\n"}
-          {"\n"}Zena gave him a friendly wink. “The password is passionfruit. Don’t ask.” She slid her chair closer to him. “My machine is running Atvian 3.0. It’s very similar to your UNIX based operating systems on Earth, like Mac OS. But because
+          {"\n"}Zena gave him a friendly wink. “The password is passionfruit. Don’t ask.” She slid her chair closer to him. “My machine is running Atvian 3.0. It’s very similar to your UNIX based operating systems on Earth, like MacOS. But because
           this is browser-based, not much will change across different computers, or even operating systems.” She pointed at the bottom of the screen. “The nebula icon down here, that's my browser. Open it up. Then put{" "}
           <Text style={{ color: "blue" }}>https://jupyter.org</Text> in the address bar and hit enter.”{"\n"}
           {"\n"}A web page loaded. There was a logo with the word Jupyter on the top left.{"\n"}
@@ -228,7 +228,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}Zena nodded and sat back down next to him. “As one of my great teacher's once said: ‘We must build to learn, just as we must learn to build. And that cycle should drive us through life.’”{"\n"}
           {"\n"}Jake thought for a moment about the time he helped Nassir with their first rocketry kit. How could a soft white powder propel a rocket into the sky? Nassir explained the powder was only molecules. Molecules held together, and when
           they were broken by heat or a spark, unlocked tons of energy. Chemistry made more sense to him then. “That’s an interesting quote.”{"\n"}
-          {"\n"}She looked at him. “You know, it might be interesting to pick a small idea and try and spin it up on The Jupyter Notebook. Nothing mind boggling. Just something to help make things click based on your learnings to date.”{"\n"}
+          {"\n"}She looked at him. “You know, it might be interesting to pick a small idea and try and spin it up on The Jupyter Notebook. Nothing mind-boggling. Just something to help make things click based on your learnings to date.”{"\n"}
           {"\n"}“Really? That sounds cool,” Jake said. “I'd like to try and use this thing for real. What should we build?”{"\n"}
           {"\n"}“Do any ideas come to mind?” Zena asked. “Anything <Text style={{ fontFamily: "gelasibro-italic" }}>you’d</Text> like to build?”{"\n"}
           {"\n"}“I once came up with the idea to create a multiplayer game for iPhone and Android. A flag football game that you could play against friends, but it would let you make cool moves that you couldn't do in real life. Nassir thought it was
@@ -242,12 +242,12 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}“Yes, this will be a collaborative process,” Zena added.{"\n"}
           {"\n"}“So how do we do this? “Jake said, looking at the Jupyter screen. “What does it take to build a horoscope app?”{"\n"}
           {"\n"}“The first thing we want to do when we try and build an app like this is to create a basic outline of the functionality. This means writing down the precise steps we want our program to perform. Even the most experienced coders
-          implement this process when they begin new projects. Sometimes we refer to this outlining method as <GlossaryWord lookup_string="Pseudocoding" word="pseudo-coding" toggleGlossary={this.props.toggleGlossary} />. Pseudocoding is the procedure
-          of jotting down the steps of our program using English. It does not require us to use Python syntax just yet. Can you take a stab at outlining the steps in English?” Zena responded.{"\n"}
+          implement this process when they begin new projects. Sometimes we refer to this outlining method as <GlossaryWord lookup_string="Pseudocoding" word="pseudo-coding" toggleGlossary={this.props.toggleGlossary} />. Pseudo-coding is the
+          procedure of jotting down the steps of our program using English. It does not require us to use Python syntax just yet. Can you take a stab at outlining the steps in English?” Zena responded.{"\n"}
           {"\n"}“I can try,” Jake replied.{"\n"}
           {"\n"}Zena pointed to the top center of the Jupyter Notebook screen. “You see up here where the center dropdown menu says <Text style={{ fontFamily: "gelasibro-italic" }}>Code</Text>? You can toggle this dropdown selector to{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text>. The <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> option allows us to write regular text in the cells of our notebook. This will be useful for writing our
-          pseudocode. Toggle the Jupyter Notebook into <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> mode, then use the next notebook cell to write our pseudocode.”{"\n"}
+          pseudo-code. Toggle the Jupyter Notebook into <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> mode, then use the next notebook cell to write our pseudo-code.”{"\n"}
           {"\n"}Jake toggled the option selector into <Text style={{ fontFamily: "gelasibro-italic" }}>Markdown</Text> and placed the cursor into the new notebook cell. He typed in two steps that he felt best described their horoscope program.
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -258,17 +258,17 @@ export default class Chapter13 extends Component<IProps> {
         {
           // Section 4 Below, Goes Text, Graphic
         }
-        <Text style={BookStyles.bookFont}>Zena looked at Jake's work. “You are correct. But allow me to make some modifications.” She slid the computer over to her and added in her version of the pseudocode in a new cell below Jake's.</Text>
+        <Text style={BookStyles.bookFont}>Zena looked at Jake's work. “You are correct. But allow me to make some modifications.” She slid the computer over to her and added in her version of the pseudo-code in a new cell below Jake's.</Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={175} source={require("./../../assets/images/lessons/lesson8_4.png")} />
         </View>
-        <Caption>Pseudocoding is incredibly powerful. But most of us get too excited and start writing code without making the outline.</Caption>
+        <Caption>Pseudo-coding is incredibly powerful. But most of us get too excited and start writing code without making the outline.</Caption>
 
         {
           // Section 5 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          “You can see I modified your language slightly to make things even clearer. I added step three, because we don’t want to forget displaying the horoscope to the screen. That’s an important feature for this app,” Zena said.{"\n"}
+          “You can see I modified your language slightly to make things even clearer. I added step three, because we don’t want to forget to display the horoscope to the screen. That’s an important feature for this app,” Zena said.{"\n"}
           {"\n"}“Got it,” Jake replied. “Now I see how this thing is like a real notebook. We can use regular English and Python in the same place.”{"\n"}
           {"\n"}“Yes. There are endless possibilities with a Jupyter Notebook. We made an important first step here, by outlining the process we need to implement with code. Writing down these steps in detail, kind of like writing a story outline,
           helps us write better programs,” Zena said.{"\n"}
@@ -297,7 +297,7 @@ export default class Chapter13 extends Component<IProps> {
         <Text style={BookStyles.bookFont}>
           “Excellent. This is how we define a function with one <GlossaryWord lookup_string="Input" word="input" toggleGlossary={this.props.toggleGlossary} />
           ,” Zena replied. “What's next?”{"\n"}
-          {"\n"}Jake reviewed Zena's pseudocode. <Text style={{ fontFamily: "gelasibro-italic" }}>Step 2: Use the month entered to look up the matching horoscope.</Text>
+          {"\n"}Jake reviewed Zena's pseudo-code. <Text style={{ fontFamily: "gelasibro-italic" }}>Step 2: Use the month entered to look up the matching horoscope.</Text>
           {"\n"}
           {"\n"}“We need to look up the corresponding horoscope based on the month that is passed into the function,” Jake said out loud. “But we don’t have anything right now storing any information about our horoscopes.”{"\n"}
           {"\n"}“We need to define our horoscopes. What might be the process you would use, say on paper, to store and retrieve an assortment of horoscopes organized by month?” Zena asked.{"\n"}
@@ -405,12 +405,12 @@ export default class Chapter13 extends Component<IProps> {
           <GlossaryWord lookup_string="Argument" word="argument" toggleGlossary={this.props.toggleGlossary} /> in quotes. The line now read:  <Text style={{ color: "#0C2443", fontFamily: "code" }}>my_scope = getHoroscope("June")</Text>.Then he re-ran
           the cell.{"\n"}
           {"\n"}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>You will find an alien in a cornfield.</Text>
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>You will meet an alien in a cornfield.</Text>
           {"\n"}
           {"\n"}“Awesome kid! It worked! The horoscope seems pretty accurate also! Now try it with another month,” Zena said. “My birthday is in August.”{"\n"}
           {"\n"}Jake swapped June with August and re-ran the cell.{"\n"}
           {"\n"}
-          <Text style={{ color: "#0C2443", fontFamily: "code" }}>Your puppy will grow wings and fly away.</Text>
+          <Text style={{ color: "#0C2443", fontFamily: "code" }}>Your puppy will grow wings.</Text>
           {"\n"}
           {"\n"}“That’s my horoscope! I don't think I'll be getting a new pet until next year! Your code appears to be operational. Congratulations, you just built a working piece of software,” Zena said.{"\n"}
           {"\n"}“Thanks,” Jake responded, blushing. “That’s amazing.”{"\n"}
@@ -438,7 +438,7 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}
           {"\n"}He flipped to the first chapter, <Text style={{ fontFamily: "gelasibro-italic" }}>The Learning Tenets</Text>. He started near the top. “Jakoba Elianu, 3,434 Sentient Age: The first tenet is{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>La’Tishvah</Text>: We must build to learn.” <Text style={{ fontFamily: "gelasibro-italic" }}>Dendro spoke of this</Text>, Jake thought. He read the paragraph below the quote which spoke about
-          the power of learning with purpose. How did this person know so much about learning so long ago? And how did it survive so many generations? He scanned further down the page and found another interesting segment. “The second learning tenet
+          the power of learning with purpose. How did this person know so much about learning so long ago? And how did it survive so many generations? He scanned further down the page and found another interesting segment. "The second learning tenet
           I shall call <Text style={{ fontFamily: "gelasibro-italic" }}>Natura</Text>: When we learn we must recognize Nature’s intent.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>This is interesting. I need Dendro to teach me more of this stuff,</Text> Jake thought as he flipped through the pages. <Text style={{ fontFamily: "gelasibro-italic" }}></Text>He perused a

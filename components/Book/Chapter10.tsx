@@ -60,14 +60,14 @@ export default class Chapter10 extends Component<IProps> {
           precious locks, he threw a black San Diego Padres baseball cap over his head, and tucked his ears underneath it, then turned around to face Jake. “I’m ready to go,” he said. The bump from the shoulder bandage stuck out quite noticeably.
           {"\n"}
           {"\n"}“Dendro, I need help with this tie,” Jake pleaded.{"\n"}
-          {"\n"}Dendro signaled for him to come in front of the mirror. He reached his thick Gobrahim hands around Jake’s neck. “Haven’t done this in a while, not since a Special Ops mission on{" "}
+          {"\n"}Dendro signaled for him to come in front of the mirror. He reached his thick Gobhrahim hands around Jake’s neck. “Haven’t done this in a while, not since a Special Ops mission on{" "}
           <GlossaryWord lookup_string="Argus" word="Argus" toggleGlossary={this.props.toggleGlossary} />. Black tie affair.” He fumbled with the tie for a few moments, then finally made a perfect knot around Jake’s neck. “There you go,” Dendro said
           proudly.{"\n"}
           {"\n"}Jake looked in the mirror. He looked better than he thought he would. He fixed his collar and patted down the side of his hair.{"\n"}
           {"\n"}“Let’s go,” Dendro uttered. “Don’t want to be late.”{"\n"}
           {"\n"}Jake followed Dendro south as the sun dipped below the horizon. The evening air was cool as they walked past street vendors, bar patrons and restaurant goers, couples, teenagers, restaurants, cabarets, and wine bars. The pink lights
           of the neon restaurant signs obscured Jake’s vision and the pulsating Moroccan music emanating from nearby bars reminded him he was not in North America.{"\n"}
-          {"\n"}Dendro turned onto a side street that was illuminated by street lanterns. More neon lights were up ahead, and Jake heard the thumping of dance music. Apparently there was some serious action at the end of the block.{"\n"}
+          {"\n"}Dendro turned onto a side street that was illuminated by street lanterns. More neon lights were up ahead, and Jake heard the thumping of dance music. Apparently, there was some serious action at the end of the block.{"\n"}
           {"\n"}A series of bars lined both sides of the street. Jake could see, through the open windows, patrons sitting at different countertops and tables eating, laughing, and drinking.{"\n"}
           {"\n"}They approached another bar with an outdoor seating area set up on the street. On top of the building was a glowing white sign that, in thick black letters, read: <Text style={{ fontFamily: "gelasibro-italic" }}>Cocktail Lounge</Text>
           . Dendro walked past the crowded outdoor seating area and continued down a small flight of steps which led into the indoor part of the venue.{"\n"}
@@ -90,7 +90,7 @@ export default class Chapter10 extends Component<IProps> {
           no pupils at all. <Text style={{ fontFamily: "gelasibro-italic" }}>OMG.</Text> As he glanced across the space, he got the feeling this was not a standard Moroccan bar, but more of some kind of secret alien lounge.{"\n"}
           {"\n"}A few of the alien patrons turned towards Jake, examined him, then turned away. As Jake tried to make sense of the bizarre scene, Dendro scanned the room. He locked onto a table in the back, took off his cap, and walked ahead. They
           passed tables with more goggle-eyed and elf aliens, then passed a wall filled with Renaissance and Baroque art, before arriving at a circular leather booth with two beings sitting inside of it.{"\n"}
-          {"\n"}"DENDRO! My friend. Mi amigo. Mi compadre! Brother! Come here!" A wolf-man like creature shot up from the table. He grabbed Dendro forcefully and gave him a firm embrace.{"\n"}
+          {"\n"}"DENDRO! My friend. Mi amigo. Mi compadre! Brother! Come here!" A wolf-man-like creature shot up from the table. He grabbed Dendro forcefully and gave him a firm embrace.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>That looks like a</Text> werewolf <Text style={{ fontFamily: "gelasibro-italic" }}>crossed with a man</Text>. As the creature’s intimidatingly thick arms wrapped around Dendro, Jake could see
           the wolf-man’s neck bulging with thick veins and striated muscle. <Text style={{ fontFamily: "gelasibro-italic" }}>That dude is really strong</Text>. The wolf-man also had a black snout. It had black and white fur wrapped around its mouth,
@@ -149,7 +149,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"I soon found myself enjoying the island-continent. In the mornings I worked, but in the afternoon I explored the beaches, food, and other delicacies of the island. I kept in touch with my team over the long radio. Each of us seemed
           to be on our own little adventure enjoying the mystical continent. We agreed to meet back up in four weeks. But a month later I was in love, and not just with the land, but with a woman. A local waitress named Kasandra. I ended up moving
           into her beach hut. We spent our nights building campfires on the beach drinking Cypruni Octopus Soup. I learned more about the region, and I continued to build my network."{"\n"}
-          {"\n"}Jake, Zena, and Dendro remained entranced with Zimmer's story.{"\n"}
+          {"\n"}Jake, Zena, and Dendro remained entranced by Zimmer's story.{"\n"}
           {"\n"}"A short time later, her two younger brothers walked into our hut. Juelo was twenty-two and Jithin was eighteen. Kasandra told me they ran errands for a local businessman on the island. The two boys mentioned to me that night that he
           was involved in a few Indo-One related enterprises and lived in a private beach house north of our hut."{"\n"}
           {"\n"}Zimmer took another quick puff of his cigar. His hairline was so low his wolfish widow's peak nearly came down to the bridge of his nose.{"\n"}
@@ -163,7 +163,7 @@ export default class Chapter10 extends Component<IProps> {
           invaluable asset to a new operation. He listened and didn't say a word as he looked out into the water.{"\n"}
           {"\n"}“Then he turned around and said: <Text style={{ fontFamily: "gelasibro-italic" }}>Sixty-Forty</Text>.{"\n"}
           {"\n"}"<Text style={{ fontFamily: "gelasibro-italic" }}>Fifty-fifty</Text>, I said back.{"\n"}
-          {"\n"}"He stuck out his hand and I shook it.{"\n"}
+          {"\n"}"He stuck out his hand and I shook it."{"\n"}
           {"\n"}"That was the beginning of a fruitful business relationship. He provided the necessary infrastructure and network to build a successful operation. He built us temporary housing, cabins, bathrooms, and showers for my men. We farmed the
           land and disguised it as Cyprus Banana-vine, a popular crop already being farmed in various parts of the continent. But it was not Banana. It was Blue Jasmine. He brought his men to help cut down the forest and my team brought the
           logistical expertise and the science. We had two thousand acres of irrigated land. Every three months our ships were escorted out as official military vehicles. We handled distribution. They helped with fuel. Profits came back and we div’d
@@ -176,7 +176,7 @@ export default class Chapter10 extends Component<IProps> {
           operations. And during that time, on a business trip to Naronia, I met Zena, who became a critical part of our operation."{"\n"}
           {"\n"}Zena raised her glass again, smiling.{"\n"}
           {"\n"}“But about ten months ago, I received a terse message from Bonjetti. He asked me to meet him for drinks in a quiet bar, on the coast, called Copacabana, which lay in between Kasandra’s old village and our farming operation by
-          Bonjetti's beach house. When I arrived, Bonjetti looked very uneasy. For five years I knew him to be strong-minded and calm but he looked distressed.{"\n"}
+          Bonjetti's beach house. When I arrived, Bonjetti looked very uneasy. For five years, I knew him to be strong-minded and calm, but he looked distressed.{"\n"}
           {"\n"}"We have to shut this entire thing down," he said gloomily. "Cyprus Administrative Forces are clamping down on export restrictions and the legislature's "lenient agricultural" practices. My contact in the Cyprus government told me we
           had half a month to shut it down and they would impose a 700,000 Naronian Kroner on us.” He grimaced and pounded another drink.{"\n"}
           {"\n"}"We argued for a while. It was painful. I had trusted him, but he had not understood the island as well as I had thought. He had seemed like such a pro, and someone respected so dearly on the island, but I had overestimated him. He
@@ -188,7 +188,7 @@ export default class Chapter10 extends Component<IProps> {
           ambush in modern history. Delpher's day.’"{"\n"}
           {"\n"}"That was all he knew. I asked him about the credibility of his source, but he would not give me any names. From the look in his eye, and the way he said it, I knew he was being truthful. We sat there drinking and smoking for a while.
           I thought about you, Dendro, and my team. I knew I had to do something, and Delpher’s day was only a few weeks away. We sat there for some time.  I argued with Bonjetti that there were still ways to salvage our operation, but once we
-          scrutinized every viable option, and it was clear that those ideas were flawed, I ultimately gave in. We then reminisced over the past five years we had shared together. The memories. The successes. Eventually we shook hands and left. You
+          scrutinized every viable option, and it was clear that those ideas were flawed, I ultimately gave in. We then reminisced about the past five years we had shared together. The memories. The successes. Eventually we shook hands and left. You
           see Bonjetti had been critical to everything we were doing, and now we had two weeks to shut the whole thing down. And so we did.”{"\n"}
           {"\n"}“During that shutdown period, I hit up all my contacts. I desperately tried to see if any business opportunities were emerging on the horizon–I no longer saw use in staying on an island-continent that could no longer bear the fruit I
           needed, and none of my men did either. We planned on leaving once the shutdown was complete. And at night, I stayed up thinking about how I could possibly help The Naronian Forces. I knew I was going to have to do something based on the
@@ -201,7 +201,7 @@ export default class Chapter10 extends Component<IProps> {
           equipment and supplies across the galaxy. I recited a little goodbye prayer before I fired her up. Then I ascended into Indo-One's crisp sky, looked back just once to take in the land I had come to love, then headed for the fight.”{"\n"}
           {"\n"}“But I got to The Belt too late; it appeared that you got hit a little earlier than expected. As I stared around The Larhadian expanse, it looked as though a cyclone from hell had been agitated, entered our dimension, then set out to
           destroy all life in its path. Ships had been transformed into smoldering carcasses of molten metal, and there seemed to be more bodies, debris, and blood floating around than asteroids. I pressed on, in search of life, maneuvering the
-          freighter around for hours. I even turned on our life homing beacon, but there was nothing but death and destruction, and no sign of the enemy.”{"\n"}
+          freighter around for hours. I even turned on our life-homing beacon, but there was nothing but death and destruction, and no sign of the enemy.”{"\n"}
           {"\n"}“But then, after a few more hours of a hopeless hunt, I saw what looked like a Sentauri Beacon floating to my right, amongst a field of space rocks. The ship was intact, though it had appeared to have taken some blast damage. As I
           brought the FS Gravis closer, the emblem on the right wing became readable. It was the Special Ops insignia, coated in gold. I <Text style={{ fontFamily: "gelasibro-italic" }}>knew</Text> it was you. I decided to use my short-range tractor
           beam to bring you into the cargo bay. I climbed on top of your ship, and I saw you were unconscious, but it's dangerous and nearly impossible to open up a stealth fighter from the outside without the right equipment. I was able to confirm
@@ -211,7 +211,7 @@ export default class Chapter10 extends Component<IProps> {
           and that your ship's emergency boosters would alleviate some of the impact.{"\n"}
           {"\n"}“So I watched you fall down towards what they call North America, as we jettisoned around Earth's orbit. He hit me good once, blew out one of my rear blaster engines, and my shields took serious damage, but what he didn't know was
           that my baby was retrofitted with Prometheus II's--the most expensive cruise missiles in the galaxy. I guess he didn't realize the price I put on defense. A few revolutions later, I stalled, and got him in front of me for a few moments, and
-          that was it for him. Bye bye. The Prometheus's must have looked like kisses of death from the devil himself. I found out later he was a bounty hunter from{" "}
+          that was it for him. Bye bye. The Prometheuses must have looked like kisses of death from the devil himself. I found out later he was a bounty hunter from{" "}
           <GlossaryWord lookup_string="Limora" word="Limora" toggleGlossary={this.props.toggleGlossary} /> who worked for another Jasmine Tea dealer, someone I had a run in with in the past. He had eyes on the ground on Indo-One, and someone tipped
           him off when I departed.{"\n"}
           {"\n"}“At the time I took him out, I only had an hour to get to my meeting. I put my ship down in a depot with a trusted old friend of mine just outside of Casablanca. My ship is there now, getting repaired. I knew you'd be alright once you
@@ -249,19 +249,19 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}
           {"\n"}Zimmer stared upwards at the ceiling, clearly in a drunken state of nostalgia. Then he started singing.{"\n"}
           {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Nestomir in my thoughts, Naronia in my soul, Praise this Holy Axe, Send the Venthem swine back to their hellhole!</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Nestomir in my thoughts, Naronia in my soul, Praise this Holy Axe, Send the Venthum swine back to their hellhole!</Text>
           {"\n"}
           {"\n"}Jake twisted his lip. <Text style={{ fontFamily: "gelasibro-italic" }}>That’s a solid rhyme.</Text>
           {"\n"}
-          {"\n"}Zimmer wiped some liquid off his beard. "Kid, when we first got to the Forces we had no idea what we were doing. We didn't know how to properly shoot a laser or wield an axe. or even know how to brush our teeth. And we definitely
+          {"\n"}Zimmer wiped some liquid off his beard. "Kid, when we first got to the Forces we had no idea what we were doing. We didn't know how to properly shoot a laser or wield an axe or even know how to brush our teeth. And we definitely
           weren't used to cleaning toilets. But we learned together, and our training squad always had each other's backs. The Forces training is tough in general, but no one gets it quite like Special Ops."{"\n"}
           {"\n"}"Got that right," Dendro grunted.{"\n"}
           {"\n"}"Even with all of the hype, when we first got to camp, we did not expect the intensity of the training that was to come,” Zimmer said as he looked over to Dendro. "Remember one of our first{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Benefit Lessons</Text>? When we got shook up in Sergeant Kliggin's class? We had no understanding of the Universe around us then–
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Benefit Lessons</Text>? When we got shook up in Sergeant Kliggins's class? We had no understanding of the Universe around us then–
           <GlossaryWord lookup_string="Theutma" word="the Utma" toggleGlossary={this.props.toggleGlossary} />. We thought learning had no deep meaning. Boy, were we wrong."{"\n"}
           {"\n"}"Holla," Dendro grunted again.{"\n"}
           {"\n"}"I'll never forget how my young mind changed that day—when Kliggins walked us through <Text style={{ fontFamily: "gelasibro-italic" }}>The Essence of Data</Text>.” Zimmer took another puff of his cigar, blew out more white smoke, and
-          continued, “That guy was such a character, remember, Dendro?{"\n"}
+          continued, “That guy was such a character, remember, Dendro?"{"\n"}
           {"\n"}Dendro nodded.{"\n"}
           {"\n"}"Before Kliggins started any of his spiels, he made a highly specific brew of Kashmirian Kahve, sipped on it, then made an obnoxiously loud ‘ahhhh’ noise in front of the class.”{"\n"}
           {"\n"}“I remember that clearly,” Dendro said.{"\n"}
@@ -301,7 +301,7 @@ export default class Chapter10 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             The <GlossaryWord lookup_string="List" word="List" toggleGlossary={this.props.toggleGlossary} />
           </Text>
-          .{"\n"}
+          ."{"\n"}
           {"\n"}A few of the trainees began chattering. Kleacho scribbled something down in his notebook.{"\n"}
           {"\n"}Kliggins paused and looked around the room deliberately, making sure each student made eye contact with him. "What is a <Text style={{ fontFamily: "gelasibro-italic" }}>dictionary</Text>, you say? What is a{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>list</Text>? They are data structures. Data structures no different than a to-do list or an index card, but they are designed for the more practical use cases that we face as programmers."
@@ -321,7 +321,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}
           {"\n"}"Yessir," Henderson responded.{"\n"}
           {"\n"}Kliggins went on, "This is similar to how we use dictionaries in programming. A dictionary is a data structure that allows us to look up information by name. The beautiful programming language of Python has built in support for
-          dictionaries. " Kliggins wrote down three words and their definitions on the chalkboard. "Here are three words and their corresponding definitions, as we’d see in a standard dictionary."{"\n"}
+          dictionaries. "Kliggins wrote down three words and their definitions on the chalkboard. "Here are three words and their corresponding definitions, as we’d see in a standard dictionary."{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Dog: a domesticated carnivorous mammal.</Text>
           {"\n"}
@@ -435,7 +435,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"Because lists in Python are <Text style={{ fontFamily: "gelasibro-italic" }}>indexed</Text> at 0. This means the first item in our list is referred to as the <Text style={{ fontFamily: "gelasibro-italic" }}>0th</Text> item. He
           pointed at the last line. That's why when we write <Text style={{ color: "#0C2443", fontFamily: "code" }}>weirdlist[3]</Text>, we get the fourth item in our list. Item one is indexed at 0, item two at 1, etcetera. We must remember this
           point or else we will get bugs in our code.”{"\n"}
-          {"\n"}Kliggins walked back to the center of the room. "We can build many useful things with just lists and dictionaries. In fact we can build nearly anything. And that's part in parcel to the fact we’ve learned how to use dictionaries and
+          {"\n"}Kliggins walked back to the center of the room. "We can build many useful things with just lists and dictionaries. In fact we can build nearly anything. And that's part and parcel to the fact we’ve learned how to use dictionaries and
           lists <Text style={{ fontFamily: "gelasibro-italic" }}>together</Text>."{"\n"}
           {"\n"}Kliggins walked up to the center chalkboard. "Coders often use <Text style={{ fontFamily: "gelasibro-italic" }}>a list</Text> of dictionaries to represent information."{"\n"}
           {"\n"}"Can any of you men think of a use case?" Kliggins asked.{"\n"}
@@ -444,7 +444,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}"Henderson met his ex-girlfriend on GalacticLove," someone shouted out. "That didn't go too well."{"\n"}
           {"\n"}The men laughed.{"\n"}
           {"\n"}Kliggins erased the board. "Did he now? Well, work with me here. Imagine we want to build a new social networking application, a hip new app that you probably would all download. Let's say on one of the app’s screens we want to load a
-          list of your friends. This is a great example how a coder could represent this information, your friend list, using a list of dictionaries."{"\n"}
+          list of your friends. This is a great example of how a coder could represent this information, your friend-list, using a list of dictionaries."{"\n"}
           {"\n"}He sketched out some Python code on the board.{"\n"}
           {"\n"}"You can see here we can store the information about each of the individual users, each of your friends, in a dictionary. We can store information about the user's name, hometown, and nickname using a dictionary's key value structure.
           But how do we organize more than one of them?"{"\n"}
@@ -461,7 +461,7 @@ export default class Chapter10 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           “The code here may look confusing. But I’m simply formatting it in a way that makes it take up more vertical space so that it doesn't run too far across the right of the board, which is something we’d like to do in a{" "}
-          <GlossaryWord lookup_string="Texteditor" word="code editor" toggleGlossary={this.props.toggleGlossary} />, which is easier on the eyes. What we're looking at here is a list, and it’s three items are dictionaries. Like this.” Kliggins
+          <GlossaryWord lookup_string="Texteditor" word="code editor" toggleGlossary={this.props.toggleGlossary} />, which is easier on the eyes. What we're looking at here is a list, and its three items are dictionaries. Like this.” Kliggins
           sketched another line on the bottom of the board to make the code more conceptually clear.
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -515,7 +515,7 @@ export default class Chapter10 extends Component<IProps> {
           {"\n"}With that, Dendro stood up and said: “Anyways, men, women, it's getting past my bedtime. Zimmer, you and I will coordinate what is required tomorrow. It was good to see both of you. Jake, let's head back."{"\n"}
           {"\n"}The four of them said goodbye, then Jake and Dendro headed back up the staircase, back onto the street.{"\n"}
           {"\n"}“Zimmer seems cool. So, what’s this dojo training thing gonna be like?” Jake asked.{"\n"}
-          {"\n"}“You will see. Don’t worry, I think you’ll get a kick out of it” he said. “I hope.”{"\n"}
+          {"\n"}“You will see. Don’t worry, I think you’ll get a kick out of it,” he said. “I hope.”{"\n"}
           {"\n"}They walked back to their apartment on Tangiers. When Jake got to his room, he took off his chain and hung his suit back up in the closet, then collapsed into his bed.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I wonder what it's like to be a smuggler in a foreign galaxy</Text>. He closed his eyes, feeling the exhaustion overtake him. He thought of the elf-like ears.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>There was something intriguing about that purple eyed woman</Text>, he thought.

@@ -146,7 +146,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}"Here we are." Zena walked up the steps and unzipped the zippered doorway. Jake followed the three of them inside.{"\n"}
           {"\n"}The interior was more extensive than Jake expected, and when he entered, he immediately felt more relaxed. The floor was made of polished wooden panels and scented candles sat burning on a table in the center.{"\n"}
           {"\n"}Two rocking chairs sat in the back, and behind them, on the tarp constructed wall, rested a painting of the ocean. Drapery partitioned bedrooms were positioned on the left and right of the central area, and cloth hung from their
-          bannisters to create makeshift doors. As Jake peered inside each room, he could see that each contained a small cot fitted with a sherpa blanket and a small pillow.{" "}
+          banisters to create makeshift doors. As Jake peered inside each room, he could see that each contained a small cot fitted with a sherpa blanket and a small pillow.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Deserts do get cold at night</Text>, he thought.{"\n"}
           {"\n"}"I love it," Zena said.{"\n"}
           {"\n"}"It's a masterpiece," Zimmer blurted.{"\n"}
@@ -197,7 +197,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}"This way," she motioned. They followed her onto the candlelit trail and continued walking towards the coast. Jake could see festival workers laboring tirelessly to get the stage ready for the after-dinner event.{"\n"}
           {"\n"}As they neared the palace, Jake noticed a grid of festival-attendees huddled in the sand. The patrons were on their knees, and a tall, robed being with a shaved head, looked to be leading the group in prayer.{"\n"}
           {"\n"}"What is going on over there?" Jake asked.{"\n"}
-          {"\n"}"Nightly <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} /> meditations. It’s twenty minutes of prayer and twenty minutes of daily reflection," Zena elucidated. "Smoothes out the soul,"
+          {"\n"}"Nightly <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} /> meditations. It’s twenty minutes of prayer and twenty minutes of daily reflection," Zena elucidated. "Smooths out the soul,"
           she added.{"\n"}
           {"\n"}They soon approached a line swelling up in front of the Rudeu Palace. Jake could see the building more clearly. It reminded him of something he'd seen in a French TV show his mom used to watch.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I hated that series,</Text> he thought.{"\n"}
@@ -243,7 +243,7 @@ export default class Chapter14 extends Component<IProps> {
           extra hot.{"\n"}
           {"\n"}"Uhh. I’ll try the beef, please," Jake said to the waiter. Dendro chose the same. Zimmer selected the roasted pig, and Zena, the stuffed grouper. Jake forked a hearty cube of beef tagine onto his tongue, the spicy meat almost
           instantly falling apart in his mouth. <Text style={{ fontFamily: "gelasibro-italic" }}>This is so good</Text>.{"\n"}
-          {"\n"}A short time later, as he continued to eat his entree, Jake couldn't help but eavesdrop on a conversation between two alien men sitting diagonally across from him.{"\n"}
+          {"\n"}A short time later, as he continued to eat his entrée, Jake couldn't help but eavesdrop on a conversation between two alien men sitting diagonally across from him.{"\n"}
           {"\n"}“Minister Krestine knows what’s best for her people. Parliament has made wretched decisions in the past, but I trust her prevailing strategy,” one of the men said.{"\n"}
           {"\n"}“But, my dear friend, where are the results? The kidnappings continue. Vostluka is cunning. He will place spies underneath our noses. The Viceroys will continue to gain control over The Galaxy’s nuclear energy supply. And have his
           brainwashed followers of{" "}
@@ -276,7 +276,7 @@ export default class Chapter14 extends Component<IProps> {
           across the ocean waves that were crashing into the rocks below. <Text style={{ fontFamily: "gelasibro-italic" }}>I could use a place like this</Text>, Jake thought. He peered around; waiters were funneling out of another palace door as more
           guests filled into the space.{"\n"}
           {"\n"}"What a ridiculous view! I hope it doesn't get too crowded out here," Zena said as a warm gust of desert wind passed by. "Now, where are those desserts?" She glanced around and soon stopped a waiter carrying a tray filled with
-          pastries, cupcakes, and chocolate mousse filled martini glasses.{"\n"}
+          pastries, cupcakes, and chocolate mousse-filled martini glasses.{"\n"}
           {"\n"}Just as Jake chomped down on a chocolate fudge-filled cupcake, an older fellow who appeared to be in his sixties, grabbed Dendro by his shoulder.{"\n"}
           {"\n"}"Dendro, my friend! How are ya?" The aging, blue-skinned man said. His greenish-gray eyes had no irises nor pupils, and his ears were angled like Zena's. The alien man was dressed in what looked like a soldier’s uniform, and some
           impressive looking medals were pinned across his breast pocket.{"\n"}
@@ -345,7 +345,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}Dendro said, "I get it, son. I understand you. And I'm glad to hear this experience learning about our culture and learning, in general, may have helped you open your mind a bit. And I admit, I have not been the friendliest of fellas.
           That’s just me. But I want you to know I've enjoyed our time together. What you showed me, us, over this past week, was pure grit. I'm sorry to have put you through all of this."{"\n"}
           {"\n"}Jake wasn't sure what to say, so instead, he nodded. Zena and Zimmer smiled at him.{"\n"}
-          {"\n"}The waiter returned, placing a lemonade, two glasses of red wine, and a scotch on the table, then headed back inside. He returned a few moments later carrying four plates of thick whip cream-topped pastries. "Freshly made pumpkin
+          {"\n"}The waiter returned, placing a lemonade, two glasses of red wine, and a scotch on the table, then headed back inside. He returned a few moments later carrying four plates of thick whipped cream-topped pastries. "Freshly made pumpkin
           cream pies—best on the continent. Compliments of the house." He dropped a few gazelle-shaped chocolates on the table, bowed, and walked down the patio.{"\n"}
           {"\n"}Jake picked up a spoon and munched down on a small slice of his treat. <Text style={{ fontFamily: "gelasibro-italic" }}>This is phenomenally tasty</Text>, he thought.{"\n"}
           {"\n"}Zena ate some pie, then took a generous swig of her red wine. "This <Text style={{ fontFamily: "gelasibro-italic" }}>is</Text> sumptuous. Chocolate in a pumpkin pie? You never know how the simplest things can surprise you."{"\n"}
@@ -369,7 +369,7 @@ export default class Chapter14 extends Component<IProps> {
           scattered across the floor. She hopped up and removed the long blades from the top of the case. "We're good!" Zena yelled as she landed. Her arm was bleeding slightly.{"\n"}
           {"\n"}That’s when Dendro crouched and backflipped over the balcony. Jake watched as the warrior's body flung over the railing in a perfect ball. <Text style={{ fontFamily: "gelasibro-italic" }}>Oh, man</Text>. As Jake peered over the edge
           an instant later, he prayed his friend had landed safely. Dendro had, and he stood there, squatting, for a fraction of a second, as if to slowly re-channel the kinetic energy of the fall.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>I wish I could do that</Text>, Jake thought{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>I wish I could do that</Text>, Jake thought.{"\n"}
           {"\n"}He watched as the warrior's axe floated in place above his right shoulder. He then stood up tall, glancing up at them. "Let's go!"{"\n"}
           {"\n"}Zena hustled past Jake. Her bum hit the banister as she gripped onto her new hardware. Then she was sliding down the staircase like a trained ninja. Zimmer was already sprinting down the steps to her left, wielding a carbon fiber axe.
           Jake clenched his teeth as he looked in both directions.{"\n"}
@@ -412,7 +412,7 @@ export default class Chapter14 extends Component<IProps> {
           human, or capable of feeling anything. Jake caught sight of the designs on its plated armor more clearly. They were intricate carvings of glyphs, star systems, and other foreign objects. Dendro eyed his three comrades, then shouted, “Stay
           back!" He then jutted forward, flipped, and landed five feet in front of the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
-            <GlossaryWord lookup_string="Knightofdiukhien" word="Knight of Diu Khien" toggleGlossary={this.props.toggleGlossary} />
+            <GlossaryWord lookup_string="Knightofdiukhien" word="Knight of Dieu Khien" toggleGlossary={this.props.toggleGlossary} />
           </Text>
           .{"\n"}
           {"\n"}The creature stopped twirling its mace and focused in on Dendro. Then the Solar Forces warrior darted to his left with his axe held high. He tried to juke and use his speed to create a fortuitous strike angle, but the hulk of metal
@@ -455,13 +455,13 @@ export default class Chapter14 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             <GlossaryWord lookup_string="Initma" word="Initma" toggleGlossary={this.props.toggleGlossary} />
           </Text>
-          . He took a few deep breaths and felt slightly calmer. Was the Utma granted power of mind control coming to his aid, or was it his natural ability? Then he thought of <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,{" "}
+          . He took a few deep breaths and felt slightly calmer. Was the Utma granted power of mind control coming to his aid, or was it his natural ability? Then he thought of <Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text>,{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             <GlossaryWord lookup_string="Theacceleratedparry" word="The Accelerated Parry" toggleGlossary={this.props.toggleGlossary} />
           </Text>
           . Jake looked at his axe, then at his grounded comrades and something came over him–Jake sprinted for the creature. His intention was not to fight it, just to distract it.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I can get out of its way in time</Text>, Jake thought.{"\n"}
-          {"\n"}Captain Tango yelled as Jake ran at The Knight. Then Jake envisioned himself darting at a forty-five-degree angle with superhuman speed—<Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>—and he did. He entered a
+          {"\n"}Captain Tango yelled as Jake ran at The Knight. Then Jake envisioned himself darting at a forty-five-degree angle with superhuman speed—<Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text>—and he did. He entered a
           timeless blur and appeared a few feet to his right an instant later…but the move served no purpose; he was still too far away from the metallic demon. The Knight raised its arm, and Jake’s weapon flew straight from his hands and crashed
           against the back wall. <Text style={{ fontFamily: "gelasibro-italic" }}>Oh, jeez</Text>. He looked at his empty palm. <Text style={{ fontFamily: "gelasibro-italic" }}>Fail</Text>.{"\n"}
           {"\n"}“Get out of the way, kid!” Dendro yelled.{"\n"}
@@ -472,7 +472,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}The Ground Command Captain of forty years could not suppress his hatred for the enemy. He sprinted and cocked back his axe, running fearlessly towards the Knight of Diu Khien. The creature sensed the movement and turned towards him,
           then did something unexpected; it let go of its mace, which remained hovering by its armored shoulder. When Tango was only a few feet away, the Knight reached out quickly, its giant hand closing around the ex-captain's neck; it had no
           concern for Tango's axe. Tango swung his weapon awkwardly as he rose into the air, but his offensive incurred no damage. The creature slowly pried away Tango's weapon with its other hand. “GET YOUR FILTHY VENTHUM HANDS OFF ME!” Tango
-          roared, as he struggled to free himself from the Knights grip.{"\n"}
+          roared, as he struggled to free himself from the Knight's grip.{"\n"}
           {"\n"}The Knight appeared to examine him for a moment. There was a slight pause, then it cocked back Tango, and swung him right with tremendous force, catapulting his body into the front wall. It was done with such power that his figure was
           nearly invisible as it traveled through the air. An instant later, Tango’s body fell to the ground. Jake could hear Zena scream.{"\n"}
           {"\n"}Dendro, Zimmer, and Zena had now gotten back up on their feet, each with minor injuries to various places on their bodies.{"\n"}
@@ -516,7 +516,7 @@ export default class Chapter14 extends Component<IProps> {
           sailing across the sand. The mace boomeranged back into the Knight’s hand. <Text style={{ fontFamily: "gelasibro-italic" }}>Oh, no</Text>.{"\n"}
           {"\n"}Zimmer was dumbfounded. The Knight stood up, approached him slowly, then grabbed him by the throat, raising him above the ground.{"\n"}
           {"\n"}“Drop him!” Zena and Dendro shouted as they charged.{"\n"}
-          {"\n"}Jake stood there watching. Zimmer looked more like a wolf pup, than a wolf, in the Knight of Diu Khien’s grip. It brought him closer. <Text style={{ fontFamily: "gelasibro-italic" }}>Is it looking at his dog tag?</Text>
+          {"\n"}Jake stood there watching. Zimmer looked more like a wolf pup, than a wolf, in the Knight of Dieu Khien’s grip. It brought him closer. <Text style={{ fontFamily: "gelasibro-italic" }}>Is it looking at his dog tag?</Text>
           {"\n"}
           {"\n"}The Knight positioned its mace by its side as Dendro and Zena came at it with their acrobatic offensive. It parried their blows singlehandedly, spinning gracefully on its feet, its gaze still on Zimmer’s chain. After defending off the
           incoming series of blows, it tucked Zimmer under its left arm and let out a high-pitched whistle.{"\n"}

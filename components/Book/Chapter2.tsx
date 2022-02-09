@@ -51,11 +51,11 @@ export default class Chapter2 extends Component<IProps> {
           Rush Park as the venue for Grapefield Middle’s students and faculty.{"\n"}
           {"\n"}Jake tussled with his athletic shorts and cleats as he tried to push them far enough into his bag to close the zipper. He picked out his best gear for the event. Flag football was today, and he didn’t know if Ashley might be watching.
           {"\n"}
-          {"\n"}“Good morning class,” Ms. Blum announced during the first class of the day. “Thank you everyone for arriving on time! We have a bright and wonderful day ahead of us. I’m going to fill out my attendance sheet quickly and then we’ll be
+          {"\n"}“Good morning, class,” Ms. Blum announced during the first class of the day. “Thank you everyone for arriving on time! We have a bright and wonderful day ahead of us. I’m going to fill out my attendance sheet quickly and then we’ll be
           heading right back to the buses!”<Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
           {"\n"}To Jake’s relief, his teacher gave no inclination that she would quiz him on the assigned reading. He did read up to page eighty last night before the pizza came, but that was still twenty pages less than what was assigned.{"\n"}
-          {"\n"}Jake sat next to his buddy, David Wright on the bus. They spent the short ten-minute ride to Rush Park chatting about their work ethic.{"\n"}
+          {"\n"}Jake sat next to his buddy David Wright on the bus. They spent the short ten-minute ride to Rush Park chatting about their work ethic.{"\n"}
           {"\n"}“I’m tired of doing this homework,” Jake blurted out. He felt a pang of pain inside when he thought of his speaker project.{"\n"}
           {"\n"}They laughed about how they often prioritized gaming and sports, and nearly anything else, over their academic responsibilities. Jake thought it was funny how little David cared about his grades.{"\n"}
           {"\n"}“You didn’t hand in any of those papers? Not one?” Jake asked, dumbfounded.{"\n"}
@@ -63,7 +63,7 @@ export default class Chapter2 extends Component<IProps> {
           {"\n"}Jake couldn’t believe someone had a worse work ethic than him. <Text style={{ fontFamily: "gelasibro-italic" }}>How can you be that casual about failing in middle school?</Text>{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Maybe David was dealing with some issues at home that distracted him from his schoolwork</Text>, Jake thought.{"\n"}
           {"\n"}Jake scanned around the bus, looking for Ashley, and spotted her in the front where she was giggling with the girl sitting next to her.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>I wish she was sitting next to me. I’d talk to her for sure</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}>I wish she was sitting next to me. I’d talk to her for sure.</Text>
           {"\n"}
           {"\n"}As the bus turned onto Honeysuckle Drive, the towering white oak trees of Rush Park came into view, their green crowns rustling ever so slightly as they fought back against the wind.{"\n"}
           {"\n"}The crisp Grapefield air flowed through Jake’s nostrils as he stepped out onto the sidewalk. He looked up to see the lush green of the sports pitch just beyond the fence, a glorious rectangle of freshly mowed grass glistening in the
@@ -182,7 +182,7 @@ export default class Chapter2 extends Component<IProps> {
           {"\n"}A tightening sensation ran up Jake’s chest. He took another bite of his sandwich and chewed it slowly. “Mr. Harrison gave me a C. Can you believe that? He told me I didn’t follow the directions well. Even though my project actually
           had a purpose. I thought that dude was going to give me an A. Boy, was I wrong.”{"\n"}
           {"\n"}Nassir’s eyes softened. “Oh, no way, man. I’m sorry to hear that. I thought you were going to crush it.”{"\n"}
-          {"\n"}Nassir never had to deal with any of this disappointment. He never saw anything less than an A in school. An urge ran through Jake that made him almost lash out at Nassir, but he took a deep breath and calmed himself down.{"\n"}
+          {"\n"}Nassir never had to deal with any of this disappointment. He never got anything less than an A in school. An urge ran through Jake that made him almost lash out at Nassir, but he took a deep breath and calmed himself down.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           <Text style={{ textAlign: "center" }}>
@@ -194,7 +194,7 @@ export default class Chapter2 extends Component<IProps> {
           {"\n"}“Hello, boys!” Her face brightened when she saw Jake. “How are you? How was your day? I’m so glad Mr. Bennet let me out earlier than usual.”<Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
           {"\n"}Diana Addison’s straight auburn hair flowed down past her shoulders. Her unblemished skin and prominent blue eyes made her appear fifteen years younger than her real age. But her nails were chipped and she had noticeable bags under
-          her eyes. Most onlookers would perceive her as a beautiful woman that displayed the signs of a person trying to hold everything together.{"\n"}
+          her eyes. Most onlookers would perceive her as a beautiful woman who displayed the signs of a person trying to hold everything together.{"\n"}
           {"\n"}“I’m starving. What have you got there? How was your day?” Jake asked.{"\n"}
           {"\n"}“Fine, fine. You know, the usual.” She smiled and proudly announced: “I got the Addison boys’ favorite. Sizzling Kitchen.”{"\n"}
           {"\n"}As the smell wafted towards him, his mood perked up. “No way, did you get the stir fry noodles?”{"\n"}
@@ -202,7 +202,7 @@ export default class Chapter2 extends Component<IProps> {
           {"\n"}Diana took out the chopsticks, egg rolls, a bunch of packets of soy sauce and spicy mustard, and a large container of white rice and set them in the middle of the table.{"\n"}
           {"\n"}The two boys ripped open their oyster pails and dug in. A scrumptious combination of steaming hot stir fry noodles, chicken, mushrooms, and spicy garlic sauce wrapped around their chopsticks; their grandmother taught them how to use
           them when they were both toddlers. The spice and steam made their eyes water. The boys competed for the white rice, which they scooped into their oyster pails and mixed in with the noodles.{"\n"}
-          {"\n"}“Slow down, you two. No one is going to take your food. Jeez,” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Diana said. Jake, how was Rush Park? I’ve been dying to hear about it. How was your flag football game?” Diana
+          {"\n"}“Slow down, you two. No one is going to take your food. Jeez,” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Diana said. "Jake, how was Rush Park? I’ve been dying to hear about it. How was your flag football game?” Diana
           asked.{"\n"}
           {"\n"}He hesitated for a moment. “It was good,” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>he said.{"\n"}
           {"\n"}Diana looked at him. “That’s it? Just ‘Good?’”{"\n"}

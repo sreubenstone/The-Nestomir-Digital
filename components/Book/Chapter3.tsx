@@ -106,11 +106,11 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}His phone buzzed. It was his mother. She was being kept late again tonight by her boss, Mr. Bennet. She would be picking up Jimmy from his friend’s house after dinner, and there was dinner cash in an envelope in the kitchen.{"\n"}
           {"\n"}Fifteen minutes later, after continuous bouts of Dylan-ridden thought, Jake waved his hand in the air, signaling to his teacher that he had to go to the bathroom. Mrs. O'Reilly nodded in approval. He shot up, scooped up all his
           belongings, and hustled out of the classroom door. A few students watched him curiously, as he had taken all his stuff just to go to the restroom.{"\n"}
-          {"\n"}He was done with class for the day, whether or not the ninth period bell had rung or not. A part of his mind prayed that Ashley Martin would appear. He needed one more chance, one more hope. He needed redemption. How incredible it
-          would be if he could muster up the mettle to talk to her? But something then occurred to him, as he progressed down the hall. He felt a crazy feeling that he had to distract his frustration, somehow, some way.{"\n"}
+          {"\n"}He was done with class for the day, whether or not the ninth period bell had rung or not. A part of his mind prayed that Ashley Martin would appear. He needed one more chance, one more hope. He needed redemption. How incredible would
+          it be if he could muster up the mettle to talk to her? But something then occurred to him, as he progressed down the hall. He felt a crazy feeling that he had to distract his frustration, somehow, some way.{"\n"}
           {"\n"}Jake pushed open the doors of the school’s east exit staircase. Something, a force which he couldn't fully explain, drove him outside. Thirty minutes before classes ended, he walked down the stairs and headed for the street. He pushed
           himself to think of all the places he could go to satisfy the adrenaline rush creeping up into his mind.{"\n"}
-          {"\n"}He thought of the <Text style={{ fontFamily: "gelasibro-italic" }}>Apollo IV Starter Module</Text>. The three-foot-tall rocket he and Nassir had launched last Fall.{" "}
+          {"\n"}He thought of the <Text style={{ fontFamily: "gelasibro-italic" }}>Apollo IV Starter Module</Text>. The three-foot-tall rocket he and Nassir had launched last fall.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             Boy, would it be awesome to play with one of those. Wire it up. Send it into the sky. The sparks, and flames. Why not? I know how to do it. This time I won’t forget the screws. Where can I get one?
           </Text>
@@ -119,13 +119,13 @@ export default class Chapter3 extends Component<IProps> {
           exit walkway and onto Barley, which would take him straight into town. As he walked, a few strangers passed him, looking at him curiously.{"\n"}
           {"\n"}He continued walking for twenty minutes, until he saw the old-fashioned storefronts as he was approaching the edge of town. <Text style={{ fontFamily: "gelasibro-italic" }}>That was fast,</Text> he thought. He continued down Barley
           Street, passing by the restaurants he knew all too well: Antonino's Pizza, Iron Tavern, BBQ King, and the town’s central ice-cream hub, Haagen Daz, which evoked memories of the milkshakes him and his brother had gobbled down on summer
-          Sunday nights. Further down Barley he spotted the old Opera House, which put on theatre performances every Friday night, and a quarter mile past that the Grapefield Colonial Bell tower sat poking up into the afternoon sky.{"\n"}
+          Sunday nights. Further down Barley he spotted the old Opera House, which put on theater performances every Friday night, and a quarter mile past that the Grapefield Colonial Bell tower sat poking up into the afternoon sky.{"\n"}
           {"\n"}The streets were not as well maintained in the southern district of Grapefield. The northern part of the town had perfectly paved streets and uncracked sidewalks, but down here the roads were cracked, and some of the sidewalks had
           turned to nothing but dirt and gravel. Jake passed a disheveled warehouse and a few broken down garages, then crossed Tulip, which meant that Truman’s Hardware was only a few blocks away. He walked for another minute, picking up his pace.
           {"\n"}
           {"\n"}There it was! Standing on the southeast side of Woodstock Avenue and Crescent Street, was Truman’s Hardware. It looked as beautiful as Jake imagined she would. A large old-fashioned neon sign with a lit-up hammer hung in front of the
           store’s entrance. He crossed the street and glided into the store happily.{"\n"}
-          {"\n"}Each of the store’s ten aisles had its own variety of goods. One aisle for garden tools, one for flower pots, one for drill bits, one for house paint, one for saw blades and tungsten piping.{"\n"}
+          {"\n"}Each of the store’s ten aisles had its own variety of goods. One aisle for garden tools, one for flowerpots, one for drill bits, one for house paint, one for saw blades and tungsten piping.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Where would the model rockets be?</Text> He walked down the first four aisles. Nothing. He walked up to the front counter. There was an older man with scruffy white hair and a stubby beard
           standing behind it.{"\n"}
@@ -168,14 +168,14 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}Jake felt a jolt of relief as he walked back onto Barley Street. He felt the package. <Text style={{ fontFamily: "gelasibro-italic" }}>I promise, I won’t steal ever again. I just had to this time. I needed this.</Text> He checked his
           phone, it was 2:35 p.m. Classes would be ending right about now, but there was nowhere he needed to be. There was no one waiting for him. His mother wouldn’t be home for hours. He glanced around the block. A few cars passed by, but it was
           quiet. People were still working.{"\n"}
-          {"\n"}Directly across the street there was a large building that appeared to be an industrial garage. The doors were shut with thick metal chains, and the face of the building was covered in green graffiti. To the right the garage,
+          {"\n"}Directly across the street there was a large building that appeared to be an industrial garage. The doors were shut with thick metal chains, and the face of the building was covered in green graffiti. To the right of the garage,
           separated by a narrow alleyway, was a small white house with a sign on it that read: Rockman’s Personal Injury Attorneys.{"\n"}
           {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Maybe there’s a place behind that building to set these things off.</Text> He crossed Woodstock and walked up to the precipice of the ally. Except for some dirty mats and tarps scattered
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Maybe there’s a place behind that building to set these things off.</Text> He crossed Woodstock and walked up to the precipice of the alley. Except for some dirty mats and tarps scattered
           across the ground, the alley was empty. He looked at the windows of the law firm; there were no lights on inside.{"\n"}
-          {"\n"}His gut was right. A rectangular concrete plot sat behind the industrial garage. It most likely had been used to unload and offload heavy equipment from the back entrance of the facility. There was a large barb wire fence to the left,
-          facing away from the building, stretching towards another large broken-down structure. He walked over the back of the garage, placed his bag down, and rested his back against it. Jake glanced up at the dimming afternoon sky, then slid down
-          to the ground. He was tired. He sat there for a moment. Then he pulled the spinners out from his pocket and scanned the packaging more closely.{"\n"}
+          {"\n"}His gut was right. A rectangular concrete plot sat behind the industrial garage. It most likely had been used to unload and offload heavy equipment from the back entrance of the facility. There was a large barbed wire fence to the
+          left, facing away from the building, stretching towards another large broken-down structure. He walked over to the back of the garage, placed his bag down, and rested his back against it. Jake glanced up at the dimming afternoon sky, then
+          slid down to the ground. He was tired. He sat there for a moment. Then he pulled the spinners out from his pocket and scanned the packaging more closely.{"\n"}
           {"\n"}
           <Text style={{ textAlign: "center" }}>USE ONE SPINNER AT A TIME. TUG FUSE CORD TO IGNITE, THEN IMMEDIATELY PLACE FIREWORK ON A FLAT SURFACE. WAIT FIVE SECONDS FOR FIREWORK TO FULLY IGNITE.</Text>
           {"\n"}
@@ -209,8 +209,8 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}Jake’s stomach twisted in guilt. He put his fingers on the screen’s keyboard to respond, but he stopped. <Text style={{ fontFamily: "gelasibro-italic" }}>I shouldn’t have said those things. But was I fully in the wrong?</Text> He
           wasn’t sure how to respond. Jake lit another cartridge, watched it ignite, then quickly fizzle into nonexistence. A small breeze brought a thick bout of sulphureous smoke in his direction.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Ugh, it smells like rotten eggs</Text>.{"\n"}
-          {"\n"}The smell dissipated after a few moments. Then a strong gust of wind carried over more sulphury smoke. But this smoke smelled different, with a more distinctive ingredient mixed inside of it. It was rougher, spicier, and woody. It was
-          not as offensive as the rotten egg smell. It was almost pleasing, still sulphury, but not as potent, like a mixture of model rocket engine smoke and the burnt wood of a cedar tree.{"\n"}
+          {"\n"}The smell dissipated after a few moments. Then a strong gust of wind carried over more sulfur-smelling smoke. But this smoke smelled different, with a more distinctive ingredient mixed inside of it. It was rougher, spicier, and woody.
+          It was not as offensive as the rotten egg smell. It was almost pleasing, still sulfur-smelling, but not as potent, like a mixture of model rocket engine smoke and the burnt wood of a cedar tree.{"\n"}
           {"\n"}Jake was confused. He placed the last unfired ground spinner in his right jean pocket, grabbed his bag, and stood up, forgetting Nassir for a moment. He sniffed the air as he took a few steps toward the alley, but the smell
           disappeared. <Text style={{ fontFamily: "gelasibro-italic" }}>It was just the wind blowing in the other direction,</Text> Jake thought. When another gust of wind brought the spicy sulphureous scent back into his nose and this time, it was
           significantly stronger. His mouth twisted in confusion.{"\n"}
@@ -226,7 +226,7 @@ export default class Chapter3 extends Component<IProps> {
           dark. <Text style={{ fontFamily: "gelasibro-italic" }}>What’s the harm in scoping it out for thirty seconds?</Text> He could only hear the ruffling of stalks rubbing against each other in the evening wind.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I’m not a wimp.</Text>
           {"\n"}
-          {"\n"}He hopped over the barricade, his feet hitting the cornfield dirt with a soft plop. The plants were even bigger up close, and they were even more densely stacked then he anticipated. He was not able to see more than a foot or so in
+          {"\n"}He hopped over the barricade, his feet hitting the cornfield dirt with a soft plop. The plants were even bigger up close, and they were even more densely stacked than he anticipated. He was not able to see more than a foot or so in
           each direction. <Text style={{ fontFamily: "gelasibro-italic" }}>These things are massive.</Text> <Text style={{ fontFamily: "gelasibro-italic" }}>How do the farmers navigate in here?</Text> He took a few steps forward, pushing aside the
           stalks of corn. A few feet in, he lost sight of Jason Road. As he walked forward a few more steps he couldn’t help but feel the creepy sensation that he was all alone in a cornfield in the pitch black. He stopped and glanced upward for a
           moment. The starry sky above provided some comfort that he was not entirely suffocating within the stalks.{"\n"}
@@ -240,7 +240,7 @@ export default class Chapter3 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>That’s it. The smell!</Text> The smoke had carried the pungent woody scent. <Text style={{ fontFamily: "gelasibro-italic" }}>I see no fire. I don’t get it.</Text>
           {"\n"}
           {"\n"}He continued walking, and to his surprise, he finally emerged from the endless stretch of corn. He looked around. He had stumbled into some kind of opening. There was a large object buried in the ground about a hundred feet ahead, but
-          it obfuscated by billowing black smoke. <Text style={{ fontFamily: "gelasibro-italic" }}>What the heck is that?!</Text> Jake squinted as he tried to make out the object.{"\n"}
+          it was obfuscated by billowing black smoke. <Text style={{ fontFamily: "gelasibro-italic" }}>What the heck is that?!</Text> Jake squinted as he tried to make out the object.{"\n"}
           {"\n"}“This looks like an actual crater! Is this where the farmers clean their tractors?” Jake muttered out loud.{"\n"}
           {"\n"}A breeze came in from the west which caused the smoke to pass by the object momentarily.  Jake’s eyes connected with the intimidating large, curved surfaces. The far side of the object was submerged in the ground, and the side facing
           Jake protruded high in the air. Jake could see other curves and edges reflecting the faint starlight. It rose high above the ground. A feeling of dizziness overcame him. It looked like some kind of flying machine.{" "}

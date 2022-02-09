@@ -121,7 +121,7 @@ const TOC = [
 
   {
     chapter: "Chapter 12",
-    caption: "El Funccion & Acelera I",
+    caption: "El Funccion & Accelera I",
     image: `https://res.cloudinary.com/dshxqbjrf/image/upload/v1633996934/12_tnmfmx.png`,
     progress: null,
     bookmark: null,

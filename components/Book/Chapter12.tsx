@@ -52,7 +52,7 @@ export default class Chapter12 extends Component<IProps> {
         <Text style={BookStyles.bookFont}>
           A crimson-eyed demon seized Jake's legs in the middle of a rainstorm. He was shackled to a metal floor, and he felt himself sliding. Then a pair of panther-like claws seized his arms. He slowly opened his eyes. His optical nerves turned
           back on, ready to process information from the outside, as Dendro's powerful hands shook him.{"\n"}
-          {"\n"}"Wake up, kid," the Gobrahim warrior said. "We have a big day ahead of us. It is your first training day."{"\n"}
+          {"\n"}"Wake up, kid," the Gobhrahim warrior said. "We have a big day ahead of us. It is your first training day."{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Are you serious?</Text> Jake rolled over to look at the cyberpunk clock. It was 5:01 a.m. "Get off of me, bro," Jake complained as he shut his eyes again, but he continued to feel Dendro’s
           hand shaking him. He opened his eyes again. "What is going on?" Jake muttered as he flipped over and stuffed the side of his head back into the pillow.{"\n"}
@@ -157,7 +157,7 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}“I do not know. My gut has warned me of this for a long time. I believe they are after a deeper understanding of the <Text style={{ fontFamily: "gelasibro-italic" }}>Utma</Text>—our understanding of the{" "}
           <GlossaryWord lookup_string="Theutma" word="Utma" toggleGlossary={this.props.toggleGlossary} />, understandings our great spiritual leaders and scientists have obtained and cultivated over thousands of years of painstaking effort. This is
           one area their culture could never excel. But I do not know how it will be done.”{"\n"}
-          {"\n"}Zimmer put his hands through his thick hair. “That is certainly possible. But what evidence is there of such a ploy?{"\n"}
+          {"\n"}Zimmer put his hands through his thick hair. “That is certainly possible. But what evidence is there of such a ploy?"{"\n"}
           {"\n"}"None, but today, it matters not. The only thing we can do now is regroup," Dendro responded. “That is why I must get back to my men.”{"\n"}
           {"\n"}They sat there for a moment without speaking. Each one of them appeared to be lost in thought.{"\n"}
           {"\n"}“How can I possibly help?” Jake asked. “I can’t really fight.”{"\n"}
@@ -172,7 +172,7 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}"Good,” Dendro said. “We have together agreed that, as translated into your common tongue, <Text style={{ fontFamily: "gelasibro-italic" }}>The Function</Text> will be the benefit lesson Zena will train you on today. It is an
           essential teaching in our Holy Curricula. And to do that in a formal setting, the dojo, is something we are all eager to witness. “We’ve left your training attire in the fitting room over there. Please change and then meet us on the mat.”
           {"\n"}
-          {"\n"}Jake headed into the fitting room. <Text style={{ fontFamily: "gelasibro-italic" }}>Am I really doing this?</Text> He looked at his reflection in the mirror as he changed into the white training robe. He was tanner then he realized.
+          {"\n"}Jake headed into the fitting room. <Text style={{ fontFamily: "gelasibro-italic" }}>Am I really doing this?</Text> He looked at his reflection in the mirror as he changed into the white training robe. He was tanner than he realized.
           He tied the white belt tightly around his waist. <Text style={{ fontFamily: "gelasibro-italic" }}>What am I about to do?</Text> He walked out of the room and approached the mat, the cold silver orb pressing up against his bare skin. Zena
           stood before him, and behind her, he noticed that the shelves on the back wall carried an assortment of weapons he couldn't quite make out. Zimmer and Dendro stood off to the side, watching.{"\n"}
           {"\n"}“Looking sharp,” Zena said. She was dressed in tight leather pants, white boots, and a black dri-fit long-sleeved t-shirt. “I am glad to see you’ve accepted the challenge of training with us today. Now, the benefit lesson I will begin
@@ -246,7 +246,7 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>Hey, we need to send notifications whenever a user receives a like on their photo—this app would stink without that!</Text>”{"\n"}
           {"\n"}“So, Angelica codes in the five steps above that are necessary to send notifications. When coded out, they are long, complex steps that require many hours of study to implement, but they are necessary to bring her product to life, so
           she does it. <Text style={{ fontFamily: "gelasibro-italic" }}>Yes! My friends will now get notifications any time someone comments on their pictures. Amazing!</Text> Next, Angelica gets a few close friends to test the app out, and{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>wha-la,</Text> they receive notifications whenever someone comments on their photo. Angelica feels very proud.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>voila</Text> they receive notifications whenever someone comments on their photo. Angelica feels very proud.{"\n"}
           {"\n"}“But then one of her friends says, <Text style={{ fontFamily: "gelasibro-italic" }}>I really wish I could like photos in this app, not just comment on them</Text>.{"\n"}
           {"\n"}“Angelica thinks, <Text style={{ fontFamily: "gelasibro-italic" }}>You know she's right.</Text> So, Angelica goes on her computer to begin working on the new <Text style={{ fontFamily: "gelasibro-italic" }}>likes</Text> feature, but
           she pauses for a moment because she realizes something. <Text style={{ fontFamily: "gelasibro-italic" }}>Wait! We also need to send notifications when a user likes a picture</Text>!{"\n"}
@@ -255,7 +255,7 @@ export default class Chapter12 extends Component<IProps> {
             I have to copy and paste the identical lines of notification code (steps 1-5) I wrote for comments-on-pictures...inside of the code that manages likes-on-pictures. This way, I can successfully send notifications for both
             comments-on-pictures and likes-on-pictures!
           </Text>{" "}
-          In fact, many of the earliest programmers, at least in the Nestomir, actually did this...they copied the complex code they wrote in their first feature, and pasted those steps into a new feature, which existed somewhere else in their code
+          In fact, many of the earliest programmers, at least in The Nestomir, actually did this...they copied the complex code they wrote in their first feature, and pasted those steps into a new feature, which existed somewhere else in their code
           files. But things slowly got out of control for two reasons.”{"\n"}
           {"\n"}“One, programmers had to tediously copy and paste the same steps over and over again to implement the identical functionality. And two, when a programmer made changes in one place, they had to make the same changes in every single
           place they copy and pasted the initial code.”{"\n"}
@@ -372,13 +372,13 @@ export default class Chapter12 extends Component<IProps> {
           // Section 6 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          “You can see, we are passing in the string <Text style={{ fontFamily: "gelasibro-italic" }}>Your post received a new comment!</Text> as our <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> argument.{"\n"}
+          “You can see, we are passing in the string <Text style={{ fontFamily: "gelasibro-italic" }}>Your post received a new comment!</Text> as our <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> argument."{"\n"}
           {"\n"}“We can now change the specific message that is displayed for each notification by placing in a custom <Text style={{ fontFamily: "gelasibro-italic" }}>message</Text> when we call the function. Parameters, or inputs, give us greater
           flexibility in our functions. Parameters let coders make slight alterations to their function's instructions, without having to change all of them.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>That really is wild</Text>, Jake thought.{"\n"}
           {"\n"}Zena smiled for an instant, then her face turned serious again. “Another piece of magic that coders invented is the concept of a <Text style={{ fontFamily: "gelasibro-italic" }}>return</Text>.”{"\n"}
-          {"\n"}“A return?” Jake asked{"\n"}
+          {"\n"}“A return?” Jake asked.{"\n"}
           {"\n"}“Affirmative. A <Text style={{ fontFamily: "gelasibro-italic" }}>return</Text> is a piece of information that the function <Text style={{ fontFamily: "gelasibro-italic" }}>hands off</Text> to the next set of code waiting in line to
           fire, once the function finishes executing.”{"\n"}
           {"\n"}Zena looked at Zimmer and Dendro, who were watching eagerly.{"\n"}
@@ -387,13 +387,13 @@ export default class Chapter12 extends Component<IProps> {
           {"\n"}“Like the code below it? Like next in line?” Jake asked.{"\n"}
           {"\n"}“Yes, essentially. When Angelica triggers the <Text style={{ color: "#0C2443", fontFamily: "code" }}>send_notification</Text> function, she may have wanted to{" "}
           <GlossaryWord lookup_string="Returnstatement" word="return" toggleGlossary={this.props.toggleGlossary} /> something to the code following it. What information do you think Angelika might want the send_notification function to hand off to
-          the code following it?{"\n"}
+          the code following it?"{"\n"}
           {"\n"}“I'm not sure. I have no idea,” Jake said.{"\n"}
           {"\n"}“It's hard to answer without real world experience. But in this type of message sending scenario, it might be information related to: did my message get sent properly? Oftentimes the code, or steps, following the sending of a
           notification, will want to know if there were any issues delivering the notification to the user’s phone. For example, the function could return a string to the code following it, with the value of either ‘Success’ or ‘Failed.’{" "}
           <GlossaryWord lookup_string="Returnstatement" word="Returning" toggleGlossary={this.props.toggleGlossary} /> is an essential tool, because the more you build stuff, the more you'll see how much you're going to want to hand off the result of
           functions to the code waiting in line.”{"\n"}
-          {"\n"}“Interesting,” Jake said.” So, you are looking for a result that other code can do something with. That's super cool.”{"\n"}
+          {"\n"}“Interesting,” Jake said. "So, you are looking for a result that other code can do something with. That's super cool.”{"\n"}
           {"\n"}“Precisely. In Python, to return, we use the keyword return like this:”
         </Text>
         <View style={GlobalStyles.flexCenter}>
@@ -415,7 +415,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_7.png")} />
         </View>
-        <Caption>Keep in mind - in Python we indent to create a new code block. (a + b is indented underneath the function definition - which in Python means it is the codeblock associated to this function.)</Caption>
+        <Caption>(Keep in mind–in Python we indent to create a new code block. a + b is indented underneath the function definition here–which in Python means it is the codeblock associated to this function)</Caption>
 
         {
           // Section 8 Below, Goes Text, Graphic
@@ -427,7 +427,7 @@ export default class Chapter12 extends Component<IProps> {
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic source={require("./../../assets/images/lessons/lesson7_8.png")} />
         </View>
-        <Caption>Keep in mind the line sum = add(2,3) is not indented. This means it is a separate statement, not directly affiliated to the function above. For begginers, sometimes visually you can get confused.</Caption>
+        <Caption>(Keep in mind the line sum = add(2,3) is not indented. This means it is a separate statement, not directly affiliated to the function above. For beginners, sometimes visually you can get confused)</Caption>
 
         {
           // Section 9 Below, Goes Text, Graphic
@@ -575,26 +575,26 @@ export default class Chapter12 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             <GlossaryWord lookup_string="Initma" word="Initma" toggleGlossary={this.props.toggleGlossary} />
           </Text>
-          , <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, and <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>. This is no easy feat, especially with such unique training circumstances. You may have already felt
+          , <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, and <Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text>. This is no easy feat, especially with such unique training circumstances. You may have already felt
           the force of your first granted power, <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text>, running through you. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> gives her soldiers the ability to bring a certain
           calmness to our minds in moments of intense stress. <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> is subtle, but its effects will grow over time, especially with the right practice.”{"\n"}
           {"\n"}Jake thought of his out-of-body performance on the rink, but he wasn’t sure if that had been <Text style={{ fontFamily: "gelasibro-italic" }}>Initma</Text> or something else.{"\n"}
           {"\n"}Zena took her right foot in her hand, bending her leg backwards to stretch out her quadriceps, then continued her pacing. “You have achieved <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, weapons harnessing.” When she
           said this Jake let his axe fall to his side. It hovered next to him in position as he rotated his body.{"\n"}
-          {"\n"}Zena nodded in approval. “And on this mat today, you have been granted the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,” she said. “<Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text>,
-          or the <GlossaryWord lookup_string="Theacceleratedparry" word="Accelerated Parry" toggleGlossary={this.props.toggleGlossary} />, allows a soldier to evade an enemy blow by providing them with a short burst of blinding speed. We access this
-          power by envisioning ourselves quite literally, as the great masters have taught us, <Text style={{ fontFamily: "gelasibro-italic" }}>moving like a blur</Text>. Then we lean in the desired direction, with complete faith, to dodge our
+          {"\n"}Zena nodded in approval. “And on this mat today, you have been granted the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text>,” she said. “<Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text>
+          , or the <GlossaryWord lookup_string="Theacceleratedparry" word="Accelerated Parry" toggleGlossary={this.props.toggleGlossary} />, allows a soldier to evade an enemy blow by providing them with a short burst of blinding speed. We access
+          this power by envisioning ourselves quite literally, as the great masters have taught us, <Text style={{ fontFamily: "gelasibro-italic" }}>moving like a blur</Text>. Then we lean in the desired direction, with complete faith, to dodge our
           opponent’s strike.”{"\n"}
           {"\n"}Zena walked to the center of the mat and signaled for Jake to follow. As he walked up to her, she stood still, spreading her feet apart and bending her knees, forming a reactive fighting stance. “We always keep our bodies in athletic
           form when we train.” Jake examined the positioning of her feet, limbs, and back. He spread his legs out, straightened his spine, and bent his knees.{"\n"}
           {"\n"}"Good. Practice that for a moment." As Zena headed for the shelf, Jake stayed in position, trying to get his body to feel more comfortable. When came back a few moments later carrying a long, curved sword, she gently kicked the back
           of his right knee. “Always keep your knees slightly bent and keep them flexible. Not so stiff.” She examined his posture. “Good, now hold your axe upright with both hands. Like this.” She held her weapon just above her right shoulder. Jake
           copied her.{"\n"}
-          {"\n"}"Now, the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Acelera One</Text> is already inside of you. You have earned it. As I mentioned, it's as simple as envisioning yourself"—she paused—"
+          {"\n"}"Now, the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text> is already inside of you. You have earned it. As I mentioned, it's as simple as envisioning yourself"—she paused—"
           <Text style={{ fontFamily: "gelasibro-italic" }}>moving like a blur</Text> to the right or left of your opponent. Other spiritual teachers have described the feeling as an envisioning of yourself moving through space, instantaneously, like
           a sort of teleportation, even though we know that is not quite what is occurring. I'm going to come at you slowly." She backed up five paces. "Try to dodge my strike."{"\n"}
           {"\n"}She came at him, bringing her axe high above her head, and swinging the weapon in slow motion towards his left shoulder. He closed his eyes, gripping his axe with both hands, and attempted to envision himself moving like a blur–or
-          teleporting to his right. But as he held the thought in his mind’s eye, and stepped forwards, he took an awkward stumble, and almost fell. He felt embarrassment run through him.{"\n"}
+          teleporting to his right. But as he held the thought in his mind’s eye, and stepped forward, he took an awkward stumble, and almost fell. He felt embarrassment run through him.{"\n"}
           {"\n"}"I-I tried. I did, but nothing happened," Jake said.{"\n"}
           {"\n"}She circled him. "Again!" she commanded. "And this time do not close your eyes." As she came at him with her axe raised high above her head, Jake held on tightly to his weapon, and tried his hardest to envision himself dodging the
           blow by what could best be described as imagining himself <Text style={{ fontFamily: "gelasibro-italic" }}>blurring</Text> to his right. This time he noticed a slight fogging sensation run through his field of vision, but there was no
