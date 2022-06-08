@@ -65,7 +65,7 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}“Did your parents encourage you to join?” Jake asked.{"\n"}
           {"\n"}“Not really,” he snorted. “My father died when I was young. My mother has always been supportive of my desire to protect the Naronian motherland, but she did not support my desire to go into Special Operations, which is the most
           lethal but also the most thrilling part of the Solar Forces military arm.”{"\n"}
-          {"\n"}“Do you speak with your mother often? Jake asked.{"\n"}
+          {"\n"}“Do you speak with your mother often?" Jake asked.{"\n"}
           {"\n"}“When I can...every three to four months up here. It’s not easy with the communication restrictions,” Dendro said in his gravelly voice.{"\n"}
           {"\n"}“I see,” Jake said.{"\n"}
           {"\n"}As the ship soared over the North American continent, Jake considered the existence of Dendro's alien world, Naronia, with its different races living together. It made him think of the fantasy books Mrs. Krezia read to his class in
@@ -81,7 +81,7 @@ export default class Chapter5 extends Component<IProps> {
           and my loyalty is to the <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} />, to the Utma.” Dendro’s yellow eyes looked at Jake intensely, then he grinned.{"\n"}
           {"\n"}“Python is all that you are? Ld’Shab? What?” Jake asked, not sure if Dendro was messing with him. But something told Jake that Dendro didn’t seem like the kind of guy to make jokes in tense moments.{"\n"}
           {"\n"}Dendro cupped the silver medallion hanging from his neck and stroked it gently. “Our culture practices an ancient philosophy, known as Ld’Shab, which comes from our appreciation, study, and worship of the Learning Force,{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>the Utma.</Text>” Dendro answered.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>the Utma,</Text>” Dendro answered.{"\n"}
           {"\n"}Jake frowned in confusion.{"\n"}
           {"\n"}Dendro minimized a window sitting above the lower part of the application screen. “The Ld’Shab religion, a religion based on learning itself, guides all life in the Naronian republic. The{" "}
           <GlossaryWord lookup_string="Theutma" word="Utma" toggleGlossary={this.props.toggleGlossary} />
@@ -101,8 +101,8 @@ export default class Chapter5 extends Component<IProps> {
           These are benefits that sentient beings are awarded when studying critical components of the Utma.”
           {"\n"}
           {"\n"}"What does that mean?" Jake asked, perplexed.{"\n"}
-          {"\n"}"It means as we study a certain holy Ld'Shab Curriculum—
-          <GlossaryWord lookup_string="Holycurricula" word="The Holy Curricula" toggleGlossary={this.props.toggleGlossary} />. Under certain conditions which our spiritual teachers have honed over hundreds of years, we are granted metaphysical
+          {"\n"}"It means, as we study a certain holy Ld'Shab Curriculum—
+          <GlossaryWord lookup_string="Holycurricula" word="The Holy Curricula" toggleGlossary={this.props.toggleGlossary} />, under certain conditions which our spiritual teachers have honed over hundreds of years, we are granted metaphysical
           powers. Powers beyond the explanation of the physical world. Powers granted by the Utma itself.{"\n"}
           {"\n"}Jake's eyes lit up. "You receive metaphysical benefits, like special powers, for studying something?" His face scringed with skepticism. "How is that even possible? It's like magic?"{"\n"}
           {"\n"}“That, my friend, is not an easy question to answer. And no, we do not call it magic. It is the <Text style={{ fontFamily: "gelasibro-italic" }}>way</Text> of the Universe. Our teachers believe that the Utma does not want us to turn a
@@ -110,11 +110,11 @@ export default class Chapter5 extends Component<IProps> {
           understanding as to how they function. The Utma wants us to pay closer attention.”{"\n"}
           {"\n"}Jake pondered for a moment. "What powers are you granted?"{"\n"}
           {"\n"}Dendro turned to face Jake. "Powers that enhance our capabilities to fight and defend ourselves against our foes. You must recognize that the Special Operative soldiers of the Solar Forces, and our most prominent spiritual teachers,
-          are the only members of society to date to formally train to obtain these powers. From how we wield our Solar Forces weapons to maneuvering our shields to enhancing balance to speeding up how we move--all the way to augmenting how we
-          control and master our most important weapon--our minds, we gain new powers as we learn from the <Text style={{ fontFamily: "gelasibro-italic" }}>Holy Curricula</Text>.”{"\n"}
+          are the only members of society to date to formally train to obtain these powers. From how we wield our Solar Forces weapons to maneuvering our shields to enhancing balance to speeding up how we move–all the way to augmenting how we control
+          and master our most important weapon–our minds, we gain new powers as we learn from the <Text style={{ fontFamily: "gelasibro-italic" }}>Holy Curricula</Text>.”{"\n"}
           {"\n"}Dendro picked up his axe from its holder on the wall. He put it near his chest. As he let go, it did not drop, but floated in midair beside him. The shining golden edges glimmered in the cockpit light.{"\n"}
           {"\n"}"Whoa," Jake blurted aloud. "How the—" He stopped speaking as Dendro flicked his levitating axe, causing it to rotate in place.{"\n"}
-          {"\n"}"This power is called <Text style={{ fontFamily: "gelasibro-italic" }}>Weapons Harnessing</Text>. It lets us wield a Solar Forces weapon like this. It is one of many superpowers we are granted for being students of{" "}
+          {"\n"}"This power is called <Text style={{ fontFamily: "gelasibro-italic" }}>Weapons Harnessing</Text>. It lets us wield a Solar Forces weapon. It is one of many superpowers we are granted for being students of{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>The Holy Curricula.</Text>"{"\n"}
           {"\n"}Jake stared in awe at the floating golden weapon. <Text style={{ fontFamily: "gelasibro-italic" }}>What kept it in the air?</Text>
           {"\n"}
@@ -154,13 +154,13 @@ export default class Chapter5 extends Component<IProps> {
           <GlossaryWord lookup_string="Guidovanrossum" word="Guido" toggleGlossary={this.props.toggleGlossary} /> took credit for its creation,” Dendro stated.{"\n"}
           {"\n"}“Are you serious?” Jake asked, wide eyed.{"\n"}
           {"\n"}“I would not joke around about something like that,” Dendro responded.{"\n"}
-          {"\n"}“Do you mean to tell me your society knows of Earth and has interacted with Earth before?” Jake asked, baffled. “I thought I heard you mention something about that before.”{"\n"}
+          {"\n"}“Do you mean to tell me your society knows of Earth and has interacted with Earth before?” Jake asked, baffled. “I thought I might have heard you mention something about that before.”{"\n"}
           {"\n"}“Oh, yes. We ventured out of the galaxy some five hundred years ago.”{"\n"}
           {"\n"}"That is both terrifying and incredible, I guess. But one thing I don't understand. How, if a computer only understands zeros and ones, can it process this code, this Python, which is made up of{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>text</Text>?"{"\n"}
           {"\n"}"To put it simply, there is a translation process. Another program can break down our text statements, digest them, and convert them into zeros and ones. We sometimes refer to this program as a{" "}
           <GlossaryWord lookup_string="Compiler" word="compiler" toggleGlossary={this.props.toggleGlossary} />, or an <GlossaryWord lookup_string="Interpreter" word="interpreter" toggleGlossary={this.props.toggleGlossary} />. We can spend a lot of
-          time studying the innards of these translation tools, and the hardware itself. It is important to note that coding, the art of organizing text-based instructions for the computer, is still only a subset of understanding the computer.”{"\n"}
+          time studying the innards of these translation tools, and the hardware itself. It is important to note that coding is still only a subset of understanding the computer…a lot more goes into Computer Science.”{"\n"}
           {"\n"}Jake’s eyes flashed. "That is <Text style={{ fontFamily: "gelasibro-italic" }}>wild</Text>. The computer can use its own insides to digest our human statements?” Jake said, thinking out loud. He pondered for a few moments thinking
           about the implications of what Dendro was saying. “But still, what can we actually <Text style={{ fontFamily: "gelasibro-italic" }}>do</Text> with code? What are these hackers I see on TV and in the movies actually doing?” Jake said.{"\n"}
           {"\n"}"A coder's responsibility, first and foremost, is to <Text style={{ fontFamily: "gelasibro-italic" }}>move information around as efficiently as possible</Text>. And ironically, that often means,{" "}
@@ -216,7 +216,7 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}“Here, take this.” Dendro reached underneath his seat and came up holding a silver chain. It looked like the one he was wearing, just shorter. He placed it on Jake’s neck.{"\n"}
           {"\n"}"What is this?" Jake asked as he felt the cold metal against his skin.{"\n"}
           {"\n"}“It is a very special object from our galaxy. An orb containing stardust from the <GlossaryWord lookup_string="Teqwequarnebula" word="Teqwequar Nebula" toggleGlossary={this.props.toggleGlossary} />, the nebula our religion believes to
-          be the singularity point of creation. An object that we control through the Utma must contain this stardust. The <Text style={{ fontFamily: "gelasibro-italic" }}>dusted orb</Text>, as we sometimes call it, enables you to{" "}
+          be the singularity point of creation. An object that we control through the Utma, like my axe, must contain this stardust. The <Text style={{ fontFamily: "gelasibro-italic" }}>dusted orb</Text>, as we sometimes call it, enables you to{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>register Utma feedback</Text>. If you gain a <Text style={{ fontFamily: "gelasibro-italic" }}>Core Understanding</Text>, the Utma can now{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>reward</Text> you.{"\n"}
           {"\n"}“How?” Jake asked, curling his eyebrows{"\n"}

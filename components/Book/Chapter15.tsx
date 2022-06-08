@@ -66,13 +66,13 @@ export default class Chapter15 extends Component<IProps> {
           properly, once they got hold of his wife.{"\n"}
           {"\n"}"That should hold," Dendro said a minute later. As he stood up, he patted down the bandages strewn across his body. He looked at Jake. "There is no time to mourn the loss of Captain Tango - he was a great leader, and the galaxy will
           honor his passing. Now we must get to Zimmer's ship so we can get our friend back. And I must somehow figure out how to reach my men." The edge of his golden axe crept above his black vest as he stood up. He walked past Jake and headed for
-          the door. "C’mon friends, let's go," Dendro said." We are all bandaged up. Now, we have work to do."{"\n"}
+          the door. "C’mon friends, let's go," Dendro said. We are all bandaged up. Now, we have work to do."{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           <Text style={{ textAlign: "center" }}>. . .</Text>
           <Text style={{ fontFamily: "gelasibro-italic" }}></Text>
           {"\n"}
-          {"\n"}Zimmer's ship had been stored in an off-the-grid garage-not far from where Dendro had stowed the Sentauri Beacon II. As the Cadillac roared down the A1 interstate, Dendro’s arms were still bleeding slightly as he gripped onto the
+          {"\n"}Zimmer's ship had been stored in an off-the-grid garage not far from where Dendro had stowed the Sentauri Beacon II. As the Cadillac roared down the A1 interstate, Dendro’s arms were still bleeding slightly as he gripped onto the
           steering wheel.   They had one mission now: get to Zimmer’s interstellar craft.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Does this mean I’m actually going home?</Text> Jake thought as he caught sight of the silver alien disk resting in the cupholder. Dendro had mentioned on the walk to the car the time to
@@ -167,7 +167,7 @@ export default class Chapter15 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>internet</Text>. The construct of the internet is so stunning it assuages some of the pain in my shoulder when I think about it. Do you have any understanding of how the internet works?” Zena
           asked. “I should mention there is a bridge between Earth’s internet, and the internet of all <GlossaryWord lookup_string="Enlightened" word="Enlightened" toggleGlossary={this.props.toggleGlossary} /> systems, and the Nestomir. The bridge
           has limitations, but it has been constructed through our civilian satellite networks.”{"\n"}
-          {"\n"}“That’s wild. And no, not really, I don’t really know how the internet works,” Jake said.” I know I use the internet to log into apps and websites. And to play multiplayer games. I mean, yea, almost everything uses the internet. But I
+          {"\n"}“That’s wild. And no, not really, I don’t really know how the internet works,” Jake said. I know I use the internet to log into apps and websites. And to play multiplayer games. I mean, yea, almost everything uses the internet. But I
           don't really know what it's doing to make everything connect.”{"\n"}
           {"\n"}Zena replied, “Sometimes it’s good to recognize what we do not know. The internet is simple when you look at it from a high-level. It enables computers from anywhere on your planet, or even the universe, to communicate, incredibly
           fast. It is essentially a network <Text style={{ fontFamily: "gelasibro-italic" }}>of</Text> computer networks. And it operates not much differently than the postal system you use to send physical mail.”{"\n"}
@@ -184,7 +184,7 @@ export default class Chapter15 extends Component<IProps> {
           the post office. Then the employee in the post office puts it on a truck that takes it to a post office in California. Then an employee there puts it on a delivery vehicle that takes it to a post office in Chula Vista. The{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>point</Text> is, each employee pushes the letter in the <Text style={{ fontFamily: "gelasibro-italic" }}>general</Text> direction of your friend’s home, until it funnels all the way down to
           the local mail person who will deliver the postcard to your friend’s street address."{"\n"}
-          {"\n"}“It's a series of <Text style={{ fontFamily: "gelasibro-italic" }}>nodes,</Text> connecting points on the network<Text style={{ fontFamily: "gelasibro-italic" }}>,</Text> that direct, our{" "}
+          {"\n"}“It's a series of <Text style={{ fontFamily: "gelasibro-italic" }}>nodes,</Text> connecting points on the network<Text style={{ fontFamily: "gelasibro-italic" }}>,</Text> that direct, or{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>route</Text>, our letter. Each node has more information about where the letter should go next, but no node, except the last, actually sends it to exactly where it needs to go, only the{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>general</Text> direction. The internet works in a nearly <Text style={{ fontFamily: "gelasibro-italic" }}>identical</Text> fashion. When we send a message over the internet, the message is
           addressed, and then moves through a series of nodes, or post offices, which we call <Text style={{ fontFamily: "gelasibro-italic" }}>routers</Text> in internet terms, until it can be delivered locally to the correct street address, or{" "}
@@ -219,7 +219,7 @@ export default class Chapter15 extends Component<IProps> {
           {"\n"}Zena took a deliberately slow sip of her libation. “Now where were we? Right, we talked a bit about the internet, and we discussed the client-server model. Next”—she pounded her fist against the table, the metal wrench on the table
           rattled loudly—“we must discuss the language clients and servers use to communicate with one another over the internet.”{"\n"}
           {"\n"}“They have a language?” Jake asked.{"\n"}
-          {"\n"}“They most certainly do, kid.” Zena’s eyes lit up. “Sometimes we refer to this language that computer’s use to communicate between one another as a <Text style={{ fontFamily: "gelasibro-italic" }}>protocol</Text>.{" "}
+          {"\n"}“They most certainly do, kid.” Zena’s eyes lit up. “Sometimes we refer to this language that computers use to communicate between one another as a <Text style={{ fontFamily: "gelasibro-italic" }}>protocol</Text>.{" "}
           <GlossaryWord lookup_string="Protocol" word="Protocol" toggleGlossary={this.props.toggleGlossary} /> is a fancy way of saying language. The English language is a communication protocol. It abides by a strict set of rules, or grammar, that
           enable individuals to understand one another.{"\n"}
           {"\n"}“I never thought about it that way, but yea, I guess that’s how communication works,” Jake remarked.{"\n"}
@@ -309,7 +309,7 @@ export default class Chapter15 extends Component<IProps> {
           information, or asking the server to save information for later, we can make it much easier for our server to accomplish these tasks efficiently. For example, on Jonko’s server, we need to use a POST request when we ask his server to
           decrypt these characters. The reason for this is that we need to send the server a relatively large <GlossaryWord lookup_string="Payload" word="payload" toggleGlossary={this.props.toggleGlossary} />: the cipher we want it to decrypt. His
           server may also save this cipher for later to better train his code decryption <GlossaryWord lookup_string="Algorithm" word="algorithms" toggleGlossary={this.props.toggleGlossary} />
-          .” She scrolled down the page. “Here, check this out. This is an example of a real HTTP GET request, and the one below is a real example of an HTTP Post request. You can see, an HTTP request is fairly easy to read–it’s just text.”
+          .” She scrolled down the page. “Here, check this out. This is an example of a real HTTP GET request, and the one below is a real example of an HTTP POST request. You can see, an HTTP request is fairly easy to read–it’s just text.”
         </Text>
         <View style={GlobalStyles.flexCenter}>
           <StoryGraphic height={107} width={300} radius={"none"} source={require("./../../assets/images/lessons/lesson9_1.png")} />

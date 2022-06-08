@@ -118,7 +118,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}The path they were on took its course from the outermost row of tents all the way to the first, right up to the central square of the Enlightened festival. As they walked through the arrangement, Jake examined the lodgings to see if
           he could sense any life. Lights flickered, voices spoke in English and other languages he did not recognize, and he could even smell the scent of exotic foods and perfumes.{"\n"}
           {"\n"}Ten rows later, they passed a human couple. They sat on the wooden steps of their elevated tent, drinking something from their green mugs. A few rows beyond them, a group of men and women were applying sunblock to their bodies, one of
-          the men covered in dark tribal tattoos.{"\n"}
+          the men was covered in dark tribal tattoos.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I need some of that sunblock</Text>.{"\n"}
           {"\n"}As they trotted down the path, life became more plentiful and more alien. A group of creatures, who appeared to be of the same race as Zena, sat on the ground in a circle. They were playing cards. Jake could see that they were in
@@ -173,7 +173,7 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}"Good game, fellas," <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Zimmer said as they shook hands at the net.{"\n"}
           {"\n"}Zena looked towards a group of maintenance personnel setting up what looked like tables in the sand. "They are already getting ready for tonight. Let’s hit the showering houses!"{"\n"}
           {"\n"}Over the next hour and a half, the four of them walked back to their tent, showered, and got dressed in their gala attire. Jake wiggled into the black tuxedo pants that Dendro had left on his bed. He buttoned up his white shirt, threw
-          on the black jacket, and strapped on the snap-on bowtie that Zimmer had lent him. Then he picked up the silver axe Dendro left on his chair and tucked it into a weapon's holder on the suit's interior.{" "}
+          on the black jacket, and strapped on the snap-on bowtie that Zimmer had lent him. Then he picked up the silver axe Dendro left on his chair and tucked it into a weapon's holder on his suit's interior.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Fits perfectly</Text>. Dendro said it was better to have it on him just in case, especially now that he had some dojo training. Lastly, he slipped on the shiny black shoes and walked through
           his door.{"\n"}
           {"\n"}Dendro and Zimmer were already dressed and chatting when Jake walked into the main area. They both wore tuxedos, and Zimmer had slicked his thick mane back against his head. They were discussing the toughest physical workouts they’d
@@ -376,11 +376,11 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>I guess I’m going down here</Text>.{"\n"}
           {"\n"}Jake ripped out his own weapon and followed behind them.{"\n"}
-          {"\n"}They stood at the bottom of the staircase, watching the metallic demon circling Captain Tango and two security personnel. A painful shudder ran up his spine.{" "}
+          {"\n"}From afar, they stood at the bottom of the staircase, watching the metallic demon circling Captain Tango and two security personnel. A painful shudder ran up his spine.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>What the heck is that?</Text> Two curved, spiked horns protruded from the helmet of the ten-foot-tall creature.{"\n"}
           {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>They aren’t gonna try to fight that, are they?</Text> The tips of the thing’s black mace, the spiked club of a weapon, glowed violet, and a silver orb, like Dendro’s, hung from its chain. As
-          it circled Tango, Jake could see that its metal body armor was adorned with intricate carvings.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>They aren’t gonna try to fight that, are they?</Text> The tips of the thing’s black mace–the spiked club of a weapon–glowed violet, and a silver orb hung from its chain. As it circled Tango,
+          Jake could see that its metal body armor was adorned with intricate carvings.{"\n"}
           {"\n"}"LEAVE THIS PLACE AT ONCE, YOU VENTHUM ANIMAL!" they heard Captain Tango yell.{"\n"}
           {"\n"}As Jake began to realize that someone was going to have to step in and help, he felt the beef tagine and pumpkin cream pie attempting to negotiate a deal to come back out the same way they came. He was barely able to stifle the
           nauseating impulse.{"\n"}
@@ -437,8 +437,8 @@ export default class Chapter14 extends Component<IProps> {
           {"\n"}As she came back down to the ground, it kicked her square in the chest. Zena let out a howl as she flew backward. As the Knight moved towards her, it cocked back its mace, but Dendro and Zimmer sprinted at it from behind.{"\n"}
           {"\n"}"Get away from her, freak!" Zimmer roared, his carbon fiber axe raised high in the air above him. The Knight rotated gracefully and timed its mace impeccably, deflecting Zimmer’s axe, then spun in a supersonic blur, dodging Dendro's
           incoming assault.{"\n"}
-          {"\n"}Dendro, surprised by the creature’s astonishing speed, was caught off-balance. That’s when Jake heard Zena yell, even as she lay on the ground–the Knight crouched and swiped Dendro's legs out from under him with its mace. Dendro
-          moaned as he spun in the air and landed face up in a pile of broken furniture.{"\n"}
+          {"\n"}Dendro, surprised by the creature’s astonishing speed, was caught off-balance. That’s when Jake heard Zena yell, even as she lay on the ground–the Knight crouched and swiped Dendro's legs out from under him. Dendro moaned as he spun
+          in the air and landed face up in a pile of broken furniture.{"\n"}
           {"\n"}“Dendro!” Jake yelled. But he still was unsure how to act without getting himself killed.{"\n"}
           {"\n"}As the Knight locked in on the exposed Special Ops warrior, Zimmer took the split-second distraction to slash at the exposed leg of the creature. His blade collided with the armor with a loud{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>clang</Text>. The Knight spun around and tilted its neck towards where it had been hit. Its armor appeared to be just slightly tinged.{"\n"}

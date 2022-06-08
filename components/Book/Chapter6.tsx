@@ -70,8 +70,8 @@ export default class Chapter6 extends Component<IProps> {
           vision was still accessible. The irregular slabs of rock on the mountain top quickly approached. <Text style={{ fontFamily: "gelasibro-italic" }}>We're gonna crash!</Text> But a few moments later the snowcapped peaks in front of them had
           come and gone. Jake felt his body get lighter as they continued their descent.{"\n"}
           {"\n"}“There she is.” Dendro said, pointing.{"\n"}
-          {"\n"}Jake caught sight of a rectangular edifice nestled onto the top of a tall, slender mountain just off to their right. Faint light poured from the bottom of the structure, but the nature of the building was still too far to make out
-          clearly.{"\n"}
+          {"\n"}Jake caught sight of a rectangular edifice nestled onto the top of a tall, slender mountain just off to their right. Faint light poured from the bottom of the structure, but the exact nature of the building was still too far to make
+          out clearly.{"\n"}
           {"\n"}“That’s it? That’s the factory?” Jake asked.{"\n"}
           {"\n"}“Affirmative. Chiral Laboratories,” Dendro replied.{"\n"}
           {"\n"}Jake studied the structure. It resembled some kind of man-made bird’s nest by the way it sat almost nestled into the top of the mountain. As they approached, Jake could see its form more clearly. The building’s foundation appeared
@@ -346,7 +346,7 @@ export default class Chapter6 extends Component<IProps> {
           through it. This file didn’t seem to end. <Text style={{ fontFamily: "gelasibro-italic" }}>I’ll never find it in here</Text>, he thought. He opened the next two tabs,{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>factory_materials.py</Text> and <Text style={{ fontFamily: "gelasibro-italic" }}>personnel_wrapper.py</Text>. He scrolled through them. Same thing. Too much information. Too little time.
           {"\n"}
-          {"\n"}The command room gate smashed again. They were trying to get inside.{"\n"}
+          {"\n"}The command room gate smashed again.{"\n"}
           {"\n"}“LIEUTENANT RIVIERA IS ONE MINUTE OUT. YOU HAVE NO PLACE TO HIDE.”{"\n"}
           {"\n"}Jake looked at the file tabs again and exhaled. <Text style={{ fontFamily: "gelasibro-italic" }}>I’m looking for anything to do with key permissions</Text>. He clicked through more of the tabs. Same endless files of text, code, and
           mysterious symbols. <Text style={{ fontFamily: "gelasibro-italic" }}>How can I possibly find anything intelligible?</Text>
@@ -380,7 +380,7 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>They really are coming. How long is that road? Would they shoot me? Kill me? Arrest me?</Text>
           {"\n"}
-          {"\n"}He focused on the two-color coded lines of code.{" "}
+          {"\n"}He focused on the two lines of code.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>
             Dendro said I only get one chance at this; the permissions can only be updated once every twelve hours. Control-F took me here. Vault access and cargo access look like the permissions we need. What else could it be? These have to be
             variables storing information about the permissions. No additional files popped up. I have to go for it.
@@ -464,8 +464,8 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}
           {"\n"}“WE WILL IMMOBILIZE YOU!” the megaphone blasted again.{"\n"}
           {"\n"}More snow exploded to his right.{"\n"}
-          {"\n"}“Keep running, kid!” Dendro shouted. “Slide down behind me!” He dropped on his rear and pushed himself over the top of the ridge. He flew down effortlessly, dodging sharp rocks. When he was halfway down the slope, he kicked upward,
-          shot into the air, and flipped forward in a high arc, landing cleanly in front of the ship.{"\n"}
+          {"\n"}“Keep running, kid!” Dendro shouted. “Slide down behind me!” Dendro dropped on his rear and pushed himself over the top of the ridge. He flew down effortlessly, dodging sharp rocks. When he was halfway down the slope, he kicked
+          upward, shot into the air, and flipped forward in a high arc, landing cleanly in front of the ship.{"\n"}
           {"\n"}Jake’s eyes had followed the soldier as he flew through the air. <Text style={{ fontFamily: "gelasibro-italic" }}>Holy moly,</Text> he had thought. <Text style={{ fontFamily: "gelasibro-italic" }}></Text>But his body was temporarily
           frozen.{"\n"}
           {"\n"}Dendro shouted from below, “Slide down the side right there. Watch out for the two sharp ones. Like a sled. Get on your butt, now!”{"\n"}
@@ -498,7 +498,7 @@ export default class Chapter6 extends Component<IProps> {
           {"\n"}
           {"\n"}As the diving ship skimmed the face of the mountain, Jake looked at Dendro, holding on to his seat handles. <Text style={{ fontFamily: "gelasibro-italic" }}>Are we now going to crash after we just survived that debacle?</Text> Jake
           stared at the fast-approaching ground below, but a mere five hundred feet from the Earth, Dendro pulled backward on the throttle, which caused the ship to level off quickly then ascend. A few moments later the ship entered a nearly vertical
-          climb, like a rocket propelling into space. <Text style={{ fontFamily: "gelasibro-italic" }}>Is this okay on my organs?</Text> When they leveled off in the cloud, Jake gasped, finally able to suck in oxygen.{"\n"}
+          climb, like a rocket propelling into space. <Text style={{ fontFamily: "gelasibro-italic" }}>Is this okay on my organs?</Text> When they leveled off in the clouds, Jake gasped, finally able to suck in oxygen.{"\n"}
           {"\n"}“Thought I lost you for a moment,” Dendro said.{"\n"}
           {"\n"}He rubbed his hip again before he stood up and pulled off the white hazmat suit. “What happened to me?”{"\n"}
           {"\n"}“You went into shock. It happens,” Dendro said.{"\n"}

@@ -176,7 +176,7 @@ export default class Chapter12 extends Component<IProps> {
           He tied the white belt tightly around his waist. <Text style={{ fontFamily: "gelasibro-italic" }}>What am I about to do?</Text> He walked out of the room and approached the mat, the cold silver orb pressing up against his bare skin. Zena
           stood before him, and behind her, he noticed that the shelves on the back wall carried an assortment of weapons he couldn't quite make out. Zimmer and Dendro stood off to the side, watching.{"\n"}
           {"\n"}“Looking sharp,” Zena said. She was dressed in tight leather pants, white boots, and a black dri-fit long-sleeved t-shirt. “I am glad to see you’ve accepted the challenge of training with us today. Now, the benefit lesson I will begin
-          shortly is known as <Text style={{ fontFamily: "gelasibro-italic" }}>the Function</Text>. Zena flipped backward once on the mat, landed, stood up straight, and then began stretching out her arms. “If this lesson is successfully completed in
+          shortly is known as <Text style={{ fontFamily: "gelasibro-italic" }}>The Function</Text>. Zena flipped backward once on the mat, landed, stood up straight, and then began stretching out her arms. “If this lesson is successfully completed in
           the eyes of the Utma, she will grant you the metaphysical power of <Text style={{ fontFamily: "gelasibro-italic" }}>the Accelerated Parry</Text>.”{"\n"}
           {"\n"}“<Text style={{ fontFamily: "gelasibro-italic" }}>The Accelerated Parry?</Text>” Jake asked.{"\n"}
           {"\n"}“Yes. <Text style={{ fontFamily: "gelasibro-italic" }}>The Accelerated Parry</Text> is an essential defensive and counter defensive measure in the Solar Forces fighting toolkit. But before we explore the moves, let's talk about what
@@ -562,7 +562,7 @@ export default class Chapter12 extends Component<IProps> {
           He wrote his final submission on the board and backed away.{"\n"}
           {"\n"}“Now come here my friend. This is correct. But there is one final question,” she said. “What is the term we discussed? Something that a function permits.”{"\n"}
           {"\n"}“Reusability,” he answered.{"\n"}
-          {"\n"}A wave of lightheadedness ran through him. Then the burning sensation-the strongest so far. <Text style={{ fontFamily: "gelasibro-italic" }}>Ah</Text>. He rolled up his right sleeve. A pyramid-looking shape sat etched below the other
+          {"\n"}A wave of lightheadedness ran through him. Then the burning sensation–the strongest so far. <Text style={{ fontFamily: "gelasibro-italic" }}>Ah</Text>. He rolled up his right sleeve. A pyramid-looking shape sat etched below the other
           two markings. <Text style={{ fontFamily: "gelasibro-italic" }}>That stings so bad</Text>. He shook his arm to distract himself from the fiery feeling.{"\n"}
           {"\n"}“Congratulations. You have passed this test.” Zena pushed the board away, then faced him, and bowed.{"\n"}
           {"\n"}Jake looked at her curiously, then bowed back.{"\n"}
@@ -587,9 +587,9 @@ export default class Chapter12 extends Component<IProps> {
           opponent’s strike.”{"\n"}
           {"\n"}Zena walked to the center of the mat and signaled for Jake to follow. As he walked up to her, she stood still, spreading her feet apart and bending her knees, forming a reactive fighting stance. “We always keep our bodies in athletic
           form when we train.” Jake examined the positioning of her feet, limbs, and back. He spread his legs out, straightened his spine, and bent his knees.{"\n"}
-          {"\n"}"Good. Practice that for a moment." As Zena headed for the shelf, Jake stayed in position, trying to get his body to feel more comfortable. When came back a few moments later carrying a long, curved sword, she gently kicked the back
-          of his right knee. “Always keep your knees slightly bent and keep them flexible. Not so stiff.” She examined his posture. “Good, now hold your axe upright with both hands. Like this.” She held her weapon just above her right shoulder. Jake
-          copied her.{"\n"}
+          {"\n"}"Good. Practice that for a moment." As Zena headed for the shelf, Jake stayed in position, trying to get his body to feel more comfortable. When Zena came back a few moments later carrying a long, curved sword, she gently kicked the
+          back of his right knee. “Always keep your knees slightly bent and keep them flexible. Not so stiff.” She examined his posture. “Good, now hold your axe upright with both hands. Like this.” She held her weapon just above her right shoulder.
+          Jake copied her.{"\n"}
           {"\n"}"Now, the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Accelera One</Text> is already inside of you. You have earned it. As I mentioned, it's as simple as envisioning yourself"—she paused—"
           <Text style={{ fontFamily: "gelasibro-italic" }}>moving like a blur</Text> to the right or left of your opponent. Other spiritual teachers have described the feeling as an envisioning of yourself moving through space, instantaneously, like
           a sort of teleportation, even though we know that is not quite what is occurring. I'm going to come at you slowly." She backed up five paces. "Try to dodge my strike."{"\n"}

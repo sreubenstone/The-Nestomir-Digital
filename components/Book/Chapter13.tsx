@@ -51,8 +51,8 @@ export default class Chapter13 extends Component<IProps> {
         }
         <Text style={BookStyles.bookFont}>
           It was 10:50 a.m. when Jake woke up the next morning. He slid up and moaned as he pressed down on his pecs and shoulders. <Text style={{ fontFamily: "gelasibro-italic" }}>Why am I this sore?</Text> He played through the training in his
-          mind. <Text style={{ fontFamily: "gelasibro-italic" }}>I guess that axe was heavier than I realized.</Text> He pulled himself out of bed, took a quick shower, and threw his clothes and his chain, and dropped the beeper that he left on his
-          desk into his pocket.{"\n"}
+          mind. <Text style={{ fontFamily: "gelasibro-italic" }}>I guess that axe was heavier than I realized.</Text> He pulled himself out of bed, took a quick shower, and threw on his clothes and his chain, and dropped the beeper that he left on
+          his desk into his pocket.{"\n"}
           {"\n"}When he got into the kitchen, he saw a familiar note on the wall.{"\n"}
           {"\n"}
           <Text style={{ textAlign: "center" }}>Out again. Back later. Don’t wander off. Keep beeper on you. – Dendro</Text>
@@ -438,8 +438,8 @@ export default class Chapter13 extends Component<IProps> {
           {"\n"}
           {"\n"}He flipped to the first chapter, <Text style={{ fontFamily: "gelasibro-italic" }}>The Learning Tenets</Text>. He started near the top. “Jakoba Elianu, 3,434 Sentient Age: The first tenet is{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>La’Tishvah</Text>: We must build to learn.” <Text style={{ fontFamily: "gelasibro-italic" }}>Dendro spoke of this</Text>, Jake thought. He read the paragraph below the quote which spoke about
-          the power of learning with purpose. How did this person know so much about learning so long ago? And how did it survive so many generations? He scanned further down the page and found another interesting segment. "The second learning tenet
-          I shall call <Text style={{ fontFamily: "gelasibro-italic" }}>Natura</Text>: When we learn we must recognize Nature’s intent.”{"\n"}
+          the power of learning with purpose. How did this person know so much about learning so long ago? And how did it survive so many generations? He scanned further down the page and found another interesting segment. "The third learning tenet
+          shall state: We Must Respect What Nature is Telling Us.”{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>This is interesting. I need Dendro to teach me more of this stuff,</Text> Jake thought as he flipped through the pages. <Text style={{ fontFamily: "gelasibro-italic" }}></Text>He perused a
           few other passages: <Text style={{ fontFamily: "gelasibro-italic" }}>The Birth of Naronian Culture</Text>, <Text style={{ fontFamily: "gelasibro-italic" }}>The Function</Text>, <Text style={{ fontFamily: "gelasibro-italic" }}></Text>and{" "}

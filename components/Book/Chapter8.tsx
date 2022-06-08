@@ -144,8 +144,8 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}"Relax. It's me," Dendro whispered. "I must take them on the rink. It is our best chance. But this time, there will be no distractions or decoys to take advantage of,” Dendro said. “It will be a dog fight.” He pulled open his Solar
           Forces robe and pulled out a silver axe that Jake had not seen before. It was similar in shape to his own, but smaller. He spun it once in his hands, the metal catching silver rays of the moonlight, then handed it to Jake.{"\n"}
           {"\n"}"This is for me?" Jake asked, stunned.{"\n"}
-          {"\n"}Dendro nodded. "In case things go south, you will be armed.” Dendro unsheathed his golden axe. "The rink will give us our best chance to defeat them. It will reduce heat signature tracking, which affects weapon guidance at both close-
-          and long-range." Dendro spun his axe around in his hand. "Stay behind the walls. Do not get on the ice. Our best hope is that I fight them off, axe to sword, with everything I've got. Use the axe only if necessary. Stay hidden." Dendro
+          {"\n"}Dendro nodded. "In case things go south, you will be armed.” Dendro unsheathed his golden axe. "The rink will give us our best chance to defeat them. It will reduce heat signature tracking, which affects weapon guidance at both close
+          and long range." Dendro spun his axe around in his hand. "Stay behind the walls. Do not get on the ice. Our best hope is that I fight them off, axe to sword, with everything I've got. Use the axe only if necessary. Stay hidden." Dendro
           walked ahead.{"\n"}
           {"\n"}"Wait!” Jake said. “I don’t even know how to use this thing."{"\n"}
           {"\n"}But Dendro was moving towards the rink with a determined stride. Jake shook his head as he held the axe in his hands. <Text style={{ fontFamily: "gelasibro-italic" }}>That guy,</Text> Jake thought.{"\n"}
@@ -182,11 +182,11 @@ export default class Chapter8 extends Component<IProps> {
           {"\n"}He cocked his legs and flipped high in the air over the two troopers. On his way down, he slashed his axe down on the protruding legs of his rightmost opponent. The creature tumbled backward and let off a demented howl. But it was not
           dead. It stood back up, limping severely, liquid oozing from its skin.{"\n"}
           {"\n"}As Dendro turned around, a confident grin appeared on his face. He knew he had an opportunity to make this fight one on one.{"\n"}
-          {"\n"}“I WILL BREAK YOU!” Dendro roared. He glanced at his injured opponent, then darted forward at the healthy one.; his eyes glared with a determination of undeterrable will. A moment later, he met the glowing sword of his healthy foe
-          with a sequence of heavy blows, which caused his opponent to take a few steps backwards on the ice. It was enough space to let him do what he did next: back flip in front of the injured foe fifteen feet behind him. His feet landed silently,
-          and the axe came down with tremendous speed, knocking the blade from his opponent's grip. The creature’s face wore a look of frightened surprise. Then Dendro's weapon sailed back around through the night air and cut through the creature's
-          torso. It moaned as its body crumpled onto the ice. The healthy trooper walked up to its dying comrade as Dendro shuffled backwards to the edge of the rink.{"\n"}
-          {"\n"}After exchanging some indiscernible words, the healthy Venthum trooper pulled the glowing sword over the injured fighter and slung it deep into his comrade’s neck. There was a sizzling of smoke and the fighter's eyes closed shut.
+          {"\n"}“I WILL BREAK YOU!” Dendro roared. He glanced at his injured opponent, then darted forward at the healthy one; his eyes glared with a determination of undeterrable will. A moment later, he met the glowing sword of his healthy foe with
+          a sequence of heavy blows, which caused his opponent to take a few steps backwards on the ice. It was enough space to let him do what he did next: back flip in front of the injured foe fifteen feet behind him. His feet landed silently, and
+          the axe came down with tremendous speed, knocking the blade from his opponent's grip. The creature’s face wore a look of frightened surprise. Then Dendro's weapon sailed back around through the night air and cut through the creature's
+          torso. It moaned as its body crumpled onto the ice. A few moments later, the healthy trooper walked up to its dying comrade as Dendro shuffled backwards to the edge of the rink.{"\n"}
+          {"\n"}After exchanging some indiscernible words, the healthy Venthum trooper pulled its glowing sword over the injured fighter and slung it deep into his comrade’s neck. There was a sizzling of smoke and the fighter's eyes closed shut.
           {"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>That’s sick</Text>, Jake thought.{"\n"}

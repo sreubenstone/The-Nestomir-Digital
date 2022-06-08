@@ -97,7 +97,7 @@ export default class Chapter10 extends Component<IProps> {
           wolf-like nose, and eyes. The rest of his body had human-like skin, but Jake noticed that his arms had streaks of extremely thick white and gray hair. Then Jake saw the markings on his forearms.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Who is this guy?</Text> The beast of a man wore tan military boots, camouflage pants, a tight white shirt that brought out his pecs, and a diamond-encrusted dog tag, as well as a silver orb
           on a separate chain. Jake also caught sight of some kind of bronze weapon on his belt line.{"\n"}
-          {"\n"}"And is this your companion?" the wolf-man exclaimed, slightly slurring his speech. He took a step towards Jake and stuck out his thick forearm. “The name’s Zimmer. I’m an old buddy of Dendro.”{"\n"}
+          {"\n"}"And is this your companion?" the wolf-man exclaimed, slightly slurring his speech. He took a step towards Jake and stuck out his thick forearm. “The name’s Zimmer. I’m an old buddy of Dendro's.”{"\n"}
           {"\n"}"Jake. Jake Addison," Jake replied.{"\n"}
           {"\n"}As Zimmer stood near him, Jake inhaled the scents of wine and cologne. The wolf-man was taller than Dendro and much thicker. He grinned at Jake.{"\n"}
           {"\n"}"He's great, Dendro! I like the suit on him. Looks just like you buddy! Just needs a little more muscle on him but not to worry, he's got time!"{"\n"}
@@ -210,7 +210,7 @@ export default class Chapter10 extends Component<IProps> {
           chaos to add to the journey, and it didn't look good, us being in a clunky freighter, so I felt it was wisest to eject you. I knew your ship could take the hit, as long as you hit land. I had to let you go. I knew you'd been through worse
           and that your ship's emergency boosters would alleviate some of the impact.{"\n"}
           {"\n"}“So I watched you fall down towards what they call North America, as we jettisoned around Earth's orbit. He hit me good once, blew out one of my rear blaster engines, and my shields took serious damage, but what he didn't know was
-          that my baby was retrofitted with Prometheus II's--the most expensive cruise missiles in the galaxy. I guess he didn't realize the price I put on defense. A few revolutions later, I stalled, and got him in front of me for a few moments, and
+          that my baby was retrofitted with Prometheus II's–the most expensive cruise missiles in the galaxy. I guess he didn't realize the price I put on defense. A few revolutions later, I stalled, and got him in front of me for a few moments, and
           that was it for him. Bye bye. The Prometheuses must have looked like kisses of death from the devil himself. I found out later he was a bounty hunter from{" "}
           <GlossaryWord lookup_string="Limora" word="Limora" toggleGlossary={this.props.toggleGlossary} /> who worked for another Jasmine Tea dealer, someone I had a run in with in the past. He had eyes on the ground on Indo-One, and someone tipped
           him off when I departed.{"\n"}
@@ -369,7 +369,7 @@ export default class Chapter10 extends Component<IProps> {
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>[</Text>  <Text style={{ color: "#0C2443", fontFamily: "code" }}>]</Text> next to the name of our dictionary. We then place the name of the key inside of it, in quotes, like this.”
           Kliggins continued pointing at the board.{"\n"}
           {"\n"}“I am asking Python: retrieve the value of the key <Text style={{ fontFamily: "gelasibro-italic" }}>Effervescent</Text> from the dictionary <Text style={{ fontFamily: "gelasibro-italic" }}>mydictionary</Text>. The result, if we
-          printed this expression to our screen, will be, you guessed it, will be <Text style={{ color: "#0C2443", fontFamily: "code" }}>vivacious; merry; lively; sparkling</Text>, which is the definition, or the value, of the key{" "}
+          printed this expression to our screen, will be, you guessed it, <Text style={{ color: "#0C2443", fontFamily: "code" }}>vivacious; merry; lively; sparkling</Text>, which is the definition, or the value, of the key{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Effervescent</Text>."{"\n"}
           {"\n"}Kliggins walked back to the middle of the room. He leaned back against his desk.{"\n"}
           {"\n"}"Dictionaries are great for when we want to store and lookup things by a name. They are so useful it's nearly impossible not to use them when we design a new program or application. But there is another data structure your hearts and

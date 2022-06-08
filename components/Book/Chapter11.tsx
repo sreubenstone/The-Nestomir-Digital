@@ -114,7 +114,7 @@ export default class Chapter11 extends Component<IProps> {
           {"\n"}"Do you ever get to visit them?" Jake asked.{"\n"}
           {"\n"}"I can't. Immigrating into Naronia is a tough process. I got to Naronia on a Nestomir II Shield, which allows immigrants to study in Naronia. However, the catch is that you must finish your entire Learner’s Program before you can
           return to your home planet. It’s many years of dedication and serious study. The Naronian Senate uses the shields to limit the number of people applying for these passes. It allows them to make sure you're committed to your Learner’s
-          Program. But I, let’s say, kind of put my official Learner’s Program on pause, you see. And if you do go back home, without completing your program, you are never allowed to return to your native planet.”{"\n"}
+          Program. But I, let’s say, kind of put my official Learner’s Program on pause, you see. And if you do go back home, without completing your program, you are never allowed to return to Naronia.”{"\n"}
           {"\n"}"Wow. That is rough,” Jake said.{"\n"}
           {"\n"}“The universe can be rough,” Zena responded. She looked away for a moment.{"\n"}
           {"\n"}“So how did you end up working with Zimmer? Is he your boyfriend?” Jake asked.{"\n"}

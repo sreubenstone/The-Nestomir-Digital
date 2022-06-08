@@ -56,8 +56,8 @@ export default class Chapter16 extends Component<IProps> {
           {"\n"}"About an hour," Dendro responded. "We're almost there."{"\n"}
           {"\n"}Maybe this is all coming to an end, he thought. Dendro had explained at takeoff that he had no choice but to bring Jake home. It was the least dangerous option with Zimmer gone, Knights of Dieu Khien after them, and still no
           communication access to his men. Spectator One would be disobeyed.{"\n"}
-          {"\n"}Jake studied the interstellar booster's control screen. The display had been embedded into the cockpit’s center console. A multi-colored circular progress meter sat in the center. That is a magical piece of equipment. Dendro now had
-          the power to cut through space and traverse the heavens at will.{"\n"}
+          {"\n"}Jake studied the interstellar booster's control screen. The display had been embedded into the cockpit’s center console. A multi-colored circular progress meter sat in the center. Dendro now had the power to cut through space and
+          traverse the heavens at will.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>What are Mom and Jimmy doing right now?</Text> Hundreds of people must have been searching for him. Had he been on the local news? Did they think he had been kidnapped, or worse? No matter
           what his family thought, he had to get back to them. The story he told mattered less.{"\n"}
@@ -104,7 +104,7 @@ export default class Chapter16 extends Component<IProps> {
           {"\n"}Jake explained to the police he had slept in an alleyway a town over (he took the train), snatched food from a local grocery store, and sat in a neighborhood park during the day (garnering quite a tan, though his mother found that
           quite peculiar) thinking about the things that were troubling his mind. But there were no talks of Naronia, distant galaxies, or the <GlossaryWord lookup_string="Theutma" word="Utma" toggleGlossary={this.props.toggleGlossary} />.{"\n"}
           {"\n"}A few weeks later, as snowy October skies pushed away the temperate weather of September, Jake stood in his bedroom looking into the mirror. He had just showered. His arms looked stronger, thicker somehow.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>I don't look like me,</Text> he thought. He ran his fingers over the three markings on his forearm. He might be able to hide these during winter, but he hadn’t the faintest idea what he was
+          <Text style={{ fontFamily: "gelasibro-italic" }}>I don't look like me,</Text> he thought. He ran his fingers over the four markings on his forearm. He might be able to hide these during winter, but he hadn’t the faintest idea what he was
           going to do come spring.{"\n"}
           {"\n"}Going back to school had not been as awkward as he had imagined. He had been through too much to worry about the name-calling and funny stares. His teachers treated him with discretion, and he had even been ordered to meet with the
           middle school’s social worker twice per month. But once he got through the first couple of weeks, things settled back to a relative normal.{"\n"}
@@ -125,7 +125,7 @@ export default class Chapter16 extends Component<IProps> {
           {"\n"}He completed another chapter on the evolution of software. His mind was enthralled by the concepts of binary numbers, design patterns, and composition. He now understood that this knowledge gave him the power to change worlds.{"\n"}
           {"\n"}As he sat at his desk, he couldn’t get the thoughts of Dendro, Zimmer, and Zena out of his mind. Would he ever see them again? He pulled his back against his chair for a moment to stretch.{"\n"}
           {"\n"}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Was any of it real?</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Was any of it real?</Text> He had a feeling he still had a part to play in their quest.
           {"\n"}
           {"\n"}He twiddled the pen in his hand. Then he stood up and walked over to his window. He peered through the branches of the maple tree. Then he gazed into the evening sky, past the thick layer of clouds, across the constellations, into the
           brightest of shining night stars.

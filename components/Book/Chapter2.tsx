@@ -211,7 +211,8 @@ export default class Chapter2 extends Component<IProps> {
           {"\n"}“How was your defense, Jake? Did anyone score on you?” Jimmy asked.{"\n"}
           {"\n"}“No. No one scored on me. But I did miss a few easy plays on defense. So annoyed,” Jake said. He was aching to talk to someone about Dylan but was too embarrassed.{"\n"}
           {"\n"}“Don’t beat yourself up Jake. We all know you’re good at that game. Now doing your schoolwork on time is another story,” Diana said, and Jimmy laughed.{"\n"}
-          {"\n"}Jake sat there, slowly chewing his noodles. He knew something was bothering him, but he wasn’t exactly sure what it was. Could Dylan be the cause? His mother looked at him as if she knew Jake was upset, but she said nothing.{"\n"}
+          {"\n"}Jake sat there, slowly chewing his noodles. Jake knew something was bothering him, but he wasn’t exactly sure what it was. Could Dylan be the only cause? His mother looked at him as if she knew Jake was upset, but she said nothing.
+          {"\n"}
           {"\n"}A few hours later, Jake stood by his bedside window looking out at the Manitoba Maple. <Text style={{ fontFamily: "gelasibro-italic" }}>Maybe life would be easier as a tree?</Text> He thought about the story Mrs. Blum told them about
           deforestation happening around the world. <Text style={{ fontFamily: "gelasibro-italic" }}>Maybe not</Text>.{"\n"}
           {"\n"}He let out a heavy belch of fried noodles and soy sauce. His eyes fell on one of the tree’s leaves, its golden texture rustling in the wind. He could see its veins and flawless geometry.{" "}

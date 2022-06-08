@@ -55,10 +55,10 @@ export default class Chapter1 extends Component<IProps> {
           was only jealousy that made people say bad things about him. But Jake knew there were two sides to his grandfather’s story.{"\n"}
           {"\n"}There was no doubt that Willie was a math and physics prodigy. As an eighteen-year-old, he made a name for himself in 1950’s academia when he self-published insights concerning a solution for the famous{" "}
           <GlossaryWord lookup_string="Riemannhypothesis" word="Riemann Hypothesis" toggleGlossary={this.props.toggleGlossary} />. It was a math problem that had stumped scientists and mathematicians for hundreds of years. Willie made a name for
-          himself by publishing groundbreaking research papers but was out of academia. It happened in the fall of 1968, after a scandal involving Willie’s alleged plagiarizing of his research partners. His university never officially accused him of
-          wrongdoing, but they also never came to his defense. Out of frustration, Willie stepped away from academia and joined Quantum Teletronics, a cutting edge electronics company at the time founded by Willie’s college friend, Arthur Lemoire.
-          Willie’s ingenious efforts at Quantum Teletronics ended up helping modernize the designs of the modern microchip. But a decade after joining Quantum, he was involved in yet another scandal—he was accused of stock fraud. After many legal
-          battles, and government fines, Willie had no job and no money. A year later he died.{"\n"}
+          himself by publishing groundbreaking research papers but was kicked out of academia. It happened in the fall of 1968, after a scandal involving Willie’s alleged plagiarizing of his research partners. His university never officially accused
+          him of wrongdoing, but they also never came to his defense. Out of frustration, Willie stepped away from academia and joined Quantum Teletronics, a cutting edge electronics company at the time founded by Willie’s college friend, Arthur
+          Lemoire. Willie’s ingenious efforts at Quantum Teletronics ended up helping modernize the designs of the modern microchip. But a decade after joining Quantum, he was involved in yet another scandal—he was accused of stock fraud. After many
+          legal battles, and government fines, Willie had no job and no money. A year later he died.{"\n"}
           {"\n"}Jake stood for a moment longer looking at his ancestry and then walked down the hallway to his younger brother’s room. He knocked on the door.{"\n"}
           {"\n"}“What?! I’m about to drop into a battle royale!” Jimmy yelled.{"\n"}
           {"\n"}“Dude, we have to get to school. Mom is out with Aunt Holly, I told you,” Jake said.{"\n"}

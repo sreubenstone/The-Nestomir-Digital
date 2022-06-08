@@ -221,8 +221,8 @@ export default class Chapter9 extends Component<IProps> {
           the libraries that we employ. That's why programmers spend so much time reading documentation—the instruction guides—that the creators of libraries generate for other users.”{"\n"}
           {"\n"}Dendro paused for a moment to check another monitor read out. “Another thing I should mention to you is that many of Naronia’s spiritual leaders have predicted that this open-source ecosystem of software will lead to a creative golden
           age. Some, in fact, believe it's already occurred. The access to these libraries is a key factor in creating opportunities for individual creators in both of our galaxies. We, as individual creators, can now bring so much power to our
-          projects, so inexpensively, that it is now possible for individuals to create things as extraordinary as the big companies out there.  All it takes is knowledge and passion. The open-source software ecosystem is participating in evening the
-          playing field of life.”{"\n"}
+          projects, so inexpensively, that it is possible for us to create things that can compete with the creations of big companies.  All it takes is knowledge and passion. The open-source software ecosystem is participating in evening the playing
+          field of life.”{"\n"}
           {"\n"}“Wow, I hadn’t thought about it that way,” Jake said.{"\n"}
           {"\n"}“Everything will be touched by open source, coder or not, so we must all be aware of its profound essence around us.” Dendro swiveled the keyboard tray towards Jake. “Here, the terminal window is open. I want you to install your first
           library. Let's try{" "}

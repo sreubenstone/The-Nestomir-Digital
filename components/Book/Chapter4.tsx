@@ -42,8 +42,8 @@ export default class Chapter4 extends Component<IProps> {
           through Jake.{"\n"}
           {"\n"}He backpedaled slowly.{"\n"}
           {"\n"}The creature put its hand up again.{"\n"}
-          {"\n"}“What is your name?” the creature asked in a gravelly voice. It wiped the dirt off its legs and dark boots. A wide belt wound around its body with all sorts of mysterious things: something that looked like a pair of grenades, a
-          dagger, and most noticeably, a treacherous golden axe.{"\n"}
+          {"\n"}“What is your name?” the creature asked in a gravelly voice. It wiped the dirt off its legs and dark boots. A thick belt wound around its body with all sorts of mysterious things hanging from it: something that looked like a pair of
+          grenades, a dagger, and most noticeably, a treacherous golden axe.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Jake</Text> shivered violently. <Text style={{ fontFamily: "gelasibro-italic" }}>I’m tripping.</Text>
           {"\n"}
@@ -171,7 +171,7 @@ export default class Chapter4 extends Component<IProps> {
           queasy.{"\n"}
           {"\n"}“I cannot take you back. Not yet. It is a strict <GlossaryWord lookup_string="Thesolarforces" word="Solar Forces" toggleGlossary={this.props.toggleGlossary} /> protocol, even out-of-galaxy.”{"\n"}
           {"\n"}“Let me go! I beg you!” Jake shrieked.{"\n"}
-          {"\n"}The creature took its hand off the joystick. “You are not being kidnapped, kid. Whether you deserve it, doesn’t matter. My duty now is to keep you safe.”{"\n"}
+          {"\n"}The creature took its hand off the joystick. “You are not being kidnapped, kid. My duty now is to keep you safe.”{"\n"}
           {"\n"}Jake started to tremble again. He felt like he was going to throw up.{"\n"}
           {"\n"}The creature’s eyebrows rose as he studied a smaller purple screen on the central console. “We have no choice but to fix our Communications Receiver. The{" "}
           <GlossaryWord lookup_string="Radium" word="radium" toggleGlossary={this.props.toggleGlossary} /> core is corrupted.”{"\n"}
@@ -183,7 +183,7 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}
           <Text style={{ textAlign: "center" }}>40.7608° N, 111.8910° W | 1,437 Miles | Waypoint Guidance Available</Text>
           {"\n"}
-          {"\n"}“It seems <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} /> has discovered a candidate for us to get our Radium needed to fix our receiver. Let’s see here.” The warrior
+          {"\n"}“It seems <GlossaryWord lookup_string="Lithiumradar" word="Lithium Radar" toggleGlossary={this.props.toggleGlossary} /> has discovered a candidate for us to get the Radium needed to fix our receiver. Let’s see here.” The warrior
           creature scrolled through the map. “Yes, it has identified a laboratory just outside of Salt Lake City, Utah, United States, North America, as a 99.997% positive source of Radium.”{"\n"}
           {"\n"}The creature clicked on a blinking indicator on the screen. He looked at a set of characters too hard to see from where Jake was sitting. “It appears to be a private laboratory facility...
           <Text style={{ fontFamily: "gelasibro-italic" }}>Chiral Laboratories</Text>...it does contract work for your government...won’t be able to get more information until we’re on the ground in the vicinity of their wired network.”{"\n"}
@@ -201,7 +201,7 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}
           {"\n"}They accelerated faster now.{"\n"}
           {"\n"}“Hold on, friend!” the creature uttered.{"\n"}
-          {"\n"}The ship blazed across the corn filled terrain. It was faster than any airplane Jake had ever been in. And a lot more uncomfortable.{"\n"}
+          {"\n"}The ship blazed across the corn-filled terrain.{"\n"}
           {"\n"}The creature pulled the joystick in the reverse. The nose picked upward gently. Jake felt his weight shift. <Text style={{ fontFamily: "gelasibro-italic" }}>Woah.</Text> To his right the ground was already departing. They were
           airborne.{"\n"}
           {"\n"}The G-force increased as the ship jetted into the sky. Cedar Oaks receded quickly, and before he knew it, the first clouds were grazing across the eccentrically curved nose of the ship.{"\n"}
@@ -231,7 +231,7 @@ export default class Chapter4 extends Component<IProps> {
           <Text style={{ fontFamily: "gelasibro-italic" }}>you</Text> real? A spaceship? An alien warrior? I just want to get back to my family. I swear, I will pretend this was a dream. No one will ever know. I promise you on my mother’s and
           brother’s life.”{"\n"}
           {"\n"}“I am sorry. There is nothing I can do until I can communicate back to base. Let’s fix this receiver and you’ll be home soon,” Dendro said.{"\n"}
-          {"\n"}Jake squeezed his head back against the headrest as they cut through the ozone. The blue light beams on the long nose of the ship reflected through the damp night sky. A new reality began to set in. And Jake had no control.{"\n"}
+          {"\n"}Jake squeezed his head back against the headrest as they cut through the ozone. The blue light beams coming from the nose of the ship projected through the damp night sky. A new reality began to set in. And Jake had no control.{"\n"}
           {"\n"}“So you are some kind of warrior, a captain from your galaxy?” Jake asked.{"\n"}
           {"\n"}“Affirmative. I am a soldier, a captain, in the Solar Forces Special Operations unit,” Dendro said. “The Solar Forces is the core military power serving the{" "}
           <GlossaryWord lookup_string="Republicofnaronia" word="Republic of Naronia" toggleGlossary={this.props.toggleGlossary} />. Naronia is the capital of my galaxy. You are sitting in a special operations military fighter right now.”{"\n"}
@@ -321,7 +321,7 @@ export default class Chapter4 extends Component<IProps> {
           ?” Jake asked.{"\n"}
           {"\n"}“It’s like what you would call <Text style={{ fontFamily: "gelasibro-italic" }}>coffee</Text>. It’s a bit smoother, and a lot stronger,” Dendro said.{"\n"}
           {"\n"}“What is the gold tube?” Jake asked curiously.{"\n"}
-          {"\n"}Dendro giggled under his breath and pulled up the small plated window above it. “Here, Earthling. Have a look.”{"\n"}
+          {"\n"}Dendro giggled under his breath and pulled up the small plated window above the Kahve maker. “Here, Earthling. Have a look.”{"\n"}
           {"\n"}“Whoa.” Jake stared at the curved right wing. “That’s so cool.” Just beyond it, a fifteen-foot stream of blue flame poured out from the rectangular engine blocks.{"\n"}
           {"\n"}“How fast can this thing really go?” Jake asked.{"\n"}
           {"\n"}“It’s hard to say. A lot of variables: wind, fuel grade, atmospheric density, atmospheric oxygen-to-nitrogen ratios. In the current atmospheric state, I could probably push her to Mach 7. That’s seven times the speed of sound in Earth
@@ -332,7 +332,7 @@ export default class Chapter4 extends Component<IProps> {
           doors skidded open.{"\n"}
           {"\n"}Jake followed him into the room. This room felt like a bedroom in a futuristic military barracks. The walls were plated with cold metal panels. The left corner of the space had a narrow bed. It was covered by a felt blanket and a
           small book. A white pillow sat on top. <Text style={{ fontFamily: "gelasibro-italic" }}>I guess we are not so different.</Text> A small window sat on the back wall which looked out into the night.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>That’s cool.</Text> Piles of books sat on the metal shelves. <Text style={{ fontFamily: "gelasibro-italic" }}>This guy reads?</Text>
+          <Text style={{ fontFamily: "gelasibro-italic" }}>That’s cool.</Text> To the right, Piles of books sat on the metal shelves. <Text style={{ fontFamily: "gelasibro-italic" }}>This guy reads?</Text>
           {"\n"}
           {"\n"}Jake examined the titles. <Text style={{ fontFamily: "gelasibro-italic" }}>Meditations</Text> by <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Marcus Aurelius,{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>The Soul of a New Machine</Text> by Tracy Kidder, <Text style={{ fontFamily: "gelasibro-italic" }}>The Learning Doctrines</Text> by Zinthus Fomega,{" "}
@@ -341,8 +341,8 @@ export default class Chapter4 extends Component<IProps> {
           {"\n"}
           {"\n"}“This is my dormitory,” Dendro said.{"\n"}
           {"\n"}Jake glanced around the room again. “Looks like a decent place to get some rest,” he said. It almost felt cozy, in its own alien way.{"\n"}
-          {"\n"}Dendro tightened the belt of his robe. “I guess that depends if there’s anyone on my tail.” He grinned. “C’mon, let’s head back to the pit. We still have two hours before we touch down at our next destination. You should get some
-          rest. We have a long night ahead. Don’t worry, it’s clean. It has a Titanium Dioxide purification layer in the linen,” he said.{"\n"}
+          {"\n"}Dendro tightened the belt of his robe. “I guess that depends if there’s anyone on my tail.” He grinned. “C’mon, let’s head back to the pit. We still have two hours before we touch down at our next destination. You should get some rest
+          on the couch. We have a long night ahead. Don’t worry, it’s clean. It has a Titanium Dioxide purification layer in the linen,” he said.{"\n"}
           {"\n"}Jake looked at the couch. It looked comfortable enough. “I guess a nap wouldn’t hurt,” Jake replied.{"\n"}
           {"\n"}“Good. I will be in the pit if you need me,” the creature said.{"\n"}
           {"\n"}The leather-like material that made up the sofa was oddly smooth, almost too smooth for comfort. He was too exhausted to think about it further. Jake rolled over onto his back and turned towards the kitchen window. I

@@ -71,7 +71,7 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}Nassir rotated his body in confusion. <Text style={{ fontFamily: "gelasibro-italic" }}>Super, Super Dork</Text> was written on it in thick black sharpie marker.{"\n"}
           {"\n"}“Who did this?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake asked fiercely. <Text style={{ fontFamily: "gelasibro-italic" }}></Text>He tore the sign off Nassir’s bag and crumbled it in his palm.{"\n"}
           {"\n"}A few seconds later he heard high pitched laughter coming from down the hall. He looked down the corridor and saw Dylan Jenkin. His head was tilted towards the ceiling, and he was howling, loudly. Keith Krumple, Dylan’s friend, stood
-          there giggling next to him. Jake felt a rage surge through him and began to head towards his opponent.{"\n"}
+          there giggling next to him. Jake felt rage surge through him and began to head towards his opponent.{"\n"}
           {"\n"}“Wait!” Nassir yelled.{"\n"}
           {"\n"}But as Jake walked towards Dylan he was overcome with a case of the jitters. His body once again did not feel solid. Jake approached holding up the crumpled paper. Dylan was looking straight at him with a smirk on his face.{"\n"}
           {"\n"}“You did this?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake tried to say confidently, but it came out meekly.{"\n"}
@@ -101,8 +101,7 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}A few more students passed by but paid him no attention. Dylan blazed back into his mind. He felt like crying, but that wasn’t going to happen. <Text style={{ fontFamily: "gelasibro-italic" }}>He had to learn how to fight.</Text> It
           was the only way to deal with Dylan.{"\n"}
           {"\n"}The next three periods were a blur as streams of aggravated thoughts passed through his mind. The jitters he had felt when facing Dylan bothered him the most.{" "}
-          <Text style={{ fontFamily: "gelasibro-italic" }}>Having fear is one thing, but to be crippled by it is another. How can I let that happen?</Text> He thought of how calmly Dylan stood there, with his arrogant grin, with no fear of Jake
-          whatsoever.{"\n"}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Having fear is one thing, but to be crippled by it is another. How could I let that happen?</Text> He thought of how calmly Dylan stood there, with his arrogant grin.
           {"\n"}His phone buzzed. It was his mother. She was being kept late again tonight by her boss, Mr. Bennet. She would be picking up Jimmy from his friend’s house after dinner, and there was dinner cash in an envelope in the kitchen.{"\n"}
           {"\n"}Fifteen minutes later, after continuous bouts of Dylan-ridden thought, Jake waved his hand in the air, signaling to his teacher that he had to go to the bathroom. Mrs. O'Reilly nodded in approval. He shot up, scooped up all his
           belongings, and hustled out of the classroom door. A few students watched him curiously, as he had taken all his stuff just to go to the restroom.{"\n"}
@@ -123,20 +122,20 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}The streets were not as well maintained in the southern district of Grapefield. The northern part of the town had perfectly paved streets and uncracked sidewalks, but down here the roads were cracked, and some of the sidewalks had
           turned to nothing but dirt and gravel. Jake passed a disheveled warehouse and a few broken down garages, then crossed Tulip, which meant that Truman’s Hardware was only a few blocks away. He walked for another minute, picking up his pace.
           {"\n"}
-          {"\n"}There it was! Standing on the southeast side of Woodstock Avenue and Crescent Street, was Truman’s Hardware. It looked as beautiful as Jake imagined she would. A large old-fashioned neon sign with a lit-up hammer hung in front of the
-          store’s entrance. He crossed the street and glided into the store happily.{"\n"}
+          {"\n"}There it was! Standing on the southeast side of Woodstock Avenue and Crescent Street, was Truman’s Hardware. It looked as beautiful as Jake imagined. A large old-fashioned neon sign with a lit-up hammer hung in front of the store’s
+          entrance. He crossed the street and entered the store.{"\n"}
           {"\n"}Each of the store’s ten aisles had its own variety of goods. One aisle for garden tools, one for flowerpots, one for drill bits, one for house paint, one for saw blades and tungsten piping.{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Where would the model rockets be?</Text> He walked down the first four aisles. Nothing. He walked up to the front counter. There was an older man with scruffy white hair and a stubby beard
           standing behind it.{"\n"}
           {"\n"}“Are the model rockets still in stock, sir?” Jake asked politely.{"\n"}
-          {"\n"}“Right there son, on aisle seven”, the man answered in a raspy voice.{"\n"}
+          {"\n"}“Right there son, on aisle seven,” the man answered in a raspy voice.{"\n"}
           {"\n"}He headed down aisle seven. He passed by a section of what looked like more tiny drill bits. Slightly further down, at the rear of the aisle, was an elevated wooden stand, angled slightly away from him. He walked up to it. Bingo.
           {"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Star Tracker 11, Saturn Crosser, Moonscraper 2, Andromeda Sentra.</Text> The list went on. The rockets were here. They all had different shapes, sizes, and colors, but they all did the same
           thing: ignite and explode upward into the sky. There were even extra engine kits for purchase. But when he went to grab one of the kits to check out the contents, he noticed something on the bottom shelf: small plastic bags, with small
-          hidden trinkets locked inside. The plastic bags were coated in painted flames and multicolored sparks. He picked one up.{"\n"}
+          trinkets locked inside. The plastic bags were adorned with painted flames and multicolored sparks. He picked one up.{"\n"}
           {"\n"}
           <Text style={{ textAlign: "center" }}>GROUND SPINNER - EXPLODING FLOWER</Text>
           {"\n"}
@@ -151,13 +150,13 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}
           {"\n"}Jake gawked at the yellow and blue letters on the package: GROUND SPINNERS. <Text style={{ fontFamily: "gelasibro-italic" }}>What are these things?</Text> He ran his thumb over the five small cartridges lining the interior of the
           pack, then took out his phone. “Ground spinners are fireworks that sit flat on the ground, shoot sparks, and spin rapidly producing a glowing colored halo. Their string fuses do not need to be lit. All that is required is to pull their fuse
-          strings quickly, like the lighting function of a match.{"\n"}
+          strings quickly."{"\n"}
           {"\n"}
           <Text style={{ fontFamily: "gelasibro-italic" }}>That sounds crazy,</Text> he thought. <Text style={{ fontFamily: "gelasibro-italic" }}>The rockets are awesome, but they are kind of a hassle to set up.</Text>
           {"\n"}
           {"\n"}He looked around the store. Some elderly folks had entered and walked down aisle one. He looked down into his palm again at the ground spinner package and the cartridges within. The hidden power of the universe was buried inside of
           these things, far beneath the capability of human sight. A chill ran through him as he put his phone away.{"\n"}
-          {"\n"}It was not in Jake’s nature to steal. But in this moment, his excitement overcame his conscience. He ripped one pack of the ground spinner packs from the display and jammed them in his right pocket.{"\n"}
+          {"\n"}It was not in Jake’s nature to steal. But in this moment, his excitement overcame his conscience. He jammed the pack into his right pocket.{"\n"}
           {"\n"}Jake had never stolen anything before. His pocket bulged in the rectangular shape of the object stuffed inside. <Text style={{ fontFamily: "gelasibro-italic" }}>If the cashier sees my pocket, I’m dead</Text>. He looked both ways, then
           walked slowly up the aisle, with his hands pushing outward from his hoodie. <Text style={{ fontFamily: "gelasibro-italic" }}>I can do this.</Text>{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Only twenty more feet. Please. Please.</Text> He tried to cover up as much of his right pant pocket as was possible with his hoodie, but most of it was still visible.{" "}
@@ -209,10 +208,10 @@ export default class Chapter3 extends Component<IProps> {
           {"\n"}Jake’s stomach twisted in guilt. He put his fingers on the screen’s keyboard to respond, but he stopped. <Text style={{ fontFamily: "gelasibro-italic" }}>I shouldn’t have said those things. But was I fully in the wrong?</Text> He
           wasn’t sure how to respond. Jake lit another cartridge, watched it ignite, then quickly fizzle into nonexistence. A small breeze brought a thick bout of sulphureous smoke in his direction.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Ugh, it smells like rotten eggs</Text>.{"\n"}
-          {"\n"}The smell dissipated after a few moments. Then a strong gust of wind carried over more sulfur-smelling smoke. But this smoke smelled different, with a more distinctive ingredient mixed inside of it. It was rougher, spicier, and woody.
-          It was not as offensive as the rotten egg smell. It was almost pleasing, still sulfur-smelling, but not as potent, like a mixture of model rocket engine smoke and the burnt wood of a cedar tree.{"\n"}
+          {"\n"}The smell dissipated after a few moments. Then a strong gust of wind carried over more sulfur-smelling smoke. But this smoke smelled different, with a more distinctive ingredient mixed inside of it. It was spicy and woody. It was not
+          as offensive as the rotten egg smell. It was almost pleasing, still sulfur-smelling, but not as potent, like a mixture of model rocket engine smoke and the burnt wood of a cedar tree.{"\n"}
           {"\n"}Jake was confused. He placed the last unfired ground spinner in his right jean pocket, grabbed his bag, and stood up, forgetting Nassir for a moment. He sniffed the air as he took a few steps toward the alley, but the smell
-          disappeared. <Text style={{ fontFamily: "gelasibro-italic" }}>It was just the wind blowing in the other direction,</Text> Jake thought. When another gust of wind brought the spicy sulphureous scent back into his nose and this time, it was
+          disappeared. <Text style={{ fontFamily: "gelasibro-italic" }}>It was just the wind blowing in the other direction,</Text> Jake thought. But another gust of wind brought the spicy, sulphureous scent back into his nose and this time, it was
           significantly stronger. His mouth twisted in confusion.{"\n"}
           {"\n"}He took a few more steps in the direction of the alley. The smell was growing stronger in this direction. His curiosity was too great, so he began to walk slowly<Text style={{ fontFamily: "gelasibro-italic" }}>.</Text> The alley was
           dark and smelled of garbage, but the scent was still present. He skipped through a few small puddles and piles of trash.{"\n"}

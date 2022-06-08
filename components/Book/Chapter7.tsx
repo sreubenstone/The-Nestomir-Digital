@@ -65,7 +65,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}Jake glanced ahead. The Rockies <Text style={{ fontFamily: "gelasibro-italic" }}>were a</Text> remarkable image. The vast expanse of snowcapped goliaths seemed to have no end.{"\n"}
           {"\n"}Dendro scanned his radar readout every few moments as he soared the ship over the jagged peaks. Jake caught sight of frozen lakes below them reflecting the bright moonlight.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>That’s intense.</Text> After passing over a large swath of mountain ranges, they approached a large valley. Dendro descended the ship again, and a minute later, they were skimming the surface
-          of the valley<Text style={{ fontFamily: "gelasibro-italic" }}>.</Text> Jake’s eyes opened wider to process the experience.{"\n"}
+          of the ground<Text style={{ fontFamily: "gelasibro-italic" }}>.</Text> Jake’s eyes opened wider to process the experience.{"\n"}
           {"\n"}“Gnarly, right?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Dendro grinned. <Text style={{ fontFamily: "gelasibro-italic" }}></Text>“I never let the piloting skills get rusty. Flying always brings peace to the mind.” 
           Dendro pushed down on the throttle. As Jake was pushed back into his seat, he prayed no animals jumped out in front of the snow-skimming ship.{"\n"}
           {"\n"}“Lithium Radar tells me the abandoned compound is just beyond the twin peaks up ahead,” Dendro said.{"\n"}
@@ -212,7 +212,7 @@ export default class Chapter7 extends Component<IProps> {
           {"\n"}“Almost all useful programs need the ability to make choices. For example, think of the code that operates a vending machine. When a user selects a drink, the program must choose which drink to dispense based on which drink was
           chosen. If the user selects Drink A, then the <GlossaryWord lookup_string="Software" word="software" toggleGlossary={this.props.toggleGlossary} /> must tell the machine to dispense Drink A, but if the user selects Drink B, then the software
           must tell the machine to dispense Drink B. You wouldn't want to get the wrong drink, would you? Many choices in computer programs take the form of: if this, then that.”{"\n"}
-          {"\n"}“That makes sense, I just never imagined it as a decision though. I guess it is, in a way…the program is making a decision <Text style={{ fontFamily: "gelasibro-italic" }}>based</Text> on the user’s decision, or input,” Jake said.” He
+          {"\n"}“That makes sense, I just never imagined it as a decision though. I guess it is, in a way…the program is making a decision <Text style={{ fontFamily: "gelasibro-italic" }}>based</Text> on the user’s decision, or input,” Jake said. He
           thought of Nassir's robot turning right and left on the grass at Allen Park as the gizmo took commands from the RC controller.{"\n"}
           {"\n"}“Then how do you implement decisions in Python?” Jake asked, eagerly.{"\n"}
           {"\n"}“We use something called an <Text style={{ fontFamily: "gelasibro-italic" }}>if statement</Text>,”said Dendro. “An if statement is called a conditional statement."{"\n"}
@@ -471,7 +471,7 @@ export default class Chapter7 extends Component<IProps> {
           <GlossaryWord lookup_string="Elsestatement" word="statement" toggleGlossary={this.props.toggleGlossary} />, which is really just a fancier way to write another if statement, but this is a good start,” Dendro said encouragingly.{"\n"}
           {"\n"}Jake was excited about his newfound knowledge. He then felt an intense heat wave, a burning sensation, pulsate through his body. He pushed himself back in alarm before he remembered.{" "}
           <Text style={{ fontFamily: "gelasibro-italic" }}>Ah.</Text> He rolled up his sleeve. A marking that looked like an upside down <Text style={{ fontFamily: "gelasibro-italic" }}>7</Text> was imprinted just a centimeter from the first marking.
-          He ran his fingers over the mark. It was a tattoo, but deeper. Like a branding. <Text style={{ fontFamily: "gelasibro-italic" }}>My mom’s gonna kill me.</Text>
+          He ran his fingers over the mark. It was a tattoo, but deeper. Like a branding. <Text style={{ fontFamily: "gelasibro-italic" }}>My mom’s absolutely gonna kill me.</Text>
           {"\n"}
           {"\n"}“You now have been granted the power of <Text style={{ fontFamily: "gelasibro-italic" }}>Zegmu</Text>, or <GlossaryWord lookup_string="Weaponsharnessing" word="Weapon's Harnessing" toggleGlossary={this.props.toggleGlossary} /> in the
           common tongue,” Dendro uttered.{"\n"}
