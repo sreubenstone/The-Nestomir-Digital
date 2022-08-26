@@ -76,7 +76,9 @@ export default class Chapter5 extends Component<IProps> {
           {"\n"}“What is that?” Jake asked.{"\n"}
           {"\n"}“It’s software <GlossaryWord lookup_string="Code" word="code" toggleGlossary={this.props.toggleGlossary} />. Python. I’m updating some flight settings on the ship. Our aileron seems clunky.” Dendro stared intently at the screen as he
           typed.{"\n"}
-          {"\n"}“<GlossaryWord lookup_string="Python" word="Python" toggleGlossary={this.props.toggleGlossary} />? Like what the hackers use on Earth?” Jake asked, baffled.{"\n"}
+          {"\n"}“<GlossaryWord lookup_string="Python" word="Python" toggleGlossary={this.props.toggleGlossary} />? Like what the hackers use on Earth?” Jake asked, baffled.{" "}
+          <Text style={{ fontFamily: "gelasibro-italic" }}>Is that what Nassir used in his robots?</Text>
+          {"\n"}
           {"\n"}Dendro turned and looked at him intently. “Code is <Text style={{ fontFamily: "gelasibro-italic" }}>all</Text> that we are. This is <Text style={{ fontFamily: "gelasibro-italic" }}>all</Text> that I am. I am a Solar Forces fighter,
           and my loyalty is to the <GlossaryWord lookup_string="Ldshab" word="Ld'Shab" toggleGlossary={this.props.toggleGlossary} />, to the Utma.” Dendro’s yellow eyes looked at Jake intensely, then he grinned.{"\n"}
           {"\n"}“Python is all that you are? Ld’Shab? What?” Jake asked, not sure if Dendro was messing with him. But something told Jake that Dendro didn’t seem like the kind of guy to make jokes in tense moments.{"\n"}

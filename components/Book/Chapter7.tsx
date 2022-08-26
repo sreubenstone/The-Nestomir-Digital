@@ -321,7 +321,8 @@ export default class Chapter7 extends Component<IProps> {
           // Section 5 Below, Goes Text, Graphic
         }
         <Text style={BookStyles.bookFont}>
-          “What is <Text style={{ fontFamily: "gelasibro-italic" }}>print</Text>?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake asked, confused.{"\n"}
+          “What is <Text style={{ fontFamily: "gelasibro-italic" }}>print</Text>?” <Text style={{ fontFamily: "gelasibro-italic" }}></Text>Jake asked, confused. <Text style={{ fontFamily: "gelasibro-italic" }}>Did Nassir show me this?</Text>
+          {"\n"}
           {"\n"}Dendro pointed to line two. “This <Text style={{ color: "#0C2443", fontFamily: "code" }}>print()</Text> command is a tool that the Python creator made to let us see the results of our Python code more easily.{" "}
           <Text style={{ color: "#0C2443", fontFamily: "code" }}>
             <GlossaryWord lookup_string="Print" word="Print()" toggleGlossary={this.props.toggleGlossary} />

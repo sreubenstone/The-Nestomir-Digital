@@ -162,8 +162,15 @@ export default class Chapter2 extends Component<IProps> {
           Jake said, impressed.{"\n"}
           {"\n"}“If you think this is cool,” Nassir said, watching Jake examine the Raspberry Pi, “you should join our club.”{"\n"}
           {"\n"}Jake grunted noncommittally, handing the device back to Nassir, as he glanced over at the picnic area.{"\n"}
-          {"\n"}Nassir spun the device around in his hands. “You should have seen the code that went into this. We used Python, this incredible coding language. You can do all sorts of things with it…control the car…implement interesting logic…even
-          use it to connect to the–”{"\n"}
+          {"\n"}Nassir spun the device around in his hands. “You should have seen the code that went into this, we used Python, this incredible coding language. You can do all sorts of things with it…control the car…implement interesting logic.”
+          Nassir took out his cell phone. “Here, take a look, this is an example of a Python <Text style={{ fontFamily: "gelasibro-italic" }}>function</Text>…I named the function <Text style={{ fontFamily: "gelasibro-italic" }}>startRobot</Text>
+          …functions let us create a set of reusable instructions in our programs. Here, we’re just <Text style={{ fontFamily: "gelasibro-italic" }}>defining</Text> the function, we have to <Text style={{ fontFamily: "gelasibro-italic" }}>call</Text>{" "}
+          the function to use it later on. The <Text style={{ fontFamily: "gelasibro-italic" }}>print</Text> function lets us display information to our scree–”{"\n"}
+        </Text>
+        <View style={GlobalStyles.flexCenter}>
+          <StoryGraphic source={require("./../../assets/images/lessons/earlylesson.png")} />
+        </View>
+        <Text style={BookStyles.bookFont}>
           {"\n"}“That’s cool, but they are about to start the picnic. Let’s head over and grab a seat so we don’t miss out on the lunch food,” Jake said.{"\n"}
           {"\n"}“Alright. Sounds good,” Nassir replied.{"\n"}
           {"\n"}A large buffet had been set up on the grass and a long line had already formed. Mrs. Blum was directing the students. Jake and Nassir slid in just as it began to grow even longer.{"\n"}
