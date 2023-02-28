@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_MY_NOTIFICATIONS } from "../../queries";
+import { GET_MY_NOTIFICATIONS } from "../Other/queries";
 import ProgressEntry from "../Progress/ProgressEntry__";
 import ChapterLoader from "../Book/ChapterLoader__";
 import Profile from "../Profile/Profile__";

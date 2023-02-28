@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import * as SecureStore from "expo-secure-store";
-import { GET_BOOKMARK } from "../../queries";
+import { GET_BOOKMARK } from "../Other/queries";
 import { Text } from "react-native";
 import ProgressContainer from "./ProgressContainer";
 

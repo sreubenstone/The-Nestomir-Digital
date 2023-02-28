@@ -1,10 +1,10 @@
 import React, { FC, useState } from "react";
 import { View, Text, Image, Platform, TouchableOpacity } from "react-native";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_AUTH } from "../../../queries";
+import { GET_AUTH } from "../../Other/queries";
 import styled from "styled-components";
 import moment from "moment";
-import analytics from "../../../Analytics";
+import analytics from "../../Other/Analytics";
 
 interface IProps {
   data: any;

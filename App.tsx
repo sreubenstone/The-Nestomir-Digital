@@ -5,7 +5,7 @@ import * as Sentry from "sentry-expo";
 import ApolloClient from "apollo-boost";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloProvider } from "@apollo/react-hooks";
-import Entry from "./Entry";
+import Entry from "./components/Other/Entry";
 import Env from "./config";
 
 Sentry.init({

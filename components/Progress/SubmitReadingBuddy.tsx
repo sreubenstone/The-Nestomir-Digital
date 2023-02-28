@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { useMutation } from "@apollo/react-hooks";
-import { ADD_READING_BUDDY } from "../../queries";
+import { ADD_READING_BUDDY } from "../Other/queries";
 import { Text, View, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 

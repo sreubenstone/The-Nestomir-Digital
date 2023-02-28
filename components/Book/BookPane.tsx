@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { useMutation } from "@apollo/react-hooks";
-import { UPDATE_BOOKMARK } from "./../../queries";
+import { UPDATE_BOOKMARK } from "../Other/queries";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import styled from "styled-components";
-import { ChapterLoaderStyles } from "../../Stylesheet";
+import { ChapterLoaderStyles } from "../Other/Stylesheet";
 
 const BackIcon = styled.Image`
   height: 25px;

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_MY_NOTIFICATIONS } from "../../queries";
+import { GET_MY_NOTIFICATIONS } from "../Other/queries";
 import NotificationItem from "./UI/NotificationItem";
 import { Modal, TouchableOpacity, ScrollView } from "react-native";
 import styled from "styled-components";

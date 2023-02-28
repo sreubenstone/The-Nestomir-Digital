@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { View, ScrollView, Text, Image, TouchableOpacity } from "react-native";
-import { ProgressCardStyles, GlobalStyles } from "../../Stylesheet";
-import { TOC } from "../../TOC";
+import { ProgressCardStyles, GlobalStyles } from "../Other/Stylesheet";
+import { TOC } from "../Other/TOC";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_AUTH } from "../../queries";
-import analytics from "../../Analytics";
+import { GET_AUTH } from "../Other/queries";
+import analytics from "../Other/Analytics";
 
 interface IProps {
   navigation: any;

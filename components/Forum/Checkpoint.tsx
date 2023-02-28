@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_CHAPTER_THREADS } from "../../queries";
+import { GET_CHAPTER_THREADS } from "../Other/queries";
 import { Text, TouchableOpacity, View } from "react-native";
 import PostListing from "./UI/PostListing";
 import styled from "styled-components";

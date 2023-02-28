@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { useMutation } from "@apollo/react-hooks";
-import { SAVE_SUPPORT_REQUEST } from "../../queries";
+import { SAVE_SUPPORT_REQUEST } from "../Other/queries";
 import styled from "styled-components";
 
 interface IProps {

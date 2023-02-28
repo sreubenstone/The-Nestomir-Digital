@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import * as SecureStore from "expo-secure-store";
 import { View, Text, Linking, ImageBackground, TouchableOpacity, Keyboard, TouchableWithoutFeedback } from "react-native";
 import styled from "styled-components";
-import { ProgressStyles } from "../../Stylesheet";
+import { ProgressStyles } from "../Other/Stylesheet";
 import Env from "./../../config";
 import { Dimensions } from "react-native";
 import T_CModal from "./T&CModal";

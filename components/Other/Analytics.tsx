@@ -1,4 +1,4 @@
-import Env from "./config";
+import Env from "../../config";
 
 interface IEvent {
   distinct_id: number;

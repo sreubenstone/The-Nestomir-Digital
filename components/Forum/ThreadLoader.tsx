@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_THREAD, GET_COMMENTS, REPLIES_FRAGMENT } from "../../queries";
+import { GET_THREAD, GET_COMMENTS, REPLIES_FRAGMENT } from "../Other/queries";
 import Post from "./UI/Post";
 import { View, Text, TouchableOpacity } from "react-native";
 import Comment from "./UI/Comment";

@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
 import { Text } from "react-native";
-import SignUpContainer from "./components/Login/Container";
+import SignUpContainer from "../Login/Container";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "./queries";
-import LoadNotifications from "./components/Notifications/LoadNotifications";
+import LoadNotifications from "../Notifications/LoadNotifications";
 
 interface IProps {}
 

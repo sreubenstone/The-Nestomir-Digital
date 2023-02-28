@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import * as ImagePicker from "expo-image-picker";
 import { useMutation } from "@apollo/react-hooks";
-import { SAVE_PROFILE_PICTURE } from "../../queries";
+import { SAVE_PROFILE_PICTURE } from "../Other/queries";
 import { View, ActivityIndicator, TouchableNativeFeedback, Platform, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 

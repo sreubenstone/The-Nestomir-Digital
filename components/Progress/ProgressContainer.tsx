@@ -5,7 +5,7 @@ import ProfileModal from "./ProfileModal";
 import Push from "./Push";
 import ProgressMap from "./ProgressMap";
 import ReaderStat from "./ReaderStat";
-import { ProgressStyles } from "../../Stylesheet";
+import { ProgressStyles } from "../Other/Stylesheet";
 import ReadingBuddiesModal from "./ReadingBuddiesModal";
 import styled from "styled-components";
 

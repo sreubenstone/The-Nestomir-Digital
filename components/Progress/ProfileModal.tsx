@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_AUTH } from "../../queries";
+import { GET_AUTH } from "../Other/queries";
 import * as SecureStore from "expo-secure-store";
 import * as Updates from "expo-updates";
 import { Modal, TouchableOpacity } from "react-native";

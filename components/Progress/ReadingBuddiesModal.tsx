@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_MY_READING_BUDDIES, GET_AUTH } from "../../queries";
+import { GET_MY_READING_BUDDIES, GET_AUTH } from "../Other/queries";
 import { Modal, Text, View, TouchableOpacity, Image, ScrollView, Keyboard, TouchableWithoutFeedback, Platform } from "react-native";
 import * as Clipboard from "expo-clipboard";
 import SubmitReadingBuddy from "./SubmitReadingBuddy";

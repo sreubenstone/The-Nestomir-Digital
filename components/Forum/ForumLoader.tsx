@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_FORUM_THREADS } from "../../queries";
+import { GET_FORUM_THREADS } from "../Other/queries";
 import { Text } from "react-native";
 import PostListing from "./UI/PostListing";
 

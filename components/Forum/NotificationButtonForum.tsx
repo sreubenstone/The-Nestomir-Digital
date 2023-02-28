@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import * as Notifications from "expo-notifications";
 import { useQuery, useMutation } from "@apollo/react-hooks";
-import { GET_MY_NOTIFICATIONS, MARK_READ } from "../../queries";
+import { GET_MY_NOTIFICATIONS, MARK_READ } from "../Other/queries";
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components";
 

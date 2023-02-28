@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_AUTH } from "../../queries";
+import { GET_AUTH } from "../Other/queries";
 import { Text, View, ImageBackground, ScrollView, Keyboard, TouchableWithoutFeedback, KeyboardAvoidingView } from "react-native";
-import { ProgressStyles, GlobalStyles } from "../../Stylesheet";
+import { ProgressStyles, GlobalStyles } from "../Other/Stylesheet";
 import PostListing from "../Forum/UI/PostListing";
 import Tagline from "./Tagline";
 import ProfileAvatar from "./Profile_Avatar";

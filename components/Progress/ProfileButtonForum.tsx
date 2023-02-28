@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_AUTH } from "../../queries";
+import { GET_AUTH } from "../Other/queries";
 import { TouchableOpacity, Image, Dimensions } from "react-native";
 
 interface IProps {

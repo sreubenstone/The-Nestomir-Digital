@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { gql } from "apollo-boost";
 import { useMutation } from "@apollo/react-hooks";
-import { SUBMIT_COMMENT, REPLIES_FRAGMENT } from "../../queries";
+import { SUBMIT_COMMENT, REPLIES_FRAGMENT } from "../Other/queries";
 import { View, Text, TouchableOpacity } from "react-native";
 import styled from "styled-components";
 

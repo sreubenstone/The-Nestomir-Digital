@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { GET_PROFILE } from "../../queries";
+import { GET_PROFILE } from "../Other/queries";
 import Presentational from "./Presentational";
 import { Text } from "react-native";
 

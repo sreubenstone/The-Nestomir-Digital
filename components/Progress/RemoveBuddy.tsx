@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useMutation } from "@apollo/react-hooks";
-import { REMOVE_READING_BUDDY } from "../../queries";
+import { REMOVE_READING_BUDDY } from "../Other/queries";
 import { Text, TouchableOpacity } from "react-native";
 
 interface IProps {

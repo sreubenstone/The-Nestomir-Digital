@@ -3,7 +3,7 @@ import { View, Text, ImageBackground, ScrollView } from "react-native";
 import NotificationButtonForum from "./NotificationButtonForum";
 import ForumLoader from "./ForumLoader";
 import NotificationModal from "../Notifications/NotificationModal";
-import { ProgressStyles } from "../../Stylesheet";
+import { ProgressStyles } from "../Other/Stylesheet";
 
 interface IProps {
   navigation: any;
