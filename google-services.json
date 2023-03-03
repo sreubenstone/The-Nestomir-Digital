@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "454444287933",
-    "project_id": "the-nestomir",
-    "storage_bucket": "the-nestomir.appspot.com"
+    "project_number": "",
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:454444287933:android:4b6925f05ebe4f3a58f4d4",
+        "mobilesdk_app_id": "",
         "android_client_info": {
-          "package_name": "com.thenestomir.thenestomirapp"
+          "package_name": ""
         }
       },
       "oauth_client": [
         {
-          "client_id": "454444287933-1898r8obshh4o8l3goucro6cnrn1722h.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAID2zgECw9fQaKfllUp1QX9oV6WI9JbKk"
+          "current_key": ""
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "454444287933-1898r8obshh4o8l3goucro6cnrn1722h.apps.googleusercontent.com",
+              "client_id": "",
               "client_type": 3
             }
           ]
