@@ -62,21 +62,17 @@ https://docs.expo.dev/get-started/create-a-new-app/
 ##### Codebase structure
 
 - Component folder broken down into Book, Forum, Glossary, Login, Notifications, Other, Profile, Progress, Support
-
 - React native entry file is App.tsx
-
 - Assets stored in /assets
-
-_Please ask questions to our team on the [web platform](https://www.incubatedd.com/thenestomir) or [discord](https://discord.gg/thtjVaaq)_
 
 #### Contributing ⚡
 
-- Bug squash (fix a bug) **+1 contribution point**
-- Code snippet refactor (refactor one section of a file) **+3 contribution points**
-- File refactor (refactor an entire file) **+10 contribution points**
-- Feature build (build a new feature) **+300 contribution points**
-- Feature tweak (tweak an existing feature's functionality) **+40 contribution points**
-- Package update (upgrade a package in our codebase) **+40 contribution points**
+- Bug squash (fix a bug) **+1 community point**
+- Code snippet refactor (refactor one section of a file) **+3 community points**
+- File refactor (refactor an entire file) **+10 community points**
+- Feature build (build a new feature) **+300 community points**
+- Feature tweak (tweak an existing feature's functionality) **+40 community points**
+- Package update (upgrade a package in our codebase) **+40 community points**
 
 _See official Rules & Rewards page [here](https://docs.google.com/document/d/1NKq1-DYcj6KLrF_zVx6q6SNO_ziVBNLQdH-744r1aTc/edit?usp=sharing)–these are official rules, please review._
 
@@ -85,5 +81,7 @@ _See official Rules & Rewards page [here](https://docs.google.com/document/d/1NK
 - Improve file structure, refactor code, improve app efficiency
 - Create new functionality for The Nestomir Digital
 - See comments in files for further direction
+
+_Check our our community forums to get more inspiration on how to improve the softare ([web platform](https://www.incubatedd.com/thenestomir) or [discord](https://discord.gg/thtjVaaq)_)
 
 ![exampleapp](https://res.cloudinary.com/dshxqbjrf/image/upload/v1675110177/forum_mock_bbvilj.png)
