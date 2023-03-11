@@ -8,13 +8,11 @@ See the [main project page here](https://www.incubatedd.com), as well as [the ce
 
 ### What is The Nestomir?
 
-The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. And now through crowd participation, we're going to improve the the story and app experience together.
-
-_Make sure you review the [story outline](https://github.com/sreubenstone/thenestomir/blob/main/outline.md) to get a better sense of the story and lesson plan. You can see the main project page [here](https://www.thenestomir.com)._
+The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. **And now through crowd participation, we're going to improve the the story and app experience together.**
 
 ![pic](https://res.cloudinary.com/dshxqbjrf/image/upload/v1635541420/d980a2a7-netomir-11-july-ipad-gold-portrait_10vc18a0to16m00u00u028-1_psiswg.png)
 
-### Set up
+### Setting up the app
 
 ##### The Repository
 
@@ -23,35 +21,6 @@ _Make sure you review the [story outline](https://github.com/sreubenstone/thenes
 - install packages via `npm i`
 
 ##### Config file
-
-```
-const prod = false;
-
-const mixpanel_token = "";
-
-const prod_server = "";
-const dev_server = "";
-
-const export_env_urls = () => {
-  if (prod) {
-    const env = {
-      server: prod_server,
-      env: prod,
-      mixpanel_token,
-    };
-    return env;
-  } else {
-    const env = {
-      server: dev_server,
-      env: prod,
-      mixpanel_token,
-    };
-    return env;
-  }
-};
-
-export default export_env_urls()
-```
 
 #### Running the app
 
@@ -67,12 +36,12 @@ https://docs.expo.dev/get-started/create-a-new-app/
 
 #### Contributing ⚡
 
-- Bug squash (fix a bug) **+1 community point**
-- Code snippet refactor (refactor one section of a file) **+3 community points**
-- File refactor (refactor an entire file) **+10 community points**
-- Feature build (build a new feature) **+300 community points**
-- Feature tweak (tweak an existing feature's functionality) **+40 community points**
-- Package update (upgrade a package in our codebase) **+40 community points**
+- Bug squash (fix a bug) **+1 participation point**
+- Code snippet refactor (refactor one section of a file) **+3 participation points**
+- File refactor (refactor an entire file) **+10 participation points**
+- Feature build (build a new feature) **+300 participation points**
+- Feature tweak (tweak an existing feature's functionality) **+40 participation points**
+- Package update (upgrade a package in our codebase) **+40 participation points**
 
 _See official Rules & Rewards page [here](https://docs.google.com/document/d/1NKq1-DYcj6KLrF_zVx6q6SNO_ziVBNLQdH-744r1aTc/edit?usp=sharing)–these are official rules, please review._
 
@@ -82,6 +51,24 @@ _See official Rules & Rewards page [here](https://docs.google.com/document/d/1NK
 - Create new functionality for The Nestomir Digital
 - See comments in files for further direction
 
-_Check our our community forums to get more inspiration on how to improve the softare ([web platform](https://www.incubatedd.com/thenestomir) or [discord](https://discord.gg/thtjVaaq)_)
+_Check our our community forums to get more inspiration on how to improve the software ([web platform](https://www.incubatedd.com/thenestomir) or [discord](https://discord.gg/thtjVaaq)_)
 
 ![exampleapp](https://res.cloudinary.com/dshxqbjrf/image/upload/v1675110177/forum_mock_bbvilj.png)
+
+### How it works
+
+- The book's manuscript and the native app (The Nestomir Digital) are stored in repositories on GitHub (any accepted pull request will grant you Major Contributor status as well as participation points)
+- Participation points can be put towards Project Rewards
+- All Major Contributors will be listed in new versions of the book and app
+- We plan on VERSIONING the series (e.g., v1.1, v1.2, as users contribute...our goal is to build a timeless series…one that people read 200 years from now)
+- You can also earn participation points by participating in discussions (web) and on discord (1 like = 1 point)
+
+Our [web platform](https://www.incubatedd.com/thenestomir) and [discord](https://discord.gg/thtjVaaq) community are buzzing with conversations and ideas about how to contribute to the book. Please check them out to get started.
+
+### Major Contribution
+
+- Submit a pull request to the main branch of The Nestomir or The Nestomir Digital repositories (instructions go here for writers)
+- If a pull request is accepted, you are awarded participation points based on the contribution type of your pull request
+- Make sure each pull request corresponds to one contribution type (if you want to make multiple contributions, issue multiple pull requests)
+
+[See the offical Rules & Rewards page](https://docs.google.com/document/d/1NKq1-DYcj6KLrF_zVx6q6SNO_ziVBNLQdH-744r1aTc/edit) to learn more about our community participation details.
