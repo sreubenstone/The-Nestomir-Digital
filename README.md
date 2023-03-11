@@ -1,10 +1,18 @@
-# Readme – The Nestomir Digital React Native (expo) Client
+# The Nestomir Digital React Native Client
 
-### The Contest 🏆
+### Overview
 
-[Incubatedd](https://www.incubatedd.com) is a digital incubator focused on solving tough American problems through the crowd. In edition 1.0, we're focused on improving _The Nestomir_, an educational fantasy story, in hopes of bringing an innovative twist to STEM education.
+Let's create a timeless educational tale for the next generation of learners...earn community status and rewards–help push American (and global) STEM education forward 🤓 ☄️.
 
-See the [main contest page here](https://www.incubatedd.com), as well as [the central story repository here](https://www.github.com/sreubenstone).
+See the [main project page here](https://www.incubatedd.com), as well as [the central story repository here](https://www.github.com/sreubenstone).
+
+### What is The Nestomir?
+
+The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. And now through crowd participation, we're going to improve the the story and app experience together.
+
+_Make sure you review the [story outline](https://github.com/sreubenstone/thenestomir/blob/main/outline.md) to get a better sense of the story and lesson plan. You can see the main project page [here](https://www.thenestomir.com)._
+
+![pic](https://res.cloudinary.com/dshxqbjrf/image/upload/v1635541420/d980a2a7-netomir-11-july-ipad-gold-portrait_10vc18a0to16m00u00u028-1_psiswg.png)
 
 ### Set up
 
@@ -77,3 +85,5 @@ _See official Rules & Rewards page [here](https://docs.google.com/document/d/1NK
 - Improve file structure, refactor code, improve app efficiency
 - Create new functionality for The Nestomir Digital
 - See comments in files for further direction
+
+![exampleapp](https://res.cloudinary.com/dshxqbjrf/image/upload/v1675110177/forum_mock_bbvilj.png)
