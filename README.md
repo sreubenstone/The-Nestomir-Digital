@@ -8,7 +8,7 @@ See the [main project page here](https://www.incubatedd.com), as well as [the ce
 
 ### What is The Nestomir?
 
-The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. **And now through crowd participation, we're going to improve the the story and app experience together.**
+The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. **And now through crowd participation, we're going to improve the the story and social reading app experience together.**
 
 ![pic](https://res.cloudinary.com/dshxqbjrf/image/upload/v1635541420/d980a2a7-netomir-11-july-ipad-gold-portrait_10vc18a0to16m00u00u028-1_psiswg.png)
 
@@ -20,13 +20,28 @@ The Nestomir is a planetary quest (fantasy novel and companion app) involving a 
 - toggle into the workspace directory
 - install packages via `npm i`
 
+##### ngrok
+
+In order to easily connect [The Nestomir Backend](https://github.com/sreubenstone/The-Nestomir-Digital-Server) (which runs locally on port 4000) to our Expo client, which is required for our app to run, we need to connect our local port 4000 to the internet using a tool like ngrok. It is a utility to expose any locally hosted application over the web. See installation instructions [here](https://www.softwaretestinghelp.com/ngrok-introduction/).
+
 ##### Config file
+
+You must have the [backend server setup and running](https://github.com/sreubenstone/The-Nestomir-Digital-Server) for the client to work. In dev, we only need to update the `dev_server` url in our config file, which we get from running `ngrok http 4000` in a new terminal window.
+
+```
+const dev_server = "<Port 4000 NGROK link goes here>";
+```
 
 #### Running the app
 
 `yarn start`
 
-https://docs.expo.dev/get-started/create-a-new-app/
+[https://docs.expo.dev/get-started/create-a-new-app/](https://docs.expo.dev/get-started/create-a-new-app/) for a basic Expo tutorial on creating and running a new app (worth the read!) Note, we can load the app on our actual device or through simulator.
+
+##### Tech stack
+
+- React Native [Expo](https://expo.dev/)
+- [Apollo Client](https://www.apollographql.com/docs/react/) – for graphQL based state management
 
 ##### Codebase structure
 
@@ -45,13 +60,31 @@ https://docs.expo.dev/get-started/create-a-new-app/
 
 _See official Rules & Rewards page [here](https://docs.google.com/document/d/1NKq1-DYcj6KLrF_zVx6q6SNO_ziVBNLQdH-744r1aTc/edit?usp=sharing)–these are official rules, please review._
 
-##### Ideas for Contributing
+#### Ideas for Contributing
 
 - Improve file structure, refactor code, improve app efficiency
 - Create new functionality for The Nestomir Digital
 - See comments in files for further direction
 
-_Check our our community forums to get more inspiration on how to improve the software ([web platform](https://www.incubatedd.com/thenestomir) or [discord](https://discord.gg/thtjVaaq)_)
+**Questions to help drive development**
+
+- How can we better build relationships between readers?
+
+- How can we leverage the concept of a Reading Buddy to enhance literacy building?
+
+- How can we leverage the concept of a Reading Buddy to enhance how readers engage with the story?
+
+- How can we make the application more interactive
+
+- Can we/should we embed quizzes or other checkpoint related material into the E-Readers
+
+- Are there other social features that might be interesting in this setting?
+
+- How can we optimize the experience for the classroom
+
+- How can we optimize the reader so it can be adopted by schools and classroom educators?
+
+Our [web platform](https://www.incubatedd.com/thenestomir) and [discord](https://discord.gg/thtjVaaq) community are buzzing with conversations and ideas about how to contribute to the book. Please check them out to get started.
 
 ![exampleapp](https://res.cloudinary.com/dshxqbjrf/image/upload/v1675110177/forum_mock_bbvilj.png)
 
