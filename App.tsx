@@ -9,7 +9,7 @@ import Entry from "./components/Other/Entry";
 import Env from "./config";
 
 Sentry.init({
-  dsn: "https://6238420bc9804055a2164f97b31f2d7e@o361938.ingest.sentry.io/5723609",
+  dsn: "",
   enableInExpoDevelopment: false,
   debug: false, // Sentry will try to print out useful debugging information if something goes wrong with sending an event. Set this to `false` in production.
 });
