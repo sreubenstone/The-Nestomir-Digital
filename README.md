@@ -8,7 +8,7 @@ Let's create a timeless educational tale for the next generation of learners...e
 
 😺 _Please note, the codebase is a little messy. This was started a few years ago. We need your help to improve it._
 
-See the [main project page here](https://www.thenestomir.com), as well as [the central story repository here](https://www.github.com/sreubenstone/thenestomir). Please see our Contributor Agreement & Additional Repository Terms at the bottom of this document
+See the [main project page here](https://www.thenestomir.com), as well as [the central story repository here](https://www.github.com/sreubenstone/thenestomir). Please see our Contributor Agreement & Additional Repository Terms at the bottom of this document.
 
 ### What is The Nestomir?
 
