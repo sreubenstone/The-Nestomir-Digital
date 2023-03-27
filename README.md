@@ -10,6 +10,8 @@ See the [main project page here](https://www.thenestomir.com), as well as [the c
 
 😺 _Please note, the codebase is a little messy. This was started a few years ago. We need your help to improve it._
 
+🤓 Please see our Contributor Agreement & Additional Repository Terms at the bottom of this document
+
 ### What is The Nestomir?
 
 The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. **And now through crowd participation, we're going to improve the the story and social reading app experience together.**
@@ -101,6 +103,6 @@ Our [web platform](https://www.thenestomir.com/thenestomir) and [discord](https:
 
 [See the offical Rules & Rewards doc](https://docs.google.com/document/d/12luzhhrRYnxpkwq94KIs0MvAgISujhLuVamU0S4sqbg/edit?usp=sharing) to learn more about our community participation details.
 
-### Contributor Agreement
+### Contributor Agreement & Additional Repository Terms
 
-This repository is governed by its attached Apache 2.0 License as well as the terms in this Contributor Agreement. Any contributions you make to the repo can be used by The Nestomir team in their version of the app (in a commercial setting). Our objective is to open up the story and social reading experience for others to participate/modify–however–we will maintain full rights over our brand name and branding. This means you agree to not use The Nestomir, our cover art, or any variations of The Nestomir name in your distributed works in any commercial or non-commercial capacity.
+This repository is governed by its attached Apache 2.0 License as well as the terms in this Contributor Agreement. Any contributions you make to the codebase in this repository can be used by The Nestomir™ team (and any other third party party) in their version of the software (in a commercial or non-commerical setting). There is no obligation to compensate you in any form for your contributions. All contributions made to this repository will also be governed by the Apache 2.0 License (this means you are agreeing to put your contributions in the open source domain, which legally means you are providing the public with an irrevocible license to use your work in a commercial or non commercial capacity–see the license attached to this repository for the specific details behind the Apache 2.0 license). The Nestomir’s objective is to open up the story and social reading experience for others to participate/modify–however–The Nestomir™ will maintain full rights over our brand name, cover art and branding. This means you agree to not use The Nestomir™ or any variations of The Nestomir™ name or cover art in your distributed works in any commercial or non-commercial capacity.
