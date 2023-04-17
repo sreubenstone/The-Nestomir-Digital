@@ -82,7 +82,7 @@ const ReadingBuddiesModal: FC<IProps> = ({ reader_modal, toggleReaderModal, navi
               <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15 }}>
                 <Text style={{ color: "grey", fontSize: 12, textAlign: "center" }}>
                   Paste in your friend's secret reader code in the text box below to add them as a reading buddy. Your friends can also add you with your code. {"\n\n"} When you share your secret code with someone who has not signed up yet, make sure
-                  they enter your secret code when they sign up! {"\n\n"} If you earn a referral, you enter raffle w/ chance to win free trip to visit The Nestomir Learning Center 🌏.
+                  they enter your secret code when they sign up! (You will get credit and earn future rewards). {"\n\n"} 🌏. Reading buddies will receive updates on each other's reading progress.
                 </Text>
               </View>
               <View style={{ backgroundColor: "#FAFFD8", padding: 5, marginTop: 15, borderRadius: 5 }}>

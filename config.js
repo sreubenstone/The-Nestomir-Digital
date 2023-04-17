@@ -3,7 +3,7 @@ const prod = false;
 const mixpanel_token = "";
 
 const prod_server = "";
-const dev_server = "https://b254-38-42-74-7.ngrok.io";
+const dev_server = "https://5f06-208-185-29-122.ngrok-free.app";
 
 const export_env_urls = () => {
   if (prod) {

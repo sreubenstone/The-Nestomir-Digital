@@ -14,8 +14,18 @@ import Support from "../Support/SupportEntry__";
 import FullGlossaryIndex from "../Glossary/main/GlossaryEntry__";
 import GlossaryDetail from "../Glossary/main/GlossaryDetail__";
 import { Ionicons } from "@expo/vector-icons";
-
+import LPThread from "../LearningProject/LPThread";
 interface IProps {}
+
+const LearningProjectStack = createNativeStackNavigator();
+
+function LearningProjectStackScreen() {
+  return (
+    <LearningProjectStack.Navigator>
+      <LearningProjectStack.Screen name="Author Chat" component={LPThread} />
+    </LearningProjectStack.Navigator>
+  );
+}
 
 const StoryStack = createNativeStackNavigator();
 
@@ -26,6 +36,7 @@ function StoryStackScreen() {
       <StoryStack.Screen name="ChapterLoader" options={{ headerShown: false }} component={ChapterLoader} />
       <StoryStack.Screen name="Profile_Profile" options={{ headerShown: false }} component={Profile} />
       <StoryStack.Screen name="Support" component={Support} />
+      <StoryStack.Screen name="Glossary" options={{ headerShown: false }} component={FullGlossaryIndex} />
     </StoryStack.Navigator>
   );
 }
@@ -85,8 +96,8 @@ const Entry: FC<IProps> = () => {
               iconName = "ios-journal";
             } else if (route.name === "Forum") {
               iconName = "ios-chatbubble-ellipses";
-            } else if (route.name === "Glossary") {
-              iconName = "ios-planet-outline";
+            } else if (route.name === "Author Chat") {
+              iconName = "ios-git-merge-outline";
             }
 
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -96,8 +107,8 @@ const Entry: FC<IProps> = () => {
         })}
       >
         <Tab.Screen name="Story" options={{ headerShown: false }} component={StoryStackScreen} />
+        <Tab.Screen name="Author Chat" options={{ headerShown: false }} component={LearningProjectStackScreen} />
         <Tab.Screen name="Forum" options={{ headerShown: false, tabBarBadge: !badgeCount ? null : badgeCount }} component={ForumStackScreen} />
-        <Tab.Screen name="Glossary" options={{ headerShown: false }} component={GlossaryStackScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

@@ -5,6 +5,8 @@ import { TOC } from "../Other/TOC";
 import { useQuery } from "@apollo/react-hooks";
 import { GET_AUTH } from "../Other/queries";
 import analytics from "../Other/Analytics";
+import LearningTenets from "./LearningTenets";
+import GlossaryProgressEntry from "./GlossaryProgressEntry";
 
 interface IProps {
   navigation: any;
@@ -39,6 +41,7 @@ const ProgressMap: FC<IProps> = (props) => {
 
   return (
     <ScrollView>
+      <LearningTenets />
       {Prog.map((item, i) => {
         return (
           <TouchableOpacity
@@ -68,6 +71,7 @@ const ProgressMap: FC<IProps> = (props) => {
           </TouchableOpacity>
         );
       })}
+      <GlossaryProgressEntry navigation={navigation} />
     </ScrollView>
   );
 };

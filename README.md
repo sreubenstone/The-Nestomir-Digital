@@ -14,6 +14,8 @@ See the [main project page here](https://www.thenestomir.com), as well as [the c
 
 The Nestomir is a planetary quest (fantasy novel and companion app) involving a crash-landed alien warrior, a troubled 12-year-old boy, a mysterious learning force permeating the universe and 9 computer science lessons which grant students superpowers. It follows the main character, Jake Addison, through a series of quests which introduce him to computer programming and a new "learn with purpose" learning philosophy. **And now through crowd participation, we're going to improve the the story and social reading app experience together.**
 
+_You can find v 1.000 version of the story on [Amazon](https://www.amazon.com/Nestomir-Part-Strange-Landings/dp/B09JY2XGCR), [iOS](https://apps.apple.com/us/app/the-nestomir-premium/id1553686078), and [Android](https://play.google.com/store/apps/details?id=com.thenestomir.thenestomirapp&hl=en_US&gl=US)._ 😺
+
 ![pic](https://res.cloudinary.com/dshxqbjrf/image/upload/v1635541420/d980a2a7-netomir-11-july-ipad-gold-portrait_10vc18a0to16m00u00u028-1_psiswg.png)
 
 ### Setting up the app
@@ -88,7 +90,7 @@ _See official Rules & Rewards page [here](https://docs.google.com/document/d/12l
 
 - How can we optimize the reader so it can be adopted by schools and classroom educators?
 
-Our [web platform](https://www.thenestomir.com/thenestomir) and [discord](https://discord.gg/thtjVaaq) community are buzzing with conversations and ideas about how to contribute to the book. Please check them out to get started.
+Our [web platform](https://www.thenestomir.com/thenestomir) and [discord](https://discord.gg/3kujkJGDPq) community are buzzing with conversations and ideas about how to contribute to the book. Please check them out to get started.
 
 ![exampleapp](https://res.cloudinary.com/dshxqbjrf/image/upload/v1675110177/forum_mock_bbvilj.png)
 
